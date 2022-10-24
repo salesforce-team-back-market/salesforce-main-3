@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR03_PreventExit</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISNEW() 
+&amp;&amp; 
+TECH_Special_Process_Type_Copy__c  = &apos;Exit&apos; 
+&amp;&amp;
+Merchant__r.Number_of_Exit__c&gt;=1
+&amp;&amp;  
+$User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorMessage>Your merchant is currently in Exit process</errorMessage>
+</ValidationRule>

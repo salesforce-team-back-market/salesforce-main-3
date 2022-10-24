@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_to_Dispatch_U_S</fullName>
+    <columns>Back_Office_PK__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>BizDev_Team__c</columns>
+    <columns>Zone__c</columns>
+    <columns>Profile__c</columns>
+    <columns>OLD_Diversification_Tag__c</columns>
+    <columns>Types_of_products_sold__c</columns>
+    <columns>Prioritization_Tag__c</columns>
+    <columns>Prioritization_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.U_S</value>
+    </filters>
+    <filters>
+        <field>BizDev__c</field>
+        <operation>equals</operation>
+        <value>Arthur Veron</value>
+    </filters>
+    <filters>
+        <field>Prioritization_Score__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Leads to Dispatch (U.S.)</label>
+</ListView>

@@ -1,0 +1,2486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Support_Case</fullName>
+    <active>true</active>
+    <businessProcess>SSC Support Process</businessProcess>
+    <compactLayoutAssignment>General_Compact_Layout</compactLayoutAssignment>
+    <label>Seller Support Case</label>
+    <picklistValues>
+        <picklist>Additional_Details__c</picklist>
+        <values>
+            <fullName>Back Market is not applying the correct procedure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackCare is not managing my case properly %2F taking into account my feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing request related to the service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I am not able to provide a proof of refund to the customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I don%27t know how to manage one of my after-sales requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need help on a specific order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need help to manage a warranty exclusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need to help manage BackCare request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need to open %2F update a BackShip carrier investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need to open a FBBM carrier investigation %2F I have an issue with a FBBM delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I want to subscribe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I%27m facing issues to create a return%2Fshipment label or to arrange a pick up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My request concerns something else</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund at your expense of a commercial gesture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund at your expense of repair costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund at your expense of shipping%2Fdelivery costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund proceeded whereas there is a warranty exclusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The order was refunded and shouldn%27t have been</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Additional_Information__c</picklist>
+        <values>
+            <fullName>Internal Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oxidation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product damaged - Received by a customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product damaged - Received by me %28seller%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product lost - I %28seller%29 didn%27t receive the return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product lost - The customer didn%27t receive the parcel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product was stolen - I %28seller%29 didn%27t receive the parcel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product was stolen - The customer didn%27t receive the parcel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The product has been opened by the third party</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Impact__c</picklist>
+        <values>
+            <fullName>Burning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carrier_Investigation_Outcome__c</picklist>
+        <values>
+            <fullName>Investigation not needed anymore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No%2C missing documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C all documents provided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carries__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>103</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>104</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>105</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>107</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>119</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>34</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>37</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>39</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>47</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>49</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>52</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>53</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>57</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>58</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>59</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>61</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>62</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>63</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>64</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>65</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>66</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>67</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>68</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>71</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>73</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>74</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>76</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>77</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>78</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>79</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>81</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>82</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>83</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>84</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>85</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>86</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>87</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>88</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>91</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>92</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>94</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>95</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>96</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>97</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>98</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>99</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nasex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Reason_Details__c</picklist>
+        <values>
+            <fullName>Abusive Customer Ratings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asked not to be contacted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing request related to the service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blacklisted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blacklisted merchant by BM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Challenge a refund made on my behalf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Challenge a refund made on my behalf in a BackCare order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost structure %2F Commission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferred Payout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Different business model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disagreement w%2F T%26C or quality charter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t speak English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I did not receive the expected product %28fraud attempt%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I didn%27t receive the package%2C whereas it is marked as delivered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I have an issue with BackCare order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need help on a specific order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need help to manage a customer request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need help with one of my orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need more information regarding the service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need to open %2F update a Backship carrier investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need to open a FBBM carrier investigation %2F I have an issue with a FBBM delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I received a damaged product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I received an empty package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I think that Back Market is not being compliant with the P2B regulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I want to place an order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I want to subscribe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I%27m facing issues a parcel %28lost%2C stolen%2C broken%2C non received%2C%2E%2E%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I%27m facing issues to create a return%2Fshipment label or to arrange a pick up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration %2F Product creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue with a label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue with a pick-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYCs not validated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Last Chance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring Period</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My carrier is impacted by external circumstances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My request concerns something else</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My request is related to Back Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2EM%2EO%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NMO - False start</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need sourcing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No resources for customer care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Enough Offer for Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not current product focus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not enough offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not relevant account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not selling refurbished products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nowhere to be found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding KO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One or more of my orders can%27t be tracked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only buyback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only new categories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only new products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only repairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Management and Customer Requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other priorities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parcel appears delivered but not received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parcel not picked up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parcel not picked-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potential for Backwatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private seller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product received account-locked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product received damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Related to earned money</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Related to invoiced service fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOL KO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety and Legal Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seatbelt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-entrepreneur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spare parts seller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The client is insulting to me or Back Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The comment related to a mismatch issue %28validated by Catalog team%21%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The customer is mentioning personal information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The package got lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The package was not picked-up by the carrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The review related to another order or another seller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The technological issues experienced relate directly to a service provided by Back Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too small for Back Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vanishing Deals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>What measures does Back Market take towards the provision of the services which affected my business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Back-Office BM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong product received</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Catalog_Market_place__c</picklist>
+        <values>
+            <fullName>EU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Catalog_change_operation__c</picklist>
+        <values>
+            <fullName>Duplicated Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other wrong info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Blacklisted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Translation Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validation Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Rematch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong attribute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong image</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong price new</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Compensation__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Effort__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Integrators__c</picklist>
+        <values>
+            <fullName>BeezUP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BrickFox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightpearl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ChannelEngine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cubyn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecom Dash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcomDash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finale Inventory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Huboo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IQ Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infiplex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IziFlux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linnworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Invaders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neteven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odoo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oracle Netsuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plenty Markets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plentymarkets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PrestaShop - Informax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quipt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RepairDesk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sellbrite-GoDaddy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SellerCloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sellermania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ShipRush-Descartes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ShipStation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shopify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shopping-Feed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ShoppingFeed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sitelicon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sku Suite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SkuVault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Gecko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TradeGecko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WholeCell</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language_Skill__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Missing_Document_s__c</picklist>
+        <values>
+            <fullName>BM Certificate of non receipt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pictures of the device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pictures of the label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pictures of the package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof Of Handover</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>CCBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EU - Merchant Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EU email-to-case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSC - BackRepair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSC - Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSC - FBBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSC - Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSC - Transport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selfcare EU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Typeform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US email-to-case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin_Skill__c</picklist>
+        <values>
+            <fullName>BackShip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Methods__c</picklist>
+        <values>
+            <fullName>Affirm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Klarna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sofort</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Category__c</picklist>
+        <values>
+            <fullName>AirPods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MacBook Charger</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Quality_KPIs_concerned__c</picklist>
+        <values>
+            <fullName>BB - Cancellation rate %28functional%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BB - Charter Breach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BB - Counter-Proposal rate %28functional%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BB - Counter-Proposal rate %28non functional%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BB - Late processing rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BB - Late response 24H rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BB - Pending order rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Offer Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counterfeit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hazardous charger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice not compliant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Processing Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Response 24h</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant payment Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Order Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policy Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Accessories Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The CSAT Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Cancellation Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Contact Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Defective Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Delivery Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Esthetic Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Late Delivery Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Late Response Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Negative Review Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Return Tracking Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The SOS Claim Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Wrong Product Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unprocessed Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Untracked</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abusive Customer Ratings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>After-sales management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Algorithm%2C Buybox%2C Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apply to sell a restricted product category</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ask question related to an invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto-prepaid label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BO sync issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back-office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackPack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackParts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackRepair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackShip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing %26 Invoicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brexit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bug%2FError</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business %26 Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Arbitration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BuyBack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carrier Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Category opening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Challenge a refund issued to a customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chargeback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Components %26 Accessories %28BackParts%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concerns related to P2B regulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connection %26 Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copie privée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer fraud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data sync issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dead Merchant Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferred payout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicated products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FBBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field%28s%29 creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I need to update my bank details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I%27m facing another issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Import</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistic and Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSC follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merge duplicates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misuse of SF %2F Lack of training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring period</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New grades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not related to SF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order %26 Payment issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Management and Customer Requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Place a BackPack order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Place a BackParts order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price new wrong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process exception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product information needs to be updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product pages are not similar between UE marketplaces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Products %26 Listings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Proposition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Exception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question related to Quality KPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question related to a compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question related to a payment method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question related to an invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question related to the deferred payout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund of return costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report a Suspected Customer Fraud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report a suspicious customer behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report a technical issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report a technical issue on the Back Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report duplicated products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report incorrect %22Price new%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report wrong rematch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report%2FDashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Back Market%27s eco-contribution number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request info on P2B regulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request support related to a service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request support with a customer claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request support with a non-Backship delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request support with integrations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request support with logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request support with product creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request support with product validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request the refund of return costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request to put a product back online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SKU matched to an incorrect product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSC Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Limitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales strategy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set up a regular pick-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subscribe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical issue on a listing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terms and conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport issue with a Buyback order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsubscribe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update banking details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validation issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong category</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong information %2F picture on a product page</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resolution__c</picklist>
+        <values>
+            <fullName>Expected solution rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full merchant compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General support provided to the merchant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial merchant compensation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service__c</picklist>
+        <values>
+            <fullName>Back Market for Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackPack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackParts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackRepair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackShip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FBBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Targeted_Country__c</picklist>
+        <values>
+            <fullName>All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovakia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Teams_impacted__c</picklist>
+        <values>
+            <fullName>AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackWatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everyone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Generation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NewBiz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Leads</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Back Market Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BuyBack order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance %2F Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Listings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales order</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_Skill__c</picklist>
+        <values>
+            <fullName>Carrier Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Default Type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_company__c</picklist>
+        <values>
+            <fullName>Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto-entrepreneur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entreprise individuelle à responsabilité limitée %28EIRL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entreprise unipersonnelle à responsabilité limitée %28EURL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro-entreprise %28EI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Société anonyme %28SA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Société civile professionnelle %28SCP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Société coopérative d%E2%80%99intérêt collectif %28SCIC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Société coopérative et participative %28SCOP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Société d%E2%80%99exercice libéral à responsabilité limitée %28SELARL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Société en nom collectif %28SNC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Société par actions simplifiée %28SAS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Société par actions simplifiée unipersonnelle %28SASU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Société à responsabilité limitée %28SARL%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Typology_of_claim__c</picklist>
+        <values>
+            <fullName>Back Care issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Office issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Ship issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client%27s fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Could have been answered with FAQ article</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Note request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exclusion of warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant%27s fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unsubscribe_reason__c</picklist>
+        <values>
+            <fullName>I already have an in-house repair resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I buy the products under warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I just wanted to test the solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I sell on other platforms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I sell other products than smartphones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I use an integrator and Backship is not integrable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I%27m an expert already</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My logistic is outsourced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refunds%2Fcarrier investigation are too long</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service is too expensive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unhappy with BackCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unhappy with the agents%27 management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unhappy with the repair quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unhappy with the repair rebounds %28a repair that leads to a second repair need%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unhappy with the support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

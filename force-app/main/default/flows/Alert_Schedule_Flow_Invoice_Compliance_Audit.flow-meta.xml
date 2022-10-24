@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Action_Send_EN_Email</name>
+        <label>Action - Send EN Email</label>
+        <locationX>1357</locationX>
+        <locationY>1235</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_ENBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>Var_FinalListForInvoice</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>merchant.no-reply@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_ENSubject</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Action_Send_FR_Email</name>
+        <label>Action - Send FR Email</label>
+        <locationX>1356</locationX>
+        <locationY>1074</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_FRBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>Var_FinalListForInvoice</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>merchant.no-reply@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_FRSubject</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Add_B_F_contacts_to_final_list</name>
+        <label>Add B&amp;F contacts to final list</label>
+        <locationX>820</locationX>
+        <locationY>784</locationY>
+        <assignmentItems>
+            <assignToReference>Var_FinalListForInvoice</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_on_B_F_contacts.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Tech_count_contact</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Var_FinalListForInvoice</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Decision_is_limit_reached</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_BizDev_Email_Address</name>
+        <label>Add BizDev Email Address</label>
+        <locationX>1058</locationX>
+        <locationY>1148</locationY>
+        <assignmentItems>
+            <assignToReference>Var_FinalListForInvoice</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>BizDev_Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_FinalListForInvoice</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>legal-sellers@backmarket.com</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Merchant_zone</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_contacts_to_final_list</name>
+        <label>Add contacts to final list</label>
+        <locationX>810</locationX>
+        <locationY>1408</locationY>
+        <assignmentItems>
+            <assignToReference>Var_FinalListForInvoice</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_on_contacts.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Tech_count_contact</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Var_FinalListForInvoice</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Decision_is_limit_reached_0</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Create_Warning_Task</name>
+        <label>Create Warning Task</label>
+        <locationX>243</locationX>
+        <locationY>961</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Warning_Limitation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ETA__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>EtaIn7Days</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Not compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Invoice_Audit_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Non compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_Merchant_Stage</targetReference>
+            </connector>
+            <label>Warning Limitation</label>
+        </rules>
+        <rules>
+            <name>Warning_Exit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ETA__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>EtaIn7Days</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Last chance</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Invoice_Audit_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Non compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Creat_Task_Warning_Exit</targetReference>
+            </connector>
+            <label>Warning Exit</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_is_limit_reached</name>
+        <label>Decision - is limit reached</label>
+        <locationX>959</locationX>
+        <locationY>852</locationY>
+        <defaultConnector>
+            <targetReference>Add_BizDev_Email_Address</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Limit_isn_t_reached</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Tech_count_contact</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>3.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_on_B_F_contacts</targetReference>
+            </connector>
+            <label>Limit isn&apos;t reached</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_is_limit_reached_0</name>
+        <label>Decision - is limit reached</label>
+        <locationX>979</locationX>
+        <locationY>1331</locationY>
+        <defaultConnector>
+            <targetReference>Add_BizDev_Email_Address</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Limit_isn_t_reached_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Tech_count_contact</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>3.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_on_contacts</targetReference>
+            </connector>
+            <label>Limit isn&apos;t reached</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Merchant_Stage</name>
+        <label>Decision - Merchant Stage</label>
+        <locationX>395</locationX>
+        <locationY>960</locationY>
+        <defaultConnector>
+            <targetReference>Creat_Task_Warning_Limitation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_is_NMO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>N.M.O.</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Business_and_Finance_Contacts</targetReference>
+            </connector>
+            <label>Stage is NMO</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_user_bypass</name>
+        <label>Decision on user bypass</label>
+        <locationX>240</locationX>
+        <locationY>307</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>User_dont_bypass_flow</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.ByPassFlow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>RecordType_is_Invoice_Compliance_Audit</targetReference>
+            </connector>
+            <label>User dont bypass flow</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Merchant_zone</name>
+        <label>Merchant zone</label>
+        <locationX>1177</locationX>
+        <locationY>1150</locationY>
+        <defaultConnector>
+            <targetReference>Action_Send_EN_Email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>FR_or_BE_Zone</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr-fr</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr-be</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Action_Send_FR_Email</targetReference>
+            </connector>
+            <label>FR or BE Zone</label>
+        </rules>
+        <rules>
+            <name>US_zone</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>en-us</stringValue>
+                </rightValue>
+            </conditions>
+            <label>US zone</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>RecordType_is_Invoice_Compliance_Audit</name>
+        <label>RecordType is Invoice Compliance Audit</label>
+        <locationX>241</locationX>
+        <locationY>450</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Invoice_Compliance_Audit</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Stage</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Update_Stage</name>
+        <label>Update Stage</label>
+        <locationX>243</locationX>
+        <locationY>657</locationY>
+        <defaultConnector>
+            <targetReference>Create_Warning_Task</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Move_to_Saved</name>
+            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Not compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Invoice_Audit_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Last chance</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Stage_to_Saved</targetReference>
+            </connector>
+            <label>Move to Saved</label>
+        </rules>
+        <rules>
+            <name>Move_to_Last_Chance</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Not compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ETA__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ETAisyesterday</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Invoice_Audit_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Non compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Stage_to_Last_Chance</targetReference>
+            </connector>
+            <label>Move to Last Chance</label>
+        </rules>
+        <rules>
+            <name>Move_to_Failed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Last chance</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ETA__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ETAisyesterday</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Invoice_Audit_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Non compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Stage_to_Failed</targetReference>
+            </connector>
+            <label>Move to Failed</label>
+        </rules>
+    </decisions>
+    <description>Opt out contacts</description>
+    <formulas>
+        <name>BegunOn</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.Has_begun_on__c})</expression>
+    </formulas>
+    <formulas>
+        <name>BizDev_Email</name>
+        <dataType>String</dataType>
+        <expression>if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;Back Watch E.U.&apos;, &apos;backwatch@backmarket.com&apos;, 
+if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;Activation E.U.&apos;, &apos;activation-eu@backmarket.com&apos;, 
+if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;Back Watch U.S.&apos;, &apos;sam@backmarket.com&apos;,
+if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;Selfcare E.U.&apos;, &apos;selfcare@backmarket.com&apos;,
+{!$Record.Business_Name__r.Owner.Email}))))</expression>
+    </formulas>
+    <formulas>
+        <name>DateEndAlert</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.Has_begun_on__c}+60</expression>
+    </formulas>
+    <formulas>
+        <name>EtaIn7Days</name>
+        <dataType>Date</dataType>
+        <expression>today() +7</expression>
+    </formulas>
+    <formulas>
+        <name>ETAisToday</name>
+        <dataType>Date</dataType>
+        <expression>today()</expression>
+    </formulas>
+    <formulas>
+        <name>ETAisyesterday</name>
+        <dataType>Date</dataType>
+        <expression>today () - 1</expression>
+    </formulas>
+    <formulas>
+        <name>LC_ETA</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.Has_begun_on__c}+60)</expression>
+    </formulas>
+    <formulas>
+        <name>MP_ETA</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.Has_begun_on__c + 30})</expression>
+    </formulas>
+    <formulas>
+        <name>OwnerForTask</name>
+        <dataType>String</dataType>
+        <expression>if({!$Record.Manager__r.Id} = {!$Setup.UserID__c.Sam__c}, {!$Setup.UserID__c.BackWatch_US__c}, 
+if({!$Record.Manager__r.Id} = {!$Setup.UserID__c.PA__c}, {!$Setup.UserID__c.BackWatch_EU__c}, {!$Record.Business_Name__r.Owner.Id}))</expression>
+    </formulas>
+    <formulas>
+        <name>TaskSubject_Exit</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Business_Name__c} + &apos;- Exit in 7 days if Invoice audit not compliant&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>TaskSubject_Limitation</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Business_Name__c} + &apos; - Limitation in 7 days if Invoice audit not compliant&apos;</expression>
+    </formulas>
+    <interviewLabel>Alert - Schedule Flow (Invoice Compliance Audit) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Schedule Flow - Alert - Invoice Compliance Audit</label>
+    <loops>
+        <name>Loop_on_B_F_contacts</name>
+        <label>Loop on B&amp;F contacts</label>
+        <locationX>813</locationX>
+        <locationY>963</locationY>
+        <collectionReference>Get_Business_and_Finance_Contacts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_B_F_contacts_to_final_list</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Add_BizDev_Email_Address</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_on_contacts</name>
+        <label>Loop on contacts</label>
+        <locationX>812</locationX>
+        <locationY>1256</locationY>
+        <collectionReference>Get_contacts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_contacts_to_final_list</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Add_BizDev_Email_Address</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Creat_Task_Warning_Exit</name>
+        <label>Creat Task - Warning Exit</label>
+        <locationX>50</locationX>
+        <locationY>962</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>ETAisToday</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>OwnerForTask</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>TaskSubject_Exit</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Business_Name__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Creat_Task_Warning_Limitation</name>
+        <label>Creat Task - Warning Limitation</label>
+        <locationX>540</locationX>
+        <locationY>1107</locationY>
+        <connector>
+            <targetReference>Get_Business_and_Finance_Contacts</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Get_Business_and_Finance_Contacts</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>ETAisToday</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>OwnerForTask</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>TaskSubject_Limitation</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Business_Name__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Business_and_Finance_Contacts</name>
+        <label>Get Business and Finance Contacts</label>
+        <locationX>687</locationX>
+        <locationY>964</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_on_B_F_contacts</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Get_contacts</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Business_Name__r.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>F_B_contacts__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>HasOptedOutOfEmail</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_contacts</name>
+        <label>Get contacts</label>
+        <locationX>690</locationX>
+        <locationY>1256</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_on_contacts</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Business_Name__r.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>HasOptedOutOfEmail</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Stage_to_Failed</name>
+        <label>Update Stage to Failed</label>
+        <locationX>485</locationX>
+        <locationY>787</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Has_failed_on__c</field>
+            <value>
+                <elementReference>ETAisToday</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Stage__c</field>
+            <value>
+                <stringValue>Failed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Alert__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Stage_to_Last_Chance</name>
+        <label>Update Stage to Last Chance</label>
+        <locationX>486</locationX>
+        <locationY>651</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Has_entered_Last_chance_on__c</field>
+            <value>
+                <elementReference>ETAisToday</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Stage__c</field>
+            <value>
+                <stringValue>Last chance</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Alert__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Stage_to_Saved</name>
+        <label>Update Stage to Saved</label>
+        <locationX>485</locationX>
+        <locationY>519</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Has_been_saved_on__c</field>
+            <value>
+                <elementReference>ETAisToday</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Stage__c</field>
+            <value>
+                <stringValue>Saved</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Alert__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>123</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Decision_on_user_bypass</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3)</filterLogic>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Invoice Compliance Audit</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Not compliant</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Last chance</stringValue>
+            </value>
+        </filters>
+        <object>Alert__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2021-03-16</startDate>
+            <startTime>19:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>TextTemplate_ENBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear {!$Record.Business_Name__r.Name},
+
+As mentioned in our previous notice dated {!BegunOn}, you were called out as providing customers with invoices which do not comply with the legal requirements in force. You were granted a 30 days period to provide us with a proof of your compliance, which you failed to do so far. 
+
+We would like to remind you of the importance of these requirements in order to meet legal obligations towards tax authorities. We therefore ask you to make all the necessary changes and to provide proof of your compliance to your Seller Success Manager before {!MP_ETA}. After this period, the daily number of your sales will be limited to 30% of your average daily sales volume over the last 30 days until you provide the above mentioned proof of your compliance, and, should you fail to provide it before {!LC_ETA}, we reserve the right to close your account.
+
+As a reminder, here are the mentions that must at least appear in each of your invoices:
+
+Seller information
+- Social designation or name
+- Head office or home
+- SIRET N°
+- Individual VAT identification number
+
+Customer Information 
+- Name and surname
+- Address
+
+Billing details
+- Date
+- Invoice No.
+
+Details on service provision
+- Operation date (if different from the invoice)
+- Quantity and precise designation of the good(s) sent
+- Price, taxes not included
+- Discounts (if applicable) 
+- Delivery charges
+- VAT rate in force in the country of delivery
+- VAT amount
+- Total Amount, including VAT
+
+If you are eligible to apply marginal VAT for the product sold, these last three points are not necessary but must be replaced by: 
+- Mention &apos;VAT not applicable &quot;Second-hand goods &quot;&apos;.
+- Total amount, VAT Included 
+
+All information is available in this FAQ article, do not hesitate to keep your Seller Success Manager informed of any difficulties encountered in updating your invoice template.
+https://merchant-support.backmarket.com/hc/en-gb/articles/360019750759-How-to-establish-a-B2C-invoice-that-is-compliant-with-the-law-
+
+Thank you for your immediate attention,
+The Back Market Team</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextTemplate_ENSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Your invoices do not respect your legal requirements.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextTemplate_FRBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Cher {!$Record.Business_Name__r.Name},
+
+Comme indiqué dans notre e-mail du {!BegunOn}, suite à un audit sur les factures envoyées aux clients après leurs achats sur Back Market, nous nous sommes aperçus que les documents envoyés par vos équipes ne sont pas conformes aux exigences légales en vigueur. Nous vous avons demandé d’effectuer l’ensemble des modifications nécessaires sous 30 jours, et d’apporter la preuve de votre mise en conformité à votre Seller Success Manager. Sauf erreur, nous n’avons pas reçu la preuve requise. 
+
+Nous vous rappelons l’importance de ces exigences qui permettent de répondre aux obligations légales auprès des administrations fiscales. Nous réitérons donc notre demande de vous voir effectuer l’ensemble des modifications nécessaires, et d’apporter la preuve de votre mise en conformité à votre Seller Success Manager d’ici le {!MP_ETA}. 
+
+Passé ce délai, votre volume de ventes journalières sera limité à 30% de votre volume journalier moyen sur les 30 derniers jours jusqu’à ce que vous apportiez la preuve requise de votre mise en conformité, et, faute pour vous d’apporter cette preuve avant le {!LC_ETA}, nous nous réserverons le droit de procéder à la clôture de votre compte.
+
+Pour rappel, voici les mentions qui doivent a minima obligatoirement figurer dans chacune de vos factures :
+
+Informations vendeur
+- Désignation sociale ou nom
+- Siège social ou domicile
+- N° SIRET
+- Numéro individuel d’identification à la TVA
+
+Informations client 
+- Nom et prénom
+- Adresse
+
+Détail de facturation
+- Date
+- N° de Facture
+
+Détail sur la prestation de service
+- Date d’opération (si différente de la facture)
+- Quantité et désignation précise du/des bien(s) envoyé(s)
+- Prix, taxes non incluses
+- Remises (si applicable) 
+- Frais de livraison
+- Taux TVA en vigueur dans le pays de livraison
+- Montant de la TVA
+- Montant Total, TVA incluse
+
+Si vous êtes éligible pour le produit vendu à appliquer une TVA sur marge, ces trois derniers points ne sont pas nécessaires mais doivent impérativement être remplacés par : 
+- Mention ‘TVA non applicable «  Régime particulier - Biens d&apos;occasion »’
+- Montant total, TVA Incluse 
+
+Toutes les informations sont disponibles dans cet article FAQ, n’hésitez pas à tenir votre Seller Success Manager informé des difficultés rencontrées dans la mise à jour de vos modèles de facture. 
+https://merchant-support.backmarket.com/hc/fr/articles/360019750759-Comment-%C3%A9tablir-une-facture-B2C-conforme-%C3%A0-la-r%C3%A8glementation-
+
+Merci pour votre implication,
+L’équipe Back Market.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextTemplate_FRSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Vos factures de vente ne respectent pas vos obligations légales.</text>
+    </textTemplates>
+    <variables>
+        <name>Task</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+    <variables>
+        <name>Tech_count_contact</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>Var_FinalListForInvoice</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

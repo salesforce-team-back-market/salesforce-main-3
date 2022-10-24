@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rollup_Sales_alerts__c</fullName>
+    <externalId>false</externalId>
+    <label>Rollup - Sales alerts</label>
+    <summaryFilterItems>
+        <field>Alert__c.Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Refused, Saved, Failed, Doc validated pending MO result</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Alert__c.RecordTypeId</field>
+        <operation>notEqual</operation>
+        <value>Monitoring Period - Buyback</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Alert__c.Business_Name__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

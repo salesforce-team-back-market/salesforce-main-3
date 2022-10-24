@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generic_Task</fullName>
+    <active>true</active>
+    <description>Task created automatically used for different business processes.</description>
+    <label>Generic Task</label>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Cluster__c</picklist>
+        <values>
+            <fullName>Core Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Diversification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smartphones</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SeatBelt_removal_action__c</picklist>
+        <values>
+            <fullName>KO - Apply another limitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK - Merchant can be unlimited</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>1st Quality check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assign Merchant to SSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback SeatBelt Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Merchant Cluster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check buyback performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configure SEPA mandate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final check before approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Sale Invoice Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First sale Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYC Adyen to verify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYCs to approve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYCs to check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request new Resale Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales %2B Quality check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SeatBelt Removal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject__c</picklist>
+        <values>
+            <fullName>1st Quality check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assign Merchant to SSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback SeatBelt Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check BD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Merchant Cluster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check SAV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check buyback performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configure SEPA mandate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final check before approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Sale Invoice Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First sale Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYC Adyen to verify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYCs to approve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYCs to check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request new Resale Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales %2B Quality check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SeatBelt Removal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Business Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Go Live Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SeatBelt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

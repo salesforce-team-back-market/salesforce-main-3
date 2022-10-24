@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_GERMANY_Buyback_Live_Status</fullName>
+    <active>true</active>
+    <description>For country = Germany, Buyback Live Status can be “Live” only if:
+Live status = Live
+AND - Merchant Country = Germany ,Austria, France, Belgium, Netherlands, Poland, Spain or Italy</description>
+    <errorConditionFormula>AND (
+$User.ByPassValidationRules__c != true,
+ISPICKVAL ( Buyback_Live_Status__c, &quot;Live&quot; ),
+ISPICKVAL ( Online_Status__c, &quot;Live&quot; ),
+ISPICKVAL ( Country__c , &quot;Germany&quot;),
+AND (
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;Germany&quot;)),
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;Austria&quot;)),
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;France&quot;)),
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;Belgium&quot;)),
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;Austria&quot;)),
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;Netherlands&quot;)),
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;Poland&quot;)),
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;Spain&quot;)),
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;Italy&quot;)),
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;Germany&quot;)),
+NOT(ISPICKVAL(Merchant__r.Country__c, &quot;Austria&quot;))
+)
+)</errorConditionFormula>
+    <errorMessage>Whoops, your merchant cannot go live on Buyback in Germany.
+Your merchant needs to be from Germany, Austria, France, Belgium, Netherlands, Poland, Spain or Italy.</errorMessage>
+</ValidationRule>

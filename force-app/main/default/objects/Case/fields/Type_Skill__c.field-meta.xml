@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Skill__c</fullName>
+    <externalId>false</externalId>
+    <label>Type Skill</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Catalog</fullName>
+                <default>false</default>
+                <label>Catalog</label>
+            </value>
+            <value>
+                <fullName>Return Label</fullName>
+                <default>false</default>
+                <label>Return Label</label>
+            </value>
+            <value>
+                <fullName>Carrier Investigation</fullName>
+                <default>false</default>
+                <label>Carrier Investigation</label>
+            </value>
+            <value>
+                <fullName>Default Type</fullName>
+                <default>false</default>
+                <label>Default Type</label>
+            </value>
+            <value>
+                <fullName>Classic</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Classic</label>
+            </value>
+            <value>
+                <fullName>Services email</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Services email</label>
+            </value>
+            <value>
+                <fullName>Services form</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Services form</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

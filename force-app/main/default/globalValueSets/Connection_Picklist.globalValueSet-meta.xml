@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>API</fullName>
+        <default>false</default>
+        <label>API</label>
+    </customValue>
+    <customValue>
+        <fullName>Via Excel CSV Files</fullName>
+        <default>false</default>
+        <label>Via Excel CSV Files</label>
+    </customValue>
+    <customValue>
+        <fullName>FTP</fullName>
+        <default>false</default>
+        <label>FTP</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrator</fullName>
+        <default>false</default>
+        <label>Integrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Software</fullName>
+        <default>false</default>
+        <label>Management Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Manually</fullName>
+        <default>false</default>
+        <label>Manually</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Connection Picklist</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

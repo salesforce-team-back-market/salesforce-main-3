@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Billing_Country</fullName>
+    <active>true</active>
+    <description>Require Billing Country field.</description>
+    <errorConditionFormula>AND(
+ISBLANK(BillingCountry),
+NOT(ISPICKVAL(Stage__c, &apos;Identification&apos;)))
+
+&amp;&amp; $User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorDisplayField>BillingCountry</errorDisplayField>
+    <errorMessage>Please select billing country for this merchant.</errorMessage>
+</ValidationRule>

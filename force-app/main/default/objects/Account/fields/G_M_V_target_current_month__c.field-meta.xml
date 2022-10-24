@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G_M_V_target_current_month__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>GMV target of the merchant for the current month.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>GMV target of the merchant for the current month.</inlineHelpText>
+    <label>G.M.V. target (current month)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

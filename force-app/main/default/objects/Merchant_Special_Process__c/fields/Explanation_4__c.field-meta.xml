@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Explanation_4__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <defaultValue>(&apos;Approve = &quot;In progress&quot; - You need to limit the merchant / Reject = &quot;Refused&quot; - The merchant will not be exited&apos;)</defaultValue>
+    <externalId>false</externalId>
+    <label>From Draft to In Progress</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

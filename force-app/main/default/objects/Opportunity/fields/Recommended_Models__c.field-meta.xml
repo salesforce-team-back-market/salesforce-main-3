@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recommended_Models__c</fullName>
+    <businessOwnerUser>ana.ordeig@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>Recommended Models</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Model 1</fullName>
+                <default>false</default>
+                <label>Model 1</label>
+            </value>
+            <value>
+                <fullName>Model 2</fullName>
+                <default>false</default>
+                <label>Model 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

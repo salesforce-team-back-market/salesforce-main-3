@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_to_Refuse__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Stage__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AM OOO</fullName>
+                <default>false</default>
+                <label>AM OOO</label>
+            </value>
+            <value>
+                <fullName>BM’s commission is too high</fullName>
+                <default>false</default>
+                <label>BM’s commission is too high</label>
+            </value>
+            <value>
+                <fullName>BM’s quality charter is too strict</fullName>
+                <default>false</default>
+                <label>BM’s quality charter is too strict</label>
+            </value>
+            <value>
+                <fullName>BM’s services as not attractive enough</fullName>
+                <default>false</default>
+                <label>BM’s services as not attractive enough</label>
+            </value>
+            <value>
+                <fullName>BuyBox lower than Target Price</fullName>
+                <default>false</default>
+                <label>BuyBox lower than Target Price</label>
+            </value>
+            <value>
+                <fullName>Can&apos;t meet my margin expectations at that price</fullName>
+                <default>false</default>
+                <label>Can&apos;t meet my margin expectations at that price</label>
+            </value>
+            <value>
+                <fullName>Closed for pass due date</fullName>
+                <default>false</default>
+                <label>Closed for pass due date</label>
+            </value>
+            <value>
+                <fullName>Couldn&apos;t reach the merchant</fullName>
+                <default>false</default>
+                <label>Couldn&apos;t reach the merchant</label>
+            </value>
+            <value>
+                <fullName>Doubts on GVM potential (low ratio benefits/effort)</fullName>
+                <default>false</default>
+                <label>Doubts on GVM potential (low ratio benefits/effort)</label>
+            </value>
+            <value>
+                <fullName>I&apos;m just not selling that product</fullName>
+                <default>false</default>
+                <label>I&apos;m just not selling that product</label>
+            </value>
+            <value>
+                <fullName>I can&apos;t sell in this country for internal reasons</fullName>
+                <default>false</default>
+                <label>I can&apos;t sell in this country for internal reasons</label>
+            </value>
+            <value>
+                <fullName>I don’t have any stock available</fullName>
+                <default>false</default>
+                <label>I don’t have any stock available</label>
+            </value>
+            <value>
+                <fullName>I have a high percentage of unfair returns</fullName>
+                <default>false</default>
+                <label>I have a high percentage of unfair returns</label>
+            </value>
+            <value>
+                <fullName>I have the similar product but with different characteristics</fullName>
+                <default>false</default>
+                <label>I have the similar product but with different characteristics</label>
+            </value>
+            <value>
+                <fullName>More expensive to handle returns on BM</fullName>
+                <default>false</default>
+                <label>More expensive to handle returns on BM</label>
+            </value>
+            <value>
+                <fullName>Other (add to Comment)</fullName>
+                <default>false</default>
+                <label>Other (add to Comment)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>BM’s commission is too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>BM’s quality charter is too strict</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>BM’s services as not attractive enough</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>BuyBox lower than Target Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>Can&apos;t meet my margin expectations at that price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>Doubts on GVM potential (low ratio benefits/effort)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>I&apos;m just not selling that product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>I can&apos;t sell in this country for internal reasons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>I don’t have any stock available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>I have a high percentage of unfair returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>I have the similar product but with different characteristics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <valueName>More expensive to handle returns on BM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant KO</controllingFieldValue>
+            <controllingFieldValue>No Action by Due Date</controllingFieldValue>
+            <valueName>Other (add to Comment)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Action by Due Date</controllingFieldValue>
+            <valueName>AM OOO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Action by Due Date</controllingFieldValue>
+            <valueName>Closed for pass due date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>No Action by Due Date</controllingFieldValue>
+            <valueName>Couldn&apos;t reach the merchant</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

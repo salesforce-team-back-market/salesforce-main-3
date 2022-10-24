@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>BB.FR.ON.OTKO1</name>
+    <style>freeForm</style>
+    <subject>Back Market. Test Reprise KO {!Account.Name}.</subject>
+    <textOnly>Bonjour {!Contact.FirstName},
+
+
+
+Vous avez répondu au Test d&apos;Onboarding mais vous ne l&apos;avez pas réussi. Veuillez lire attentivement le Processus, la Charte des Bonnes Pratiques et le Résumé. Vous pourrez repasser le test dans 1 jour (dernière chance).
+
+
+
+Voici les questions auxquelles vous avez donnez la mauvaise réponse. Prenez en notes et essayez de pas refaire les mêmes erreurs:
+
+[X]
+
+
+
+
+Testez votre Qualité pour vous sourcer (aller au processus)
+
+Lisez la Charte des Bonnes Conduites et son RÉSUMÉ.
+
+Passez Le test d&apos;onboarding. (Dans 1 jour) ({!Account.Back_Office_PK__c})
+
+
+Si vous avez le moindre doute sur les exigences Qualité ou sur tout autres points du processus, demandez-nous.
+
+
+
+JE COMMENCE LA REPRISE SUR BACK MARKET
+
+
+
+Merci!
+
+L&apos;Équipe Back Market
+
+
+
+Si vous avez besoin que nous vous appelions, cliquez sur: Appelez-moi.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

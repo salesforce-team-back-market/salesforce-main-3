@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MO_motive__c</fullName>
+    <businessOwnerUser>oceane.dufour@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>MO motive</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Suspicion - counterfeit Alert</fullName>
+                <default>false</default>
+                <label>Suspicion - counterfeit Alert</label>
+            </value>
+            <value>
+                <fullName>Suspicion - Hazardous charger Alert</fullName>
+                <default>false</default>
+                <label>Suspicion - Hazardous charger Alert</label>
+            </value>
+            <value>
+                <fullName>Team Request</fullName>
+                <default>false</default>
+                <label>Team Request</label>
+            </value>
+            <value>
+                <fullName>MO on Top 20 GMV Sellers</fullName>
+                <default>false</default>
+                <label>MO on Top 20 GMV Sellers</label>
+            </value>
+            <value>
+                <fullName>First Sale Check</fullName>
+                <default>false</default>
+                <label>First Sale Check</label>
+            </value>
+            <value>
+                <fullName>Flop 10 Sellers on Defective</fullName>
+                <default>false</default>
+                <label>Flop 10 Sellers on Defective</label>
+            </value>
+            <value>
+                <fullName>Technical analysis</fullName>
+                <default>false</default>
+                <label>Technical analysis</label>
+            </value>
+            <value>
+                <fullName>Random Check</fullName>
+                <default>false</default>
+                <label>Random Check</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

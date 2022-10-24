@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Go_Live_and_Supply_Completion_rate__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(TC__c=true, 16.67,0) +
+if(Listings_and_of_units__c=true, 16.67,0) +
+if(Payment_methods__c=true, 16.67,0) +
+if(Addresses__c=true, 16.67,0) +
+if(Back_Office_Configuration__c=true, 16.67,0) +
+if(Shipping_methods__c=true, 16.67,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Go-Live and Supply - Completion rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

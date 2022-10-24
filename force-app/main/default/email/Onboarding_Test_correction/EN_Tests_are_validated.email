@@ -1,0 +1,11 @@
+Hello {!Contact.FirstName},
+Thank you for taking the time to answer our Quality questionnaire. As explained already, this allows us to understand your practices and ensure that they are in adequacy with our Quality Charter.
+
+I am pleased to inform you that your test has been validated and you can now proceed to the next step.
+
+I would also like to draw your attention to the following points: Do a little reminder if some answers weren't 100% correct.
+
+I remain your contact in case of questions related to the Quality Charter or Customer Service.
+
+Have a good day,
+{!User.Name} - Back Market

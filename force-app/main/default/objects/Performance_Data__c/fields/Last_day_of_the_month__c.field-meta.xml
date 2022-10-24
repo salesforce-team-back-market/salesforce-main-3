@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_day_of_the_month__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Date__c =
+    IF(
+  MONTH(Date__c) = 12,
+  DATE( YEAR(Date__c), 12, 31 ),
+  DATE( YEAR(Date__c), MONTH (Date__c) + 1, 1 ) - 1 
+),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Day of the month</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

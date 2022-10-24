@@ -1,0 +1,7 @@
+Hi, {!Receiving_User.FirstName}!
+
+Your {!Merchant_Special_Process__c.RecordType} Special Process "{!Merchant_Special_Process__c.Name}" for the Merchant "{!Merchant_Special_Process__c.Merchant_Name__c}" has been {!ApprovalRequest.Status} with the following comment :
+"{!ApprovalRequest.Comments}"
+
+Regards,
+Your Salesforce administrator

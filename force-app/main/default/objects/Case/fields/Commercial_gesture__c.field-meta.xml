@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commercial_gesture__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>To sell on Back Market, the seller undertakes to proactively offer commercial gestures to customers as stated in the Quality Charter when they fail to deliver on their promise (aesthetical condition discrepancy, missing accessory, late delivery, wrong color received).</inlineHelpText>
+    <label>Commercial gesture</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

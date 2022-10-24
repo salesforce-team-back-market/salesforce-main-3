@@ -1,0 +1,13 @@
+Hello,
+
+We received your claim related to the order {!Case.Order_ID__c}.
+As a reminder here are the info we got from you :
+- {!Case.Claim_Reason__c}
+- {!Case.Description}
+
+We reviewed the case and agreed to refund the amount of {!Case.Amount_Refunded__c} euros.
+
+The refund was made by bank transfer. You will soon be able to download the invoice for the credit note in your back office. 
+
+Have a great day,
+Back Market Team

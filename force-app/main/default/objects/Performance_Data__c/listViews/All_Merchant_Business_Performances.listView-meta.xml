@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Merchant_Business_Performances</fullName>
+    <columns>Date__c</columns>
+    <columns>Merchant__c</columns>
+    <columns>Buyboxes__c</columns>
+    <columns>Stocks__c</columns>
+    <columns>Sales__c</columns>
+    <columns>Listings__c</columns>
+    <columns>GMV__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Temporal_Granularity__c</field>
+        <operation>equals</operation>
+        <value>Daily</value>
+    </filters>
+    <filters>
+        <field>Targeted_Country__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Daily Business Performances</label>
+</ListView>

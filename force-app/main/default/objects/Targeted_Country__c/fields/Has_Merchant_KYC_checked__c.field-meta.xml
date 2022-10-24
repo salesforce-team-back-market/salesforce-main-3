@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Merchant_KYC_checked__c</fullName>
+    <description>Checks if Merchant&apos;s KYC are checked</description>
+    <externalId>false</externalId>
+    <formula>AND ( 
+      Merchant__r.IBAN_uploaded__c,
+      Merchant__r.ID_uploaded__c,
+      Merchant__r.KBIS_uploaded__c,
+      Merchant__r.Status_uploaded__c
+    )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Has_Merchant_KYC_checked</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

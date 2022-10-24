@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Merchant_Special_Process__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Special Process Path (follow-Up Buyback)</masterLabel>
+    <recordTypeName>Follow_Up_buyback</recordTypeName>
+</PathAssistant>

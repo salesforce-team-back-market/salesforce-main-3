@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Abusive Customer Ratings</fullName>
+        <default>false</default>
+        <label>Abusive Customer Ratings</label>
+    </customValue>
+    <customValue>
+        <fullName>Asked not to be contacted</fullName>
+        <default>false</default>
+        <label>Asked not to be contacted</label>
+    </customValue>
+    <customValue>
+        <fullName>Potential for Backwatch</fullName>
+        <default>false</default>
+        <label>Backwatch Potential</label>
+    </customValue>
+    <customValue>
+        <fullName>Blacklisted merchant by BM</fullName>
+        <default>false</default>
+        <label>Blacklisted Merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>Different business model</fullName>
+        <default>false</default>
+        <label>Business Model</label>
+    </customValue>
+    <customValue>
+        <fullName>Nowhere to be found</fullName>
+        <default>false</default>
+        <label>Cannot be Found Online</label>
+    </customValue>
+    <customValue>
+        <fullName>Challenge a refund made on my behalf</fullName>
+        <default>false</default>
+        <label>Challenge a refund made on my behalf</label>
+    </customValue>
+    <customValue>
+        <fullName>Challenge a refund made on my behalf in a BackCare order</fullName>
+        <default>false</default>
+        <label>Challenge a refund made on my behalf in a BackCare order</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed down</fullName>
+        <default>false</default>
+        <label>Closed down/Bankruptcy</label>
+    </customValue>
+    <customValue>
+        <fullName>Disagreement w/ T&amp;C or quality charter</fullName>
+        <default>false</default>
+        <label>Disagreement w/ T&amp;C or quality charter</label>
+    </customValue>
+    <customValue>
+        <fullName>Duplicate Accounts</fullName>
+        <default>false</default>
+        <label>Duplicate Accounts</label>
+    </customValue>
+    <customValue>
+        <fullName>Exit</fullName>
+        <default>false</default>
+        <label>Exit</label>
+    </customValue>
+    <customValue>
+        <fullName>I&apos;m facing issues a parcel (lost, stolen, broken, non received,...)</fullName>
+        <default>false</default>
+        <label>I&apos;m facing issues a parcel (lost, stolen, broken, non received,...)</label>
+    </customValue>
+    <customValue>
+        <fullName>I have an issue with BackCare order</fullName>
+        <default>false</default>
+        <label>I have an issue with BackCare order</label>
+    </customValue>
+    <customValue>
+        <fullName>I need help to manage a customer request</fullName>
+        <default>false</default>
+        <label>I need help to manage a customer request</label>
+    </customValue>
+    <customValue>
+        <fullName>KYCs not validated</fullName>
+        <default>false</default>
+        <label>KYCs not validated</label>
+    </customValue>
+    <customValue>
+        <fullName>Don&apos;t speak English</fullName>
+        <default>false</default>
+        <label>Language Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Last Chance</fullName>
+        <default>false</default>
+        <label>Last Chance</label>
+    </customValue>
+    <customValue>
+        <fullName>Long Onboarding</fullName>
+        <default>false</default>
+        <label>Long Onboarding</label>
+    </customValue>
+    <customValue>
+        <fullName>Monitoring Period</fullName>
+        <default>false</default>
+        <label>Monitoring Period</label>
+    </customValue>
+    <customValue>
+        <fullName>My carrier is impacted by external circumstances</fullName>
+        <default>false</default>
+        <label>My carrier is impacted by external circumstances</label>
+    </customValue>
+    <customValue>
+        <fullName>My request is related to Back Ship</fullName>
+        <default>false</default>
+        <label>My request is related to Back Ship</label>
+    </customValue>
+    <customValue>
+        <fullName>No resources for customer care</fullName>
+        <default>false</default>
+        <label>Need customer care</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics</fullName>
+        <default>false</default>
+        <label>Need logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Need sourcing</fullName>
+        <default>false</default>
+        <label>Need sourcing</label>
+    </customValue>
+    <customValue>
+        <fullName>N.M.O.</fullName>
+        <default>false</default>
+        <label>NMO</label>
+    </customValue>
+    <customValue>
+        <fullName>NMO - False start</fullName>
+        <default>false</default>
+        <label>NMO - False start</label>
+    </customValue>
+    <customValue>
+        <fullName>No answer</fullName>
+        <default>false</default>
+        <label>No answer</label>
+    </customValue>
+    <customValue>
+        <fullName>Not selling refurbished products</fullName>
+        <default>false</default>
+        <label>No products to sell or no tech products</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Enough Offer for Activation</fullName>
+        <default>false</default>
+        <label>Not Enough Offer for Activation</label>
+    </customValue>
+    <customValue>
+        <fullName>Not qualified</fullName>
+        <default>false</default>
+        <label>Not qualified</label>
+    </customValue>
+    <customValue>
+        <fullName>Not relevant account</fullName>
+        <default>false</default>
+        <label>Not relevant account</label>
+    </customValue>
+    <customValue>
+        <fullName>Contact issue</fullName>
+        <default>false</default>
+        <label>Not relevant contact</label>
+    </customValue>
+    <customValue>
+        <fullName>Onboarding KO</fullName>
+        <default>false</default>
+        <label>Onboarding KO</label>
+    </customValue>
+    <customValue>
+        <fullName>One or more of my orders can&apos;t be tracked</fullName>
+        <default>false</default>
+        <label>One or more of my orders can&apos;t be tracked</label>
+    </customValue>
+    <customValue>
+        <fullName>Only buyback</fullName>
+        <default>false</default>
+        <label>Only buyback</label>
+    </customValue>
+    <customValue>
+        <fullName>Only new products</fullName>
+        <default>false</default>
+        <label>Only new products</label>
+    </customValue>
+    <customValue>
+        <fullName>Only repairs</fullName>
+        <default>false</default>
+        <label>Only repairs</label>
+    </customValue>
+    <customValue>
+        <fullName>Order Management and Customer Requests</fullName>
+        <default>false</default>
+        <label>Order Management and Customer Requests</label>
+    </customValue>
+    <customValue>
+        <fullName>Other priorities</fullName>
+        <default>false</default>
+        <label>Other priorities</label>
+    </customValue>
+    <customValue>
+        <fullName>Cost structure / Commission</fullName>
+        <default>false</default>
+        <label>Pricing, Cost Structure and Commission</label>
+    </customValue>
+    <customValue>
+        <fullName>Private seller</fullName>
+        <default>false</default>
+        <label>Private seller</label>
+    </customValue>
+    <customValue>
+        <fullName>Integration / Product creation</fullName>
+        <default>false</default>
+        <label>Product and Listing Creation</label>
+    </customValue>
+    <customValue>
+        <fullName>Safety and Legal Issue</fullName>
+        <default>false</default>
+        <label>Safety and Legal Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Seatbelt</fullName>
+        <default>false</default>
+        <label>Seatbelt</label>
+    </customValue>
+    <customValue>
+        <fullName>Self-entrepreneur</fullName>
+        <default>false</default>
+        <label>Self-entrepreneur</label>
+    </customValue>
+    <customValue>
+        <fullName>Spare parts seller</fullName>
+        <default>false</default>
+        <label>Spare parts seller</label>
+    </customValue>
+    <customValue>
+        <fullName>The client is insulting to me or Back Market</fullName>
+        <default>false</default>
+        <label>The client is insulting to me or Back Market</label>
+    </customValue>
+    <customValue>
+        <fullName>The comment related to a mismatch issue (validated by Catalog team!)</fullName>
+        <default>false</default>
+        <label>The comment related to a mismatch issue (validated by Catalog team!)</label>
+    </customValue>
+    <customValue>
+        <fullName>The customer is mentioning personal information</fullName>
+        <default>false</default>
+        <label>The customer is mentioning personal information</label>
+    </customValue>
+    <customValue>
+        <fullName>The review related to another order or another seller</fullName>
+        <default>false</default>
+        <label>The review related to another order or another seller</label>
+    </customValue>
+    <customValue>
+        <fullName>Too small for Back Market</fullName>
+        <default>false</default>
+        <label>Too small for Back Market</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanishing Deals</fullName>
+        <default>false</default>
+        <label>Vanishing Deals</label>
+    </customValue>
+    <customValue>
+        <fullName>Wrong Back-Office BM</fullName>
+        <default>false</default>
+        <label>Wrong Back-Office BM</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Related to invoiced service fees</fullName>
+        <default>false</default>
+        <label>Related to invoiced service fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Related to earned money</fullName>
+        <default>false</default>
+        <label>Related to earned money</label>
+    </customValue>
+    <customValue>
+        <fullName>My request concerns something else</fullName>
+        <default>false</default>
+        <label>My request concerns something else</label>
+    </customValue>
+    <customValue>
+        <fullName>I think that Back Market is not being compliant with the P2B regulation</fullName>
+        <default>false</default>
+        <label>I think that Back Market is not being compliant with the P2B regulation</label>
+    </customValue>
+    <customValue>
+        <fullName>The technological issues experienced relate directly to a service provided by Back Market</fullName>
+        <default>false</default>
+        <label>The technological issues experienced relate directly to a service provided by Back Market</label>
+    </customValue>
+    <customValue>
+        <fullName>What measures does Back Market take towards the provision of the services which affected my business</fullName>
+        <default>false</default>
+        <label>What measures does Back Market take towards the provision of the services which affected my business</label>
+    </customValue>
+    <customValue>
+        <fullName>I need help on a specific order</fullName>
+        <default>false</default>
+        <label>I need help on a specific order</label>
+    </customValue>
+    <customValue>
+        <fullName>Billing request related to the service</fullName>
+        <default>false</default>
+        <label>Billing request related to the service</label>
+    </customValue>
+    <customValue>
+        <fullName>I want to subscribe</fullName>
+        <default>false</default>
+        <label>I want to subscribe</label>
+    </customValue>
+    <customValue>
+        <fullName>I need help with one of my orders</fullName>
+        <default>false</default>
+        <label>I need help with one of my orders</label>
+    </customValue>
+    <customValue>
+        <fullName>I need more information regarding the service</fullName>
+        <default>false</default>
+        <label>I need more information regarding the service</label>
+    </customValue>
+    <customValue>
+        <fullName>I want to place an order</fullName>
+        <default>false</default>
+        <label>I want to place an order</label>
+    </customValue>
+    <customValue>
+        <fullName>I need to open / update a Backship carrier investigation</fullName>
+        <default>false</default>
+        <label>I need to open / update a Backship carrier investigation</label>
+    </customValue>
+    <customValue>
+        <fullName>I need to open a FBBM carrier investigation / I have an issue with a FBBM delivery</fullName>
+        <default>false</default>
+        <label>I need to open a FBBM carrier investigation / I have an issue with a FBBM delivery</label>
+    </customValue>
+    <customValue>
+        <fullName>I didn&apos;t receive the package, whereas it is marked as delivered</fullName>
+        <default>false</default>
+        <label>I didn&apos;t receive the package, whereas it is marked as delivered</label>
+    </customValue>
+    <customValue>
+        <fullName>I received a damaged product</fullName>
+        <default>false</default>
+        <label>I received a damaged product</label>
+    </customValue>
+    <customValue>
+        <fullName>I received an empty package</fullName>
+        <default>false</default>
+        <label>I received an empty package</label>
+    </customValue>
+    <customValue>
+        <fullName>The package got lost</fullName>
+        <default>false</default>
+        <label>The package got lost</label>
+    </customValue>
+    <customValue>
+        <fullName>I did not receive the expected product (fraud attempt)</fullName>
+        <default>false</default>
+        <label>I did not receive the expected product (fraud attempt)</label>
+    </customValue>
+    <customValue>
+        <fullName>The package was not picked-up by the carrier</fullName>
+        <default>false</default>
+        <label>The package was not picked-up by the carrier</label>
+    </customValue>
+    <customValue>
+        <fullName>I&apos;m facing issues to create a return/shipment label or to arrange a pick up</fullName>
+        <default>false</default>
+        <label>I&apos;m facing issues to create a return/shipment label or to arrange a pick up</label>
+    </customValue>
+    <customValue>
+        <fullName>SOL KO</fullName>
+        <default>false</default>
+        <label>SOL KO</label>
+    </customValue>
+    <customValue>
+        <fullName>Blacklisted</fullName>
+        <default>false</default>
+        <label>Blacklisted</label>
+    </customValue>
+    <customValue>
+        <fullName>Only new categories</fullName>
+        <default>false</default>
+        <label>Only new categories</label>
+    </customValue>
+    <customValue>
+        <fullName>Not current product focus</fullName>
+        <default>false</default>
+        <label>Not current product focus</label>
+    </customValue>
+    <customValue>
+        <fullName>Not enough offer</fullName>
+        <default>false</default>
+        <label>Not enough offer</label>
+    </customValue>
+    <customValue>
+        <fullName>Issue with a pick-up</fullName>
+        <default>false</default>
+        <label>Issue with a pick-up</label>
+    </customValue>
+    <customValue>
+        <fullName>Issue with a label</fullName>
+        <default>false</default>
+        <label>Issue with a label</label>
+    </customValue>
+    <customValue>
+        <fullName>Parcel not picked up</fullName>
+        <default>false</default>
+        <label>Parcel not picked up</label>
+    </customValue>
+    <customValue>
+        <fullName>Parcel not picked-up</fullName>
+        <default>false</default>
+        <label>Parcel not picked-up</label>
+    </customValue>
+    <customValue>
+        <fullName>Parcel appears delivered but not received</fullName>
+        <default>false</default>
+        <label>Parcel appears delivered but not received</label>
+    </customValue>
+    <customValue>
+        <fullName>Product received damaged</fullName>
+        <default>false</default>
+        <label>Product received damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Product received account-locked</fullName>
+        <default>false</default>
+        <label>Product received account-locked</label>
+    </customValue>
+    <customValue>
+        <fullName>Wrong product received</fullName>
+        <default>false</default>
+        <label>Wrong product received</label>
+    </customValue>
+    <customValue>
+        <fullName>Deferred Payout</fullName>
+        <default>false</default>
+        <label>Deferred Payout</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Fees</fullName>
+        <default>false</default>
+        <label>Service Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Quotation request</fullName>
+        <default>false</default>
+        <label>Quotation request</label>
+    </customValue>
+    <customValue>
+        <fullName>Back Market product information</fullName>
+        <default>false</default>
+        <label>Back Market product information</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment methods</fullName>
+        <default>false</default>
+        <label>Payment methods</label>
+    </customValue>
+    <customValue>
+        <fullName>My account</fullName>
+        <default>false</default>
+        <label>My account</label>
+    </customValue>
+    <customValue>
+        <fullName>Delivery</fullName>
+        <default>false</default>
+        <label>Delivery</label>
+    </customValue>
+    <customValue>
+        <fullName>Taxes</fullName>
+        <default>false</default>
+        <label>Taxes</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical issue</fullName>
+        <default>false</default>
+        <label>Technical issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Esthetical issue</fullName>
+        <default>false</default>
+        <label>Esthetical issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Delivery issue</fullName>
+        <default>false</default>
+        <label>Delivery issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Order issue (wrong product, missing accessories, etc.)</fullName>
+        <default>false</default>
+        <label>Order issue (wrong product, missing accessories, etc.)</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment issue</fullName>
+        <default>false</default>
+        <label>Payment issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Invoicing</fullName>
+        <default>false</default>
+        <label>Invoicing</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </customValue>
+    <description>Allow to qualify the impediment that prevent the Merchant to perform.</description>
+    <masterLabel>Challenging points</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

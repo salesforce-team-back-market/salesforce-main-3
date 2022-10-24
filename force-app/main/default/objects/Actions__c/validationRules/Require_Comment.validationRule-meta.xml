@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Comment</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Stage__c,&quot;Merchant KO&quot;),
+ISPICKVAL( Reason__c ,&quot;Other (add to Comment)&quot;),
+ISBLANK( Comment__c ))</errorConditionFormula>
+    <errorDisplayField>Comment__c</errorDisplayField>
+    <errorMessage>Please use Comment to explain the outcome of the Action.</errorMessage>
+</ValidationRule>

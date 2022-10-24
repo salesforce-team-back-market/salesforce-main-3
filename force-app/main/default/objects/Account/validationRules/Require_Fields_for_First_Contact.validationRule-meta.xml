@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Fields_for_First_Contact</fullName>
+    <active>false</active>
+    <description>Require fields to be able to move merchant to the First Contact stage.</description>
+    <errorConditionFormula>AND ( 
+	ISPICKVAL ( PRIORVALUE ( Stage__c ), &quot;Identification&quot; ), 
+	ISPICKVAL ( Stage__c, &quot;First-contact&quot; ), 
+	OR(
+		ISBLANK (BillingCountry ),
+		ISBLANK (TEXT(AccountSource)),
+		ISBLANK (TEXT(Profile__c)),
+		ISPICKVAL(Country__c, &quot;&quot;),
+		ISBLANK ( Owner.Id )
+	
+	),
+        $User.ByPassValidationRules__c != true
+)</errorConditionFormula>
+    <errorMessage>Please make sure that following fields are populated before moving to the First Contact stage:
+1. Business Name
+2. Country
+3. Profile
+4. Merchant owner
+5. Account Source</errorMessage>
+</ValidationRule>

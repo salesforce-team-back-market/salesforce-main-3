@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Early_NMO_2__c</name>
+    <picklistValues>
+        <masterLabel>Moved to NMO 2</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refused</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>To Trigger</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

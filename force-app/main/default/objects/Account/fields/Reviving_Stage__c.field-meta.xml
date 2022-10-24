@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reviving_Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Reviving Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>To consider as Revived</fullName>
+                <default>false</default>
+                <label>To consider as Revived</label>
+            </value>
+            <value>
+                <fullName>Eligible to Reviving</fullName>
+                <default>false</default>
+                <label>Eligible to Reviving</label>
+            </value>
+            <value>
+                <fullName>Ongoing Reviving</fullName>
+                <default>false</default>
+                <label>Ongoing Reviving</label>
+            </value>
+            <value>
+                <fullName>Partially Revived</fullName>
+                <default>false</default>
+                <label>Partially Revived</label>
+            </value>
+            <value>
+                <fullName>Revived</fullName>
+                <default>false</default>
+                <label>Revived</label>
+            </value>
+            <value>
+                <fullName>Failed Revived</fullName>
+                <default>false</default>
+                <label>Failed Revived</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BeezUP</fullName>
+        <default>false</default>
+        <label>BeezUP</label>
+    </customValue>
+    <customValue>
+        <fullName>BrickFox</fullName>
+        <default>false</default>
+        <label>BrickFox</label>
+    </customValue>
+    <customValue>
+        <fullName>Brightpearl</fullName>
+        <default>false</default>
+        <label>Brightpearl</label>
+    </customValue>
+    <customValue>
+        <fullName>Channel Advisor</fullName>
+        <default>false</default>
+        <label>Channel Advisor</label>
+    </customValue>
+    <customValue>
+        <fullName>ChannelEngine</fullName>
+        <default>false</default>
+        <label>ChannelEngine</label>
+    </customValue>
+    <customValue>
+        <fullName>Cubyn</fullName>
+        <default>false</default>
+        <label>Cubyn</label>
+    </customValue>
+    <customValue>
+        <fullName>Ecom Dash</fullName>
+        <default>false</default>
+        <label>Ecom Dash</label>
+    </customValue>
+    <customValue>
+        <fullName>Finale Inventory</fullName>
+        <default>false</default>
+        <label>Finale Inventory</label>
+    </customValue>
+    <customValue>
+        <fullName>Huboo</fullName>
+        <default>false</default>
+        <label>Huboo</label>
+    </customValue>
+    <customValue>
+        <fullName>Infiplex</fullName>
+        <default>false</default>
+        <label>Infiplex</label>
+    </customValue>
+    <customValue>
+        <fullName>IziFlux</fullName>
+        <default>false</default>
+        <label>IziFlux</label>
+    </customValue>
+    <customValue>
+        <fullName>Linnworks</fullName>
+        <default>false</default>
+        <label>Linnworks</label>
+    </customValue>
+    <customValue>
+        <fullName>Market Invaders</fullName>
+        <default>false</default>
+        <label>Market Invaders</label>
+    </customValue>
+    <customValue>
+        <fullName>Neteven</fullName>
+        <default>false</default>
+        <label>Neteven</label>
+    </customValue>
+    <customValue>
+        <fullName>Odoo</fullName>
+        <default>false</default>
+        <label>Odoo</label>
+    </customValue>
+    <customValue>
+        <fullName>Plentymarkets</fullName>
+        <default>false</default>
+        <label>Plentymarkets</label>
+    </customValue>
+    <customValue>
+        <fullName>Quipt</fullName>
+        <default>false</default>
+        <label>Quipt</label>
+    </customValue>
+    <customValue>
+        <fullName>Sellbrite-GoDaddy</fullName>
+        <default>false</default>
+        <label>Sellbrite-GoDaddy</label>
+    </customValue>
+    <customValue>
+        <fullName>Sellermania</fullName>
+        <default>false</default>
+        <label>Sellermania</label>
+    </customValue>
+    <customValue>
+        <fullName>ShipStation</fullName>
+        <default>false</default>
+        <label>ShipStation</label>
+    </customValue>
+    <customValue>
+        <fullName>Shopify</fullName>
+        <default>false</default>
+        <label>Shopify</label>
+    </customValue>
+    <customValue>
+        <fullName>Shopping-Feed</fullName>
+        <default>false</default>
+        <label>Shopping-Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>SkuVault</fullName>
+        <default>false</default>
+        <label>SkuVault</label>
+    </customValue>
+    <customValue>
+        <fullName>Trade Gecko</fullName>
+        <default>false</default>
+        <label>Trade Gecko</label>
+    </customValue>
+    <customValue>
+        <fullName>WholeCell</fullName>
+        <default>false</default>
+        <label>WholeCell</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>ShipRush-Descartes</fullName>
+        <default>false</default>
+        <label>ShipRush-Descartes</label>
+    </customValue>
+    <customValue>
+        <fullName>ShoppingFeed</fullName>
+        <default>false</default>
+        <label>ShoppingFeed</label>
+    </customValue>
+    <customValue>
+        <fullName>TradeGecko</fullName>
+        <default>false</default>
+        <label>TradeGecko</label>
+    </customValue>
+    <customValue>
+        <fullName>EcomDash</fullName>
+        <default>false</default>
+        <label>EcomDash</label>
+    </customValue>
+    <customValue>
+        <fullName>Plenty Markets</fullName>
+        <default>false</default>
+        <label>Plenty Markets</label>
+    </customValue>
+    <customValue>
+        <fullName>SellerCloud</fullName>
+        <default>false</default>
+        <label>SellerCloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Sitelicon</fullName>
+        <default>false</default>
+        <label>Sitelicon</label>
+    </customValue>
+    <customValue>
+        <fullName>JTL</fullName>
+        <default>false</default>
+        <label>JTL</label>
+    </customValue>
+    <customValue>
+        <fullName>Magento</fullName>
+        <default>false</default>
+        <label>Magento</label>
+    </customValue>
+    <customValue>
+        <fullName>Oracle Netsuite</fullName>
+        <default>false</default>
+        <label>Oracle Netsuite</label>
+    </customValue>
+    <customValue>
+        <fullName>PrestaShop - Informax</fullName>
+        <default>false</default>
+        <label>PrestaShop - Informax</label>
+    </customValue>
+    <customValue>
+        <fullName>RepairDesk</fullName>
+        <default>false</default>
+        <label>RepairDesk</label>
+    </customValue>
+    <customValue>
+        <fullName>Seller Active</fullName>
+        <default>false</default>
+        <label>Seller Active</label>
+    </customValue>
+    <customValue>
+        <fullName>Sku Suite</fullName>
+        <default>false</default>
+        <label>Sku Suite</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendiro</fullName>
+        <default>false</default>
+        <label>Vendiro</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid Commerce</fullName>
+        <default>false</default>
+        <label>Solid Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>IQ Reseller</fullName>
+        <default>false</default>
+        <label>IQ Reseller</label>
+    </customValue>
+    <customValue>
+        <fullName>Finale</fullName>
+        <default>false</default>
+        <label>Finale</label>
+    </customValue>
+    <customValue>
+        <fullName>Big Commerce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Big Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Sellbrite</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sellbrite</label>
+    </customValue>
+    <customValue>
+        <fullName>Seller Cloud</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Seller Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>SolidCommerce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SolidCommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom Integration</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Custom Integration</label>
+    </customValue>
+    <masterLabel>Integrators</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Ended_Checks</fullName>
+    <active>true</active>
+    <description>Check whether a record must be considered as &quot;read-only&quot; or not.</description>
+    <errorConditionFormula>(PRIORVALUE(Unlimited_granted__c) = TRUE ||
+PRIORVALUE( Back_Watch_Granted__c ) = TRUE ||
+ISPICKVAL(PRIORVALUE(  Stage__c),&quot;Saved&quot; ) ||
+ISPICKVAL(PRIORVALUE(  Stage__c),&quot;Failed&quot; ) 
+)
+
+
+&amp;&amp; $User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorMessage>Whooops, you can&apos;t edit a record this record.</errorMessage>
+</ValidationRule>

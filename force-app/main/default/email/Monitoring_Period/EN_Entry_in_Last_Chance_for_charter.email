@@ -1,0 +1,19 @@
+Hello {!Contact.FirstName},
+
+I have been alerted that you have entered the “Last Chance” phase of our Monitoring Period for Non-Compliance with our Quality Charter. We had defined an action plan to be put in place in order to meet our quality standards detailed in our Charter.
+
+Unfortunately, the situation did not improve, so you entered the "Last Chance" of our Monitoring Period and your sales have been limited. From now on, we’ll work even harder on being fully compliant in order to lift your sales limitation and ensure an optimal customer experience. 
+
+The objective remains the same and must be achieved before the end of this Last Chance period, i.e. before {!Alert__c.ETA__c}.
+
+In order to help you in this task, here are the factors that usually lead to this:
+SAV ###
+SAV ##
+SAV ##
+
+As detailed in our quality charter, it is imperative to ... (write down what the charter requires)
+
+Of course, I remain available to discuss them face to face and accompany you in your action plan.
+
+Have a nice day,
+{{{Sender.Signature}}}

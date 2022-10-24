@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Typology_of_claim__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <label>Typology of claim</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client&apos;s fault</fullName>
+                <default>false</default>
+                <label>Client&apos;s fault</label>
+            </value>
+            <value>
+                <fullName>Exclusion of warranty</fullName>
+                <default>false</default>
+                <label>Exclusion of warranty</label>
+            </value>
+            <value>
+                <fullName>Merchant&apos;s fault</fullName>
+                <default>false</default>
+                <label>Merchant&apos;s fault</label>
+            </value>
+            <value>
+                <fullName>Credit Note request</fullName>
+                <default>false</default>
+                <label>Credit Note request</label>
+            </value>
+            <value>
+                <fullName>Back Care issue</fullName>
+                <default>false</default>
+                <label>Back Care issue</label>
+            </value>
+            <value>
+                <fullName>Back Ship issue</fullName>
+                <default>false</default>
+                <label>Back Ship issue</label>
+            </value>
+            <value>
+                <fullName>Catalog issue</fullName>
+                <default>false</default>
+                <label>Catalog issue</label>
+            </value>
+            <value>
+                <fullName>Back Office issue</fullName>
+                <default>false</default>
+                <label>Back Office issue</label>
+            </value>
+            <value>
+                <fullName>Could have been answered with FAQ article</fullName>
+                <default>false</default>
+                <label>Could have been answered with FAQ article</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>API Bug</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>API Bug</label>
+            </value>
+            <value>
+                <fullName>Info already in Notion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Info already in Notion</label>
+            </value>
+            <value>
+                <fullName>Lack of training</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lack of training</label>
+            </value>
+            <value>
+                <fullName>Misuse of SF</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Misuse of SF</label>
+            </value>
+            <value>
+                <fullName>Not related to SF</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not related to SF</label>
+            </value>
+            <value>
+                <fullName>Notion article to update</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Notion article to update</label>
+            </value>
+            <value>
+                <fullName>Process exception</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Process exception</label>
+            </value>
+            <value>
+                <fullName>SF Bug</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SF Bug</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

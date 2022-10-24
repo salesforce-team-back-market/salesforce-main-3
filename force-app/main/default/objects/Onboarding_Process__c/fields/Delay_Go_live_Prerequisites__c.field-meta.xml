@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delay_Go_live_Prerequisites__c</fullName>
+    <description>Delay between Go-live Prerequisites and entry in N.M.O.</description>
+    <externalId>false</externalId>
+    <formula>Date_entry_in_stage_NMO__c - DATEVALUE( Date_entry_in_stage_GoLive_Prerequisites__c )</formula>
+    <inlineHelpText>Delay between Go-live Prerequisites and entry in N.M.O.</inlineHelpText>
+    <label>Delay Go-live Prerequisites</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

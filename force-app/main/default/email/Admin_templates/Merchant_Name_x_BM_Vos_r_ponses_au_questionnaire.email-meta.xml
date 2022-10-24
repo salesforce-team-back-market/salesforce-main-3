@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Use this mail to communicate with merchant about his survey results</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Merchant Name x BM : Vos réponses au questionnaire</name>
+    <style>none</style>
+    <subject>Merchant Name x BM : Vos réponses au questionna</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

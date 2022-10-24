@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Back Office</fullName>
+        <default>false</default>
+        <label>Back Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Catalog</fullName>
+        <default>false</default>
+        <label>Catalog</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Website</fullName>
+        <default>false</default>
+        <label>Consumer Website</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>International Expansion</fullName>
+        <default>false</default>
+        <label>International Expansion</label>
+    </customValue>
+    <customValue>
+        <fullName>Mana</fullName>
+        <default>false</default>
+        <label>Mana</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant Experience</fullName>
+        <default>false</default>
+        <label>Merchant Experience</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant Support</fullName>
+        <default>false</default>
+        <label>Merchant Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Resources</fullName>
+        <default>false</default>
+        <label>Sales Resources</label>
+    </customValue>
+    <customValue>
+        <fullName>Services</fullName>
+        <default>false</default>
+        <label>Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Feedback category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

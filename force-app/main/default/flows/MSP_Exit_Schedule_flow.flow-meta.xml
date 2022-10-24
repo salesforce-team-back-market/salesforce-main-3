@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <decisions>
+        <name>Decision_On_exit_stage</name>
+        <label>Decision - On exit stage</label>
+        <locationX>314</locationX>
+        <locationY>396</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Exit_can_move_to_Done</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ongoing Notice Period</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.End_of_notice_period__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Exit_process_to_Done</targetReference>
+            </connector>
+            <label>Exit can move to Done</label>
+        </rules>
+        <rules>
+            <name>Exit_can_be_escalated_to_TL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pre-Exit Phase</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft completion (Merchant Owner)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CreatedDate</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Created3DaysAgo</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Exit_sub_stage_to_Draft_completion_TL</targetReference>
+            </connector>
+            <label>Exit can be escalated to TL</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_user_bypass</name>
+        <label>Decision on user bypass</label>
+        <locationX>578</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>user_dont_bypass_flow</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.ByPassFlow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_On_exit_stage</targetReference>
+            </connector>
+            <label>user dont bypass flow</label>
+        </rules>
+    </decisions>
+    <description>Exit revamp - Quick fix</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Created3DaysAgo</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDateTime}-3</expression>
+    </formulas>
+    <formulas>
+        <name>Notification_body_on_exit_done</name>
+        <dataType>String</dataType>
+        <expression>&quot;Exit is Done for this merchant &quot; &amp; {!$Record.Merchant__r.Name}</expression>
+    </formulas>
+    <formulas>
+        <name>Record_Type_Exit_EU_Buyback</name>
+        <dataType>String</dataType>
+        <expression>{!$Setup.Special_Process_Record_Types_Ids__c.Exit_buyback__c}</expression>
+    </formulas>
+    <formulas>
+        <name>Record_Type_Exit_EU_Sales</name>
+        <dataType>String</dataType>
+        <expression>{!$Setup.Special_Process_Record_Types_Ids__c.Exit__c}</expression>
+    </formulas>
+    <interviewLabel>MSP Exit - Schedule flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Merchant special process Exit - Scheduled flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Exit_process_to_Done</name>
+        <label>Update Exit process to Done</label>
+        <locationX>50</locationX>
+        <locationY>516</locationY>
+        <inputAssignments>
+            <field>Has_Been_Done_On__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Stage__c</field>
+            <value>
+                <stringValue>Done</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Exit_sub_stage_to_Draft_completion_TL</name>
+        <label>Update Exit sub-stage to Draft completion (TL)</label>
+        <locationX>314</locationX>
+        <locationY>516</locationY>
+        <inputAssignments>
+            <field>Sub_stage__c</field>
+            <value>
+                <stringValue>Draft completion (TL)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Decision_on_user_bypass</targetReference>
+        </connector>
+        <filterLogic>(1 AND 2 AND 4) OR 3</filterLogic>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pre-Exit Phase</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Sub_stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Draft completion (Merchant Owner)</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ongoing Notice Period</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Is_Locked__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Merchant_Special_Process__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2020-12-01</startDate>
+            <startTime>17:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Empty_list</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Notification_body</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Notification_title</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Notification_type</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Recipient_Ids</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Late_Untracked_delivery__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>if( NOT(ISPICKVAL(Merchant__r.Stage__c,&quot;N.M.O.&quot;)),   
+CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Cases_Late_Untracked_Delivery__c&gt;= VALUE( $Label.QualityCaseLateUntrackedDelivery) &amp;&amp; Late_Untracked_Delivery_Rate__c &gt;= VALUE( $Label.QualityRateLateUntrackedDelivery), 1, 0 ),
+&apos;U_S&apos;,
+IF( Cases_Late_Untracked_Delivery__c &gt;= VALUE($Label.QualityCaseLateUntrackedDeliveryUS) &amp;&amp; Late_Untracked_Delivery_Rate__c &gt;= VALUE($Label.QualityRateLateUntrackedDeliveryUS) , 1, 0),
+0
+)
+,
+CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Cases_Late_Untracked_Delivery__c&gt;= VALUE( $Label.QualityCaseLateUntrackedDelivery_NMO) &amp;&amp; Late_Untracked_Delivery_Rate__c &gt;= VALUE( $Label.QualityRateLateUntrackedDelivery_NMO), 1, 0 ),
+&apos;U_S&apos;,
+IF( Cases_Late_Untracked_Delivery__c &gt;= VALUE($Label.QualityCaseLateUntrackedDeliveryUS_NMO) &amp;&amp; Late_Untracked_Delivery_Rate__c &gt;= VALUE($Label.QualityRateLateUntrackedDeliveryUS_NMO) , 1, 0),
+0
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH Late delivery</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

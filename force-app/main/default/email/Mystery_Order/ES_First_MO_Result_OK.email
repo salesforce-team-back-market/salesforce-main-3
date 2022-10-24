@@ -1,0 +1,20 @@
+Hola {!Contact.FirstName},
+
+Me comunico con usted para informarle que hemos realizado un pedido misterioso en su tienda.
+
+El propósito es verificar aleatoriamente los productos vendidos en nuestra plataforma.
+
+Con mucho gusto les anuncio que han superado la prueba con gran éxito. De hecho, estamos encantados con la calidad de los productos y servicios ofrecidos a los clientes de Back Market.
+
+Observamos algunos puntos pequeños que podrían mejorarse para ofrecer un servicio y productos aún más excepcionales:
+
+-
+-
+
+
+Le informamos que otras órdenes misteriosas pueden ser efectuadas durante el año.
+
+Estoy a su disposición si tiene alguna pregunta o necesita ayuda.
+
+Que tengas un buen día ,
+{!User.Name}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Fields_for_Negotiation</fullName>
+    <active>false</active>
+    <description>Require fields to be able to move merchant to the Negotiation stage.</description>
+    <errorConditionFormula>AND(ISPICKVAL(PRIORVALUE( Stage__c ),&apos;First-contact&apos;),
+ISPICKVAL( Stage__c ,&apos;Negotiation&apos;),
+ISCHANGED(Stage__c ),
+RecordType.DeveloperName =&apos;E_U&apos;,
+OR(Has_Business_Contact__c = FALSE,
+ISBLANK(First_contact_on__c),
+ISBLANK(TEXT(BackWatch_Onboarding_Type__c))),
+$User.ByPassValidationRules__c!= true)
+
+
+||
+
+AND(ISPICKVAL(PRIORVALUE( Stage__c ),&apos;First-contact&apos;),
+ISPICKVAL( Stage__c ,&apos;Negotiation&apos;),
+ISCHANGED(Stage__c ),
+RecordType.DeveloperName =&apos;U_S&apos;,
+OR(Has_Business_Contact__c = FALSE,
+ISBLANK(First_contact_on__c)),
+$User.ByPassValidationRules__c!= true)
+
+
+||
+
+AND(ISPICKVAL(PRIORVALUE( Stage__c ),&apos;First-contact&apos;),
+ISPICKVAL( Stage__c ,&apos;Negotiation&apos;),
+ISCHANGED(Stage__c ),
+RecordType.DeveloperName =&apos;JP&apos;,
+OR(Has_Business_Contact__c = FALSE,
+ISBLANK(First_contact_on__c)),
+$User.ByPassValidationRules__c!= true)</errorConditionFormula>
+    <errorMessage>Please make sure that following fields are populated before moving to the Negotiation stage:
+1. Has Business Contact
+2. First Contact On
+3. Onboarding Type (EU only)</errorMessage>
+</ValidationRule>

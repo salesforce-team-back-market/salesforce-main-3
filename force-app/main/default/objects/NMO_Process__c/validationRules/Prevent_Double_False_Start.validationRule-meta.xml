@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Double_False_Start</fullName>
+    <active>true</active>
+    <description>This VR will prevent users from creating double False Start. Only one false start is accepted.</description>
+    <errorConditionFormula>AND (  ISCHANGED(False_Start__c ),
+ISPICKVAL(False_Start__c, &quot;Requested&quot;),
+ Merchant__r.False_Start_used__c = TRUE)
+
+&amp;&amp; $User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorMessage>Whooops, this function can only be used once. This merchant already has a false start.</errorMessage>
+</ValidationRule>

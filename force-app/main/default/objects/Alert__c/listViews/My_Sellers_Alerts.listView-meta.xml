@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Sellers_Alerts</fullName>
+    <columns>NAME</columns>
+    <columns>Business_Name__c</columns>
+    <columns>P_K__c</columns>
+    <columns>Issue_KPI__c</columns>
+    <columns>Stage__c</columns>
+    <columns>ETA__c</columns>
+    <columns>Rate_Critical_threshold__c</columns>
+    <columns>Objective_to_reach__c</columns>
+    <columns>Actual_Rate__c</columns>
+    <columns>Actual_Number_of_cases__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Sellers&apos; Alerts</label>
+</ListView>

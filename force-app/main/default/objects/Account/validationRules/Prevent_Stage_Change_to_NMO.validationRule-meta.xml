@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Stage_Change_to_NMO</fullName>
+    <active>false</active>
+    <description>Prevent users other than leaders to move stage to NMO.</description>
+    <errorConditionFormula>AND (
+ISCHANGED ( Stage__c ),
+ISPICKVAL ( Stage__c, &quot;N.M.O.&quot; ),
+NOT(CONTAINS($UserRole.DeveloperName, &quot;Leader&quot;)) ,
+$User.ByPassValidationRules__c != true
+)</errorConditionFormula>
+    <errorMessage>Whoops, you are not able to push this merchant to NMO. Please ask your team leader to help.</errorMessage>
+</ValidationRule>

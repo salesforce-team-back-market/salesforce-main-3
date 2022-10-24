@@ -1,0 +1,4 @@
+<apex:page standardController="Alert__c" showheader="false" sidebar="false">
+  <apex:iframe src="https://dub01.online.tableau.com/t/backmarketjungsas/views/Gotyourback/Eligibilityandfollow-up?:embed=yes&:showShareOptions=false&:toolbar=false&:display_count=no&:showVizHome=no&:device=desktop&PK={!Alert__c.Tableau_P_K__c}" height="800px" width="100%" scrolling="true">
+</apex:iframe>
+</apex:page>

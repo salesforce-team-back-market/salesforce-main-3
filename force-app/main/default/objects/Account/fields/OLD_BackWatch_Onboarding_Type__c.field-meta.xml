@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OLD_BackWatch_Onboarding_Type__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>if((  (ispickval( Previous_BizDev__r.Team__c ,&quot;Smart. North Europe	&quot; )  ||  ispickval(Previous_BizDev__r.Team__c,&quot;Smart. &amp; Core Elec. North Europe&quot; )  ||  ispickval(Previous_BizDev__r.Team__c,&quot;Other Div. North Europe&quot; )) &amp;&amp; Fatness__c = 2  &amp;&amp;   Backwatch__c = false),&apos;Type A&apos;, if(( (ispickval(Previous_BizDev__r.Team__c,&quot;Smart. North Europe	&quot; )  ||  ispickval(Previous_BizDev__r.Team__c,&quot;Smart. &amp; Core Elec. North Europe&quot; )  ||  ispickval(Previous_BizDev__r.Team__c,&quot;Other Div. North Europe&quot; ))  &amp;&amp; Fatness__c = 1  &amp;&amp;   Backwatch__c = true),&apos;Type B&apos;, &apos;No Type EL-LG&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If no type assigned, Fatness and BackWatch NMO are wrongly populated</inlineHelpText>
+    <label>OLD_BackWatch Onboarding Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

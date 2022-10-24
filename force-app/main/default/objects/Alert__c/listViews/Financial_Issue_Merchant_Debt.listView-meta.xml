@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Issue_Merchant_Debt</fullName>
+    <columns>NAME</columns>
+    <columns>P_K__c</columns>
+    <columns>Business_Name__c</columns>
+    <columns>Owner__c</columns>
+    <columns>Manager__c</columns>
+    <columns>Merchant_debt__c</columns>
+    <columns>Currency__c</columns>
+    <columns>First_Day_in_Debt__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Alert__c.Financial_Issue</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>In progress</value>
+    </filters>
+    <label>Financial Issue - Merchant Debt</label>
+</ListView>

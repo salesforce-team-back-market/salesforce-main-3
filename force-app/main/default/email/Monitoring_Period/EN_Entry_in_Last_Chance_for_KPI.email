@@ -1,0 +1,19 @@
+Hello {!Contact.FirstName},
+
+I have been alerted again that your "{!Alert__c.Issue_KPI__c}" rate is unfortunately still not meeting the objective that had been fixed. We had defined an action plan to reduce your rate from XXX to X% before {!Alert__c.ETA__c}.
+
+Unfortunately, this situation put you in the "last chance" phase of our Monitoring Period and your sales have been limited. From now on, we’ll work even harder on this KPI in order to lift your sales limitation and ensure an optimal customer experience. 
+
+The objective remains the same (i.e. X%) and must be reached before the end of this last chance period, i.e. before {!Alert__c.ETA__c}.
+
+In order to assist you in this task, I am attaching to this email the list of after sales requests that have negatively impacted your rate over the last 30 days.
+
+Here are the new solutions I can offer you:
+
+
+
+
+Of course, I remain available to discuss this over the phone and accompany you in your action plan.
+
+Wishing you a very nice day,
+{{{Sender.Signature}}}

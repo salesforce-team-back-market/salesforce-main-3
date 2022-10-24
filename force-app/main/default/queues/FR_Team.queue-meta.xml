@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>FR Team</name>
+    <queueMembers>
+        <users>
+            <user>alex.rougeau@backmarket.com</user>
+            <user>anais.genin@backmarket.com</user>
+            <user>diversificationbackwatch@backmarket.com</user>
+            <user>hugo.villeplee@backmarket.com</user>
+            <user>julien.boiteau@backmarket.com</user>
+            <user>manon.huet@backmarket.com</user>
+            <user>marine.kapala@backmarket.com</user>
+            <user>melany.chauveau@backmarket.com</user>
+            <user>nolwenn.lelay@backmarket.com</user>
+            <user>pia.barraud@backmarket.com</user>
+            <user>smartphonesbackwatch@backmarket.com</user>
+            <user>vincent.krauze@backmarket.com</user>
+            <user>yann.michau@backmarket.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

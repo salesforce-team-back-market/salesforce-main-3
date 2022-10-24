@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <entityName>NMO_Process__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>N.M.O Process path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;During this phase you will continue to check the quality of your merchant&amp;#39;s after-sales service and KPIs. Be sure to check the &amp;quot;SAV Not Ok&amp;quot; box if you have any concerns with your merchant during the NMO.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;NMO 2 will last 30 days.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;-&amp;gt;&lt;/b&gt; When your merchant&amp;#39;s NMO 2 is going to be extended you have 2 options:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Decide to keep this merchant in NMO 2 &lt;b&gt;(= must be EXCEPTIONAL)&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Trigger an exit process in draft&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>N.M.O. 2</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;During this phase you will continue to check the quality of your merchant&amp;#39;s after-sales service and KPIs. Be sure to check the &amp;quot;SAV Not Ok&amp;quot; box if you have any concerns with your merchant during the NMO.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;After 2 weeks, your merchant will automatically move to Phase 2.&lt;/p&gt;</info>
+        <picklistValueName>Phase 1</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;During this phase you will continue to check the quality of your merchant&amp;#39;s after-sales service and KPIs. Be sure to check the &amp;quot;SAV Not Ok&amp;quot; box if you have any concerns with your merchant during the NMO.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Phase 2 will end 21 days after your merchant has reached 100 sales. Or after 60 days if he has not reached the 100 sales aware of his NMO.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;During phase 2 of the NMO your merchant can reach the 100 sales threshold. In this case NewBiz will be able to ask you if the merchant&amp;#39;s limitation can be reduced from 5 to 10, so it will use the chatter to get your agreement.&lt;/p&gt;</info>
+        <picklistValueName>Phase 2</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

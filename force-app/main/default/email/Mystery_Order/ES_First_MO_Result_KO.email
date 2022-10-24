@@ -1,0 +1,20 @@
+Hola {!Contact.FirstName},
+
+Me comunico con usted para informarle que hemos realizado un pedido misterioso en su tienda.
+
+El propósito es verificar aleatoriamente los productos vendidos en nuestra plataforma.
+
+Lamento informarle que tras dicha orden usted va a ingresar a un período de monitoreo. Debido a que muchos aspectos del pedido no cumplian con los requerimientos minimos, por lo cual, estos deben ser mejorados:
+-
+-
+
+***Las malas prácticas de dicho pedido afectan directamente la reputación de nuestra plataforma (al mismo tiempo, dañando a todos nuestros partners vendedores). Hemos generado una penalización en nuestro sistema el cual limitar a el número de ventas a X ventas/día hasta el XX/XX/XXX.***
+
+Manteniendo esto en mente, le pediría que pusiera en marcha un plan de acción adecuado. Tienes 48 horas para hacernos la actualización de dicho pedido.
+
+Le informamos que otras órdenes misteriosas pueden ser efectuadas durante el año. Si los resultados obtenidos no son satisfactorios, lamentablemente nos veremos obligados a terminar todo tipo de colaboración con su empresa.
+
+Claramente esperamos que no debamos llegar a este punto y mantenernos a su total disposición para poder resolver este situación.
+
+Que tengas un buen día,
+{!User.Name}

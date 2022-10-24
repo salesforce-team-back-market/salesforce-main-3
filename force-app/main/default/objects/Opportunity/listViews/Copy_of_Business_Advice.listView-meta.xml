@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Business_Advice</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Link_to_the_Source__c</columns>
+    <columns>Number_of_Targetable_Listings__c</columns>
+    <columns>Prio_Score_of_Targetable_Listings__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Expected_Date_to_Trigger_the_Action__c</columns>
+    <columns>Expected_Number_of_Listings_to_Activate__c</columns>
+    <columns>Expected_Price_Decrease__c</columns>
+    <columns>Loss_Reason__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Supply_Opportunities</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Business Advice</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>contains</operation>
+        <value>Pierre Arnaud</value>
+    </filters>
+    <label>BW - Business Advice</label>
+</ListView>

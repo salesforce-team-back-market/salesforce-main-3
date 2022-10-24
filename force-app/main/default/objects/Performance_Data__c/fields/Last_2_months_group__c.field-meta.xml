@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_2_months_group__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( ADDMONTHS ( TODAY(), -2 ) &lt;=  Date__c &amp;&amp; Date__c &lt;= TODAY(), 
+     IF ( ADDMONTHS ( TODAY(), -1 ) &lt;=  Date__c &amp;&amp; Date__c &lt;= TODAY(), 
+          &apos;M0&apos;, 
+          &apos;M-1&apos; ), 
+     &apos;N/A&apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last 2 months group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

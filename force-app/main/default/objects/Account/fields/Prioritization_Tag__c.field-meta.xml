@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prioritization_Tag__c</fullName>
+    <externalId>false</externalId>
+    <label>Prioritization Tag</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Amazon Renewed - Q2 2021</fullName>
+                <default>false</default>
+                <label>Amazon Renewed - Q2 2021</label>
+            </value>
+            <value>
+                <fullName>Audio Event - Q2 2021</fullName>
+                <default>false</default>
+                <label>Audio Event - Q2 2021</label>
+            </value>
+            <value>
+                <fullName>BM It&apos;s in the Game - Q4 2021</fullName>
+                <default>false</default>
+                <label>BM It&apos;s in the Game - Q4 2021</label>
+            </value>
+            <value>
+                <fullName>Call Me Maybe - Q3 2021</fullName>
+                <default>false</default>
+                <label>Call Me Maybe - Q3 2021</label>
+            </value>
+            <value>
+                <fullName>Computer &amp; Co Event - Q2 2021</fullName>
+                <default>false</default>
+                <label>Computer &amp; Co Event - Q2 2021</label>
+            </value>
+            <value>
+                <fullName>Computer &amp; Grow - Q3 2021</fullName>
+                <default>false</default>
+                <label>Computer &amp; Grow - Q3 2021</label>
+            </value>
+            <value>
+                <fullName>MacPlugger - Q3 2021</fullName>
+                <default>false</default>
+                <label>MacPlugger - Q3 2021</label>
+            </value>
+            <value>
+                <fullName>MDA - Fill my house - Q4 2021</fullName>
+                <default>false</default>
+                <label>MDA - Fill my house - Q4 2021</label>
+            </value>
+            <value>
+                <fullName>Operation Amazon Renewed - Q2 2021</fullName>
+                <default>false</default>
+                <label>Operation Amazon Renewed - Q2 2021</label>
+            </value>
+            <value>
+                <fullName>Operation Dynamo - Q2 2021</fullName>
+                <default>false</default>
+                <label>Operation Dynamo - Q2 2021</label>
+            </value>
+            <value>
+                <fullName>Operation Grand Theft - Q3 2021</fullName>
+                <default>false</default>
+                <label>Operation Grand Theft - Q3 2021</label>
+            </value>
+            <value>
+                <fullName>Operation Replug of the Living Dead - Q2 2021</fullName>
+                <default>false</default>
+                <label>Operation Replug of the Living Dead - Q2 2021</label>
+            </value>
+            <value>
+                <fullName>Operation Return of the Mac - Q2 2021</fullName>
+                <default>false</default>
+                <label>Operation Return of the Mac - Q2 2021</label>
+            </value>
+            <value>
+                <fullName>Operation SBB - Q3 2021</fullName>
+                <default>false</default>
+                <label>Operation SBB - Q3 2021</label>
+            </value>
+            <value>
+                <fullName>P0</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P0</label>
+            </value>
+            <value>
+                <fullName>P1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P1</label>
+            </value>
+            <value>
+                <fullName>P2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P2</label>
+            </value>
+            <value>
+                <fullName>P3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P3</label>
+            </value>
+            <value>
+                <fullName>P4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P4</label>
+            </value>
+            <value>
+                <fullName>PO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PO</label>
+            </value>
+            <value>
+                <fullName>Say cheeese - Q4 2021</fullName>
+                <default>false</default>
+                <label>Say cheeese - Q4 2021</label>
+            </value>
+            <value>
+                <fullName>Short-Term Action</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Short-Term Action</label>
+            </value>
+            <value>
+                <fullName>Small Appliances Event - Q2 2021</fullName>
+                <default>false</default>
+                <label>Small Appliances Event - Q2 2021</label>
+            </value>
+            <value>
+                <fullName>Tier 1 Event - Q2 2021</fullName>
+                <default>false</default>
+                <label>Tier 1 Event - Q2 2021</label>
+            </value>
+            <value>
+                <fullName>Tools &amp; Gardening Event - Q2 2021</fullName>
+                <default>false</default>
+                <label>Tools &amp; Gardening Event - Q2 2021</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

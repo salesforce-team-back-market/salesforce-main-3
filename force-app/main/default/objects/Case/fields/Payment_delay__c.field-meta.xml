@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_delay__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Selon la charte, de combien de temps maximum disposez-vous pour déclencher le paiement d&apos;un produit (fonctionnel ou non)?</inlineHelpText>
+    <label>Payment delay</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

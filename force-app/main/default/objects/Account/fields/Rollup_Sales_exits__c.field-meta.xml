@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rollup_Sales_exits__c</fullName>
+    <externalId>false</externalId>
+    <label>Rollup - Sales exits</label>
+    <summaryFilterItems>
+        <field>Merchant_Special_Process__c.Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled, Done</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Merchant_Special_Process__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Exit</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Merchant_Special_Process__c.Merchant__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

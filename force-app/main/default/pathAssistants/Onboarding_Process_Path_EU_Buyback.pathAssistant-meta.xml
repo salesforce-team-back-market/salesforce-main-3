@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Onboarding_Process__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Onboarding Process Path EU - Buyback</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;For &lt;span style=&quot;font-size: 13px;&quot;&gt;this record &lt;/span&gt;you need to &lt;span style=&quot;font-size: 13px;&quot;&gt;make sure that &lt;/span&gt; :&lt;/p&gt;&lt;ul&gt;&lt;li&gt;all the K.Y.C. documents are provided by the merchant&lt;/li&gt;&lt;li&gt;Those documents are uploaded in the Back Office, and ticked if well uploaded in the Merchant&amp;#39;s Profile: Meaning you can&amp;#39;t update them Manually.&lt;/li&gt;&lt;li&gt;every contractual document has been signed by the merchant&lt;/li&gt;&lt;li&gt;have sent the Quality Survey&lt;/li&gt;&lt;li&gt;a Referent Champion is assigned&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Business &amp; Quality Prerequisites</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Go-Live Prerequisites</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>E_U_Buyback</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,15 @@
+Bonjour {!Contact.FirstName},
+
+Vous venez de recevoir un email automatique vous informant que vous étiez entré en période de monitoring/ en “dernière chance” de notre période de monitoring.
+Un processus automatique s’est déclenché car votre indicateur "{!Alert__c.Issue_KPI__c}" se trouve au-dessus de nos seuils d’alerting.
+
+Pour les raisons suivantes, j’ai pris la décision de vous retirer de ce programme pour ce même KPI: 
+
+
+
+J’ai confiance au plan d’action que vous avez déjà mis en place et vais continuer à monitorer votre KPI pour m’assurer que celui-ci passe en dessous de nos seuils d’alerting.
+
+Je reste bien entendu disponible pour en discuter de vive voix et vous accompagner dans l’amélioration d’autres KPIs qualité.
+
+Bonne journée,
+{{{Sender.Signature}}}

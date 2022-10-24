@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monitoring_Period_Buyback</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Global_compact_layout</compactLayoutAssignment>
+    <label>Monitoring Period - Buyback</label>
+    <picklistValues>
+        <picklist>Action_Plan_s_pushed__c</picklist>
+        <values>
+            <fullName>Anticipate departure on vacation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apply stricter changing screen eligibility criteria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BUYBACK ORDER PAGE - Answer all orders on %22Pending customers%22 tab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BUYBACK ORDER PAGE - Process orders on %22New order%22 tab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackPack - strong packaging to prevent product damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Answer all customer messages even messages like %22Thanks%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Be reactive on email notifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Clarify message when putting an order on hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Provide Blancco report for functional CPs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Provide a user guide in packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Provide photos for esthetical CPs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Send reminders to customer %2F Call customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Share costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Carrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change delivery delay in the BO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change for a carrier well integrated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change internal process to reduce preparation time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change internal process to reduce processing time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct Integrators issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fill in tracking information on time %28within 5 days after order creation%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Get coaching on the Charter requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INNOVATION LAB - Organize innovation lab coaching session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INNOVATION LAB - Share innovation lab content %28articles%2C guides%2C etc%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve catalog matching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve product description information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISTING - Adapt daily limitation of Buyback orders depending on process capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISTING - Adjust grading depending on repair abilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISTING - Stop listing flop Counter offer products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISTING - Stop listing flop cancelled products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISTING - Take into account Battery risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OFFER - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OFFER - Review product selling destination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OFFER - Stop listing flop defective products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - Use BackPack to prevent product damage during transport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organize regular pick up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRICING - Adjust prices of listings based on previously received products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALITY CONTROL - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALITY CONTROL - SOFTWARE - Use Blancco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALITY CONTROL - SOFTWARE - Use Phonecheck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALITY CONTROL - SOFTWARE - Use other testing solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALITY CONTROL - Update %2F add quality control tests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROOT CAUSE INVESTIGATION - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROOT CAUSE INVESTIGATION - Run a Technical Audit %28by innovation lab%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROOT CAUSE INVESTIGATION - Run internal diagnosis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROOT CAUSE INVESTIGATION - Set up production tracability process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROOT CAUSE INVESTIGATION - Use GateKeeper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review product selling destination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - COMPONENT - Order from BackPart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - COMPONENT - Qualify new supplier %28Battery%2C Motherboard%2C Screen%2C buttons%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - DEVICES - Get supply from Mana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - DEVICES - Qualify new vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - DEVICES - Review sourcing requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - Qualify new supplier - Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send correct tracking information %28invalid tracking number%2Fcarrier%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipp the order with the tracking number initially provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strengthen control of packaging content prior to shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TECHNICAL PRACTICES - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TECHNICAL PRACTICES - Use ESD protections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use %2F improve templates to answer SAV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use BackCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use BackRepair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use BackShip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use FBBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use FBBM to outsource stock %26 shipping management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use an Express delivery option</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use conservating grading in case of doubt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use grading toolkit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use integrator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Action_plan__c</picklist>
+        <values>
+            <fullName>Abusive counter-offer policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adapt current organization to handle the volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add a user guide in packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address customer in a customized way</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adjust prices of ads based on the description of the product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Answer faster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ask the merchant to handle all orders marked as %22Colis reçu dans l%27usine%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad reviews related to Defective issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad reviews related to Delivery issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Be more polite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Be more precise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Be more reactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Better plan departures on vacation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Can be solved by working on another KPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change carrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change for express solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change supplier - Battery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change supplier - Buttons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change supplier - General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change supplier - Merchant will look for one</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change supplier - Motherboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change supplier - Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change supplier - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change supplier - Provided a list</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change supplier - Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change the time delay in the BO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit on answering within 24 hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Further logistic cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I asked the merchant to respect our delais%2Frules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I have explained the Quality Charter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer Battery Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push %28a new%29 testing solution - Blancco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push %28a new%29 testing solution - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push %28a new%29 testing solution - Phonecheck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push %28a new%29 testing solution - Piceasoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Back Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push BackShip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Put a sticker with user guide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Related to a high counter-offer rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Related to a specific brand %2F model %2F product %2F category</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relaunch customers when pending for an answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remind that oxidised products are accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remind that the state of a non-functional product can be very diversified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove impacted SKY from the listing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review their grading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review their listing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send back the charter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send precise messages when offer put on hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical issue in the BO - Doesn%27t receive a notification for each message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use templates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volume of recovery not adapted to the size of the structure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>MacBook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smartphone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tablets</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commitment_Flag__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>External_recovery_agency__c</picklist>
+        <values>
+            <fullName>Paris Contentieux</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>External_recovery_status__c</picklist>
+        <values>
+            <fullName>Amicable phase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case sent to lawyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled recovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrecoverable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting instructions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_attachment_status__c</picklist>
+        <values>
+            <fullName>Attached in SF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not attached in SF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested from the merchant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_KPI__c</picklist>
+        <values>
+            <fullName>Buyback - Cancellation %28Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Cancellation rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Charter breaches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Counter-Proposal %28Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Counter-Proposal %28Non Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Counter-Proposal rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Late Processing rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Late Response rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - On-hold rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Payment issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Pending Order rate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_identified__c</picklist>
+        <values>
+            <fullName>Burning Chargers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Main_Reason__c</picklist>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Main_Root_Cause__c</picklist>
+        <values>
+            <fullName>BB Completion Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive Days Threshold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Listing Drop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orders Drop</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_to_refuse__c</picklist>
+        <values>
+            <fullName>Activated BackCare in faulty countries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Activated FBBM in faulty countries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Already in Exit%2F DMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BM mistake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog mismatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charter Breach already addressed by another process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External exceptional event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Saved_reason__c</picklist>
+        <values>
+            <fullName>Action plan with KPI OK on a 2-week cohort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BM fault %28e%2Eg%2E catalog%2C service%2C Parcel Lab%2C %2E%2E%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Arbitration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective OK at the model or category level %28on 100%2B orders%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate MP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event external to BM %2F merchant %2F 3rd party provider %28Storm%2C Brexit%2C %2E%2E%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GateKeeper batch Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KPI OK 7 days in a row</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long-term exception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not enough cases at the ETA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rate better than the threshold at the ETA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety %2F Legal issue already properly handled by Merchant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service subscription</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Situation__c</picklist>
+        <values>
+            <fullName>1st case - Warning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2nd case or more - Investigation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Last chance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring Period</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Reason__c</picklist>
+        <values>
+            <fullName>Accessories Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Paused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Cancellation %28Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Charter breaches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Counter-Proposal %28Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Late Processing rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Late Response rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Payment issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Pending Order rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buybox Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charter Breaches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Esthetic Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forced exit due to Inactivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Delivery Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Response Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple MP%2FLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mystery Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New categories slowly picking up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policy violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller is Out of Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sourcing issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Untracked Orders Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Product Rate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tech_Debt_Amount_Range__c</picklist>
+        <values>
+            <fullName>0 - 5K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10K - 20K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20K - more</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5K - 10K</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VAT_Type__c</picklist>
+        <values>
+            <fullName>Classic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marginal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

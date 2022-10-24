@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal</fullName>
+    <booleanFilter>1 OR 2 OR 3</booleanFilter>
+    <columns>ARTICLE_NUMBER</columns>
+    <columns>TITLE</columns>
+    <columns>VALIDATION_STATUS_ENUM</columns>
+    <columns>PUBLISH_STATUS</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>LANGUAGE</columns>
+    <columns>LAST_PUBLISHED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001389</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001411</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001446</value>
+    </filters>
+    <label>Legal</label>
+</ListView>

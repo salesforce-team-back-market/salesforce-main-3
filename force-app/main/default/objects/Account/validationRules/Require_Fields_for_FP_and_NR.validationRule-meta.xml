@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Fields_for_FP_and_NR</fullName>
+    <active>true</active>
+    <description>Require fields to be able to move merchant to the Future Partnership and Not Relevant stages.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Stage__c),$User.ByPassValidationRules__c != true,
+
+OR(
+
+AND(ISPICKVAL ( Stage__c,&quot;Future partnership&quot; ),
+ISBLANK ( TEXT ( Challenging_Point__c ))),
+
+
+AND(ISPICKVAL ( Stage__c, &quot;Not relevant&quot; ),
+OR(ISBLANK ( TEXT ( Challenging_Point__c )),
+ISBLANK( TEXT(BackWatch_Onboarding_Type__c )))
+),
+
+AND(
+ISPICKVAL ( Stage__c, &quot;Not relevant&quot; ),
+NOT(ISBLANK(TEXT( Prioritization_Tag__c ))),
+ISBLANK( Prioritization_Score_Feedback__c ))
+
+))</errorConditionFormula>
+    <errorMessage>Please make sure that following fields are populated before moving to the other stage:
+1. Challenging point
+3. Feedback NB Event if Prioritization Tag isn&apos;t empty (for NR stage)
+4. Onboarding Type (for NR stage)</errorMessage>
+</ValidationRule>

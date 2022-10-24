@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>BB.FR.ON.OTKOR</name>
+    <style>freeForm</style>
+    <subject>Back Market. Répondre au Test {!Account.Name}.</subject>
+    <textOnly>Bonjour {!Contact.FirstName},
+
+
+
+Aujourd&apos;hui, vous devez répondre de nouveau au Test d&apos;Onboarding. ({!Account.Back_Office_PK__c})
+
+
+
+JE RÉPONDS AU TEST
+
+
+
+Dès que le test est réussi, vous pourrez commencer à vous sourcer. S&apos;il vous manque une autre étape du processus, terminez-la dès aujourd&apos;hui.
+
+
+
+Merci!
+
+L&apos;Équipe Back Market
+
+
+
+Si vous avez besoin que nous vous appelions, cliquez sur: Appelez-moi.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

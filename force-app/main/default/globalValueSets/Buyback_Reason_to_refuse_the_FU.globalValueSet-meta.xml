@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Already in Exit/ DMP</fullName>
+        <default>false</default>
+        <label>Already in Exit/ DMP</label>
+    </customValue>
+    <customValue>
+        <fullName>BM mistake</fullName>
+        <default>false</default>
+        <label>BM mistake</label>
+    </customValue>
+    <customValue>
+        <fullName>KPI OK for more than 2 weeks</fullName>
+        <default>false</default>
+        <label>KPI OK for more than 2 weeks</label>
+    </customValue>
+    <customValue>
+        <fullName>Not enough cases</fullName>
+        <default>false</default>
+        <label>Not enough cases</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Buyback - Reason to refuse the FU</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>MP end (DE)</name>
+    <style>freeForm</style>
+    <subject>{!Alert__c.P_K__c} - {!Alert__c.Business_Name__c} - Ende der Beobachtungsphase</subject>
+    <textOnly>Hallo {!Alert___c.Business_Name__c},
+
+
+
+Dank Ihrer kontinuierlichen Bemühungen freuen wir uns, Ihnen mitteilen zu können, dass Sie das oben genannte Ziel für den KPI {!Alert__c.Issue_KPI__c} erreicht haben und nun unsere Qualitätsstandards einhalten. Daher endet heute Ihr Überwachungszeitraum für die {!Alert__c.Issue_KPI__c} Rate.
+
+
+
+Wir zählen auf Sie, dass Sie die von Ihnen vorgenommenen Verbesserungen fortsetzen.
+
+
+
+Mehr Informationen zu den Beobachtungsphasen und Schwellenwerten finden Sie im Merchant Support Center. Für alle weiteren Fragen steht Ihnen Ihr Ansprechpartner bei Back Market weiterhin zur Verfügung.
+
+
+
+Mit freundlichen Grüßen,
+
+
+Back Market</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

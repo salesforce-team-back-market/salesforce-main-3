@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Using the Back Office</label>
+            <name>Using_the_Back_Office</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Set up my back office for sales</label>
+            <name>Set_up_my_back_office_for_sales</name>
+        </dataCategory>
+        <dataCategory>
+            <label>How to develop my sales</label>
+            <name>How_to_develop_my_sales</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Quality, Ethics and Compliance Charters</label>
+            <name>Quality_Ethics_and_Compliance_Charters</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Quality Monitoring</label>
+            <name>Quality_Monitoring</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Guide to the perfect refurbisher</label>
+            <name>Guide_to_the_perfect_refurbisher</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Technical guide</label>
+            <name>Technical_guide</name>
+        </dataCategory>
+        <dataCategory>
+            <label>The guide for newcomers 👶</label>
+            <name>The_guide_for_newcomers</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Activation</label>
+            <name>Activation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Definitions</label>
+            <name>Definitions</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Product Creation</label>
+            <name>Product_Creation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Listing Creation</label>
+            <name>Listing_Creation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Listing Update</label>
+            <name>Listing_Update</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Our free listing creation service</label>
+            <name>Our_free_listing_creation_service</name>
+        </dataCategory>
+        <dataCategory>
+            <label>News and information about our catalog</label>
+            <name>News_and_information_about_our_catalog</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Practical questions</label>
+            <name>Practical_questions</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Creation of specific listings</label>
+            <name>Creation_of_specific_listings</name>
+        </dataCategory>
+        <dataCategory>
+            <label>CCBM - Customer Care By Back Market</label>
+            <name>CCBM_Customer_Care_By_Back_Market</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Prepare my orders</label>
+            <name>Prepare_my_orders</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Manage my orders</label>
+            <name>Manage_my_orders</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Manage customer contact</label>
+            <name>Manage_customer_contact</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Using and managing the after-sales area</label>
+            <name>Using_and_managing_the_after_sales_area</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Manage returns</label>
+            <name>Manage_returns</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Warranty &amp; Withdrawal</label>
+            <name>Warranty_Withdrawal</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Legal</label>
+            <name>Legal</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Eco Contributions</label>
+            <name>Eco_Contributions</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Ensure shipment &amp; delivery</label>
+            <name>Ensure_shipment_delivery</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Understand everything about the SSC</label>
+            <name>Understand_everything_about_the_SSC</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Customer Financial Services</label>
+            <name>Customer_financial_services</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Deposit</label>
+            <name>Deposit</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Invoices &amp; Payments</label>
+            <name>Invoices_Payments</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BuyBack - Overview and Activation</label>
+            <name>BuyBack_Overview_and_Activation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BuyBack - My orders</label>
+            <name>BB_My_orders</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BuyBack - Quality Monitoring</label>
+            <name>BuyBack_Quality_Monitoring</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BuyBack - Products &amp; Listings</label>
+            <name>BB_Products_Listings</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BuyBack - Payments &amp; Invoicing</label>
+            <name>BB_Payments_Invoicing</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Buyback - Process Standards</label>
+            <name>Buyback_Process_Standards</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BackShip</label>
+            <name>BackShip</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BackCare</label>
+            <name>BackCare</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BackParts &amp; Mana</label>
+            <name>BackParts_Mana</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BackPack</label>
+            <name>BackPack</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BackRepair</label>
+            <name>BackRepair</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Impact Champions label</label>
+            <name>Impact_Champions_label</name>
+        </dataCategory>
+        <dataCategory>
+            <label>BackFunds</label>
+            <name>BackFunds</name>
+        </dataCategory>
+        <dataCategory>
+            <label>New features &amp; tools</label>
+            <name>New_features_tools</name>
+        </dataCategory>
+        <dataCategory>
+            <label>News not to be missed</label>
+            <name>News_not_to_be_missed</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Our Webinars</label>
+            <name>Our_Webinars</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Setting Up Integrators</label>
+            <name>Setting_Up_Integrators</name>
+        </dataCategory>
+        <dataCategory>
+            <label>FTP connection</label>
+            <name>FTP_connection</name>
+        </dataCategory>
+        <dataCategory>
+            <label>API connection</label>
+            <name>API_connection</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Testing my Connection</label>
+            <name>Testing_my_Connection</name>
+        </dataCategory>
+        <dataCategory>
+            <label>External Connections</label>
+            <name>External_Connections</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Seller Support Knowledge</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

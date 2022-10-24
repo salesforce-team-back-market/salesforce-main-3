@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Check_as_Used_for_MP_creation</name>
+        <label>Check as Used for MP creation</label>
+        <locationX>313</locationX>
+        <locationY>319</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Used_for_MP_creation__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Test_on_weekday</name>
+        <label>Test on weekday</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>On_monday_and_wednesday</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>Weekday_formula</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>2.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Weekday_formula</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>4.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Quality</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_as_Used_for_MP_creation</targetReference>
+            </connector>
+            <label>On monday and wednesday</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>Weekday_formula</name>
+        <dataType>Number</dataType>
+        <expression>WEEKDAY({!$Flow.CurrentDate})</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Performance Data - Before Save Flow (Creation only) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Performance Data - Before Save Flow (Creation only)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Test_on_weekday</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Temporal_Granularity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Daily</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Targeted_Country__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Performance_Data__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

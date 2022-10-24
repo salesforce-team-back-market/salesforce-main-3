@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Skipping_Stages_from_ONB</fullName>
+    <active>false</active>
+    <description>Prevent changing stage from Onboarding to any other but NMO, Future partneship or Not relevant.</description>
+    <errorConditionFormula>AND ($User.ByPassValidationRules__c != true,
+ RecordType.DeveloperName &lt;&gt; &quot;JP&quot;,
+( AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Onboarding&quot; ),
+ISPICKVAL ( Stage__c,&quot;Identification&quot; )
+) || AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Onboarding&quot; ),
+ISPICKVAL ( Stage__c,&quot;First-contact&quot; )
+) || AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Onboarding&quot; ),
+ISPICKVAL ( Stage__c,&quot;Negotiation&quot; )
+) || AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Onboarding&quot; ),
+ISPICKVAL ( Stage__c,&quot;Run&quot; )
+) || AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Onboarding&quot; ),
+ISPICKVAL ( Stage__c,&quot;Offline&quot; ))
+	)
+)</errorConditionFormula>
+    <errorMessage>Whoops, you can&apos;t skip the stages. You can only change the stage of this merchant to one of these :
+1) N.M.O.
+2) Future partnership
+3) Not relevant</errorMessage>
+</ValidationRule>

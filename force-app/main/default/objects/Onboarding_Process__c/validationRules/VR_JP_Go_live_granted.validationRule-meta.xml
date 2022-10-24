@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_JP_Go_live_granted</fullName>
+    <active>true</active>
+    <description>All mandatory fields are not populated. Please refer to Notion.</description>
+    <errorConditionFormula>AND (
+Go_Live_granted__c = True,
+RecordType.DeveloperName = &quot;JP_Onboarding&quot;,
+OR(
+Ads_Comment__c = false,
+Stocks_Ads__c = false,
+Return_Address__c = false
+),
+$User.ByPassValidationRules__c &lt;&gt; True
+)</errorConditionFormula>
+    <errorMessage>All mandatory fields are not populated. Please refer to Notion.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>The e-mail template is used to inform the submiter that an N.M.O. request for moving on to the next step has been approved or rejected.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>N.M.O. Process response e-mail (text version)</name>
+    <style>none</style>
+    <subject>[N.M.O. Process] Approval request {!ApprovalRequest.Status}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_t_change_Stage_once_on_3_3_Checks</fullName>
+    <active>true</active>
+    <description>This rule prevents an Onboarding Process on Go-Live to get its Stage moved back.</description>
+    <errorConditionFormula>AND ( ISPICKVAL ( PRIORVALUE ( Stage__c ), 
+                  &quot;Go-Live Prerequisites&quot; ), 
+      NOT ( ISPICKVAL ( Stage__c, 
+                  &quot;Go-Live Prerequisites&quot; ) ),
+$User.ByPassValidationRules__c  &lt;&gt; True  
+    )</errorConditionFormula>
+    <errorMessage>You can&apos;t move from Go-Live Prerequisites once selected!</errorMessage>
+</ValidationRule>

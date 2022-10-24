@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delay_Business_Quality_Prerequisites__c</fullName>
+    <description>Delay between Business &amp; Quality Prerequisites and Go-live Prerequisites.</description>
+    <externalId>false</externalId>
+    <formula>Date_entry_in_stage_GoLive_Prerequisites__c - Date_entry_in_stage_BQ_Prerequisites__c</formula>
+    <inlineHelpText>Delay between Business &amp; Quality Prerequisites and Go-live Prerequisites.</inlineHelpText>
+    <label>Delay Business Quality Prerequisites</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Objective_to_reach__c</fullName>
+    <externalId>false</externalId>
+    <formula>If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; (ISPICKVAL(Category__c,&quot;MacBook&quot;) || ISPICKVAL(Category__c,&quot;Tablets&quot;)  || ISPICKVAL(Category__c,&quot;Smartphone&quot;))), 0, 
+If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;E_U&apos;),5.50,
+If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;U_S&apos;),6.50,
+if((ISPICKVAL(Issue_KPI__c,&quot;Wrong Product Rate&quot;)),4.00,
+if((ISPICKVAL(Issue_KPI__c,&quot;Accessories Rate&quot;)),5.00,
+if((ISPICKVAL(Issue_KPI__c,&quot;Late Delivery Rate&quot;)),8.00,
+if((ISPICKVAL(Issue_KPI__c,&quot;Esthetic Rate&quot;)),5.00,
+if((ISPICKVAL(Issue_KPI__c,&quot;Late Response Rate&quot;)),40.00,
+if((ISPICKVAL(Issue_KPI__c,&quot;CSAT&quot;)),4.30,
+if((ISPICKVAL(Issue_KPI__c,&quot;Cancellation Rate&quot;)),2.00,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Late Processing rate&quot;)),0.15,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Pending Order rate&quot;)),0.25,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - On-hold rate&quot;)),0.25,
+If((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal (Functional) rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;E_U&apos;),0.33,
+If((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal (Functional) rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;U_S&apos;),0.38,
+If((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;E_U&apos;),0.33,
+If((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;U_S&apos;),0.38,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal (Non Functional) rate&quot;)),0.15,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Cancellation (Functional) rate&quot;)),0.10,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Cancellation rate&quot;)),0.10,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Late Response rate&quot;)),0.15,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Payment issue&quot;)),0.00,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Charter breaches&quot;)),0.00,
+if((ISPICKVAL(Issue_KPI__c,&quot;Untracked Orders Rate&quot;)),6.00,
+if((ISPICKVAL(Issue_KPI__c,&quot;Payment issues&quot;)),0.00,
+if((ISPICKVAL(Issue_KPI__c,&quot;Policy Violation&quot;)),0.00,
+if( NOT(ISBLANK(Adapted_objective_Buyback__c)) ,Adapted_objective_Buyback__c,
+0)))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Rate - Objective to reach</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

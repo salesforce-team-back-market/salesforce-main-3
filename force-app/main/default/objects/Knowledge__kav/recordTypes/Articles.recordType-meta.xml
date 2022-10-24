@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Articles</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Knowledge_Compact_Layout</compactLayoutAssignment>
+    <description>Record Type used to write articles about Back Market.</description>
+    <label>Articles</label>
+</RecordType>

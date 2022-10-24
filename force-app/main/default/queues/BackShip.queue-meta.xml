@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>bot-salesforce-queue-aaaahs3ilwqfevgzzx5x6yo7jm@imperatorz.slack.com</email>
+    <name>BackShip</name>
+    <queueMembers>
+        <users>
+            <user>alex.bernard.ext@backmarket.com</user>
+            <user>brice.malbec.ext@backmarket.com</user>
+            <user>clement.dion@backmarket.com</user>
+            <user>cristian.fuentes.ext@backmarket.com</user>
+            <user>emmanuel.yawo.ext@backmarket.com</user>
+            <user>franck-frederic.yao.ext@backmarket.com</user>
+            <user>gabrielle.danabe.ext@backmarket.com</user>
+            <user>hugo.dugardin.ext@backmarket.com</user>
+            <user>ibrahim.coulibaly.ext@backmarket.com</user>
+            <user>jean.spilliart.ext@backmarket.com</user>
+            <user>jojo.kabengele.ext@backmarket.com</user>
+            <user>laurent.degreef@backmarket.com</user>
+            <user>mathilda.jaffre.ext@backmarket.com</user>
+            <user>neila.hikmi.ext@backmarket.com</user>
+            <user>paul.dubois-gance.ext@backmarket.com</user>
+            <user>siddharta.kanungu.ext@backmarket.com</user>
+            <user>thomas.cormier.ext@backmarket.com</user>
+            <user>yah.gnamien.ext@backmarket.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Default</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

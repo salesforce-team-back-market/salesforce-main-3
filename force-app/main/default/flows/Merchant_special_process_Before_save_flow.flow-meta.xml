@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <description>on creation and update</description>
+        <name>Assign_always_bizdev_AND_champion</name>
+        <label>Assign always bizdev AND champion</label>
+        <locationX>345</locationX>
+        <locationY>465</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.BizDev_for_Approval__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Merchant__r.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Decision_on_merchant_champion_manager</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>on creation</description>
+        <name>Assign_Manager_Buyback</name>
+        <label>Assign Manager Buyback</label>
+        <locationX>566</locationX>
+        <locationY>704</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Customer_Champion_Manager__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Merchant__r.Manager_Buyback__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>on creation</description>
+        <name>Assign_Manager_Sales</name>
+        <label>Assign Manager Sales</label>
+        <locationX>554</locationX>
+        <locationY>546</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Customer_Champion_Manager__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Merchant__r.Manager_Sales__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Decision_on_merchant_bizdev</name>
+        <label>Decision on merchant bizdev</label>
+        <locationX>169</locationX>
+        <locationY>469</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Merchant_owner_is_filled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.OwnerId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_always_bizdev_AND_champion</targetReference>
+            </connector>
+            <label>Merchant owner is filled</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_merchant_champion_manager</name>
+        <label>Decision on merchant champion manager</label>
+        <locationX>337</locationX>
+        <locationY>639</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Exit_Sales</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Exit__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Exit_US__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Manager_Sales</targetReference>
+            </connector>
+            <label>Exit Sales</label>
+        </rules>
+        <rules>
+            <name>Exit_Buyback</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Exit_buyback__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Manager_Buyback</targetReference>
+            </connector>
+            <label>Exit Buyback</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_user_bypass_flow</name>
+        <label>Decision on user bypass flow</label>
+        <locationX>168</locationX>
+        <locationY>296</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>USer_dont_bypass</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.ByPassFlow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_on_merchant_bizdev</targetReference>
+            </connector>
+            <label>USer dont bypass</label>
+        </rules>
+    </decisions>
+    <description>Exit process revamp</description>
+    <interviewLabel>Merchant special process - Before save flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Merchant special process - Before save flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Decision_on_user_bypass_flow</targetReference>
+        </connector>
+        <object>Merchant_Special_Process__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

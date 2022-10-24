@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NMO_Process_Compact_Layout</fullName>
+    <fields>Merchant__c</fields>
+    <fields>Back_Office_PK__c</fields>
+    <fields>Stage__c</fields>
+    <fields>BizDev__c</fields>
+    <label>N.M.O. Process Compact Layout</label>
+</CompactLayout>

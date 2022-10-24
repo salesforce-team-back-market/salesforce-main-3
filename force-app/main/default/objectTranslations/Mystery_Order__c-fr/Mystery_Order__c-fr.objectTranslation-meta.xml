@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mystery Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mystery Orders</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Mystery Order Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Motive and Result</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Order information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Related alerts</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Mystery_Order</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_AbortedMO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_ArchivedMO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_Checkdone</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_New_MO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_Ordermade</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_Refunded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_SUSPICIOUS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_Stage_Sent_back</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_Stage_StandBy</name>
+    </validationRules>
+</CustomObjectTranslation>

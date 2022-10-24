@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Validated Test</name>
+    <style>freeForm</style>
+    <subject>Back Market x {!Account.Name} - Questionnaire Qualité Reprise réussi !</subject>
+    <textOnly>Bonjour {!Contact.FirstName} !
+
+
+Merci d&apos;avoir pris le temps de répondre à notre questionnaire Qualité reprise. Comme expliqué en amont celui-ci nous permet de comprendre vos pratiques et de nous assurer que celle-ci sont en adéquation/accord avec notre Charte Qualité.
+
+Vous avez visiblement très bien compris la charte et j’ai le plaisir de vous annoncer que votre test a été validé !
+
+
+
+Avant toute chose, des rappels et informations supplémentaires :
+
+Les documents obligatoires pour déclencher un paiement sont le bon de cession signé et une copie de la pièce d’identité du client. Si jamais vous n&apos;avez pas reçu ces deux documents vous devez mettre en attente la commande et envoyer un message au client.
+La contre-proposition se doit d’être exceptionnelle et toujours justifiée, en effet, la contre proposition est toujours source de déception pour le client.
+En cas de refus de contre-proposition le renvoi de l’appareil doit être fait sous 48h ouvrées à réception du bon de retour fourni par le client.
+Un client a décrit son produit comme étant fonctionnel. A réception, la batterie est à 65% de sa capacité. Cela n’est pas un motif de contre offre. L’état de la batterie est à prendre en compte dans votre tarification. Certaines seront en excellent état, d’autres plus usées mais si le téléphone s’allume, elle est fonctionnelle.
+Vous réceptionnez un produit non fonctionnel alors qu&apos;il devrait être fonctionnel selon la déclaration du client. L’idéal serait de mener la transaction à son terme plutôt que d’annuler la reprise. Ce cas de figure est un bon motif de contre proposition. Celle-ci doit toujours être motivée et appuyée de justificatifs.
+Un colis est réceptionné vide. Tous les colis sont assurés par Back Market. Il faut alors prévenir votre QAM et lui fournir les éléments nécessaires à l’ouverture d’une enquête transporteur : attestation de non réception et pièce d&apos;identité. Nous faisons ensuite un retour au client une fois les pièces fournies.
+
+Pour rappel avant d&apos;être mis en ligne sur la partie reprise vous devez :
+
+Renseigner votre adresse et votre carte bancaire dans l’onglet « OPTIONS » de votre Back Office Reprise.
+Signer le mandat SEPA ci-après pour éviter les plafonds de paiement par carte : Mandat SEPA pour la Reprise Back Market
+Créer au moins 3 annonces dans l&apos;onglet &quot;Annonces&quot; de votre Back Office : Smartphones, Tablettes, Consoles.
+
+N&apos;hésitez pas à revenir vers moi si vous avez la moindre interrogation une fois les premières reprises parvenues. Une fois en ligne, votre Quality Account Manager - QAM qui est en copie de ce mail @, sera votre interlocuteur(trice) pour toutes les questions relatives aux SAV et plus globalement la qualité chez Back Market.
+
+
+
+Bien cordialement,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

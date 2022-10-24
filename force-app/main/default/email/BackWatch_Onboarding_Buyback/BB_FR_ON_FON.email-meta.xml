@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>BB.FR.ON.FON</name>
+    <style>freeForm</style>
+    <subject>Back Market. Il vous manque quelque chose {!Account.Name}.</subject>
+    <textOnly>Bonjour {!Contact.FirstName},
+
+
+A ce stade, vous devriez avoir presque tout complété pour commencer à vous sourcer sur Back Market. Mais nous constatons qu&apos;il vous manque encore quelques étapes.
+
+Avez-vous besoin d&apos;aide? Dans un délai maximum de 2 jours, vous commencerez à faire la reprise.
+
+
+
+Voici ce qu&apos;il vous manque:
+
+
+
+Votre Back Office (aller au processus)
+
+La description de la compagnie. (Mon Profil)
+
+Les informations de contact. (Mon Profil)
+
+
+Indiquez votre adresse pour les enlèvements et les retours. (Options)
+
+Enregistrez votre carte bancaire. (Options)
+
+Envoyez nous l&apos;autorisation de prélèvement SEPA
+
+Renseignez votre coût de déblocage opérateur. (Options)
+
+
+Créez vos annonces (aller au processus)
+
+Créez toutes vos annonces (smartphone, tablettes et consoles). (Options)
+
+
+Testez votre Qualité pour vous sourcer (aller au processus)
+
+Lisez la charte des bonnes conduites et son RÉSUMÉ.
+
+Passez Le test d&apos;onboarding. (P.K.: &lt;&lt;PK number&gt;&gt;)
+
+
+Une fois que vous avez complété les étapes manquantes, nous activerons votre compte et vous commencerez à vous sourcer auprès des particuliers.
+
+
+
+JE COMMENCE LA REPRISE SUR BACK MARKET
+
+
+
+Merci!
+
+L&apos;Équipe Back Market
+
+
+
+Si vous avez besoin que nous vous appelions, cliquez sur: Appelez-moi.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

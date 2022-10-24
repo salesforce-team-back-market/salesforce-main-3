@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recommended_Action_Plan__c</fullName>
+    <businessOwnerUser>ana.ordeig@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>Recommended Action Plan</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pricing Tool</fullName>
+                <default>false</default>
+                <label>Pricing Tool</label>
+            </value>
+            <value>
+                <fullName>Push Back Ship</fullName>
+                <default>false</default>
+                <label>Push Back Ship</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

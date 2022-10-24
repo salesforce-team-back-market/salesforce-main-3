@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Black_Friday_Opportunities</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Action__c</columns>
+    <columns>Total_Opportunity_Products__c</columns>
+    <columns>Opportunity_Products_KO__c</columns>
+    <columns>Opportunity_Products_OK__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Black Friday</value>
+    </filters>
+    <label>My Black Friday Opportunities</label>
+</ListView>

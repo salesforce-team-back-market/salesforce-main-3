@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Team__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( CONTAINS(  Owner__r.UserRole.Name , $UserRole.Name )  || ( Owner__r.Id == $User.Id ) ||  ( Manager__r.X18_Digit_ID__c == $User.Id ) , TRUE , FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>My Team</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

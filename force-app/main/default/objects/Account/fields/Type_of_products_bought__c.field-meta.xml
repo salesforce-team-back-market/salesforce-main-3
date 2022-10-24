@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_products_bought__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of products bought</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>All categories</fullName>
+                <default>false</default>
+                <label>All categories</label>
+            </value>
+            <value>
+                <fullName>Diversification</fullName>
+                <default>false</default>
+                <label>Diversification</label>
+            </value>
+            <value>
+                <fullName>Smartphones and Tablets only</fullName>
+                <default>false</default>
+                <label>Smartphones and Tablets only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

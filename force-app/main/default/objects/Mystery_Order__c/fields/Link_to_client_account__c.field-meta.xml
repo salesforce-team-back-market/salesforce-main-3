@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_to_client_account__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://www.backmarket.fr/bo_merchant/admin_tools/clients/?client_email=&amp;client_firstname=&amp;client_lastname=&amp;client_pk=&amp;client_state=&amp;country=&amp;date_end=&amp;date_start=&amp;date_type=creation&amp;gender=&amp;model=&amp;order_pk=&quot;+  Order_ID__c +&quot;&amp;page=None&amp;payment_id=&amp;phone=&amp;postal_code=&amp;sourcing_order_pk=&quot;, &quot;Click here&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Link to client account</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

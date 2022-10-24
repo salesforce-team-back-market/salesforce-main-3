@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BA_Strat_and_B_R_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>BA - Strat and B&amp;R</label>
+    <queue>BA_Strat_and_B_R</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

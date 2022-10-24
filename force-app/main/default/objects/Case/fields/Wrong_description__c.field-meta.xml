@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wrong_description__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Vous réceptionnez un produit non fonctionnel alors qu&apos;il devrait être fonctionnel selon la déclaration du client. Que faites-vous ?</inlineHelpText>
+    <label>Wrong description</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

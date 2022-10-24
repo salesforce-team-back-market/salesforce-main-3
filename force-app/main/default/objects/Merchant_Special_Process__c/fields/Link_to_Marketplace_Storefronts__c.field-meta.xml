@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_to_Marketplace_Storefronts__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>As you sell on other marketplaces, please provide links to your other storefronts:</inlineHelpText>
+    <label>Link to Marketplace Storefronts</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

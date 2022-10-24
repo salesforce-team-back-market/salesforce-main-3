@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Ongoing_MSP__c</fullName>
+    <externalId>false</externalId>
+    <label>Number of Ongoing MSP</label>
+    <summaryFilterItems>
+        <field>Merchant_Special_Process__c.Stage__c</field>
+        <operation>equals</operation>
+        <value>Pre-Exit Phase, Ongoing Notice Period</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Merchant_Special_Process__c.Merchant__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

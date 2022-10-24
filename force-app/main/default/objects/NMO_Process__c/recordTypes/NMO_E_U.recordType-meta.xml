@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NMO_E_U</fullName>
+    <active>true</active>
+    <label>NMO EU</label>
+    <picklistValues>
+        <picklist>BackCare_Stage__c</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deactivated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Connection__c</picklist>
+        <values>
+            <fullName>API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FTP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Values List%21</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Early_NMO_2__c</picklist>
+        <values>
+            <fullName>Moved to NMO 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Trigger</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FBBM_Stage__c</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deactivated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>False_Start__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_KPI__c</picklist>
+        <values>
+            <fullName>Accessories Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Cancellation %28Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Charter breaches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Counter-Proposal %28Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Late Processing rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Late Response rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Payment issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Pending Order rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Esthetic Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Compliance Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Delivery Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Response Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potential Hazardous Charger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Untracked Orders Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Product Rate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Klarna__c</picklist>
+        <values>
+            <fullName>Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NextStage__c</picklist>
+        <values>
+            <fullName>N%2EM%2EO%2E 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phase 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phase 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Phase_2_Limitation_update__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Phase_3_Limitation_update__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2EM%2EO%2E 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phase 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phase 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phase 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Supplier__c</picklist>
+        <values>
+            <fullName>Cubyn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linnworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Invaders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neteven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sellermania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shopping Flux</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tag__c</picklist>
+        <values>
+            <fullName>Black Sheep Hunt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transport_Stage__c</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deactivated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

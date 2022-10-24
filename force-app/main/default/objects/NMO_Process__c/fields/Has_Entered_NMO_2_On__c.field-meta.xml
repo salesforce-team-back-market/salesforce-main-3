@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Entered_NMO_2_On__c</fullName>
+    <description>This Field is used to know for how long an N.M.O. Process has entered the N.M.O. 2 Stage.</description>
+    <externalId>false</externalId>
+    <label>Has Entered N.M.O. 2 On</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

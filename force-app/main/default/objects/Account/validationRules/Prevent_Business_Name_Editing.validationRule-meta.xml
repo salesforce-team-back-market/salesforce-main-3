@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Business_Name_Editing</fullName>
+    <active>true</active>
+    <description>Prevent certain fields to be edited if the merchant was originally inputted from the Back-Office.</description>
+    <errorConditionFormula>AND ( ISPICKVAL ( Inputted_from__c, &quot;Back-Office&quot; ),
+OR(ISCHANGED( Back_Office_PK__c ),
+ISCHANGED(Name)),
+$User.ByPassValidationRules__c != true
+)</errorConditionFormula>
+    <errorMessage>Whoops, you are not able to edit Business Name or the P.K., because this merchant was created by Back Office.</errorMessage>
+</ValidationRule>

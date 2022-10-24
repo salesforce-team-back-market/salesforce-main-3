@@ -1,0 +1,8 @@
+Bonjour,
+
+Comme demandé, le remboursement partiel de {!Case.Amount_Refunded__c}€ a été effectué pour la commande {!Case.Order_ID__c}.
+
+Pensez à prévenir le client et à l'informer que la somme remboursée se trouve dans son portefeuille client sur l'interface Back Market.
+
+Bonne journée,
+L'équipe Back Market

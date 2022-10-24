@@ -1,0 +1,19 @@
+Hola {!Contact.FirstName},
+
+He sido alertado de nuevo que su tasa XXX aún no cumple, lamentablemente, el objetivo que se había fijado. Habíamos definido un plan de acción para reducir su tasa de "{!Alert__c.Issue_KPI__c}" a X% antes de {!Alert__c.ETA__c}.
+
+Desafortunadamente, esta situación le ha puesto en la fase de "última oportunidad" de nuestro periodo de seguimiento y sus ventas han sido limitadas. A partir de ahora, trabajaremos aún más duro en este KPI para levantar su limitación de ventas y asegurar una experiencia óptima para el cliente. 
+
+El objetivo sigue siendo el mismo (es decir, el X%) y debe ser alcanzado antes del final de este período de última oportunidad, es decir, antes de {!Alert__c.ETA__c}.
+
+Para ayudarle en esta tarea, adjunto a este correo electrónico la lista de solicitudes de posventa que han tenido un impacto negativo en su tarifa en los últimos 30 días.
+
+Aquí están las nuevas soluciones que puedo ofrecerles:
+
+
+
+
+Por supuesto, estoy disponible para discutir esto por teléfono y acompañarlo en su plan de acción.
+
+Le deseo un muy buen día,
+{{{Sender.Signature}}}

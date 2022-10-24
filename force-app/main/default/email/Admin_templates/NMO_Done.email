@@ -1,0 +1,9 @@
+Hi, {!Receiving_User.FirstName}!
+
+Your N.M.O. Process "{!NMO_Process__c.Name}" for the Merchant "{!NMO_Process__c.Merchant_Name__c}" has been {!ApprovalRequest.Status} Ended! 
+Record Type : {!NMO_Process__c.RecordType}
+
+Don't forget to increase the limitation to 50 :)
+
+Regards,
+Your Salesforce administrator

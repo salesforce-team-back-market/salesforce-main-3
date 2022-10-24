@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Cancelled_Exit</fullName>
+    <active>true</active>
+    <description>Only admin can move to cancelled</description>
+    <errorConditionFormula>AND (ISCHANGED( Stage__c ) ,
+ISPICKVAL(Stage__c, &apos;Cancelled&apos;),
+NOT(ISPICKVAL( Exemption_request__c , &apos;Duplicated Exit&apos;)),
+$Permission.Quality_Admin = false,
+NOT ( $User.ByPassValidationRules__c = true))</errorConditionFormula>
+    <errorMessage>Whoops, you are not able to cancel this exit process. Please ask for a Quality Exception.</errorMessage>
+</ValidationRule>

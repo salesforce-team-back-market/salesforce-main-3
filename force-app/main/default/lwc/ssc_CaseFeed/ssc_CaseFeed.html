@@ -1,0 +1,59 @@
+<!--
+  @description       : 
+  @author            : Martin Lezer
+  @group             : 
+  @last modified on  : 09-29-2022
+  @last modified by  : Martin Lezer
+-->
+<template>
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="12">
+            <lightning-layout multiple-rows class="case-comment-submission-container" vertical-align="end" horizontal-align="end">
+                <lightning-layout-item size="12">
+                    <lightning-textarea label={_.label_addComment}></lightning-textarea>
+                </lightning-layout-item>
+                <lightning-layout-item size="8"></lightning-layout-item>
+                <lightning-layout-item size="6">
+                    <lightning-file-upload
+                        label={_.label_addFile}
+                        name="fileUploader"
+                        record-id={recordId}
+                        onuploadfinished={handleUploadFinished}
+                        multiple
+                    ></lightning-file-upload>
+                </lightning-layout-item>
+                <lightning-layout-item size="1" class="align-right">
+                    <lightning-button variant="brand" label={_.label_save} onclick={handleNewComment} disabled={saveDisabled}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-layout-item>
+        <div class="case-feed-container">
+            <template for:each={displayedMessages} for:item="m">
+                <lightning-layout key={m.id}  horizontal-align="center">
+                    <lightning-layout-item size="1" class="align-right slds-p-top_large">
+                        <lightning-icon icon-name="action:email" if:true={m.isEmail}></lightning-icon>
+                        <lightning-icon icon-name="action:share_post" if:false={m.isEmail}></lightning-icon>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="11" class="slds-p-top_large">
+                        <lightning-layout multiple-rows horizontal-align="space">
+                            <lightning-layout-item size="12" padding="horizontal-large" class="slds-text-heading_small">
+                                {m.createdByName}
+                            </lightning-layout-item>
+                            <lightning-layout-item size="12" padding="horizontal-large" class="slds-text-heading_small slds-p-bottom_medium comment-date">
+                                <lightning-formatted-date-time value={m.createdDateTime} year="numeric" month="numeric" day="numeric" hour="2-digit" minute="2-digit"></lightning-formatted-date-time>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="12" padding="horizontal-large" class="slds-text-heading_small slds-p-bottom_medium">
+                                <lightning-formatted-rich-text value={m.body}></lightning-formatted-rich-text>
+                                <div class="slds-border_bottom slds-p-bottom_large"></div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </template>
+            
+            <div class="slds-align_absolute-center slds-p-bottom_large" if:true={hasMore}>
+                <lightning-button variant="brand-outline" label={_.label_showMore} onclick={handleShowMore} ></lightning-button>
+            </div>
+        </div>
+    </lightning-layout>
+</template>

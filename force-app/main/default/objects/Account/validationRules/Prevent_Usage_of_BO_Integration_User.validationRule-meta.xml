@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Usage_of_BO_Integration_User</fullName>
+    <active>true</active>
+    <description>Prevent BO Integration users from being used as Merchant Owner in stages other than Identification.</description>
+    <errorConditionFormula>AND (ISCHANGED(  OwnerId  ),
+NOT(ISPICKVAL( Stage__c ,  &apos;Identification&apos;)),
+  Owner.Username  = &quot;salesforce@backmarket.com&quot;)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Whoops, you are not able to add BO Integration user as Merchant Owner for this merchant.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subcategory__c</fullName>
+    <externalId>false</externalId>
+    <label>Subcategory</label>
+    <required>true</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Feedback_Subcategory</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Website</controllingFieldValue>
+            <valueName>Consumer Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consumer Website</controllingFieldValue>
+            <valueName>Shipping/Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Access Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Adoption</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Algorithm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Customer Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Exports</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Listings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Order Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Payments/Invoices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Promotions/Features</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Back Office</controllingFieldValue>
+            <valueName>Support/Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catalog</controllingFieldValue>
+            <valueName>Carrier Compatibility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catalog</controllingFieldValue>
+            <valueName>Listing Creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catalog</controllingFieldValue>
+            <valueName>Product Attributes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catalog</controllingFieldValue>
+            <valueName>Product Creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catalog</controllingFieldValue>
+            <valueName>Product Validation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catalog</controllingFieldValue>
+            <valueName>Re-matching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant Experience</controllingFieldValue>
+            <valueName>Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant Experience</controllingFieldValue>
+            <valueName>Education/Enablement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant Experience</controllingFieldValue>
+            <valueName>Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant Experience</controllingFieldValue>
+            <valueName>Feedback Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant Experience</controllingFieldValue>
+            <valueName>Merchant Onboarding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant Support</controllingFieldValue>
+            <valueName>FAQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant Support</controllingFieldValue>
+            <valueName>Integrations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant Support</controllingFieldValue>
+            <valueName>Merchant University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Merchant Support</controllingFieldValue>
+            <valueName>Seller Protections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Resources</controllingFieldValue>
+            <valueName>Case Studies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Resources</controllingFieldValue>
+            <valueName>Decks/One-Pagers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Resources</controllingFieldValue>
+            <valueName>Official Documents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Resources</controllingFieldValue>
+            <valueName>Technologies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Resources</controllingFieldValue>
+            <valueName>White Papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Accessories/Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Branded Packaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>BuyBack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Fulfillment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Grading/Kitting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Outsourced Customer Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Refurbishment/Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Shipping Rates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Commission Refunds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Deposits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>KYC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Merchant Payouts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Taxes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Account/Transaction Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Check Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Commission/Model</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Grading Scale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Lots</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Product Page</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Registration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Search and Navigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Seller Back Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mana</controllingFieldValue>
+            <valueName>Warranty/RRR</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

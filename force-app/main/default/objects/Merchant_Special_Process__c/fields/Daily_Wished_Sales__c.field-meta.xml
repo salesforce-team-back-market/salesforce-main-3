@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Daily_Wished_Sales__c</fullName>
+    <businessOwnerUser>arthur.veron@backmarket.com</businessOwnerUser>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <inlineHelpText>How many sales does the merchant want to do on Back Market each day?</inlineHelpText>
+    <label># of Daily wished sales</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-10</fullName>
+                <default>false</default>
+                <label>1-10</label>
+            </value>
+            <value>
+                <fullName>10-50</fullName>
+                <default>false</default>
+                <label>10-50</label>
+            </value>
+            <value>
+                <fullName>50-100</fullName>
+                <default>false</default>
+                <label>50-100</label>
+            </value>
+            <value>
+                <fullName>100-300</fullName>
+                <default>false</default>
+                <label>100-300</label>
+            </value>
+            <value>
+                <fullName>300-500</fullName>
+                <default>false</default>
+                <label>300-500</label>
+            </value>
+            <value>
+                <fullName>500-1000</fullName>
+                <default>false</default>
+                <label>500-1000</label>
+            </value>
+            <value>
+                <fullName>&gt; 1000</fullName>
+                <default>false</default>
+                <label>&gt; 1000</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

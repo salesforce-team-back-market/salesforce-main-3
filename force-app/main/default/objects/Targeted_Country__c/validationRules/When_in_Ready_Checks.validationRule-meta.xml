@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_in_Ready_Checks</fullName>
+    <active>false</active>
+    <description>Makes sure that every criteria that made the record eligible to Ready Online Status are not altered.
+29/07 - deletion of the test on customer champion</description>
+    <errorConditionFormula>NOT ( Force__c ) 
+&amp;&amp; 
+AND ( 
+	AND ( ISPICKVAL ( Online_Status__c, &quot;Ready&quot; ), 
+		  ISPICKVAL ( PRIORVALUE ( Online_Status__c ) , &quot;Ready&quot; ) 
+		 )
+	, 
+	OR (  
+		 AND( Back_Care__c = FALSE, 
+			  NOT ( ISPICKVAL ( Language_proficiency_test__c, &quot;Accepted&quot; ) ),
+			  NOT(Native_Speaker__c)
+			),
+		 AND( Back_Care__c = TRUE, 
+			  ISPICKVAL ( Language_proficiency_test__c, &quot;Accepted&quot; ),
+			  NOT(Native_Speaker__c)
+			)
+		 ) 
+	)
+&amp;&amp; NOT($RecordType.DeveloperName=&quot;U_S&quot;)
+&amp;&amp; $User.ByPassValidationRules__c !=true</errorConditionFormula>
+    <errorMessage>To stay in Ready Online Status, a Targeted Country record must have either Language Proficiency Test or Back Care checked (not both or none).</errorMessage>
+</ValidationRule>

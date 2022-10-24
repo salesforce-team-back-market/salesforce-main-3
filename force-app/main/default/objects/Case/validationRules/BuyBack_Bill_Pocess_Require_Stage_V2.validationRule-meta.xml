@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BuyBack_Bill_Pocess_Require_Stage_V2</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT( $User.ByPassValidationRules__c ),
+RecordType.DeveloperName =&quot;BuyBack_Bill_Process_V2&quot;,
+NOT(ISPICKVAL(Account.Stage__c ,&quot;N.M.O.&quot;)),
+NOT(ISPICKVAL(Account.Stage__c ,&quot;Run&quot;)),
+NOT(ISPICKVAL(Account.Stage__c ,&quot;Offline&quot;)),
+AND(NOT( BypassVR__c ), NOT( PRIORVALUE(BypassVR__c) ))
+)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>In order to be able to create this case, your merchant needs to be in NMO, Run or Offline stage.</errorMessage>
+</ValidationRule>

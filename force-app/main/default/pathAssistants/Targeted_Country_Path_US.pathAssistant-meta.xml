@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Targeted_Country__c</entityName>
+    <fieldName>Online_Status__c</fieldName>
+    <masterLabel>Targeted Country Path US</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;To move to the next stage, please select a Customer Champion for that country and mark the stage as complete.﻿&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Candidate</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Calibri; font-size: 11pt;&quot;&gt;- If the merchant is in onboarding: the Targeted Country will automatically be &amp;#39;Live&amp;#39; once the Head Of NewBiz validates the onboarding process&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Calibri; font-size: 11pt;&quot;&gt;- If the merchant is in NMO: ask the Head Of to move directly the Targeted Country to the &amp;#39;Live&amp;#39; stage&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Calibri; font-size: 11pt;&quot;&gt;- If the merchant is already in &amp;#39;Run&amp;#39;: now that the stage is &amp;#39;Ready&amp;#39;, a NMO XBorder has been created. Ask the Head Of AM to approve the NMO XBorder, and the Targeted Country will automatically be &amp;#39;Live&amp;#39;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Ready</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>U_S</recordTypeName>
+</PathAssistant>

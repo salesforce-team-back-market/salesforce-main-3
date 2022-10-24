@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Language Test Path</masterLabel>
+    <recordTypeName>Quality_Test_Language_test</recordTypeName>
+</PathAssistant>

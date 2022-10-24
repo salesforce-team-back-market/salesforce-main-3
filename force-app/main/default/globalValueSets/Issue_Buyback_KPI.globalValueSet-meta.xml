@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Average number of messages / order</fullName>
+        <default>false</default>
+        <label>Average number of messages / order</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancellation_rate_functional</fullName>
+        <default>false</default>
+        <label>Cancellation rate (functional)</label>
+    </customValue>
+    <customValue>
+        <fullName>counter_offer_rate_functional</fullName>
+        <default>false</default>
+        <label>Counter-offer rate (functional)</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Compliance with Quality Charter</fullName>
+        <default>false</default>
+        <label>Non Compliance with Quality Charter</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment_rate</fullName>
+        <default>false</default>
+        <label>Payment rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending orders rate</fullName>
+        <default>false</default>
+        <label>Pending orders rate</label>
+    </customValue>
+    <customValue>
+        <fullName>processing_time_functional</fullName>
+        <default>false</default>
+        <label>Processing time (functional)</label>
+    </customValue>
+    <customValue>
+        <fullName>processing_time_non_functional</fullName>
+        <default>false</default>
+        <label>Processing time (non-functional)</label>
+    </customValue>
+    <customValue>
+        <fullName>Response time</fullName>
+        <default>false</default>
+        <label>Response time</label>
+    </customValue>
+    <customValue>
+        <fullName>Unprocessed_order_rate_D2</fullName>
+        <default>false</default>
+        <label>Unprocessed order rate D+2</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancellation rate (non-functional)</fullName>
+        <default>false</default>
+        <label>Cancellation rate (non-functional)</label>
+    </customValue>
+    <customValue>
+        <fullName>counter_offer_rate_non_functional</fullName>
+        <default>false</default>
+        <label>Counter-offer rate (non-functional)</label>
+    </customValue>
+    <masterLabel>Issue Buyback - KPI</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

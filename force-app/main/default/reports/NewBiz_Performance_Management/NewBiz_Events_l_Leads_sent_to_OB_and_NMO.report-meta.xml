@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Back_Office_PK__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Prioritization_Tag__c</field>
+    </columns>
+    <columns>
+        <field>Account.Stage__c</field>
+    </columns>
+    <columns>
+        <field>Account.Previous_BizDev__c</field>
+    </columns>
+    <columns>
+        <field>Account.Date_entry_in_stage_Onboarding__c</field>
+    </columns>
+    <columns>
+        <field>Account.Date_entry_in_stage_NMO__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Prioritization_Tag__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Audio Event - Q2 2021,Computer &amp; Co Event - Q2 2021,Small Appliances Event - Q2 2021,Tools &amp; Gardening Event - Q2 2021,Operation Dynamo - Q2 2021,Operation Amazon Renewed - Q2 2021,Operation Return of the Mac - Q2 2021,Operation Replug of the Living Dead - Q2 2021,Tier 1 Event - Q2 2021</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Stage__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Onboarding,N.M.O.,Run</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>NewBiz Events l Leads sent to OB and NMO</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

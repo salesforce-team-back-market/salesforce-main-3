@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>salesforce-team@backmarket.com</email>
+    <name>Salesforce Team</name>
+    <queueMembers>
+        <users>
+            <user>dorotea.lalovic@backmarket.com</user>
+            <user>joelma.kine@backmarket.com</user>
+            <user>lea.preuilh@backmarket.com</user>
+            <user>santosh.panda@backmarket.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

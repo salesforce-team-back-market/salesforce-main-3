@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Update_to_Saved</fullName>
+    <active>true</active>
+    <description>This rule checks the requirements for moving the stage of the record to Saved.</description>
+    <errorConditionFormula>AND ( 
+ISCHANGED( Stage__c ) ,
+ISPICKVAL( Stage__c ,&quot;Saved&quot;),
+NOT ( Is_Locked__c = TRUE ) ,
+$User.Email &lt;&gt; &quot;jinyu.han@backmarket.com&quot;,
+$User.Email &lt;&gt; &quot;melanie.chen.ext@backmarket.com&quot;,
+$User.Email &lt;&gt; &quot;dorotea.lalovic@backmarket.com&quot;,
+
+$User.ByPassValidationRules__c != true,
+RecordType.DeveloperName &lt;&gt; &quot;NMO_E_U_buyback&quot;
+)</errorConditionFormula>
+    <errorMessage>Whoops, the stage can only be updated by approving a pending approval process.</errorMessage>
+</ValidationRule>

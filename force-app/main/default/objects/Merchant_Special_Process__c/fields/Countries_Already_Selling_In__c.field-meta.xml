@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Countries_Already_Selling_In__c</fullName>
+    <businessOwnerUser>arthur.veron@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <inlineHelpText>Which countries does the merchant already sell in?</inlineHelpText>
+    <label>Countries Already Selling In</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Country_Picklist</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

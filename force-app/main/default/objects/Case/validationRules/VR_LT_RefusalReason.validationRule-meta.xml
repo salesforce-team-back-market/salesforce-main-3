@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_LT_RefusalReason</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Quality_Test_Language_test&apos;
+&amp;&amp; ISCHANGED( Stage__c )
+&amp;&amp; ISPICKVAL(Stage__c, &apos;Refused&apos;)
+&amp;&amp; ISBLANK( Language_Test_Refusal_reason__c )</errorConditionFormula>
+    <errorDisplayField>Language_Test_Refusal_reason__c</errorDisplayField>
+    <errorMessage>Please detail why the Language Test is refused</errorMessage>
+</ValidationRule>

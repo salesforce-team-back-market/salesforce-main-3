@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Comment_for_Not_Interested_Stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Stage__c ,&quot;Not Interested&quot;),
+ISBLANK( Comment__c ))</errorConditionFormula>
+    <errorDisplayField>Comment__c</errorDisplayField>
+    <errorMessage>Please add comment explaining why the merchant is Not Interested in the particular service.</errorMessage>
+</ValidationRule>

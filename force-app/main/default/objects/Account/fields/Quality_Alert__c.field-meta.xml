@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quality_Alert__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>if( TECH_Defective__c = TRUE, TRUE , if(  TECH_Late_responses__c  = TRUE, TRUE ,if(  TECH_CSAT__c  = TRUE, TRUE ,if(  TECH_Wrong__c  = TRUE, TRUE ,if(  TECH_Accessories__c  = TRUE, TRUE ,if(  TECH_Cancellation__c  = TRUE, TRUE , FALSE))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Quality Alert</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

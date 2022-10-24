@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_PreventUpdating_SubStage_Quality</fullName>
+    <active>false</active>
+    <description>Prevent moving from sub-stage Draft exemption without an approval process</description>
+    <errorConditionFormula>AND (
+ISCHANGED( Sub_stage__c ),
+ISPICKVAL(PRIORVALUE(Sub_stage__c), &apos;Draft exemption&apos;),
+NOT(ISCHANGED( Exemption__c )))
+&amp;&amp;
+$User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorMessage>Whooops, sub-stage can only be updated by Quality Team through an Approval Process.</errorMessage>
+</ValidationRule>

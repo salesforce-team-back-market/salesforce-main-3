@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Anticipate departure on vacation</fullName>
+        <default>false</default>
+        <label>Anticipate departure on vacation</label>
+    </customValue>
+    <customValue>
+        <fullName>Apply stricter changing screen eligibility criteria</fullName>
+        <default>false</default>
+        <label>Apply stricter changing screen eligibility criteria</label>
+    </customValue>
+    <customValue>
+        <fullName>BackPack - strong packaging to prevent product damage</fullName>
+        <default>false</default>
+        <label>BackPack - strong packaging to prevent product damage</label>
+    </customValue>
+    <customValue>
+        <fullName>BUYBACK ORDER PAGE - Answer all orders on &quot;Pending customers&quot; tab</fullName>
+        <default>false</default>
+        <label>BUYBACK ORDER PAGE - Answer all orders on &quot;Pending customers&quot; tab</label>
+    </customValue>
+    <customValue>
+        <fullName>BUYBACK ORDER PAGE - Process orders on &quot;New order&quot; tab</fullName>
+        <default>false</default>
+        <label>BUYBACK ORDER PAGE - Process orders on &quot;New order&quot; tab</label>
+    </customValue>
+    <customValue>
+        <fullName>Change Carrier</fullName>
+        <default>false</default>
+        <label>Change Carrier</label>
+    </customValue>
+    <customValue>
+        <fullName>Change delivery delay in the BO</fullName>
+        <default>false</default>
+        <label>Change delivery delay in the BO</label>
+    </customValue>
+    <customValue>
+        <fullName>Change for a carrier well integrated</fullName>
+        <default>false</default>
+        <label>Change for a carrier well integrated</label>
+    </customValue>
+    <customValue>
+        <fullName>Change internal process to reduce preparation time</fullName>
+        <default>false</default>
+        <label>Change internal process to reduce preparation time</label>
+    </customValue>
+    <customValue>
+        <fullName>Change internal process to reduce processing time</fullName>
+        <default>false</default>
+        <label>Change internal process to reduce processing time</label>
+    </customValue>
+    <customValue>
+        <fullName>Correct Integrators issue</fullName>
+        <default>false</default>
+        <label>Correct Integrators issue</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMER SUPPORT - Answer all customer messages even messages like &quot;Thanks&quot;</fullName>
+        <default>false</default>
+        <label>CUSTOMER SUPPORT - Answer all customer messages even messages like &quot;Thanks&quot;</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMER SUPPORT - Be reactive on email notifications</fullName>
+        <default>false</default>
+        <label>CUSTOMER SUPPORT - Be reactive on email notifications</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMER SUPPORT - Clarify message when putting an order on hold</fullName>
+        <default>false</default>
+        <label>CUSTOMER SUPPORT - Clarify message when putting an order on hold</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMER SUPPORT - Provide a user guide in packaging</fullName>
+        <default>false</default>
+        <label>CUSTOMER SUPPORT - Provide a user guide in packaging</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMER SUPPORT - Provide Blancco report for functional CPs</fullName>
+        <default>false</default>
+        <label>CUSTOMER SUPPORT - Provide Blancco report for functional CPs</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMER SUPPORT - Provide photos for esthetical CPs</fullName>
+        <default>false</default>
+        <label>CUSTOMER SUPPORT - Provide photos for esthetical CPs</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMER SUPPORT - Send reminders to customer / Call customer</fullName>
+        <default>false</default>
+        <label>CUSTOMER SUPPORT - Send reminders to customer / Call customer</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMER SUPPORT - Share costs</fullName>
+        <default>false</default>
+        <label>CUSTOMER SUPPORT - Share costs</label>
+    </customValue>
+    <customValue>
+        <fullName>Fill in tracking information on time (within 5 days after order creation)</fullName>
+        <default>false</default>
+        <label>Fill in tracking information on time (within 5 days after order creation)</label>
+    </customValue>
+    <customValue>
+        <fullName>Get coaching on the Charter requirements</fullName>
+        <default>false</default>
+        <label>Get coaching on the Charter requirements</label>
+    </customValue>
+    <customValue>
+        <fullName>Improve catalog matching</fullName>
+        <default>false</default>
+        <label>Improve catalog matching</label>
+    </customValue>
+    <customValue>
+        <fullName>Improve product description information</fullName>
+        <default>false</default>
+        <label>Improve product description information</label>
+    </customValue>
+    <customValue>
+        <fullName>INNOVATION LAB - Organize innovation lab coaching session</fullName>
+        <default>false</default>
+        <label>INNOVATION LAB - Organize innovation lab coaching session</label>
+    </customValue>
+    <customValue>
+        <fullName>INNOVATION LAB - Share innovation lab content (articles, guides, etc)</fullName>
+        <default>false</default>
+        <label>INNOVATION LAB - Share innovation lab content (articles, guides, etc)</label>
+    </customValue>
+    <customValue>
+        <fullName>LISTING - Adapt daily limitation of Buyback orders depending on process capacity</fullName>
+        <default>false</default>
+        <label>LISTING - Adapt daily limitation of Buyback orders depending on process capacity</label>
+    </customValue>
+    <customValue>
+        <fullName>LISTING - Adjust grading depending on repair abilities</fullName>
+        <default>false</default>
+        <label>LISTING - Adjust grading depending on repair abilities</label>
+    </customValue>
+    <customValue>
+        <fullName>LISTING - Stop listing flop cancelled products</fullName>
+        <default>false</default>
+        <label>LISTING - Stop listing flop cancelled products</label>
+    </customValue>
+    <customValue>
+        <fullName>LISTING - Stop listing flop Counter offer products</fullName>
+        <default>false</default>
+        <label>LISTING - Stop listing flop Counter offer products</label>
+    </customValue>
+    <customValue>
+        <fullName>LISTING - Take into account Battery risk</fullName>
+        <default>false</default>
+        <label>LISTING - Take into account Battery risk</label>
+    </customValue>
+    <customValue>
+        <fullName>OFFER - Other</fullName>
+        <default>false</default>
+        <label>OFFER - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>OFFER - Review product selling destination</fullName>
+        <default>false</default>
+        <label>OFFER - Review product selling destination</label>
+    </customValue>
+    <customValue>
+        <fullName>OFFER - Stop listing flop defective products</fullName>
+        <default>false</default>
+        <label>OFFER - Stop listing flop defective products</label>
+    </customValue>
+    <customValue>
+        <fullName>Organize regular pick up</fullName>
+        <default>false</default>
+        <label>Organize regular pick up</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>OTHER</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER - Use BackPack to prevent product damage during transport</fullName>
+        <default>false</default>
+        <label>OTHER - Use BackPack to prevent product damage during transport</label>
+    </customValue>
+    <customValue>
+        <fullName>PRICING - Adjust prices of listings based on previously received products</fullName>
+        <default>false</default>
+        <label>PRICING - Adjust prices of listings based on previously received products</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALITY CONTROL - Other</fullName>
+        <default>false</default>
+        <label>QUALITY CONTROL - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALITY CONTROL - SOFTWARE - Use Blancco</fullName>
+        <default>false</default>
+        <label>QUALITY CONTROL - SOFTWARE - Use Blancco</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALITY CONTROL - SOFTWARE - Use other testing solution</fullName>
+        <default>false</default>
+        <label>QUALITY CONTROL - SOFTWARE - Use other testing solution</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALITY CONTROL - SOFTWARE - Use Phonecheck</fullName>
+        <default>false</default>
+        <label>QUALITY CONTROL - SOFTWARE - Use Phonecheck</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALITY CONTROL - Update / add quality control tests</fullName>
+        <default>false</default>
+        <label>QUALITY CONTROL - Update / add quality control tests</label>
+    </customValue>
+    <customValue>
+        <fullName>Review product selling destination</fullName>
+        <default>false</default>
+        <label>Review product selling destination</label>
+    </customValue>
+    <customValue>
+        <fullName>ROOT CAUSE INVESTIGATION - Other</fullName>
+        <default>false</default>
+        <label>ROOT CAUSE INVESTIGATION - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>ROOT CAUSE INVESTIGATION - Run a Technical Audit (by innovation lab)</fullName>
+        <default>false</default>
+        <label>ROOT CAUSE INVESTIGATION - Run a Technical Audit (by innovation lab)</label>
+    </customValue>
+    <customValue>
+        <fullName>ROOT CAUSE INVESTIGATION - Run internal diagnosis</fullName>
+        <default>false</default>
+        <label>ROOT CAUSE INVESTIGATION - Run internal diagnosis</label>
+    </customValue>
+    <customValue>
+        <fullName>ROOT CAUSE INVESTIGATION - Set up production tracability process</fullName>
+        <default>false</default>
+        <label>ROOT CAUSE INVESTIGATION - Set up production tracability process</label>
+    </customValue>
+    <customValue>
+        <fullName>ROOT CAUSE INVESTIGATION - Use GateKeeper</fullName>
+        <default>false</default>
+        <label>ROOT CAUSE INVESTIGATION - Use GateKeeper</label>
+    </customValue>
+    <customValue>
+        <fullName>Send correct tracking information (invalid tracking number/carrier)</fullName>
+        <default>false</default>
+        <label>Send correct tracking information (invalid tracking number/carrier)</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipp the order with the tracking number initially provided</fullName>
+        <default>false</default>
+        <label>Shipp the order with the tracking number initially provided</label>
+    </customValue>
+    <customValue>
+        <fullName>SOURCING - COMPONENT - Order from BackPart</fullName>
+        <default>false</default>
+        <label>SOURCING - COMPONENT - Order from BackPart</label>
+    </customValue>
+    <customValue>
+        <fullName>SOURCING - COMPONENT - Qualify new supplier (Battery, Motherboard, Screen, buttons, etc.)</fullName>
+        <default>false</default>
+        <label>SOURCING - COMPONENT - Qualify new supplier (Battery, Motherboard, Screen, buttons, etc.)</label>
+    </customValue>
+    <customValue>
+        <fullName>SOURCING - DEVICES - Get supply from Mana</fullName>
+        <default>false</default>
+        <label>SOURCING - DEVICES - Get supply from Mana</label>
+    </customValue>
+    <customValue>
+        <fullName>SOURCING - DEVICES - Qualify new vendor</fullName>
+        <default>false</default>
+        <label>SOURCING - DEVICES - Qualify new vendor</label>
+    </customValue>
+    <customValue>
+        <fullName>SOURCING - DEVICES - Review sourcing requirements</fullName>
+        <default>false</default>
+        <label>SOURCING - DEVICES - Review sourcing requirements</label>
+    </customValue>
+    <customValue>
+        <fullName>SOURCING - Other</fullName>
+        <default>false</default>
+        <label>SOURCING - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>SOURCING - Qualify new supplier - Network</fullName>
+        <default>false</default>
+        <label>SOURCING - Qualify new supplier - Network</label>
+    </customValue>
+    <customValue>
+        <fullName>Strengthen control of packaging content prior to shipment</fullName>
+        <default>false</default>
+        <label>Strengthen control of packaging content prior to shipment</label>
+    </customValue>
+    <customValue>
+        <fullName>TECHNICAL PRACTICES - Other</fullName>
+        <default>false</default>
+        <label>TECHNICAL PRACTICES - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>TECHNICAL PRACTICES - Use ESD protections</fullName>
+        <default>false</default>
+        <label>TECHNICAL PRACTICES - Use ESD protections</label>
+    </customValue>
+    <customValue>
+        <fullName>Use / improve templates to answer SAV</fullName>
+        <default>false</default>
+        <label>Use / improve templates to answer SAV</label>
+    </customValue>
+    <customValue>
+        <fullName>Use an Express delivery option</fullName>
+        <default>false</default>
+        <label>Use an Express delivery option</label>
+    </customValue>
+    <customValue>
+        <fullName>Use BackCare</fullName>
+        <default>false</default>
+        <label>Use BackCare</label>
+    </customValue>
+    <customValue>
+        <fullName>Use BackRepair</fullName>
+        <default>false</default>
+        <label>Use BackRepair</label>
+    </customValue>
+    <customValue>
+        <fullName>Use BackShip</fullName>
+        <default>false</default>
+        <label>Use BackShip</label>
+    </customValue>
+    <customValue>
+        <fullName>Use conservating grading in case of doubt</fullName>
+        <default>false</default>
+        <label>Use conservating grading in case of doubt</label>
+    </customValue>
+    <customValue>
+        <fullName>Use FBBM</fullName>
+        <default>false</default>
+        <label>Use FBBM</label>
+    </customValue>
+    <customValue>
+        <fullName>Use FBBM to outsource stock &amp; shipping management</fullName>
+        <default>false</default>
+        <label>Use FBBM to outsource stock &amp; shipping management</label>
+    </customValue>
+    <customValue>
+        <fullName>Use grading toolkit</fullName>
+        <default>false</default>
+        <label>Use grading toolkit</label>
+    </customValue>
+    <customValue>
+        <fullName>Use integrator</fullName>
+        <default>false</default>
+        <label>Use integrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Remind the Quality Charter</fullName>
+        <default>false</default>
+        <label>Remind the Quality Charter</label>
+    </customValue>
+    <customValue>
+        <fullName>Review Quality control tests</fullName>
+        <default>false</default>
+        <label>Review Quality control tests</label>
+    </customValue>
+    <customValue>
+        <fullName>Improve Refurbishment processes</fullName>
+        <default>false</default>
+        <label>Improve Refurbishment processes</label>
+    </customValue>
+    <customValue>
+        <fullName>Improve Quality of parcel/accessories</fullName>
+        <default>false</default>
+        <label>Improve Quality of parcel/accessories</label>
+    </customValue>
+    <customValue>
+        <fullName>Use BackCoach</fullName>
+        <default>false</default>
+        <label>Use BackCoach</label>
+    </customValue>
+    <customValue>
+        <fullName>Use Agnosys training MacBook</fullName>
+        <default>false</default>
+        <label>Use Agnosys training MacBook</label>
+    </customValue>
+    <customValue>
+        <fullName>Use Agnosys training iPhones</fullName>
+        <default>false</default>
+        <label>Use Agnosys training iPhones</label>
+    </customValue>
+    <customValue>
+        <fullName>Use BackParts</fullName>
+        <default>false</default>
+        <label>Use BackParts</label>
+    </customValue>
+    <masterLabel>MP/LC Action Plan</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

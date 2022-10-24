@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Plan_s_pushed__c</fullName>
+    <businessOwnerUser>oceane.dufour@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>Action Plan(s) pushed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Issue_KPI__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>MP_LC_Action_Plan</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Late Processing rate</controllingFieldValue>
+            <valueName>Anticipate departure on vacation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Late Processing rate</controllingFieldValue>
+            <valueName>BUYBACK ORDER PAGE - Process orders on &quot;New order&quot; tab</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Late Processing rate</controllingFieldValue>
+            <controllingFieldValue>Late Delivery Rate</controllingFieldValue>
+            <valueName>Change internal process to reduce preparation time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Late Processing rate</controllingFieldValue>
+            <valueName>Change internal process to reduce processing time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Late Processing rate</controllingFieldValue>
+            <valueName>LISTING - Adapt daily limitation of Buyback orders depending on process capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Late Response rate</controllingFieldValue>
+            <valueName>BUYBACK ORDER PAGE - Answer all orders on &quot;Pending customers&quot; tab</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Late Response rate</controllingFieldValue>
+            <valueName>CUSTOMER SUPPORT - Answer all customer messages even messages like &quot;Thanks&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Late Response rate</controllingFieldValue>
+            <valueName>CUSTOMER SUPPORT - Be reactive on email notifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Untracked Orders Rate</controllingFieldValue>
+            <valueName>Change for a carrier well integrated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Untracked Orders Rate</controllingFieldValue>
+            <valueName>Correct Integrators issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Untracked Orders Rate</controllingFieldValue>
+            <valueName>Fill in tracking information on time (within 5 days after order creation)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Untracked Orders Rate</controllingFieldValue>
+            <valueName>Send correct tracking information (invalid tracking number/carrier)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Untracked Orders Rate</controllingFieldValue>
+            <valueName>Shipp the order with the tracking number initially provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Untracked Orders Rate</controllingFieldValue>
+            <controllingFieldValue>Late Delivery Rate</controllingFieldValue>
+            <valueName>Use BackShip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Untracked Orders Rate</controllingFieldValue>
+            <valueName>Use FBBM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Late Delivery Rate</controllingFieldValue>
+            <valueName>Change Carrier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Late Delivery Rate</controllingFieldValue>
+            <valueName>Change delivery delay in the BO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Late Delivery Rate</controllingFieldValue>
+            <valueName>Organize regular pick up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Late Delivery Rate</controllingFieldValue>
+            <valueName>Use an Express delivery option</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Late Delivery Rate</controllingFieldValue>
+            <controllingFieldValue>Cancellation Rate</controllingFieldValue>
+            <valueName>Use FBBM to outsource stock &amp; shipping management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Late Response Rate</controllingFieldValue>
+            <controllingFieldValue>CSAT</controllingFieldValue>
+            <valueName>Use BackCare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mystery Order</controllingFieldValue>
+            <valueName>Remind the Quality Charter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mystery Order</controllingFieldValue>
+            <valueName>Review Quality control tests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mystery Order</controllingFieldValue>
+            <valueName>Improve Refurbishment processes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mystery Order</controllingFieldValue>
+            <valueName>Improve Quality of parcel/accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Pending Order rate</controllingFieldValue>
+            <valueName>CUSTOMER SUPPORT - Clarify message when putting an order on hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Pending Order rate</controllingFieldValue>
+            <valueName>CUSTOMER SUPPORT - Send reminders to customer / Call customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accessories Rate</controllingFieldValue>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>CUSTOMER SUPPORT - Provide a user guide in packaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accessories Rate</controllingFieldValue>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>SOURCING - COMPONENT - Order from BackPart</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accessories Rate</controllingFieldValue>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>SOURCING - COMPONENT - Qualify new supplier (Battery, Motherboard, Screen, buttons, etc.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Cancellation (Functional) rate</controllingFieldValue>
+            <valueName>CUSTOMER SUPPORT - Provide Blancco report for functional CPs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Cancellation (Functional) rate</controllingFieldValue>
+            <valueName>CUSTOMER SUPPORT - Provide photos for esthetical CPs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Cancellation (Functional) rate</controllingFieldValue>
+            <valueName>CUSTOMER SUPPORT - Share costs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Cancellation (Functional) rate</controllingFieldValue>
+            <valueName>LISTING - Stop listing flop cancelled products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Counter-Proposal (Functional) rate</controllingFieldValue>
+            <controllingFieldValue>Buyback - Counter-Proposal (Non Functional) rate</controllingFieldValue>
+            <valueName>LISTING - Adjust grading depending on repair abilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Counter-Proposal (Functional) rate</controllingFieldValue>
+            <controllingFieldValue>Buyback - Counter-Proposal (Non Functional) rate</controllingFieldValue>
+            <valueName>LISTING - Stop listing flop Counter offer products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Counter-Proposal (Functional) rate</controllingFieldValue>
+            <controllingFieldValue>Buyback - Counter-Proposal (Non Functional) rate</controllingFieldValue>
+            <valueName>LISTING - Take into account Battery risk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Buyback - Counter-Proposal (Functional) rate</controllingFieldValue>
+            <controllingFieldValue>Buyback - Counter-Proposal (Non Functional) rate</controllingFieldValue>
+            <valueName>PRICING - Adjust prices of listings based on previously received products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSAT</controllingFieldValue>
+            <valueName>Get coaching on the Charter requirements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSAT</controllingFieldValue>
+            <valueName>Use / improve templates to answer SAV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSAT</controllingFieldValue>
+            <valueName>Use BackRepair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>INNOVATION LAB - Organize innovation lab coaching session</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>INNOVATION LAB - Share innovation lab content (articles, guides, etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>OFFER - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>OFFER - Review product selling destination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>OFFER - Stop listing flop defective products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>OTHER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>OTHER - Use BackPack to prevent product damage during transport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>QUALITY CONTROL - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>QUALITY CONTROL - SOFTWARE - Use Blancco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>QUALITY CONTROL - SOFTWARE - Use other testing solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>QUALITY CONTROL - SOFTWARE - Use Phonecheck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>QUALITY CONTROL - Update / add quality control tests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>ROOT CAUSE INVESTIGATION - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>ROOT CAUSE INVESTIGATION - Run a Technical Audit (by innovation lab)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>ROOT CAUSE INVESTIGATION - Run internal diagnosis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>ROOT CAUSE INVESTIGATION - Set up production tracability process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>ROOT CAUSE INVESTIGATION - Use GateKeeper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>SOURCING - DEVICES - Get supply from Mana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>SOURCING - DEVICES - Qualify new vendor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>SOURCING - DEVICES - Review sourcing requirements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>SOURCING - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>SOURCING - Qualify new supplier - Network</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>TECHNICAL PRACTICES - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defective Rate</controllingFieldValue>
+            <valueName>TECHNICAL PRACTICES - Use ESD protections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Esthetic Rate</controllingFieldValue>
+            <valueName>Apply stricter changing screen eligibility criteria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Esthetic Rate</controllingFieldValue>
+            <valueName>BackPack - strong packaging to prevent product damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Esthetic Rate</controllingFieldValue>
+            <valueName>Use conservating grading in case of doubt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Esthetic Rate</controllingFieldValue>
+            <valueName>Use grading toolkit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wrong Product Rate</controllingFieldValue>
+            <valueName>Improve catalog matching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wrong Product Rate</controllingFieldValue>
+            <valueName>Improve product description information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wrong Product Rate</controllingFieldValue>
+            <valueName>Review product selling destination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wrong Product Rate</controllingFieldValue>
+            <valueName>Strengthen control of packaging content prior to shipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancellation Rate</controllingFieldValue>
+            <valueName>Use integrator</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

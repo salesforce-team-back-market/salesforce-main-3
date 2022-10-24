@@ -1,0 +1,18 @@
+Hello {!Contact.FirstName},
+
+I contact you to inform you that we have placed a mystery order on your shop.
+
+The purpose is to randomly check the products sold on our platform.
+
+It is with great pleasure that I announce that you have passed the test with flying colors. Indeed, we are delighted with the quality of the products and service offered to Back Market customers.
+
+We observed a few small points that could be improved in order to offer an even more exceptional service and products:
+-
+-
+
+We inform you that other mystery orders may be placed during the year.
+
+Of course, I remain at your disposal if you have any questions or need help.
+
+Have a good day,
+{!User.Name}

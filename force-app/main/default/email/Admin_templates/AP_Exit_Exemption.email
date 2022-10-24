@@ -1,0 +1,13 @@
+Hello,
+
+An approval process has been triggered and assigned to you. Here are more information:
+- Merchant : {!Merchant_Special_Process__c.Merchant__c}
+- Merchant Owner : {!Merchant_Special_Process__c.BizDev_for_Approval__c}
+- Reason for exemption : {!Merchant_Special_Process__c.Exemption_request__c}
+- Comment : {!Merchant_Special_Process__c.Additional_notes__c}
+
+To approve or reject this item, click this link : {!ApprovalRequest.Internal_URL}
+Find more information within the Exit record.
+
+Have a great day,
+Salesforce Team

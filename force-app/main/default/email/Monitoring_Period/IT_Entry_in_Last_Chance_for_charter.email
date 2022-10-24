@@ -1,0 +1,19 @@
+Salve {!Contact.FirstName},
+
+Sono stato avvertito che siete entrati nella fase "Ultima possibilità" del nostro periodo di monitoraggio per il mancato rispetto della nostra Carta di qualità. Avevamo definito un piano d'azione da mettere in atto per soddisfare i nostri standard di qualità specificati nella nostra Carta.
+
+Purtroppo la situazione non è migliorata, quindi siete entrati nella fase "Ultima possibilità" del nostro periodo di monitoraggio e le vostre vendite sono state limitate. D'ora in poi, ci impegneremo ancora di più per essere pienamente conformi, al fine di eliminare i vostri limiti di vendita e garantire un'esperienza ottimale al cliente. 
+
+L'obiettivo rimane lo stesso e deve essere raggiunto prima della fine di questo periodo di Ultima Possibilità, cioè prima del {!Alert__c.ETA__c}.
+
+Per aiutarvi in questo compito, ecco i fattori che di solito portano a questo:
+SAV ###
+SAV ##
+SAV ##
+
+Come dettagliato nella nostra carta della qualità, è imperativo ... (scrivere ciò che la carta richiede)
+
+Naturalmente, rimango a disposizione per discuterne faccia a faccia e accompagnarvi nel vostro piano d'azione.
+
+Buona giornata,
+{{{Sender.Signature}}}

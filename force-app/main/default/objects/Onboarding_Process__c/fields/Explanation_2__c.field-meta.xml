@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Explanation_2__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <defaultValue>(&apos;Approve = &quot;Go-live Prerequisites&quot; / Reject = Stay in &quot;Quality prerequisites&quot;&apos;)</defaultValue>
+    <externalId>false</externalId>
+    <label>From Quality to Go Live prerequisites</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

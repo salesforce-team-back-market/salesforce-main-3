@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Skipping_Stages_from_RUN</fullName>
+    <active>true</active>
+    <description>Prevent changing stage from Run to any other but Offline.</description>
+    <errorConditionFormula>AND ($User.ByPassValidationRules__c != true,
+( AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Run&quot; ),
+ISPICKVAL ( Stage__c,&quot;Identification&quot; )
+) || AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Run&quot; ),
+ISPICKVAL ( Stage__c,&quot;First-contact&quot; )
+) || AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Run&quot; ),
+ISPICKVAL ( Stage__c,&quot;Negotiation&quot; )
+) || AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Run&quot; ),
+ISPICKVAL ( Stage__c,&quot;Onboarding&quot; )
+) || AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Run&quot; ),
+ISPICKVAL ( Stage__c,&quot;N.M.O.&quot; )
+) || AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Run&quot; ),
+ISPICKVAL ( Stage__c,&quot;Future partnership&quot; )
+) || AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;Run&quot; ),
+ISPICKVAL ( Stage__c,&quot;Not relevant&quot; ))
+	)
+)</errorConditionFormula>
+    <errorMessage>Whoops, you can&apos;t skip the stages. You can only change the stage of this merchant to Offline.</errorMessage>
+</ValidationRule>

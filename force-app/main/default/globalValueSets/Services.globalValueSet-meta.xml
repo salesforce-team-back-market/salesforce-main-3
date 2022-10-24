@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Back Care</fullName>
+        <default>false</default>
+        <label>Back Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Back Ship</fullName>
+        <default>false</default>
+        <label>Back Ship</label>
+    </customValue>
+    <customValue>
+        <fullName>FBBM</fullName>
+        <default>false</default>
+        <label>FBBM</label>
+    </customValue>
+    <customValue>
+        <fullName>Back Repair</fullName>
+        <default>false</default>
+        <label>Back Repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Back Parts</fullName>
+        <default>false</default>
+        <label>Back Parts</label>
+    </customValue>
+    <customValue>
+        <fullName>Back Pack</fullName>
+        <default>false</default>
+        <label>Back Pack</label>
+    </customValue>
+    <customValue>
+        <fullName>RAAS</fullName>
+        <default>false</default>
+        <label>RAAS</label>
+    </customValue>
+    <customValue>
+        <fullName>Mana</fullName>
+        <default>false</default>
+        <label>Mana</label>
+    </customValue>
+    <masterLabel>Services</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

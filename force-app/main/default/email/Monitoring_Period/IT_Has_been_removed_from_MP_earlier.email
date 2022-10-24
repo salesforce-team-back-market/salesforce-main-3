@@ -1,0 +1,17 @@
+Salve  {!Contact.FirstName},
+
+Avete ricevuto un'e-mail automatica che vi informa di aver inserito il periodo di monitoraggio/ "Ultima possibilità" del nostro periodo di monitoraggio.
+È stato attivato un processo automatico perché il vostro tasso "{!Alert__c.Issue_KPI__c}" è superiore alle nostre soglie di allarme.
+
+Per le seguenti ragioni, ho deciso di rimuoverla da questo programma per questo stesso KPI: 
+
+
+
+
+
+Ho fiducia nel piano d'azione che avete già messo in atto e continuerò a monitorare i vostri KPI per assicurarmi che scendano al di sotto delle nostre soglie di allerta.
+
+Naturalmente, rimango disponibile a discuterne al telefono e ad accompagnarvi nel vostro piano d'azione.
+
+Vi auguro una buona giornata,
+{{{Sender.Signature}}}

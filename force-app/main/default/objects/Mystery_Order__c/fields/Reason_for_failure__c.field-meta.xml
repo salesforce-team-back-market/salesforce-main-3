@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_failure__c</fullName>
+    <businessOwnerUser>oceane.dufour@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>Reason for failure</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Leaflet with incentivization to bypass Back Market platform / Flyer avec incitation à contourner la plateforme Back Market</fullName>
+                <default>false</default>
+                <label>Leaflet with incentivization to bypass Back Market platform / Flyer avec incitation à contourner la plateforme Back Market</label>
+            </value>
+            <value>
+                <fullName>Package is a counterfeit / L&apos;emballage est une contrefaçon</fullName>
+                <default>false</default>
+                <label>Package is a counterfeit / L&apos;emballage est une contrefaçon</label>
+            </value>
+            <value>
+                <fullName>Device prohibited for sales / Produit interdit à la vente</fullName>
+                <default>false</default>
+                <label>Device prohibited for sales / Produit interdit à la vente</label>
+            </value>
+            <value>
+                <fullName>Device stolen / Produit déclaré volé</fullName>
+                <default>false</default>
+                <label>Device stolen / Produit déclaré volé</label>
+            </value>
+            <value>
+                <fullName>Device locked / Produit verrouillé</fullName>
+                <default>false</default>
+                <label>Device locked / Produit verrouillé</label>
+            </value>
+            <value>
+                <fullName>Device does not turn on (despite full charge) / Le produit ne s&apos;allume pas (malgré charge complète)</fullName>
+                <default>false</default>
+                <label>Device does not turn on (despite full charge) / Le produit ne s&apos;allume pas (malgré charge complète)</label>
+            </value>
+            <value>
+                <fullName>Data breach (user data not erased) / Infraction données (données utilisateur non effacées)</fullName>
+                <default>false</default>
+                <label>Data breach (user data not erased) / Infraction données (données utilisateur non effacées)</label>
+            </value>
+            <value>
+                <fullName>Uncompatible Network / Incompatibilité réseaux</fullName>
+                <default>false</default>
+                <label>Uncompatible Network / Incompatibilité réseaux</label>
+            </value>
+            <value>
+                <fullName>Charger not conform / Chargeur non conforme</fullName>
+                <default>false</default>
+                <label>Charger not conform / Chargeur non conforme</label>
+            </value>
+            <value>
+                <fullName>Charger not provided / Chargeur non fourni</fullName>
+                <default>false</default>
+                <label>Charger not provided / Chargeur non fourni</label>
+            </value>
+            <value>
+                <fullName>Blancco Tests Failed / Echec des tests Blancco</fullName>
+                <default>false</default>
+                <label>Blancco Tests Failed / Echec des tests Blancco</label>
+            </value>
+            <value>
+                <fullName>Battery Requirements not conformed / Non conformité aux critères de batterie</fullName>
+                <default>false</default>
+                <label>Battery Requirements not conformed / Non conformité aux critères de batterie</label>
+            </value>
+            <value>
+                <fullName>Poor Quality Assembly / Mauvaise qualité d&apos;assemblage</fullName>
+                <default>false</default>
+                <label>Poor Quality Assembly / Mauvaise qualité d&apos;assemblage</label>
+            </value>
+            <value>
+                <fullName>Insufficient score (cumulated errors) / Score insuffisant (cumul d&apos;erreurs)</fullName>
+                <default>false</default>
+                <label>Insufficient score (cumulated errors) / Score insuffisant (cumul d&apos;erreurs)</label>
+            </value>
+            <value>
+                <fullName>Device damaged / Produit endommagé</fullName>
+                <default>false</default>
+                <label>Device damaged / Produit endommagé</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

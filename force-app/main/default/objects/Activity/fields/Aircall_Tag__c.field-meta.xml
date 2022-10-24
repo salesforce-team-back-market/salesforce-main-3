@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aircall_Tag__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS(LOWER(CallDisposition), &apos;find contact&apos;),&apos;Find Contact&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;qualification + pitch&apos;),&apos;Qualification + Pitch&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;services + quality intro&apos;),&apos;Services + Quality Intro&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;bo + kycs&apos;),&apos;BO + KYCs&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;quality test feedback&apos;),&apos;Quality Test Feedback&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;payments + invoicing + services&apos;),&apos;Payments + Invoicing + Services&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;bo + product creation + quality or buybox&apos;),&apos;BO + Product Creation + Quality or Buybox&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;go live&apos;),&apos;Go Live&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;sales + products&apos;),&apos;Sales + Products&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;market/industry data&apos;),&apos;Market/Industry Data&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;quality dashboard&apos;),&apos;Quality Dashboard&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;services + shipping&apos;),&apos;Services + Shipping&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;intro to qam&apos;),&apos;Intro to QAM&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;n.m.o phase 2&apos;),&apos;N.M.O Phase 2&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;support│business&apos;),&apos;Support|Business&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;support|catalogue&apos;),&apos;Support|Catalogue&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;support|quality&apos;),&apos;Support|Quality&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;support|services&apos;),&apos;Support|Services&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;support|finance&apos;),&apos;Support|Finance&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;support|technical&apos;),&apos;Support|Technical&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;no answer&apos;),&apos;No Answer&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;voicemail&apos;),&apos;Voicemail&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;not available&apos;),&apos;Not available&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;request call back&apos;),&apos;Request Call back&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;request email&apos;),&apos;Request Email&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;no answer&apos;),&apos;No Answer&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;nmo│run&apos;),&apos;NMO│Run&apos;,
+IF(CONTAINS(LOWER(CallDisposition), &apos;nmo│exit&apos;),&apos;NMO│Exit&apos;,
+
+&apos;No Tag&apos;
+))))))))))))))))))))))))))))</formula>
+    <label>Aircall Tag</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_UK_Live</fullName>
+    <active>true</active>
+    <description>UK TC can go live only if KYB Adyen = accepted</description>
+    <errorConditionFormula>AND (
+$User.ByPassValidationRules__c != true,
+ISCHANGED(Online_Status__c ),
+ISPICKVAL (  Online_Status__c , &quot;Live&quot; ),
+ISPICKVAL( Country__c , &apos;United Kingdom&apos;),
+NOT(ISPICKVAL (  KYBs_Adyen__c , &quot;Accepted&quot; )))</errorConditionFormula>
+    <errorMessage>Whoops, KYB Adyen need to be accepted to push the TC Live.</errorMessage>
+</ValidationRule>

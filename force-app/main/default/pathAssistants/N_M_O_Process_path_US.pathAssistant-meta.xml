@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>NMO_Process__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>N.M.O Process path US</masterLabel>
+    <pathAssistantSteps>
+        <picklistValueName>N.M.O. 2</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Phase 1</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Phase 2</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>NMO_U_S</recordTypeName>
+</PathAssistant>

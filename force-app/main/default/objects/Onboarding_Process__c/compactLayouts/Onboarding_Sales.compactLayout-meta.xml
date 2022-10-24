@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onboarding_Sales</fullName>
+    <fields>Merchant__c</fields>
+    <fields>Back_Office_P_K__c</fields>
+    <fields>Has_Begun_On__c</fields>
+    <fields>Profile__c</fields>
+    <fields>Global_completion_rate__c</fields>
+    <label>Onboarding Sales</label>
+</CompactLayout>

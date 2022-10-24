@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_ReUpdate_Limitation_Fields</fullName>
+    <active>true</active>
+    <description>This VR will prevent users from updating limitation fields when the value is already equal to Accepted or Refused</description>
+    <errorConditionFormula>AND(ischanged( Phase_2_Limitation_update__c) ,
+OR (
+ISPICKVAL(PRIORVALUE( Phase_2_Limitation_update__c), &quot;Accepted&quot;), 
+ISPICKVAL(PRIORVALUE( Phase_2_Limitation_update__c), &quot;Refused&quot;)
+
+))
+
+ || 
+
+AND(ischanged( Phase_3_Limitation_update__c) ,
+OR (
+ISPICKVAL(PRIORVALUE( Phase_3_Limitation_update__c), &quot;Accepted&quot;), 
+ISPICKVAL(PRIORVALUE( Phase_3_Limitation_update__c), &quot;Refused&quot;)
+
+))
+
+&amp;&amp; $User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorMessage>Whooops, this function has already been used and can be used only once per stage.</errorMessage>
+</ValidationRule>

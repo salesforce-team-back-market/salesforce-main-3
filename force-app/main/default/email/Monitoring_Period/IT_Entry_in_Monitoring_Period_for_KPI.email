@@ -1,0 +1,29 @@
+Buongiorno {!Contact.FirstName},
+
+Dopo aver ricevuto un avviso in merito alla tua performance qualitativa, in particolare riguardo l’indice "{!Alert__c.Issue_KPI__c}" che recentemente è aumentato, entri oggi in un periodo di monitoraggio. Vorrei rivedere la situazione con te per trovare una soluzione favorevole ed evitare che le tue vendite ne risentano eccessivamente.
+
+Di seguito puoi vedere l'evoluzione dell’indice negli ultimi 30 giorni:
+
+***SCHERMATA DEL DASHBOARD***
+
+Le cause principali di questo aumento sembrano essere le seguenti:
+
+
+
+
+
+In allegato troverai anche l'elenco dei relativi reclami.
+
+In seguito a questa osservazione, inizieremo un periodo di sostegno destinato a permetterti di migliorare la tua performance su questo indice a lungo termine. Questo inizia con un piano d'azione appropriato da concordare insieme. Ecco le soluzioni che possano esserti utili:
+
+
+
+
+
+
+L'obiettivo è quello di ridurre l’indice da "{!Alert__c.Issue_KPI__c}" a X% prima del {!Alert__c.ETA__c}.
+
+Naturalmente, rimango a disposizione per discuterne e per accompagnarti sull’implementazione del piano d’azione, sul quale attendo un tuo riscontro in merito alle tempistiche di implementazione dei cambiamenti che metterai in atto per migliorare la tua performance.
+
+Ti auguro una buona giornata,
+{{{Sender.Signature}}}

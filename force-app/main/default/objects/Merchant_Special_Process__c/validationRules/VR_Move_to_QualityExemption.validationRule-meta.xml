@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Move_to_QualityExemption</fullName>
+    <active>true</active>
+    <description>You need to populate certain fields to ask for Quality Exemption</description>
+    <errorConditionFormula>AND( ISCHANGED(Sub_stage__c ),
+ISPICKVAL (Sub_stage__c, &apos;Draft exemption&apos;),
+OR(ISPICKVAL ( Reason_for_exit__c, &apos;&apos; ),
+ISPICKVAL ( Exit_sub_reason__c, &apos;&apos; ),
+ISPICKVAL (  Triggered_by__c , &apos;&apos; ),
+ISPICKVAL ( Exemption_request__c , &apos;&apos;),
+ISNULL ( Additional_notes__c )
+)
+)</errorConditionFormula>
+    <errorMessage>Please populate mandatory fields to change sub-stage:
+- Exit main reason
+- Exit sub reason
+- Triggered by
+- Exemption request
+- Additional notes</errorMessage>
+</ValidationRule>

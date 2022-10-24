@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Cancellation__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>if( NOT(ISPICKVAL(Merchant__r.Stage__c,&quot;N.M.O.&quot;)),
+CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Cases_Cancellation__c &gt;= VALUE($Label.QualityCaseCancellation ) &amp;&amp; Cancellations__c &gt;= VALUE($Label.QualityRateCancellation ), 1, 0 )
+,
+&apos;U_S&apos;,
+IF( Cases_Cancellation__c&gt;= VALUE($Label.QualityCaseCancellationUS) &amp;&amp; Cancellations__c &gt;= VALUE($Label.QualityRateCancellationUS) , 1, 0),
+0
+)
+,
+CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Cases_Cancellation__c &gt;= VALUE($Label.QualityCaseCancellation_NMO) &amp;&amp; Cancellations__c &gt;= VALUE($Label.QualityRateCancellation_NMO), 1, 0 )
+,
+&apos;U_S&apos;,
+IF( Cases_Cancellation__c&gt;= VALUE($Label.QualityCaseCancellationUS_NMO) &amp;&amp; Cancellations__c &gt;= VALUE($Label.QualityRateCancellationUS_NMO) , 1, 0),
+0
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH Cancellation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

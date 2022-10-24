@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Back_Office_PK__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.X18_Digit_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.API_FTP_integration__c</field>
+    </columns>
+    <columns>
+        <field>Account.BizDev__c</field>
+    </columns>
+    <columns>
+        <field>Account.Previous_BizDev__c</field>
+    </columns>
+    <columns>
+        <field>Account.Zone__c</field>
+    </columns>
+    <description>** Warning ** There are duplicates in here that some may not both be using Shopping Feed. Must cross reference the duplicates with the CSVs from Anthony D.</description>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>Account.Back_Office_PK__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>56,74,6650,6631,180,2359,3631,79,691,495,795,20,2512,713,214,2400,1627,4110,68,688,976,5886,1698,826,421,2600,71,6630,397</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Zone__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>en-us,jp-jp</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Global PKs Using Shopping Feed</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

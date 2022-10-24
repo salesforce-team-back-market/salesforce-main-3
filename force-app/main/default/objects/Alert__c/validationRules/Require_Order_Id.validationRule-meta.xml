@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Order_Id</fullName>
+    <active>true</active>
+    <description>Require Order Id for Severe Issue Record Type.</description>
+    <errorConditionFormula>AND (ISNEW() ,
+ RecordType.DeveloperName = &quot;Severe_Issue&quot;,
+  ISBLANK( Order_IDs__c )
+)</errorConditionFormula>
+    <errorDisplayField>Order_IDs__c</errorDisplayField>
+    <errorMessage>Please add Order Id to this alert.</errorMessage>
+</ValidationRule>

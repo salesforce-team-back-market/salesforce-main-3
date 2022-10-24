@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mana_Service</fullName>
+    <fields>RecordTypeId</fields>
+    <fields>Business_Name__c</fields>
+    <fields>Buyer__c</fields>
+    <fields>Days_in_Current_Status_Buyer__c</fields>
+    <fields>Seller__c</fields>
+    <fields>Days_in_Current_Status_Seller__c</fields>
+    <label>Mana Service</label>
+</CompactLayout>

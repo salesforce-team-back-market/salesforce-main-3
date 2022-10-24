@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limit_Run_OngoingSalesAlerts</fullName>
+    <active>false</active>
+    <description>You can&apos;t push a country live when the merchant has an ongoing Monitoring Period</description>
+    <errorConditionFormula>AND((ISCHANGED( Online_Status__c )), (ISPICKVAL(Online_Status__c, &apos;Live&apos;)),
+
+AND (ISPICKVAL(Merchant__r.Stage__c , &apos;Run&apos;)),
+
+AND ( Merchant__r.Rollup_Sales_alerts__c &gt; 0))
+
+&amp;&amp; $User.ByPassValidationRules__c !=true</errorConditionFormula>
+    <errorMessage>You can&apos;t push a country live when the merchant has an ongoing Monitoring Period</errorMessage>
+</ValidationRule>

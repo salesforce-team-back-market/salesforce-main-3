@@ -1,0 +1,21 @@
+Bonjour {!Contact.FirstName},
+
+Je viens d’être alerté sur votre entrée en période de monitoring concernant le non-respect de notre charte. Je tenais à faire le point avec vous afin de trouver une issue favorable et pour éviter que vos ventes ne soient trop impactées. 
+
+Voici les facteurs qui en sont généralement à l'origine :
+
+SAV ###
+SAV ###
+SAV ###
+
+Suite à ce constat, nous allons entamer une période d'accompagnement privilégié qui devrait vous permettre de répondre à nos standards de qualité détaillés dans notre charte qualité. Cela commence naturellement par un plan d'action adéquat à convenir ensemble. Voici les solutions qui, selon moi, devraient vous être utiles :
+
+
+
+
+L'objectif fixé est de commencer à répondre à nos standards de qualité et maintenir le plan d’action jusqu’au {!Alert__c.ETA__c}.
+
+Je reste bien entendu disponible pour en discuter de vive voix et vous accompagner dans votre plan d’action.
+
+Très belle journée,
+{{{Sender.Signature}}}

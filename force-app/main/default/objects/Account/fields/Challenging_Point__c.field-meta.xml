@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Challenging_Point__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Sales challenging point.</inlineHelpText>
+    <label>Challenging Point</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Master_Challenging_Point__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Challenging_points</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Contacting &amp; Communication Issues</controllingFieldValue>
+            <valueName>Asked not to be contacted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contacting &amp; Communication Issues</controllingFieldValue>
+            <valueName>Don&apos;t speak English</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contacting &amp; Communication Issues</controllingFieldValue>
+            <valueName>No answer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contacting &amp; Communication Issues</controllingFieldValue>
+            <valueName>Not qualified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contacting &amp; Communication Issues</controllingFieldValue>
+            <valueName>Contact issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business and Quality Challenges</controllingFieldValue>
+            <valueName>Different business model</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business and Quality Challenges</controllingFieldValue>
+            <valueName>Disagreement w/ T&amp;C or quality charter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business and Quality Challenges</controllingFieldValue>
+            <valueName>Other priorities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business and Quality Challenges</controllingFieldValue>
+            <valueName>Cost structure / Commission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Need Services</controllingFieldValue>
+            <valueName>No resources for customer care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Need Services</controllingFieldValue>
+            <valueName>Logistics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Need Services</controllingFieldValue>
+            <valueName>Need sourcing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Need Services</controllingFieldValue>
+            <valueName>Integration / Product creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>KYCs not validated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>Long Onboarding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>Not Enough Offer for Activation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>Onboarding KO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>SOL KO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Onboarding</controllingFieldValue>
+            <valueName>Blacklisted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BackWatch Potential</controllingFieldValue>
+            <valueName>Potential for Backwatch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not in our Current Strategy</controllingFieldValue>
+            <valueName>Only buyback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not in our Current Strategy</controllingFieldValue>
+            <valueName>Only new products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not in our Current Strategy</controllingFieldValue>
+            <valueName>Only repairs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not in our Current Strategy</controllingFieldValue>
+            <valueName>Self-entrepreneur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not in our Current Strategy</controllingFieldValue>
+            <valueName>Spare parts seller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not in our Current Strategy</controllingFieldValue>
+            <valueName>Only new categories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not in our Current Strategy</controllingFieldValue>
+            <valueName>Not current product focus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not in our Current Strategy</controllingFieldValue>
+            <valueName>Not enough offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Relevant Account</controllingFieldValue>
+            <valueName>Duplicate Accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Relevant Account</controllingFieldValue>
+            <valueName>Not relevant account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Relevant Account</controllingFieldValue>
+            <valueName>Wrong Back-Office BM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Relevant for Back Market</controllingFieldValue>
+            <valueName>Blacklisted merchant by BM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Relevant for Back Market</controllingFieldValue>
+            <valueName>Nowhere to be found</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Relevant for Back Market</controllingFieldValue>
+            <valueName>Closed down</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Relevant for Back Market</controllingFieldValue>
+            <valueName>Not selling refurbished products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Relevant for Back Market</controllingFieldValue>
+            <valueName>Private seller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Relevant for Back Market</controllingFieldValue>
+            <valueName>Too small for Back Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>NMO - False start</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+Hello,
+
+As requested, a partial refund of {!Case.Amount_Refunded__c}€ has been made for the order {!Case.Order_ID__c}.
+
+Remember to inform the client that the refunded amount is available in his wallet on the Back Market interface.
+
+Have a nice day,
+The Back Market Team

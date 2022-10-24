@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Deactivated</fullName>
+        <default>false</default>
+        <label>Deactivated</label>
+    </customValue>
+    <customValue>
+        <fullName>Negotiation</fullName>
+        <default>false</default>
+        <label>Negotiation</label>
+    </customValue>
+    <customValue>
+        <fullName>Activated</fullName>
+        <default>false</default>
+        <label>Activated</label>
+    </customValue>
+    <description>Stages used by Paypal Score process in the Targeted Country Object and Buyback, BackCare, F.B.B.M. and Transport in N.M.O. Process.</description>
+    <masterLabel>Back Market Services Stages</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

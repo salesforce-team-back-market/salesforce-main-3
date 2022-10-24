@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Contact</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISBLANK( Contact__c ),
+ISPICKVAL( Stage__c ,&quot;Merchant OK&quot;),
+ISPICKVAL ( Type__c ,&quot;Push BackRepair&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Contact__c</errorDisplayField>
+    <errorMessage>Please add Contact you want to send Back Repair contract for signature to.</errorMessage>
+</ValidationRule>

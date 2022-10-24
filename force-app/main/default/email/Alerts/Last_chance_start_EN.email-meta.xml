@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Last chance start (EN)</name>
+    <style>freeForm</style>
+    <subject>{!Alert__c.P_K__c} - {!Alert__c.Business_Name__c} - Monitoring period - Last chance</subject>
+    <textOnly>Hello  {!Alert___c.Business_Name__c},
+
+
+
+Unfortunately, since we last reached out about the {!Alert__c.Issue_KPI__c} rate, the situation has not improved. Therefore, your account is now in the “last chance” of the monitoring period, in accordance with article 12 of our T&amp;Cs.
+
+
+
+The purpose of this “last chance” is to give you a final opportunity to improve your metrics and to reach the previously communicated objective in order to comply with our quality standards established in the Quality Charter and T&amp;Cs.
+
+
+
+During this period, there will be a limit placed on your account of around {!Account.Limitation_to_apply_in_Last_Chance__c} sales per day (i.e. approximately 30% of the volume of the sales made on average over the last 30 days).
+
+We highly encourage you to work with your Back Market contact to monitor progress over the next month and reach out for any clarification. For more information about monitoring period thresholds, please check the Merchant Support Center.
+
+
+
+In the event that the {!Alert__c.Issue_KPI__c} rate does not improve before the aforementioned date, we will be obligated to close your account with our platform, as provided for under articles 12 and 18.2 of the T&amp;Cs.
+
+
+
+We wholeheartedly hope that it will not come to that and are available to address any questions.
+
+
+
+Sincerely,
+
+
+Back Market</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

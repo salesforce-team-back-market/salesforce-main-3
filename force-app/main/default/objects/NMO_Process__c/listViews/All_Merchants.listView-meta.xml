@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Merchants</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>Kanban_Card_Link__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Has_Begun_On__c</columns>
+    <columns>LAST_ACTIVITY</columns>
+    <columns>Sales_objective_reached_in_Phase_3__c</columns>
+    <columns>BizDev__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Back_Watch_Granted__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Unlimited_granted__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Has_Failed_NMO_2__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>All Merchants in Launching Phase</label>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Users_for_editing_Grade</fullName>
+    <active>true</active>
+    <description>This action is only allowed for the Black Friday Opportunities.</description>
+    <errorConditionFormula>AND(
+NOT(CONTAINS( Opportunity.Name ,&quot;Black Friday&quot;)),
+ISCHANGED(Grade__c ))</errorConditionFormula>
+    <errorDisplayField>Grade__c</errorDisplayField>
+    <errorMessage>You can&apos;t change the Grade for this opportunity.</errorMessage>
+</ValidationRule>

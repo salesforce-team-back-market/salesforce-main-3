@@ -1,0 +1,29 @@
+Hallo {!Contact.FirstName},
+
+Ich wurde auf Ihre "{!Alert__c.Issue_KPI__c}"-Rate aufmerksam gemacht, die kürzlich gestiegen ist und was zum Eintritt in eine Beobachtungsphase geführt hat. Ich möchte die Situation mit Ihnen überprüfen, um eine gute Lösung zu finden und zu verhindern, dass Ihre Verkäufe zu stark beeinträchtigt werden. 
+
+Nachstehend sehen Sie die Entwicklung der Rate in den letzten 30 Tagen:
+
+***DASHBOARD-SCREENSHOT***
+
+Die folgenden Gründe scheinen die Hauptursachen für diese Erhöhung zu sein:
+
+
+
+
+
+
+Im Anhang finden Sie auch eine Liste mit den betroffenen Kundenreklamationen.
+
+Durch Ihren Eintritt in die Beobachtungsphase möchten wir Sie speziell jetzt gerne näher betreuen, um Ihre Leistung bei dieser Kennzahl langfristig zu verbessern. Dies beginnt mit einem entsprechenden Aktionsplan, der gemeinsam vereinbart wird. Hier sind die Lösungen, von denen ich glaube, dass sie für Sie nützlich sein werden:
+
+
+
+
+
+Das Ziel besteht darin, die Quote vor dem {!Alert__c.ETA__c} von "{!Alert__c.Issue_KPI__c}" auf X% zu senken.
+
+Selbstverständlich stehe ich Ihnen weiterhin zur Verfügung, auch um dies telefonisch zu besprechen und Sie bei Ihrem Aktionsplan zu unterstützen.
+
+Ich wünsche Ihnen einen schönen Tag,
+{{{Sender.Signature}}}

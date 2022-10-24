@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Stage_Change_to_Saved</fullName>
+    <active>true</active>
+    <description>Prevent users from moving the stage to Saved if the Invoice is not compliant.</description>
+    <errorConditionFormula>AND (  RecordType.DeveloperName = &apos;Invoice_Compliance_Audit&apos;,
+ISCHANGED( Stage__c ),
+Ispickval(Stage__c, &apos;Saved&apos;),
+Invoice_Audit_Status__c = &quot;Non Compliant&quot;)</errorConditionFormula>
+    <errorDisplayField>Stage__c</errorDisplayField>
+    <errorMessage>Whoops, you are not able to change the stage to Saved because the Invoice is not compliant.</errorMessage>
+</ValidationRule>

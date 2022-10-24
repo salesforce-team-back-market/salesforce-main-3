@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending</fullName>
+                <color>#FFFF66</color>
+                <default>true</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Negotiation</fullName>
+                <color>#AFCADF</color>
+                <default>false</default>
+                <label>Negotiation</label>
+            </value>
+            <value>
+                <fullName>Merchant OK</fullName>
+                <color>#57F17C</color>
+                <default>false</default>
+                <label>Merchant OK</label>
+            </value>
+            <value>
+                <fullName>Merchant KO</fullName>
+                <color>#FF6666</color>
+                <default>false</default>
+                <label>Merchant KO</label>
+            </value>
+            <value>
+                <fullName>No Action by Due Date</fullName>
+                <color>#FF9966</color>
+                <default>false</default>
+                <label>No Action by Due Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

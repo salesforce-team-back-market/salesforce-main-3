@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Audit_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Critical_error_on_the_invoice__c = TRUE, &quot;Non Compliant&quot;,
+
+
+IF(
+OR(
+
+AND( Business_Name__r.RecordType.DeveloperName  =&quot;E_U&quot;, ISPICKVAL( VAT_Type__c ,&quot;Marginal&quot;), Merchant_information__c =TRUE, Customer_information__c =TRUE, Number_of_the_invoice__c =TRUE, Date_of_the_invoice__c =TRUE, VAT_Regiment_details__c =TRUE),
+
+AND(Business_Name__r.RecordType.DeveloperName  =&quot;E_U&quot;, NOT(ISPICKVAL( VAT_Type__c ,&quot;Marginal&quot;)),NOT(ISPICKVAL( VAT_Type__c ,&quot;None&quot;)), Merchant_information__c =TRUE, Customer_information__c =TRUE, Number_of_the_invoice__c =TRUE, Date_of_the_invoice__c =TRUE),
+
+AND(Business_Name__r.RecordType.DeveloperName  =&quot;U_S&quot;,Sales_Tax_Details__c =TRUE, Merchant_information__c =TRUE, Customer_information__c =TRUE, Number_of_the_invoice__c =TRUE, Date_of_the_invoice__c =TRUE)),
+
+&quot;Compliant&quot;, &quot;Non Compliant&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Invoice Audit Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

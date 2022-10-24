@@ -1,0 +1,10 @@
+Hola {!Contact.FirstName},
+
+Gracias por tomarse el tiempo para responder a nuestro cuestionario de calidad. Éste nos permite entender las prácticas de su empresa y asegurarnos de que están de acuerdo con nuestra Carta de Calidad.
+Me complace anunciar que su prueba ha sido validada y que ahora puede pasar al siguiente paso.
+
+También me gustaría llamar su atención sobre los siguientes puntos: Haz un pequeño recordatorio si algunas respuestas no son 100% correctas.
+Sigo siendo su contacto en caso de preguntas relacionadas con la Carta de Calidad o el Servicio de Atención al Cliente.
+
+Que tenga un buen día,
+{!User.Name} - Back Market

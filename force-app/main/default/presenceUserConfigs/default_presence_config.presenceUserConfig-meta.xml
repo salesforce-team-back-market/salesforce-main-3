@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>amelie.massieu@backmarket.com</user>
+            <user>caroline.aimon.ext@backmarket.com</user>
+            <user>cynthia.karangwa.ext@backmarket.com</user>
+            <user>erlinda.dulluku@backmarket.com</user>
+            <user>estelle.martin.ext@backmarket.com</user>
+            <user>fitz.ramaha.ext@backmarket.com</user>
+            <user>ivana.jankovic.ext@backmarket.com</user>
+            <user>jade.aguirre.ext@backmarket.com</user>
+            <user>julia.wieder@backmarket.com</user>
+            <user>julien.boiteau@backmarket.com</user>
+            <user>pauline.vantulder@backmarket.com</user>
+            <user>rizney.nunda.ext@backmarket.com</user>
+            <user>steven.rich@backmarket.com</user>
+            <user>yann.michau@backmarket.com</user>
+        </users>
+    </assignments>
+    <capacity>10</capacity>
+    <enableAutoAccept>false</enableAutoAccept>
+    <enableDecline>false</enableDecline>
+    <enableDeclineReason>false</enableDeclineReason>
+    <enableDisconnectSound>false</enableDisconnectSound>
+    <enableRequestSound>false</enableRequestSound>
+    <label>Default Presence Configuration</label>
+</PresenceUserConfig>

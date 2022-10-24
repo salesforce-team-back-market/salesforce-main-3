@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Debt_Amount_Range__c</fullName>
+    <externalId>false</externalId>
+    <label>Tech Debt Amount Range</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0 - 5K</fullName>
+                <default>false</default>
+                <label>0 - 5K</label>
+            </value>
+            <value>
+                <fullName>5K - 10K</fullName>
+                <default>false</default>
+                <label>5K - 10K</label>
+            </value>
+            <value>
+                <fullName>10K - 20K</fullName>
+                <default>false</default>
+                <label>10K - 20K</label>
+            </value>
+            <value>
+                <fullName>20K - more</fullName>
+                <default>false</default>
+                <label>20K - more</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

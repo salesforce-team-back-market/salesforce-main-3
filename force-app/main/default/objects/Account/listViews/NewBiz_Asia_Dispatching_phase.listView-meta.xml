@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewBiz_Asia_Dispatching_phase</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 and 5</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Trading_Name__c</columns>
+    <columns>First_contact_on__c</columns>
+    <columns>Back_Office_PK__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Challenging_Point__c</columns>
+    <columns>Profile__c</columns>
+    <columns>Type_of_company__c</columns>
+    <columns>Country__c</columns>
+    <columns>Link_to_the_site__c</columns>
+    <columns>Link_to_the_main_competitor_marketplace__c</columns>
+    <columns>Diversification_tag__c</columns>
+    <columns>Type_of_product__c</columns>
+    <columns>Quality_of_contact__c</columns>
+    <columns>Prioritization_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Identification</value>
+    </filters>
+    <filters>
+        <field>Profile__c</field>
+        <operation>notEqual</operation>
+        <value>Brand,Innovation,Retailer,Strategic Partnership</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.E_U,Account.JP</value>
+    </filters>
+    <filters>
+        <field>Country__c</field>
+        <operation>equals</operation>
+        <value>China,Hong Kong,India,Japan,&quot;Korea, Democratic People&apos;s Republic of&quot;,&quot;Korea, Republic of&quot;,Singapore,Thailand,Chinese Taipei</value>
+    </filters>
+    <filters>
+        <field>Prioritization_Score__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>NewBiz Asia - Dispatching phase</label>
+</ListView>

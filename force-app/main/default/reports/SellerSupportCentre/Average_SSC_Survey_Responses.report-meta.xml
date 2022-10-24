@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SurveyResponse.SurveyQuestionResponses$Question</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse.SurveyQuestionResponses$ResponseValue</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse$CompletionDateTime</field>
+    </columns>
+    <description>Created by Julia for average on SSAT</description>
+    <filter>
+        <criteriaItems>
+            <column>SurveyResponse.SurveyQuestionResponses$Question</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_GB</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Average  SSC Survey Responses</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SSC_Survey_Responses__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SurveyResponse$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

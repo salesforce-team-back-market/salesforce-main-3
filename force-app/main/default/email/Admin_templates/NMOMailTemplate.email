@@ -1,0 +1,19 @@
+<messaging:emailTemplate recipientType="Contact"
+    relatedToType="NMO_Process__c"
+    subject="{!relatedTo.Merchant_Name__c} {!$Label.BWMailSubject}"
+    language="{!relatedto.NMOLanguageMailTemplate__c}">
+
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+            
+               
+            <apex:outputText value="{!$Label.BWMailBody}" escape="false">
+               <apex:param value="{!recipient.Name}"/>
+               <apex:param value="{!relatedTo.Merchant__r.Name}"/>
+            </apex:outputText>
+            
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

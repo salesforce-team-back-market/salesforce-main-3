@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Requirements_For_EU_TC</fullName>
+    <active>true</active>
+    <description>BackCare, Language Test or Native Speaker is mandatory for a country to be Ready or Live.</description>
+    <errorConditionFormula>AND(
+RecordTypeId = $Setup.Special_Process_Record_Types_Ids__c.Targeted_Country_EU__c ,
+OR(
+ISPICKVAL ( Online_Status__c, &quot;Ready&quot; ),
+ISPICKVAL ( Online_Status__c, &quot;Live&quot; )),
+Back_Care__c = FALSE,
+NOT ( ISPICKVAL ( Language_proficiency_test__c, &quot;Accepted&quot; ) ),
+Native_Speaker__c = FALSE)</errorConditionFormula>
+    <errorMessage>Whooops... A Targeted Country record must have either Language Proficiency Test or Back Care checked or Native Speaker checked.</errorMessage>
+</ValidationRule>

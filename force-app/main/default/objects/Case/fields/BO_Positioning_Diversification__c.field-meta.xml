@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BO_Positioning_Diversification__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Je clique sur l&apos;onglet &quot;Annonces&quot; (1) pour me positionner sur les smartphones et les tablettes et l&apos;onglet &quot;Opportunités&quot; (2) pour les autres catégories.</inlineHelpText>
+    <label>BO - Positioning Diversification</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

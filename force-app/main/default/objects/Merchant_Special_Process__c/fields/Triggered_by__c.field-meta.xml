@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Triggered_by__c</fullName>
+    <externalId>false</externalId>
+    <label>Triggered by</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manual Input</fullName>
+                <default>false</default>
+                <label>Manual Input</label>
+            </value>
+            <value>
+                <fullName>Process: Monitoring Period/Probation period</fullName>
+                <default>false</default>
+                <label>Process: Monitoring Period/Probation period</label>
+            </value>
+            <value>
+                <fullName>Process: Launching Phase</fullName>
+                <default>false</default>
+                <label>Process: Launching Phase</label>
+            </value>
+            <value>
+                <fullName>Process: Counterfeit</fullName>
+                <default>false</default>
+                <label>Process: Counterfeit</label>
+            </value>
+            <value>
+                <fullName>Process: Hazardous Charger</fullName>
+                <default>false</default>
+                <label>Process: Hazardous Charger</label>
+            </value>
+            <value>
+                <fullName>Process: Debt Recovery</fullName>
+                <default>false</default>
+                <label>Process: Debt Recovery</label>
+            </value>
+            <value>
+                <fullName>Process: Mystery Order</fullName>
+                <default>false</default>
+                <label>Process: Mystery Order</label>
+            </value>
+            <value>
+                <fullName>Business: Sales exit launched</fullName>
+                <default>false</default>
+                <label>Business: Sales exit launched</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

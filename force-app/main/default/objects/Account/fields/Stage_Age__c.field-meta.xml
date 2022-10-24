@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Age__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <description>Number of days that a merchant spent in his current stage.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+
+ISPICKVAL( Stage__c ,&quot;Identification&quot;), TODAY() - Date_entry_in_stage_Identification__c ,
+IF(ISPICKVAL( Stage__c ,&quot;First-Contact&quot;), TODAY() -  Date_entry_in_stage_First_Contact__c  ,
+IF(ISPICKVAL( Stage__c ,&quot;Negotiation&quot;), TODAY() -   Date_entry_in_stage_Negotiation__c   ,
+IF(ISPICKVAL( Stage__c ,&quot;Onboarding&quot;), TODAY() -    Date_entry_in_stage_Onboarding__c ,
+IF(ISPICKVAL( Stage__c ,&quot;Future partnership&quot;), TODAY() -     Date_entry_in_stage_Future_partnership__c  ,
+IF(ISPICKVAL( Stage__c ,&quot;N.M.O.&quot;), TODAY() -  Date_entry_in_stage_NMO__c   ,
+IF(ISPICKVAL( Stage__c ,&quot;Run&quot;), TODAY() -   Date_entry_in_stage_Run__c  ,
+IF(ISPICKVAL( Stage__c ,&quot;Offline&quot;), TODAY() -   Date_entry_in_stage_Offline__c ,
+IF(ISPICKVAL( Stage__c ,&quot;Not relevant&quot;), TODAY() -    Date_entry_in_stage_Not_Relevant__c  ,null)))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Stage Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

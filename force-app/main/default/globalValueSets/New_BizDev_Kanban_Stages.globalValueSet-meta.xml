@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Identification</fullName>
+        <default>false</default>
+        <label>Identification</label>
+    </customValue>
+    <customValue>
+        <fullName>First-contact</fullName>
+        <default>false</default>
+        <label>First-contact</label>
+    </customValue>
+    <customValue>
+        <fullName>Negotiation</fullName>
+        <default>false</default>
+        <label>Negotiation</label>
+    </customValue>
+    <customValue>
+        <fullName>Onboarding</fullName>
+        <default>false</default>
+        <label>Onboarding</label>
+    </customValue>
+    <customValue>
+        <fullName>Future partnership</fullName>
+        <default>false</default>
+        <label>Future partnership</label>
+    </customValue>
+    <masterLabel>New BizDev Kanban Stages</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

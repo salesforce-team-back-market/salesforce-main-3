@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_objective_reached_in_Phase_3__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Field populated automatically when process stage is moving to &quot;Phase 3&quot;.
+This field will be used to assess if the merchant moves to. SSM or BW at the end of the NMO.</inlineHelpText>
+    <label>Sales objective reached in Phase 3</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Prices_Domestic__c</fullName>
+    <businessOwnerUser>arthur.veron@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <inlineHelpText>What are merchants shipping prices for products that have less than 1 kg for domestic flows?</inlineHelpText>
+    <label>Shipping Prices Domestic</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3-5</fullName>
+                <default>false</default>
+                <label>3-5</label>
+            </value>
+            <value>
+                <fullName>5-7</fullName>
+                <default>false</default>
+                <label>5-7</label>
+            </value>
+            <value>
+                <fullName>7-9</fullName>
+                <default>false</default>
+                <label>7-9</label>
+            </value>
+            <value>
+                <fullName>&gt;9</fullName>
+                <default>false</default>
+                <label>&gt;9</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

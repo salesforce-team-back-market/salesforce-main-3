@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR10_Buyback_Exit_Validation_InProgress</fullName>
+    <active>false</active>
+    <description>Check if &quot;buyback reason for exit&quot; is checked</description>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Exit_buyback&quot;
+&amp;&amp; 
+ISBLANK(TEXT(Buyback_Reason_for_Exit__c ))
+&amp;&amp; 
+ISPICKVAL(Stage__c, &quot;In progress&quot; )
+&amp;&amp;									
+NOT($User.ByPassValidationRules__c)</errorConditionFormula>
+    <errorMessage>A reason is mandatory start the exit process</errorMessage>
+</ValidationRule>

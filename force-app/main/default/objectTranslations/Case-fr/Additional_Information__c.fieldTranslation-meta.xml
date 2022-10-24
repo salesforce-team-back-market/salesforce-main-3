@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Information additionnelle</label>
+    <name>Additional_Information__c</name>
+    <picklistValues>
+        <masterLabel>Internal Damage</masterLabel>
+        <translation>Dommage interne</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oxidation</masterLabel>
+        <translation>Oxydation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Damage</masterLabel>
+        <translation>Dommage physique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product damaged - Received by a customer</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product damaged - Received by me (seller)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product lost - I (seller) didn&apos;t receive the return</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product lost - The customer didn&apos;t receive the parcel</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product was stolen - I (seller) didn&apos;t receive the parcel</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product was stolen - The customer didn&apos;t receive the parcel</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The product has been opened by the third party</masterLabel>
+        <translation>Le produit a été ouvert par un tiers</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_and_Quality_Opportunities</fullName>
+    <active>false</active>
+    <businessProcess>Price and Selection Opportunities</businessProcess>
+    <compactLayoutAssignment>Actions_and_Battlegrounds</compactLayoutAssignment>
+    <description>Used to track initiatives by the Service and Quality teams</description>
+    <label>Service and Quality Opportunities</label>
+    <picklistValues>
+        <picklist>Action_Plan_s_pushed__c</picklist>
+        <values>
+            <fullName>Anticipate departure on vacation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apply stricter changing screen eligibility criteria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BUYBACK ORDER PAGE - Answer all orders on %22Pending customers%22 tab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BUYBACK ORDER PAGE - Process orders on %22New order%22 tab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackPack - strong packaging to prevent product damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Answer all customer messages even messages like %22Thanks%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Be reactive on email notifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Clarify message when putting an order on hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Provide Blancco report for functional CPs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Provide a user guide in packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Provide photos for esthetical CPs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Send reminders to customer %2F Call customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUSTOMER SUPPORT - Share costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Carrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change delivery delay in the BO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change for a carrier well integrated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change internal process to reduce preparation time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change internal process to reduce processing time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct Integrators issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fill in tracking information on time %28within 5 days after order creation%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Get coaching on the Charter requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INNOVATION LAB - Organize innovation lab coaching session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INNOVATION LAB - Share innovation lab content %28articles%2C guides%2C etc%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve Quality of parcel%2Faccessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve Refurbishment processes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve catalog matching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve product description information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISTING - Adapt daily limitation of Buyback orders depending on process capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISTING - Adjust grading depending on repair abilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISTING - Stop listing flop Counter offer products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISTING - Stop listing flop cancelled products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LISTING - Take into account Battery risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OFFER - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OFFER - Review product selling destination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OFFER - Stop listing flop defective products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER - Use BackPack to prevent product damage during transport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organize regular pick up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRICING - Adjust prices of listings based on previously received products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALITY CONTROL - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALITY CONTROL - SOFTWARE - Use Blancco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALITY CONTROL - SOFTWARE - Use Phonecheck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALITY CONTROL - SOFTWARE - Use other testing solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALITY CONTROL - Update %2F add quality control tests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROOT CAUSE INVESTIGATION - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROOT CAUSE INVESTIGATION - Run a Technical Audit %28by innovation lab%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROOT CAUSE INVESTIGATION - Run internal diagnosis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROOT CAUSE INVESTIGATION - Set up production tracability process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROOT CAUSE INVESTIGATION - Use GateKeeper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remind the Quality Charter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review Quality control tests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review product selling destination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - COMPONENT - Order from BackPart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - COMPONENT - Qualify new supplier %28Battery%2C Motherboard%2C Screen%2C buttons%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - DEVICES - Get supply from Mana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - DEVICES - Qualify new vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - DEVICES - Review sourcing requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOURCING - Qualify new supplier - Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send correct tracking information %28invalid tracking number%2Fcarrier%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipp the order with the tracking number initially provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strengthen control of packaging content prior to shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TECHNICAL PRACTICES - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TECHNICAL PRACTICES - Use ESD protections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use %2F improve templates to answer SAV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use Agnosys training MacBook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use Agnosys training iPhones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use BackCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use BackCoach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use BackParts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use BackRepair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use BackShip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use FBBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use FBBM to outsource stock %26 shipping management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use an Express delivery option</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use conservating grading in case of doubt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use grading toolkit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use integrator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Action__c</picklist>
+        <values>
+            <fullName>BackImpact Label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Actions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reduce Untracked Rate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Back_Care_Status__c</picklist>
+        <values>
+            <fullName>KO - Seasonality</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Back_Repair_Status__c</picklist>
+        <values>
+            <fullName>KO - Seasonality</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Back_Ship_Status__c</picklist>
+        <values>
+            <fullName>KO - Seasonality</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Blocker__c</picklist>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DB_Competitor__c</picklist>
+        <values>
+            <fullName>Competitor A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expected_Countries__c</picklist>
+        <values>
+            <fullName>All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovakia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expected_Services__c</picklist>
+        <values>
+            <fullName>Back Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Pack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FBBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAAS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Grade__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>KPI_Issue__c</picklist>
+        <values>
+            <fullName>Accessories Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Cancellation %28Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Charter breaches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Counter-Proposal %28Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Late Processing rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Late Response rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Payment issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Pending Order rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Esthetic Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Compliance Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Delivery Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Response Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potential Hazardous Charger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Untracked Orders Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Product Rate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Buyback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrant leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mapping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Place Benchmark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offline events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Method__c</picklist>
+        <values>
+            <fullName>30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Platform__c</picklist>
+        <values>
+            <fullName>BM EU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BM US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shopify</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Category__c</picklist>
+        <values>
+            <fullName>Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apple Watch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beauty And Spa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer %26 Co</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connected Devices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earphones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gardening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MacBook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photos %26 Video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smartphone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tablet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iMac</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recommended_Action_Plan__c</picklist>
+        <values>
+            <fullName>Pricing Tool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Back Ship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recommended_Models__c</picklist>
+        <values>
+            <fullName>Model 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Model 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Type__c</picklist>
+        <values>
+            <fullName>Purchase for Clients</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase for Employees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase for Leasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase for Resale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase for Users</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase to Give Away</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Services__c</picklist>
+        <values>
+            <fullName>Back Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Pack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FBBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAAS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Targeted_Country_ies__c</picklist>
+        <values>
+            <fullName>All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovakia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Battleground AT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battleground BackImpact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battleground DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battleground Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battleground Service Week</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BuyBack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event Category Launch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event Show Me your CE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X1st_order__c</picklist>
+        <values>
+            <fullName>Repeat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>lead_source__c</picklist>
+        <values>
+            <fullName>Entrant - Bowling contact form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrant - Care lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrant - Internal referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrant - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound - Linkedin%2FSocial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound - Offline event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound - Old BM lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound - Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

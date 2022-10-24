@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <name>Assign_has_been_aborted_MO_on</name>
+        <label>Assign has been aborted MO on</label>
+        <locationX>994</locationX>
+        <locationY>537</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Has_been_aborted_on__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_has_been_archived_on</name>
+        <label>Assign has been archived on</label>
+        <locationX>793</locationX>
+        <locationY>532</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Has_been_archived_on__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_has_been_done_on</name>
+        <label>Assign has been done on</label>
+        <locationX>559</locationX>
+        <locationY>536</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Has_been_done_on__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_has_been_ordered_on</name>
+        <label>Assign has been ordered on</label>
+        <locationX>312</locationX>
+        <locationY>533</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Has_been_ordered_on__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_has_been_received_on</name>
+        <label>Assign has been received on</label>
+        <locationX>437</locationX>
+        <locationY>535</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Has_been_received_on__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_has_been_refunded_on</name>
+        <label>Assign has been refunded on</label>
+        <locationX>898</locationX>
+        <locationY>535</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Has_been_refunded_on__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_has_been_sent_back_on</name>
+        <label>Assign has been sent back on</label>
+        <locationX>681</locationX>
+        <locationY>536</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Has_been_sent_back_on__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_merchant_info_to_MO</name>
+        <label>Assign merchant info to MO</label>
+        <locationX>316</locationX>
+        <locationY>374</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Current_BizDev__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Merchant_Name__r.Owner.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Merchant_P_K__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Merchant_Name__r.Back_Office_PK__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Decision_on_stage_update</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Decision_on_creation</name>
+        <label>Decision on creation</label>
+        <locationX>167</locationX>
+        <locationY>382</locationY>
+        <defaultConnector>
+            <targetReference>Decision_on_stage_update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>On_creation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_merchant_info_to_MO</targetReference>
+            </connector>
+            <label>On creation</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_stage_update</name>
+        <label>Decision on stage update</label>
+        <locationX>168</locationX>
+        <locationY>536</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Passing_to_order_made</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Order made</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_has_been_ordered_on</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Passing to order made</label>
+        </rules>
+        <rules>
+            <name>Passing_to_received</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Received</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_has_been_received_on</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Passing to received</label>
+        </rules>
+        <rules>
+            <name>Passing_to_check_done</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Check done</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_has_been_done_on</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Passing to check done</label>
+        </rules>
+        <rules>
+            <name>Passing_to_sent_back</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Product sent back</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_has_been_sent_back_on</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Passing to sent back</label>
+        </rules>
+        <rules>
+            <name>Passing_to_archived</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Archived for BM</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_has_been_archived_on</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Passing to archived</label>
+        </rules>
+        <rules>
+            <name>Passing_to_refunded</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Refunded</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_has_been_refunded_on</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Passing to refunded</label>
+        </rules>
+        <rules>
+            <name>Passing_to_aborted_MO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Abort MO</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_has_been_aborted_MO_on</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Passing to aborted MO</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_user_bypass_flow</name>
+        <label>Decision on user bypass flow</label>
+        <locationX>168</locationX>
+        <locationY>260</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>User_dont_bypass</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.ByPassFlow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_on_creation</targetReference>
+            </connector>
+            <label>User dont bypass</label>
+        </rules>
+    </decisions>
+    <description>Mystery Order revamp</description>
+    <interviewLabel>Mystery order - Before Save flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Mystery order - Before Save flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Decision_on_user_bypass_flow</targetReference>
+        </connector>
+        <object>Mystery_Order__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

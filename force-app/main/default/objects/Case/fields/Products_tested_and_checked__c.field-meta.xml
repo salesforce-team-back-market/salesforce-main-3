@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_tested_and_checked__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>To sell on Back Market, it is required that the products listed for sale are duly tested and checked prior to their shipment to comply with the full criteria detailed in the Charter.</inlineHelpText>
+    <label>Products tested and checked</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_with_LC_too_quick</fullName>
+    <columns>NAME</columns>
+    <columns>P_K__c</columns>
+    <columns>Business_Name__c</columns>
+    <columns>Issue_KPI__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Has_entered_Last_chance_on__c</columns>
+    <columns>Stage__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Last chance</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Alert__c.Monitoring_Period_Buyback,Alert__c.Monitoring_Period_Sales</value>
+    </filters>
+    <label>Seller with LC too quick</label>
+</ListView>

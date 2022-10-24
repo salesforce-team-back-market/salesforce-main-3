@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <name>Assign_1_to_Count_Early_Release</name>
+        <label>Assign +1 to Count Early Release</label>
+        <locationX>446</locationX>
+        <locationY>996</locationY>
+        <assignmentItems>
+            <assignToReference>Count_Early_Release</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Decision_Count_Early_Release_is_at_7</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Count_Early_Release_to_variable</name>
+        <label>Assign Count Early Release to variable</label>
+        <locationX>908</locationX>
+        <locationY>756</locationY>
+        <assignmentItems>
+            <assignToReference>Count_Early_Release</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_on_on_going_alerts.Tech_Count_early_release__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Decision_On_number_of_cases</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_current_alert_to_list_for_update</name>
+        <label>Assign current alert to list for update</label>
+        <locationX>908</locationX>
+        <locationY>1548</locationY>
+        <assignmentItems>
+            <assignToReference>List_Alert_To_Update</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_on_on_going_alerts</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_on_on_going_alerts</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_current_alert_to_SAVED</name>
+        <label>Assign current alert to SAVED</label>
+        <locationX>314</locationX>
+        <locationY>1236</locationY>
+        <assignmentItems>
+            <assignToReference>Loop_on_on_going_alerts.Has_been_saved_on__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_on_on_going_alerts.Saved_reason__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>KPI OK 7 days in a row</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_on_on_going_alerts.Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Saved</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_current_alert_to_list_for_update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_current_alert_with_early_release_variable</name>
+        <label>Assign current alert with early release variable</label>
+        <locationX>842</locationX>
+        <locationY>1116</locationY>
+        <assignmentItems>
+            <assignToReference>Loop_on_on_going_alerts.Tech_Count_early_release__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Count_Early_Release</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_current_alert_to_list_for_update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Reset_Count_Early_Release_for_violation</name>
+        <label>Reset Count Early Release for violation</label>
+        <locationX>842</locationX>
+        <locationY>996</locationY>
+        <assignmentItems>
+            <assignToReference>Count_Early_Release</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_current_alert_with_early_release_variable</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Decision_Count_Early_Release_is_at_7</name>
+        <label>Decision - Count Early Release is at 7</label>
+        <locationX>446</locationX>
+        <locationY>1116</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_current_alert_with_early_release_variable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Count_Early_Release</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>7.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_current_alert_to_SAVED</targetReference>
+            </connector>
+            <label>Yes = 7</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Don_t_run_for_Selfcare</name>
+        <label>Decision - Don&apos;t run for Selfcare</label>
+        <locationX>523</locationX>
+        <locationY>636</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Count_Early_Release_to_variable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Selfcare_don_t_update</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Story__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>hand_free</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Untracked Orders Rate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Late Response Rate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Late Delivery Rate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CSAT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Buyback - Late Response rate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Buyback - Late Processing rate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Buyback - Counter-Proposal rate</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_on_on_going_alerts</targetReference>
+            </connector>
+            <label>Selfcare don&apos;t update</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_number_of_alert</name>
+        <label>Is there any alert</label>
+        <locationX>521</locationX>
+        <locationY>396</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_alerts_should_be_processed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_all_MP_and_LC_alerts_for_specified_KPIs</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_on_on_going_alerts</targetReference>
+            </connector>
+            <label>Yes alerts should be processed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_On_number_of_cases</name>
+        <label>Decision - On number of cases</label>
+        <locationX>908</locationX>
+        <locationY>876</locationY>
+        <defaultConnector>
+            <targetReference>Decision_On_rate</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Policy_Violation_No_cases</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Actual_Number_of_cases__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Policy violation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_1_to_Count_Early_Release</targetReference>
+            </connector>
+            <label>Policy Violation - No cases</label>
+        </rules>
+        <rules>
+            <name>Policy_Violation_Above_objective</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Policy violation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Actual_Number_of_cases__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reset_Count_Early_Release_for_violation</targetReference>
+            </connector>
+            <label>Policy Violation - Above objective</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_On_rate</name>
+        <label>Decision - On rate</label>
+        <locationX>1370</locationX>
+        <locationY>996</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Reset_Count_Early_Release_for_violation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Rate_Below_objective_Not_CSAT</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Actual_Rate__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>Loop_on_on_going_alerts.Objective_to_reach__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>CSAT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Assign_1_to_Count_Early_Release</targetReference>
+            </connector>
+            <label>Rate - Below objective - Not CSAT</label>
+        </rules>
+        <rules>
+            <name>Rate_Below_Objective_For_CSAT</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Actual_Rate__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>Loop_on_on_going_alerts.Objective_to_reach__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CSAT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Assign_1_to_Count_Early_Release</targetReference>
+            </connector>
+            <label>Rate - Below Objective - For CSAT</label>
+        </rules>
+    </decisions>
+    <description>SFT-310 - add filter on account query</description>
+    <interviewLabel>Schedule Flow - Early Release MP process {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Schedule Flow - Early Release MP process</label>
+    <loops>
+        <name>Loop_on_on_going_alerts</name>
+        <label>Loop on on going alerts</label>
+        <locationX>50</locationX>
+        <locationY>516</locationY>
+        <collectionReference>Get_all_MP_and_LC_alerts_for_specified_KPIs</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Decision_Don_t_run_for_Selfcare</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_list_of_alert</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>with ETA in the future</description>
+        <name>Get_all_MP_and_LC_alerts_for_specified_KPIs</name>
+        <label>Get all MP and LC alerts for specified KPIs</label>
+        <locationX>521</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Decision_on_number_of_alert</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2) AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12 AND 13</filterLogic>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Monitoring Period</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Last chance</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Potential Hazardous Charger</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Invoice Compliance Audit</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Payment issues</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Buyback - Payment issue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Buyback - Charter breaches</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Merchant Debt</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Churning Merchant</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Mystery Order</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>GMV Completion Rate</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ETA__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Business_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Alert__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_list_of_alert</name>
+        <label>Update list of alert</label>
+        <locationX>50</locationX>
+        <locationY>1860</locationY>
+        <inputReference>List_Alert_To_Update</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>395</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_all_MP_and_LC_alerts_for_specified_KPIs</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2) AND 3</filterLogic>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Run</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>N.M.O.</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Ongoing_Alerts__c</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2022-02-16</startDate>
+            <startTime>15:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Count_Early_Release</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>List_Alert_To_Update</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Alert__c</objectType>
+    </variables>
+</Flow>

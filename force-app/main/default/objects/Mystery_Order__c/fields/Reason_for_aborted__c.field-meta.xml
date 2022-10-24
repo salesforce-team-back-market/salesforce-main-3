@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_aborted__c</fullName>
+    <businessOwnerUser>oceane.dufour@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>Reason for aborted</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Order canceled</fullName>
+                <default>false</default>
+                <label>Order canceled</label>
+            </value>
+            <value>
+                <fullName>Package lost</fullName>
+                <default>false</default>
+                <label>Package lost</label>
+            </value>
+            <value>
+                <fullName>Package never received</fullName>
+                <default>false</default>
+                <label>Package never received</label>
+            </value>
+            <value>
+                <fullName>Product is not eligible to MO</fullName>
+                <default>false</default>
+                <label>Product is not eligible to MO</label>
+            </value>
+            <value>
+                <fullName>Other (specify) - Relaunch new MO</fullName>
+                <default>false</default>
+                <label>Other (specify) - Relaunch new MO</label>
+            </value>
+            <value>
+                <fullName>Other (specify) - No new MO</fullName>
+                <default>false</default>
+                <label>Other (specify) - No new MO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

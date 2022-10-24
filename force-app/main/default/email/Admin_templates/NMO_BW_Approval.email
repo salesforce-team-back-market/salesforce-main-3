@@ -1,0 +1,14 @@
+Hi, {!Receiving_User.FirstName}!
+
+{!$User.FirstName} has requested your approval for the following item :
+{!Account.Name}
+
+N.M.O. Process “{!NMO_Process__c.Name}” for the Merchant “{!Account.Name}” that is for now on stage “{!NMO_Process__c.Stage__c}“.
+Record Type : {!NMO_Process__c.RecordType}
+
+You need to decide whether you approve or reject this approval process.
+To approve or reject this item, click this link : {!ApprovalRequest.Internal_URL}
+
+Thanks in advance,
+
+Your Salesforce administrator

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_to_Live_Checks</fullName>
+    <active>false</active>
+    <description>This rule checks the requirements for moving the Online Status of the Targeted Country from Ready to Live.</description>
+    <errorConditionFormula>ISPICKVAL ( PRIORVALUE ( Online_Status__c ), &quot;Ready&quot; )
+&amp;&amp;
+ISPICKVAL ( Online_Status__c, &quot;Live&quot; )
+&amp;&amp; 
+$User.ByPassValidationRules__c !=true</errorConditionFormula>
+    <errorMessage>The Online Status cannot be moved to Live as long as the Merchant&apos;s Onboarding Process is not ended.</errorMessage>
+</ValidationRule>

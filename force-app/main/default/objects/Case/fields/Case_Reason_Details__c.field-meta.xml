@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Reason_Details__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Reason Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Challenging_points</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Components &amp; Accessories (BackParts)</controllingFieldValue>
+            <valueName>I need help with one of my orders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Components &amp; Accessories (BackParts)</controllingFieldValue>
+            <valueName>I need more information regarding the service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Components &amp; Accessories (BackParts)</controllingFieldValue>
+            <valueName>I want to place an order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ask question related to an invoice</controllingFieldValue>
+            <valueName>Deferred Payout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ask question related to an invoice</controllingFieldValue>
+            <valueName>Service Fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport issue with a Buyback order</controllingFieldValue>
+            <controllingFieldValue>BuyBack</controllingFieldValue>
+            <valueName>I didn&apos;t receive the package, whereas it is marked as delivered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport issue with a Buyback order</controllingFieldValue>
+            <controllingFieldValue>BuyBack</controllingFieldValue>
+            <valueName>I received a damaged product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport issue with a Buyback order</controllingFieldValue>
+            <controllingFieldValue>BuyBack</controllingFieldValue>
+            <valueName>I received an empty package</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport issue with a Buyback order</controllingFieldValue>
+            <controllingFieldValue>BuyBack</controllingFieldValue>
+            <valueName>The package got lost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport issue with a Buyback order</controllingFieldValue>
+            <controllingFieldValue>BuyBack</controllingFieldValue>
+            <valueName>I did not receive the expected product (fraud attempt)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transport issue with a Buyback order</controllingFieldValue>
+            <controllingFieldValue>BuyBack</controllingFieldValue>
+            <valueName>The package was not picked-up by the carrier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New problem</controllingFieldValue>
+            <controllingFieldValue>User didn&apos;t attend training</controllingFieldValue>
+            <controllingFieldValue>Existing problem</controllingFieldValue>
+            <controllingFieldValue>Instructions not clear</controllingFieldValue>
+            <controllingFieldValue>Complex functionality</controllingFieldValue>
+            <controllingFieldValue>Before purchase</controllingFieldValue>
+            <controllingFieldValue>Logistic and Delivery</controllingFieldValue>
+            <controllingFieldValue>Abusive Customer Ratings</controllingFieldValue>
+            <controllingFieldValue>Report a Suspected Customer Fraud</controllingFieldValue>
+            <controllingFieldValue>Order Management and Customer Requests</controllingFieldValue>
+            <controllingFieldValue>Question related to Quality KPI</controllingFieldValue>
+            <controllingFieldValue>Algorithm, Buybox, Price</controllingFieldValue>
+            <controllingFieldValue>Sales Limitation</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Question related to a compensation</controllingFieldValue>
+            <controllingFieldValue>Question related to the deferred payout</controllingFieldValue>
+            <controllingFieldValue>Question related to a payment method</controllingFieldValue>
+            <controllingFieldValue>I need to update my bank details</controllingFieldValue>
+            <controllingFieldValue>Wrong information / picture on a product page</controllingFieldValue>
+            <controllingFieldValue>SKU matched to an incorrect product</controllingFieldValue>
+            <controllingFieldValue>Duplicated products</controllingFieldValue>
+            <controllingFieldValue>Product pages are not similar between UE marketplaces</controllingFieldValue>
+            <controllingFieldValue>Product information needs to be updated</controllingFieldValue>
+            <controllingFieldValue>Wrong category</controllingFieldValue>
+            <controllingFieldValue>Price new wrong</controllingFieldValue>
+            <controllingFieldValue>Validation issue</controllingFieldValue>
+            <controllingFieldValue>I&apos;m facing another issue</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality Exception</controllingFieldValue>
+            <controllingFieldValue>Business Arbitration</controllingFieldValue>
+            <valueName>Exit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality Exception</controllingFieldValue>
+            <controllingFieldValue>Business Arbitration</controllingFieldValue>
+            <valueName>Last Chance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality Exception</controllingFieldValue>
+            <controllingFieldValue>Business Arbitration</controllingFieldValue>
+            <valueName>Monitoring Period</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality Exception</controllingFieldValue>
+            <controllingFieldValue>Business Arbitration</controllingFieldValue>
+            <valueName>N.M.O.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality Exception</controllingFieldValue>
+            <controllingFieldValue>Business Arbitration</controllingFieldValue>
+            <valueName>Safety and Legal Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality Exception</controllingFieldValue>
+            <controllingFieldValue>Business Arbitration</controllingFieldValue>
+            <valueName>Seatbelt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality Exception</controllingFieldValue>
+            <controllingFieldValue>Business Arbitration</controllingFieldValue>
+            <valueName>Vanishing Deals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BackCare</controllingFieldValue>
+            <controllingFieldValue>BackShip</controllingFieldValue>
+            <controllingFieldValue>BackPack</controllingFieldValue>
+            <controllingFieldValue>BackRepair</controllingFieldValue>
+            <controllingFieldValue>Question related to an invoice</controllingFieldValue>
+            <valueName>My request concerns something else</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BackCare</controllingFieldValue>
+            <controllingFieldValue>BackShip</controllingFieldValue>
+            <controllingFieldValue>BackPack</controllingFieldValue>
+            <controllingFieldValue>BackRepair</controllingFieldValue>
+            <valueName>I need help on a specific order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BackCare</controllingFieldValue>
+            <controllingFieldValue>BackShip</controllingFieldValue>
+            <controllingFieldValue>BackPack</controllingFieldValue>
+            <controllingFieldValue>BackRepair</controllingFieldValue>
+            <valueName>Billing request related to the service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BackCare</controllingFieldValue>
+            <controllingFieldValue>BackShip</controllingFieldValue>
+            <controllingFieldValue>BackPack</controllingFieldValue>
+            <controllingFieldValue>BackRepair</controllingFieldValue>
+            <valueName>I want to subscribe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Before purchase</controllingFieldValue>
+            <valueName>Quotation request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Before purchase</controllingFieldValue>
+            <valueName>Back Market product information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Before purchase</controllingFieldValue>
+            <valueName>Payment methods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Before purchase</controllingFieldValue>
+            <valueName>My account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Before purchase</controllingFieldValue>
+            <valueName>Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Before purchase</controllingFieldValue>
+            <valueName>Taxes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post purchase</controllingFieldValue>
+            <valueName>Technical issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post purchase</controllingFieldValue>
+            <valueName>Esthetical issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post purchase</controllingFieldValue>
+            <valueName>Delivery issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post purchase</controllingFieldValue>
+            <valueName>Order issue (wrong product, missing accessories, etc.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post purchase</controllingFieldValue>
+            <valueName>Payment issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post purchase</controllingFieldValue>
+            <valueName>Invoicing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post purchase</controllingFieldValue>
+            <valueName>Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>After-sales management</controllingFieldValue>
+            <controllingFieldValue>Abusive Customer Ratings</controllingFieldValue>
+            <valueName>The comment related to a mismatch issue (validated by Catalog team!)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BackShip</controllingFieldValue>
+            <valueName>I need to open / update a Backship carrier investigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BackShip</controllingFieldValue>
+            <controllingFieldValue>Logistic and Delivery</controllingFieldValue>
+            <valueName>I&apos;m facing issues to create a return/shipment label or to arrange a pick up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistic and Delivery</controllingFieldValue>
+            <valueName>I&apos;m facing issues a parcel (lost, stolen, broken, non received,...)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistic and Delivery</controllingFieldValue>
+            <valueName>My carrier is impacted by external circumstances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistic and Delivery</controllingFieldValue>
+            <valueName>My request is related to Back Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistic and Delivery</controllingFieldValue>
+            <valueName>One or more of my orders can&apos;t be tracked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abusive Customer Ratings</controllingFieldValue>
+            <valueName>The client is insulting to me or Back Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abusive Customer Ratings</controllingFieldValue>
+            <valueName>The customer is mentioning personal information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abusive Customer Ratings</controllingFieldValue>
+            <valueName>The review related to another order or another seller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Management and Customer Requests</controllingFieldValue>
+            <valueName>Challenge a refund made on my behalf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Management and Customer Requests</controllingFieldValue>
+            <valueName>Challenge a refund made on my behalf in a BackCare order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Management and Customer Requests</controllingFieldValue>
+            <valueName>I have an issue with BackCare order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Management and Customer Requests</controllingFieldValue>
+            <valueName>I need help to manage a customer request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Question related to an invoice</controllingFieldValue>
+            <valueName>Related to invoiced service fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Question related to an invoice</controllingFieldValue>
+            <valueName>Related to earned money</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Concerns related to P2B regulation</controllingFieldValue>
+            <valueName>I think that Back Market is not being compliant with the P2B regulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Concerns related to P2B regulation</controllingFieldValue>
+            <valueName>The technological issues experienced relate directly to a service provided by Back Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Concerns related to P2B regulation</controllingFieldValue>
+            <valueName>What measures does Back Market take towards the provision of the services which affected my business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request support related to a service</controllingFieldValue>
+            <valueName>Issue with a pick-up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request support related to a service</controllingFieldValue>
+            <valueName>Issue with a label</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request support related to a service</controllingFieldValue>
+            <controllingFieldValue>Request support with logistics</controllingFieldValue>
+            <valueName>Parcel not picked up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request support with logistics</controllingFieldValue>
+            <valueName>Parcel not picked-up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request support with logistics</controllingFieldValue>
+            <valueName>Parcel appears delivered but not received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request support with logistics</controllingFieldValue>
+            <valueName>Product received damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request support with logistics</controllingFieldValue>
+            <valueName>Product received account-locked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request support with logistics</controllingFieldValue>
+            <valueName>Wrong product received</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

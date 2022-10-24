@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limit_Stage_Modif</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND (
+NOT(ISPICKVAL(Merchant__r.Stage__c , &apos;Run&apos;)),
+ISCHANGED( Online_Status__c ),
+NOT(CONTAINS($UserRole.DeveloperName, &apos;Leader&apos;)) ,
+NOT(ISPICKVAL( $User.Team__c , &apos;Finance&apos;)),
+
+OR(
+ISPICKVAL( Online_Status__c , &apos;Offline&apos;),
+ISPICKVAL(Online_Status__c, &apos;Live&apos;))
+
+)
+
+&amp;&amp; $User.ByPassValidationRules__c !=true</errorConditionFormula>
+    <errorMessage>You don&apos;t have the permission to change the stage to Offline or Live</errorMessage>
+</ValidationRule>

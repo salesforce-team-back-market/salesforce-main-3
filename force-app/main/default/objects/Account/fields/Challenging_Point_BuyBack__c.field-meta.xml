@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Challenging_Point_BuyBack__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>BuyBack challenging point.</inlineHelpText>
+    <label>Challenging Point BuyBack</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Onboarding KO</fullName>
+                <default>false</default>
+                <label>Onboarding KO</label>
+            </value>
+            <value>
+                <fullName>Long Onboarding</fullName>
+                <default>false</default>
+                <label>Long Onboarding</label>
+            </value>
+            <value>
+                <fullName>Not enough adds</fullName>
+                <default>false</default>
+                <label>Not enough adds</label>
+            </value>
+            <value>
+                <fullName>Too small</fullName>
+                <default>false</default>
+                <label>Too small</label>
+            </value>
+            <value>
+                <fullName>Too big (diversification)</fullName>
+                <default>false</default>
+                <label>Too big (diversification)</label>
+            </value>
+            <value>
+                <fullName>Warehouse location</fullName>
+                <default>false</default>
+                <label>Warehouse location</label>
+            </value>
+            <value>
+                <fullName>Disagreement with T&amp;Cs</fullName>
+                <default>false</default>
+                <label>Disagreement with T&amp;Cs</label>
+            </value>
+            <value>
+                <fullName>Sales Onboarding</fullName>
+                <default>false</default>
+                <label>Sales Onboarding</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Blacklisted</fullName>
+                <default>false</default>
+                <label>Blacklisted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

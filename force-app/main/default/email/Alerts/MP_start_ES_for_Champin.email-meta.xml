@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Monitoring period start</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>MP start (ES) for Champion</name>
+    <style>freeForm</style>
+    <subject>{!Alert__c.P_K__c} - {!Alert__c.Business_Name__c} - Entrada al periodo de monitoreo</subject>
+    <textOnly>WARNING - ERROR
+
+Hello,
+Please manually send the following email and ensure that merchant got at least one quality or business contact with an email address.
+Make sure to always put legal-sellers@backmarket.com in cc of your email.
+
+--
+
+Hola {!Alert__c.Business_Name__c},
+
+Este correo electrónico tiene como objetivo informarle de su reciente rendimiento de calidad en Back Market, en particular el índice &quot;{!Alert__c.Issue_KPI__c}&quot;, ya que no cumple con los estándares de calidad indicados en el artículo 12 de los Términos y Condiciones de Back Market y en la Carta de Calidad. Como tal, su cuenta está entrando en una Monitorización.
+
+El propósito de esta Monitorización es permitirle alcanzar un objetivo y cumplir con los estándares de calidad esperados antes de {!Alert__c.ETA__c}.  En caso de que su rendimiento de calidad no mejore para esta fecha, sus ventas se limitarán automáticamente. Para obtener más información sobre los umbrales de Monitorización, consulte el Centro de asistencia al vendedor (Merchant Support Center).
+
+Su Account Manager en Back Market está disponible para trabajar con usted para analizar la situación y elaborar conjuntamente un plan de acción para solucionar los problemas.
+
+Dicho esto, esperamos que no sea necesaria ninguna limitación, ya que valoramos mucho nuestra colaboración en la plataforma. Por favor, póngase en contacto con nosotros si tiene alguna otra pregunta.
+
+Cordialmente,
+
+Back Market
+
+
+https://merchant-support.backmarket.com/hc/en-gb/articles/360020811339-What-is-the-Monitoring-Period-process-</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

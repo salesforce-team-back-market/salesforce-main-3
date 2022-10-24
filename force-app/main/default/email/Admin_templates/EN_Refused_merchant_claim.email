@@ -1,0 +1,12 @@
+Hello,
+
+We received your claim related to the order {!Case.Order_ID__c}.
+As a reminder here are the info we got from you :
+- {!Case.Claim_Reason__c}
+- {!Case.Description}
+
+We reviewed the case and have refused your claim for the following reason :
+{!Case.Comment_if_refused__c}
+
+Have a great day,
+Back Market Team

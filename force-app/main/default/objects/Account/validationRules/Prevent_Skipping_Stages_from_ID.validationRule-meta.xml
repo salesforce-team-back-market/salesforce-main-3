@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Skipping_Stages_from_ID</fullName>
+    <active>true</active>
+    <description>Prevent changing stage from Identification to any other but First Contact. Previous BizDev cannot be API user.</description>
+    <errorConditionFormula>AND ( ISCHANGED(Stage__c ),
+ISPICKVAL(PRIORVALUE(Stage__c), &quot;Identification&quot; ),
+OR (NOT(ISPICKVAL(Stage__c, &quot;First-contact&quot; )),
+  Previous_BizDev__r.X18_Digit_ID__c  =  $Setup.UserID__c.API_BM_SF__c  ))
+
+
+&amp;&amp; $User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorMessage>Whoops, you can&apos;t skip the stages. You can only change the stage of this merchant to First Contact.
+Make sure Previous BizDev is different from the API user.</errorMessage>
+</ValidationRule>

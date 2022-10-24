@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <name>Assign_Shipping_Country</name>
+        <label>Assign Shipping Country</label>
+        <locationX>911</locationX>
+        <locationY>519</locationY>
+        <assignmentItems>
+            <assignToReference>Temp_TC.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_on_TC.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Temp_TC.Shipping_From__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Shipping_From__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_TC_to_variable</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_TC_to_variable</name>
+        <label>Assign TC to variable</label>
+        <locationX>1041</locationX>
+        <locationY>586</locationY>
+        <assignmentItems>
+            <assignToReference>TC_to_update</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Temp_TC</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_on_TC</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Decision_KYCs_to_approve</name>
+        <label>Decision - KYCs to approve</label>
+        <locationX>377</locationX>
+        <locationY>471</locationY>
+        <defaultConnector>
+            <targetReference>Decision_Shipping_From_updated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>KYCs_to_Approve</name>
+            <conditionLogic>(1 OR 4) AND 2 AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Onboarding__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.KYCs_Checked__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.KYCs_Checked__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.KYCs_Checked__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Onboarding_buyback__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Task_for_Finance_Team_KYCs_to_approve</targetReference>
+            </connector>
+            <label>KYCs to Approve</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_user_buypass_flows</name>
+        <label>Decision on user buypass flows</label>
+        <locationX>375</locationX>
+        <locationY>289</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>User_dont_bypass_flow</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.ByPassFlow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_KYCs_to_approve</targetReference>
+            </connector>
+            <label>User dont bypass flow</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Onboarding_Buyback_Go_Live_granted</name>
+        <label>Decision - Onboarding Buyback Go Live granted</label>
+        <locationX>380</locationX>
+        <locationY>846</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Go_Live_granted_is_changed_and_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Go_Live_granted__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Task_for_Merchant_Owner_Buyback_Performance_Check</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Go Live granted is changed and = True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Shipping_From_updated</name>
+        <label>Decision - Shipping From updated</label>
+        <locationX>375</locationX>
+        <locationY>664</locationY>
+        <defaultConnector>
+            <targetReference>Decision_Onboarding_Buyback_Go_Live_granted</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Shipping_From__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Shipping_From__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Targeted_Countries_with_empty_Shipping_From</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_TC_Found</name>
+        <label>Decision - TC Found</label>
+        <locationX>722</locationX>
+        <locationY>667</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_TC_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Targeted_Countries_with_empty_Shipping_From</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_on_TC</targetReference>
+            </connector>
+            <label>Yes - TC Found</label>
+        </rules>
+    </decisions>
+    <description>SOL project</description>
+    <formulas>
+        <name>Calculation_EU_FinancialAndLegal</name>
+        <dataType>Number</dataType>
+        <expression>if(NOT(ISBLANK({!$Record.KYB_check_Refusal_reason__c})), 0,
+
+
+(if({!$Record.IBAN_uploaded__c}=true, 7.7,0) + 
+if({!$Record.ID_uploaded__c}=true, 7.7,0) + 
+if({!$Record.Status_uploaded__c}=true, 7.7,0) + 
+if({!$Record.KBIS_uploaded__c}=true, 7.7,0) + 
+if({!$Record.Merchant_VAT_Compliance_Uploaded__c}=true, 7.7,0) + 
+if({!$Record.KYCs_Checked__c}=true, 7.7,0) + 
+if({!$Record.IBAN_checked__c}=true, 7.7,0) + 
+if({!$Record.ID_checked__c}=true, 7.7,0) + 
+if({!$Record.Status_checked__c}=true, 7.7,0) + 
+if({!$Record.KBIS_checked__c}=true, 7.7,0) + 
+if({!$Record.Merchant_VAT_Compliance_Approved__c}=true, 7.7,0) + 
+if(NOT(ISBLANK({!$Record.IBAN__c})), 7.7,0) + 
+if(NOT(ISBLANK({!$Record.BIC__c})), 7.6,0) ))</expression>
+        <scale>1</scale>
+    </formulas>
+    <formulas>
+        <name>Calculation_Global</name>
+        <dataType>Number</dataType>
+        <expression>if({!$Record.RecordTypeId}={!$Setup.Special_Process_Record_Types_Ids__c.Onboarding__c}, 
+(({!Calculation_EU_FinancialAndLegal}+{!Calculation_GoLiveAndSupply}+{!Calculation_Quality})/3), (({!Calculation_US_FinancialAndLegal}+{!Calculation_GoLiveAndSupply}+{!Calculation_Quality})/3))</expression>
+        <scale>1</scale>
+    </formulas>
+    <formulas>
+        <name>Calculation_GoLiveAndSupply</name>
+        <dataType>Number</dataType>
+        <expression>if({!$Record.TC__c}=true, 12.5,0) +
+if({!$Record.Listings_and_of_units__c}=true, 12.5,0) +
+if({!$Record.Payment_methods__c}=true, 12.5,0) +
+if({!$Record.Addresses__c}=true, 12.5,0) +
+if({!$Record.Back_Office_Configuration__c}=true, 12.5,0) +
+if({!$Record.Shipping_methods__c}=true, 12.5,0) +
+if({!$Record.Ads_Comment__c}=true, 12.5,0) +
+if({!$Record.Has_Merchant_Ready_Targeted_Countries__c}=true, 12.5,0)</expression>
+        <scale>1</scale>
+    </formulas>
+    <formulas>
+        <name>Calculation_Quality</name>
+        <dataType>Number</dataType>
+        <expression>if(ISPICKVAL({!$Record.Status_Quality_Test__c}, &quot;All good&quot;), 100, 0)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>Calculation_US_FinancialAndLegal</name>
+        <dataType>Number</dataType>
+        <expression>if({!$Record.IBAN_uploaded__c}=true, 16.7,0) + 
+if({!$Record.ID_uploaded__c}=true, 16.7,0) + 
+if({!$Record.Status_uploaded__c}=true, 16.7,0) + 
+if({!$Record.KBIS_uploaded__c}=true, 16.7,0) + 
+if({!$Record.Merchant_VAT_Compliance_Uploaded__c}=true, 16.7,0) + 
+if({!$Record.KYCs_Checked__c}=true, 16.7,0) + 
+if({!$Record.IBAN_checked__c}=true, 16.5,0)</expression>
+        <scale>1</scale>
+    </formulas>
+    <formulas>
+        <name>Created_3_months_ago</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate}-90</expression>
+    </formulas>
+    <formulas>
+        <name>CurrentDate_add_14</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate}+14</expression>
+    </formulas>
+    <formulas>
+        <name>Task_Owner</name>
+        <dataType>String</dataType>
+        <expression>if({!$Record.Merchant__r.OwnerId}={!$Setup.UserID__c.PA__c}, {!$Setup.UserID__c.BackWatch_EU__c},
+if({!$Record.Merchant__r.OwnerId}={!$Setup.UserID__c.Sam__c},{!$Setup.UserID__c.BackWatch_US__c}, {!$Record.Merchant__r.OwnerId}))</expression>
+    </formulas>
+    <formulas>
+        <name>Today_add_7</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate}+7</expression>
+    </formulas>
+    <interviewLabel>Onboarding - After save flow (Update only) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Onboarding - After save flow (Update Only)</label>
+    <loops>
+        <name>Loop_on_TC</name>
+        <label>Loop on TC</label>
+        <locationX>914</locationX>
+        <locationY>665</locationY>
+        <collectionReference>Get_Targeted_Countries_with_empty_Shipping_From</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Shipping_Country</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_TC</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Task_for_Finance_Team_KYCs_to_approve</name>
+        <label>Task for Finance Team - KYCs to approve</label>
+        <locationX>577</locationX>
+        <locationY>458</locationY>
+        <connector>
+            <targetReference>Decision_Shipping_From_updated</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Setup.UserID__c.Risk_Team__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>KYCs to approve</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject__c</field>
+            <value>
+                <stringValue>KYCs to approve</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Merchant__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Task_for_Merchant_Owner_Buyback_Performance_Check</name>
+        <label>Task for Merchant Owner - Buyback Performance Check</label>
+        <locationX>710</locationX>
+        <locationY>860</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Today_add_7</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Add_Task_Comment</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Task_Owner</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Check buyback performance</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject__c</field>
+            <value>
+                <stringValue>Check buyback performance</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Merchant__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Targeted_Countries_with_empty_Shipping_From</name>
+        <label>Get Targeted Countries with empty Shipping From</label>
+        <locationX>574</locationX>
+        <locationY>667</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Decision_TC_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Merchant__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Merchant__r.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Shipping_From__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Targeted_Country__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_TC</name>
+        <label>Update TC</label>
+        <locationX>1216</locationX>
+        <locationY>671</locationY>
+        <inputReference>TC_to_update</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>257</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Decision_on_user_buypass_flows</targetReference>
+        </connector>
+        <object>Onboarding_Process__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Add_Task_Comment</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Please make sure to check: 
+- Listing and pricing (W1-W8)
+- Merchant receives orders (W3-W8)
+- Merchant pays orders (W3-W8)
+- Late Processing Rate (W3-W8, every 2 weeks if ok)
+- Late Response Rate and quality of the messages (W3-W8, every 2 weeks if ok)
+- Merchant does counter-offers (W3-W8, every 2 weeks if ok)</text>
+    </textTemplates>
+    <variables>
+        <name>TC_to_update</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Targeted_Country__c</objectType>
+    </variables>
+    <variables>
+        <name>Temp_TC</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Targeted_Country__c</objectType>
+    </variables>
+</Flow>

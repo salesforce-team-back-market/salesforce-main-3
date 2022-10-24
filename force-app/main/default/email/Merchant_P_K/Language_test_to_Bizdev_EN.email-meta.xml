@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Language test to Bizdev- EN</name>
+    <style>freeForm</style>
+    <subject>Back Market - Here’s your P.K</subject>
+    <textOnly>WARNING
+
+
+
+Your merchant wants to pass the Language test, but we have no email address to send it. Please create a contact and manually send this template :
+
+
+
+“Hello {!Contact.FirstName},
+
+As part of your onboarding process on Back Market, would you be interested in completing our language test? If so, great! This email is for you.
+
+
+We will ask you for your Unique ID (P.K.) so that we can identify you and associate your answers with your merchant account.
+
+
+To the question “What is your P.K.?” you will need to answer {!Account.Back_Office_PK__c}.
+
+
+It is vital that you fill in the correct number, otherwise we will not be able to retrieve your answers.
+
+
+You can access the language test by clicking here.
+
+
+Good luck with the test and have a great day,
+
+{!User.Name},
+
+Back Market
+
+”</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

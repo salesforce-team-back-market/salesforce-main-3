@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_FP_FalseStart_Less_6_Months</fullName>
+    <active>false</active>
+    <description>Prevent users from changing stage when in False Start for less than 6 months</description>
+    <errorConditionFormula>AND(
+ISCHANGED( Stage__c),
+ISPICKVAL(PRIORVALUE(Stage__c) , &quot;Future partnership&quot;),
+ISPICKVAL( Challenging_Point__c , &quot;NMO - False start&quot;),
+(today () - Date_entry_in_stage_Future_partnership__c  ) &lt; 182 )
+&amp;&amp; $User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorMessage>Whooops, you cannot change the stage. The merchant needs to stay 6 months in false start.</errorMessage>
+</ValidationRule>

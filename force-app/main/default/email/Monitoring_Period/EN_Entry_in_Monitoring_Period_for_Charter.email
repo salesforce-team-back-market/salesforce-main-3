@@ -1,0 +1,21 @@
+Hello {!Contact.FirstName},
+
+I have been alerted about your entry in a Monitoring Period for Non-Compliance with our Quality Charter. I wanted to review the situation with you in order to find a favorable outcome and to prevent your sales from being overly impacted. 
+
+The following seem to be the main causes:
+
+SAV ###
+SAV ##
+SAV ##
+
+With these elements in mind, we are going to begin a period of privileged support which should enable you to meet our quality standards detailed in our quality charter. This begins with an appropriate action plan to be agreed on together. Here are the solutions that I think will be useful to you:
+
+
+
+
+The objective is to make sure you meet your Quality standards. This Monitoring Period will last until {!Alert__c.ETA__c}.
+
+Of course, I remain available to discuss this over the phone and accompany you in your action plan.
+
+Wishing you a very nice day,
+{{{Sender.Signature}}}

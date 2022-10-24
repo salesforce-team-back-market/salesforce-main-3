@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Challenging_Point_On_Contact__c</fullName>
+    <businessOwnerUser>arthur.veron@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>Challenging Point On Contact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Customer service details</fullName>
+                <default>false</default>
+                <label>Customer service details</label>
+            </value>
+            <value>
+                <fullName>Missing email</fullName>
+                <default>false</default>
+                <label>Missing email</label>
+            </value>
+            <value>
+                <fullName>Missing name</fullName>
+                <default>false</default>
+                <label>Missing name</label>
+            </value>
+            <value>
+                <fullName>Missing phone number</fullName>
+                <default>false</default>
+                <label>Missing phone number</label>
+            </value>
+            <value>
+                <fullName>No contact details</fullName>
+                <default>false</default>
+                <label>No contact details</label>
+            </value>
+            <value>
+                <fullName>No longer in company</fullName>
+                <default>false</default>
+                <label>No longer in company</label>
+            </value>
+            <value>
+                <fullName>Not related to the merchant</fullName>
+                <default>false</default>
+                <label>Not related to the merchant</label>
+            </value>
+            <value>
+                <fullName>Old contact details</fullName>
+                <default>false</default>
+                <label>Old contact details</label>
+            </value>
+            <value>
+                <fullName>Wrong email</fullName>
+                <default>false</default>
+                <label>Wrong email</label>
+            </value>
+            <value>
+                <fullName>Wrong name</fullName>
+                <default>false</default>
+                <label>Wrong name</label>
+            </value>
+            <value>
+                <fullName>Wrong phone number</fullName>
+                <default>false</default>
+                <label>Wrong phone number</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Bypassing_NMO</fullName>
+    <active>true</active>
+    <description>Prevent changing stage from NMO to Run without approving Launching Phase.</description>
+    <errorConditionFormula>AND (
+$User.ByPassValidationRules__c != true,
+
+( AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;N.M.O.&quot; ),
+ISPICKVAL ( Stage__c,&quot;Run&quot; ),
+Number_of_ended_NMO_processes__c = 0
+)))</errorConditionFormula>
+    <errorMessage>Whoops, you can&apos;t change the stage. A Launching Phase needs to be approved to move to Run.</errorMessage>
+</ValidationRule>

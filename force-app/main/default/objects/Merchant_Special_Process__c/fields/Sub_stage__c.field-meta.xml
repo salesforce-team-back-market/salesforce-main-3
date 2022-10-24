@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft completion (Merchant Owner)</fullName>
+                <default>false</default>
+                <label>1. Draft completion (Merchant Owner)</label>
+            </value>
+            <value>
+                <fullName>Draft completion (TL)</fullName>
+                <default>false</default>
+                <label>2. Draft completion (TL)</label>
+            </value>
+            <value>
+                <fullName>Draft exemption</fullName>
+                <default>false</default>
+                <label>3. Draft exemption (Optional)</label>
+            </value>
+            <value>
+                <fullName>Draft approval (Finance)</fullName>
+                <default>false</default>
+                <label>4. Draft approval (Finance)</label>
+            </value>
+            <value>
+                <fullName>Draft approval (Legal)</fullName>
+                <default>false</default>
+                <label>5. Draft approval (Legal)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

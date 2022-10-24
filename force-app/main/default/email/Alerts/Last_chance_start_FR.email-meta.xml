@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Last chance start (FR)</name>
+    <style>freeForm</style>
+    <subject>{!Alert__c.P_K__c} - {!Alert__c.Business_Name__c} - Monitoring période - dernière chance</subject>
+    <textOnly>Bonjour {!Alert___c.Business_Name__c},
+
+
+
+Depuis notre dernier contact au sujet du taux de {!Alert__c.Issue_KPI__c}, la situation ne s&apos;est malheureusement pas améliorée. Par conséquent, conformément à l&apos;article 12 de nos Conditions générales de ventes, votre compte entre en “dernière chance” de notre période de suivi.
+
+
+
+Le but de cette &quot;dernière chance&quot; est de vous donner une dernière opportunité d&apos;améliorer l’indicateur qualité concerné et d&apos;atteindre l&apos;objectif précédemment communiqué afin de respecter nos standards de qualité établis dans la Charte de Qualité et les CGV.
+
+
+
+Pendant cette période, votre compte sera limité à environ {!Account.Limitation_to_apply_in_Last_Chance__c} ventes par jour (soit environ 30% de votre volume de ventes moyen réalisé au cours des 30 derniers jours).
+
+Nous vous encourageons vivement à travailler avec votre point de contact Back Market pour suivre les progrès réalisés au cours du mois prochain et à le solliciter pour toute clarification. Pour plus d&apos;informations sur les seuils de Monitoring Period, veuillez consulter notre centre d’assistance marchands le Merchant Support Center.
+
+
+
+Dans le cas où le taux de {!Alert__c.Issue_KPI__c} ne s&apos;améliore pas avant la date mentionnée, nous serons dans l&apos;obligation de fermer votre compte sur notre plateforme, comme le prévoient les articles 12 et 18.2 des CGU.
+
+
+
+Nous espérons sincèrement que nous n&apos;en arriverons pas là et sommes à votre disposition pour répondre à toute question.
+
+
+
+Cordialement,
+
+
+Back Market</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

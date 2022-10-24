@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Push_Service</fullName>
+    <active>true</active>
+    <label>Push Service</label>
+    <picklistValues>
+        <picklist>Action_Purpose__c</picklist>
+        <values>
+            <fullName>Improve Cancellation Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve Csat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve Csat %2F NRR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve LRR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve OTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve OTD%2FOTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve Untracked Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve defective %2F NRR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve defective %2F accessories rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open new countries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimize customer care costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimize logistic costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimize shipping costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimize sourcing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scale for Holiday Season</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason__c</picklist>
+        <values>
+            <fullName>Already have resources to handle after sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Already have resources to handle repair based in EU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed for pass due date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Couldn%27t reach the merchant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do not want to outsource Return %26 refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does not trust our carriers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does not trust our partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does not want to lock stock for Back Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does not want to outsource</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does not want to outsource Shipping %2F Storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does not want to outsource insurance requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fears for impact on OTS %2F OTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Has better prices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Has better shipping prices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not satisfied with the other BM services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28add to Comment%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satisfied with his current solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too expensive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Live_In__c</picklist>
+        <values>
+            <fullName>All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovakia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Merchant KO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Action by Due Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Targeted_Country__c</picklist>
+        <values>
+            <fullName>All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovakia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Push BackCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push BackPack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push BackParts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push BackRepair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push BackShip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push FBBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push RAAS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

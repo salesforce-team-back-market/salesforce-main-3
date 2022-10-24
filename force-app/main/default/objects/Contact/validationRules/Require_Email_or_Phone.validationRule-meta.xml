@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Email_or_Phone</fullName>
+    <active>true</active>
+    <description>At least a mobile number or an e-mail or a Professional Network U.R.L. must be filled.</description>
+    <errorConditionFormula>AND ( Email = NULL, 
+      MobilePhone = NULL, 
+      Professional_network__c = NULL,
+      $User.ByPassValidationRules__c !=true
+ )</errorConditionFormula>
+    <errorMessage>Please fill in at least a mobile number, an e-mail or a Professional Network U.R.L.</errorMessage>
+</ValidationRule>

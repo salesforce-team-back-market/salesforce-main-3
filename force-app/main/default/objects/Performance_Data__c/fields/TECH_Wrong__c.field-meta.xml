@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Wrong__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Cases_Wrong__c  &gt;= VALUE( $Label.MP_EntryCases_EU_Sales_Wrong_Product_Rate ) &amp;&amp;  Wrong_items__c &gt;= VALUE( $Label.MP_EntryRate_EU_Sales_Wrong_Product_Rate ), 1, 0 ) 
+,
+&apos;U_S&apos;,
+IF( Cases_Wrong__c&gt;= VALUE($Label.MP_EntryCases_US_Sales_Wrong_Product_Rate) &amp;&amp; Wrong_items__c &gt;= VALUE($Label.MP_EntryRate_US_Sales_Wrong_Product_Rate) , 1, 0),
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH Wrong</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

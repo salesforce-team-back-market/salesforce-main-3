@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QueueRoutingConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <capacityWeight>1.0</capacityWeight>
+    <isAttributeBased>true</isAttributeBased>
+    <label>Default</label>
+    <routingModel>MOST_AVAILABLE</routingModel>
+    <routingPriority>1</routingPriority>
+    <skills>
+        <skill>BackShip</skill>
+    </skills>
+    <skills>
+        <skill>Default_Type</skill>
+    </skills>
+    <skills>
+        <skill>SSA</skill>
+    </skills>
+    <skills>
+        <skill>Services</skill>
+    </skills>
+    <skills>
+        <skill>Return_Label</skill>
+    </skills>
+    <skills>
+        <skill>French</skill>
+    </skills>
+    <skills>
+        <skill>English</skill>
+    </skills>
+    <skills>
+        <skill>Catalog</skill>
+    </skills>
+    <skills>
+        <skill>Carrier_Investigation</skill>
+    </skills>
+</QueueRoutingConfig>

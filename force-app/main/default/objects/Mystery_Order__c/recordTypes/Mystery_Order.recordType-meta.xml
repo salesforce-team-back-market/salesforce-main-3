@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mystery_Order</fullName>
+    <active>true</active>
+    <label>Mystery Order</label>
+    <picklistValues>
+        <picklist>MO_Result__c</picklist>
+        <values>
+            <fullName>KO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KO no-go</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MO_motive__c</picklist>
+        <values>
+            <fullName>First Sale Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flop 10 Sellers on Defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO on Top 20 GMV Sellers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Random Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspicion - Hazardous charger Alert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspicion - counterfeit Alert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical analysis</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_category__c</picklist>
+        <values>
+            <fullName>AirPods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apple Watch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chargers and accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaming console</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Headphone%2FEarphone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laptop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MacBook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smartphone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smartwatch %28Other%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speakers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tablets %28Other%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iPad</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Stand_by__c</picklist>
+        <values>
+            <fullName>Boutique is not available %28%3Dpage error%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Listing is not available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller is offline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_aborted__c</picklist>
+        <values>
+            <fullName>Order canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28specify%29 - No new MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28specify%29 - Relaunch new MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package never received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product is not eligible to MO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_failure__c</picklist>
+        <values>
+            <fullName>Battery Requirements not conformed %2F Non conformité aux critères de batterie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blancco Tests Failed %2F Echec des tests Blancco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charger not conform %2F Chargeur non conforme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charger not provided %2F Chargeur non fourni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data breach %28user data not erased%29 %2F Infraction données %28données utilisateur non effacées%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device damaged %2F Produit endommagé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device does not turn on %28despite full charge%29 %2F Le produit ne s%27allume pas %28malgré charge complète%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device locked %2F Produit verrouillé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device prohibited for sales %2F Produit interdit à la vente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device stolen %2F Produit déclaré volé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient score %28cumulated errors%29 %2F Score insuffisant %28cumul d%27erreurs%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaflet with incentivization to bypass Back Market platform %2F Flyer avec incitation à contourner la plateforme Back Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package is a counterfeit %2F L%27emballage est une contrefaçon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Quality Assembly %2F Mauvaise qualité d%27assemblage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncompatible Network %2F Incompatibilité réseaux</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Abort MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archived for BM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product sent back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refunded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Result Shared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stand-by</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To do</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Suspicion_Hazardous_charger_status__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To test</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_merchant__c</picklist>
+        <values>
+            <fullName>2nd MO after 1st One Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring Period for Defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Mystery Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspicious</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top 20</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

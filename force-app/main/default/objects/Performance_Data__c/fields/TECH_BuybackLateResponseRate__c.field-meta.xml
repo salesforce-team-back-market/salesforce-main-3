@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_BuybackLateResponseRate__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Late_Or_Unanswered_Cases__c &gt;=VALUE($Label.MP_EntryCases_EU_Buyback_Late_Response_rate) &amp;&amp; 
+			Late_Response_Rate__c &gt;= VALUE($Label.MP_EntryRate_EU_Buyback_Late_Response_rate) , 1, 0 )
+,
+&apos;U_S&apos;,
+IF( Late_Or_Unanswered_Cases__c &gt;=VALUE($Label.MP_EntryCases_US_Buyback_Late_Response_rate) &amp;&amp; 
+			Late_Response_Rate__c &gt;= VALUE($Label.MP_EntryRate_US_Buyback_Late_Response_rate) , 1, 0),
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_BuybackLateResponseRate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

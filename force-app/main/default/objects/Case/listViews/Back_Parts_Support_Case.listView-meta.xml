@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Back_Parts_Support_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Back Parts Support</label>
+    <queue>Back_Parts_Support</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

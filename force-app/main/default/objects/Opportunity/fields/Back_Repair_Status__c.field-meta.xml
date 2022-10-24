@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Back_Repair_Status__c</fullName>
+    <businessOwnerUser>clement.vannicatte@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>Back Repair Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>KO - Seasonality</fullName>
+                <default>false</default>
+                <label>KO - Seasonality</label>
+            </value>
+            <value>
+                <fullName>KO - Service is too expensive</fullName>
+                <default>false</default>
+                <label>KO - Service is too expensive</label>
+            </value>
+            <value>
+                <fullName>KO - Merchant is in exit</fullName>
+                <default>false</default>
+                <label>KO - Merchant is in exit</label>
+            </value>
+            <value>
+                <fullName>KO - Seller already has in-house repair resources</fullName>
+                <default>false</default>
+                <label>KO - Seller already has in-house repair resources</label>
+            </value>
+            <value>
+                <fullName>KO - Seller sells other product categories than smartphones</fullName>
+                <default>false</default>
+                <label>KO - Seller sells other product categories than smartphones</label>
+            </value>
+            <value>
+                <fullName>KO - Seller does not want to use BackCare</fullName>
+                <default>false</default>
+                <label>KO - Seller does not want to use BackCare</label>
+            </value>
+            <value>
+                <fullName>KO - I buy the products under warranty</fullName>
+                <default>false</default>
+                <label>KO - I buy the products under warranty</label>
+            </value>
+            <value>
+                <fullName>KO - Is an expert already</fullName>
+                <default>false</default>
+                <label>KO - Is an expert already</label>
+            </value>
+            <value>
+                <fullName>KO - Not available in the country</fullName>
+                <default>false</default>
+                <label>KO - Not available in the country</label>
+            </value>
+            <value>
+                <fullName>KO - Not happy with the other services at the moment</fullName>
+                <default>false</default>
+                <label>KO - Not happy with the other services at the moment</label>
+            </value>
+            <value>
+                <fullName>KO - Only sell categ 1 phones</fullName>
+                <default>false</default>
+                <label>KO - Only sell categ 1 phones</label>
+            </value>
+            <value>
+                <fullName>OK - Seller does not have repair resources</fullName>
+                <default>false</default>
+                <label>OK - Seller does not have repair resources</label>
+            </value>
+            <value>
+                <fullName>OK - Seller wants to fully externalize after-sales tasks</fullName>
+                <default>false</default>
+                <label>OK - Seller wants to fully externalize after-sales tasks</label>
+            </value>
+            <value>
+                <fullName>OK - Seller wants to benefit from in-shop repair solution</fullName>
+                <default>false</default>
+                <label>OK - Seller wants to benefit from in-shop repair solution</label>
+            </value>
+            <value>
+                <fullName>OK - Price</fullName>
+                <default>false</default>
+                <label>OK - Price</label>
+            </value>
+            <value>
+                <fullName>OK - Integrated solution</fullName>
+                <default>false</default>
+                <label>OK - Integrated solution</label>
+            </value>
+            <value>
+                <fullName>OK - Already using Back Care</fullName>
+                <default>false</default>
+                <label>OK - Already using Back Care</label>
+            </value>
+            <value>
+                <fullName>OK - Wants to try it</fullName>
+                <default>false</default>
+                <label>OK - Wants to try it</label>
+            </value>
+            <value>
+                <fullName>KO - No answer yet</fullName>
+                <default>false</default>
+                <label>KO - No answer yet</label>
+            </value>
+            <value>
+                <fullName>OK - Cannot repair within 3 days</fullName>
+                <default>false</default>
+                <label>OK - Cannot repair within 3 days</label>
+            </value>
+            <value>
+                <fullName>KO - Do not want to outsource</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO - Do not want to outsource</label>
+            </value>
+            <value>
+                <fullName>KO - Don&apos;t trust supplier</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO - Don&apos;t trust supplier</label>
+            </value>
+            <value>
+                <fullName>KO - Multichannel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO - Multichannel</label>
+            </value>
+            <value>
+                <fullName>KO_Price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO - Price</label>
+            </value>
+            <value>
+                <fullName>OK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

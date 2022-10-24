@@ -1,0 +1,11 @@
+Hi, Super Bizdev
+
+N.M.O. Process "{!NMO_Process__c.Name}" for the Merchant "{!NMO_Process__c.Merchant_Name__c}" has been approved by the New Bizdev and the CC.
+Record Type : {!NMO_Process__c.RecordType}
+
+You need to increase the limitation. :)
+To access to the latest approval, clic to this link:  {!ApprovalRequest.Internal_URL}
+
+
+Thanks in advance,
+Your Salesforce administrator

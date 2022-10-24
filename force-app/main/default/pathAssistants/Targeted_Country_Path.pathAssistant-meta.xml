@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <entityName>Targeted_Country__c</entityName>
+    <fieldName>Online_Status__c</fieldName>
+    <masterLabel>Targeted Country Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;To move to the next stage, please select a Customer Champion for that country and mark the stage as complete.&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Candidate</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;- If the merchant is in onboarding: the Targeted Country will automatically be &amp;#39;Live&amp;#39; once the Head Of NewBiz validates the onboarding process&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;- If the merchant is in NMO: ask the Head Of to move directly the Targeted Country to the &amp;#39;Live&amp;#39; stage&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;- If the merchant is already in &amp;#39;Run&amp;#39;: now that the stage is &amp;#39;Ready&amp;#39;, a NMO XBorder has been created. Ask the Head Of AM to approve the NMO XBorder, and the Targeted Country will automatically be &amp;#39;Live&amp;#39;&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Ready</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;To move to the next stage, the merchant needs either to have passed the language test or to have signed the Back Care contract:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;Language test: send the language test to your merchant. Once completed, ask the Customer Champion to review it. If the merchant successfully passed, the CC has to set the field &amp;#39;Language proficiency test&amp;#39; to &amp;#39;Validated&amp;#39; in the corresponding Targeted Country.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;Back Care: get the merchant to sign Back Care contract and tick the box &amp;#39;Back Care&amp;#39; in the corresponding Targeted Country.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Once one of the two options is completed, you can mark the stage as complete.&lt;/p&gt;</info>
+        <picklistValueName>Selected</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_JP_From_BusQual_to_Go_Live</fullName>
+    <active>true</active>
+    <description>All mandatory fields are not populated. Please refer to Notion.</description>
+    <errorConditionFormula>AND (
+ISPICKVAL ( Stage__c, &quot;Go-Live Prerequisites&quot; ),
+RecordType.DeveloperName = &quot;JP_Onboarding&quot;,
+OR(
+JP_I_D_Approved__c = false,
+ Second_hand_business_permet__c = false,
+ Articles_of_Organisation__c = false,
+ Japanese_Tax_Number__c = false,
+ Japan_bank_account_statement__c = false),
+$User.ByPassValidationRules__c &lt;&gt; True
+)</errorConditionFormula>
+    <errorMessage>All mandatory fields are not populated. Please refer to Notion.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Country_Key__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>Useful to limit one Record by Merchant ID / Country API Name combination.</description>
+    <externalId>true</externalId>
+    <label>Account Country Key</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,28 @@
+Hello {!Contact.FirstName},
+
+I have been alerted about your "{!Alert__c.Issue_KPI__c}" rate that recently increased, which led to an entry in a Monitoring Period. I wanted to review the situation with you in order to find a favorable outcome and to prevent your sales from being overly impacted. 
+
+You can see below the evolution of the rate over the last 30 days:
+
+***DASHBOARD SCREENSHOT***
+
+The following seem to be the main causes for this raise:
+
+
+
+
+
+You will also find attached a list of related customer requests.
+
+Following this observation, we will begin a period of privileged support which should enable you to improve your performance on this indicator over the long term. This begins with an appropriate action plan to be agreed on together. Here are the solutions that I believe will be useful to you:
+
+
+
+
+
+The objective is to reduce the rate from "{!Alert__c.Issue_KPI__c}" to X% before {!Alert__c.ETA__c}.
+
+Of course, I remain available to discuss this over the phone and accompany you in your action plan.
+
+Wishing you a very nice day,
+{{{Sender.Signature}}}

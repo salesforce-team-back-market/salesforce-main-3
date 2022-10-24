@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Monitoring period start</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>MP start (FR) for champion</name>
+    <style>freeForm</style>
+    <subject>{!Alert__c.P_K__c} - {!Alert__c.Business_Name__c} - entrée en période de monitoring</subject>
+    <textOnly>ATTENTION - ERREUR
+
+Bonjour,
+
+Merci de transférer manuellement cet email au marchand en vous assurant que celui-ci possède au moins un contact qualité ou business avec une adresse email valide.
+Merci d&apos;ajouter legal-sellers@backmarket.com en copie de votre email.
+
+--
+
+Bonjour {!Alert__c.Business_Name__c},
+
+Cet email a pour but de vous informer que votre récente performance qualité sur Back Market, en particulier le taux &quot;{!Alert__c.Issue_KPI__c}&quot;, ne répond pas aux normes de qualité décrites dans l&apos;article 12 des Conditions générales de ventes de Back Market et dans la Charte Qualité. A ce titre, votre compte entre en période de suivi appelée Monitoring Period.
+
+Le but de cette Monitoring Period est de vous permettre d&apos;atteindre l’objectif fixé et de répondre aux normes de qualité attendues avant {!Alert__c.ETA__c}.  Dans le cas où votre performance qualité ne s&apos;améliore pas à cette date, vos ventes seront automatiquement limitées. Pour plus d&apos;informations sur les seuils de Monitoring Period, veuillez consulter notre centre d’assistance marchands le Merchant Support Center.
+
+Votre contact Back Market est disponible pour travailler avec vous afin d&apos;analyser la situation et d&apos;élaborer conjointement un plan d&apos;action pour résoudre les problèmes rencontrés.
+
+Cela dit, nous espérons qu&apos;aucune limitation ne sera nécessaire car nous considérons votre compte comme un partenaire précieux sur la plateforme. N&apos;hésitez pas à nous contacter pour toute question supplémentaire.
+
+Sincèrement,
+
+Back Market
+
+
+https://merchant-support.backmarket.com/hc/fr/articles/360020811339-Qu-est-ce-que-le-processus-de-Monitoring-Period-</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

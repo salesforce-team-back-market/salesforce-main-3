@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warranty_exclusion__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>To sell on Back Market, the seller commits to declare, explain and duly document any warranty exclusion within 3 days after reception and to ship back the product to customer within 2 days after that.</inlineHelpText>
+    <label>Warranty exclusion</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

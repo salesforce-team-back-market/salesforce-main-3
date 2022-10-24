@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Merchants_in_Onboarding_BD</fullName>
+    <columns>Kanban_Card_Link__c</columns>
+    <columns>LAST_ACTIVITY</columns>
+    <columns>TC__c</columns>
+    <columns>KBIS_uploaded__c</columns>
+    <columns>Status_uploaded__c</columns>
+    <columns>ID_uploaded__c</columns>
+    <columns>KYCs_Checked__c</columns>
+    <columns>Merchant_VAT_Compliance_Uploaded__c</columns>
+    <columns>Quality_Charter__c</columns>
+    <columns>Status_Quality_test_1__c</columns>
+    <columns>Status_Quality_test_2__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Go_Live_granted__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CurrentBizDev__c</field>
+        <operation>equals</operation>
+        <value>yes</value>
+    </filters>
+    <label>My Merchants in Onboarding - BD</label>
+    <sharedTo></sharedTo>
+</ListView>

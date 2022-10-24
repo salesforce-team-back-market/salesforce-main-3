@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Required_Fields_Checks</fullName>
+    <active>true</active>
+    <description>Checks that every mandatory fields are filled in.</description>
+    <errorConditionFormula>OR ( RecordTypeId = NULL, 
+     TEXT ( Temporal_Granularity__c ) = NULL, 
+     Date__c = NULL )</errorConditionFormula>
+    <errorMessage>At least, a Record Type, a Merchant, a Date and a Temporal Granularity should be defined for a Performance Data Record!</errorMessage>
+</ValidationRule>

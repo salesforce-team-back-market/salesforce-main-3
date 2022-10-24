@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_KPI_Contribution_in_the_SSM_Pool__c</fullName>
+    <businessOwnerUser>ana.ordeig@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>% of KPI Contribution in the SSM Pool</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

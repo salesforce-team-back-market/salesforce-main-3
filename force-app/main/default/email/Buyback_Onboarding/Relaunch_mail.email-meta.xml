@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Relaunch mail</name>
+    <style>freeForm</style>
+    <subject>Back Market x {!Account.Name} - Finir votre inscription reprise !</subject>
+    <textOnly>Bonjour {!Contact.FirstName},
+
+Je reviens vers vous suite à votre souhait de vous sourcer sur 10 catégories de produit via Back Market. Il ne vous manque plus que quelques actions pour commencer à vous sourcer.
+
+
+
+Voici ce qu&apos;il faut :
+
+Renseigner votre adresse et votre carte bancaire dans l&apos;onglet « OPTIONS » de votre Back Office Reprise.
+Remplir le questionnaire Pour vous aider à répondre aux questions, je vous joins le résumé de la Charte pour la partie reprise.
+Signer le mandat SEPA ci-après pour éviter les plafonds de paiement par carte : Mandat SEPA pour la Reprise Back Market
+Créer au moins 3 annonces dans l&apos;onglet &quot;Annonces&quot; de votre Back Office : une vidéo pour vous aider ici
+
+Pas d&apos;abonnement, pas d&apos;engagement !
+
+
+
+Si vous avez des questions, n&apos;hésitez pas à répondre à ce mail !
+
+Bonne journée.
+
+Cordialement,
+
+Add the PJ &quot;Résumé de la charte&quot; you will find in this notion :
+
+Buyback Documents</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

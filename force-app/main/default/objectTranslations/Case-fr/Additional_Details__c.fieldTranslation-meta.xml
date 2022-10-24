@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Détails supplémentaires</label>
+    <name>Additional_Details__c</name>
+    <picklistValues>
+        <masterLabel>Back Market is not applying the correct procedure</masterLabel>
+        <translation>Back Market n&apos;applique pas la bonne procédure</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BackCare is not managing my case properly / taking into account my feedback</masterLabel>
+        <translation>Le BackCare ne gère pas correctement une demande / ne prend pas en compte mes messages</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Billing request related to the service</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I am not able to provide a proof of refund to the customer</masterLabel>
+        <translation>Je ne suis pas en mesure de fournir une preuve de remboursement au client</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I don&apos;t know how to manage one of my after-sales requests</masterLabel>
+        <translation>Je ne sais pas comment gérer une de mes demandes après-vente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I need help on a specific order</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I need help to manage a warranty exclusion</masterLabel>
+        <translation>J&apos;ai besoin d&apos;assistance pour une exclusion de garantie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I need to help manage BackCare request</masterLabel>
+        <translation>J&apos;ai besoin d&apos;aide pour gérer une demande BackCare</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I need to open / update a BackShip carrier investigation</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I need to open a FBBM carrier investigation / I have an issue with a FBBM delivery</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I want to subscribe</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I&apos;m facing issues to create a return/shipment label or to arrange a pick up</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>My request concerns something else</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund at your expense of a commercial gesture</masterLabel>
+        <translation>Remboursement à votre charge d&apos;un geste commercial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund at your expense of repair costs</masterLabel>
+        <translation>Remboursement à votre charge des frais de réparation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund at your expense of shipping/delivery costs</masterLabel>
+        <translation>Remboursement à votre charge des frais d&apos;envoi / de livraison</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund proceeded whereas there is a warranty exclusion</masterLabel>
+        <translation>Remboursement effectué alors qu&apos;il s&apos;agit d&apos;une exclusion de garantie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The order was refunded and shouldn&apos;t have been</masterLabel>
+        <translation>La commande a été remboursée alors qu&apos;elle n&apos;aurait pas dû l&apos;être</translation>
+    </picklistValues>
+</CustomFieldTranslation>

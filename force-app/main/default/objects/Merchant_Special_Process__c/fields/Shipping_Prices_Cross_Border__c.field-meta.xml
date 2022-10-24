@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Prices_Cross_Border__c</fullName>
+    <businessOwnerUser>arthur.veron@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <inlineHelpText>What are merchants shipping prices for products that have less than 1 kg for cross-border?</inlineHelpText>
+    <label>Shipping Prices Cross Border</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>7-9</fullName>
+                <default>false</default>
+                <label>7-9</label>
+            </value>
+            <value>
+                <fullName>9-11</fullName>
+                <default>false</default>
+                <label>9-11</label>
+            </value>
+            <value>
+                <fullName>11-13</fullName>
+                <default>false</default>
+                <label>11-13</label>
+            </value>
+            <value>
+                <fullName>13-15</fullName>
+                <default>false</default>
+                <label>13-15</label>
+            </value>
+            <value>
+                <fullName>&gt;15</fullName>
+                <default>false</default>
+                <label>&gt;15</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+Bonjour {!Contact.FirstName},
+
+Merci d’avoir pris le temps de répondre à notre questionnaire Qualité. Celui-ci nous permet de comprendre les pratiques de l'entreprise et de nous assurer que celles-ci sont en adéquation/accord avec notre Charte Qualité.
+
+J’ai le plaisir de vous annoncer que votre test a été validé et que vous pouvez passer maintenant à la prochaine étape.
+
+Je tiens également à attirer votre attention sur les points suivant : Faire un petit rappel si certaines réponses n’étaient pas 100% correctes.
+
+Je reste votre contact en cas de question reliée à la Charte Qualité ou au Service Client.
+
+Bonne journée,
+{!User.Name} - Back Market

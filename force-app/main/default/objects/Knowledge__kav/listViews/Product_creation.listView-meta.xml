@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_creation</fullName>
+    <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+    <columns>IS_CHANNEL_CSP</columns>
+    <columns>ARTICLE_NUMBER</columns>
+    <columns>TITLE</columns>
+    <columns>PUBLISH_STATUS</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>LANGUAGE</columns>
+    <columns>LAST_PUBLISHED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001061</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001062</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001063</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001384</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001417</value>
+    </filters>
+    <label>🧱 Product creation</label>
+</ListView>

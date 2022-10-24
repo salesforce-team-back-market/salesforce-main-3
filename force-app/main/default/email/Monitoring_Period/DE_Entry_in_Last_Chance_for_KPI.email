@@ -1,0 +1,21 @@
+Hallo {!Contact.FirstName},
+
+
+Ich bin erneut darauf aufmerksam gemacht worden, dass Ihr XXX-Rate leider immer noch nicht das festgelegte Ziel erreicht hat. Wir hatten einen Aktionsplan zur Senkung Ihrer Rate von "{!Alert__c.Issue_KPI__c}" auf X% vor {!Alert__c.ETA__c} definiert.
+
+Leider hat Sie diese Situation in die Phase der "letzten Chance" unserer Beobachtungsphase gebracht, und Ihre Verkäufe werden von nun an begrenzt sein. Wir werden noch härter an dieser Kennzahl arbeiten müssen, um Ihr Verkaufslimit aufzuheben und ein optimales Kundenerlebnis zu gewährleisten. 
+
+Das Ziel bleibt dasselbe (d.h. X%) und muss vor dem Ende dieses Zeitraums der "letzten Chance", d.h. vor dem {!Alert__c.ETA__c}, erreicht werden.
+
+Um Ihnen bei dieser Aufgabe behilflich zu sein, füge ich dieser E-Mail die Liste der Kundenreklamationen an, die sich in den letzten 30 Tagen negativ auf Ihre Quote ausgewirkt haben.
+
+Hier sind die neuen Lösungen, die ich Ihnen anbieten kann:
+
+
+
+
+
+Selbstverständlich stehe ich weiterhin zur Verfügung, um dies telefonisch zu besprechen und Sie bei Ihrem Aktionsplan zu begleiten.
+
+Ich wünsche Ihnen einen schönen Tag,
+{{{Sender.Signature}}}

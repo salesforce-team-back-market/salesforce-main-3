@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Onboarding_Go_Live</name>
+    </customPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Buyback_limitation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Onboarding_Process__c.Go_Live_granted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Head of BizDev</label>
+    <license>Salesforce</license>
+    <recordTypeVisibilities>
+        <recordType>Case.BuyBack_Bill_Process_V2</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

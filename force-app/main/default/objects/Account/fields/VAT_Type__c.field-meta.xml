@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VAT_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>VAT Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full Margin VAT</fullName>
+                <default>false</default>
+                <label>Full Margin VAT</label>
+            </value>
+            <value>
+                <fullName>Full Normal VAT</fullName>
+                <default>false</default>
+                <label>Full Normal VAT</label>
+            </value>
+            <value>
+                <fullName>Margin and Normal VAT</fullName>
+                <default>false</default>
+                <label>Margin and Normal VAT</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t know / other</fullName>
+                <default>false</default>
+                <label>Don&apos;t know / other</label>
+            </value>
+            <value>
+                <fullName>Classic</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Classic</label>
+            </value>
+            <value>
+                <fullName>Marginal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marginal</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

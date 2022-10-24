@@ -1,0 +1,13 @@
+Hello,
+
+An approval process has been triggered and assigned to you. Here are more information:
+- Approval Process Action: {!ApprovalRequest.Process_Step_Name}
+- Merchant : {!NMO_Process__c.Merchant_Name__c}. 
+- Current stage : {!NMO_Process__c.Stage__c}
+
+
+To approve or reject this item, click this link : {!ApprovalRequest.Internal_URL}
+Find more information within the Launching Phase record.
+
+Have a great day,
+Salesforce Team

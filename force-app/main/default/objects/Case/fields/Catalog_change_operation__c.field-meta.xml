@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Catalog_change_operation__c</fullName>
+    <externalId>false</externalId>
+    <label>Catalog change operation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Duplicated Product</fullName>
+                <default>false</default>
+                <label>Duplicated Product</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other wrong info</fullName>
+                <default>false</default>
+                <label>Other wrong info</label>
+            </value>
+            <value>
+                <fullName>Product Creation</fullName>
+                <default>false</default>
+                <label>Product Creation</label>
+            </value>
+            <value>
+                <fullName>To Be Blacklisted</fullName>
+                <default>false</default>
+                <label>To Be Blacklisted</label>
+            </value>
+            <value>
+                <fullName>Training needed</fullName>
+                <default>false</default>
+                <label>Training needed</label>
+            </value>
+            <value>
+                <fullName>Translation Error</fullName>
+                <default>false</default>
+                <label>Translation Error</label>
+            </value>
+            <value>
+                <fullName>Validation Issue</fullName>
+                <default>false</default>
+                <label>Validation Issue</label>
+            </value>
+            <value>
+                <fullName>Wrong attribute</fullName>
+                <default>false</default>
+                <label>Wrong attribute</label>
+            </value>
+            <value>
+                <fullName>Wrong image</fullName>
+                <default>false</default>
+                <label>Wrong image</label>
+            </value>
+            <value>
+                <fullName>Wrong price new</fullName>
+                <default>false</default>
+                <label>Wrong price new</label>
+            </value>
+            <value>
+                <fullName>Wrong Rematch</fullName>
+                <default>false</default>
+                <label>Wrong Rematch</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Smartphones</fullName>
+        <default>false</default>
+        <label>Smartphones</label>
+    </customValue>
+    <customValue>
+        <fullName>Core Electronics</fullName>
+        <default>false</default>
+        <label>Core Electronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Diversification</fullName>
+        <default>false</default>
+        <label>Other Diversification</label>
+    </customValue>
+    <masterLabel>Product Cluster</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_Management__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>To sell on Back Market, it is required that sellers manage all returns within the required time according to the situation (withdrawal, wrong product received, product received damaged, second return, etc). Sellers shall cover the return cost for all returns except “change of mind” where the customer has to pay the equivalent of a domestic return cost. Back Market can generate the return label directly for the customer at the seller’s expense.</inlineHelpText>
+    <label>Return Management</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Story__c</fullName>
+    <externalId>false</externalId>
+    <label>Story</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>backwatch</fullName>
+                <default>false</default>
+                <label>BackWatch</label>
+            </value>
+            <value>
+                <fullName>nmo</fullName>
+                <default>false</default>
+                <label>N.M.O.</label>
+            </value>
+            <value>
+                <fullName>partnership</fullName>
+                <default>false</default>
+                <label>Strategic Partnership</label>
+            </value>
+            <value>
+                <fullName>brand_or_retailer</fullName>
+                <default>false</default>
+                <label>Brand &amp; Retailer</label>
+            </value>
+            <value>
+                <fullName>hand_free</fullName>
+                <default>false</default>
+                <label>Selfcare</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

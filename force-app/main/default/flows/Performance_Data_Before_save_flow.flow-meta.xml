@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <name>Assign_external_id</name>
+        <label>Assign external id</label>
+        <locationX>603</locationX>
+        <locationY>302</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.External_ID__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>formula_External_id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_targeted_country_copy</name>
+        <label>Assign targeted country copy</label>
+        <locationX>351</locationX>
+        <locationY>302</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Targeted_Country_Copy__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Targeted_Country__r.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Decision_external_id_is_null</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Decision_external_id_is_null</name>
+        <label>Decision external id is null</label>
+        <locationX>470</locationX>
+        <locationY>296</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>External_id_is_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.External_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_external_id</targetReference>
+            </connector>
+            <label>External id is null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_creation</name>
+        <label>Decision on creation</label>
+        <locationX>168</locationX>
+        <locationY>301</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_creation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_targeted_country_copy</targetReference>
+            </connector>
+            <label>If creation</label>
+        </rules>
+    </decisions>
+    <description>hotfix - fill external id only if null</description>
+    <formulas>
+        <name>formula_External_id</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Merchant__r.Id} &amp; &quot;_&quot; &amp;
+{!$Record.RecordType.DeveloperName}  &amp; &quot;_&quot; &amp;
+TEXT( YEAR ( {!$Record.Date__c} ) ) &amp; 
+LPAD ( TEXT ( MONTH ( {!$Record.Date__c} ) ), 2, &quot;0&quot;) &amp;
+LPAD ( TEXT ( DAY ( {!$Record.Date__c} ) ), 2, &quot;0&quot;) &amp; &quot;_&quot; &amp;
+TEXT ( {!$Record.Temporal_Granularity__c} )</expression>
+    </formulas>
+    <interviewLabel>Perf {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Performance Data - Before save flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Decision_on_creation</targetReference>
+        </connector>
+        <object>Performance_Data__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

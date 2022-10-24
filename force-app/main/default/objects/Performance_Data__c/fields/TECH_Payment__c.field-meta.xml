@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Payment__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>if( NOT(ISPICKVAL(Merchant__r.Stage_Buyback__c,&quot;Buyback NMO&quot;)),   
+CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Payment_rate__c&gt;=VALUE($Label.QualityCasePayment) 
+&amp;&amp; Cases_Payment_rate__c &gt;=
+VALUE($Label.QualityRatePayment) , 1, 0),
+&apos;U_S&apos;,
+IF( Payment_rate__c&gt;= VALUE($Label.QualityCasePaymentUS) 
+&amp;&amp; Cases_Payment_rate__c &gt;= VALUE($Label.QualityRatePaymentUS) , 1, 0),
+0
+)
+,
+CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Payment_rate__c&gt;=VALUE($Label.QualityCasePayment_NMO) 
+&amp;&amp; Cases_Payment_rate__c &gt;=
+VALUE($Label.QualityRatePayment_NMO) , 1, 0),
+&apos;U_S&apos;,
+IF( Payment_rate__c&gt;= VALUE($Label.QualityCasePaymentUS_NMO) 
+&amp;&amp; Cases_Payment_rate__c &gt;= VALUE($Label.QualityRatePaymentUS_NMO) , 1, 0),
+0
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_Payment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

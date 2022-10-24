@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Purpose__c</fullName>
+    <externalId>false</externalId>
+    <label>Action Purpose</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BackImpact Certificate</fullName>
+                <default>false</default>
+                <label>BackImpact Certificate</label>
+            </value>
+            <value>
+                <fullName>BackImpact Registration</fullName>
+                <default>false</default>
+                <label>BackImpact Registration</label>
+            </value>
+            <value>
+                <fullName>Correct carrier invalid</fullName>
+                <default>false</default>
+                <label>Correct carrier invalid</label>
+            </value>
+            <value>
+                <fullName>Correct fulfilled too late</fullName>
+                <default>false</default>
+                <label>Correct fulfilled too late</label>
+            </value>
+            <value>
+                <fullName>Correct invalid tracking number</fullName>
+                <default>false</default>
+                <label>Correct invalid tracking number</label>
+            </value>
+            <value>
+                <fullName>Correct orders not picked up</fullName>
+                <default>false</default>
+                <label>Correct orders not picked up</label>
+            </value>
+            <value>
+                <fullName>Improve Cancellation Rate</fullName>
+                <default>false</default>
+                <label>Improve Cancellation Rate</label>
+            </value>
+            <value>
+                <fullName>Improve Csat</fullName>
+                <default>false</default>
+                <label>Improve Csat</label>
+            </value>
+            <value>
+                <fullName>Improve Csat / NRR</fullName>
+                <default>false</default>
+                <label>Improve Csat / NRR</label>
+            </value>
+            <value>
+                <fullName>Improve defective / accessories rate</fullName>
+                <default>false</default>
+                <label>Improve defective / accessories rate</label>
+            </value>
+            <value>
+                <fullName>Improve defective / NRR</fullName>
+                <default>false</default>
+                <label>Improve defective / NRR</label>
+            </value>
+            <value>
+                <fullName>Improve LRR</fullName>
+                <default>false</default>
+                <label>Improve LRR</label>
+            </value>
+            <value>
+                <fullName>Improve OTD</fullName>
+                <default>false</default>
+                <label>Improve OTD</label>
+            </value>
+            <value>
+                <fullName>Improve OTD/OTS</fullName>
+                <default>false</default>
+                <label>Improve OTD/OTS</label>
+            </value>
+            <value>
+                <fullName>Improve Untracked Rate</fullName>
+                <default>false</default>
+                <label>Improve Untracked Rate</label>
+            </value>
+            <value>
+                <fullName>Open new countries</fullName>
+                <default>false</default>
+                <label>Open new countries</label>
+            </value>
+            <value>
+                <fullName>Optimize customer care costs</fullName>
+                <default>false</default>
+                <label>Optimize customer care costs</label>
+            </value>
+            <value>
+                <fullName>Optimize logistic costs</fullName>
+                <default>false</default>
+                <label>Optimize logistic costs</label>
+            </value>
+            <value>
+                <fullName>Optimize shipping costs</fullName>
+                <default>false</default>
+                <label>Optimize shipping costs</label>
+            </value>
+            <value>
+                <fullName>Optimize sourcing</fullName>
+                <default>false</default>
+                <label>Optimize sourcing</label>
+            </value>
+            <value>
+                <fullName>Product category with high GMV potential</fullName>
+                <default>false</default>
+                <label>Product category with high GMV potential</label>
+            </value>
+            <value>
+                <fullName>Push Action(s)</fullName>
+                <default>false</default>
+                <label>Push Action(s)</label>
+            </value>
+            <value>
+                <fullName>Reduce After Sales Costs</fullName>
+                <default>false</default>
+                <label>Reduce After Sales Costs</label>
+            </value>
+            <value>
+                <fullName>Scale for Holiday Season</fullName>
+                <default>false</default>
+                <label>Scale for Holiday Season</label>
+            </value>
+            <value>
+                <fullName>To source more well-priced products and grow their BM GMV</fullName>
+                <default>false</default>
+                <label>To source more well-priced products and grow their BM GMV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

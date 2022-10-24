@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_company__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <label>Type of company</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Leasing</fullName>
+                <default>false</default>
+                <label>Leasing</label>
+            </value>
+            <value>
+                <fullName>Marketplace</fullName>
+                <default>false</default>
+                <label>Marketplace</label>
+            </value>
+            <value>
+                <fullName>Micro-Mobility</fullName>
+                <default>false</default>
+                <label>Micro-Mobility</label>
+            </value>
+            <value>
+                <fullName>Social Enterprise</fullName>
+                <default>false</default>
+                <label>Social Enterprise</label>
+            </value>
+            <value>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <label>Telecom</label>
+            </value>
+            <value>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+                <label>Logistics</label>
+            </value>
+            <value>
+                <fullName>Multi-activity</fullName>
+                <default>false</default>
+                <label>Multi-activity</label>
+            </value>
+            <value>
+                <fullName>ITAD</fullName>
+                <default>false</default>
+                <label>ITAD</label>
+            </value>
+            <value>
+                <fullName>Reverse Logistics</fullName>
+                <default>false</default>
+                <label>Reverse Logistics</label>
+            </value>
+            <value>
+                <fullName>Refurbisher</fullName>
+                <default>false</default>
+                <label>Refurbisher</label>
+            </value>
+            <value>
+                <fullName>Wholesale/Distribution</fullName>
+                <default>false</default>
+                <label>Wholesale/Distribution</label>
+            </value>
+            <value>
+                <fullName>B2C Enabler</fullName>
+                <default>false</default>
+                <label>B2C Enabler</label>
+            </value>
+            <value>
+                <fullName>Large telco</fullName>
+                <default>false</default>
+                <label>Large telco</label>
+            </value>
+            <value>
+                <fullName>Telco</fullName>
+                <default>false</default>
+                <label>Telco</label>
+            </value>
+            <value>
+                <fullName>MVNO</fullName>
+                <default>false</default>
+                <label>MVNO</label>
+            </value>
+            <value>
+                <fullName>Pure player</fullName>
+                <default>false</default>
+                <label>Pure player</label>
+            </value>
+            <value>
+                <fullName>Retailer - Logistics service provider</fullName>
+                <default>false</default>
+                <label>Retailer - Logistics service provider</label>
+            </value>
+            <value>
+                <fullName>Large Corporate</fullName>
+                <default>false</default>
+                <label>Large Corporate</label>
+            </value>
+            <value>
+                <fullName>Public Sector</fullName>
+                <default>false</default>
+                <label>Public Sector</label>
+            </value>
+            <value>
+                <fullName>Marketplace B2B</fullName>
+                <default>false</default>
+                <label>Marketplace B2B</label>
+            </value>
+            <value>
+                <fullName>Marketplace B2C</fullName>
+                <default>false</default>
+                <label>Marketplace B2C</label>
+            </value>
+            <value>
+                <fullName>Marketplace C2C</fullName>
+                <default>false</default>
+                <label>Marketplace C2C</label>
+            </value>
+            <value>
+                <fullName>Website Price comparison</fullName>
+                <default>false</default>
+                <label>Website Price comparison</label>
+            </value>
+            <value>
+                <fullName>Distributor Software</fullName>
+                <default>false</default>
+                <label>Distributor Software</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

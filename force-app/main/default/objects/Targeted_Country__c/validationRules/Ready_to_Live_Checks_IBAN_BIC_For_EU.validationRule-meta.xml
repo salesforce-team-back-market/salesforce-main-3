@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_to_Live_Checks_IBAN_BIC_For_EU</fullName>
+    <active>false</active>
+    <description>This rule checks the Merchant&apos;s IBAN and BIC requirements for all Merchants in EU to move the Online Status of the Targeted Country from Ready to Live.</description>
+    <errorConditionFormula>NOT ( Force__c ) 
+&amp;&amp; 
+AND ( ISPICKVAL ( PRIORVALUE ( Online_Status__c ), &quot;Ready&quot; ), 
+      ISPICKVAL ( Online_Status__c, &quot;Live&quot; ), 
+      Merchant__r.RecordType.DeveloperName = &apos;E_U&apos;,
+      OR (
+          ISBLANK (Merchant__r.IBAN__c),
+          ISBLANK (Merchant__r.BIC__c)
+         )
+    )
+&amp;&amp; $User.ByPassValidationRules__c !=true</errorConditionFormula>
+    <errorMessage>The Online Status cannot be moved to Live as long as the Merchant&apos;s IBAN and BIC are empty.</errorMessage>
+</ValidationRule>

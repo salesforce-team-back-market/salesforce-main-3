@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Access Control</fullName>
+        <default>false</default>
+        <label>Access Control</label>
+    </customValue>
+    <customValue>
+        <fullName>Accessories/Parts</fullName>
+        <default>false</default>
+        <label>Accessories/Parts</label>
+    </customValue>
+    <customValue>
+        <fullName>Account/Transaction Management</fullName>
+        <default>false</default>
+        <label>Account/Transaction Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Adoption</fullName>
+        <default>false</default>
+        <label>Adoption</label>
+    </customValue>
+    <customValue>
+        <fullName>Algorithm</fullName>
+        <default>false</default>
+        <label>Algorithm</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics</fullName>
+        <default>false</default>
+        <label>Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>Branded Packaging</fullName>
+        <default>false</default>
+        <label>Branded Packaging</label>
+    </customValue>
+    <customValue>
+        <fullName>BuyBack</fullName>
+        <default>false</default>
+        <label>BuyBack</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrier Compatibility</fullName>
+        <default>false</default>
+        <label>Carrier Compatibility</label>
+    </customValue>
+    <customValue>
+        <fullName>Case Studies</fullName>
+        <default>false</default>
+        <label>Case Studies</label>
+    </customValue>
+    <customValue>
+        <fullName>Check Out</fullName>
+        <default>false</default>
+        <label>Check Out</label>
+    </customValue>
+    <customValue>
+        <fullName>Commission/Model</fullName>
+        <default>false</default>
+        <label>Commission/Model</label>
+    </customValue>
+    <customValue>
+        <fullName>Commission Refunds</fullName>
+        <default>false</default>
+        <label>Commission Refunds</label>
+    </customValue>
+    <customValue>
+        <fullName>Communication</fullName>
+        <default>false</default>
+        <label>Communication</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Education</fullName>
+        <default>false</default>
+        <label>Consumer Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Service</fullName>
+        <default>false</default>
+        <label>Customer Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Decks/One-Pagers</fullName>
+        <default>false</default>
+        <label>Decks/One-Pagers</label>
+    </customValue>
+    <customValue>
+        <fullName>Deposits</fullName>
+        <default>false</default>
+        <label>Deposits</label>
+    </customValue>
+    <customValue>
+        <fullName>Education/Enablement</fullName>
+        <default>false</default>
+        <label>Education/Enablement</label>
+    </customValue>
+    <customValue>
+        <fullName>Events</fullName>
+        <default>false</default>
+        <label>Events</label>
+    </customValue>
+    <customValue>
+        <fullName>Exports</fullName>
+        <default>false</default>
+        <label>Exports</label>
+    </customValue>
+    <customValue>
+        <fullName>FAQ</fullName>
+        <default>false</default>
+        <label>FAQ</label>
+    </customValue>
+    <customValue>
+        <fullName>Feedback Collection</fullName>
+        <default>false</default>
+        <label>Feedback Collection</label>
+    </customValue>
+    <customValue>
+        <fullName>Fulfillment</fullName>
+        <default>false</default>
+        <label>Fulfillment</label>
+    </customValue>
+    <customValue>
+        <fullName>Grading/Kitting</fullName>
+        <default>false</default>
+        <label>Grading/Kitting</label>
+    </customValue>
+    <customValue>
+        <fullName>Grading Scale</fullName>
+        <default>false</default>
+        <label>Grading Scale</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrations</fullName>
+        <default>false</default>
+        <label>Integrations</label>
+    </customValue>
+    <customValue>
+        <fullName>KYC</fullName>
+        <default>false</default>
+        <label>KYC</label>
+    </customValue>
+    <customValue>
+        <fullName>Listing Creation</fullName>
+        <default>false</default>
+        <label>Listing Creation</label>
+    </customValue>
+    <customValue>
+        <fullName>Listings</fullName>
+        <default>false</default>
+        <label>Listings</label>
+    </customValue>
+    <customValue>
+        <fullName>Lots</fullName>
+        <default>false</default>
+        <label>Lots</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant Onboarding</fullName>
+        <default>false</default>
+        <label>Merchant Onboarding</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant Payouts</fullName>
+        <default>false</default>
+        <label>Merchant Payouts</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant University</fullName>
+        <default>false</default>
+        <label>Merchant University</label>
+    </customValue>
+    <customValue>
+        <fullName>Official Documents</fullName>
+        <default>false</default>
+        <label>Official Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Order Management</fullName>
+        <default>false</default>
+        <label>Order Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Outsourced Customer Care</fullName>
+        <default>false</default>
+        <label>Outsourced Customer Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Payments</fullName>
+        <default>false</default>
+        <label>Payments</label>
+    </customValue>
+    <customValue>
+        <fullName>Payments/Invoices</fullName>
+        <default>false</default>
+        <label>Payments/Invoices</label>
+    </customValue>
+    <customValue>
+        <fullName>Pricing</fullName>
+        <default>false</default>
+        <label>Pricing</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Attributes</fullName>
+        <default>false</default>
+        <label>Product Attributes</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Creation</fullName>
+        <default>false</default>
+        <label>Product Creation</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Page</fullName>
+        <default>false</default>
+        <label>Product Page</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Validation</fullName>
+        <default>false</default>
+        <label>Product Validation</label>
+    </customValue>
+    <customValue>
+        <fullName>Promotions/Features</fullName>
+        <default>false</default>
+        <label>Promotions/Features</label>
+    </customValue>
+    <customValue>
+        <fullName>Refurbishment/Repair</fullName>
+        <default>false</default>
+        <label>Refurbishment/Repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Registration</fullName>
+        <default>false</default>
+        <label>Registration</label>
+    </customValue>
+    <customValue>
+        <fullName>Re-matching</fullName>
+        <default>false</default>
+        <label>Re-matching</label>
+    </customValue>
+    <customValue>
+        <fullName>Search and Navigation</fullName>
+        <default>false</default>
+        <label>Search and Navigation</label>
+    </customValue>
+    <customValue>
+        <fullName>Seller Back Office</fullName>
+        <default>false</default>
+        <label>Seller Back Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Seller Protections</fullName>
+        <default>false</default>
+        <label>Seller Protections</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipping</fullName>
+        <default>false</default>
+        <label>Shipping</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipping/Delivery</fullName>
+        <default>false</default>
+        <label>Shipping/Delivery</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipping Rates</fullName>
+        <default>false</default>
+        <label>Shipping Rates</label>
+    </customValue>
+    <customValue>
+        <fullName>Status</fullName>
+        <default>false</default>
+        <label>Status</label>
+    </customValue>
+    <customValue>
+        <fullName>Support/Feedback</fullName>
+        <default>false</default>
+        <label>Support/Feedback</label>
+    </customValue>
+    <customValue>
+        <fullName>Taxes</fullName>
+        <default>false</default>
+        <label>Taxes</label>
+    </customValue>
+    <customValue>
+        <fullName>Technologies</fullName>
+        <default>false</default>
+        <label>Technologies</label>
+    </customValue>
+    <customValue>
+        <fullName>Warranty/RRR</fullName>
+        <default>false</default>
+        <label>Warranty/RRR</label>
+    </customValue>
+    <customValue>
+        <fullName>White Papers</fullName>
+        <default>false</default>
+        <label>White Papers</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Mana</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mana</label>
+    </customValue>
+    <masterLabel>Feedback Subcategory</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

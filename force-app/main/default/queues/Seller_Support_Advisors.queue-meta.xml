@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>bot-salesforce-queue-aaaahs3ilwqfevgzzx5x6yo7jm@imperatorz.slack.com</email>
+    <name>Seller Support Advisors</name>
+    <queueMembers>
+        <users>
+            <user>amelie.massieu@backmarket.com</user>
+            <user>caroline.aimon.ext@backmarket.com</user>
+            <user>cynthia.karangwa.ext@backmarket.com</user>
+            <user>erlinda.dulluku@backmarket.com</user>
+            <user>estelle.martin.ext@backmarket.com</user>
+            <user>fitz.ramaha.ext@backmarket.com</user>
+            <user>ivana.jankovic.ext@backmarket.com</user>
+            <user>jade.aguirre.ext@backmarket.com</user>
+            <user>julia.wieder@backmarket.com</user>
+            <user>julien.boiteau@backmarket.com</user>
+            <user>pauline.vantulder@backmarket.com</user>
+            <user>rizney.nunda.ext@backmarket.com</user>
+            <user>steven.rich@backmarket.com</user>
+            <user>yann.michau@backmarket.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Default</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

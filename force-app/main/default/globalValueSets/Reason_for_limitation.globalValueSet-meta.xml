@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SELLER_LIFE_CYCLE_LAUNCHING_PHASE</fullName>
+        <default>false</default>
+        <label>Seller life cycle launching phase</label>
+    </customValue>
+    <customValue>
+        <fullName>SELLER_LIFE_CYCLE_SEATBELT</fullName>
+        <default>false</default>
+        <label>Seller life cycle seatbelt</label>
+    </customValue>
+    <customValue>
+        <fullName>SELLER_LIFE_CYCLE_EXIT</fullName>
+        <default>false</default>
+        <label>Seller life cycle exit</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALITY_MONITORING_PERIOD</fullName>
+        <default>false</default>
+        <label>Quality Monitoring Period</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALITY_LEGAL_AND_SAFETY_ISSUE</fullName>
+        <default>false</default>
+        <label>Quality Legal and Safety Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALITY_RESTRICTED_CATEGORY</fullName>
+        <default>false</default>
+        <label>Quality Restricted Category</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALITY_OTHER</fullName>
+        <default>false</default>
+        <label>Quality Other</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_REASON_PRODUCT_MIX_OPTIMIZATION</fullName>
+        <default>false</default>
+        <label>Business Reason Product Mix Optimization</label>
+    </customValue>
+    <customValue>
+        <fullName>BUSINESS_REASON_OTHER</fullName>
+        <default>false</default>
+        <label>Business Reason Other</label>
+    </customValue>
+    <customValue>
+        <fullName>No limitation</fullName>
+        <default>false</default>
+        <label>No limitation</label>
+    </customValue>
+    <customValue>
+        <fullName>T&amp;Cs not signed</fullName>
+        <default>false</default>
+        <label>T&amp;Cs not signed</label>
+    </customValue>
+    <masterLabel>Reason for limitation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

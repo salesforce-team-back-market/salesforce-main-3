@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_merchant__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <label>Type of Mystery Order</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NMO</fullName>
+                <default>false</default>
+                <label>NMO</label>
+            </value>
+            <value>
+                <fullName>Suspicious</fullName>
+                <default>false</default>
+                <label>Suspicious</label>
+            </value>
+            <value>
+                <fullName>Top 20</fullName>
+                <default>false</default>
+                <label>Top 20</label>
+            </value>
+            <value>
+                <fullName>2nd MO after 1st One Failed</fullName>
+                <default>false</default>
+                <label>2nd MO after 1st One Failed</label>
+            </value>
+            <value>
+                <fullName>Monitoring Period for Defective</fullName>
+                <default>false</default>
+                <label>Monitoring Period for Defective</label>
+            </value>
+            <value>
+                <fullName>Special Mystery Order</fullName>
+                <default>false</default>
+                <label>Special Mystery Order</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

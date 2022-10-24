@@ -1,0 +1,7 @@
+Hi,
+
+We wanted to inform you that the case number {!Case.CaseNumber} with the Subject {!Case.Subject} changed status to {!Case.Status}.
+
+Please use the following link to see the case details: {!Case.Link}
+
+Have a great day!

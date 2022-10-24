@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Team_In_Charge__c</fullName>
+    <externalId>false</externalId>
+    <label>Team In Charge</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOT - Backbox</fullName>
+                <default>false</default>
+                <label>BOT - Backbox</label>
+            </value>
+            <value>
+                <fullName>BOT - Bucks &amp; Shipping</fullName>
+                <default>false</default>
+                <label>BOT - Bucks &amp; Shipping</label>
+            </value>
+            <value>
+                <fullName>BOT- CSAT</fullName>
+                <default>false</default>
+                <label>BOT- CSAT</label>
+            </value>
+            <value>
+                <fullName>BOT - DATA</fullName>
+                <default>false</default>
+                <label>BOT - DATA</label>
+            </value>
+            <value>
+                <fullName>BOT - Devops/Secops/Sysadmin</fullName>
+                <default>false</default>
+                <label>BOT - Devops/Secops/Sysadmin</label>
+            </value>
+            <value>
+                <fullName>BOT - Growth &amp; Love</fullName>
+                <default>false</default>
+                <label>BOT - Growth &amp; Love</label>
+            </value>
+            <value>
+                <fullName>BOT - MCC</fullName>
+                <default>false</default>
+                <label>BOT - MCC</label>
+            </value>
+            <value>
+                <fullName>BOT - Mobile</fullName>
+                <default>false</default>
+                <label>BOT - Mobile</label>
+            </value>
+            <value>
+                <fullName>BOT - Nav &amp; Search</fullName>
+                <default>false</default>
+                <label>BOT - Nav &amp; Search</label>
+            </value>
+            <value>
+                <fullName>BOT - PIM</fullName>
+                <default>false</default>
+                <label>BOT - PIM</label>
+            </value>
+            <value>
+                <fullName>BOT - PRO SERVICES</fullName>
+                <default>false</default>
+                <label>BOT - PRO SERVICES</label>
+            </value>
+            <value>
+                <fullName>BOT - Security Management</fullName>
+                <default>false</default>
+                <label>BOT - Security Management</label>
+            </value>
+            <value>
+                <fullName>BRAND - Art &amp; Communication</fullName>
+                <default>false</default>
+                <label>BRAND - Art &amp; Communication</label>
+            </value>
+            <value>
+                <fullName>BRAND - Culture &amp; Office</fullName>
+                <default>false</default>
+                <label>BRAND - Culture &amp; Office</label>
+            </value>
+            <value>
+                <fullName>Classic/B2S/BackWatch</fullName>
+                <default>false</default>
+                <label>Classic/B2S/BackWatch</label>
+            </value>
+            <value>
+                <fullName>Country/Category Development</fullName>
+                <default>false</default>
+                <label>Country/Category Development</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>MARKETING - Acquisition</fullName>
+                <default>false</default>
+                <label>MARKETING - Acquisition</label>
+            </value>
+            <value>
+                <fullName>MARKETING - Analytics &amp; Insights</fullName>
+                <default>false</default>
+                <label>MARKETING - Analytics &amp; Insights</label>
+            </value>
+            <value>
+                <fullName>MARKETING - Content</fullName>
+                <default>false</default>
+                <label>MARKETING - Content</label>
+            </value>
+            <value>
+                <fullName>MARKETING - Conversion</fullName>
+                <default>false</default>
+                <label>MARKETING - Conversion</label>
+            </value>
+            <value>
+                <fullName>MARKETING - CRM &amp; PRM</fullName>
+                <default>false</default>
+                <label>MARKETING - CRM &amp; PRM</label>
+            </value>
+            <value>
+                <fullName>MARKETING - R&amp;D</fullName>
+                <default>false</default>
+                <label>MARKETING - R&amp;D</label>
+            </value>
+            <value>
+                <fullName>MARKETING - SEO</fullName>
+                <default>false</default>
+                <label>MARKETING - SEO</label>
+            </value>
+            <value>
+                <fullName>OPS - Asia Development</fullName>
+                <default>false</default>
+                <label>OPS - Asia Development</label>
+            </value>
+            <value>
+                <fullName>OPS - Back Market 4 Business</fullName>
+                <default>false</default>
+                <label>OPS - Back Market 4 Business</label>
+            </value>
+            <value>
+                <fullName>OPS - BI</fullName>
+                <default>false</default>
+                <label>OPS - BI</label>
+            </value>
+            <value>
+                <fullName>OPS - Global Supply</fullName>
+                <default>false</default>
+                <label>OPS - Global Supply</label>
+            </value>
+            <value>
+                <fullName>OPS - Logistics/BuyBack</fullName>
+                <default>false</default>
+                <label>OPS - Logistics/BuyBack</label>
+            </value>
+            <value>
+                <fullName>OPS - Mana</fullName>
+                <default>false</default>
+                <label>OPS - Mana</label>
+            </value>
+            <value>
+                <fullName>OPS - Public Affairs</fullName>
+                <default>false</default>
+                <label>OPS - Public Affairs</label>
+            </value>
+            <value>
+                <fullName>OPS - Quality/CCS/Services</fullName>
+                <default>false</default>
+                <label>OPS - Quality/CCS/Services</label>
+            </value>
+            <value>
+                <fullName>OPS - Strategic Accounts</fullName>
+                <default>false</default>
+                <label>OPS - Strategic Accounts</label>
+            </value>
+            <value>
+                <fullName>People</fullName>
+                <default>false</default>
+                <label>People</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

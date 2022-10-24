@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Channels__c</fullName>
+    <businessOwnerUser>arthur.veron@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <inlineHelpText>Where does the merchant sell refurbished, second-hand certified or destocked products currently?</inlineHelpText>
+    <label>Sales Channels</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>B2B</fullName>
+                <default>false</default>
+                <label>B2B</label>
+            </value>
+            <value>
+                <fullName>Back Market</fullName>
+                <default>false</default>
+                <label>Back Market (currently or in the past)</label>
+            </value>
+            <value>
+                <fullName>Marketplaces</fullName>
+                <default>false</default>
+                <label>Marketplaces</label>
+            </value>
+            <value>
+                <fullName>Nowhere yet</fullName>
+                <default>false</default>
+                <label>Nowhere yet</label>
+            </value>
+            <value>
+                <fullName>Physical shop</fullName>
+                <default>false</default>
+                <label>Physical shop</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <label>Website</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

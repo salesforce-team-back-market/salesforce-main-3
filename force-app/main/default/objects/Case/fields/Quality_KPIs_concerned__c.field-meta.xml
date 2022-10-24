@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quality_KPIs_concerned__c</fullName>
+    <externalId>false</externalId>
+    <label>Quality KPIs concerned</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BB - Cancellation rate (functional)</fullName>
+                <default>false</default>
+                <label>BB - Cancellation rate (functional)</label>
+            </value>
+            <value>
+                <fullName>BB - Charter Breach</fullName>
+                <default>false</default>
+                <label>BB - Charter Breach</label>
+            </value>
+            <value>
+                <fullName>BB - Counter-Proposal rate (functional)</fullName>
+                <default>false</default>
+                <label>BB - Counter-Proposal rate (functional)</label>
+            </value>
+            <value>
+                <fullName>BB - Counter-Proposal rate (non functional)</fullName>
+                <default>false</default>
+                <label>BB - Counter-Proposal rate (non functional)</label>
+            </value>
+            <value>
+                <fullName>BB - Late processing rate</fullName>
+                <default>false</default>
+                <label>BB - Late processing rate</label>
+            </value>
+            <value>
+                <fullName>BB - Late response 24H rate</fullName>
+                <default>false</default>
+                <label>BB - Late response 24H rate</label>
+            </value>
+            <value>
+                <fullName>BB - Pending order rate</fullName>
+                <default>false</default>
+                <label>BB - Pending order rate</label>
+            </value>
+            <value>
+                <fullName>Cancellation Rate</fullName>
+                <default>false</default>
+                <label>Cancellation Rate</label>
+            </value>
+            <value>
+                <fullName>Counterfeit</fullName>
+                <default>false</default>
+                <label>Counterfeit</label>
+            </value>
+            <value>
+                <fullName>Counter Offer Rate</fullName>
+                <default>false</default>
+                <label>Counter Offer Rate</label>
+            </value>
+            <value>
+                <fullName>Hazardous charger</fullName>
+                <default>false</default>
+                <label>Hazardous charger</label>
+            </value>
+            <value>
+                <fullName>Invoice not compliant</fullName>
+                <default>false</default>
+                <label>Invoice not compliant</label>
+            </value>
+            <value>
+                <fullName>Late Processing Rate</fullName>
+                <default>false</default>
+                <label>Late Processing Rate</label>
+            </value>
+            <value>
+                <fullName>Late Response 24h</fullName>
+                <default>false</default>
+                <label>Late Response 24h</label>
+            </value>
+            <value>
+                <fullName>Merchant payment Issue</fullName>
+                <default>false</default>
+                <label>Merchant payment Issue</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Payment Rate</fullName>
+                <default>false</default>
+                <label>Payment Rate</label>
+            </value>
+            <value>
+                <fullName>Pending Order Rate</fullName>
+                <default>false</default>
+                <label>Pending Order Rate</label>
+            </value>
+            <value>
+                <fullName>Policy Violation</fullName>
+                <default>false</default>
+                <label>Policy Violation</label>
+            </value>
+            <value>
+                <fullName>The Accessories Rate</fullName>
+                <default>false</default>
+                <label>The Accessories Rate</label>
+            </value>
+            <value>
+                <fullName>The Cancellation Rate</fullName>
+                <default>false</default>
+                <label>The Cancellation Rate</label>
+            </value>
+            <value>
+                <fullName>The Contact Rate</fullName>
+                <default>false</default>
+                <label>The Contact Rate</label>
+            </value>
+            <value>
+                <fullName>The CSAT Rate</fullName>
+                <default>false</default>
+                <label>The CSAT Rate</label>
+            </value>
+            <value>
+                <fullName>The Defective Rate</fullName>
+                <default>false</default>
+                <label>The Defective Rate</label>
+            </value>
+            <value>
+                <fullName>The Delivery Rate</fullName>
+                <default>false</default>
+                <label>The Delivery Rate</label>
+            </value>
+            <value>
+                <fullName>The Esthetic Rate</fullName>
+                <default>false</default>
+                <label>The Esthetic Rate</label>
+            </value>
+            <value>
+                <fullName>The Late Delivery Rate</fullName>
+                <default>false</default>
+                <label>The Late Delivery Rate</label>
+            </value>
+            <value>
+                <fullName>The Late Response Rate</fullName>
+                <default>false</default>
+                <label>The Late Response Rate</label>
+            </value>
+            <value>
+                <fullName>The Negative Review Rate</fullName>
+                <default>false</default>
+                <label>The Negative Review Rate</label>
+            </value>
+            <value>
+                <fullName>The Return Tracking Rate</fullName>
+                <default>false</default>
+                <label>The Return Tracking Rate</label>
+            </value>
+            <value>
+                <fullName>The SOS Claim Rate</fullName>
+                <default>false</default>
+                <label>The SOS Claim Rate</label>
+            </value>
+            <value>
+                <fullName>The Wrong Product Rate</fullName>
+                <default>false</default>
+                <label>The Wrong Product Rate</label>
+            </value>
+            <value>
+                <fullName>Unprocessed Rate</fullName>
+                <default>false</default>
+                <label>Unprocessed Rate</label>
+            </value>
+            <value>
+                <fullName>Untracked</fullName>
+                <default>false</default>
+                <label>Untracked</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

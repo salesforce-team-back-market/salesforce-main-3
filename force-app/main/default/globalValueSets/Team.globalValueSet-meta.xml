@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Activation E.U.</fullName>
+        <default>false</default>
+        <label>Activation E.U.</label>
+    </customValue>
+    <customValue>
+        <fullName>Activation U.S.</fullName>
+        <default>false</default>
+        <label>Activation U.S.</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributors</fullName>
+        <default>false</default>
+        <label>Distributors</label>
+    </customValue>
+    <customValue>
+        <fullName>NewBiz Asia</fullName>
+        <default>false</default>
+        <label>NewBiz Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>NewBiz E.U.</fullName>
+        <default>false</default>
+        <label>NewBiz E.U.</label>
+    </customValue>
+    <customValue>
+        <fullName>NewBiz New Categories</fullName>
+        <default>false</default>
+        <label>NewBiz New Categories</label>
+    </customValue>
+    <customValue>
+        <fullName>NewBiz U.S.</fullName>
+        <default>false</default>
+        <label>NewBiz U.S.</label>
+    </customValue>
+    <customValue>
+        <fullName>NewBiz Upstream</fullName>
+        <default>false</default>
+        <label>NewBiz Upstream</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Supply</fullName>
+        <default>false</default>
+        <label>Service Supply</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM AirMacPad E.U.</fullName>
+        <default>false</default>
+        <label>SSM AirMacPad E.U.</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Asia</fullName>
+        <default>false</default>
+        <label>SSM Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Back Watch E.U.</fullName>
+        <default>false</default>
+        <label>SSM Back Watch E.U.</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Back Watch U.S.</fullName>
+        <default>false</default>
+        <label>SSM Back Watch U.S.</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM New Categories</fullName>
+        <default>false</default>
+        <label>SSM New Categories</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Selfcare E.U.</fullName>
+        <default>false</default>
+        <label>SSM Selfcare E.U.</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Smart. Central &amp; South Europe</fullName>
+        <default>false</default>
+        <label>SSM Smart. Central &amp; South Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Smart. France &amp; UK</fullName>
+        <default>false</default>
+        <label>SSM Smart. France &amp; UK</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM U.S.</fullName>
+        <default>false</default>
+        <label>SSM U.S.</label>
+    </customValue>
+    <customValue>
+        <fullName>Onboarding E.U.</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Onboarding E.U.</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Core Elec. Central Europe &amp; UK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSM Core Elec. Central Europe &amp; UK</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Core Elec. South Europe &amp; FR</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSM Core Elec. South Europe &amp; FR</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Smart. Central Europe &amp; South Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSM Smart. Central Europe &amp; South Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Smart. France &amp; UK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Smart. France &amp; UK</label>
+    </customValue>
+    <customValue>
+        <fullName>Smart. Central Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Smart. Central Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Smart. South Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Smart. South Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Smart. North Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Smart. North Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Smart. &amp; Core Elec. Central Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Smart. &amp; Core Elec. Central Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Smart. &amp; Core Elec. South Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Smart. &amp; Core Elec. South Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Smart. &amp; Core Elec. North Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Smart. &amp; Core Elec. North Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Core Elec. France &amp; UK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Core Elec. France &amp; UK</label>
+    </customValue>
+    <customValue>
+        <fullName>Core Elec. Central Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Core Elec. Central Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Smart. Back Watch &amp; U.S.</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Smart. Back Watch &amp; U.S.</label>
+    </customValue>
+    <customValue>
+        <fullName>Core Elec. &amp; Other Div. Back Watch</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Core Elec. &amp; Other Div. Back Watch</label>
+    </customValue>
+    <customValue>
+        <fullName>Onboarding Back Watch</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Onboarding Back Watch</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Div. B2S</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other Div. B2S</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Div. South Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other Div. South Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Div. North Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other Div. North Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Div. France &amp; UK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other Div. France &amp; UK</label>
+    </customValue>
+    <customValue>
+        <fullName>Growth</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Growth</label>
+    </customValue>
+    <customValue>
+        <fullName>NewBiz Central Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NewBiz Central Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>NewBiz South Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NewBiz South Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>NewBiz North Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NewBiz North Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Smart. Central Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSM Smart. Central Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Smart. South Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSM Smart. South Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Core Elec. France &amp; UK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSM Core Elec. France &amp; UK</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Core Elec. Central Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSM Core Elec. Central Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Core Elec. South Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSM Core Elec. South Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>SSM Other Div. E.U.</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSM Other Div. E.U.</label>
+    </customValue>
+    <customValue>
+        <fullName>Telco</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Telco</label>
+    </customValue>
+    <customValue>
+        <fullName>Enterprise</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Enterprise</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>B2S</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>B2S</label>
+    </customValue>
+    <customValue>
+        <fullName>Back Watch</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Back Watch</label>
+    </customValue>
+    <customValue>
+        <fullName>Brand &amp; Retailers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Brand &amp; Retailers</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Buyback</label>
+    </customValue>
+    <customValue>
+        <fullName>Central Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Central Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Mana &amp; BM4B</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mana &amp; BM4B</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile Operators</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mobile Operators</label>
+    </customValue>
+    <customValue>
+        <fullName>North Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>North Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>South Europe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>South Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>Strategic Partnership</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Strategic Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>U.S.</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>U.S.</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Lead Generation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lead Generation</label>
+    </customValue>
+    <description>Teams used for reporting purposes.</description>
+    <masterLabel>Team</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

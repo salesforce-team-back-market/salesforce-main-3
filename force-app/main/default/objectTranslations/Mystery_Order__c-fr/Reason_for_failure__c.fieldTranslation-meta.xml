@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Reason_for_failure__c</name>
+    <picklistValues>
+        <masterLabel>Battery Requirements not conformed / Non conformité aux critères de batterie</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blancco Tests Failed / Echec des tests Blancco</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charger not conform / Chargeur non conforme</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charger not provided / Chargeur non fourni</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data breach (user data not erased) / Infraction données (données utilisateur non effacées)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device damaged / Produit endommagé</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device does not turn on (despite full charge) / Le produit ne s&apos;allume pas (malgré charge complète)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device locked / Produit verrouillé</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device prohibited for sales / Produit interdit à la vente</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device stolen / Produit déclaré volé</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient score (cumulated errors) / Score insuffisant (cumul d&apos;erreurs)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaflet with incentivization to bypass Back Market platform / Flyer avec incitation à contourner la plateforme Back Market</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Package is a counterfeit / L&apos;emballage est une contrefaçon</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Quality Assembly / Mauvaise qualité d&apos;assemblage</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uncompatible Network / Incompatibilité réseaux</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

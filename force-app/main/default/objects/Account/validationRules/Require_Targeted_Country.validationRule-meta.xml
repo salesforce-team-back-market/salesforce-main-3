@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Targeted_Country</fullName>
+    <active>true</active>
+    <description>Require at least one Targeted Country related to the merchant to move merchant to the Run stage.</description>
+    <errorConditionFormula>AND (
+ISPICKVAL ( PRIORVALUE ( Stage__c ),&quot;N.M.O.&quot; ),
+ISPICKVAL ( Stage__c,&quot;Run&quot; ),
+Number_of_Targeted_Countries__c = 0,
+$User.ByPassValidationRules__c != true	
+)</errorConditionFormula>
+    <errorMessage>Please make sure there is at least one Targeted Country related to this merchant before moving to the Run stage.</errorMessage>
+</ValidationRule>

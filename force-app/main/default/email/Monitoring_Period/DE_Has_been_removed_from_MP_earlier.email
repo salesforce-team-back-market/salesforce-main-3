@@ -1,0 +1,16 @@
+Hallo {!Contact.FirstName},
+
+Sie haben eine automatische E-Mail erhalten, die Sie darüber informiert hat, dass Sie in die Phase "Letzte Chance" unserer Beobachtungsperiode eingetreten sind.
+Ein automatischer Prozess wurde ausgelöst, weil Ihre "{!Alert__c.Issue_KPI__c}"-Rate über unseren Grenzwerten liegt.
+
+Aus den folgenden Gründen habe ich die Entscheidung getroffen, Sie für diese genannte Kennzahl aus diesem Programm zu entfernen: 
+
+
+
+
+Ich habe Vertrauen in den Aktionsplan, den Sie bereits aufgestellt haben, und werde Ihre Kennzahl weiterhin überwachen, um sicherzustellen, dass sie unter unseren Grenzwert fällt.
+
+Selbstverständlich stehe ich Ihnen weiterhin zur Verfügung, um dies telefonisch zu besprechen und Sie bei Ihrem Aktionsplan zu begleiten.
+
+Ich wünsche Ihnen einen schönen Tag,
+{{{Sender.Signature}}}

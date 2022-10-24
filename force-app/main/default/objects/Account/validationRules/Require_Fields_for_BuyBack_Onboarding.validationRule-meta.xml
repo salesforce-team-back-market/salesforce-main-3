@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Fields_for_BuyBack_Onboarding</fullName>
+    <active>true</active>
+    <description>Require fields to be able to move merchant to the BuyBack Onboarding stage.</description>
+    <errorConditionFormula>AND(
+NOT($User.ByPassValidationRules__c ),
+ISPICKVAL(PRIORVALUE( Stage_Buyback__c ),&apos;Buyback Negociation&apos;),
+ISPICKVAL( Stage_Buyback__c ,&apos;Buyback Onboarding&apos;),
+ISCHANGED(Stage_Buyback__c  ),
+ISBLANK(Back_Office_PK__c)
+)</errorConditionFormula>
+    <errorMessage>Whoops... You can&apos;t start an onboarding with a record without P.K.</errorMessage>
+</ValidationRule>

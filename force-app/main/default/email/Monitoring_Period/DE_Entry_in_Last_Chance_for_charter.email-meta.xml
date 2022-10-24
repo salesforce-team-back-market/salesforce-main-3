@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DE - Entry in Last Chance for charter</name>
+    <style>none</style>
+    <subject>{!Alert__c.P_K__c} - {!Alert__c.Business_Name__c} - Beobachtungsphase - Letzte Chance</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

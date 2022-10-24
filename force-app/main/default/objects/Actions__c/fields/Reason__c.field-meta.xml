@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Already have resources to handle after sales</fullName>
+                <default>false</default>
+                <label>Already have resources to handle after sales</label>
+            </value>
+            <value>
+                <fullName>Already have resources to handle repair based in EU</fullName>
+                <default>false</default>
+                <label>Already have resources to handle repair based in EU</label>
+            </value>
+            <value>
+                <fullName>Already providing Quality after sales with good C.SAT</fullName>
+                <default>false</default>
+                <label>Already providing Quality after sales with good C.SAT</label>
+            </value>
+            <value>
+                <fullName>Closed for pass due date</fullName>
+                <default>false</default>
+                <label>Closed for pass due date</label>
+            </value>
+            <value>
+                <fullName>Couldn&apos;t reach the merchant</fullName>
+                <default>false</default>
+                <label>Couldn&apos;t reach the merchant</label>
+            </value>
+            <value>
+                <fullName>Does not trust our carriers</fullName>
+                <default>false</default>
+                <label>Does not trust our carriers</label>
+            </value>
+            <value>
+                <fullName>Does not trust our partner</fullName>
+                <default>false</default>
+                <label>Does not trust our partner</label>
+            </value>
+            <value>
+                <fullName>Does not want to lock stock for Back Market</fullName>
+                <default>false</default>
+                <label>Does not want to lock stock for Back Market</label>
+            </value>
+            <value>
+                <fullName>Does not want to outsource</fullName>
+                <default>false</default>
+                <label>Does not want to outsource</label>
+            </value>
+            <value>
+                <fullName>Does not want to outsource insurance requests</fullName>
+                <default>false</default>
+                <label>Does not want to outsource insurance requests</label>
+            </value>
+            <value>
+                <fullName>Does not want to outsource Shipping / Storage</fullName>
+                <default>false</default>
+                <label>Does not want to outsource Shipping / Storage</label>
+            </value>
+            <value>
+                <fullName>Do not want to outsource Return &amp; refund</fullName>
+                <default>false</default>
+                <label>Do not want to outsource Return &amp; refund</label>
+            </value>
+            <value>
+                <fullName>Expensive Label Cost</fullName>
+                <default>false</default>
+                <label>Expensive Label Cost</label>
+            </value>
+            <value>
+                <fullName>Fears for impact on OTS / OTD</fullName>
+                <default>false</default>
+                <label>Fears for impact on OTS / OTD</label>
+            </value>
+            <value>
+                <fullName>Has better prices</fullName>
+                <default>false</default>
+                <label>Has better prices</label>
+            </value>
+            <value>
+                <fullName>Has better shipping prices</fullName>
+                <default>false</default>
+                <label>Has better shipping prices</label>
+            </value>
+            <value>
+                <fullName>Have better prices</fullName>
+                <default>false</default>
+                <label>Have better prices</label>
+            </value>
+            <value>
+                <fullName>I already have a CSR certificate (To add the name in comments)</fullName>
+                <default>false</default>
+                <label>I already have a CSR certificate (To add the name in comments)</label>
+            </value>
+            <value>
+                <fullName>I don&apos;t understand what are the benefits for my business</fullName>
+                <default>false</default>
+                <label>I don&apos;t understand what are the benefits for my business</label>
+            </value>
+            <value>
+                <fullName>I have the similar product but with different characteristics</fullName>
+                <default>false</default>
+                <label>I have the similar product but with different characteristics</label>
+            </value>
+            <value>
+                <fullName>Integrators no willing to correct the issue</fullName>
+                <default>false</default>
+                <label>Integrators no willing to correct the issue</label>
+            </value>
+            <value>
+                <fullName>Not Convinced with Service (Prefers Swap/Refund)</fullName>
+                <default>false</default>
+                <label>Not Convinced with Service (Prefers Swap/Refund)</label>
+            </value>
+            <value>
+                <fullName>Not happy with the actions of BC agents</fullName>
+                <default>false</default>
+                <label>Not happy with the actions of BC agents</label>
+            </value>
+            <value>
+                <fullName>Not satisfied with the other BM services</fullName>
+                <default>false</default>
+                <label>Not satisfied with the other BM services</label>
+            </value>
+            <value>
+                <fullName>Not the right timing but I want to do it later</fullName>
+                <default>false</default>
+                <label>Not the right timing but I want to do it later</label>
+            </value>
+            <value>
+                <fullName>Not willing to change carrier (carrier has attractive prices)</fullName>
+                <default>false</default>
+                <label>Not willing to change carrier (carrier has attractive prices)</label>
+            </value>
+            <value>
+                <fullName>Not willing to change carrier (trust it&apos;s efficiency)</fullName>
+                <default>false</default>
+                <label>Not willing to change carrier (trust it&apos;s efficiency)</label>
+            </value>
+            <value>
+                <fullName>Higher % of Diversification Orders</fullName>
+                <default>false</default>
+                <label>Higher % of Diversification Orders</label>
+            </value>
+            <value>
+                <fullName>Satisfied with his current solution</fullName>
+                <default>false</default>
+                <label>Satisfied with his current solution</label>
+            </value>
+            <value>
+                <fullName>Too expensive</fullName>
+                <default>false</default>
+                <label>Too expensive</label>
+            </value>
+            <value>
+                <fullName>Other (add to Comment)</fullName>
+                <default>false</default>
+                <label>Other (add to Comment)</label>
+            </value>
+            <value>
+                <fullName>Buyback prices too high</fullName>
+                <default>false</default>
+                <label>Buyback prices too high</label>
+            </value>
+            <value>
+                <fullName>Creating and updating listings takes too much time</fullName>
+                <default>false</default>
+                <label>Creating and updating listings takes too much time</label>
+            </value>
+            <value>
+                <fullName>Receiving order 1 by 1</fullName>
+                <default>false</default>
+                <label>Receiving order 1 by 1</label>
+            </value>
+            <value>
+                <fullName>Managing orders manually</fullName>
+                <default>false</default>
+                <label>Managing orders manually</label>
+            </value>
+            <value>
+                <fullName>Quality of products from end-customers is bad</fullName>
+                <default>false</default>
+                <label>Quality of products from end-customers is bad</label>
+            </value>
+            <value>
+                <fullName>After-sales takes too much time</fullName>
+                <default>false</default>
+                <label>After-sales takes too much time</label>
+            </value>
+            <value>
+                <fullName>Other suppliers allow to pay after xx days</fullName>
+                <default>false</default>
+                <label>Other suppliers allow to pay after xx days</label>
+            </value>
+            <value>
+                <fullName>AM OOO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AM OOO</label>
+            </value>
+            <value>
+                <fullName>BM’s commission is too high</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BM’s commission is too high</label>
+            </value>
+            <value>
+                <fullName>BM’s quality charter is too strict</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BM’s quality charter is too strict</label>
+            </value>
+            <value>
+                <fullName>Bad quality performance in this BMID</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bad quality performance in this BMID</label>
+            </value>
+            <value>
+                <fullName>BuyBox lower than Target Price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BuyBox lower than Target Price</label>
+            </value>
+            <value>
+                <fullName>Can&apos;t meet my margin expectations at that price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Can&apos;t meet my margin expectations at that price</label>
+            </value>
+            <value>
+                <fullName>Carrier alternative too expensive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Carrier alternative too expensive</label>
+            </value>
+            <value>
+                <fullName>Do not trust BM partners</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Do not trust BM partners</label>
+            </value>
+            <value>
+                <fullName>Do not trust our carriers</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Do not trust our carriers</label>
+            </value>
+            <value>
+                <fullName>Do not want to outsource insurance requests</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Do not want to outsource insurance requests</label>
+            </value>
+            <value>
+                <fullName>Doesn&apos;t work on Saturdays</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Doesn&apos;t work on Saturdays</label>
+            </value>
+            <value>
+                <fullName>Doubts on GVM potential (low ratio benefits/effort)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Doubts on GVM potential (low ratio benefits/effort)</label>
+            </value>
+            <value>
+                <fullName>Has a better solution internally</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Has a better solution internally</label>
+            </value>
+            <value>
+                <fullName>I can&apos;t maintain the quality standards</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I can&apos;t maintain the quality standards</label>
+            </value>
+            <value>
+                <fullName>I can&apos;t reach my margin expectations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I can&apos;t reach my margin expectations</label>
+            </value>
+            <value>
+                <fullName>I can&apos;t sell in this country for internal reasons</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I can&apos;t sell in this country for internal reasons</label>
+            </value>
+            <value>
+                <fullName>I don&apos;t have sourcing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I don&apos;t have sourcing</label>
+            </value>
+            <value>
+                <fullName>I don&apos;t have stock</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I don&apos;t have stock</label>
+            </value>
+            <value>
+                <fullName>I don’t have any stock available</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I don’t have any stock available</label>
+            </value>
+            <value>
+                <fullName>I have a high percentage of unfair returns</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I have a high percentage of unfair returns</label>
+            </value>
+            <value>
+                <fullName>I&apos;m just not selling that product</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I&apos;m just not selling that product</label>
+            </value>
+            <value>
+                <fullName>Is not satisfied by BackMarket other services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Is not satisfied by BackMarket other services</label>
+            </value>
+            <value>
+                <fullName>Is not satisfied by other Back Market services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Is not satisfied by other Back Market services</label>
+            </value>
+            <value>
+                <fullName>Is satisfied with his current solution</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Is satisfied with his current solution</label>
+            </value>
+            <value>
+                <fullName>Is using a fulfillment solution</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Is using a fulfillment solution</label>
+            </value>
+            <value>
+                <fullName>Label cost / Solution to ship</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Label cost / Solution to ship</label>
+            </value>
+            <value>
+                <fullName>More expensive to handle returns on BM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>More expensive to handle returns on BM</label>
+            </value>
+            <value>
+                <fullName>Not able to reduce OTS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not able to reduce OTS</label>
+            </value>
+            <value>
+                <fullName>Not satisfied by previous orders</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not satisfied by previous orders</label>
+            </value>
+            <value>
+                <fullName>Other (free field)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other (free field)</label>
+            </value>
+            <value>
+                <fullName>Products sold are not eligible for repair</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Products sold are not eligible for repair</label>
+            </value>
+            <value>
+                <fullName>Return rate too high</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Return rate too high</label>
+            </value>
+            <value>
+                <fullName>Thinks it&apos;s too risky for OTD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Thinks it&apos;s too risky for OTD</label>
+            </value>
+            <value>
+                <fullName>Uses a fulfillment solution</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Uses a fulfillment solution</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Push Core Elec Models</controllingFieldValue>
+            <controllingFieldValue>Push BackShip</controllingFieldValue>
+            <controllingFieldValue>Push Audio</controllingFieldValue>
+            <valueName>Fears for impact on OTS / OTD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push Core Elec Models</controllingFieldValue>
+            <controllingFieldValue>Push country(s) live</controllingFieldValue>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <controllingFieldValue>Push good pricing</controllingFieldValue>
+            <controllingFieldValue>Fill in the tracking information within 5 days after order creation</controllingFieldValue>
+            <controllingFieldValue>Fill in the right tracking informations</controllingFieldValue>
+            <controllingFieldValue>Ship the orders</controllingFieldValue>
+            <controllingFieldValue>Fill in the right carrier / unique tracking information (no duplicates)</controllingFieldValue>
+            <controllingFieldValue>Register for BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Answer BackImpact Audit</controllingFieldValue>
+            <controllingFieldValue>Push BackCare</controllingFieldValue>
+            <controllingFieldValue>Push BackPack</controllingFieldValue>
+            <controllingFieldValue>Push BackParts</controllingFieldValue>
+            <controllingFieldValue>Push BackRepair</controllingFieldValue>
+            <controllingFieldValue>Push BackShip</controllingFieldValue>
+            <controllingFieldValue>Push FBBM</controllingFieldValue>
+            <controllingFieldValue>Push Audio</controllingFieldValue>
+            <controllingFieldValue>Push RAAS</controllingFieldValue>
+            <controllingFieldValue>Push Small Kitchen Appliances</controllingFieldValue>
+            <valueName>Other (add to Comment)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>Buyback prices too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>Creating and updating listings takes too much time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>Receiving order 1 by 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>Managing orders manually</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>Quality of products from end-customers is bad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>After-sales takes too much time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>Other suppliers allow to pay after xx days</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fill in the tracking information within 5 days after order creation</controllingFieldValue>
+            <controllingFieldValue>Fill in the right tracking informations</controllingFieldValue>
+            <controllingFieldValue>Ship the orders</controllingFieldValue>
+            <controllingFieldValue>Fill in the right carrier / unique tracking information (no duplicates)</controllingFieldValue>
+            <valueName>Integrators no willing to correct the issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fill in the tracking information within 5 days after order creation</controllingFieldValue>
+            <controllingFieldValue>Fill in the right tracking informations</controllingFieldValue>
+            <controllingFieldValue>Ship the orders</controllingFieldValue>
+            <controllingFieldValue>Fill in the right carrier / unique tracking information (no duplicates)</controllingFieldValue>
+            <valueName>Not willing to change carrier (carrier has attractive prices)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fill in the tracking information within 5 days after order creation</controllingFieldValue>
+            <controllingFieldValue>Fill in the right tracking informations</controllingFieldValue>
+            <controllingFieldValue>Ship the orders</controllingFieldValue>
+            <controllingFieldValue>Fill in the right carrier / unique tracking information (no duplicates)</controllingFieldValue>
+            <valueName>Not willing to change carrier (trust it&apos;s efficiency)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Register for BackImpact Label</controllingFieldValue>
+            <valueName>I already have a CSR certificate (To add the name in comments)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Register for BackImpact Label</controllingFieldValue>
+            <valueName>I don&apos;t understand what are the benefits for my business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Register for BackImpact Label</controllingFieldValue>
+            <valueName>Not the right timing but I want to do it later</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Register for BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push BackCare</controllingFieldValue>
+            <controllingFieldValue>Push BackRepair</controllingFieldValue>
+            <valueName>Too expensive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackCare</controllingFieldValue>
+            <valueName>Already have resources to handle after sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackCare</controllingFieldValue>
+            <valueName>Already providing Quality after sales with good C.SAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackCare</controllingFieldValue>
+            <valueName>Do not want to outsource Return &amp; refund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackCare</controllingFieldValue>
+            <valueName>Expensive Label Cost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackCare</controllingFieldValue>
+            <valueName>Not happy with the actions of BC agents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackRepair</controllingFieldValue>
+            <valueName>Already have resources to handle repair based in EU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackRepair</controllingFieldValue>
+            <valueName>Does not want to outsource</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackRepair</controllingFieldValue>
+            <valueName>Not Convinced with Service (Prefers Swap/Refund)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackRepair</controllingFieldValue>
+            <valueName>Higher % of Diversification Orders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackShip</controllingFieldValue>
+            <valueName>Does not trust our carriers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackShip</controllingFieldValue>
+            <valueName>Does not want to outsource insurance requests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackShip</controllingFieldValue>
+            <controllingFieldValue>Push FBBM</controllingFieldValue>
+            <valueName>Not satisfied with the other BM services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BackShip</controllingFieldValue>
+            <controllingFieldValue>Push FBBM</controllingFieldValue>
+            <valueName>Satisfied with his current solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push FBBM</controllingFieldValue>
+            <valueName>Does not trust our partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push FBBM</controllingFieldValue>
+            <valueName>Does not want to lock stock for Back Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push FBBM</controllingFieldValue>
+            <valueName>Does not want to outsource Shipping / Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push FBBM</controllingFieldValue>
+            <valueName>Has better prices</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

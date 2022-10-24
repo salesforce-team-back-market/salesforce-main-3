@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Waiting Phase</fullName>
+        <default>false</default>
+        <label>Waiting Phase</label>
+    </customValue>
+    <customValue>
+        <fullName>Phase 1</fullName>
+        <default>false</default>
+        <label>Phase 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Phase 2</fullName>
+        <default>false</default>
+        <label>Phase 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Phase 3</fullName>
+        <default>false</default>
+        <label>Phase 3</label>
+    </customValue>
+    <customValue>
+        <fullName>N.M.O. 2</fullName>
+        <default>false</default>
+        <label>LP 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Saved</fullName>
+        <default>false</default>
+        <label>Saved</label>
+    </customValue>
+    <customValue>
+        <fullName>Failed</fullName>
+        <default>false</default>
+        <label>Failed</label>
+    </customValue>
+    <masterLabel>N.M.O. Stages</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

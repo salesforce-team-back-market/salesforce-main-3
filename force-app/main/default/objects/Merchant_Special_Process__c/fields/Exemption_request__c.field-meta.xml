@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exemption_request__c</fullName>
+    <externalId>false</externalId>
+    <label>Exemption request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>DM fault (e.g. catalog, service, Parcel Lab, ...)</fullName>
+                <default>false</default>
+                <label>DM fault (e.g. catalog, service, Parcel Lab, ...)</label>
+            </value>
+            <value>
+                <fullName>Event external to BM / merchant / 3rd party provider (Storm, Brexit, ...)</fullName>
+                <default>false</default>
+                <label>Event external to BM / merchant / 3rd party provider (Storm, Brexit, ...)</label>
+            </value>
+            <value>
+                <fullName>Action plan with KPI OK on a 2-week cohort</fullName>
+                <default>false</default>
+                <label>Action plan with KPI OK on a 2-week cohort</label>
+            </value>
+            <value>
+                <fullName>Defective OK at the model or category level (on 100+ orders)</fullName>
+                <default>false</default>
+                <label>Defective OK at the model or category level (on 100+ orders)</label>
+            </value>
+            <value>
+                <fullName>Safety / Legal issue already properly handled by Merchant</fullName>
+                <default>false</default>
+                <label>Safety / Legal issue already properly handled by Merchant</label>
+            </value>
+            <value>
+                <fullName>Service subscription in all countries where the rate is below the threshold</fullName>
+                <default>false</default>
+                <label>Service subscription in all countries</label>
+            </value>
+            <value>
+                <fullName>Duplicated Exit</fullName>
+                <default>false</default>
+                <label>Duplicated Exit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

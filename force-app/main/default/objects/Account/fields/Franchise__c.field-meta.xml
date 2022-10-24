@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Franchise__c</fullName>
+    <businessOwnerUser>arthur.veron@backmarket.com</businessOwnerUser>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <label>Franchise</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Affair’s France</fullName>
+                <default>false</default>
+                <label>Affair’s France</label>
+            </value>
+            <value>
+                <fullName>Cash &amp; Cheque Express UK</fullName>
+                <default>false</default>
+                <label>Cash &amp; Cheque Express UK</label>
+            </value>
+            <value>
+                <fullName>Cash &amp; Repair France</fullName>
+                <default>false</default>
+                <label>Cash &amp; Repair France</label>
+            </value>
+            <value>
+                <fullName>Cash Brokers UK</fullName>
+                <default>false</default>
+                <label>Cash Brokers UK</label>
+            </value>
+            <value>
+                <fullName>Cash Converters Belgium</fullName>
+                <default>false</default>
+                <label>Cash Converters Belgium</label>
+            </value>
+            <value>
+                <fullName>Cash Converters France</fullName>
+                <default>false</default>
+                <label>Cash Converters France</label>
+            </value>
+            <value>
+                <fullName>Cash Converters Spain</fullName>
+                <default>false</default>
+                <label>Cash Converters Spain</label>
+            </value>
+            <value>
+                <fullName>Cash Converters Switzerland</fullName>
+                <default>false</default>
+                <label>Cash Converters Switzerland</label>
+            </value>
+            <value>
+                <fullName>Cash Converters UK</fullName>
+                <default>false</default>
+                <label>Cash Converters UK</label>
+            </value>
+            <value>
+                <fullName>Cash Express France</fullName>
+                <default>false</default>
+                <label>Cash Express France</label>
+            </value>
+            <value>
+                <fullName>Cash Generator UK</fullName>
+                <default>false</default>
+                <label>Cash Generator UK</label>
+            </value>
+            <value>
+                <fullName>CeX Webuy Italy</fullName>
+                <default>false</default>
+                <label>CeX Webuy Italy</label>
+            </value>
+            <value>
+                <fullName>CeX Webuy Portugal</fullName>
+                <default>false</default>
+                <label>CeX Webuy Portugal</label>
+            </value>
+            <value>
+                <fullName>CeX Webuy Spain</fullName>
+                <default>false</default>
+                <label>CeX Webuy Spain</label>
+            </value>
+            <value>
+                <fullName>CeX Webuy UK</fullName>
+                <default>false</default>
+                <label>CeX Webuy UK</label>
+            </value>
+            <value>
+                <fullName>Cybertek France</fullName>
+                <default>false</default>
+                <label>Cybertek France</label>
+            </value>
+            <value>
+                <fullName>Docteur IT France</fullName>
+                <default>false</default>
+                <label>Docteur IT France</label>
+            </value>
+            <value>
+                <fullName>Dynamite Games France</fullName>
+                <default>false</default>
+                <label>Dynamite Games France</label>
+            </value>
+            <value>
+                <fullName>E.Leclerc</fullName>
+                <default>false</default>
+                <label>E.Leclerc</label>
+            </value>
+            <value>
+                <fullName>Easy Cash France</fullName>
+                <default>false</default>
+                <label>Easy Cash France</label>
+            </value>
+            <value>
+                <fullName>ELECTRO DEPOT France</fullName>
+                <default>false</default>
+                <label>ELECTRO DEPOT France</label>
+            </value>
+            <value>
+                <fullName>Fixphonia Germany</fullName>
+                <default>false</default>
+                <label>Fixphonia Germany</label>
+            </value>
+            <value>
+                <fullName>Gamecash France</fullName>
+                <default>false</default>
+                <label>Gamecash France</label>
+            </value>
+            <value>
+                <fullName>Gamestop Germany</fullName>
+                <default>false</default>
+                <label>Gamestop Germany</label>
+            </value>
+            <value>
+                <fullName>GameStop Italy</fullName>
+                <default>false</default>
+                <label>GameStop Italy</label>
+            </value>
+            <value>
+                <fullName>GAME UK</fullName>
+                <default>false</default>
+                <label>GAME UK</label>
+            </value>
+            <value>
+                <fullName>Grosbill France</fullName>
+                <default>false</default>
+                <label>Grosbill France</label>
+            </value>
+            <value>
+                <fullName>Happy Cash France</fullName>
+                <default>false</default>
+                <label>Happy Cash France</label>
+            </value>
+            <value>
+                <fullName>Happy Cash Services Germany</fullName>
+                <default>false</default>
+                <label>Happy Cash Services Germany</label>
+            </value>
+            <value>
+                <fullName>Happy Troc Germany</fullName>
+                <default>false</default>
+                <label>Happy Troc Germany</label>
+            </value>
+            <value>
+                <fullName>Images Photo France</fullName>
+                <default>false</default>
+                <label>Images Photo France</label>
+            </value>
+            <value>
+                <fullName>Independent</fullName>
+                <default>false</default>
+                <label>Independent</label>
+            </value>
+            <value>
+                <fullName>iRiparo France</fullName>
+                <default>false</default>
+                <label>iRiparo France</label>
+            </value>
+            <value>
+                <fullName>iRiparo Italy</fullName>
+                <default>false</default>
+                <label>iRiparo Italy</label>
+            </value>
+            <value>
+                <fullName>iRiparo Spain</fullName>
+                <default>false</default>
+                <label>iRiparo Spain</label>
+            </value>
+            <value>
+                <fullName>K-tuin Spain</fullName>
+                <default>false</default>
+                <label>K-tuin Spain</label>
+            </value>
+            <value>
+                <fullName>Loombard</fullName>
+                <default>false</default>
+                <label>Loombard</label>
+            </value>
+            <value>
+                <fullName>MDA France</fullName>
+                <default>false</default>
+                <label>MDA France</label>
+            </value>
+            <value>
+                <fullName>Mediaclinic France</fullName>
+                <default>false</default>
+                <label>Mediaclinic France</label>
+            </value>
+            <value>
+                <fullName>Phox Belgium</fullName>
+                <default>false</default>
+                <label>Phox Belgium</label>
+            </value>
+            <value>
+                <fullName>Phox France</fullName>
+                <default>false</default>
+                <label>Phox France</label>
+            </value>
+            <value>
+                <fullName>Phox Luxembourg</fullName>
+                <default>false</default>
+                <label>Phox Luxembourg</label>
+            </value>
+            <value>
+                <fullName>Planet Cash France</fullName>
+                <default>false</default>
+                <label>Planet Cash France</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Troc Belgium</fullName>
+                <default>false</default>
+                <label>Troc Belgium</label>
+            </value>
+            <value>
+                <fullName>Troc France</fullName>
+                <default>false</default>
+                <label>Troc France</label>
+            </value>
+            <value>
+                <fullName>Troc Germany</fullName>
+                <default>false</default>
+                <label>Troc Germany</label>
+            </value>
+            <value>
+                <fullName>Troc Luxemburg</fullName>
+                <default>false</default>
+                <label>Troc Luxemburg</label>
+            </value>
+            <value>
+                <fullName>Troc Spain</fullName>
+                <default>false</default>
+                <label>Troc Spain</label>
+            </value>
+            <value>
+                <fullName>Fixphonia France</fullName>
+                <default>false</default>
+                <label>Fixphonia France</label>
+            </value>
+            <value>
+                <fullName>Liste 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Liste 1</label>
+            </value>
+            <value>
+                <fullName>Liste 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Liste 2</label>
+            </value>
+            <value>
+                <fullName>Liste 3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Liste 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

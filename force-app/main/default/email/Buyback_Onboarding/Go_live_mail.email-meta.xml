@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Go live mail</name>
+    <style>freeForm</style>
+    <subject>Back Market x {!Account.Name} - Bonnes Reprises !</subject>
+    <textOnly>Bonjour {!Contact.FirstName} !
+
+
+C’est officiel, vous pouvez commencer à vous approvisionner sur 10 catégories de produit via Back Market !  Vos annonces ont été activées. Vous pouvez en créer autant que vous voulez !
+
+
+
+Vous entrez à partir d’aujourd’hui dans une période d&apos;observation. Durant cette période, vous serez limité à 5 reprises par jour (sachant que le taux de renvoi est de 60% actuellement). Bien évidemment, nous pourrons augmenter cette limitation si tout se passe bien. Vous aurez un suivi personnalisé sur deux aspects :
+
+
+
+La Qualité
+
+Je vous invite à y prêter attention dès vos premières reprises (elles déterminent votre score qualité). Il faut donc notamment veiller à :
+
+Traiter les commandes en temps et en heure (2 jours ouvrés pour un produit fonctionnel ou non fonctionnel)
+Répondre aux messages des clients en moins de 24h
+Justifier toutes les contre propositions par des photos
+
+
+
+Le Business
+
+Afin de pouvoir avoir une vision globale de votre activité, nous prêterons une attention particulière au nombre de reprises effectuées :
+
+Si vous êtes intéressé par les smartphones et les tablettes :
+
+Réaliser un minimum de 10 commandes et avoir un minimum de 10 annonces en ligne durant vos 2 premières semaines**.** Vous pouvez créer autant d’annonces que vous le souhaitez cliquant ici
+
+Si vous êtes intéressé par les autres catégories de produits :
+
+Réaliser un minimum de 10 offres de rachat. Vous pouvez dès à présent pousser vos offres en cliquant ici
+
+Pour rappel, la commission est de 10% HT et nous appliquons une refacturation des frais logistiques entre 10 euros HT et 13 euros HT selon la catégorie de produit.
+
+
+
+Je reste à votre disposition pour vous accompagner dans votre développement sur notre plateforme. N&apos;hésitez pas à me contacter si vous avez des questions !
+
+
+
+Bonne journée et bonnes reprises !
+
+
+
+Bien à vous,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

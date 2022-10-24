@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reviving_Pool</fullName>
+    <columns>Back_Office_PK__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>Country__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Reviving_Stage__c</columns>
+    <columns>Relevance_Date__c</columns>
+    <columns>Exit_granted__c</columns>
+    <columns>Blacklisted__c</columns>
+    <columns>Last_Breath_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Reviving_Stage__c</field>
+        <operation>equals</operation>
+        <value>To consider as Revived,Eligible to Reviving,Ongoing Reviving,Partially Revived,Revived,Failed Revived</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Run</value>
+    </filters>
+    <label>Reviving Pool</label>
+</ListView>

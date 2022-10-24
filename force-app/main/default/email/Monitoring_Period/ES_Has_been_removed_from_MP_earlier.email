@@ -1,0 +1,16 @@
+Hola {!Contact.FirstName},
+
+Ha recibido un correo electrónico automático informándole de que ha entrado en el período de vigilancia/ "Última oportunidad" de nuestro período de vigilancia.
+Se ha activado un proceso automático porque su tasa "{!Alert__c.Issue_KPI__c}" está por encima de nuestros umbrales de alerta.
+
+Por las siguientes razones, he tomado la decisión de eliminarle de este programa por este mismo KPI: 
+
+
+
+
+Tengo confianza en el plan de acción que ya ha puesto en marcha y continuaré monitoreando su KPI para asegurarme de que caiga por debajo de nuestros umbrales de alerta.
+
+Por supuesto, sigo disponible para discutir esto por teléfono y acompañarlo en su plan de acción.
+
+Les deseo un muy buen día,
+{{{Sender.Signature}}}

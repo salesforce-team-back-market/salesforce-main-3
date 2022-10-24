@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActivityAlert__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>IF(
+ AND(
+	OR (ISBLANK(TECH_LastCreatedTaskDate__c), ADDMONTHS(TECH_LastCreatedTaskDate__c,1)&lt;NOW()),
+	OR (ISBLANK(TECH_Last_due_date__c), TECH_Last_due_date__c-60 &gt; TODAY()) )
+
+,IMAGE(&quot;/img/samples/flag_red.gif&quot;,&quot;red flag&quot;),IMAGE(&quot;/img/samples/flag_green.gif&quot;,&quot;green flag&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Activity alert</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

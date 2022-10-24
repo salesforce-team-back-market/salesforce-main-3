@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Debit_note_Pending</fullName>
+    <columns>Merchant__c</columns>
+    <columns>Story__c</columns>
+    <columns>Debit_note__c</columns>
+    <columns>BizDev__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Merchant_Special_Process__c.Debit_Note</value>
+    </filters>
+    <label>Pending Appr. Process- Negative balance</label>
+</ListView>

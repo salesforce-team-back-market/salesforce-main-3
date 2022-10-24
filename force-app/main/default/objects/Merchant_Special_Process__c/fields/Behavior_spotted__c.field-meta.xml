@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Behavior_spotted__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <label>Behavior spotted</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not answering SAV</fullName>
+                <default>false</default>
+                <label>Not answering SAV</label>
+            </value>
+            <value>
+                <fullName>Not answering BM</fullName>
+                <default>false</default>
+                <label>Not answering BM</label>
+            </value>
+            <value>
+                <fullName>Bad Behavior with clients</fullName>
+                <default>false</default>
+                <label>Bad Behavior with clients</label>
+            </value>
+            <value>
+                <fullName>Bad Behavior with BM</fullName>
+                <default>false</default>
+                <label>Bad Behavior with BM</label>
+            </value>
+            <value>
+                <fullName>Not involved in action plans</fullName>
+                <default>false</default>
+                <label>Not involved in action plans</label>
+            </value>
+            <value>
+                <fullName>Bad Mystery Orders</fullName>
+                <default>false</default>
+                <label>Bad Mystery Orders</label>
+            </value>
+            <value>
+                <fullName>Refund policy</fullName>
+                <default>false</default>
+                <label>Refund policy</label>
+            </value>
+            <value>
+                <fullName>Shipping policy</fullName>
+                <default>false</default>
+                <label>Shipping policy</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

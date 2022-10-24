@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manage_customer_contact</fullName>
+    <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8</booleanFilter>
+    <columns>IS_CHANNEL_CSP</columns>
+    <columns>ARTICLE_NUMBER</columns>
+    <columns>TITLE</columns>
+    <columns>PUBLISH_STATUS</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>LANGUAGE</columns>
+    <columns>LAST_PUBLISHED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001100</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001101</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001102</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001103</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001104</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001105</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001106</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001353</value>
+    </filters>
+    <label>💻 Manage customer contact</label>
+</ListView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Cancellation_non_functional__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>if( NOT(ISPICKVAL(Merchant__r.Stage_Buyback__c,&quot;Buyback NMO&quot;)),   
+CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Cases_Cancellation_rate_non_functional__c&gt;=VALUE($Label.QualityCaseCancellation_non_functional) 
+&amp;&amp; Cancellation_rate_non_functional__c &gt;=
+VALUE($Label.QualityRateCancellation_non_functional) , 1, 0),
+&apos;U_S&apos;,
+IF( Cases_Cancellation_rate_non_functional__c&gt;= VALUE($Label.QualityCaseCancellation_non_functionalUS) 
+&amp;&amp; Cancellation_rate_non_functional__c &gt;= VALUE($Label.QualityRateCancellation_non_functionalUS) , 1, 0),
+0
+)
+,
+CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Cases_Cancellation_rate_non_functional__c&gt;=VALUE($Label.QualityCaseCancellation_non_functional_NMO) 
+&amp;&amp; Cancellation_rate_non_functional__c &gt;=
+VALUE($Label.QualityRateCancellation_non_functional_NMO) , 1, 0),
+&apos;U_S&apos;,
+IF( Cases_Cancellation_rate_non_functional__c&gt;= VALUE($Label.QualityCaseCancellation_non_functionalUS_NMO) 
+&amp;&amp; Cancellation_rate_non_functional__c &gt;= VALUE($Label.QualityRateCancellation_non_functionalUS_NMO) , 1, 0),
+0
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_Cancellation_non_functional</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Process_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( RecordType.DeveloperName , 
+&quot;Back_Camp_U_S&quot;, &quot;Back-Camp US&quot;,
+					
+&quot;Exit&quot;, &quot;Exit&quot;, 
+&quot;Exit_U_S&quot;, &quot;Exit&quot;, 
+&quot;Exit_buyback&quot;, &quot;Exit&quot;, 
+					
+&quot;Follow_Up&quot;, &quot;Follow-up&quot;,
+&quot;Follow_Up_U_S&quot;, &quot;Follow-up&quot;,
+&quot;Follow_Up_buyback&quot;, &quot;Follow-up&quot;,
+					
+&quot;Debit_Note&quot;, &quot;Debit Note&quot;,
+&quot;Debit_Note_U_S&quot;, &quot;Debit Note&quot;,
+&quot;Debit_Note_buyback&quot;, &quot;Debit Note&quot;,
+					
+&quot;NMO_Xborder&quot;, &quot;N.M.O X-Border&quot;,
+&quot;N.M.O X-Border&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Special Process Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

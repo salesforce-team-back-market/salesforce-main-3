@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_BizDev</fullName>
+    <active>true</active>
+    <description>Require Merchant Owner for any stage other than Identification.</description>
+    <errorConditionFormula>AND(ISBLANK(  Owner.Id  ),
+NOT( ISPICKVAL( Stage__c ,&apos;Identification&apos;)))
+
+&amp;&amp; $User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorMessage>Please add Merchant Owner for this merchant.</errorMessage>
+</ValidationRule>

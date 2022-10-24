@@ -1,0 +1,8 @@
+<apex:page renderAs="pdf" showHeader="false" applyBodyTag="false" lightningStylesheets="false" standardStylesheets="false" doctype="html-4.01-strict">
+    <head>
+        <apex:stylesheet value="{!$Resource.DCE_PDFStyleSheet}" />
+    </head>
+    <body>
+        <c:DCE_DemoPDFComponent />
+    </body>
+</apex:page>

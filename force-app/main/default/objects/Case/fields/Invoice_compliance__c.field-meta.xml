@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_compliance__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>To sell on Back Market, it is required that sellers provide invoices to customers in the 24h following each customer request. The invoices shall be compliant with all legal requirements applicable in the country of the customer and shall be provided via the after-sales service interface.</inlineHelpText>
+    <label>Invoice compliance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

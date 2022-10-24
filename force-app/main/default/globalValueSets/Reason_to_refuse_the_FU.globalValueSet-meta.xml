@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Already in Exit/ DMP</fullName>
+        <default>false</default>
+        <label>Already in Exit/ DMP</label>
+    </customValue>
+    <customValue>
+        <fullName>BM mistake</fullName>
+        <default>false</default>
+        <label>BM mistake</label>
+    </customValue>
+    <customValue>
+        <fullName>Catalog mismatch</fullName>
+        <default>false</default>
+        <label>Catalog mismatch</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>External exceptional event</fullName>
+        <default>false</default>
+        <label>External exceptional event</label>
+    </customValue>
+    <customValue>
+        <fullName>Activated FBBM in faulty countries</fullName>
+        <default>false</default>
+        <label>Activated FBBM in faulty countries</label>
+    </customValue>
+    <customValue>
+        <fullName>Activated BackCare in faulty countries</fullName>
+        <default>false</default>
+        <label>Activated BackCare in faulty countries</label>
+    </customValue>
+    <customValue>
+        <fullName>Charter Breach already addressed by another process</fullName>
+        <default>false</default>
+        <label>Charter Breach already addressed by another process</label>
+    </customValue>
+    <masterLabel>Reason to refuse the FU</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

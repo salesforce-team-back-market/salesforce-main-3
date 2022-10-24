@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Team__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(BillingCountry,
+     &quot;France&quot;, &quot;FR&quot;,  
+     &quot;Belgium&quot;, &quot;FR&quot;, 
+     &quot;Spain&quot;, &quot;ES&quot;, 
+     &quot;Germany&quot;, &quot;DE&quot;, 
+     &quot;China&quot;, &quot;CN&quot;,  
+     &quot;Poland&quot;, &quot;PL&quot;, 
+     &quot;UK&quot;)</formula>
+    <label>Team</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_flag__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <description>Old formula:
+IF ( OR ( CONTAINS ( Last_Sales_Listings_or_Buybox_0_flag__c, &apos;Warning&apos;), 
+CONTAINS ( Last_listings_10_flag__c, &apos;Warning&apos;), 
+CONTAINS ( Last_Buyboxes_30_of_Listing_flag__c, &apos;Warning&apos;), 
+CONTAINS ( Last_Sales_2_flag__c, &apos;Warning&apos;) ) , 
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Warning!&quot;, 15, 15), 
+IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;All Good&quot;, 15, 15) 
+)</description>
+    <externalId>false</externalId>
+    <formula>IF (  OR(
+   (Old_Last_Daily_Biz_Perf_Listings__c-Old_Last_Daily_Biz_Perf_Listings__c*0.25) &gt; Last_Daily_Biz_Perf_Listings__c , 
+   (Old_Last_Daily_Biz_Perf_Listings__c-250) &gt;  Last_Daily_Biz_Perf_Listings__c,
+   (Old_Last_Weekly_Biz_Perf_Listings__c -Old_Last_Weekly_Biz_Perf_Listings__c*0.25) &gt; Last_weekly_Biz_Perf_Listings__c  , 
+   (Old_Last_Weekly_Biz_Perf_Listings__c-250) &gt;  Last_weekly_Biz_Perf_Listings__c,
+   (Old_Last_Monthly_Biz_Perf_Listings__c-Old_Last_Monthly_Biz_Perf_Listings__c*0.25) &gt; Last_Monthly_Biz_Perf_Listings__c  , 
+   (Old_Last_Monthly_Biz_Perf_Listings__c-250) &gt;  Last_Monthly_Biz_Perf_Listings__c,
+   (Old_Last_Daily_Biz_Perf_Stocks__c-Old_Last_Daily_Biz_Perf_Stocks__c*0.25) &gt; Last_Daily_Biz_Perf_Stocks__c , 
+   (Old_Last_Daily_Biz_Perf_Stocks__c-250) &gt;  Last_Daily_Biz_Perf_Stocks__c,
+   (Old_Last_Weekly_Biz_Perf_Stocks__c -Old_Last_Weekly_Biz_Perf_Stocks__c*0.25) &gt; Last_weekly_Biz_Perf_Stocks__c  , 
+   (Old_Last_Weekly_Biz_Perf_Stocks__c-250) &gt;  Last_weekly_Biz_Perf_Stocks__c,
+   (Old_Last_Monthly_Biz_Perf_Stocks__c-Old_Last_Monthly_Biz_Perf_Stocks__c*0.25) &gt; Last_Monthly_Biz_Perf_Stocks__c  , 
+   (Old_Last_Monthly_Biz_Perf_Stocks__c-250) &gt;  Last_Monthly_Biz_Perf_Stocks__c
+),
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Warning!&quot;, 15, 15), 
+IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;All Good&quot;, 15, 15) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Business flag</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

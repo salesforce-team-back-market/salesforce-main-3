@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Mystery_Orders</fullName>
+    <columns>NAME</columns>
+    <columns>Merchant_Name__c</columns>
+    <columns>Type_of_merchant__c</columns>
+    <columns>Has_been_created_on__c</columns>
+    <columns>Stage__c</columns>
+    <columns>MO_Result__c</columns>
+    <columns>Current_QAM__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Abort MO</value>
+    </filters>
+    <label>All Mystery Orders</label>
+</ListView>

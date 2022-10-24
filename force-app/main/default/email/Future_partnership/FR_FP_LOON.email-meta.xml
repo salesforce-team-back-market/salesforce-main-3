@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>FR.FP.LOON</name>
+    <style>freeForm</style>
+    <subject>Back Market. Nous vous attendons {!Account.Name}.</subject>
+    <textOnly>Bonjour {!Contact.FirstName},
+
+
+Compléter le processus pour vendre avec {!Account.Name} sur Back Market vous prend plus de temps que prévu. Veuillez prendre 1 heure de votre temps et compléter les étapes manquantes. Entrez dans le processus et complétez-le.
+
+
+ACCÉDER AU PROCESSUS POUR COMMENCER À VENDRE SUR BACK MARKET
+
+
+Faites-nous savoir quand vous avez tout fait. Nous cesserons de vous envoyer des rappels ;) et nous activerons votre compte dès que possible pour commencer à vendre en Europe.
+
+
+Nous vous attendons!
+
+L&apos;Équipe Back Market
+
+
+Si, au cours de la procédure, vous avez besoin que nous vous appelions, cliquez sur: Appelez-moi.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

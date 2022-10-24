@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Smartphones</fullName>
+        <default>false</default>
+        <label>Smartphones</label>
+    </customValue>
+    <customValue>
+        <fullName>MacBook</fullName>
+        <default>false</default>
+        <label>MacBook</label>
+    </customValue>
+    <customValue>
+        <fullName>Tablets</fullName>
+        <default>false</default>
+        <label>Tablets</label>
+    </customValue>
+    <customValue>
+        <fullName>Earphones</fullName>
+        <default>false</default>
+        <label>Earphones</label>
+    </customValue>
+    <customValue>
+        <fullName>iMac</fullName>
+        <default>false</default>
+        <label>iMac</label>
+    </customValue>
+    <customValue>
+        <fullName>Smart Watches</fullName>
+        <default>false</default>
+        <label>Smart Watches</label>
+    </customValue>
+    <customValue>
+        <fullName>Computers</fullName>
+        <default>false</default>
+        <label>Computers</label>
+    </customValue>
+    <customValue>
+        <fullName>Televisions</fullName>
+        <default>false</default>
+        <label>Televisions</label>
+    </customValue>
+    <customValue>
+        <fullName>Audio</fullName>
+        <default>false</default>
+        <label>Audio</label>
+    </customValue>
+    <customValue>
+        <fullName>Large Home Appliances</fullName>
+        <default>false</default>
+        <label>Large Home Appliances</label>
+    </customValue>
+    <customValue>
+        <fullName>Small Home Appliances</fullName>
+        <default>false</default>
+        <label>Small Home Appliances</label>
+    </customValue>
+    <customValue>
+        <fullName>Consoles</fullName>
+        <default>false</default>
+        <label>Consoles</label>
+    </customValue>
+    <customValue>
+        <fullName>Laptops</fullName>
+        <default>false</default>
+        <label>Laptops</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Accessories</fullName>
+        <default>false</default>
+        <label>Accessories</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric bikes</fullName>
+        <default>false</default>
+        <label>Electric bikes</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric scooters</fullName>
+        <default>false</default>
+        <label>Electric scooters</label>
+    </customValue>
+    <customValue>
+        <fullName>Hoverboards</fullName>
+        <default>false</default>
+        <label>Hoverboards</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric skateboards</fullName>
+        <default>false</default>
+        <label>Electric skateboards</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Photos &amp; Video</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Photos &amp; Video</label>
+    </customValue>
+    <customValue>
+        <fullName>Connected Devices</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Connected Devices</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobility</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mobility</label>
+    </customValue>
+    <customValue>
+        <fullName>Tools</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>Beauty And Spa</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Beauty And Spa</label>
+    </customValue>
+    <customValue>
+        <fullName>Gardening</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Gardening</label>
+    </customValue>
+    <masterLabel>Type of Products Picklist</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>To do</fullName>
+                <default>true</default>
+                <label>To do</label>
+            </value>
+            <value>
+                <fullName>Stand-by</fullName>
+                <default>false</default>
+                <label>Stand-by</label>
+            </value>
+            <value>
+                <fullName>Order made</fullName>
+                <default>false</default>
+                <label>Order made</label>
+            </value>
+            <value>
+                <fullName>Received</fullName>
+                <default>false</default>
+                <label>Received</label>
+            </value>
+            <value>
+                <fullName>Result Shared</fullName>
+                <default>false</default>
+                <label>Result Shared</label>
+            </value>
+            <value>
+                <fullName>Check done</fullName>
+                <default>false</default>
+                <label>Check done</label>
+            </value>
+            <value>
+                <fullName>Product sent back</fullName>
+                <default>false</default>
+                <label>Product sent back</label>
+            </value>
+            <value>
+                <fullName>Refunded</fullName>
+                <default>false</default>
+                <label>Refunded</label>
+            </value>
+            <value>
+                <fullName>Archived for BM</fullName>
+                <default>false</default>
+                <label>Archived for BM</label>
+            </value>
+            <value>
+                <fullName>Abort MO</fullName>
+                <default>false</default>
+                <label>Abort MO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

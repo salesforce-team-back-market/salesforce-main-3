@@ -1,0 +1,22 @@
+Hola  {!Contact.FirstName},
+
+He sido alertado sobre su entrada en un período de monitoreo por incumplimiento de nuestra Carta de Calidad. Quería revisar la situación con usted para encontrar un resultado favorable y evitar que sus ventas se vean demasiado afectadas. 
+
+Las siguientes parecen ser las principales causas:
+
+SAV ###
+SAV ##
+SAV ##
+
+Teniendo en cuenta estos elementos, vamos a iniciar un período de apoyo privilegiado que debería permitirle cumplir con nuestras normas de calidad detalladas en nuestra carta de calidad. Esto comienza con un plan de acción apropiado que se acordará conjuntamente. Aquí están las soluciones que creo que les serán útiles:
+
+
+
+
+
+El objetivo es asegurarse de que cumplan con sus estándares de calidad. Este período de control durará hasta el {!Alert__c.ETA__c}.
+
+Por supuesto, estoy disponible para discutir esto por teléfono y acompañarlos en su plan de acción.
+
+Les deseo un muy buen día,
+{{{Sender.Signature}}}

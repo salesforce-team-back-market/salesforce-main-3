@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Smartphone_BackWatch_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Back Watch EU</label>
+    <queue>Smartphone_BackWatch</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

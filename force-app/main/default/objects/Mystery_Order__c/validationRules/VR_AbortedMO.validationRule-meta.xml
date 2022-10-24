@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_AbortedMO</fullName>
+    <active>false</active>
+    <description>Mandatory fields to move to &quot;Abort MO&quot;</description>
+    <errorConditionFormula>AND( ISCHANGED( Stage__c ) ,
+ISPICKVAL(Stage__c, &quot;Abort MO&quot;),
+  ISBLANK( text( Reason_for_aborted__c  )))</errorConditionFormula>
+    <errorMessage>Whooops... To move to &quot;Abort MO&quot; yo need to provide a reason.</errorMessage>
+</ValidationRule>

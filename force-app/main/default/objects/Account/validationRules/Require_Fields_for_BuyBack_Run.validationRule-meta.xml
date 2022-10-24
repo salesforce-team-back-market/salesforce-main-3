@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Fields_for_BuyBack_Run</fullName>
+    <active>false</active>
+    <description>Require Onb Validation before pushing merchant to Run for BuyBack.</description>
+    <errorConditionFormula>AND (
+ISCHANGED( Stage_Buyback__c ),
+ISPICKVAL ( Stage_Buyback__c,&quot;Buyback Run&quot; ),
+ Number_of_ended_onboarding_processes__c = 0,
+$User.ByPassValidationRules__c != true	
+)</errorConditionFormula>
+    <errorMessage>Whoops.. You can&apos;t move to Buyback Run is an Onboarding process isn&apos;t completed.</errorMessage>
+</ValidationRule>

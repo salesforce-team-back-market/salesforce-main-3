@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Last chance start (ES)</name>
+    <style>freeForm</style>
+    <subject>{!Alert__c.P_K__c} - {!Alert__c.Business_Name__c} - Periodo de Monitorización - Última Oportunidad</subject>
+    <textOnly>Hola {!Alert___c.Business_Name__c},
+
+
+
+Lamentablemente, desde la última vez que nos pusimos en contacto con vosotros sobre la tasa de {!Alert__c.Issue_KPI__c}, la situación no ha mejorado. Por lo tanto, su cuenta se encuentra ahora en la &quot;última oportunidad&quot; del periodo de seguimiento, de acuerdo con el artículo 12 de nuestros T&amp;Cs.
+
+
+
+El propósito de esta &quot;última oportunidad&quot; es darle una última oportunidad para mejorar sus métricas y alcanzar el objetivo previamente comunicado para cumplir con nuestros estándares de calidad establecidos en la Carta de Calidad y los T&amp;Cs.
+
+
+
+Durante este periodo, habrá un límite en su cuenta alrededor de {!Account.Limitation_to_apply_in_Last_Chance__c} ventas por día (es decir, aproximadamente el 30% del volumen de las ventas realizadas de media en los últimos 30 días).
+
+Le recomendamos encarecidamente que trabaje con su Account Manager para supervisar el progreso durante el próximo mes y que se ponga en contacto con él para cualquier aclaración. Para obtener más información sobre los umbrales del período de seguimiento, consulte el Centro de asistencia al comerciante (Merchant Support Center).
+
+
+
+En caso de que la tasa de {!Alert__c.Issue_KPI__c} no mejore antes de la fecha mencionada, nos veremos obligados a cerrar su cuenta en nuestra plataforma, tal y como se establece en los artículos 12 y 18.2 de los TyC.
+
+
+
+Esperamos de todo corazón que no se llegue a esa situación y estamos a su disposición para resolver cualquier duda.
+
+
+
+Atentamente,
+
+
+Back Market</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

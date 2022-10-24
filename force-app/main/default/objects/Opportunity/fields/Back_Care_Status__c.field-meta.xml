@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Back_Care_Status__c</fullName>
+    <businessOwnerUser>clement.vannicatte@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>Back Care Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>KO - Agents communication is poor</fullName>
+                <default>false</default>
+                <label>KO - Agents communication is poor</label>
+            </value>
+            <value>
+                <fullName>KO - Diversification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO - Diversification</label>
+            </value>
+            <value>
+                <fullName>KO - Does not want to outsource</fullName>
+                <default>false</default>
+                <label>KO - Does not want to outsource</label>
+            </value>
+            <value>
+                <fullName>KO - Do not want to outsource</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO - Do not want to outsource</label>
+            </value>
+            <value>
+                <fullName>KO - High CSAT in domestic market</fullName>
+                <default>false</default>
+                <label>KO - High CSAT in domestic market</label>
+            </value>
+            <value>
+                <fullName>KO - Lack of knowledge/specialization</fullName>
+                <default>false</default>
+                <label>KO - Lack of knowledge/specialization</label>
+            </value>
+            <value>
+                <fullName>KO - Lack of remote assistance</fullName>
+                <default>false</default>
+                <label>KO - Lack of remote assistance</label>
+            </value>
+            <value>
+                <fullName>KO - Low volume of sales</fullName>
+                <default>false</default>
+                <label>KO - Low volume of sales</label>
+            </value>
+            <value>
+                <fullName>KO - Merchant is in exit</fullName>
+                <default>false</default>
+                <label>KO - Merchant is in exit</label>
+            </value>
+            <value>
+                <fullName>KO - Multichannel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO - Multichannel</label>
+            </value>
+            <value>
+                <fullName>KO - No answer yet</fullName>
+                <default>false</default>
+                <label>KO - No answer yet</label>
+            </value>
+            <value>
+                <fullName>KO - Not willing to develop the account</fullName>
+                <default>false</default>
+                <label>KO - Not willing to develop the account</label>
+            </value>
+            <value>
+                <fullName>KO_Price</fullName>
+                <default>false</default>
+                <label>KO - Price</label>
+            </value>
+            <value>
+                <fullName>KO - Price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO - Price</label>
+            </value>
+            <value>
+                <fullName>KO - Price of return labels</fullName>
+                <default>false</default>
+                <label>KO - Price of return labels</label>
+            </value>
+            <value>
+                <fullName>KO - Refund rate</fullName>
+                <default>false</default>
+                <label>KO - Refund rate</label>
+            </value>
+            <value>
+                <fullName>KO - Return rate</fullName>
+                <default>false</default>
+                <label>KO - Return rate</label>
+            </value>
+            <value>
+                <fullName>KO - Seasonality</fullName>
+                <default>false</default>
+                <label>KO - Seasonality</label>
+            </value>
+            <value>
+                <fullName>KO - Seller already has in-house SAV solution</fullName>
+                <default>false</default>
+                <label>KO - Seller already has in-house SAV solution</label>
+            </value>
+            <value>
+                <fullName>KO - Seller does not want to use BackCare</fullName>
+                <default>false</default>
+                <label>KO - Seller does not want to use BackCare</label>
+            </value>
+            <value>
+                <fullName>KO - Seller sells other product categories than smartphones</fullName>
+                <default>false</default>
+                <label>KO - Seller sells other product categories than smartphones</label>
+            </value>
+            <value>
+                <fullName>KO - SSC experience is bad</fullName>
+                <default>false</default>
+                <label>KO - SSC experience is bad</label>
+            </value>
+            <value>
+                <fullName>KO - Tone of the agents</fullName>
+                <default>false</default>
+                <label>KO - Tone of the agents</label>
+            </value>
+            <value>
+                <fullName>KO - Too much refunds</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO - Too much refunds</label>
+            </value>
+            <value>
+                <fullName>KO - Very bad previous experience</fullName>
+                <default>false</default>
+                <label>KO - Very bad previous experience</label>
+            </value>
+            <value>
+                <fullName>OK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OK</label>
+            </value>
+            <value>
+                <fullName>OK - Enable sales easily</fullName>
+                <default>false</default>
+                <label>OK - Enable sales easily</label>
+            </value>
+            <value>
+                <fullName>OK - Low volume at the moment</fullName>
+                <default>false</default>
+                <label>OK - Low volume at the moment</label>
+            </value>
+            <value>
+                <fullName>OK - Mandatory for Back Repair</fullName>
+                <default>false</default>
+                <label>OK - Mandatory for Back Repair</label>
+            </value>
+            <value>
+                <fullName>OK - Poor quality (when not Back Care)</fullName>
+                <default>false</default>
+                <label>OK - Poor quality (when not Back Care)</label>
+            </value>
+            <value>
+                <fullName>OK - Price</fullName>
+                <default>false</default>
+                <label>OK - Price</label>
+            </value>
+            <value>
+                <fullName>OK - Time saving</fullName>
+                <default>false</default>
+                <label>OK - Time saving</label>
+            </value>
+            <value>
+                <fullName>OK - Wants to outsource</fullName>
+                <default>false</default>
+                <label>OK - Wants to outsource</label>
+            </value>
+            <value>
+                <fullName>OK - Wants to try it</fullName>
+                <default>false</default>
+                <label>OK - Wants to try it</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

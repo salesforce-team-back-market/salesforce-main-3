@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Last chance start (DE)</name>
+    <style>freeForm</style>
+    <subject>{!Alert__c.P_K__c} - {!Alert__c.Business_Name__c} - Beobachtungsphase - Letzte Chance</subject>
+    <textOnly>Hallo {!Alert___c.Business_Name__c},
+
+
+
+leider hat sich die Situation seit unserer letzten Kontaktaufnahme bezüglich der {!Alert__c.Issue_KPI__c} Rate NICHT verbessert. Daher befindet sich Ihr Konto nun in der &quot;letzten Chance&quot; der Beobachtungsphase, gemäß Artikel 12 unserer AGBs.
+
+
+
+Der Zweck dieser &quot;letzten Chance&quot; ist es, Ihnen eine LETZTE Gelegenheit zu geben, Ihre Metriken zu verbessern und das zuvor kommunizierte Ziel im Einklang mit unserer Qualitätscharta und den AGBs zu erreichen.
+
+
+Während dieses Zeitraums wird Ihr Konto auf ca. {!Account.Limitation_to_apply_in_Last_Chance__c} Verkäufe pro Tag begrenzt (d.h. ca. 30% des Volumens der im Durchschnitt der letzten 30 Tage getätigten Verkäufe).
+
+Wir empfehlen Ihnen dringend, mit Ihrem Back Market-Ansprechpartner zusammenzuarbeiten, um den Fortschritt im Laufe des nächsten Monats zu überwachen und sich bei Unklarheiten zu melden. Weitere Informationen zu Schwellenwerten für Beobachtungsphasen finden Sie im Merchant Support Center.
+
+
+
+Für den Fall, dass sich die {!Alert__c.Issue_KPI__c}-Rate nicht vor dem oben genannten Datum verbessert, sind wir gezwungen, Ihr Konto bei unserer Plattform zu schließen, wie in Artikel 12 und 18.2 der AGBs vorgesehen.
+
+
+
+Wir hoffen innigst, dass es nicht dazu kommt und stehen Ihnen bei Fragen gerne zur Verfügung.
+
+
+
+Mit freundlichen Grüßen,
+
+Back Market</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Feedback SSC Survey - Case</name>
+    <pageDevName>Feedback_SSC_Survey_Case</pageDevName>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Votre requête a été clôturée: Requête {{{Case.CaseNumber}}}</subject>
+    <textOnly>REQUÊTE #{{{Case.CaseNumber}}}RÉSOLUE
+
+Bonjour {{{Case.Contact_FirstName__c}}},
+
+{{{Case.OwnerFirstName__c}}} vient de fermer votre requête &lt; https://backmarketportal.force.com/ssc/s/case/{{Case.Id}} &gt; . Nous nous efforçons de vous fournir un service de qualité et serions ravis de recevoir vos commentaires.
+
+Si vous avez d&apos;autres requêtes ouvertes avec nous, vous aurez l&apos;occasion de nous évaluer pour chacune d&apos;entre elles séparément.
+
+Merci pour votre temps, nous vous en sommes très reconnaissants !
+
+★★ &lt; https://backster.typeform.com/to/pLxZFpBs#first_name={{Case.Contact_FirstName__c}}&amp;last_name={{Case.Contact_LastName__c}}&amp;id_sf={{Case.Id}}?email=%7B%7BCase.ContactEmail%7D%7D&amp;rating=1 &gt; ★★ &lt; https://backster.typeform.com/to/pLxZFpBs#first_name={{Case.Contact_FirstName__c}}&amp;last_name={{Case.Contact_LastName__c}}&amp;id_sf={{Case.Id}}?email=%7B%7BCase.ContactEmail%7D%7D&amp;rating=2 &gt; ★★ &lt; https://backster.typeform.com/to/pLxZFpBs#first_name={{Case.Contact_FirstName__c}}&amp;last_name={{Case.Contact_LastName__c}}&amp;id_sf={{Case.Id}}?email=%7B%7BCase.ContactEmail%7D%7D&amp;rating=3 &gt; ★★ &lt; https://backster.typeform.com/to/pLxZFpBs#first_name={{Case.Contact_FirstName__c}}&amp;last_name={{Case.Contact_LastName__c}}&amp;id_sf={{Case.Id}}?email=%7B%7BCase.ContactEmail%7D%7D&amp;rating=4 &gt; ★★ &lt; https://backster.typeform.com/to/pLxZFpBs#first_name={{Case.Contact_FirstName__c}}&amp;last_name={{Case.Contact_LastName__c}}&amp;id_sf={{Case.Id}}?email=%7B%7BCase.ContactEmail%7D%7D&amp;rating=5 &gt; 
+
+1 2 3 4 5
+
+Merci de votre retour !
+
+Passez une bonne journée,
+
+L&apos;équipe du Seller Support Center
+
+Envoyé avec 💛 depuis un appareil reconditionné 
+
+Conformément au RGPD et aux lois et réglementations locales applicables, vous disposez d&apos;un droit d&apos;accès, d&apos;effacement, de portabilité, de rectification, d&apos;opposition aux données personnelles vous concernant et du droit de ne pas faire l&apos;objet d&apos;une décision fondée uniquement sur un traitement automatisé. Pour exercer ces droits, il vous suffit de nous écrire à legal@backmarket.com ou par courrier à Back Market, Direction juridique / 199 rue Championnet, 75018 Paris, France.</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Merchant_ID__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>This field is useful for implement a one-to-one relationship with the Merchant Object. 
+The value is set once on Record creation by a Process Builder job and is never modified.</description>
+    <externalId>true</externalId>
+    <label>Merchant ID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

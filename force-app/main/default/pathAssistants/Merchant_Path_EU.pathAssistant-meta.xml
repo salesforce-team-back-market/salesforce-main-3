@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Account</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Merchant Path (E.U.)</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>First_contact_on__c</fieldNames>
+        <fieldNames>Has_Business_Contact__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;From First Contact to Negotiation&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;You&amp;#39;ll not be able to move to the next stage unless the following fields are populated:&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;First-contact on&lt;/li&gt;&lt;li&gt;The merchant needs to have at least 1 contact with role = &amp;quot;Business&amp;quot;. You need a phone number, and email or a professional network (LinkedIn)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;At any time, &lt;/i&gt;&lt;b&gt;&lt;i&gt;you can move to &amp;quot;not relevant&amp;quot; &lt;/i&gt;&lt;/b&gt;&lt;i&gt;and come back. Make sure to select a &amp;quot;Challenging Point&amp;quot;, and update &amp;quot;Onboarding Type&amp;quot;. And add a Prioritization score feedback if Prioritization Tag isn&amp;#39;t empty. &lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;At any time, &lt;/i&gt;&lt;b&gt;&lt;i&gt;you can move to &amp;quot;Future Partnership&amp;quot;&lt;/i&gt;&lt;/b&gt;&lt;i&gt;, you need to select a &amp;quot;challenging point&amp;quot;. You can come back to 1st contact.&lt;/i&gt;&lt;/p&gt;</info>
+        <picklistValueName>First-contact</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;﻿&lt;/b&gt;&lt;i&gt;At any time, &lt;/i&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;you can move out of &amp;quot;Future Partnership&amp;quot;&lt;/i&gt;&lt;/b&gt;&lt;i&gt;, you can only come back to First-Contact.&lt;/i&gt;&lt;/p&gt;</info>
+        <picklistValueName>Future partnership</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Profile__c</fieldNames>
+        <fieldNames>Region__c</fieldNames>
+        <fieldNames>Country__c</fieldNames>
+        <fieldNames>BillingAddress</fieldNames>
+        <fieldNames>AccountSource</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;From Identification to First Contact&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;You&amp;#39;ll not be able to move to the next stage unless all these elements are populated :&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;u&gt;Profile&lt;/u&gt;&lt;/li&gt;&lt;li&gt;&lt;u&gt;Merchant Source (identified on)&lt;/u&gt;&lt;/li&gt;&lt;li&gt;&lt;u&gt;Region&lt;/u&gt;&lt;/li&gt;&lt;li&gt;&lt;u&gt;Country&lt;/u&gt;&lt;/li&gt;&lt;li&gt;&lt;u&gt;Billing Country&lt;/u&gt;&lt;/li&gt;&lt;li&gt;&lt;u&gt;Merchant Owner&lt;/u&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;At any time, &lt;/i&gt;&lt;b&gt;&lt;i&gt;you can move to &amp;quot;not relevant&amp;quot; &lt;/i&gt;&lt;/b&gt;&lt;i&gt;and come back. Make sure to select a &amp;quot;Challenging Point&amp;quot;, and update &amp;quot;Onboarding Type&amp;quot;. And add a Prioritization score feedback if Prioritization Tag isn&amp;#39;t empty. &lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;At any time, &lt;/i&gt;&lt;b&gt;&lt;i&gt;you can move to &amp;quot;Future Partnership&amp;quot;&lt;/i&gt;&lt;/b&gt;&lt;i&gt;, you need to select a &amp;quot;challenging point&amp;quot;. You can come back to 1st contact.&lt;/i&gt;&lt;/p&gt;</info>
+        <picklistValueName>Identification</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>BackWatch_Onboarding_Type__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;From N.M.O. to Run&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;During this stage, you will track new merchants&amp;#39; sales and quality performances.&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;The merchant will be pushed to Run as soon as the NMO process is completed.&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;For Type B: &lt;/b&gt;Don&amp;#39;t forget to tick the checkbox &amp;quot;&lt;b&gt;&lt;i&gt;Onboarding Type&amp;quot;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;</info>
+        <picklistValueName>N.M.O.</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Back_Office_PK__c</fieldNames>
+        <fieldNames>Onboarding_language__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;From Negotiation to Onboarding&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;You&amp;#39;ll not be able to move to the next stage unless the following fields are populated:&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;P.K.&lt;/li&gt;&lt;li&gt;Onboarding Language (for EU)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;&lt;u&gt;When ending the negotiation and starting the onboarding, you&amp;#39;ll need to update the stage to the next step.&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;&lt;u&gt;At this moment, an onboarding process will be automatically created: go to the &amp;quot;Onboarding Process&amp;quot; tab, on the very top of the page to find back your merchant and manage his onboarding properly.&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;</info>
+        <picklistValueName>Negotiation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;&amp;#129488; &lt;/b&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;When your merchant is offline, this usually means that he has been exited from the platform.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;i&gt;Reminder:&lt;/i&gt;&lt;/b&gt;&lt;i&gt; It is not because your merchant is offline that he should not deal with customer requests related to products under warranty. &lt;/i&gt;&lt;/p&gt;</info>
+        <picklistValueName>Offline</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>BackWatch_Onboarding_Type__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;From Onboarding to N.M.O.&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;During this stage, you have to complete the onboarding process.&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;The merchant will be pushed to N.M.O. stage as soon as the Onboarding process is completed.&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;&lt;u&gt;Go to the &amp;quot;Onboarding Process&amp;quot; tab, on the very top of the page to find back your merchant and manage his onboarding properly.&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;For Type B: &lt;/b&gt;Don&amp;#39;t forget to tick the checkbox &amp;quot;&lt;b&gt;&lt;i&gt;Onboarding Type&amp;quot;&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;</info>
+        <picklistValueName>Onboarding</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Run</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>E_U</recordTypeName>
+</PathAssistant>

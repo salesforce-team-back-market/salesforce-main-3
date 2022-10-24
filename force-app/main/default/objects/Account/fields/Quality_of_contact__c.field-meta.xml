@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quality_of_contact__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Field populated for Lead Prio Score
+- Direct Contact: First Name OR Last Name AND Email OR Phone/Mobile
+- Contact: ONLY First Name OR Last Name
+- Generic Contact: Email OR Phone/Mobile of Team Contact
+- No Contact: No data about contact details</inlineHelpText>
+    <label>Contact Quality</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct contact</fullName>
+                <default>false</default>
+                <label>Direct contact</label>
+            </value>
+            <value>
+                <fullName>Contact</fullName>
+                <default>false</default>
+                <label>Contact</label>
+            </value>
+            <value>
+                <fullName>Generic contact</fullName>
+                <default>false</default>
+                <label>Generic contact</label>
+            </value>
+            <value>
+                <fullName>No contact</fullName>
+                <default>false</default>
+                <label>No contact</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

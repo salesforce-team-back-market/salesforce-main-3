@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_BizDev_Kanban_Substage__c</fullName>
+    <externalId>false</externalId>
+    <label>New BizDev Kanban Substage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>New_BizDev_Kanban_Stages</valueSetName>
+    </valueSet>
+</CustomField>

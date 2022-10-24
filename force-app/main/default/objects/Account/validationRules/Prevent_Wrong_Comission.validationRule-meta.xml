@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Wrong_Comission</fullName>
+    <active>true</active>
+    <description>Prevent users from adding values out of the allowed range (1 - 40%) if role isn&apos;t Team Leader</description>
+    <errorConditionFormula>AND(
+ISCHANGED( Commission__c ),
+NOT( $UserRole.DeveloperName = &apos;Team_Leader&apos;),
+(OR ( Commission__c &lt; 0.01, 
+     Commission__c &gt; 0.4 )) 
+)
+&amp;&amp;  $User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorMessage>Whoops, you don&apos;t have the permission to have a commission above 40%.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_CloseDate_Changes</fullName>
+    <active>false</active>
+    <description>Only System Administrators can change the CloseDate of the Opportunity.</description>
+    <errorConditionFormula>AND(
+ISCHANGED( CloseDate ),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;)</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>You can&apos;t change the Close Date of this Opportunity.</errorMessage>
+</ValidationRule>

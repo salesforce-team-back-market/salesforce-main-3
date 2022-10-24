@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Buyback__c</fullName>
+    <externalId>false</externalId>
+    <label>Stage (Buyback)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Buyback Identification</fullName>
+                <default>false</default>
+                <label>Buyback Identification</label>
+            </value>
+            <value>
+                <fullName>Buyback Negociation</fullName>
+                <default>false</default>
+                <label>Buyback Negociation</label>
+            </value>
+            <value>
+                <fullName>Buyback Onboarding</fullName>
+                <default>false</default>
+                <label>Buyback Onboarding</label>
+            </value>
+            <value>
+                <fullName>Buyback Not relevant</fullName>
+                <default>false</default>
+                <label>Buyback Not relevant</label>
+            </value>
+            <value>
+                <fullName>Buyback Future parthnership</fullName>
+                <default>false</default>
+                <label>Buyback Future partnership</label>
+            </value>
+            <value>
+                <fullName>Buyback NMO</fullName>
+                <default>false</default>
+                <label>Buyback NMO</label>
+            </value>
+            <value>
+                <fullName>Buyback Run</fullName>
+                <default>false</default>
+                <label>Buyback Run</label>
+            </value>
+            <value>
+                <fullName>Buyback Offline</fullName>
+                <default>false</default>
+                <label>Buyback Offline</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

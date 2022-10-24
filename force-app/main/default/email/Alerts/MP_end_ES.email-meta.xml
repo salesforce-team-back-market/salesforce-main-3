@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>MP end (ES)</name>
+    <style>freeForm</style>
+    <subject>{!Alert__c.P_K__c} - {!Alert__c.Business_Name__c} - Fin del periodo de Monitorización</subject>
+    <textOnly>Hola {!Alert___c.Business_Name__c},
+
+
+
+Gracias a su esfuerzo continuado, nos complace informarle de que ha alcanzado el objetivo mencionado para el KPI {!Alert__c.Issue_KPI__c} y que ahora cumple con nuestros estándares de calidad. Por lo tanto, su periodo de seguimiento finaliza hoy para el índice {!Alert__c.Issue_KPI__c}.
+
+
+
+Contamos con usted para continuar con las mejoras que ha realizado.
+
+
+
+Por favor, revise el Centro de Apoyo al Comerciante (Merchant Support Center) para tener en cuenta el proceso del periodo de seguimiento y los umbrales. Su Account Manager en Back Market queda a su disposición para cualquier otra pregunta que pueda tener.
+
+
+
+Atentamente,
+
+
+Back Market</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

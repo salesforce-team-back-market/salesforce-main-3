@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accessories Rate</fullName>
+        <default>false</default>
+        <label>Accessories Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - Cancellation (Functional) rate</fullName>
+        <default>false</default>
+        <label>Buyback - Cancellation (Functional) rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - Charter breaches</fullName>
+        <default>false</default>
+        <label>Buyback - Charter breaches</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - Counter-Proposal (Functional) rate</fullName>
+        <default>false</default>
+        <label>Buyback - Counter-Proposal (Functional) rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - Late Processing rate</fullName>
+        <default>false</default>
+        <label>Buyback - Late Processing rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - Late Response rate</fullName>
+        <default>false</default>
+        <label>Buyback - Late Response rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - Payment issue</fullName>
+        <default>false</default>
+        <label>Buyback - Payment issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - Pending Order rate</fullName>
+        <default>false</default>
+        <label>Buyback - Pending Order rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancellation Rate</fullName>
+        <default>false</default>
+        <label>Cancellation Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Policy violation</fullName>
+        <default>false</default>
+        <label>Policy violation</label>
+    </customValue>
+    <customValue>
+        <fullName>Churning Merchant</fullName>
+        <default>false</default>
+        <label>Churning Merchant</label>
+    </customValue>
+    <customValue>
+        <fullName>CSAT</fullName>
+        <default>false</default>
+        <label>CSAT</label>
+    </customValue>
+    <customValue>
+        <fullName>Defective Rate</fullName>
+        <default>false</default>
+        <label>Defective Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Esthetic Rate</fullName>
+        <default>false</default>
+        <label>Esthetic Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>GMV Completion Rate</fullName>
+        <default>false</default>
+        <label>GMV Completion Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Invoice Compliance Audit</fullName>
+        <default>false</default>
+        <label>Invoice Compliance Audit</label>
+    </customValue>
+    <customValue>
+        <fullName>Late Delivery Rate</fullName>
+        <default>false</default>
+        <label>Late Delivery Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Late Response Rate</fullName>
+        <default>false</default>
+        <label>Late Response Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Commitment</fullName>
+        <default>false</default>
+        <label>Low Commitment</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant Debt</fullName>
+        <default>false</default>
+        <label>Merchant Debt</label>
+    </customValue>
+    <customValue>
+        <fullName>Mystery Order</fullName>
+        <default>false</default>
+        <label>Mystery Order</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment issues</fullName>
+        <default>false</default>
+        <label>Payment issues</label>
+    </customValue>
+    <customValue>
+        <fullName>Potential Hazardous Charger</fullName>
+        <default>false</default>
+        <label>Potential Hazardous Charger</label>
+    </customValue>
+    <customValue>
+        <fullName>Untracked Orders Rate</fullName>
+        <default>false</default>
+        <label>Untracked Orders Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Wrong Product Rate</fullName>
+        <default>false</default>
+        <label>Wrong Product Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - Counter-Proposal (Non Functional) rate</fullName>
+        <default>false</default>
+        <label>Buyback - Counter-Proposal (Non Functional) rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancellation rate (non-functional)</fullName>
+        <default>false</default>
+        <label>Cancellation rate (non-functional)</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - Cancellation rate</fullName>
+        <default>false</default>
+        <label>Buyback - Cancellation rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - Counter-Proposal rate</fullName>
+        <default>false</default>
+        <label>Buyback - Counter-Proposal rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback - On-hold rate</fullName>
+        <default>false</default>
+        <label>Buyback - On-hold rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Burning Chargers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Burning Chargers</label>
+    </customValue>
+    <customValue>
+        <fullName>Average number of messages / order</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Average number of messages / order</label>
+    </customValue>
+    <customValue>
+        <fullName>Processing time (functional)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Processing time (functional)</label>
+    </customValue>
+    <customValue>
+        <fullName>Inactivity Risk</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Inactivity Risk</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Inactivity</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Inactivity</label>
+    </customValue>
+    <customValue>
+        <fullName>Paypal Refund Issue</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Paypal Refund Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Unprocessed order rate D+2</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Unprocessed order rate D+2</label>
+    </customValue>
+    <customValue>
+        <fullName>NRR</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NRR</label>
+    </customValue>
+    <customValue>
+        <fullName>Response time</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Response time</label>
+    </customValue>
+    <customValue>
+        <fullName>Processing time (non-functional)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Processing time (non-functional)</label>
+    </customValue>
+    <customValue>
+        <fullName>Charter Breaches</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Charter Breaches</label>
+    </customValue>
+    <masterLabel>Issue - KPI</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

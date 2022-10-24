@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subject__c</fullName>
+    <externalId>false</externalId>
+    <label>Subject</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Check SAV</fullName>
+                <default>false</default>
+                <label>Check SAV</label>
+            </value>
+            <value>
+                <fullName>Check BD</fullName>
+                <default>false</default>
+                <label>Check BD</label>
+            </value>
+            <value>
+                <fullName>Check Merchant Cluster</fullName>
+                <default>false</default>
+                <label>Check Merchant Cluster</label>
+            </value>
+            <value>
+                <fullName>Assign Merchant to SSM</fullName>
+                <default>false</default>
+                <label>Assign Merchant to SSM</label>
+            </value>
+            <value>
+                <fullName>Business Review</fullName>
+                <default>false</default>
+                <label>Business Review</label>
+            </value>
+            <value>
+                <fullName>First Sale Invoice Compliance</fullName>
+                <default>false</default>
+                <label>First Sale Invoice Compliance</label>
+            </value>
+            <value>
+                <fullName>KYCs to check</fullName>
+                <default>false</default>
+                <label>KYCs to check</label>
+            </value>
+            <value>
+                <fullName>KYCs to approve</fullName>
+                <default>false</default>
+                <label>KYCs to approve</label>
+            </value>
+            <value>
+                <fullName>First sale Check</fullName>
+                <default>false</default>
+                <label>First sale Check</label>
+            </value>
+            <value>
+                <fullName>Sales check</fullName>
+                <default>false</default>
+                <label>Sales check</label>
+            </value>
+            <value>
+                <fullName>1st Quality check</fullName>
+                <default>false</default>
+                <label>1st Quality check</label>
+            </value>
+            <value>
+                <fullName>Sales + Quality check</fullName>
+                <default>false</default>
+                <label>Sales + Quality check</label>
+            </value>
+            <value>
+                <fullName>Final check before approval</fullName>
+                <default>false</default>
+                <label>Final check before approval</label>
+            </value>
+            <value>
+                <fullName>KYC Adyen to verify</fullName>
+                <default>false</default>
+                <label>KYC Adyen to verify</label>
+            </value>
+            <value>
+                <fullName>SeatBelt Removal</fullName>
+                <default>false</default>
+                <label>SeatBelt Removal</label>
+            </value>
+            <value>
+                <fullName>Configure SEPA mandate</fullName>
+                <default>false</default>
+                <label>Configure SEPA mandate</label>
+            </value>
+            <value>
+                <fullName>Check buyback performance</fullName>
+                <default>false</default>
+                <label>Check buyback performance</label>
+            </value>
+            <value>
+                <fullName>Buyback SeatBelt Removal</fullName>
+                <default>false</default>
+                <label>Buyback SeatBelt Removal</label>
+            </value>
+            <value>
+                <fullName>Request new Resale Certificate</fullName>
+                <default>false</default>
+                <label>Request new Resale Certificate</label>
+            </value>
+            <value>
+                <fullName>Merchant visit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Merchant visit</label>
+            </value>
+            <value>
+                <fullName>Seat Belt Alert - 200</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Seat Belt Alert - 200</label>
+            </value>
+            <value>
+                <fullName>Seat Belt Alert - 50</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Seat Belt Alert - 50</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

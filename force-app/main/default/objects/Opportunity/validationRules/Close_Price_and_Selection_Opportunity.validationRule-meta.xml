@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Price_and_Selection_Opportunity</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( RecordType.DeveloperName =&quot;Price_and_Selection&quot;,	
+
+ Pending_Products__c  + Products_in_Negotiation__c  &gt;0,  
+
+IsClosed =TRUE)</errorConditionFormula>
+    <errorMessage>Please change stages for all the products before you can close this Opportunity.</errorMessage>
+</ValidationRule>

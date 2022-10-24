@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Carrier_Investigation_Documents</fullName>
+    <active>true</active>
+    <description>The Outcome field cannot be &quot;Yes&quot; if there are some Missing Documents and vice versa or &quot;Not needed&quot; and Details are blank</description>
+    <errorConditionFormula>OR (
+
+AND(NOT( $User.ByPassValidationRules__c ),
+ISPICKVAL( Carrier_Investigation_Outcome__c , &apos;No, missing documents&apos;),
+ISBLANK( Missing_Document_s__c ))
+
+,
+AND(NOT( $User.ByPassValidationRules__c ),
+ISPICKVAL( Carrier_Investigation_Outcome__c , &apos;Investigation not needed anymore&apos;),
+ISBLANK(  Carrier_Investigation_Details__c  ))
+
+,
+
+AND(NOT( $User.ByPassValidationRules__c ),
+NOT(ISPICKVAL( Carrier_Investigation_Outcome__c , &apos;No, missing documents&apos;)),
+NOT(ISBLANK( Missing_Document_s__c ))))</errorConditionFormula>
+    <errorDisplayField>Carrier_Investigation_Outcome__c</errorDisplayField>
+    <errorMessage>The Outcome field cannot be &quot;Yes&quot; if there are some Missing Documents and vice versa or &quot;Not needed&quot; and Details are blank</errorMessage>
+</ValidationRule>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cases_Objective_to_reach__c</fullName>
+    <externalId>false</externalId>
+    <formula>If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; (ISPICKVAL(Category__c,&quot;MacBook&quot;) || ISPICKVAL(Category__c,&quot;Tablets&quot;) || ISPICKVAL(Category__c,&quot;Smartphone&quot;))), 0,
+If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;E_U&apos;),10,
+If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;U_S&apos;),10,
+if((ISPICKVAL(Issue_KPI__c,&quot;Wrong Product Rate&quot;)),10,
+if((ISPICKVAL(Issue_KPI__c,&quot;Accessories Rate&quot;)),10,
+if((ISPICKVAL(Issue_KPI__c,&quot;Late Delivery Rate&quot;)),10,
+if((ISPICKVAL(Issue_KPI__c,&quot;Esthetic Rate&quot;)),8,
+if((ISPICKVAL(Issue_KPI__c,&quot;Late Response Rate&quot;)),10,
+if((ISPICKVAL(Issue_KPI__c,&quot;CSAT&quot;)),8,
+if((ISPICKVAL(Issue_KPI__c,&quot;Cancellation Rate&quot;)),8,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Late Processing rate&quot;)),25,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Pending Order rate&quot;)),20,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - On-hold rate&quot;)),20,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal (Functional) rate&quot;)),35,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal rate&quot;)),35,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal (Non Functional) rate&quot;)),10,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Cancellation (Functional) rate&quot;)),10,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Cancellation rate&quot;)),10,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Late Response rate&quot;)),15,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Payment issue&quot;)),0,
+if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Charter breaches&quot;)),0,
+if((ISPICKVAL(Issue_KPI__c,&quot;Untracked Orders Rate&quot;)),10,
+if((ISPICKVAL(Issue_KPI__c,&quot;Payment issues&quot;)),0,
+if((ISPICKVAL(Issue_KPI__c,&quot;Policy violation&quot;)),0,
+0))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cases - Objective to reach</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,19 @@
+Buongiorno {!Contact.FirstName},
+
+Ho ricevuto un’ulteriore segnalazione sul tuo indice {!Alert__c.Issue_KPI__c}, il quale purtroppo non raggiunge ancora l'obiettivo che era stato prefissato. Avevamo definito un piano d'azione per ridurre il vostro tasso da "{!Alert__c.Issue_KPI__c}" a X% prima di {!Alert__c.ETA__c}.
+
+Purtroppo, questa situazione vi ha messo nella fase di "ultima possibilità" del nostro periodo di monitoraggio e le vostre vendite sono state limitate. D'ora in poi, lavoreremo ancora di più su questo KPI al fine di eliminare i vostri limiti di vendita e garantire un'esperienza ottimale ai clienti. 
+
+L'obiettivo rimane lo stesso (cioè l'X%) e deve essere raggiunto prima della fine di questo periodo di ultima possibilità, cioè prima del {!Alert__c.ETA__c}.
+
+Per assistervi in questo compito, allego a questa e-mail l'elenco delle richieste di assistenza che hanno avuto un impatto negativo sulla vostra tariffa negli ultimi 30 giorni.
+
+Ecco le nuove soluzioni che posso offrirvi:
+
+
+
+
+Naturalmente, rimango disponibile a discuterne al telefono e ad accompagnarvi nel vostro piano d'azione.
+
+Vi auguro una buona giornata,
+{{{Sender.Signature}}}

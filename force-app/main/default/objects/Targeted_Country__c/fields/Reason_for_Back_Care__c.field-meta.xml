@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Back_Care__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Back Care</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>XBorder</fullName>
+                <default>false</default>
+                <label>XBorder</label>
+            </value>
+            <value>
+                <fullName>Poor KPI in LRR</fullName>
+                <default>false</default>
+                <label>Poor KPI in LRR</label>
+            </value>
+            <value>
+                <fullName>Poor KPI in CSAT</fullName>
+                <default>false</default>
+                <label>Poor KPI in CSAT</label>
+            </value>
+            <value>
+                <fullName>Wasn&apos;t speaking the language after being live</fullName>
+                <default>false</default>
+                <label>Wasn&apos;t speaking the language after being live</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

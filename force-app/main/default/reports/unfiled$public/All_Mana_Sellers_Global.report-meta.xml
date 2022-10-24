@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Trading_Name__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Back_Office_PK__c</field>
+    </columns>
+    <columns>
+        <field>Account.BizDev__c</field>
+    </columns>
+    <columns>
+        <field>Account.API_FTP_integration__c</field>
+    </columns>
+    <columns>
+        <field>Account.Integration__c</field>
+    </columns>
+    <columns>
+        <field>Account.Marketplace_Merchant_Pseudo_1__c</field>
+    </columns>
+    <columns>
+        <field>Account.Marketplace_Merchant_Pseudo_2__c</field>
+    </columns>
+    <columns>
+        <field>Account.Marketplace_Merchant_Pseudo_3__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>All Mana Sellers - Global</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

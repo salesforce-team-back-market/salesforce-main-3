@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Back_Ship_Status__c</fullName>
+    <businessOwnerUser>clement.vannicatte@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>Back Ship Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>KO- Express too expensive</fullName>
+                <default>false</default>
+                <label>KO- Express too expensive</label>
+            </value>
+            <value>
+                <fullName>KO - Log outsourced</fullName>
+                <default>false</default>
+                <label>KO - Log outsourced</label>
+            </value>
+            <value>
+                <fullName>KO- Merchant is in exit</fullName>
+                <default>false</default>
+                <label>KO- Merchant is in exit</label>
+            </value>
+            <value>
+                <fullName>KO - Multichannel</fullName>
+                <default>false</default>
+                <label>KO - Multichannel</label>
+            </value>
+            <value>
+                <fullName>KO - No answer yet</fullName>
+                <default>false</default>
+                <label>KO - No answer yet</label>
+            </value>
+            <value>
+                <fullName>KO - No dev capacity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KO - No dev capacity</label>
+            </value>
+            <value>
+                <fullName>KO- No possibility to download all labels at once</fullName>
+                <default>false</default>
+                <label>KO- No possibility to download all labels at once</label>
+            </value>
+            <value>
+                <fullName>KO- No possibility to insure a maximum amount per seller</fullName>
+                <default>false</default>
+                <label>KO- No possibility to insure a maximum amount per seller</label>
+            </value>
+            <value>
+                <fullName>KO- No possibility to insure only part of shipments</fullName>
+                <default>false</default>
+                <label>KO- No possibility to insure only part of shipments</label>
+            </value>
+            <value>
+                <fullName>KO - Price</fullName>
+                <default>false</default>
+                <label>KO - Price</label>
+            </value>
+            <value>
+                <fullName>KO- Rebilling</fullName>
+                <default>false</default>
+                <label>KO- Rebilling</label>
+            </value>
+            <value>
+                <fullName>KO- Refunds/carrier investigation are too long</fullName>
+                <default>false</default>
+                <label>KO- Refunds/carrier investigation are too long</label>
+            </value>
+            <value>
+                <fullName>KO - Return labels are too expensive</fullName>
+                <default>false</default>
+                <label>KO - Return labels are too expensive</label>
+            </value>
+            <value>
+                <fullName>KO - Seasonality</fullName>
+                <default>false</default>
+                <label>KO - Seasonality</label>
+            </value>
+            <value>
+                <fullName>KO- Specific flow too expensive</fullName>
+                <default>false</default>
+                <label>KO- Specific flow too expensive</label>
+            </value>
+            <value>
+                <fullName>KO- Standard too expensive</fullName>
+                <default>false</default>
+                <label>KO- Standard too expensive</label>
+            </value>
+            <value>
+                <fullName>KO- Use an integrator and BS not integrable</fullName>
+                <default>false</default>
+                <label>KO- Use an integrator and BS not integrable</label>
+            </value>
+            <value>
+                <fullName>OK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OK</label>
+            </value>
+            <value>
+                <fullName>OK - Dedicated support team</fullName>
+                <default>false</default>
+                <label>OK - Dedicated support team</label>
+            </value>
+            <value>
+                <fullName>OK - Enable cross border shipments in 1 click</fullName>
+                <default>false</default>
+                <label>OK - Enable cross border shipments in 1 click</label>
+            </value>
+            <value>
+                <fullName>OK - Free Regular pick up</fullName>
+                <default>false</default>
+                <label>OK - Free Regular pick up</label>
+            </value>
+            <value>
+                <fullName>OK - Label generation in the BO</fullName>
+                <default>false</default>
+                <label>OK - Label generation in the BO</label>
+            </value>
+            <value>
+                <fullName>OK - Price is better than mine</fullName>
+                <default>false</default>
+                <label>OK - Price is better than mine</label>
+            </value>
+            <value>
+                <fullName>OK - Quality exceptions granted if carrier delivery performance is poor</fullName>
+                <default>false</default>
+                <label>OK - Quality exceptions granted if carrier delivery performance is poor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

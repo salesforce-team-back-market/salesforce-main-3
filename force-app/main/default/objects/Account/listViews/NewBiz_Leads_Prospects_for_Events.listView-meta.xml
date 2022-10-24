@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewBiz_Leads_Prospects_for_Events</fullName>
+    <columns>Back_Office_PK__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>BizDev__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Type_of_product__c</columns>
+    <columns>Prioritization_Tag__c</columns>
+    <columns>Prioritization_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Prioritization_Tag__c</field>
+        <operation>equals</operation>
+        <value>Audio Event - Q2 2021,Small Appliances Event - Q2 2021,Tools &amp; Gardening Event - Q2 2021</value>
+    </filters>
+    <label>NewBiz - Leads &amp; Prospects for Events</label>
+</ListView>

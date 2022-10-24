@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BuyBack_Bill_Pocess_SEPA_Offline</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT( $User.ByPassValidationRules__c ),
+RecordType.DeveloperName =&quot;BuyBack_Bill_Process&quot; ,
+Proof_of_Payment_Received__c  =TRUE,
+SEPA_Offline__c =TRUE)</errorConditionFormula>
+    <errorDisplayField>SEPA_Offline__c</errorDisplayField>
+    <errorMessage>In order to be able to mark this field as TRUE, SEPA must be set to online in BO, and the SEPA Offline field set to FALSE in Salesforce.</errorMessage>
+</ValidationRule>

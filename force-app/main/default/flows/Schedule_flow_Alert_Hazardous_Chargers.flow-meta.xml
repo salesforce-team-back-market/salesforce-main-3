@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Action_Send_EN_Email_First_case</name>
+        <label>Action - Send EN Email - First case</label>
+        <locationX>1330</locationX>
+        <locationY>362</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Update_stage_to_saved</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_EN_Body_Warning</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>merchant.no-reply@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_EN_Subject_first_case</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Action_Send_EN_Email_second_case</name>
+        <label>Action - Send EN Email - second case</label>
+        <locationX>1327</locationX>
+        <locationY>562</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Update_alert_limitation</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_EN_Body_2ndcase</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>merchant.no-reply@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_EN_Subject_second_case</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Action_Send_FR_Email_First_case</name>
+        <label>Action - Send FR Email - First case</label>
+        <locationX>1173</locationX>
+        <locationY>283</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Update_stage_to_saved</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_FRBody_BodyWarning</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>merchant.no-reply@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_FR_Subject_first_case</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Action_Send_FR_Email_second_case</name>
+        <label>Action - Send FR Email - second case</label>
+        <locationX>1156</locationX>
+        <locationY>515</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Update_alert_limitation</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_FRBody_2ndcase</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>merchant.no-reply@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_FR_Subject_second_case</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Assign_all_contact_to_email_list</name>
+        <label>Assign all contact to email list</label>
+        <locationX>818</locationX>
+        <locationY>186</locationY>
+        <assignmentItems>
+            <assignToReference>List_of_email_to_contact</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_on_all_contacts.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Tech_count_contact</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_limit_reached_0</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_bizdev_to_email_list</name>
+        <label>Assign bizdev to email list</label>
+        <locationX>953</locationX>
+        <locationY>423</locationY>
+        <assignmentItems>
+            <assignToReference>List_of_email_to_contact</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>BizDev_Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_of_email_to_contact</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>legal-sellers@backmarket.com</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Merchant_Zone</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_quality_contact_to_email_list</name>
+        <label>Assign quality contact to email list</label>
+        <locationX>803</locationX>
+        <locationY>610</locationY>
+        <assignmentItems>
+            <assignToReference>List_of_email_to_contact</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_on_quality_contacts.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Tech_count_contact</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_limit_reached</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Sales_limitation_before_alert</name>
+        <label>Assign Sales limitation before alert</label>
+        <locationX>1773</locationX>
+        <locationY>602</locationY>
+        <assignmentItems>
+            <assignToReference>Limitation_before_alert</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Business_Name__r.Sales_limitation__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_merchant_limitation_and_archive_info_0</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assignement_stage_to_failed</name>
+        <label>Assignement stage to failed</label>
+        <locationX>795</locationX>
+        <locationY>943</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Failed</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assignement_stage_to_last_change</name>
+        <label>Assignement stage to last change</label>
+        <locationX>645</locationX>
+        <locationY>999</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Last chance</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_record</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Decision_on_alert_limitation</name>
+        <label>Decision on alert limitation</label>
+        <locationX>1584</locationX>
+        <locationY>497</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>First_limitation_due_to_alert</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.LimitationBeforeAlert__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Stage__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N.M.O.</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Sales_limitation_before_alert</targetReference>
+            </connector>
+            <label>First limitation due to alert</label>
+        </rules>
+        <rules>
+            <name>Merchant_already_limited_due_to_alert</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.LimitationBeforeAlert__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Stage__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N.M.O.</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_merchant_limitation_don_t_archive</targetReference>
+            </connector>
+            <label>Merchant already limited due to alert</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_date_and_stage</name>
+        <label>Decision on date and stage</label>
+        <locationX>490</locationX>
+        <locationY>765</locationY>
+        <defaultConnector>
+            <targetReference>Decision_on_stage_and_date_Monitoring_or_Last_chance</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Created_date_equal_yesterday</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Has_begun_on__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Yesterday</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Monitoring Period</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_contact_quality_with_email</targetReference>
+            </connector>
+            <label>Created date equal yesterday</label>
+        </rules>
+        <rules>
+            <name>Validated_14_days_ago</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Doc validated pending MO result</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.HaveBeenValidatedOn__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Fourteen_Days_Ago</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_mystery_order</targetReference>
+            </connector>
+            <label>Validated 14 days ago</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_stage_and_date_Monitoring_or_Last_chance</name>
+        <label>Decision on stage and date - Monitoring or Last chance</label>
+        <locationX>484</locationX>
+        <locationY>951</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Pass_to_last_chance</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Monitoring Period</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ETA__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignement_stage_to_last_change</targetReference>
+            </connector>
+            <label>Pass to last chance</label>
+        </rules>
+        <rules>
+            <name>Pass_to_Failed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Last chance</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ETA__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assignement_stage_to_failed</targetReference>
+            </connector>
+            <label>Pass to Failed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Do_we_have_Quality_contact</name>
+        <label>Do we have Quality contact</label>
+        <locationX>665</locationX>
+        <locationY>380</locationY>
+        <defaultConnector>
+            <targetReference>Loop_on_quality_contacts</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Quality_Contacts</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_all_contact_with_email</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_limit_reached</name>
+        <label>Is limit reached</label>
+        <locationX>942</locationX>
+        <locationY>593</locationY>
+        <defaultConnector>
+            <targetReference>Assign_bizdev_to_email_list</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Limit_isn_t_reached</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Tech_count_contact</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>3.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_on_quality_contacts</targetReference>
+            </connector>
+            <label>Limit isn&apos;t reached</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_limit_reached_0</name>
+        <label>Is limit reached</label>
+        <locationX>954</locationX>
+        <locationY>223</locationY>
+        <defaultConnector>
+            <targetReference>Assign_bizdev_to_email_list</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Limit_isn_t_reached_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Tech_count_contact</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>3.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_on_all_contacts</targetReference>
+            </connector>
+            <label>Limit isn&apos;t reached</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Merchant_Zone</name>
+        <label>Merchant Zone</label>
+        <locationX>1057</locationX>
+        <locationY>427</locationY>
+        <defaultConnector>
+            <targetReference>Action_Send_EN_Email_second_case</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>EN and second case (default)</defaultConnectorLabel>
+        <rules>
+            <name>FR_or_BE_Zone_and_1st_case</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr-fr</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr-be</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Situation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>1st case - Warning</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Action_Send_FR_Email_First_case</targetReference>
+            </connector>
+            <label>FR or BE Zone and 1st case</label>
+        </rules>
+        <rules>
+            <name>EN_and_first_case</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Situation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>1st case - Warning</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Action_Send_EN_Email_First_case</targetReference>
+            </connector>
+            <label>EN and first case</label>
+        </rules>
+        <rules>
+            <name>FR_ir_BE_Zone_and_2nd_case</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr-fr</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr-be</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Situation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>2nd case or more - Investigation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Action_Send_FR_Email_second_case</targetReference>
+            </connector>
+            <label>FR ir BE Zone and 2nd case</label>
+        </rules>
+    </decisions>
+    <description>SFT-449 - Update the template for Hazardous charger</description>
+    <formulas>
+        <name>alert_limitation</name>
+        <dataType>Number</dataType>
+        <expression>IF((({!$Record.Business_Name__r.Cumulated_sales_last_30_days__c} *1.5)/30)&lt;5, 5,
+(({!$Record.Business_Name__r.Cumulated_sales_last_30_days__c} *1.5)/30)
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>BizDev_Email</name>
+        <dataType>String</dataType>
+        <expression>if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Back Watch E.U.&apos;, &apos;backwatch@backmarket.com&apos;, 
+if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;Activation E.U.&apos;, &apos;activation-eu@backmarket.com&apos;, 
+if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Back Watch U.S.&apos;, &apos;sam@backmarket.com&apos;,
+if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apos;, &apos;selfcare@backmarket.com&apos;,
+{!$Record.Business_Name__r.Owner.Email}))))</expression>
+    </formulas>
+    <formulas>
+        <name>Fourteen_Days_Ago</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate} - 14</expression>
+    </formulas>
+    <formulas>
+        <name>Limitation_MerchantLevel</name>
+        <dataType>Number</dataType>
+        <expression>if ({!alert_limitation} &gt;{!$Record.Business_Name__r.Sales_limitation__c},{!$Record.Business_Name__r.Sales_limitation__c},{!alert_limitation})</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>Limitation_to_apply_sales</name>
+        <dataType>Number</dataType>
+        <expression>1</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>record_creation_date</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.CreatedDate}</expression>
+    </formulas>
+    <formulas>
+        <name>SuspiciousMO</name>
+        <dataType>String</dataType>
+        <expression>&quot;Merchand had a last chance on potential hazardous chargers - &quot; &amp; {!$Record.Order_IDs__c}</expression>
+    </formulas>
+    <formulas>
+        <name>Task_subject</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Business_Name__r.Name} + &quot; to limit - &quot; + TEXT({!alert_limitation})  + &quot; sales/day due to Potential Hazardous Charger&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Tech_ReasonForLimitation</name>
+        <dataType>String</dataType>
+        <expression>if(ISPICKVAL({!$Record.Business_Name__r.Reason_for_last_Sales_limitation__c},&quot;&quot;), &quot;No limitation&quot;, TEXT({!$Record.Business_Name__r.Reason_for_last_Sales_limitation__c}))</expression>
+    </formulas>
+    <formulas>
+        <name>TextTemplate_EN_Subject_first_case</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.P_K__c}) &amp; &quot;Hazardous charger - Formal warning&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>TextTemplate_EN_Subject_second_case</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.P_K__c}) &amp; &quot;Entry in Approval process - Hazardous charger&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>TextTemplate_FR_Subject_first_case</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.P_K__c}) &amp; &quot;Hazardous charger - Formal warning&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>TextTemplate_FR_Subject_second_case</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.P_K__c}) &amp; &quot;Entry in Approval process - Hazardous charger&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Yesterday</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate} - 1</expression>
+    </formulas>
+    <interviewLabel>Schedule flow - Alert Hazardous Chargers {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Schedule flow - Alert Hazardous Chargers</label>
+    <loops>
+        <name>Loop_on_all_contacts</name>
+        <label>Loop on all contacts</label>
+        <locationX>810</locationX>
+        <locationY>354</locationY>
+        <collectionReference>All_Contacts_List</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_all_contact_to_email_list</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Assign_bizdev_to_email_list</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_on_quality_contacts</name>
+        <label>Loop on quality contacts</label>
+        <locationX>802</locationX>
+        <locationY>467</locationY>
+        <collectionReference>Quality_Contacts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_quality_contact_to_email_list</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Assign_bizdev_to_email_list</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_mystery_order</name>
+        <label>Create mystery order</label>
+        <locationX>690</locationX>
+        <locationY>766</locationY>
+        <inputAssignments>
+            <field>Current_BizDev__c</field>
+            <value>
+                <elementReference>$Record.Owner__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HazardousCharger_Alert__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MO_motive__c</field>
+            <value>
+                <stringValue>Suspicion - Hazardous charger Alert</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Merchant_Name__c</field>
+            <value>
+                <elementReference>$Record.Business_Name__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_category__c</field>
+            <value>
+                <stringValue>Other</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_or_model_to_test__c</field>
+            <value>
+                <stringValue>Chargers due to Hazardous Charger alert</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Stage__c</field>
+            <value>
+                <stringValue>To do</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Suspicion_Hazardous_charger_status__c</field>
+            <value>
+                <stringValue>To test</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Mystery_Order__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_all_contact_with_email</name>
+        <label>Get all contact with email</label>
+        <locationX>633</locationX>
+        <locationY>219</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_on_all_contacts</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Business_Name__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>HasOptedOutOfEmail</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputReference>All_Contacts_List</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Email</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_contact_quality_with_email</name>
+        <label>Get contact quality with email</label>
+        <locationX>652</locationX>
+        <locationY>493</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Do_we_have_Quality_contact</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Business_Name__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TECH_Role_contain_quality_business__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Quality</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>HasOptedOutOfEmail</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputReference>Quality_Contacts</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Email</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_alert_limitation</name>
+        <label>Update alert limitation</label>
+        <locationX>1450</locationX>
+        <locationY>495</locationY>
+        <connector>
+            <targetReference>Decision_on_alert_limitation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AlertLimitation__c</field>
+            <value>
+                <elementReference>alert_limitation</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Alert__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_merchant_limitation_and_archive_info_0</name>
+        <label>Update merchant limitation and archive info</label>
+        <locationX>1914</locationX>
+        <locationY>602</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Business_Name__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LimitationBeforeAlert__c</field>
+            <value>
+                <elementReference>Limitation_before_alert</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Reason_for_last_Sales_limitation__c</field>
+            <value>
+                <stringValue>QUALITY_LEGAL_AND_SAFETY_ISSUE</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sales_limitation__c</field>
+            <value>
+                <elementReference>Limitation_MerchantLevel</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tech_Reason_Limitation_Before_Alert__c</field>
+            <value>
+                <elementReference>Tech_ReasonForLimitation</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_merchant_limitation_don_t_archive</name>
+        <label>Update merchant limitation, don&apos;t archive</label>
+        <locationX>1795</locationX>
+        <locationY>401</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Business_Name__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Reason_for_last_Sales_limitation__c</field>
+            <value>
+                <stringValue>QUALITY_LEGAL_AND_SAFETY_ISSUE</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sales_limitation__c</field>
+            <value>
+                <elementReference>Limitation_MerchantLevel</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_record</name>
+        <label>Update record</label>
+        <locationX>725</locationX>
+        <locationY>1092</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_stage_to_saved</name>
+        <label>Update stage to saved</label>
+        <locationX>1426</locationX>
+        <locationY>291</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Stage__c</field>
+            <value>
+                <stringValue>Saved</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Alert__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>516</locationY>
+        <connector>
+            <targetReference>Decision_on_date_and_stage</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Issue_KPI__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Potential Hazardous Charger</stringValue>
+            </value>
+        </filters>
+        <object>Alert__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2021-04-07</startDate>
+            <startTime>12:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>TextTemplate_EN_Body_2ndcase</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear Merchant,
+
+We have received a report of a new suspicious defective charger case that raises potential safety issues. You can refer to the order here: {!$Record.Order_IDs__c}. 
+
+As mentioned in the previous email we sent regarding this issue, any seller active on our platform must ensure that chargers delivered to buyers are safe and that they respect the International Safety Standard IEC 62368-1. In order to assess this compliance, we require that you send your Back Market point of contact {!$Record.Recipient_email_sales__c} the following information about all chargers you are currently selling:
+If you are providing original/refurbished chargers: The documentation of your unitary control process
+If you are providing chargers sourced from manufacturers:
+The following 4–5 pictures of the specified charger [jpeg format required, size &lt;5MB]
+		1. All sides with some marking—marking must be readable
+		2. One side of the charger, if not displayed in the first photo
+		3. Top side with the DC plug
+		4. Populated PCB (top side)
+		5. Populated PCB (bottom side)
+The charger model should correspond to the one of the concerned order ID.
+
+Please find in the dedicated article on the Merchant Support Center (find link here at the bottom) examples of what is considered adequate information.
+
+Please note that we can help you secure high-quality sourcing thanks to our component offer, which includes charging blocks/chargers certified by International Safety Standards (IEC 62368-1). If you are interested, feel free to reach out to your Back Market point of contact for more information.
+
+Considering the seriousness of the situation, we rely on your cooperation and ask that you provide us with the above documentation within 30 days.
+
+Failure to do so could lead us to believe that you are in breach of articles 8, 10, 12, and 13 of our Terms and Conditions. In such a case, Back Market will take all appropriate measures, including sales restriction, suspension and closing of your account. 
+
+We also want to remind you that as a seller, you are accountable for customer safety regarding the use of products or accessories you provide and are therefore responsible for checking their composition upon batch reception. Also, you must take all actions to correct the situation (e.g. recall of products, reimbursement, formal warning to clients, etc).
+
+Your Back Market point of contact is available to explain the situation further.
+
+Please consider this email as a formal notice for you to communicate the aforementioned information, with all legal consequences attached.
+
+Best regards,
+
+The Back Market Team
+
+https://backmarketportal.force.com/ssc/s/article/Charger-compliance-with-International-Safety-Standard-IEC-62368-1</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextTemplate_EN_Body_Warning</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear Merchant,
+
+A buyer has reported a potentially very alarming situation concerning a smartphone or laptop power charger that has been distributed through our platform. According to this buyer, their charger has overheated, posing a potential serious threat to their safety. 
+You can refer to the order here: {!$Record.Order_IDs__c}.
+
+Above all else, we at Back Market prioritize the health and safety of our customers. We expect all sellers on our platform to ensure that the chargers they provide are safe and comply with the International Safety Standard IEC 62368-1 (namely, LVD test reports are mandatory and can be asked from you at all times). We know that you also take consumer safety very seriously and will perform all necessary safety checks on all of your products. 
+
+As a seller, you are legally responsible for the safety of the products and accessories distributed by your company and must therefore take all actions that the situation may require (recall of products, reimbursement, formal warning to clients etc). Your Back Market point of contact is available to explain the situation further and to provide you with support to handle the situation. 
+
+In addition, please be aware that if a buyer has identified a new suspicious defective charger, you will need to provide us with all the necessary safety documents to avoid restrictions, suspensions or closing of your account. Also note that Back Market can help you secure high-quality sourcing certified by International Safety Standards (IEC 62368). For more information, please reach out to your Back Market point of contact.
+ 
+
+Regards, 
+
+The Back Market Team</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextTemplate_FRBody_2ndcase</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Bonjour {!$Record.Business_Name__r.Name},
+
+Nous avons été alertés sur un nouveau cas de chargeur défectueux vendus par votre société, la commande en cause étant la suivante : {!$Record.Order_IDs__c}. 
+
+Comme mentionné dans notre premier e-mail à ce sujet, tout vendeur sur notre plateforme doit s&apos;assurer que les chargeurs qu’il vend aux acheteurs sont sûrs et conformes à la norme internationale de sécurité IEC 62368-1. Afin d&apos;évaluer cette conformité, nous vous remercions d&apos;envoyer à votre point de contact Back Market les informations suivantes concernant tous les chargeurs que vous vendez actuellement :
+Si vous livrez des chargeurs originaux/réparés : La documentation de votre processus de contrôle unitaire
+Si vous livrez des chargeurs provenant de fabricants :
+- Le rapport de test LVD complet pour ce modèle de chargeur : le rapport de test doit être conforme à la norme IEC 62368-1 (la nouvelle norme obligatoire depuis décembre 2020).
+- Les 4-5 photos suivantes du chargeur spécifié [au format jpeg, taille &lt;5MB].
+		1. Tous les côtés portant un marquage - le marquage doit être lisible.
+		2. Un côté du chargeur, s&apos;il n&apos;apparaît pas sur la première photo
+		3. Face supérieure avec la prise USB
+		4. Carte électronique (face supérieure)
+		5. Carte électronique (face inférieure)
+Le modèle de chargeur doit correspondre à celui de la commande concernée.
+
+Veuillez trouver dans l’article dédié de notre centre d&apos;assistance marchands, le Merchant Support Center, des exemples de ce qui est considéré comme une documentation recevable (cf. lien en fin de mail).
+
+Veuillez noter que nous pouvons vous aider à garantir un approvisionnement de qualité grâce à notre offre de composants, qui comprend des blocs de charge/chargeurs certifiés par les normes de sécurité internationales (IEC 62368-1). Si vous êtes intéressé, n&apos;hésitez pas à contacter votre point de contact Back Market {!$Record.Recipient_email_sales__c} pour plus d&apos;informations.
+Compte tenu de la gravité de la situation, nous comptons sur votre coopération et vous demandons de nous fournir les documents mentionnés ci-dessus dans les 30 jours.
+
+A défaut, nous ne pourrons que considérer que vos agissements constituent une violation des articles 8, 10, 12 et 13 de nos Conditions Générales Vendeurs. Le cas échéant, nous prendrons toutes les mesures appropriées, y compris la restriction des ventes, la suspension ou la fermeture de votre compte. 
+
+Nous vous rappelons de nouveau qu&apos;en tant que vendeur, vous êtes responsable de la sécurité des consommateurs s’agissant des produits ou accessoires que vous vendez, et vous êtes donc tenu de vérifier leur composition avant expédition. En outre, vous devez prendre toutes les mesures utiles pour remédier à la situation (par exemple, rappel des produits, remboursement, mise en demeure des clients, etc.).
+Votre point de contact Back Market est disponible pour vous apporter plus de détails. 
+
+Veuillez considérer cet e-mail comme une mise en demeure de communiquer les documents demandés, avec toutes les conséquences juridiques qui en découlent.
+
+Bien cordialement,
+
+Back Market
+
+https://backmarketportal.force.com/ssc/s/article/Conformité-des-chargeurs-aux-normes-de-sécurité-IEC-62368-1</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextTemplate_FRBody_BodyWarning</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Bonjour {!$Record.Business_Name__r.Name},
+Un acheteur a signalé un défaut potentiellement dangereux concernant un chargeur de téléphone ou ordinateur portable que vous avez vendu via notre plateforme. Le chargeur en cause aurait surchauffé, ce qui porte atteinte à la sécurité de l’acheteur. 
+ La commande concernée est la suivante : {!$Record.Order_IDs__c}.
+Chez Back Market, la sécurité des acheteurs est notre préoccupation première. Nous attendons donc de tous les vendeurs sur notre plateforme qu&apos;ils s&apos;assurent que les produits qu’ils vendent sont sûrs et conformes  aux normes internationales de sécurité IEC 62368-1 (notamment, les rapports de tests LVD sont obligatoires et peuvent vous être demandés à tout moment). Nous savons que vous prenez également la sécurité des consommateurs très au sérieux et que vous effectuerez tous les contrôles de sécurité nécessaires sur vos produits. 
+En tant que vendeur, vous êtes légalement responsable de la sécurité des produits et accessoires que vous vendez, et vous devez donc prendre toutes les mesures nécessaires compte tenu de la situation (rappel des produits, remboursement, mise en demeure des clients, etc.). 
+Notez que si nous sommes de nouveau alertés par un acheteur sur une défectuosité d’un chargeur que vous lui aurez livré, vous devrez nous transmettre tous les documents de sécurité nécessaires pour éviter toute restriction, suspension ou fermeture de votre compte. Notez également que Back Market peut vous aider à garantir un approvisionnement de haute qualité certifié par les normes de sécurité internationales (IEC 62368). 
+Votre point de contact Back Market est à votre disposition pour vous donner plus d’informations et vous aider à gérer la situation.
+Sincèrement,
+Back Market</text>
+    </textTemplates>
+    <variables>
+        <name>All_Contacts_List</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <name>Bizdev_To_Email</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>User</objectType>
+    </variables>
+    <variables>
+        <name>Contact_To_Email</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <name>Limitation_before_alert</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>List_of_email_to_contact</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Quality_Contacts</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <name>Tech_count_contact</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+</Flow>

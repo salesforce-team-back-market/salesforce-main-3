@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Information__c</fullName>
+    <externalId>false</externalId>
+    <label>Additional Information</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Physical Damage</fullName>
+                <default>false</default>
+                <label>Physical Damage</label>
+            </value>
+            <value>
+                <fullName>Internal Damage</fullName>
+                <default>false</default>
+                <label>Internal Damage</label>
+            </value>
+            <value>
+                <fullName>Oxidation</fullName>
+                <default>false</default>
+                <label>Oxidation</label>
+            </value>
+            <value>
+                <fullName>The product has been opened by the third party</fullName>
+                <default>false</default>
+                <label>The product has been opened by the third party</label>
+            </value>
+            <value>
+                <fullName>Product lost - The customer didn&apos;t receive the parcel</fullName>
+                <default>false</default>
+                <label>Product lost - The customer didn&apos;t receive the parcel</label>
+            </value>
+            <value>
+                <fullName>Product lost - I (seller) didn&apos;t receive the return</fullName>
+                <default>false</default>
+                <label>Product lost - I (seller) didn&apos;t receive the return</label>
+            </value>
+            <value>
+                <fullName>Product damaged - Received by a customer</fullName>
+                <default>false</default>
+                <label>Product damaged - Received by a customer</label>
+            </value>
+            <value>
+                <fullName>Product damaged - Received by me (seller)</fullName>
+                <default>false</default>
+                <label>Product damaged - Received by me (seller)</label>
+            </value>
+            <value>
+                <fullName>Product was stolen - The customer didn&apos;t receive the parcel</fullName>
+                <default>false</default>
+                <label>Product was stolen - The customer didn&apos;t receive the parcel</label>
+            </value>
+            <value>
+                <fullName>Product was stolen - I (seller) didn&apos;t receive the parcel</fullName>
+                <default>false</default>
+                <label>Product was stolen - I (seller) didn&apos;t receive the parcel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Live_MerchantOffline</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.ByPassValidationRules__c &lt;&gt; True
+&amp;&amp;
+ISCHANGED(Online_Status__c)
+&amp;&amp;
+ISPICKVAL(Online_Status__c, &apos;Live&apos;)
+&amp;&amp;
+ISPICKVAL(Merchant__r.Stage__c,&apos;Offline&apos;)</errorConditionFormula>
+    <errorMessage>The merchant is Offline, you can&apos;t make the targeted country to Live</errorMessage>
+</ValidationRule>

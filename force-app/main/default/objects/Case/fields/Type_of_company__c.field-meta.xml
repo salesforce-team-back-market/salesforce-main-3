@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_company__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of company</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Auto-entrepreneur</fullName>
+                <default>false</default>
+                <label>Auto-entrepreneur</label>
+            </value>
+            <value>
+                <fullName>Micro-entreprise (EI)</fullName>
+                <default>false</default>
+                <label>Micro-entreprise (EI)</label>
+            </value>
+            <value>
+                <fullName>Entreprise individuelle à responsabilité limitée (EIRL)</fullName>
+                <default>false</default>
+                <label>Entreprise individuelle à responsabilité limitée (EIRL)</label>
+            </value>
+            <value>
+                <fullName>Entreprise unipersonnelle à responsabilité limitée (EURL)</fullName>
+                <default>false</default>
+                <label>Entreprise unipersonnelle à responsabilité limitée (EURL)</label>
+            </value>
+            <value>
+                <fullName>Société d’exercice libéral à responsabilité limitée (SELARL)</fullName>
+                <default>false</default>
+                <label>Société d’exercice libéral à responsabilité limitée (SELARL)</label>
+            </value>
+            <value>
+                <fullName>Société à responsabilité limitée (SARL)</fullName>
+                <default>false</default>
+                <label>Société à responsabilité limitée (SARL)</label>
+            </value>
+            <value>
+                <fullName>Société anonyme (SA)</fullName>
+                <default>false</default>
+                <label>Société anonyme (SA)</label>
+            </value>
+            <value>
+                <fullName>Société par actions simplifiée (SAS)</fullName>
+                <default>false</default>
+                <label>Société par actions simplifiée (SAS)</label>
+            </value>
+            <value>
+                <fullName>Société par actions simplifiée unipersonnelle (SASU)</fullName>
+                <default>false</default>
+                <label>Société par actions simplifiée unipersonnelle (SASU)</label>
+            </value>
+            <value>
+                <fullName>Société en nom collectif (SNC)</fullName>
+                <default>false</default>
+                <label>Société en nom collectif (SNC)</label>
+            </value>
+            <value>
+                <fullName>Société civile professionnelle (SCP)</fullName>
+                <default>false</default>
+                <label>Société civile professionnelle (SCP)</label>
+            </value>
+            <value>
+                <fullName>Société coopérative et participative (SCOP)</fullName>
+                <default>false</default>
+                <label>Société coopérative et participative (SCOP)</label>
+            </value>
+            <value>
+                <fullName>Société coopérative d’intérêt collectif (SCIC)</fullName>
+                <default>false</default>
+                <label>Société coopérative d’intérêt collectif (SCIC)</label>
+            </value>
+            <value>
+                <fullName>Association</fullName>
+                <default>false</default>
+                <label>Association</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

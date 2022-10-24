@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Buyback_Reason_for_Exit__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <label>Buyback Reason for Exit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Payment issue</fullName>
+                <default>false</default>
+                <label>Payment issue</label>
+            </value>
+            <value>
+                <fullName>Failed NMO</fullName>
+                <default>false</default>
+                <label>Failed NMO</label>
+            </value>
+            <value>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+                <label>Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Change activity</fullName>
+                <default>false</default>
+                <label>Change activity</label>
+            </value>
+            <value>
+                <fullName>Chargeback Invoice</fullName>
+                <default>false</default>
+                <label>Chargeback Invoice</label>
+            </value>
+            <value>
+                <fullName>New T&amp;C unsigned</fullName>
+                <default>false</default>
+                <label>New T&amp;C unsigned</label>
+            </value>
+            <value>
+                <fullName>Severe miscounduct</fullName>
+                <default>false</default>
+                <label>Severe miscounduct</label>
+            </value>
+            <value>
+                <fullName>Account merging</fullName>
+                <default>false</default>
+                <label>Account merging</label>
+            </value>
+            <value>
+                <fullName>No activity</fullName>
+                <default>false</default>
+                <label>No activity</label>
+            </value>
+            <value>
+                <fullName>Lack of cooperation</fullName>
+                <default>false</default>
+                <label>Lack of cooperation</label>
+            </value>
+            <value>
+                <fullName>Failed Follow-up</fullName>
+                <default>false</default>
+                <label>Failed Follow-up</label>
+            </value>
+            <value>
+                <fullName>Exited on Sales</fullName>
+                <default>false</default>
+                <label>Exited on Sales</label>
+            </value>
+            <value>
+                <fullName>Not live on Sales part</fullName>
+                <default>false</default>
+                <label>Not live on Sales part</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

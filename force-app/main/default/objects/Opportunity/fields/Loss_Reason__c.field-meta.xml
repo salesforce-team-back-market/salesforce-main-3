@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Loss Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Action__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>After-sale takes too much time</fullName>
+                <default>false</default>
+                <label>After-sale takes too much time</label>
+            </value>
+            <value>
+                <fullName>Buyback prices are too high</fullName>
+                <default>false</default>
+                <label>Buyback prices are too high</label>
+            </value>
+            <value>
+                <fullName>Creating &amp; updating listings is manual and takes too much time (no API)</fullName>
+                <default>false</default>
+                <label>Creating &amp; updating listings is manual and takes too much time (no API)</label>
+            </value>
+            <value>
+                <fullName>Managing orders manually takes too much time (no API)</fullName>
+                <default>false</default>
+                <label>Managing orders manually takes too much time (no API)</label>
+            </value>
+            <value>
+                <fullName>Other suppliers allow to pay after xx days</fullName>
+                <default>false</default>
+                <label>Other suppliers allow to pay after xx days</label>
+            </value>
+            <value>
+                <fullName>Receiving orders 1 by 1 is not adapted to our processes</fullName>
+                <default>false</default>
+                <label>Receiving orders 1 by 1 is not adapted to our processes</label>
+            </value>
+            <value>
+                <fullName>The merchant can&apos;t reach his margins at those targeted prices</fullName>
+                <default>false</default>
+                <label>The merchant can&apos;t reach his margins at those targeted prices</label>
+            </value>
+            <value>
+                <fullName>The merchant doesn&apos;t have the possibility to source these products</fullName>
+                <default>false</default>
+                <label>The merchant doesn&apos;t have the possibility to source these products</label>
+            </value>
+            <value>
+                <fullName>The merchant doesn&apos;t know how to refurbish/deal with these products</fullName>
+                <default>false</default>
+                <label>The merchant doesn&apos;t know how to refurbish/deal with these products</label>
+            </value>
+            <value>
+                <fullName>The merchant is on Vacation Mode</fullName>
+                <default>false</default>
+                <label>The merchant is on Vacation Mode</label>
+            </value>
+            <value>
+                <fullName>The quality of products from end-customers is bad</fullName>
+                <default>false</default>
+                <label>The quality of products from end-customers is bad</label>
+            </value>
+            <value>
+                <fullName>The merchant can’t process devices one by one</fullName>
+                <default>false</default>
+                <label>The merchant can’t process devices one by one</label>
+            </value>
+            <value>
+                <fullName>The merchant thinks buyback volumes will be low</fullName>
+                <default>false</default>
+                <label>The merchant thinks buyback volumes will be low</label>
+            </value>
+            <value>
+                <fullName>The merchant needs an API to manage their offer</fullName>
+                <default>false</default>
+                <label>The merchant needs an API to manage their offer</label>
+            </value>
+            <value>
+                <fullName>The service is too expensive</fullName>
+                <default>false</default>
+                <label>The service is too expensive</label>
+            </value>
+            <value>
+                <fullName>Buyback is too time consuming</fullName>
+                <default>false</default>
+                <label>Buyback is too time consuming</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>After-sale takes too much time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>Buyback prices are too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>Creating &amp; updating listings is manual and takes too much time (no API)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>Managing orders manually takes too much time (no API)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>Other suppliers allow to pay after xx days</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>Receiving orders 1 by 1 is not adapted to our processes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>The merchant can&apos;t reach his margins at those targeted prices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>The merchant doesn&apos;t have the possibility to source these products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>The merchant doesn&apos;t know how to refurbish/deal with these products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>The merchant is on Vacation Mode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>The quality of products from end-customers is bad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Category Launch</controllingFieldValue>
+            <controllingFieldValue>Improve Relevant Selection</controllingFieldValue>
+            <controllingFieldValue>Improve Price Sharpness</controllingFieldValue>
+            <controllingFieldValue>Push Product Categories</controllingFieldValue>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <controllingFieldValue>Address Listing Drop</controllingFieldValue>
+            <controllingFieldValue>Address GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Address Quality Contributors</controllingFieldValue>
+            <controllingFieldValue>Improve TCB</controllingFieldValue>
+            <controllingFieldValue>Push as Deal</controllingFieldValue>
+            <controllingFieldValue>Secure Stock</controllingFieldValue>
+            <controllingFieldValue>Push price recommendation to increase acceptance rate</controllingFieldValue>
+            <controllingFieldValue>Unlimit merchants before BF</controllingFieldValue>
+            <controllingFieldValue>Push Stock</controllingFieldValue>
+            <controllingFieldValue>Avoid merchant limitation before BF</controllingFieldValue>
+            <controllingFieldValue>Push to Grade Very Good</controllingFieldValue>
+            <controllingFieldValue>Address BuyBack GMV Drop</controllingFieldValue>
+            <controllingFieldValue>Push Services</controllingFieldValue>
+            <controllingFieldValue>Service activation</controllingFieldValue>
+            <controllingFieldValue>Push Actions</controllingFieldValue>
+            <controllingFieldValue>Reduce Untracked Rate</controllingFieldValue>
+            <controllingFieldValue>Add Listing</controllingFieldValue>
+            <controllingFieldValue>Cross Border</controllingFieldValue>
+            <controllingFieldValue>Lower Price</controllingFieldValue>
+            <controllingFieldValue>Lower Price at Competition Level</controllingFieldValue>
+            <controllingFieldValue>More Stock</controllingFieldValue>
+            <controllingFieldValue>Stock for BF week</controllingFieldValue>
+            <controllingFieldValue>Push the product live in all the countries</controllingFieldValue>
+            <controllingFieldValue>Push Listing Live in the missing countries</controllingFieldValue>
+            <controllingFieldValue>Action Plan Needed</controllingFieldValue>
+            <controllingFieldValue>Address GMV drop BF Week</controllingFieldValue>
+            <controllingFieldValue>BackImpact Label</controllingFieldValue>
+            <controllingFieldValue>Push shipping time to 48h for DGBX</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>The merchant can’t process devices one by one</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>The merchant thinks buyback volumes will be low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>The merchant needs an API to manage their offer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>The service is too expensive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Push BuyBack</controllingFieldValue>
+            <valueName>Buyback is too time consuming</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

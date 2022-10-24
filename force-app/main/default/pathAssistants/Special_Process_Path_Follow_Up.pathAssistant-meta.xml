@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Merchant_Special_Process__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Special Process Path (Follow-Up)</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;To move on to the next Stage, you need to submit this record for approval.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Make sure to add all required info to launch a Follow-up.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;Need help for your action plan ? &lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Click&lt;/span&gt;&lt;a href=&quot;https://www.notion.so/Quality-Action-Plan-Bible-0f10d150d7c04bc6b22b9b3cbcd55085&quot; target=&quot;_blank&quot; style=&quot;font-size: 13px;&quot;&gt; here &lt;/a&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt; &amp;#128072;&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Failed = This Follow-up wasn&amp;#39;t a success. An exit draft has been created.&lt;/p&gt;</info>
+        <picklistValueName>Failed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Phase 1 = Follow-up 1&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Need help for your action plan ? &lt;/b&gt;Click&lt;a href=&quot;https://www.notion.so/Quality-Action-Plan-Bible-0f10d150d7c04bc6b22b9b3cbcd55085&quot; target=&quot;_blank&quot;&gt; here &lt;/a&gt; &amp;#128072;&lt;/p&gt;</info>
+        <picklistValueName>Phase 1</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Phase 2 = Follow-up 2&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Need help for your action plan ?&lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt; Click &lt;/span&gt;&lt;a href=&quot;https://www.notion.so/Quality-Action-Plan-Bible-0f10d150d7c04bc6b22b9b3cbcd55085&quot; target=&quot;_blank&quot; style=&quot;font-size: 13px;&quot;&gt;here&lt;/a&gt; &amp;#128072;&lt;/p&gt;</info>
+        <picklistValueName>Phase 2</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Refused = The Referent Champion refused to add this merchant in Follow-up&lt;/p&gt;</info>
+        <picklistValueName>Refused</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Saved = This Follow-up was a success&lt;/p&gt;</info>
+        <picklistValueName>Saved</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Follow_Up</recordTypeName>
+</PathAssistant>

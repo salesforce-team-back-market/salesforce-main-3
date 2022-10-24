@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Qualification Email (FR)</name>
+    <style>freeForm</style>
+    <subject>Back Market x {!Account.Name} : Finalisons votre inscription !</subject>
+    <textOnly>Bonjour {!Contact.FirstName},
+
+Merci beaucoup d&apos;avoir inscrit {!Account.Name} sur Back Market !
+
+Pour commencer à vendre vos produits le plus rapidement possible sur tous nos marchés européens, nous avons besoin de connaître l&apos;activité de {!Account.Name}.
+
+Vous devez répondre à ce questionnaire (5 minutes) :
+
+Cliquez ici pour répondre
+
+Nous allons vous demander votre nouvel Identifiant Unique (P.K.) afin de vous identifier et ainsi pouvoir associer vos réponses à votre compte marchand.
+A la question “Quel est votre P.K.?”, vous devrez répondre {!Account.Back_Office_PK__c} .
+
+Après validation de vos réponses, l&apos;un de nos commerciaux revient alors vers vous sous 24-48 heures !
+
+A bientôt,
+L&apos;équipe Back Market
+
+
+Centre d&apos;Aide Marchand
+Connexion au Back Office marchand</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

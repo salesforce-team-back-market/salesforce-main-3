@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Explanation_1__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <defaultValue>(&apos;Approve = &quot;Quality Prerequisites&quot; / Reject = Stay in &quot;Business prerequisites&quot;&apos;)</defaultValue>
+    <externalId>false</externalId>
+    <label>From Business to Quality Prerequisites</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

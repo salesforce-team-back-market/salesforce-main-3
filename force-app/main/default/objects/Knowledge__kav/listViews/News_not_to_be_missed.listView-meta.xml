@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>News_not_to_be_missed</fullName>
+    <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+    <columns>IS_CHANNEL_CSP</columns>
+    <columns>ARTICLE_NUMBER</columns>
+    <columns>TITLE</columns>
+    <columns>PUBLISH_STATUS</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>LANGUAGE</columns>
+    <columns>LAST_PUBLISHED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001229</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001297</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001340</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001377</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001456</value>
+    </filters>
+    <label>📢 News not to be missed</label>
+</ListView>

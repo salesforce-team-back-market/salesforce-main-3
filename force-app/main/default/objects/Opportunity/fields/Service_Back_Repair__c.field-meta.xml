@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Back_Repair__c</fullName>
+    <businessOwnerUser>clement.vannicatte@backmarket.com</businessOwnerUser>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Service Back Repair</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.AccountId</field>
+            <operation>equals</operation>
+            <valueField>Service__c.Business_Name__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Service__c.Service__c</field>
+            <operation>equals</operation>
+            <value>Back Repair</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Service__c</referenceTo>
+    <relationshipLabel>Opportunities (Service Back Repair)</relationshipLabel>
+    <relationshipName>Opportunities2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

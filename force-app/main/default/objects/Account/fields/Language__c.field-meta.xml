@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Language__c</fullName>
+    <description>Previous formula:
+CASE(BillingCountry,
+     &quot;France&quot;, &quot;French&quot;,  
+     &quot;Belgium&quot;, &quot;French&quot;, 
+     &quot;Spain&quot;, &quot;Spanish&quot;, 
+     &quot;Germany&quot;, &quot;German&quot;, 
+     &quot;China&quot;, &quot;Chinese&quot;,  
+     &quot;Poland&quot;, &quot;Polish&quot;, 
+     &quot;English&quot;)</description>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+ISPICKVAL(Country__c,&quot;France&quot;),
+ISPICKVAL(Country__c,&quot;Luxembourg&quot;),
+ISPICKVAL(Country__c,&quot;Belgium&quot;),
+ISPICKVAL(Country__c,&quot;Switzerland&quot;)),&quot;French&quot;,
+
+IF(ISPICKVAL(Country__c,&quot;Spain&quot;),&quot;Spanish&quot;,
+IF (ISPICKVAL(Country__c,&quot;Portugal&quot;), &quot;Portuguese&quot;,
+IF (ISPICKVAL(Country__c,&quot;Finland&quot;), &quot;Finnish&quot;,
+
+IF(ISPICKVAL(Country__c,&quot;Italy&quot;),&quot;Italian&quot;,
+
+IF(ISPICKVAL(Country__c,&quot;Netherlands&quot;),&quot;Dutch&quot;,
+
+IF(ISPICKVAL(Country__c,&quot;Poland&quot;),&quot;Polish&quot;,
+
+IF(OR(ISPICKVAL(Country__c,&quot;Germany&quot;),ISPICKVAL(Country__c,&quot;Austria&quot;)),&quot;German&quot;,
+
+IF(OR(ISPICKVAL(Country__c,&quot;China&quot;),ISPICKVAL(Country__c,&quot;Hong Kong&quot;)),&quot;Chinese&quot;,&quot;English&quot;)))))))))</formula>
+    <inlineHelpText>This field is mandatory to move from Identification to first contact!</inlineHelpText>
+    <label>Language</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

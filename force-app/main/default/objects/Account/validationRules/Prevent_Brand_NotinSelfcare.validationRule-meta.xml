@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Brand_NotinSelfcare</fullName>
+    <active>true</active>
+    <description>Whoops, you are not able to push this merchant to Selfcare</description>
+    <errorConditionFormula>AND ( ISPICKVAL(Profile__c , &apos;Brand&apos;),
+ISCHANGED( OwnerId ),
+ISPICKVAL( Owner.Team__c , &apos;Selfcare E.U.&apos;))</errorConditionFormula>
+    <errorMessage>Whoops, you are not able to push this merchant to Selfcare.</errorMessage>
+</ValidationRule>

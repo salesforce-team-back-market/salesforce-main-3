@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_merchant_claims</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.COMPANY</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>Has_been_created_on__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Merchant_Claim</value>
+    </filters>
+    <label>All merchant claims</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Merchant_Special_Process__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Special Process Path (N.M.O. Xborder)</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;To move on to the next Stage, you need to submit this record for approval.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Be sure to add a Ready Targeted Country with a Customer Champion to avoid automatic rejection from the approval process.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Merchant&amp;#39;s Referent Champion is also needed.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;To move on to the next Stage, you need to submit this record for approval.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Phase 1</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>NMO_Xborder</recordTypeName>
+</PathAssistant>

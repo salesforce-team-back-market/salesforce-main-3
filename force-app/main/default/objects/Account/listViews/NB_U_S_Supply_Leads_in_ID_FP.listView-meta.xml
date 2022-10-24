@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NB_U_S_Supply_Leads_in_ID_FP</fullName>
+    <columns>Relevance_Date__c</columns>
+    <columns>Back_Office_PK__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>Master_Challenging_Point__c</columns>
+    <columns>Challenging_Point__c</columns>
+    <columns>Country__c</columns>
+    <columns>Marketplace__c</columns>
+    <columns>Competitor_Country__c</columns>
+    <columns>Marketplace_Merchant_Pseudo_1__c</columns>
+    <columns>Marketplace_Merchant_Pseudo_2__c</columns>
+    <columns>Marketplace_Merchant_Pseudo_3__c</columns>
+    <columns>Link_to_the_main_competitor_marketplace__c</columns>
+    <columns>Type_of_product__c</columns>
+    <columns>Has_Contact__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Identification,Future partnership</value>
+    </filters>
+    <filters>
+        <field>Relevance_Date__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Team__c</field>
+        <operation>contains</operation>
+        <value>U.S.</value>
+    </filters>
+    <label>NB U.S. Supply - Leads in ID &amp; FP</label>
+</ListView>

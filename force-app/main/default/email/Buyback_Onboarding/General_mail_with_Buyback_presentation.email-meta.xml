@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>General mail with Buyback presentation</name>
+    <style>freeForm</style>
+    <subject>Back Market x {!Account.Name} - Approvisionnez-vous sur 10 catégories de produits</subject>
+    <textOnly>Bonjour {!Contact.FirstName}  !
+
+Je suis {{insert name}}, responsable de la partie reprise de Back Market. Suite à vos bonnes performances sur la partie vente de Back Market, nous vous proposons de vous sourcer via notre plateforme. Plus de 200 marchands font déjà confiance à Back Market en s&apos;approvisionnant sur 10 catégories de produit !
+
+Notre principe est simple : nous mettons en relation des particuliers qui souhaitent vendre leur produit avec des professionnels qui veulent augmenter leurs stocks.
+
+Le nombre de reprises augmente chaque mois, nous sommes actuellement à plus de 36 000 reprises mensuelles. Je vous joins une présentation de notre service.
+
+Pas d&apos;abonnement, pas d&apos;engagement !
+
+
+Si vous êtes tenté de vous sourcer via notre plateforme, n&apos;hésitez pas à répondre à cet email.
+
+Bien cordialement,
+
+Add PJ &quot;Présentation Buyback&quot; you will find in this notion :
+
+Buyback Documents</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

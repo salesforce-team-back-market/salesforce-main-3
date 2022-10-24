@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Checkdone</fullName>
+    <active>true</active>
+    <description>&quot;MO Result&quot; or &quot;Link to the MO&quot; missing</description>
+    <errorConditionFormula>AND( 
+ISCHANGED( Stage__c ) ,
+OR(
+ISPICKVAL(Stage__c, &quot;Check done&quot;),
+ISPICKVAL(Stage__c, &quot;Result Shared&quot;)),
+ISPICKVAL (MO_Result__c , &quot;None&quot;) )
+ || 
+
+AND( 
+ISCHANGED( Stage__c ) ,
+OR(
+ISPICKVAL(Stage__c, &quot;Check done&quot;),
+ISPICKVAL(Stage__c, &quot;Result Shared&quot;)),
+ISBLANK(Link_to_the_MO__c ))
+
+|| 
+
+AND( 
+ISCHANGED( Stage__c ) ,
+OR(
+ISPICKVAL(Stage__c, &quot;Check done&quot;),
+ISPICKVAL(Stage__c, &quot;Result Shared&quot;)),
+NOT(ISPICKVAL (MO_Result__c , &quot;OK&quot;)),
+ISBLANK( Reason_for_failure__c  ))
+
+|| 
+
+AND( 
+ISCHANGED( Stage__c ) ,
+OR(
+ISPICKVAL(Stage__c, &quot;Check done&quot;),
+ISPICKVAL(Stage__c, &quot;Result Shared&quot;)),
+ISPICKVAL( MO_motive__c , &quot;Suspicion - Hazardous charger Alert&quot;)  ,   OR((NOT(includes(Suspicion_Hazardous_charger_status__c, &quot;Confirmed&quot;)))  ||  NOT(includes(Suspicion_Hazardous_charger_status__c, &quot;Rejected&quot;))))</errorConditionFormula>
+    <errorMessage>Whooops... To move to &quot;Check done&quot; or &quot;Result shared&quot;, you need to :
+1) Provide the link to MO and MO result
+2) Provide reason(s) for failure, if MO result is KO or KO no-go
+3) Confirm or reject suspicion, if MO Motive is suspicion of hazardous charger</errorMessage>
+</ValidationRule>

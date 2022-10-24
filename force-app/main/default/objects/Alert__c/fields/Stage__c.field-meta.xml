@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Alert</fullName>
+                <default>false</default>
+                <label>Alert</label>
+            </value>
+            <value>
+                <fullName>Charter breach identified</fullName>
+                <default>false</default>
+                <label>Charter breach identified</label>
+            </value>
+            <value>
+                <fullName>In progress</fullName>
+                <default>false</default>
+                <label>In progress</label>
+            </value>
+            <value>
+                <fullName>Not compliant</fullName>
+                <default>false</default>
+                <label>Not compliant</label>
+            </value>
+            <value>
+                <fullName>Monitoring Period</fullName>
+                <default>false</default>
+                <label>Monitoring Period</label>
+            </value>
+            <value>
+                <fullName>Last chance</fullName>
+                <default>false</default>
+                <label>Last chance</label>
+            </value>
+            <value>
+                <fullName>Doc validated pending MO result</fullName>
+                <default>false</default>
+                <label>Doc validated pending MO result</label>
+            </value>
+            <value>
+                <fullName>Refused</fullName>
+                <default>false</default>
+                <label>Refused</label>
+            </value>
+            <value>
+                <fullName>Saved</fullName>
+                <default>false</default>
+                <label>Saved</label>
+            </value>
+            <value>
+                <fullName>Failed</fullName>
+                <default>false</default>
+                <label>Failed</label>
+            </value>
+            <value>
+                <fullName>Doc missing</fullName>
+                <default>false</default>
+                <label>Doc missing</label>
+            </value>
+            <value>
+                <fullName>Doc received and accepted</fullName>
+                <default>false</default>
+                <label>Doc received and accepted</label>
+            </value>
+            <value>
+                <fullName>Exit requested</fullName>
+                <default>false</default>
+                <label>Exit requested</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

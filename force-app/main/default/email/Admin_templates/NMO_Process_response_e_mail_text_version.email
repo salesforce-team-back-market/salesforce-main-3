@@ -1,0 +1,9 @@
+Hi, {!Receiving_User.FirstName}!
+
+Your N.M.O. Process "{!NMO_Process__c.Name}" for the Merchant {!Account.Name}
+ "{!NMO_Process__c.Merchant_Name__c}" has been {!ApprovalRequest.Status} with the following comment :
+"{!ApprovalRequest.Comments}"
+Record Type : {!NMO_Process__c.RecordType}
+
+Regards,
+Your Salesforce administrator

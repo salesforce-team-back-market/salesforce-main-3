@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>The e-mail template is used to inform the submiter that an Special request for moving on to the next step has been approved or rejected.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Special Process response e-mail (text version)</name>
+    <style>none</style>
+    <subject>[{!Merchant_Special_Process__c.RecordType} Special Process] Approval request {!ApprovalRequest.Status}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

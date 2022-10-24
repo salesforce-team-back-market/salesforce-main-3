@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Knowledge_Articles</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>ARTICLE_NUMBER</columns>
+    <columns>TITLE</columns>
+    <columns>VALIDATION_STATUS_ENUM</columns>
+    <columns>PUBLISH_STATUS</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>LANGUAGE</columns>
+    <columns>LAST_PUBLISHED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001476</value>
+    </filters>
+    <filters>
+        <field>ARCHIVEDBY_USER</field>
+        <operation>equals</operation>
+        <value>000001478</value>
+    </filters>
+    <filters>
+        <field>ARTICLE_NUMBER</field>
+        <operation>equals</operation>
+        <value>000001483</value>
+    </filters>
+    <label>All Knowledge Articles</label>
+</ListView>

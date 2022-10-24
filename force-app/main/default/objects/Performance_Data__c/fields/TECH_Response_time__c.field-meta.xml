@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Response_time__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>if( NOT(ISPICKVAL(Merchant__r.Stage_Buyback__c,&quot;Buyback NMO&quot;)),   
+CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Cases_Response_time__c&gt;=VALUE($Label.QualityCaseResponse_Time) 
+&amp;&amp; Response_time__c &gt;=
+VALUE($Label.QualityRateResponse_Time) , 1, 0),
+&apos;U_S&apos;,
+IF( Cases_Response_time__c&gt;= VALUE($Label.QualityCaseResponse_TimeUS) 
+&amp;&amp; Response_time__c &gt;= VALUE($Label.QualityRateResponse_TimeUS) , 1, 0),
+0
+)
+,
+CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Cases_Response_time__c&gt;=VALUE($Label.QualityCaseResponse_Time_NMO) 
+&amp;&amp; Response_time__c &gt;=
+VALUE($Label.QualityRateResponse_Time_NMO) , 1, 0),
+&apos;U_S&apos;,
+IF( Cases_Response_time__c&gt;= VALUE($Label.QualityCaseResponse_TimeUS_NMO) 
+&amp;&amp; Response_time__c &gt;= VALUE($Label.QualityRateResponse_TimeUS_NMO) , 1, 0),
+0
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_Response_time</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BO_Positioning__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Pour se positionner sur un smartphone ou une tablette, je clique sur le bouton &quot;Créer une annonce&quot; de l&apos;onglet &quot;Annonces&quot;</inlineHelpText>
+    <label>BO - Positioning Smartphones/Tablets</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

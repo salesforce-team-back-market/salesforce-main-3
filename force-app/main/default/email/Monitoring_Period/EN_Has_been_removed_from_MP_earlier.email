@@ -1,0 +1,16 @@
+Hello {!Contact.FirstName},
+
+You have received an automatic email informing you that you have entered the Monitoring Period/ "Last Chance" of our Monitoring Period.
+An automatic process has been triggered because your "{!Alert__c.Issue_KPI__c}" rate is above our alert thresholds.
+
+For the following reasons, I have taken the decision to remove you from this program for this same KPI: 
+
+
+
+
+I have confidence in the action plan you have already put in place and will continue to monitor your KPI to ensure that it falls below our alert thresholds.
+
+Of course, I remain available to discuss this over the phone and accompany you in your action plan.
+
+Wishing you a very nice day,
+{{{Sender.Signature}}}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_All_alerts</fullName>
+    <columns>NAME</columns>
+    <columns>Business_Name__c</columns>
+    <columns>P_K__c</columns>
+    <columns>Issue_KPI__c</columns>
+    <columns>Has_begun_on__c</columns>
+    <columns>Stage__c</columns>
+    <columns>ETA__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Issue_KPI__c</field>
+        <operation>equals</operation>
+        <value>CSAT</value>
+    </filters>
+    <filters>
+        <field>Has_begun_on__c</field>
+        <operation>greaterThan</operation>
+        <value>7/25/2022</value>
+    </filters>
+    <label>Copy of All alerts</label>
+</ListView>

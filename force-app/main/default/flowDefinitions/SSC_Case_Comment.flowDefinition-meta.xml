@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>3</activeVersionNumber>
+    <description>SSC - When seller replies via case comment change status on the case to &quot;In Progress&quot;
+Stage In progress text - Flow version 53</description>
+    <masterLabel>SSC Case Comment - After save flow</masterLabel>
+</FlowDefinition>

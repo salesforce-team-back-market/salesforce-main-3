@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Invoice_attachment_status__c</name>
+    <picklistValues>
+        <masterLabel>Attached in SF</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not attached in SF</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested from the merchant</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+Bonjour,
+
+Nous avons reçu votre réclamation concernant la commande {!Case.Order_ID__c}.
+Pour rappel, voici les informations que nous avons obtenues de votre part :
+- {!Case.Claim_Reason__c}
+- {!Case.Description}
+
+Nous avons revu le cas et acceptons de faire un remboursement de {!Case.Amount_Refunded__c} euros.
+
+Le remboursement a été effectué par virement. Vous pourrez très prochainement télécharger la facture de l'avoir dans votre Back Office marchand. 
+
+Bonne journée,
+L'équipe Back Market

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Push_Action</fullName>
+    <active>true</active>
+    <label>Push Action</label>
+    <picklistValues>
+        <picklist>Action_Purpose__c</picklist>
+        <values>
+            <fullName>BackImpact Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BackImpact Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct carrier invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct fulfilled too late</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct invalid tracking number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct orders not picked up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product category with high GMV potential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Action%28s%29</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>To source more well-priced products and grow their BM GMV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason__c</picklist>
+        <values>
+            <fullName>After-sales takes too much time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback prices too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creating and updating listings takes too much time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I already have a CSR certificate %28To add the name in comments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I don%27t understand what are the benefits for my business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrators no willing to correct the issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managing orders manually</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not the right timing but I want to do it later</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not willing to change carrier %28carrier has attractive prices%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not willing to change carrier %28trust it%27s efficiency%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28add to Comment%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other suppliers allow to pay after xx days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality of products from end-customers is bad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receiving order 1 by 1</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Live_In__c</picklist>
+        <values>
+            <fullName>All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovakia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Merchant KO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Action by Due Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Targeted_Country__c</picklist>
+        <values>
+            <fullName>All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovakia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Answer BackImpact Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fill in the right carrier %2F unique tracking information %28no duplicates%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fill in the right tracking informations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fill in the tracking information within 5 days after order creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Audio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push BuyBack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Core Elec Models</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Small Kitchen Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push country%28s%29 live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Register for BackImpact Label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship the orders</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

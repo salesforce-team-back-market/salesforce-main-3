@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Guarantee__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>To sell on Back Market, it is required that you provide to buyers a commercial guarantee of at least 12 months accessories &amp; battery included as well as a right of withdrawal of 30 days. The right of withdrawal has to be extended at the year end period: for all orders made from the Monday of the BlackFriday week (e.g. Monday Nov 22nd 2021) until the end of the year (Dec 31st) the end of the withdrawal period is Jan 31st of the following year.</inlineHelpText>
+    <label>Guarantee and Right of withdrawal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

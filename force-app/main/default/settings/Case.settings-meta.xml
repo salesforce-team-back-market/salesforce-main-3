@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaseSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAutoProcUser>false</caseAutoProcUser>
+    <caseFeedItemSettings>
+        <characterLimit>400</characterLimit>
+        <displayFormat>Default</displayFormat>
+        <feedItemType>EmailMessageEvent</feedItemType>
+    </caseFeedItemSettings>
+    <caseFeedReadUnreadLtng>false</caseFeedReadUnreadLtng>
+    <caseMergeInLightning>true</caseMergeInLightning>
+    <closeCaseThroughStatusChange>false</closeCaseThroughStatusChange>
+    <defaultCaseFeedLayoutOn>false</defaultCaseFeedLayoutOn>
+    <defaultCaseOwner>salesforce.automation@backmarket.com</defaultCaseOwner>
+    <defaultCaseOwnerType>User</defaultCaseOwnerType>
+    <defaultCaseUser>salesforce.automation@backmarket.com</defaultCaseUser>
+    <emailToCase>
+        <enableE2CAttachmentAsFile>true</enableE2CAttachmentAsFile>
+        <enableE2CSourceTracking>true</enableE2CSourceTracking>
+        <enableEmailToCase>true</enableEmailToCase>
+        <enableHtmlEmail>true</enableHtmlEmail>
+        <enableOnDemandEmailToCase>true</enableOnDemandEmailToCase>
+        <enableThreadIDInBody>true</enableThreadIDInBody>
+        <enableThreadIDInSubject>false</enableThreadIDInSubject>
+        <notifyOwnerOnNewCaseEmail>false</notifyOwnerOnNewCaseEmail>
+        <overEmailLimitAction>Bounce</overEmailLimitAction>
+        <preQuoteSignature>true</preQuoteSignature>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>EU - Merchant Activation</caseOrigin>
+            <caseOwner>BackWatch_Team</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>activation-eu@backmarket.com</emailAddress>
+            <emailServicesAddress>activation-eu@9fxlrbb98r1p9cdascfvav1ibyzf59n88bk53xkl3gs6qv83v.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Activation E.U.</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email to case</caseOrigin>
+            <caseOwner>BM4B</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>prosupport@backmarket.com</emailAddress>
+            <emailServicesAddress>prosupport@l-2gr10msviw5bn0ge0pvplss7bbb1vuizatlycbuoatb0m0x2rp.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>BM4B Support Case</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>US email-to-case</caseOrigin>
+            <caseOwner>robert.peglow@backmarket.com</caseOwner>
+            <caseOwnerType>User</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>sam@backmarket.com</emailAddress>
+            <emailServicesAddress>sam@t-2n9akx599728zzhte8f12aykjnqmvmq4s38ga5fu1cyjzxie4a.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Back Watch US</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>EU email-to-case</caseOrigin>
+            <caseOwner>BackWatch_Team</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>backwatch@backmarket.com</emailAddress>
+            <emailServicesAddress>backwatch@y-2e3nhrct97pe8r1b84sy8zia7vbdh4maawbpm7abjdez437wqs.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>BackWatch</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>SSC - BackRepair</caseOrigin>
+            <caseOwner>Back_Repair_Support</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>support-backrepair@backmarket.com</emailAddress>
+            <emailServicesAddress>support-backrepair@b-1ik0khw8xzdyhl535s11hvpq1ghef4dw30nto1da9wnfikkhtt.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>SSC - Backrepair</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>SSC - Components</caseOrigin>
+            <caseOwner>Back_Parts_Support</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>components@backmarket.com</emailAddress>
+            <emailServicesAddress>components@284ycmoimgvp84x9wpqgpd71z0fyyhzvfe5du9bwbogt3xsstm.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>SSC - Components</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>SSC - FBBM</caseOrigin>
+            <caseOwner>FBBM_Support</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>fbbm@backmarket.com</emailAddress>
+            <emailServicesAddress>fbbm@t-2iq082ml47kzpbqmytz1yutjb1tq0y2dxn3tjs4t5p3v26moth.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>SSC - FBBM</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>SSC - Packaging</caseOrigin>
+            <caseOwner>Back_Pack_Support</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>packaging@backmarket.com</emailAddress>
+            <emailServicesAddress>packaging@l-1vmejklu24o0w0q24y2l0yc5htmonz7p9fovn7dqyzvblqk22l.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>SSC - Packaging</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>SSC - Transport</caseOrigin>
+            <caseOwner>BackShip</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>transport@backmarket.com</emailAddress>
+            <emailServicesAddress>transport@1yo97mhm4fs2fuxbycoo7uwjchh5ug5iusykqhviqxj9pglnu.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>SSC - Transport</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Selfcare EU</caseOrigin>
+            <caseOwner>BackWatch_Team</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>selfcare@backmarket.com</emailAddress>
+            <emailServicesAddress>selfcare@19luvo2okxdefqenxs10o9oli569simj6kjwubsg4jr19xkc63.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Selfcare EU</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Spams</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>sellersupport@backmarket.com</emailAddress>
+            <emailServicesAddress>sellersupport@kprt4yth8q21zlwhyfyzf22q4tlqm6iuciybt4k61juis0v4b.1t-xuvoea2.eu29.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Seller Support Center</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <unauthorizedSenderAction>Discard</unauthorizedSenderAction>
+    </emailToCase>
+    <enableCaseFeed>true</enableCaseFeed>
+    <enableCaseSwarming>false</enableCaseSwarming>
+    <enableCollapseEmailThread>true</enableCollapseEmailThread>
+    <enableDraftEmails>false</enableDraftEmails>
+    <enableEarlyEscalationRuleTriggers>false</enableEarlyEscalationRuleTriggers>
+    <enableEmailActionDefaultsHandler>false</enableEmailActionDefaultsHandler>
+    <enableEscalateQfiToCaseInternal>false</enableEscalateQfiToCaseInternal>
+    <enableEscalateQfiToCaseNetworks>false</enableEscalateQfiToCaseNetworks>
+    <enableExtNetworksCaseFeedEnabled>false</enableExtNetworksCaseFeedEnabled>
+    <enableMultiLangSolnSrchCSS>false</enableMultiLangSolnSrchCSS>
+    <enableMultiLangSolnSrchPKB>false</enableMultiLangSolnSrchPKB>
+    <enableMultiLangSolution>false</enableMultiLangSolution>
+    <enableSolutionCategory>false</enableSolutionCategory>
+    <enableSolutionInlineCategory>true</enableSolutionInlineCategory>
+    <enableSolutionShortSummary>true</enableSolutionShortSummary>
+    <enableSuggestedArticlesApplication>false</enableSuggestedArticlesApplication>
+    <enableSuggestedArticlesCustomerPortal>false</enableSuggestedArticlesCustomerPortal>
+    <enableSuggestedArticlesPartnerPortal>false</enableSuggestedArticlesPartnerPortal>
+    <enableSuggestedSolutions>true</enableSuggestedSolutions>
+    <escalateCaseBefore>false</escalateCaseBefore>
+    <keepCaseMergeRecords>true</keepCaseMergeRecords>
+    <keepRecordTypeOnAssignmentRule>true</keepRecordTypeOnAssignmentRule>
+    <notifyContactOnCaseComment>false</notifyContactOnCaseComment>
+    <notifyDefaultCaseOwner>false</notifyDefaultCaseOwner>
+    <notifyOwnerOnCaseComment>false</notifyOwnerOnCaseComment>
+    <notifyOwnerOnCaseOwnerChange>false</notifyOwnerOnCaseOwnerChange>
+    <showEmailAttachmentsInCaseAttachmentsRL>true</showEmailAttachmentsInCaseAttachmentsRL>
+    <systemUserEmail>automatedcase@00d1t000000xuvoea2.ext</systemUserEmail>
+    <useSystemEmailAddress>true</useSystemEmailAddress>
+    <useSystemUserAsDefaultCaseUser>false</useSystemUserAsDefaultCaseUser>
+    <visibleInCssCheckbox>false</visibleInCssCheckbox>
+    <webToCase>
+        <enableWebToCase>false</enableWebToCase>
+    </webToCase>
+</CaseSettings>

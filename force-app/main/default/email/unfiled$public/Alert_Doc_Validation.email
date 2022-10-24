@@ -1,0 +1,7 @@
+Hello,
+
+An approval process has been submitted by{!Approval_Requesting_User.FirstName} {!Approval_Requesting_User.LastName}, for the merchant {!Alert__c.Business_Name__c}.
+
+We need you to revise the documents uploaded in the related alert and approve or reject the approval process.
+
+Thank you.

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Last chance start (IT)</name>
+    <style>freeForm</style>
+    <subject>{!Alert__c.P_K__c} - {!Alert__c.Business_Name__c} - Periodo di monitoraggio - Ultima chance</subject>
+    <textOnly>Ciao {!Alert__c.Business_Name__c},
+
+
+
+Purtroppo, dall&apos;ultima volta che vi abbiamo contattato in riguardo al tasso di {!Alert__c.Issue_KPI__c}, la situazione non è migliorata. Pertanto, il suo account si trova ora nell&apos;&quot;ultima possibilità&quot; del periodo di monitoraggio, in conformità all&apos;articolo 12 dei nostri T&amp;C.
+
+
+
+Lo scopo di questa &quot;ultima possibilità&quot; è di darvi un&apos;ultima opportunità per migliorare le vostre metriche e raggiungere l&apos;obiettivo precedentemente comunicato, al fine di rispettare i nostri standard di qualità stabiliti nella Carta della Qualità e nei T&amp;C.
+
+
+
+Durante questo periodo, ci sarà un limite posto sul suo account di circa {!Account.Limitation_to_apply_in_Last_Chance__c} vendite al giorno (cioè circa il 30% del volume delle vendite effettuate in media negli ultimi 30 giorni).
+
+Vi incoraggiamo vivamente a lavorare con il suo contatto Back Market per monitorare i progressi nel corso del prossimo mese e a contattarci per qualsiasi chiarimento. Per ulteriori informazioni sulle soglie del periodo di monitoraggio, può controllare il Merchant Support Center.
+
+
+
+Nel caso in cui il tasso di {!Alert__c.Issue_KPI__c} non dovesse migliorare prima della data indicata, saremo obbligati a chiudere il suo account con la nostra piattaforma, come previsto dagli articoli 12 e 18.2 dei T&amp;C.
+
+
+
+Speriamo vivamente che non si arrivi a tanto e siamo a disposizione per rispondere a qualsiasi domanda.
+
+
+
+Cordiali saluti,
+
+
+Back Market</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

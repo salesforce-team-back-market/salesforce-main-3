@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Business_Project__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Business Project Stage</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Resolved__c</fieldNames>
+        <info>&lt;p&gt;You have to tick the checkbox inorder to close this project&lt;/p&gt;</info>
+        <picklistValueName>Done</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Stage__c</fieldNames>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

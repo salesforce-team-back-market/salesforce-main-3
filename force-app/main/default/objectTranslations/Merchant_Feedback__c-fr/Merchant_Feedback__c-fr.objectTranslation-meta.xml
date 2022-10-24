@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Merchant Feedback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Merchant Feedback</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Merchant Feedback Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Feedback Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Merchant Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>New_Merchant_Feedback</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

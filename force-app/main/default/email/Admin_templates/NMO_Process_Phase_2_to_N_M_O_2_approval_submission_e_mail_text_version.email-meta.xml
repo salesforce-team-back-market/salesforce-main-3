@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>N.M.O. Process Phase 2 to N.M.O. 2 approval submission e-mail (text version)</name>
+    <style>none</style>
+    <subject>[N.M.O. Process] Your approval is requested for passing on to the next step</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

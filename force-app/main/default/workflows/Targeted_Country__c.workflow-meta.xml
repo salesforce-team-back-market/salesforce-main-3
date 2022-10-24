@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FU_TC_BackShipDate</fullName>
+        <field>BackShip_start_date__c</field>
+        <formula>IF(CONTAINS( TEXT( Back_Ship__c ) ,&apos;Live&apos;),TODAY(),null)</formula>
+        <name>FU_TC_BackShipDate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

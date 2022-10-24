@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blocker__c</fullName>
+    <externalId>false</externalId>
+    <label>Blocker</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Quality</fullName>
+                <default>false</default>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>Timing - BM took too long to make an offer</fullName>
+                <default>false</default>
+                <label>Timing - BM took too long to make an offer</label>
+            </value>
+            <value>
+                <fullName>Timing - Not the best period of the year for the company</fullName>
+                <default>false</default>
+                <label>Timing - Not the best period of the year for the company</label>
+            </value>
+            <value>
+                <fullName>Selection - Quantities available weren’t enough</fullName>
+                <default>false</default>
+                <label>Selection - Quantities available weren’t enough</label>
+            </value>
+            <value>
+                <fullName>Selection - Product not available on the website</fullName>
+                <default>false</default>
+                <label>Selection - Product not available on the website</label>
+            </value>
+            <value>
+                <fullName>Price - Discount Vs. New too low</fullName>
+                <default>false</default>
+                <label>Price - Discount Vs. New too low</label>
+            </value>
+            <value>
+                <fullName>Price - Price vs. BM not clear</fullName>
+                <default>false</default>
+                <label>Price - Price vs. BM not clear</label>
+            </value>
+            <value>
+                <fullName>Price - Refurb cheaper on another website</fullName>
+                <default>false</default>
+                <label>Price - Refurb cheaper on another website</label>
+            </value>
+            <value>
+                <fullName>Payment terms - Looking for 30+ days terms</fullName>
+                <default>false</default>
+                <label>Payment terms - Looking for 30+ days terms</label>
+            </value>
+            <value>
+                <fullName>Payment terms - Looking for a leasing option</fullName>
+                <default>false</default>
+                <label>Payment terms - Looking for a leasing option</label>
+            </value>
+            <value>
+                <fullName>Warranty - Looking for 24 months of coverage</fullName>
+                <default>false</default>
+                <label>Warranty - Looking for 24 months of coverage</label>
+            </value>
+            <value>
+                <fullName>Warranty - Looking for broken/lost coverage</fullName>
+                <default>false</default>
+                <label>Warranty - Looking for broken/lost coverage</label>
+            </value>
+            <value>
+                <fullName>Geography - UK order</fullName>
+                <default>false</default>
+                <label>Geography - UK order</label>
+            </value>
+            <value>
+                <fullName>Geography - Back Market doesn’t deliver in this country</fullName>
+                <default>false</default>
+                <label>Geography - Back Market doesn’t deliver in this country</label>
+            </value>
+            <value>
+                <fullName>No news from the client</fullName>
+                <default>false</default>
+                <label>No news from the client</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inventory</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Price</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

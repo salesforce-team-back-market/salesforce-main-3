@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Contact_Language_test_DE</fullName>
+        <description>Contact - Language test - DE</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>merchant.no-reply@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Merchant_P_K/Language_test_DE</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Language_test_EN</fullName>
+        <description>Contact - Language test - EN</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>merchant.no-reply@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Merchant_P_K/Language_test_EN</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Language_test_ES</fullName>
+        <description>Contact - Language test - ES</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>merchant.no-reply@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Merchant_P_K/Language_test_ES</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Language_test_FR</fullName>
+        <description>Contact - Language test - FR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>merchant.no-reply@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Merchant_P_K/Language_test_FR</template>
+    </alerts>
+    <alerts>
+        <fullName>Contact_Language_test_IT</fullName>
+        <description>Contact - Language test - IT</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>merchant.no-reply@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Merchant_P_K/Language_test_IT</template>
+    </alerts>
+    <alerts>
+        <fullName>Merchant_P_K_DE</fullName>
+        <description>Merchant P.K. (DE)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Merchant_P_K/Merchant_PK_DE</template>
+    </alerts>
+    <alerts>
+        <fullName>Merchant_P_K_EN</fullName>
+        <description>Merchant P.K. (EN)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Merchant_P_K/Merchant_PK_EN</template>
+    </alerts>
+    <alerts>
+        <fullName>Merchant_P_K_ES</fullName>
+        <description>Merchant P.K. (ES)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Merchant_P_K/Merchant_PK_ES</template>
+    </alerts>
+    <alerts>
+        <fullName>Merchant_P_K_FR</fullName>
+        <description>Merchant P.K. (FR)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Merchant_P_K/Merchant_PK_FR</template>
+    </alerts>
+    <alerts>
+        <fullName>Merchant_P_K_IT</fullName>
+        <description>Merchant P.K. (IT)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Merchant_P_K/Merchant_P_K_IT</template>
+    </alerts>
+    <alerts>
+        <fullName>Qualification_Email_CN</fullName>
+        <description>Qualification Email (CN)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>newbiz@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Qualification_Templates/Qualification_Email_CN</template>
+    </alerts>
+    <alerts>
+        <fullName>Qualification_Email_DE</fullName>
+        <description>Qualification Email (DE)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>newbiz@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Qualification_Templates/Qualification_Email_DE</template>
+    </alerts>
+    <alerts>
+        <fullName>Qualification_Email_EN</fullName>
+        <description>Qualification Email (EN)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>newbiz@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Qualification_Templates/Qualification_Email_EN</template>
+    </alerts>
+    <alerts>
+        <fullName>Qualification_Email_ES</fullName>
+        <description>Qualification Email (ES)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>newbiz@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Qualification_Templates/Qualification_Email_ES</template>
+    </alerts>
+    <alerts>
+        <fullName>Qualification_Email_FR</fullName>
+        <description>Qualification Email (FR)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>newbiz@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Qualification_Templates/Qualification_Email_FR</template>
+    </alerts>
+    <alerts>
+        <fullName>Qualification_Email_IT</fullName>
+        <description>Qualification Email (IT)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>newbiz@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Qualification_Templates/Qualification_Email_IT</template>
+    </alerts>
+    <alerts>
+        <fullName>Qualification_Email_NL</fullName>
+        <description>Qualification Email (NL)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>newbiz@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Qualification_Templates/Qualification_Email_NL</template>
+    </alerts>
+    <alerts>
+        <fullName>Qualification_Email_PO</fullName>
+        <description>Qualification Email (PO)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>newbiz@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Qualification_Templates/Qualification_Email_PO</template>
+    </alerts>
+    <alerts>
+        <fullName>Qualification_Email_US</fullName>
+        <description>Qualification Email (US)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>newbiz@backmarket.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Qualification_Templates/Qualification_Email_US</template>
+    </alerts>
+</Workflow>

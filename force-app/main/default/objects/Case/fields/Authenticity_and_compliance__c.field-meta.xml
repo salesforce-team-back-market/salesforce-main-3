@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Authenticity_and_compliance__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>To sell on Back Market, it is required that you set up and document all appropriate quality control measures to ensure product authenticity and compliance with regulations. This includes in particular charger compliance with International Safety Standard IEC 62368-1 as well as quality measures to fight counterfeit (for example on Apple Airpods). Back Market can ask you to share documents relevant to your past sales at all times. Failure to do so will be considered as an infringement to our Quality Charter</inlineHelpText>
+    <label>Authenticity and compliance</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

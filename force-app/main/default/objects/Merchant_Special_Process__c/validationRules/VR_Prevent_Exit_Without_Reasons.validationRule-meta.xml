@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Prevent_Exit_Without_Reasons</fullName>
+    <active>true</active>
+    <description>Block the exit launched by the &quot;Launch the exit&quot; field set to true if the two reasons fields are empty.</description>
+    <errorConditionFormula>AND(
+    NOT($User.ByPassValidationRules__c),
+    ISCHANGED(Launch_the_exit__c),
+    Launch_the_exit__c = True,
+    OR(ISPICKVAL(Reason_for_exit__c, &quot;&quot;),
+       ISPICKVAL(Exit_sub_reason__c, &quot;&quot;)
+    )
+)</errorConditionFormula>
+    <errorMessage>The exit main and sub reason fields are mandatory before launching the exit.</errorMessage>
+</ValidationRule>

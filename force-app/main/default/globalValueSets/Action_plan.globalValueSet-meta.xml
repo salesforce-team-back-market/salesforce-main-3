@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Abusive counter-offer policy</fullName>
+        <default>false</default>
+        <label>Abusive counter-offer policy</label>
+    </customValue>
+    <customValue>
+        <fullName>Adapt current organization to handle the volume</fullName>
+        <default>false</default>
+        <label>Adapt current organization to handle the volume</label>
+    </customValue>
+    <customValue>
+        <fullName>Add a user guide in packaging</fullName>
+        <default>false</default>
+        <label>Add a user guide in packaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Address customer in a customized way</fullName>
+        <default>false</default>
+        <label>Address customer in a customized way</label>
+    </customValue>
+    <customValue>
+        <fullName>Adjust prices of ads based on the description of the product</fullName>
+        <default>false</default>
+        <label>Adjust prices of ads based on the description of the product</label>
+    </customValue>
+    <customValue>
+        <fullName>Answer faster</fullName>
+        <default>false</default>
+        <label>Answer faster</label>
+    </customValue>
+    <customValue>
+        <fullName>Ask the merchant to handle all orders marked as &quot;Colis reçu dans l&apos;usine&quot;</fullName>
+        <default>false</default>
+        <label>Ask the merchant to handle all orders marked as &quot;Colis reçu dans l&apos;usine&quot;</label>
+    </customValue>
+    <customValue>
+        <fullName>Bad reviews related to Defective issues</fullName>
+        <default>false</default>
+        <label>Bad reviews related to Defective issues</label>
+    </customValue>
+    <customValue>
+        <fullName>Bad reviews related to Delivery issues</fullName>
+        <default>false</default>
+        <label>Bad reviews related to Delivery issues</label>
+    </customValue>
+    <customValue>
+        <fullName>Be more polite</fullName>
+        <default>false</default>
+        <label>Be more polite</label>
+    </customValue>
+    <customValue>
+        <fullName>Be more precise</fullName>
+        <default>false</default>
+        <label>Be more precise</label>
+    </customValue>
+    <customValue>
+        <fullName>Be more reactive</fullName>
+        <default>false</default>
+        <label>Be more reactive</label>
+    </customValue>
+    <customValue>
+        <fullName>Better plan departures on vacation</fullName>
+        <default>false</default>
+        <label>Better plan departures on vacation</label>
+    </customValue>
+    <customValue>
+        <fullName>Push (a new) testing solution - Blancco</fullName>
+        <default>false</default>
+        <label>Blancco - Push (a new) testing solution</label>
+    </customValue>
+    <customValue>
+        <fullName>Can be solved by working on another KPI</fullName>
+        <default>false</default>
+        <label>Can be solved by working on another KPI</label>
+    </customValue>
+    <customValue>
+        <fullName>Change carrier</fullName>
+        <default>false</default>
+        <label>Change carrier</label>
+    </customValue>
+    <customValue>
+        <fullName>Change for express solution</fullName>
+        <default>false</default>
+        <label>Change for express solution</label>
+    </customValue>
+    <customValue>
+        <fullName>Change supplier - Battery</fullName>
+        <default>false</default>
+        <label>Change supplier - Battery</label>
+    </customValue>
+    <customValue>
+        <fullName>Change supplier - Buttons</fullName>
+        <default>false</default>
+        <label>Change supplier - Buttons</label>
+    </customValue>
+    <customValue>
+        <fullName>Change supplier - General</fullName>
+        <default>false</default>
+        <label>Change supplier - General</label>
+    </customValue>
+    <customValue>
+        <fullName>Change supplier - Merchant will look for one</fullName>
+        <default>false</default>
+        <label>Change supplier - Merchant will look for one</label>
+    </customValue>
+    <customValue>
+        <fullName>Change supplier - Motherboard</fullName>
+        <default>false</default>
+        <label>Change supplier - Motherboard</label>
+    </customValue>
+    <customValue>
+        <fullName>Change supplier - Network</fullName>
+        <default>false</default>
+        <label>Change supplier - Network</label>
+    </customValue>
+    <customValue>
+        <fullName>Change supplier - Other</fullName>
+        <default>false</default>
+        <label>Change supplier - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Change supplier - Provided a list</fullName>
+        <default>false</default>
+        <label>Change supplier - Provided a list</label>
+    </customValue>
+    <customValue>
+        <fullName>Change supplier - Screen</fullName>
+        <default>false</default>
+        <label>Change supplier - Screen</label>
+    </customValue>
+    <customValue>
+        <fullName>Change the time delay in the BO</fullName>
+        <default>false</default>
+        <label>Change the time delay in the BO</label>
+    </customValue>
+    <customValue>
+        <fullName>Commit on answering within 24 hours</fullName>
+        <default>false</default>
+        <label>Commit on answering within 24 hours</label>
+    </customValue>
+    <customValue>
+        <fullName>Further logistic cases</fullName>
+        <default>false</default>
+        <label>Further logistic cases</label>
+    </customValue>
+    <customValue>
+        <fullName>I asked the merchant to respect our delais/rules</fullName>
+        <default>false</default>
+        <label>I asked the merchant to respect our delais/rules</label>
+    </customValue>
+    <customValue>
+        <fullName>I have explained the Quality Charter</fullName>
+        <default>false</default>
+        <label>I have explained the Quality Charter</label>
+    </customValue>
+    <customValue>
+        <fullName>Offer Battery Program</fullName>
+        <default>false</default>
+        <label>Offer Battery Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Push (a new) testing solution - Other</fullName>
+        <default>false</default>
+        <label>Other - Push (a new) testing solution</label>
+    </customValue>
+    <customValue>
+        <fullName>Push (a new) testing solution - Phonecheck</fullName>
+        <default>false</default>
+        <label>Phonecheck - Push (a new) testing solution</label>
+    </customValue>
+    <customValue>
+        <fullName>Push (a new) testing solution - Piceasoft</fullName>
+        <default>false</default>
+        <label>Piceasoft - Push (a new) testing solution</label>
+    </customValue>
+    <customValue>
+        <fullName>Push Back Care</fullName>
+        <default>false</default>
+        <label>Push Back Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Push BackShip</fullName>
+        <default>false</default>
+        <label>Push BackShip</label>
+    </customValue>
+    <customValue>
+        <fullName>Put a sticker with user guide</fullName>
+        <default>false</default>
+        <label>Put a sticker with user guide</label>
+    </customValue>
+    <customValue>
+        <fullName>Related to a high counter-offer rate</fullName>
+        <default>false</default>
+        <label>Related to a high counter-offer rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Related to a specific brand / model / product / category</fullName>
+        <default>false</default>
+        <label>Related to a specific brand / model / product / category</label>
+    </customValue>
+    <customValue>
+        <fullName>Relaunch customers when pending for an answer</fullName>
+        <default>false</default>
+        <label>Relaunch customers when pending for an answer</label>
+    </customValue>
+    <customValue>
+        <fullName>Remind that oxidised products are accepted</fullName>
+        <default>false</default>
+        <label>Remind that oxidised products are accepted</label>
+    </customValue>
+    <customValue>
+        <fullName>Remind that the state of a non-functional product can be very diversified</fullName>
+        <default>false</default>
+        <label>Remind that the state of a non-functional product can be very diversified</label>
+    </customValue>
+    <customValue>
+        <fullName>Remove impacted SKY from the listing</fullName>
+        <default>false</default>
+        <label>Remove impacted SKU from the listing</label>
+    </customValue>
+    <customValue>
+        <fullName>Review their grading</fullName>
+        <default>false</default>
+        <label>Review their grading</label>
+    </customValue>
+    <customValue>
+        <fullName>Review their listing</fullName>
+        <default>false</default>
+        <label>Review their listing</label>
+    </customValue>
+    <customValue>
+        <fullName>Send back the charter</fullName>
+        <default>false</default>
+        <label>Send back the charter</label>
+    </customValue>
+    <customValue>
+        <fullName>Send precise messages when offer put on hold</fullName>
+        <default>false</default>
+        <label>Send precise messages when offer put on hold</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical issue in the BO - Doesn&apos;t receive a notification for each message</fullName>
+        <default>false</default>
+        <label>Technical issue in the BO - Doesn&apos;t receive a notification for each message</label>
+    </customValue>
+    <customValue>
+        <fullName>Use templates</fullName>
+        <default>false</default>
+        <label>Use templates</label>
+    </customValue>
+    <customValue>
+        <fullName>Volume of recovery not adapted to the size of the structure</fullName>
+        <default>false</default>
+        <label>Volume of recovery not adapted to the size of the structure</label>
+    </customValue>
+    <customValue>
+        <fullName>Allocate / dedicate stock to BM</fullName>
+        <default>false</default>
+        <label>Allocate / dedicate stock to BM</label>
+    </customValue>
+    <customValue>
+        <fullName>Use integrator (Sellermania?)</fullName>
+        <default>false</default>
+        <label>Use integrator (Sellermania?)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mana - Develop additional sourcing options</fullName>
+        <default>false</default>
+        <label>Mana - Develop additional sourcing options</label>
+    </customValue>
+    <customValue>
+        <fullName>BuyBack - Develop additional sourcing options</fullName>
+        <default>false</default>
+        <label>BuyBack - Develop additional sourcing options</label>
+    </customValue>
+    <customValue>
+        <fullName>Push component offer - Accessories</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Push component offer - Accessories</label>
+    </customValue>
+    <masterLabel>Action plan</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,21 @@
+<messaging:emailTemplate subject="[Test] This is a..." recipientType="User" relatedToType="Targeted_Country__c">
+
+<messaging:htmlEmailBody >
+    <html>
+        <body>
+
+        <p>Congratulations!</p>
+        <br />
+        <p>
+            <apex:outputText value="This is your new Visualforce Email Template. Targeted Country Name is {0}.">
+                <apex:param value="{!relatedTo.Name}" />
+            </apex:outputText>
+        </p>
+        <br />
+        <p>Cordialement,</p>
+        <p>{!$User.FirstName} {!$User.LastName}</p>
+        </body>
+    </html>
+</messaging:htmlEmailBody>
+
+</messaging:emailTemplate>

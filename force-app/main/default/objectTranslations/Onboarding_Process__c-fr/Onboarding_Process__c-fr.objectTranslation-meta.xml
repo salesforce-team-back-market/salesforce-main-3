@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Onboarding Process</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Onboarding Processes</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>EU Buyback - Onboarding Layout</layout>
+        <sections>
+            <label></label>
+            <section>Business Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Go-Live Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Main information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quality Prerequisites</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EU Sales - Onboarding Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial and Legal Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Go-Live and Supply Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quality Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>To Do-List (Optional)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>JP - Onboarding</layout>
+        <sections>
+            <label></label>
+            <section>Business Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Go-Live Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Main information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>US Buyback - Onboarding Layout</layout>
+        <sections>
+            <label></label>
+            <section>Business Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Go-Live Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Main information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quality Prerequisites</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>US Sales - Onboarding Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial and Legal Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Go-Live and Supply Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quality Prerequisites</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>To Do-List (Optional)</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Blacklisted_check</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Business_Prerequisites_EU_Buyback</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Business_Prerequisites_K_Y_C_Documents_for_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Business_Quality_Prerequisites</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Business_Quality_Prerequisites_US</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Buyback_Certificate</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Go_Live</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Go_Live_EU_Buyback</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Go_Live_US_Sales</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>JP_Business_Prerequisites</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>JP_Go_Live_Prerequisites</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Key_dates</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Task</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Quality_Prerequisites</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Quality_Prerequisites_EU_Buyback</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Quality_Prerequisites_US_Sales</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Support_Ticket</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>E_U</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>E_U_Buyback</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>JP_Onboarding</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>U_S</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>U_S_Onboarding_Buyback</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Can_t_change_Stage_once_on_3_3_Checks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_Buyback_From_BusQual_to_Go_Live</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_Buyback_Go_live_grantede</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_JP_From_BusQual_to_Go_Live</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_JP_Go_live_granted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_RECORDTYPE</name>
+    </validationRules>
+</CustomObjectTranslation>

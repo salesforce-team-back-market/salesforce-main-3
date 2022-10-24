@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_and_Selection_Opportunities_Default</fullName>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.TYPE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Total_Opportunity_Products__c</columns>
+    <columns>Opportunity_Products_KO__c</columns>
+    <columns>Opportunity_Products_OK__c</columns>
+    <columns>Opportunity_Products_Without_Action__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Price_and_Selection</value>
+    </filters>
+    <label>Price and Selection Opportunities</label>
+</ListView>

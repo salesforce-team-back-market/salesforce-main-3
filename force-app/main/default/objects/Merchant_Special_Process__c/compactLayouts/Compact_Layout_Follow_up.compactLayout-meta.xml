@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compact_Layout_Follow_up</fullName>
+    <fields>Merchant__c</fields>
+    <fields>P_K__c</fields>
+    <fields>Stage__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>Has_Begun_On__c</fields>
+    <fields>BizDev__c</fields>
+    <label>Compact Layout - Follow-up</label>
+</CompactLayout>

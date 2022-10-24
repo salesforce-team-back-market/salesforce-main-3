@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETA__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(ETA_for_test__c)),ETA_for_test__c,
+
+IF(ISPICKVAL(Issue_KPI__c, &quot;Mystery Order&quot;) ,ETA_for_test__c,
+
+IF( AND(
+ISPICKVAL(Stage__c, &quot;Last Chance&quot;),
+OR(
+ISPICKVAL(Issue_KPI__c, &quot;CSAT&quot;),
+ISPICKVAL(Issue_KPI__c, &quot;Late Response Rate&quot;),
+ISPICKVAL(Issue_KPI__c, &quot;Policy violation&quot;))
+),
+TODAY() + 28 - (TODAY() - Has_begun_on__c),
+
+IF( AND( ISPICKVAL(Stage__c, &quot;Last Chance&quot;), ISPICKVAL(Issue_KPI__c, &quot;Defective Rate&quot;)),
+Has_entered_Last_chance_on__c + 42,
+
+
+IF( AND( 
+ISPICKVAL(Stage__c, &quot;Last Chance&quot;),ISPICKVAL(Issue_KPI__c, &quot;Buyback - Charter breaches&quot;) ),
+Has_entered_Last_chance_on__c + 35,
+
+
+IF( AND( ISPICKVAL(Stage__c, &quot;Last Chance&quot;), OR(ISPICKVAL(Issue_KPI__c, &quot;Buyback - Payment issue&quot;),ISPICKVAL(Issue_KPI__c, &quot;Payment issue&quot;) ) ),
+Has_entered_Last_chance_on__c + 14,
+
+
+IF( AND( ISPICKVAL(Stage__c, &quot;Last Chance&quot;), NOT(ISPICKVAL(Issue_KPI__c, &quot;Defective Rate&quot;)), NOT(ISPICKVAL(Issue_KPI__c, &quot;Buyback - Charter breaches&quot;)),NOT(ISPICKVAL(Issue_KPI__c, &quot;Policy violation&quot;)),NOT(ISPICKVAL(Issue_KPI__c, &quot;Buyback - Payment issue&quot;)),NOT(ISPICKVAL(Issue_KPI__c, &quot;Payment issue&quot;))),
+Has_entered_Last_chance_on__c + 28,
+
+
+IF( AND ( ISPICKVAL(Stage__c, &quot;Monitoring Period&quot;), ISPICKVAL(Issue_KPI__c, &quot;Defective Rate&quot;)),
+Has_begun_on__c + 42,
+
+
+IF( AND ( ISPICKVAL(Stage__c, &quot;Monitoring Period&quot;),ISPICKVAL(Issue_KPI__c, &quot;Buyback - Charter breaches&quot; )),
+Has_begun_on__c + 35,
+
+
+IF( AND ( ISPICKVAL(Stage__c, &quot;Monitoring Period&quot;),OR(ISPICKVAL(Issue_KPI__c, &quot;Buyback - Payment issue&quot;),ISPICKVAL(Issue_KPI__c, &quot;Payment issue&quot;))),
+Has_begun_on__c + 14,
+
+
+IF( AND ( ISPICKVAL(Stage__c, &quot;Monitoring Period&quot;),
+NOT(ISPICKVAL(Issue_KPI__c, &quot;Defective Rate&quot;)), NOT(ISPICKVAL(Issue_KPI__c, &quot;Buyback - Charter breaches&quot;)),NOT(ISPICKVAL(Issue_KPI__c, &quot;Buyback - Payment issue&quot;)),NOT(ISPICKVAL(Issue_KPI__c, &quot;Payment issue&quot;))),
+Has_begun_on__c + 28,
+
+
+IF( AND ( ISPICKVAL(Stage__c, &quot;Not compliant&quot;),ISPICKVAL(Issue_KPI__c, &quot;Invoice Compliance Audit&quot;)),
+Has_begun_on__c + 30,
+
+IF( ISPICKVAL(Stage__c, &quot;Refused&quot;),
+Has_been_refused_on__c,
+
+IF( ISPICKVAL(Stage__c, &quot;Saved&quot;),
+Has_been_saved_on__c,
+Has_failed_on__c
+)
+)
+)
+)
+)
+)
+)
+)
+))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ETA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,7 @@
+Hi,
+
+Back Care is deactivated for the merchant: {!Targeted_Country__c.Merchant__c}.
+
+Check out details here: {!Targeted_Country__c.Link}
+
+Thank you.

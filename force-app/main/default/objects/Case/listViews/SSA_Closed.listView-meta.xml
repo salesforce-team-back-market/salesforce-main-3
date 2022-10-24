@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSA_Closed</fullName>
+    <booleanFilter>(1 OR 2) AND 3 AND (4 OR 5) AND 6 AND 7</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.REASON</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Status_Image__c</columns>
+    <columns>Assignee__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.After_Sales_Management,Case.SSC_Back_Market_Services,Case.SSC_Back_Office_Integrators_Technical_Support,Case.SSC_Buyback_only_available_for_EU_sellers,Case.SSC_Catalog,Case.SSC_Finance_and_Legal,Case.Quality_Sales_Performance</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Customer_Support_Case,Case.Seller_Support_Case</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Closed</value>
+    </filters>
+    <filters>
+        <field>Origin_Skill__c</field>
+        <operation>equals</operation>
+        <value>SSA</value>
+    </filters>
+    <filters>
+        <field>CASES.ORIGIN</field>
+        <operation>equals</operation>
+        <value>Web,Seller Support Center</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>notEqual</operation>
+        <value>Back Ship Support,Back Repair Support,Laurent DE GREEF,Clement DION,Corentin PORTE,Mathieu HENERY</value>
+    </filters>
+    <filters>
+        <field>CASES.ORIGIN</field>
+        <operation>notEqual</operation>
+        <value>Email</value>
+    </filters>
+    <label>SSA - Closed 🌳</label>
+    <sharedTo>
+        <group>SSC_Seller_Support_Advisor</group>
+    </sharedTo>
+</ListView>

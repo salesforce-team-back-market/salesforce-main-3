@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Follow_up__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>Special_Process_Type__c = &quot;Follow-up&quot;  || Special_Process_Type__c = &quot;Follow-Up US&quot;  || Special_Process_Type__c = &quot;Back Camp US&quot;
+ &amp;&amp; 
+(
+ISPICKVAL( Stage__c , &quot;Draft&quot;)  || 
+ ISPICKVAL( Stage__c , &quot;Phase 1&quot;)  || 
+ ISPICKVAL( Stage__c , &quot;Phase 2&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Open Follow-up</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

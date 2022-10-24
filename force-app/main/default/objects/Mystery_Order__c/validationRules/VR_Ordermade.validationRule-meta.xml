@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Ordermade</fullName>
+    <active>true</active>
+    <description>Mandatory fields to move to &quot;Order made&quot;</description>
+    <errorConditionFormula>AND( ISCHANGED( Stage__c ) ,
+ISPICKVAL(Stage__c, &quot;Order made&quot;),
+ISBLANK( Order_ID__c ),
+ISBLANK( Price__c ),
+ISBLANK (  MO_performed_by__c  ) )</errorConditionFormula>
+    <errorMessage>Whooops... To move to &quot;Order made&quot;, you need to :
+1) Provide the order ID
+2) Provide the price of the product
+3) Inform who performed the MO</errorMessage>
+</ValidationRule>

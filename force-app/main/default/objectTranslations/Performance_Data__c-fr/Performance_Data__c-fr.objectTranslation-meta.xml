@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Performance Data</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Performances Data</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Business Performance Layout</layout>
+        <sections>
+            <label></label>
+            <section>Buyback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sales</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quality Performance Layout</layout>
+        <sections>
+            <label></label>
+            <section>Buyback Quality - KPIs</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sales</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Business</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Quality</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Minimum_Required_Fields_Checks</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Product_Cluster_to_Complete_Task</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+OR(Subject =&quot;Check Merchant Cluster&quot;, ISPICKVAL(Subject__c ,&quot;Check Merchant Cluster&quot;)),
+
+ISBLANK(TEXT( Product_Cluster__c) ),
+
+ISPICKVAL ( Status ,&quot;Completed&quot;)
+
+)</errorConditionFormula>
+    <errorMessage>In order to mark this case as Completed, please add the Product Cluster for this Merchant.</errorMessage>
+</ValidationRule>

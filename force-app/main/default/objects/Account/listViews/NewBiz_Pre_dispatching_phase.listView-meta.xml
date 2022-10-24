@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewBiz_Pre_dispatching_phase</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5) AND 6</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Trading_Name__c</columns>
+    <columns>First_contact_on__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Sub_Stage__c</columns>
+    <columns>Challenging_Point__c</columns>
+    <columns>Profile__c</columns>
+    <columns>Type_of_company__c</columns>
+    <columns>Country__c</columns>
+    <columns>Link_to_the_site__c</columns>
+    <columns>Link_to_the_main_competitor_marketplace__c</columns>
+    <columns>Diversification_tag__c</columns>
+    <columns>Type_of_product__c</columns>
+    <columns>Quality_of_contact__c</columns>
+    <columns>Prioritization_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.E_U</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Identification</value>
+    </filters>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>Eastern Europe,Northern Europe,Southern Europe,Western Europe</value>
+    </filters>
+    <filters>
+        <field>Diversification_tag__c</field>
+        <operation>contains</operation>
+        <value>Smartphone</value>
+    </filters>
+    <filters>
+        <field>Diversification_tag__c</field>
+        <operation>contains</operation>
+        <value>Core Electronics</value>
+    </filters>
+    <filters>
+        <field>Sub_Stage__c</field>
+        <operation>equals</operation>
+        <value>Pre-dispatching phase</value>
+    </filters>
+    <label>NewBiz DISCO - Pre-dispatching phase</label>
+</ListView>

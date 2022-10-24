@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Onboarding mail</name>
+    <style>freeForm</style>
+    <subject>Back Market x {!Account.Name} - Inscription Reprise</subject>
+    <textOnly>Bonjour {!Contact.FirstName} !
+
+Vous avez émis le souhait de faire de la reprise sur Back Market ! Pour finaliser au plus vite votre inscription sur la reprise, voici les étapes à suivre :
+
+
+
+1/ Comprendre comment fonctionne notre outil de reprise :
+
+Visionner la vidéo explicative de notre service https://www.youtube.com/watch?v=1n_XEUDYD0Q
+Visionner la vidéo explicative du Back Office reprise https://www.youtube.com/watch?v=wxNfQ2iSIPM
+
+2/ Réaliser les 4 actions suivantes :
+
+Remplir le questionnaire. Pour vous aider à répondre aux questions, je vous joins le résumé de la Charte pour la partie reprise.
+Renseigner votre adresse et votre carte bancaire dans l’onglet « OPTIONS » de votre Back Office Reprise.
+Signer le mandat SEPA ci-après pour éviter les plafonds de paiement par carte : Mandat SEPA pour la Reprise Back Market
+Créer au moins 3 annonces dans l&apos;onglet &quot;Annonces&quot; de votre Back Office.
+
+Nous pourrons ensuite vous faire un retour sur votre test et finaliser votre inscription.
+
+Je reste à disposition et je vous souhaite une excellente journée.
+
+
+Bien cordialement,
+
+
+Add the PJ &quot;Résumé de la charte&quot; you will find in this notion :
+
+Buyback Documents</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

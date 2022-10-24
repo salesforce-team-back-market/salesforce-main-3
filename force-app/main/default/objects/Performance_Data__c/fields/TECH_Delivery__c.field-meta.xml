@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Delivery__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Merchant__r.Cumulated_sales_last_30_days__c &lt;100  &amp;&amp;  Cases_Delivery__c &gt; VALUE( $Label.QualityCaseDelivery ), 1, 
+IF( Merchant__r.Cumulated_sales_last_30_days__c &gt;=100 &amp;&amp; Cases_Delivery__c &gt; VALUE( $Label.QualityCaseDelivery ) &amp;&amp;  Delivery_Problems__c &gt;= VALUE( $Label.QualityRateDelivery ), 1, 0 ) 
+),
+&apos;U_S&apos;,
+IF( Cases_Delivery__c&gt;= VALUE($Label.QualityCaseDeliveryUS) &amp;&amp; Delivery_Problems__c &gt;= VALUE($Label.QualityRateDeliveryUS) , 1, 0),
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH Delivery</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

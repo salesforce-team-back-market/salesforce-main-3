@@ -1,0 +1,37 @@
+<template>
+    <template if:true={article}>
+        <h1 class="slds-text-heading_large slds-p-bottom_small">{article.Title.value}</h1>
+        <div class="slds-p-bottom_medium slds-border_bottom">
+            <lightning-icon icon-name="utility:clock" size="x-small"></lightning-icon>
+            &nbsp;
+            <lightning-formatted-date-time value={article.LastPublishedDate.value}></lightning-formatted-date-time>
+        </div>
+        <div class="slds-p-top_medium slds-p-bottom_medium">
+            <lightning-formatted-rich-text
+                value={article.Details__c.value}
+            ></lightning-formatted-rich-text>
+        </div>
+        
+        <template if:true={filespresent}>
+            <h2 class="slds-text-heading_medium slds-p-bottom_medium">{fileslabel}</h2>
+            <lightning-layout>
+                <template for:each={files} for:item="f">
+                    <lightning-layout-item key={f.Id} size="2" large-device-size="2" medium-device-size="4" small-device-size="4" padding="around-medium" style="padding-left: 0;">
+                        {f.Title}
+                    </lightning-layout-item>
+                    <lightning-layout-item key={f.Id} padding="around-medium">
+                        <lightning-button-icon icon-name="utility:arrow_bottom"  variant="bare" type="button" onclick={getFile} data-id={f.Id}></lightning-button-icon>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout>
+        </template>
+
+        <template if:true={votes}>
+            <div class="slds-p-top_medium slds-border_top">
+                <lightning-button label={votes.Up} variant={upVoteVariant} icon-name="utility:like" icon-position="right" onclick={handleVote}  data-direction="Up"></lightning-button>
+                <lightning-button label={votes.Down} variant={downVoteVariant} icon-name="utility:dislike" icon-position="right" onclick={handleVote}  data-direction="Down"></lightning-button>
+            </div>
+        </template>
+
+    </template>
+</template>

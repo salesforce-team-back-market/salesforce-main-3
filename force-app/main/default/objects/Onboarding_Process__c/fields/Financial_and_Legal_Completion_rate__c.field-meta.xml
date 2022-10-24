@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_and_Legal_Completion_rate__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( ( RecordType.DeveloperName  = &quot;E_U&quot;) , (
+
+if( IBAN_uploaded__c =true, 6.7,0) + 
+if(ID_uploaded__c=true, 6.7,0) + 
+if(Status_uploaded__c=true, 6.7,0) + 
+if(KBIS_uploaded__c=true, 6.7,0) + 
+if(Merchant_VAT_Compliance_Uploaded__c=true, 6.7,0) + 
+if(KYCs_Checked__c=true, 6.7,0) + 
+if(IBAN_checked__c=true, 6.7,0) + 
+if(ID_checked__c=true, 6.7,0) + 
+if(Status_checked__c=true, 6.7,0) + 
+if(KBIS_checked__c=true, 6.7,0) + 
+if(Merchant_VAT_Compliance_Approved__c=true, 6.6,0) + 
+if(NOT(ISBLANK(IBAN__c)), 6.6,0) + 
+if(NOT(ISBLANK(BIC__c)), 6.6,0) +
+if(NOT(ISPICKVAL( Shipping_From__c , &quot;&quot;)), 6.6,0)+
+IF(ISPICKVAL( Blacklist_check__c , &quot;Validated by finance&quot;), 6.6,0)
+),
+
+
+if( (RecordType.DeveloperName = &quot;U_S&quot; ) ,
+ (
+if(ID_uploaded__c=true, 25,0) + 
+if(Status_uploaded__c=true, 25,0) + 
+if(Merchant_VAT_Compliance_Uploaded__c=true, 25,0) + 
+if(KYCs_Checked__c=true, 25,0) 
+), 0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Financial and Legal - Completion rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

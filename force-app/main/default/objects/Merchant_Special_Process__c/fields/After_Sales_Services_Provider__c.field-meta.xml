@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>After_Sales_Services_Provider__c</fullName>
+    <businessOwnerUser>arthur.veron@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <inlineHelpText>Who is managing merchants after-sales services (if it is outsourced)?</inlineHelpText>
+    <label>After-Sales Services Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arvato (Majorel)</fullName>
+                <default>false</default>
+                <label>Arvato (Majorel)</label>
+            </value>
+            <value>
+                <fullName>Sitel Group</fullName>
+                <default>false</default>
+                <label>Sitel Group</label>
+            </value>
+            <value>
+                <fullName>Web Help</fullName>
+                <default>false</default>
+                <label>Web Help</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

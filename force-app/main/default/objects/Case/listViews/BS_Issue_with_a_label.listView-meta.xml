@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BS_Issue_with_a_label</fullName>
+    <booleanFilter>(1 AND 2 AND 3 AND 5) OR (5 AND 6 AND 4)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Seller_Support_Case</value>
+    </filters>
+    <filters>
+        <field>Service__c</field>
+        <operation>equals</operation>
+        <value>BackShip</value>
+    </filters>
+    <filters>
+        <field>Case_Reason_Details__c</field>
+        <operation>equals</operation>
+        <value>Issue with a label</value>
+    </filters>
+    <filters>
+        <field>CASES.SUBJECT</field>
+        <operation>contains</operation>
+        <value>Issue to create BackShip Return Label</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Customer_Support_Case</value>
+    </filters>
+    <label>BS - Issue with a label 🌳</label>
+    <sharedTo>
+        <group>SSC_BackShip</group>
+    </sharedTo>
+</ListView>

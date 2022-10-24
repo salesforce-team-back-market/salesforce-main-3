@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Buyback_My_Merchants_in_Onb_QAM</fullName>
+    <columns>Kanban_Card_Link__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Zone__c</columns>
+    <columns>Has_Begun_On__c</columns>
+    <columns>Is_Expected_To_End_On__c</columns>
+    <columns>LAST_ACTIVITY</columns>
+    <columns>BizDev__c</columns>
+    <columns>Backcare__c</columns>
+    <columns>Quality_Charter__c</columns>
+    <columns>Quality_Survey_Status__c</columns>
+    <columns>Has_Merchant_Ready_Targeted_Countries__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Go_Live_granted__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Onboarding_Process__c.E_U_Buyback</value>
+    </filters>
+    <label>Buyback - My Merchants in Onb. (QAM)</label>
+</ListView>

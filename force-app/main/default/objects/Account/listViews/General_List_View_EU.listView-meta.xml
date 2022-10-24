@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_List_View_EU</fullName>
+    <columns>Back_Office_PK__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>BizDev__c</columns>
+    <columns>Profile__c</columns>
+    <columns>Story__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Zone__c</columns>
+    <columns>Number_of_Live_Targeted_Countries__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Zone__c</field>
+        <operation>equals</operation>
+        <value>fr-fr,es-es,it-it,fr-be,en-eu</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Negotiation,Onboarding</value>
+    </filters>
+    <filters>
+        <field>Back_Office_PK__c</field>
+        <operation>notEqual</operation>
+        <value>0</value>
+    </filters>
+    <label>General List View (E.U.)</label>
+</ListView>

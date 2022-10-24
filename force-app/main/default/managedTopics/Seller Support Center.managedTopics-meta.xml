@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Seller Support Center.Content:BuyBack - Quality Monitoring</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>BuyBack - Quality Monitoring</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Content:Customer Financial Services</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Customer Financial Services</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Content:Eco-Contribution</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Eco-Contribution</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Content:Legal</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Legal</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Content:News And Information About Our Catalog</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>News And Information About Our Catalog</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Featured:Back Market Services</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Back Market Services</name>
+        <parentName></parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Featured:BuyBack</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>BuyBack</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Featured:CCBM - Orders &amp; After Sales</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>CCBM - Orders &amp; After Sales</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Featured:Finance, Legal &amp; Tax</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Finance, Legal &amp; Tax</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Featured:Integration &amp; Connection</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Integration &amp; Connection</name>
+        <parentName></parentName>
+        <position>8</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Featured:Introduction To The Seller Support Center</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Introduction To The Seller Support Center</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Featured:News &amp; Information About Back Market</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>News &amp; Information About Back Market</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Featured:Products &amp; Listings</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Products &amp; Listings</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Featured:Quality &amp; Sales</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Quality &amp; Sales</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:API Connection</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>API Connection</name>
+        <parentName>Integration &amp; Connection</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Activation (Complete all Onboarding Steps in this section and start selling on BM)</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Activation (Complete all Onboarding Steps in this section and start selling on BM)</name>
+        <parentName>News &amp; Information About Back Market</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Back Market Services</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Back Market Services</name>
+        <parentName></parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BackCare</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BackCare</name>
+        <parentName>Back Market Services</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BackPack</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BackPack</name>
+        <parentName>Back Market Services</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BackParts</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BackParts</name>
+        <parentName>Back Market Services</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BackRepair</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BackRepair</name>
+        <parentName>Back Market Services</parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BackShip</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BackShip</name>
+        <parentName>Back Market Services</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BuyBack</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BuyBack</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BuyBack - My Orders</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BuyBack - My Orders</name>
+        <parentName>BuyBack</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BuyBack - Overview and Activation</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BuyBack - Overview and Activation</name>
+        <parentName>BuyBack</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BuyBack - Payments &amp; Invoicing</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BuyBack - Payments &amp; Invoicing</name>
+        <parentName>BuyBack</parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BuyBack - Process Standards</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BuyBack - Process Standards</name>
+        <parentName>BuyBack</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BuyBack - Products &amp; Listings</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BuyBack - Products &amp; Listings</name>
+        <parentName>BuyBack</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:BuyBack - Quality Monitoring</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>BuyBack - Quality Monitoring</name>
+        <parentName>BuyBack</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:CCBM - Customer Care By Back Market</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>CCBM - Customer Care By Back Market</name>
+        <parentName>CCBM - Orders &amp; After Sales</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:CCBM - Orders &amp; After Sales</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>CCBM - Orders &amp; After Sales</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Creation Of Specific Listings</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Creation Of Specific Listings</name>
+        <parentName>Products &amp; Listings</parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Customer Financial Services</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Customer Financial Services</name>
+        <parentName>Finance, Legal &amp; Tax</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Definitions</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Definitions</name>
+        <parentName>Products &amp; Listings</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Deposit</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Deposit</name>
+        <parentName>Finance, Legal &amp; Tax</parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Eco-Contribution</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Eco-Contribution</name>
+        <parentName>Finance, Legal &amp; Tax</parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Ensure Shipment &amp; Delivery</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Ensure Shipment &amp; Delivery</name>
+        <parentName>CCBM - Orders &amp; After Sales</parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:External Connections</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>External Connections</name>
+        <parentName>Integration &amp; Connection</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:FTP Connection</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FTP Connection</name>
+        <parentName>Integration &amp; Connection</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Finance, Legal &amp; Tax</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Finance, Legal &amp; Tax</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Guide To The Perfect Refurbisher</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Guide To The Perfect Refurbisher</name>
+        <parentName>Quality &amp; Sales</parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:How To Develop My Sales</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>How To Develop My Sales</name>
+        <parentName>Quality &amp; Sales</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Impact Champions Label</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Impact Champions Label</name>
+        <parentName>Back Market Services</parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Integration &amp; Connection</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Integration &amp; Connection</name>
+        <parentName></parentName>
+        <position>8</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Introduction To The Seller Support Center</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Introduction To The Seller Support Center</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Invoices &amp; Payments</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Invoices &amp; Payments</name>
+        <parentName>Finance, Legal &amp; Tax</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Legal</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Legal</name>
+        <parentName>Finance, Legal &amp; Tax</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Listing Creation</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Listing Creation</name>
+        <parentName>Products &amp; Listings</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Listing Update</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Listing Update</name>
+        <parentName>Products &amp; Listings</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Manage Customer Contact</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Manage Customer Contact</name>
+        <parentName>CCBM - Orders &amp; After Sales</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Manage My Orders</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Manage My Orders</name>
+        <parentName>CCBM - Orders &amp; After Sales</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Manage Returns</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Manage Returns</name>
+        <parentName>CCBM - Orders &amp; After Sales</parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:New Features &amp; Tools</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>New Features &amp; Tools</name>
+        <parentName>News &amp; Information About Back Market</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:News &amp; Information About Back Market</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>News &amp; Information About Back Market</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:News And Information About Our Catalog</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>News And Information About Our Catalog</name>
+        <parentName>News &amp; Information About Back Market</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:News Not To Be Missed</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>News Not To Be Missed</name>
+        <parentName>News &amp; Information About Back Market</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Our Free Listing Creation Service</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Our Free Listing Creation Service</name>
+        <parentName>Products &amp; Listings</parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Our Webinars</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Our Webinars</name>
+        <parentName>News &amp; Information About Back Market</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Practical Questions</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Practical Questions</name>
+        <parentName>Products &amp; Listings</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Prepare My Orders</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Prepare My Orders</name>
+        <parentName>CCBM - Orders &amp; After Sales</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Product Creation</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Product Creation</name>
+        <parentName>Products &amp; Listings</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Products &amp; Listings</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Products &amp; Listings</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Quality &amp; Sales</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Quality &amp; Sales</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Quality Monitoring</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Quality Monitoring</name>
+        <parentName>Quality &amp; Sales</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Quality, Ethics and Compliance Charters</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Quality, Ethics and Compliance Charters</name>
+        <parentName>Quality &amp; Sales</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Set Up My Back Office For Sales</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Set Up My Back Office For Sales</name>
+        <parentName>Quality &amp; Sales</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Setting Up Integrators</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Setting Up Integrators</name>
+        <parentName>Integration &amp; Connection</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Taxes</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Taxes</name>
+        <parentName>Finance, Legal &amp; Tax</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Technical Guide</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Technical Guide</name>
+        <parentName>Quality &amp; Sales</parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Testing My Connection</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Testing My Connection</name>
+        <parentName>Integration &amp; Connection</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Understand Everything About The SSC</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Understand Everything About The SSC</name>
+        <parentName>Introduction To The Seller Support Center</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Using And Managing The After-sales Area</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Using And Managing The After-sales Area</name>
+        <parentName>CCBM - Orders &amp; After Sales</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Using The Back Office</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Using The Back Office</name>
+        <parentName>Quality &amp; Sales</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Seller Support Center.Navigational:Warranty &amp; Withdrawal</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Warranty &amp; Withdrawal</name>
+        <parentName>CCBM - Orders &amp; After Sales</parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

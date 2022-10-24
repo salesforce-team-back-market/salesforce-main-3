@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Details__c</fullName>
+    <externalId>false</externalId>
+    <label>Additional Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Refund proceeded whereas there is a warranty exclusion</fullName>
+                <default>false</default>
+                <label>Refund proceeded whereas there is a warranty exclusion</label>
+            </value>
+            <value>
+                <fullName>The order was refunded and shouldn&apos;t have been</fullName>
+                <default>false</default>
+                <label>The order was refunded and shouldn&apos;t have been</label>
+            </value>
+            <value>
+                <fullName>Refund at your expense of a commercial gesture</fullName>
+                <default>false</default>
+                <label>Refund at your expense of a commercial gesture</label>
+            </value>
+            <value>
+                <fullName>Refund at your expense of shipping/delivery costs</fullName>
+                <default>false</default>
+                <label>Refund at your expense of shipping/delivery costs</label>
+            </value>
+            <value>
+                <fullName>Refund at your expense of repair costs</fullName>
+                <default>false</default>
+                <label>Refund at your expense of repair costs</label>
+            </value>
+            <value>
+                <fullName>I need to help manage BackCare request</fullName>
+                <default>false</default>
+                <label>I need to help manage BackCare request</label>
+            </value>
+            <value>
+                <fullName>BackCare is not managing my case properly / taking into account my feedback</fullName>
+                <default>false</default>
+                <label>BackCare is not managing my case properly / taking into account my feedback</label>
+            </value>
+            <value>
+                <fullName>I need help to manage a warranty exclusion</fullName>
+                <default>false</default>
+                <label>I need help to manage a warranty exclusion</label>
+            </value>
+            <value>
+                <fullName>I am not able to provide a proof of refund to the customer</fullName>
+                <default>false</default>
+                <label>I am not able to provide a proof of refund to the customer</label>
+            </value>
+            <value>
+                <fullName>I don&apos;t know how to manage one of my after-sales requests</fullName>
+                <default>false</default>
+                <label>I don&apos;t know how to manage one of my after-sales requests</label>
+            </value>
+            <value>
+                <fullName>Back Market is not applying the correct procedure</fullName>
+                <default>false</default>
+                <label>Back Market is not applying the correct procedure</label>
+            </value>
+            <value>
+                <fullName>I need to open a FBBM carrier investigation / I have an issue with a FBBM delivery</fullName>
+                <default>false</default>
+                <label>I need to open a FBBM carrier investigation / I have an issue with a FBBM delivery</label>
+            </value>
+            <value>
+                <fullName>I need help on a specific order</fullName>
+                <default>false</default>
+                <label>I need help on a specific order</label>
+            </value>
+            <value>
+                <fullName>Billing request related to the service</fullName>
+                <default>false</default>
+                <label>Billing request related to the service</label>
+            </value>
+            <value>
+                <fullName>I want to subscribe</fullName>
+                <default>false</default>
+                <label>I want to subscribe</label>
+            </value>
+            <value>
+                <fullName>My request concerns something else</fullName>
+                <default>false</default>
+                <label>My request concerns something else</label>
+            </value>
+            <value>
+                <fullName>I&apos;m facing issues to create a return/shipment label or to arrange a pick up</fullName>
+                <default>false</default>
+                <label>I&apos;m facing issues to create a return/shipment label or to arrange a pick up</label>
+            </value>
+            <value>
+                <fullName>I need to open / update a BackShip carrier investigation</fullName>
+                <default>false</default>
+                <label>I need to open / update a BackShip carrier investigation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

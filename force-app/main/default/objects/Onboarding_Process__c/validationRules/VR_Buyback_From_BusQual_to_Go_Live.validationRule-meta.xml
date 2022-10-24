@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Buyback_From_BusQual_to_Go_Live</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+ISCHANGED(Stage__c),
+ISPICKVAL ( Stage__c, &quot;Go-Live Prerequisites&quot; ),
+RecordType.DeveloperName = &quot;E_U_Buyback&quot;,
+OR(
+IBAN_checked__c = false,
+ID_checked__c = false,
+KBIS_checked__c = false,
+Merchant_VAT_Compliance_Approved__c = false,
+Status_checked__c = false,
+TC__c = false,
+KYCs_Checked__c = false,
+Quality_Charter__c = false,
+NOT(ISPICKVAL(Status_Quality_Test__c, &apos;All Good&apos;)),
+Merchant__r.Number_of_Targeted_Countries__c = 0),
+$User.ByPassValidationRules__c &lt;&gt; True
+)
+
+ || 
+
+AND (
+ISCHANGED(Stage__c),
+ISPICKVAL ( Stage__c, &quot;Go-Live Prerequisites&quot; ),
+RecordType.DeveloperName = &quot;U_S_Onboarding_Buyback&quot;,
+OR(
+IBAN_checked__c = false,
+ID_checked__c = false,
+KBIS_checked__c = false,
+Merchant_VAT_Compliance_Approved__c = false,
+Status_checked__c = false,
+TC__c = false,
+KYCs_Checked__c = false,
+Quality_Charter__c = false,
+NOT(ISPICKVAL(Status_Quality_Test__c, &apos;All Good&apos;)),
+Merchant__r.Number_of_Targeted_Countries__c = 0,
+ISNULL( Merchant__r.Certificate_expiration_date__c ),
+Merchant__r.Resale_Certificate__c = False),
+$User.ByPassValidationRules__c &lt;&gt; True
+)</errorConditionFormula>
+    <errorMessage>All mandatory fields are not populated. Please refer to Notion.</errorMessage>
+</ValidationRule>

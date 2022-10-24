@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service__c</fullName>
+    <externalId>false</externalId>
+    <label>Service</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BackShip</fullName>
+                <default>false</default>
+                <label>BackShip</label>
+            </value>
+            <value>
+                <fullName>BackCare</fullName>
+                <default>false</default>
+                <label>BackCare</label>
+            </value>
+            <value>
+                <fullName>BackParts</fullName>
+                <default>false</default>
+                <label>BackParts</label>
+            </value>
+            <value>
+                <fullName>BackPack</fullName>
+                <default>false</default>
+                <label>BackPack</label>
+            </value>
+            <value>
+                <fullName>FBBM</fullName>
+                <default>false</default>
+                <label>FBBM</label>
+            </value>
+            <value>
+                <fullName>BackRepair</fullName>
+                <default>false</default>
+                <label>BackRepair</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Back Market for Business</fullName>
+                <default>false</default>
+                <label>Back Market for Business</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

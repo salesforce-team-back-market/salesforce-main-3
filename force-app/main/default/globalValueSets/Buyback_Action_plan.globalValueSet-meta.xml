@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Be more polite</fullName>
+        <default>false</default>
+        <label>Be more polite</label>
+    </customValue>
+    <customValue>
+        <fullName>Be more precise</fullName>
+        <default>false</default>
+        <label>Be more precise</label>
+    </customValue>
+    <customValue>
+        <fullName>Answer faster</fullName>
+        <default>false</default>
+        <label>Answer faster</label>
+    </customValue>
+    <customValue>
+        <fullName>Can be solved by working on another KPI</fullName>
+        <default>false</default>
+        <label>Can be solved by working on another KPI</label>
+    </customValue>
+    <customValue>
+        <fullName>Related to a specific brand / model / product / category</fullName>
+        <default>false</default>
+        <label>Related to a specific brand / model / product / category</label>
+    </customValue>
+    <customValue>
+        <fullName>Related to a high counter-offer rate</fullName>
+        <default>false</default>
+        <label>Related to a high counter-offer rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Abusive counter-offer policy</fullName>
+        <default>false</default>
+        <label>Abusive counter-offer policy</label>
+    </customValue>
+    <customValue>
+        <fullName>Adjust prices of ads based on the description of the product</fullName>
+        <default>false</default>
+        <label>Adjust prices of ads based on the description of the product</label>
+    </customValue>
+    <customValue>
+        <fullName>Remind that the state of a non-functional product can be very diversified</fullName>
+        <default>false</default>
+        <label>Remind that the state of a non-functional product can be very diversified</label>
+    </customValue>
+    <customValue>
+        <fullName>Remind that oxidised products are accepted</fullName>
+        <default>false</default>
+        <label>Remind that oxidised products are accepted</label>
+    </customValue>
+    <customValue>
+        <fullName>Send precise messages when offer put on hold</fullName>
+        <default>false</default>
+        <label>Send precise messages when offer put on hold</label>
+    </customValue>
+    <customValue>
+        <fullName>Relaunch customers when pending for an answer</fullName>
+        <default>false</default>
+        <label>Relaunch customers when pending for an answer</label>
+    </customValue>
+    <customValue>
+        <fullName>Ask the merchant to handle all orders marked as &quot;Colis reçu dans l&apos;usine&quot;</fullName>
+        <default>false</default>
+        <label>Ask the merchant to handle all orders marked as &quot;Colis reçu dans l&apos;usine&quot;</label>
+    </customValue>
+    <customValue>
+        <fullName>Volume of recovery not adapted to the size of the structure</fullName>
+        <default>false</default>
+        <label>Volume of recovery not adapted to the size of the structure</label>
+    </customValue>
+    <customValue>
+        <fullName>Adapt current organization to handle the volume</fullName>
+        <default>false</default>
+        <label>Adapt current organization to handle the volume</label>
+    </customValue>
+    <customValue>
+        <fullName>Better plan departures on vacation</fullName>
+        <default>false</default>
+        <label>Better plan departures on vacation</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical issue in the BO - Doesn&apos;t receive a notification for each message</fullName>
+        <default>false</default>
+        <label>Technical issue in the BO - Doesn&apos;t receive a notification for each message</label>
+    </customValue>
+    <customValue>
+        <fullName>Be more reactive</fullName>
+        <default>false</default>
+        <label>Be more reactive</label>
+    </customValue>
+    <customValue>
+        <fullName>I have explained the Quality Charter</fullName>
+        <default>false</default>
+        <label>I have explained the Quality Charter</label>
+    </customValue>
+    <customValue>
+        <fullName>I asked the merchant to respect our delais/rules</fullName>
+        <default>false</default>
+        <label>I asked the merchant to respect our delais/rules</label>
+    </customValue>
+    <masterLabel>Buyback - Action plan</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

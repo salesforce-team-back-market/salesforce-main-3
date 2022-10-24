@@ -1,0 +1,51 @@
+<template>
+    <template if:true={topic}>
+        <h1 class="slds-text-heading_large slds-p-bottom_medium">{topic.name}</h1>
+        <lightning-layout multiple-rows="true">
+            <template if:true={topic.topics}>
+                <template for:each={topic.topics} for:item="t">
+                    <lightning-layout-item size="12" medium-device-size="6" padding="around-small" key={t.topicId}>
+                        <div class="topic">
+                            <h2 class="slds-text-heading_medium slds-p-bottom_large">{t.name}</h2>
+                            <div class="topic-articles">
+                                <template for:each={t.articles} for:item="a">
+                                    <div key={a.Id} onclick={viewArticle} data-url={a.UrlName} class="article">
+                                        <lightning-layout vertical-align="center">
+                                            <lightning-layout-item flexibility="auto">
+                                                <h3 class="slds-text-heading_small" data-url={a.UrlName}>{a.Title}</h3>
+                                                <p data-url={a.UrlName}>{a.ArticleTotalViewCount} {views} • <lightning-formatted-date-time value={a.LastModifiedDate}></lightning-formatted-date-time></p>
+                                            </lightning-layout-item>
+                                            <lightning-layout-item flexibility="auto, no-grow">
+                                                <i class="arrow"></i>
+                                            </lightning-layout-item>
+                                        </lightning-layout>
+                                    </div>
+                                </template>
+                            </div>
+                            <div style="text-align:right; width:100%; padding:0;">
+                                <lightning-button label={t.viewArticlesLink}  onclick={viewTopic} data-id={t.topicId} icon-position="right" icon-name="utility:forward" class="view-articles-btn"></lightning-button>
+                            </div>
+                        </div>
+                    </lightning-layout-item>
+                </template>
+            </template>
+            <template if:true={topic.articles}>
+                <template for:each={topic.articles} for:item="a">
+                    <div class="article-list-item-container" key={a.Id} >
+                        <div onclick={viewArticle} data-url={a.UrlName} class="article-list-item">
+                            <lightning-layout vertical-align="center">
+                                <lightning-layout-item flexibility="auto">
+                                    <h3 class="slds-text-heading_small" data-url={a.UrlName}>{a.Title}</h3>
+                                    <p data-url={a.UrlName}>{a.ArticleTotalViewCount} {views} • <lightning-formatted-date-time value={a.LastModifiedDate}></lightning-formatted-date-time></p>
+                                </lightning-layout-item>
+                                <lightning-layout-item flexibility="auto, no-grow">
+                                    <i class="arrow"></i>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </div>
+                    </div>
+                </template>
+            </template>
+        </lightning-layout>
+    </template>
+</template>

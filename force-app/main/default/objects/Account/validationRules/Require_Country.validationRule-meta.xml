@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Country</fullName>
+    <active>true</active>
+    <description>Require Country for all stages after Identification.</description>
+    <errorConditionFormula>ISBLANK( TEXT(Country__c) )
+&amp;&amp;
+OR( ISPICKVAL( Stage__c ,&apos;First-contact&apos;),
+ISPICKVAL( Stage__c ,&apos;First-contact&apos;),
+ISPICKVAL( Stage__c ,&apos;Negotiation&apos;),
+ISPICKVAL( Stage__c ,&apos;Onboarding&apos;),
+ISPICKVAL( Stage__c ,&apos;N.M.O.&apos;),
+ISPICKVAL( Stage__c ,&apos;Run&apos;)
+)
+&amp;&amp;  $User.ByPassValidationRules__c != true</errorConditionFormula>
+    <errorDisplayField>Country__c</errorDisplayField>
+    <errorMessage>Please select country for this merchant.</errorMessage>
+</ValidationRule>

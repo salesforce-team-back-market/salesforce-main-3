@@ -1,0 +1,19 @@
+Hola {!Contact.FirstName},
+
+He sido alertado de que ha entrado en la fase de "Última Oportunidad" de nuestro período de vigilancia por incumplimiento de nuestra Carta de Calidad. Habíamos definido un plan de acción para cumplir con nuestros estándares de calidad detallados en nuestra Carta.
+
+Desafortunadamente, la situación no mejoró, por lo que usted entró en la "Última Oportunidad" de nuestro Período de Monitoreo y sus ventas han sido limitadas. A partir de ahora, trabajaremos aún más duro en el cumplimiento total para levantar su limitación de ventas y asegurar una experiencia óptima para el cliente. 
+
+El objetivo sigue siendo el mismo y debe ser alcanzado antes del final de este período de Última Oportunidad, es decir, antes de {!Alert__c.ETA__c}.
+
+Para ayudarle en esta tarea, aquí están los factores que suelen conducir a esto:
+SAV ###
+SAV ##
+SAV ##
+
+Como se detalla en nuestra carta de calidad, es imperativo... (escribir lo que la carta requiere)
+
+Por supuesto, sigo disponible para discutirlos cara a cara y acompañarlo en su plan de acción.
+
+Que tenga un buen día,
+{{{Sender.Signature}}}

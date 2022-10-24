@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>BB.FR.ON.MCON</name>
+    <style>freeForm</style>
+    <subject>Back Market. Appel {!Account.Name}.</subject>
+    <textOnly>Bonjour {!Contact.FirstName},
+
+
+
+Nous vous avons appelé!
+
+Mais vous devez être occupé.
+
+
+
+Cliquez sur  Appelez-moi et réservez un créneau dans le calendrier pour aujourd&apos;hui ou demain afin que nous puissions vous rappeler.
+
+Nous voulons vous aider à compléter le processus et commencer la reprise.
+
+
+
+JE COMMENCE LA REPRISE SUR BACK MARKET
+
+
+
+A bientôt!
+
+
+L&apos;Équipe Back Market</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

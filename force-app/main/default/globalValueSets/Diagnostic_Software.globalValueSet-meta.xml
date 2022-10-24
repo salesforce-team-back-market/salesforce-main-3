@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DeviceIQ</fullName>
+        <default>false</default>
+        <label>DeviceIQ</label>
+    </customValue>
+    <customValue>
+        <fullName>Experitest</fullName>
+        <default>false</default>
+        <label>Experitest</label>
+    </customValue>
+    <customValue>
+        <fullName>Future Dial</fullName>
+        <default>false</default>
+        <label>Future Dial</label>
+    </customValue>
+    <customValue>
+        <fullName>Greystone</fullName>
+        <default>false</default>
+        <label>Greystone</label>
+    </customValue>
+    <customValue>
+        <fullName>Internal / Custom Built</fullName>
+        <default>false</default>
+        <label>Internal / Custom Built</label>
+    </customValue>
+    <customValue>
+        <fullName>Manual</fullName>
+        <default>false</default>
+        <label>Manual</label>
+    </customValue>
+    <customValue>
+        <fullName>MCE</fullName>
+        <default>false</default>
+        <label>MCE</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobix</fullName>
+        <default>false</default>
+        <label>Mobix</label>
+    </customValue>
+    <customValue>
+        <fullName>NSYS</fullName>
+        <default>false</default>
+        <label>NSYS</label>
+    </customValue>
+    <customValue>
+        <fullName>PhoneCheck</fullName>
+        <default>false</default>
+        <label>PhoneCheck</label>
+    </customValue>
+    <customValue>
+        <fullName>Piceasoft</fullName>
+        <default>false</default>
+        <label>Piceasoft</label>
+    </customValue>
+    <customValue>
+        <fullName>Prevashio</fullName>
+        <default>false</default>
+        <label>Prevashio</label>
+    </customValue>
+    <customValue>
+        <fullName>Provider</fullName>
+        <default>false</default>
+        <label>Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Selendroid</fullName>
+        <default>false</default>
+        <label>Selendroid</label>
+    </customValue>
+    <customValue>
+        <fullName>Test IO</fullName>
+        <default>false</default>
+        <label>Test IO</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>CheckESN</fullName>
+        <default>false</default>
+        <label>CheckESN</label>
+    </customValue>
+    <customValue>
+        <fullName>Recipero</fullName>
+        <default>false</default>
+        <label>Recipero</label>
+    </customValue>
+    <customValue>
+        <fullName>Securaze</fullName>
+        <default>false</default>
+        <label>Securaze</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Nevasystem</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nevasystem</label>
+    </customValue>
+    <customValue>
+        <fullName>Asset Science</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Asset Science</label>
+    </customValue>
+    <customValue>
+        <fullName>Blackbelt</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Blackbelt</label>
+    </customValue>
+    <customValue>
+        <fullName>Blancco</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Blancco</label>
+    </customValue>
+    <customValue>
+        <fullName>Back Market</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Back Market</label>
+    </customValue>
+    <customValue>
+        <fullName>Cellbrite</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cellbrite</label>
+    </customValue>
+    <masterLabel>Diagnostic Software</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

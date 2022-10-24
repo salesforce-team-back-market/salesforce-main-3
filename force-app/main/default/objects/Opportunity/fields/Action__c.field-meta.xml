@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action__c</fullName>
+    <businessOwnerUser>ana.ordeig@backmarket.com</businessOwnerUser>
+    <externalId>false</externalId>
+    <label>Action</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Action Plan Needed</fullName>
+                <default>false</default>
+                <label>Action Plan Needed</label>
+            </value>
+            <value>
+                <fullName>Add Listing</fullName>
+                <default>false</default>
+                <label>Add Listing</label>
+            </value>
+            <value>
+                <fullName>Address BuyBack GMV Drop</fullName>
+                <default>false</default>
+                <label>Address BuyBack GMV Drop</label>
+            </value>
+            <value>
+                <fullName>Address Churning Merchant</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Address Churning Merchant</label>
+            </value>
+            <value>
+                <fullName>Address GMV Drop</fullName>
+                <default>false</default>
+                <label>Address GMV Drop</label>
+            </value>
+            <value>
+                <fullName>Address GMV drop BF Week</fullName>
+                <default>false</default>
+                <label>Address GMV drop BF Week</label>
+            </value>
+            <value>
+                <fullName>Address Listing Drop</fullName>
+                <default>false</default>
+                <label>Address Listing Drop</label>
+            </value>
+            <value>
+                <fullName>Address Quality Contributors</fullName>
+                <default>false</default>
+                <label>Address Quality Contributors</label>
+            </value>
+            <value>
+                <fullName>Avoid merchant limitation before BF</fullName>
+                <default>false</default>
+                <label>Avoid merchant limitation before BF</label>
+            </value>
+            <value>
+                <fullName>BackImpact Label</fullName>
+                <default>false</default>
+                <label>BackImpact Label</label>
+            </value>
+            <value>
+                <fullName>Cross Border</fullName>
+                <default>false</default>
+                <label>Cross Border</label>
+            </value>
+            <value>
+                <fullName>Event Category Launch</fullName>
+                <default>false</default>
+                <label>Event Category Launch</label>
+            </value>
+            <value>
+                <fullName>Grow Business</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Grow Business</label>
+            </value>
+            <value>
+                <fullName>Improve Commitment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Improve Commitment</label>
+            </value>
+            <value>
+                <fullName>Improve efficiency / reduce costs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Improve efficiency / reduce costs</label>
+            </value>
+            <value>
+                <fullName>Improve Price Sharpness</fullName>
+                <default>false</default>
+                <label>Improve Price Sharpness</label>
+            </value>
+            <value>
+                <fullName>Improve quality performance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Improve quality performance</label>
+            </value>
+            <value>
+                <fullName>Improve Relevant Selection</fullName>
+                <default>false</default>
+                <label>Improve Relevant Selection</label>
+            </value>
+            <value>
+                <fullName>Improve TCB</fullName>
+                <default>false</default>
+                <label>Improve TCB</label>
+            </value>
+            <value>
+                <fullName>Lower Price</fullName>
+                <default>false</default>
+                <label>Lower Price</label>
+            </value>
+            <value>
+                <fullName>Lower Price at Competition Level</fullName>
+                <default>false</default>
+                <label>Lower Price at Competition Level</label>
+            </value>
+            <value>
+                <fullName>More Stock</fullName>
+                <default>false</default>
+                <label>More Stock</label>
+            </value>
+            <value>
+                <fullName>Push Actions</fullName>
+                <default>false</default>
+                <label>Push Actions</label>
+            </value>
+            <value>
+                <fullName>Push as Deal</fullName>
+                <default>false</default>
+                <label>Push as Deal</label>
+            </value>
+            <value>
+                <fullName>Push BuyBack</fullName>
+                <default>false</default>
+                <label>Push BuyBack</label>
+            </value>
+            <value>
+                <fullName>Push country(s) live</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Push country(s) live</label>
+            </value>
+            <value>
+                <fullName>Push good pricing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Push good pricing</label>
+            </value>
+            <value>
+                <fullName>Push Listing Live in the missing countries</fullName>
+                <default>false</default>
+                <label>Push Listing Live in the missing countries</label>
+            </value>
+            <value>
+                <fullName>Push price recommendation to increase acceptance rate</fullName>
+                <default>false</default>
+                <label>Push price recommendation to increase acceptance rate</label>
+            </value>
+            <value>
+                <fullName>Push Product Categories</fullName>
+                <default>false</default>
+                <label>Push Product Categories</label>
+            </value>
+            <value>
+                <fullName>Push Product Category</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Push Product Category</label>
+            </value>
+            <value>
+                <fullName>Push Services</fullName>
+                <default>false</default>
+                <label>Push Services</label>
+            </value>
+            <value>
+                <fullName>Push shipping time to 48h for DGBX</fullName>
+                <default>false</default>
+                <label>Push shipping time to 48h for DGBX</label>
+            </value>
+            <value>
+                <fullName>Push Stock</fullName>
+                <default>false</default>
+                <label>Push Stock</label>
+            </value>
+            <value>
+                <fullName>Push the product live in all the countries</fullName>
+                <default>false</default>
+                <label>Push the product live in all the countries</label>
+            </value>
+            <value>
+                <fullName>Push to Grade Very Good</fullName>
+                <default>false</default>
+                <label>Push to Grade Very Good</label>
+            </value>
+            <value>
+                <fullName>Reduce Untracked Rate</fullName>
+                <default>false</default>
+                <label>Reduce Untracked Rate</label>
+            </value>
+            <value>
+                <fullName>Secure Stock</fullName>
+                <default>false</default>
+                <label>Secure Stock</label>
+            </value>
+            <value>
+                <fullName>Service activation</fullName>
+                <default>false</default>
+                <label>Service activation</label>
+            </value>
+            <value>
+                <fullName>Stock for BF week</fullName>
+                <default>false</default>
+                <label>Stock for BF week</label>
+            </value>
+            <value>
+                <fullName>Unlimit merchants before BF</fullName>
+                <default>false</default>
+                <label>Unlimit merchants before BF</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Business Alerts</controllingFieldValue>
+            <valueName>Address BuyBack GMV Drop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Alerts</controllingFieldValue>
+            <valueName>Address GMV Drop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Alerts</controllingFieldValue>
+            <valueName>Address GMV drop BF Week</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Alerts</controllingFieldValue>
+            <valueName>Address Listing Drop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Alerts</controllingFieldValue>
+            <valueName>Address Quality Contributors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <valueName>Action Plan Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <valueName>Avoid merchant limitation before BF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <valueName>Improve TCB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <valueName>Push BuyBack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <valueName>Push price recommendation to increase acceptance rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <controllingFieldValue>Business Advice</controllingFieldValue>
+            <valueName>Push Product Categories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Push Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <valueName>Push shipping time to 48h for DGBX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <valueName>Service activation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <valueName>Unlimit merchants before BF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Advice</controllingFieldValue>
+            <valueName>Improve Price Sharpness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Advice</controllingFieldValue>
+            <valueName>Improve Relevant Selection</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

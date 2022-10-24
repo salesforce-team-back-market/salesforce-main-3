@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Social Enterprise</fullName>
+        <default>false</default>
+        <label>Social Enterprise</label>
+    </customValue>
+    <customValue>
+        <fullName>Brand</fullName>
+        <default>false</default>
+        <label>Brand</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyback</fullName>
+        <default>false</default>
+        <label>Buy&amp;Sell Store</label>
+    </customValue>
+    <customValue>
+        <fullName>Classic</fullName>
+        <default>false</default>
+        <label>Classic</label>
+    </customValue>
+    <customValue>
+        <fullName>Company Group</fullName>
+        <default>false</default>
+        <label>Company Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Large Corporation</fullName>
+        <default>false</default>
+        <label>Large Corporation</label>
+    </customValue>
+    <customValue>
+        <fullName>Medium Company</fullName>
+        <default>false</default>
+        <label>Medium Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Administration</fullName>
+        <default>false</default>
+        <label>Public Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>Retailer</fullName>
+        <default>false</default>
+        <label>Retailer</label>
+    </customValue>
+    <customValue>
+        <fullName>Small Company</fullName>
+        <default>false</default>
+        <label>Small Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </customValue>
+    <customValue>
+        <fullName>Telecommunications</fullName>
+        <default>false</default>
+        <label>Telecommunications</label>
+    </customValue>
+    <customValue>
+        <fullName>Enterprise</fullName>
+        <default>false</default>
+        <label>Enterprise</label>
+    </customValue>
+    <customValue>
+        <fullName>Platform E-commerce</fullName>
+        <default>false</default>
+        <label>Platform E-commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Broker</fullName>
+        <default>false</default>
+        <label>Broker</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </customValue>
+    <customValue>
+        <fullName>IT Asset Disposal</fullName>
+        <default>false</default>
+        <label>IT Asset Disposal</label>
+    </customValue>
+    <customValue>
+        <fullName>Leasing</fullName>
+        <default>false</default>
+        <label>Leasing</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketplace</fullName>
+        <default>false</default>
+        <label>Marketplace</label>
+    </customValue>
+    <customValue>
+        <fullName>Micro-Mobility</fullName>
+        <default>false</default>
+        <label>Micro-Mobility</label>
+    </customValue>
+    <customValue>
+        <fullName>Online Retailer</fullName>
+        <default>false</default>
+        <label>Online Retailer</label>
+    </customValue>
+    <customValue>
+        <fullName>Recycler</fullName>
+        <default>false</default>
+        <label>Recycler</label>
+    </customValue>
+    <customValue>
+        <fullName>Refurbisher</fullName>
+        <default>false</default>
+        <label>Refurbisher</label>
+    </customValue>
+    <customValue>
+        <fullName>Repairer</fullName>
+        <default>false</default>
+        <label>Repairer</label>
+    </customValue>
+    <customValue>
+        <fullName>Reverse Logistics</fullName>
+        <default>false</default>
+        <label>Reverse Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Trader</fullName>
+        <default>false</default>
+        <label>Trader</label>
+    </customValue>
+    <customValue>
+        <fullName>Wholesaler</fullName>
+        <default>false</default>
+        <label>Wholesaler</label>
+    </customValue>
+    <customValue>
+        <fullName>Strategic Partnership</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Strategic Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>Backwatch</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Backwatch</label>
+    </customValue>
+    <customValue>
+        <fullName>Innovation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Innovation</label>
+    </customValue>
+    <masterLabel>Type of company - Picklist</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

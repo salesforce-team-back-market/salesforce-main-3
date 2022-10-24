@@ -1,0 +1,18 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span id="docs-internal-guid-e285873f-7fff-0ca1-2b12-6ee5791fec3b" style=""><p dir="ltr" style="color: rgb(0, 0, 0); line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"><span style="font-size: 11pt; font-family: Arial; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Bonjour {!Contact.FirstName},</span></p><p dir="ltr" style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt;"><p style="color: rgb(0, 0, 0);">Merci d'avoir pris le temps de répondre à notre questionnaire Qualité reprise. Comme expliqué en amont celui-ci nous permet de comprendre les pratiques de l'entreprise et de nous assurer que celles-ci sont en adéquation/accord avec notre Charte Qualité.</p><p style="color: rgb(0, 0, 0);"><br></p>
+<p style="color: rgb(0, 0, 0);">Je suis cependant dans le regret de vous annoncer que votre test n’a pas été validé. En effet, la charte ne semble pas tout à fait comprise. <strong>Votre erreur se situe dans un de ces différents points cruciaux pour passer en ligne sur la reprise</strong> :</p>
+<ul style="color: rgb(0, 0, 0);">
+<li>Vous devez répondre aux clients en 1 jour ouvré</li>
+<li>Vous devez renvoyer le produit au client en 2 jours ouvrés en cas de refus de contre-proposition</li>
+<li>A réception d'un produit non fonctionnel, vous devez déclencher le paiement en 2 jours ouvrés</li>
+<li>L'état de la batterie n'est pas un motif de contre-proposition</li>
+<li>Vous devez vérifier et conserver les numéros de série/IMEI des produits rachetés</li>
+</ul>
+<p style="color: rgb(0, 0, 0);">Nous allons alors vous laisser le temps de relire la <strong>Charte Qualité en pièce jointe</strong>.&nbsp;</p><p style="">Vous serez autorisé à repasser le questionnaire dès le <font color="#ff0000">{{insert date}}</font> via ce lien : <font color="#000000"><a href="https://backster.typeform.com/to/pC7RQf"></a></font><a href="https://backster.typeform.com/to/pC7RQf" style="color: rgb(0, 0, 0);">https://backster.typeform.com/to/pC7RQf</a></p>
+<p style="color: rgb(0, 0, 0);">Dans cet intervalle de temps, je peux vous aider à clarifier les points qui vous semblent peu clairs et vous pouvez compléter les autres étapes de la procédure d'inscription.</p>
+<p style="color: rgb(0, 0, 0);">En vous souhaitant une bonne journée.</p><p style="color: rgb(0, 0, 0);"><br></p>
+<p style="color: rgb(0, 0, 0);">Cordialement,</p></p></span>]]></td>
+</tr>
+</table>

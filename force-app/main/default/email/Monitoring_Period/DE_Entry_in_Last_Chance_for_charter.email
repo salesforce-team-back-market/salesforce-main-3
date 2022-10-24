@@ -1,0 +1,19 @@
+Hallo {!Contact.FirstName},
+
+Ich bin darauf aufmerksam gemacht worden, dass Sie in die Phase der "letzten Chance" unserer Beobachtungsphase für die Nichteinhaltung unserer Qualitätscharta eingetreten sind. Wir hatten einen Aktionsplan definiert, der umgesetzt werden sollte, um unsere in unserer Charta festgelegten Qualitätsstandards zu erfüllen.
+
+Leider hat sich die Situation nicht verbessert, so dass Sie in die "letzte Chance" unserer Beobachtungsphase eingetreten sind und Ihre Verkäufe von jetzt an begrenzt werden. Wir werden noch härter daran arbeiten müssen, die Vorschriften vollständig einzuhalten, um Ihre Verkaufsbeschränkungen aufzuheben und ein optimales Kundenerlebnis zu gewährleisten. 
+
+Das Ziel bleibt dasselbe und muss vor dem Ende dieses "letzten Chance"-Zeitraums, d.h. vor dem {!Alert__c.ETA__c}, erreicht werden.
+
+Um Ihnen bei dieser Aufgabe zu helfen, sind hier die Gründe aufgeführt, die zu dieser Beobachtungsphase geführt haben:
+SAV ###
+SAV ##
+SAV ##
+
+Wie in unserer Qualitätscharta ausführlich dargelegt, ist es zwingend notwendig, ... (schreiben Sie auf, was die Charta verlangt)
+
+Selbstverständlich stehe ich Ihnen weiterhin zur Verfügung, auch gern in persönlichen Gesprächen, um Sie bei Ihrem Aktionsplan zu unterstützen.
+
+Ich wünsche Ihnen einen schönen Tag,
+{{{Sender.Signature}}}

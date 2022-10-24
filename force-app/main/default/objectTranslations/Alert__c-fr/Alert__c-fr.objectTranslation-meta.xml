@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Alert</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Alerts</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Business Alerts</layout>
+        <sections>
+            <label></label>
+            <section>Alert Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Alert Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Financial Alerts</layout>
+        <sections>
+            <label></label>
+            <section>Alert Details - Merchant Debt</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Alert Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>External recovery agency</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Invoice Compliance Audit</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Legal &amp; Safety Issue</layout>
+        <sections>
+            <label></label>
+            <section>Alert Details - Severe Issue</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Alert Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MOP Layout</layout>
+        <sections>
+            <label></label>
+            <section>Alert Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Alert information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Monitoring Period</layout>
+        <sections>
+            <label></label>
+            <section>Action Plan</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Alert Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Alert Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Monitoring Period - Buyback</layout>
+        <sections>
+            <label></label>
+            <section>Action Plan</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Alert Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Alert Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Severe Issue</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>EU_Invoice_Compliance_Audit</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Support_Ticket</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>US_Invoice_Compliance_Audit</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Business_Alerts</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Financial_Issue</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Invoice_Compliance_Audit</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>MOP_alert</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Monitoring_Period_Buyback</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Monitoring_Period_Sales</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Severe_Issue</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_MP_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Stage_Change_to_Saved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Require_Order_Id</name>
+    </validationRules>
+</CustomObjectTranslation>

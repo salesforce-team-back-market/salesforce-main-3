@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Source_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Referral Source Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Seller</fullName>
+                <default>false</default>
+                <label>Seller</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>AVASK</fullName>
+                <default>false</default>
+                <label>AVASK</label>
+            </value>
+            <value>
+                <fullName>Axe Logistics</fullName>
+                <default>false</default>
+                <label>Axe Logistics</label>
+            </value>
+            <value>
+                <fullName>ESG</fullName>
+                <default>false</default>
+                <label>ESG</label>
+            </value>
+            <value>
+                <fullName>Lian Lian</fullName>
+                <default>false</default>
+                <label>Lian Lian</label>
+            </value>
+            <value>
+                <fullName>Octopia</fullName>
+                <default>false</default>
+                <label>Octopia</label>
+            </value>
+            <value>
+                <fullName>Cubyn</fullName>
+                <default>false</default>
+                <label>Cubyn</label>
+            </value>
+            <value>
+                <fullName>Payoneer</fullName>
+                <default>false</default>
+                <label>Payoneer</label>
+            </value>
+            <value>
+                <fullName>WorldFirst</fullName>
+                <default>false</default>
+                <label>WorldFirst</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_elements__c</fullName>
+    <externalId>false</externalId>
+    <formula>If (OR( ISPICKVAL(Business_Name__r.Zone__c , &apos;fr-fr&apos;) ,  ISPICKVAL(Business_Name__r.Zone__c , &apos;fr-be&apos;)),
+
+(If( Merchant_information__c = false, &quot;Informations vendeur &quot;, &quot;&quot;)
+ + 
+If(  Customer_information__c = false, &quot;- Informations client &quot;, &quot;&quot;)
++
+If(OR( Number_of_the_invoice__c  = false  , Date_of_the_invoice__c = false ), &quot;- Détail de facturation &quot;, &quot;&quot;)
++
+If(OR(  VAT_Regiment_details__c   = false  ,  ISPICKVAL(VAT_Type__c, &apos;None&apos;) , ISPICKVAL(VAT_Type__c, &apos;&apos;) ), &quot;- Détail sur la prestation &quot;, &quot;&quot;)),
+
+
+If (OR(NOT( ISPICKVAL(Business_Name__r.Zone__c , &apos;fr-fr&apos;)) ,  NOT(ISPICKVAL(Business_Name__r.Zone__c , &apos;fr-be&apos;))),
+
+(If( Merchant_information__c = false, &quot;Seller information &quot;, &quot;&quot;)
+ + 
+If(  Customer_information__c = false, &quot;- Customer information &quot;, &quot;&quot;)
++
+If(OR( Number_of_the_invoice__c  = false  , Date_of_the_invoice__c = false ), &quot;- Billing details &quot;, &quot;&quot;)
++
+If(OR(  VAT_Regiment_details__c   = false  ,  ISPICKVAL(VAT_Type__c, &apos;None&apos;) , ISPICKVAL(VAT_Type__c, &apos;&apos;) ), &quot;- Details on service provision &quot;, &quot;&quot;)),
+&quot;&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Missing elements</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Products_Without_Action__c</fullName>
+    <externalId>false</externalId>
+    <label>Opportunity Products Without Action</label>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Stage__c</field>
+        <operation>equals</operation>
+        <value>No Action by Due Date</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Comment_for_Risky_Merchant</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL( Rating ,&quot;Risk Fraud&quot;),
+ISPICKVAL( Rating ,&quot;High Churn Risk&quot;),
+ISPICKVAL( Rating ,&quot;Potential Churn Risk&quot;)),
+ISBLANK( Risk_Details__c ))</errorConditionFormula>
+    <errorDisplayField>Risk_Details__c</errorDisplayField>
+    <errorMessage>Please add details about the risk of your merchant.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Prioritization_E_U_U_S</fullName>
+    <columns>Back_Office_PK__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>BizDev__c</columns>
+    <columns>Profile__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Type_of_product__c</columns>
+    <columns>Prioritization_Score__c</columns>
+    <columns>Prioritization_Score_Feedback__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CurrentUser_BD__c</field>
+        <operation>equals</operation>
+        <value>yes</value>
+    </filters>
+    <filters>
+        <field>Prioritization_Score__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Lead Prioritization (E.U. &amp; U.S.)</label>
+</ListView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Daily_Business_Perf_Data_Last_week</fullName>
+    <columns>Date__c</columns>
+    <columns>Amount_refunded_last_20_days__c</columns>
+    <columns>Date_last_order_buyback__c</columns>
+    <columns>Number_of_bids_on_diversification__c</columns>
+    <columns>Number_of_Buyback_orders_Global__c</columns>
+    <columns>Number_of_Buyback_orders_paid__c</columns>
+    <columns>Number_of_Buyback_orders_received__c</columns>
+    <columns>Promised_GMV__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Performance_Data__c.Business</value>
+    </filters>
+    <filters>
+        <field>Temporal_Granularity__c</field>
+        <operation>equals</operation>
+        <value>Monthly</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_WEEK</value>
+    </filters>
+    <label>Daily Business Perf Data Last week</label>
+</ListView>

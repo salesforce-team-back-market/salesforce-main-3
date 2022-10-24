@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_in_EN</name>
+        <label>Send Email in EN</label>
+        <locationX>1117</locationX>
+        <locationY>1038</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_Body_EN</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>Var_List_Contacts</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>activation-eu@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_Subject_EN</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_in_FR</name>
+        <label>Send Email in FR</label>
+        <locationX>1128</locationX>
+        <locationY>880</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_Body_FR</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>Var_List_Contacts</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>activation-eu@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_Subject_FR</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>53.0</apiVersion>
+    <assignments>
+        <name>Assign_Contacts_to_variable</name>
+        <label>Assign - Contacts to variable</label>
+        <locationX>503</locationX>
+        <locationY>1160</locationY>
+        <assignmentItems>
+            <assignToReference>Var_List_Contacts</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_on_contacts.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Count_Contact_in_Var</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Var_List_Contacts</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Decision_Limit_isn_t_reached</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Merchant_Future_Partnership</name>
+        <label>Assign - Merchant Future Partnership</label>
+        <locationX>459</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>Merchant_To_Update.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Merchant__r.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Merchant_To_Update.Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Future partnership</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Merchant_To_Update.Master_Challenging_Point__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Onboarding</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Merchant_To_Update.Challenging_Point__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>SOL KO</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Onboarding_Process</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Stage_Abandonned</name>
+        <label>Assign - Stage Abandonned</label>
+        <locationX>333</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>Onboarding_Process_to_update.Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Abandonned</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Onboarding_Process_to_update.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Merchant_Future_Partnership</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Sub_stage_Inactive</name>
+        <label>Assign - Sub-stage Inactive</label>
+        <locationX>333</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>Onboarding_Process_to_update.Sub_stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Inactive</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Onboarding_Process_to_update.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Onboarding_Process</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Decision_Is_merchant_from_UK</name>
+        <label>Decision - Is merchant from UK</label>
+        <locationX>871</locationX>
+        <locationY>1053</locationY>
+        <defaultConnector>
+            <targetReference>Send_Email_in_EN</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Merchant_is_from_UK</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.BillingCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>United Kingdom</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_TC_UK</targetReference>
+            </connector>
+            <label>Merchant is from UK</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Is_Onboarding_Active</name>
+        <label>Decision - Is Onboarding Active</label>
+        <locationX>165</locationX>
+        <locationY>961</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Onboarding_Active</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sub_stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Active</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_all_contacts</targetReference>
+            </connector>
+            <label>Onboarding Active</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Limit_isn_t_reached</name>
+        <label>Decision - Limit isn&apos;t reached</label>
+        <locationX>690</locationX>
+        <locationY>1159</locationY>
+        <defaultConnector>
+            <targetReference>Decision_Send_communication</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Limit_isn_t_reached</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Count_Contact_in_Var</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>5.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_on_contacts</targetReference>
+            </connector>
+            <label>Limit isn&apos;t reached</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Merchant_inactive</name>
+        <label>Decision - Merchant inactive</label>
+        <locationX>167</locationX>
+        <locationY>593</locationY>
+        <defaultConnector>
+            <targetReference>Decision_Is_Onboarding_Active</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Change_Onboarding_to_Inactive</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Last_Breath_Date__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Date_5_Weeks_Ago</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Active</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Sub_stage_Inactive</targetReference>
+            </connector>
+            <label>Change Onboarding to Inactive</label>
+        </rules>
+        <rules>
+            <name>Change_Onboarding_to_Abandonned</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sub_stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Inactive</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Has_Begun_On__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Date_6_Months_Ago</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Stage_Abandonned</targetReference>
+            </connector>
+            <label>Change Onboarding to Abandonned</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Merchant_to_update</name>
+        <label>Decision - Merchant to update</label>
+        <locationX>726</locationX>
+        <locationY>588</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Merchant_to_be_updated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Merchant_To_Update.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Merchant</targetReference>
+            </connector>
+            <label>Merchant to be updated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Send_communication</name>
+        <label>Decision - Send communication</label>
+        <locationX>686</locationX>
+        <locationY>962</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Send_in_FR</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Onboarding_language__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>French</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_in_FR</targetReference>
+            </connector>
+            <label>Send in FR</label>
+        </rules>
+        <rules>
+            <name>Send_in_EN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Onboarding_language__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>French</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_Is_merchant_from_UK</targetReference>
+            </connector>
+            <label>Send in EN</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Stop_the_flow</name>
+        <label>Decision - Stop the flow</label>
+        <locationX>168</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Flow_can_continue</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.BackWatch_Onboarding_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Type S</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Weekday</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>5.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_Merchant_inactive</targetReference>
+            </connector>
+            <label>Flow can continue</label>
+        </rules>
+    </decisions>
+    <description>Address is good.</description>
+    <formulas>
+        <name>Date_5_Weeks_Ago</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate}-35</expression>
+    </formulas>
+    <formulas>
+        <name>Date_6_Months_Ago</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate}-180</expression>
+    </formulas>
+    <formulas>
+        <name>Doc_Sent_For_Validation_ENTemplate</name>
+        <dataType>String</dataType>
+        <expression>if({!$Record.Merchant__r.BillingCountry}= &apos;United Kingdom&apos;, {!Doc_Sent_For_Validation_UK}, {!Doc_Sent_For_Validation_EUNonUK})</expression>
+    </formulas>
+    <formulas>
+        <name>Doc_Sent_For_Validation_EUNonUK</name>
+        <dataType>String</dataType>
+        <expression>if({!Documents_Uploaded}= &apos;KO&apos;, &apos;KO&apos;, 
+if({!$Record.KYCs_Checked__c}=True, &apos;OK&apos;, &apos;In Progress - En attente&apos;))</expression>
+    </formulas>
+    <formulas>
+        <name>Doc_Sent_For_Validation_UK</name>
+        <dataType>String</dataType>
+        <expression>if({!Documents_Uploaded}=&apos;KO&apos;, &apos;KO&apos;, if(ISPICKVAL({!Get_TC_UK.KYBs_Adyen__c}, &apos;Requested&apos;), &apos;In Progress - En attente&apos;, &apos;OK&apos;))</expression>
+    </formulas>
+    <formulas>
+        <name>Doc_Uploaded_Count</name>
+        <dataType>Number</dataType>
+        <expression>if({!$Record.KBIS_uploaded__c} = True, 1, 0)
++ if({!$Record.ID_uploaded__c} = True, 1, 0)
++ if({!$Record.Status_uploaded__c} = True, 1, 0)
++ if({!$Record.Merchant_VAT_Compliance_Uploaded__c} = True, 1, 0)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>Doc_Validated_ENTemplate</name>
+        <dataType>String</dataType>
+        <expression>if({!$Record.Merchant__r.BillingCountry}=&apos;United Kingdom&apos;, {!Doc_Validated_UK}, {!Doc_Validated_EUNonUK})</expression>
+    </formulas>
+    <formulas>
+        <name>Doc_Validated_EUNonUK</name>
+        <dataType>String</dataType>
+        <expression>if({!Documents_Validated_Count}= 1, &apos;In progress - En attente&apos;, if({!Documents_Validated_Count}= 5, &apos;OK&apos;, if({!Documents_Validated_Count}&lt; 1, &apos;KO&apos;, &quot;-&quot;)))</expression>
+    </formulas>
+    <formulas>
+        <name>Doc_Validated_UK</name>
+        <dataType>String</dataType>
+        <expression>if(ISPICKVAL({!Get_TC_UK.KYBs_Adyen__c}, &apos;Accepted&apos;), &apos;OK&apos;, if(ISPICKVAL({!Get_TC_UK.KYBs_Adyen__c}, &apos;Rejected&apos;), &apos;KO&apos;, if({!Doc_Sent_For_Validation_UK}=&apos;OK&apos; ,&apos;In progress - En attente&apos;, &apos;KO&apos;)))</expression>
+    </formulas>
+    <formulas>
+        <name>Documents_Uploaded</name>
+        <dataType>String</dataType>
+        <expression>if({!Doc_Uploaded_Count}=4, &apos;OK&apos;, &apos;KO&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>Documents_Validated_Count</name>
+        <dataType>Number</dataType>
+        <expression>if({!$Record.KYCs_Checked__c}= true , 1 ,0)
++ if({!$Record.KBIS_checked__c}= true , 1 ,0)
++ if({!$Record.ID_checked__c}= true , 1 ,0)
++ if({!$Record.Status_checked__c}= true , 1 ,0)
++ if({!$Record.Merchant_VAT_Compliance_Approved__c}= true , 1 ,0)
++ if(NOT(ISNULL({!$Record.KYB_check_Refusal_reason__c})) , -1000 ,0)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>Listings</name>
+        <dataType>String</dataType>
+        <expression>if({!$Record.Listings_and_of_units__c} = True, &apos;OK&apos;, &apos;KO&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>My_Profile</name>
+        <dataType>String</dataType>
+        <expression>if({!$Record.My_profile__c} = True, &apos;OK&apos;, &apos;KO&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>Paypal</name>
+        <dataType>String</dataType>
+        <expression>if({!$Record.Payment_methods__c} = True, &apos;OK&apos;, &apos;KO&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>Quality_Test</name>
+        <dataType>String</dataType>
+        <expression>if(ISPICKVAL({!$Record.Status_Quality_Test__c}, &apos;All Good&apos;), &apos;OK&apos;, &apos;KO&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>Returnaddress</name>
+        <dataType>String</dataType>
+        <expression>if({!$Record.Addresses__c}= True, &apos;OK&apos;, &apos;KO&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>Shipping_Methods</name>
+        <dataType>String</dataType>
+        <expression>if({!$Record.Shipping_methods__c}= True, &apos;OK&apos;, &apos;KO&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>TCs_Signed</name>
+        <dataType>String</dataType>
+        <expression>if({!$Record.Merchant__r.TC__c}= True, &apos;OK&apos;, &apos;KO&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>Weekday</name>
+        <dataType>Number</dataType>
+        <expression>WEEKDAY({!$Flow.CurrentDate})</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Scheduled Flow - Onboarding Moning update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Scheduled Flow - Onboarding Moning update</label>
+    <loops>
+        <name>Loop_on_contacts</name>
+        <label>Loop on contacts</label>
+        <locationX>509</locationX>
+        <locationY>960</locationY>
+        <collectionReference>Get_all_contacts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Contacts_to_variable</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Decision_Send_communication</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_all_contacts</name>
+        <label>Get all contacts</label>
+        <locationX>385</locationX>
+        <locationY>961</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_on_contacts</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Merchant__r.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>HasOptedOutOfEmail</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_TC_UK</name>
+        <label>Get TC UK</label>
+        <locationX>877</locationX>
+        <locationY>1192</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_Email_in_EN</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Merchant__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Merchant__r.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Country__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>United Kingdom</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Targeted_Country__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Merchant</name>
+        <label>Update Merchant</label>
+        <locationX>971</locationX>
+        <locationY>588</locationY>
+        <inputReference>Merchant_To_Update</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Onboarding_Process</name>
+        <label>Update Onboarding Process</label>
+        <locationX>585</locationX>
+        <locationY>586</locationY>
+        <connector>
+            <targetReference>Decision_Merchant_to_update</targetReference>
+        </connector>
+        <inputReference>Onboarding_Process_to_update</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>51</locationX>
+        <locationY>51</locationY>
+        <connector>
+            <targetReference>Decision_Stop_the_flow</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ongoing</stringValue>
+            </value>
+        </filters>
+        <object>Onboarding_Process__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2021-12-14</startDate>
+            <startTime>07:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>TextTemplate_Body_EN</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hello {!$Record.Merchant__r.Name},&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Check the status of the steps detailed below.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Once all steps are OK, we will activate your account. &lt;/b&gt;Please complete all KO Steps.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;To be able to access all relevant information, create an account on our Seller Support Center (&lt;a href=&quot;https://www.notion.so/backmarket/SSC-Access-6bb8b3b0dc884621b0866a3d27e415be&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;check the guide if you need help&lt;/a&gt;).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;1. &lt;/b&gt;&lt;a href=&quot;https://backmarket.notion.site/Back-Office-Access-and-T-Cs-signature-95901e31f91f4a5c9c4fa1e75b18bbb0&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Back Office Access and T&amp;amp;Cs signature&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;T&amp;amp;Cs signed &lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!TCs_Signed}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;2. &lt;/b&gt;&lt;a href=&quot;https://backmarket.notion.site/My-Profile-4dd4feffbdd6416393fdeee78aadb16e&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;My Profile&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;All information is complete in “My Profile”&lt;b style=&quot;font-size: 14px;&quot;&gt; &lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!My_Profile}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;3. &lt;/b&gt;&lt;a href=&quot;https://backmarket.notion.site/Quality-standars-Onboarding-Questionnaire-f9b547db2a5d4de1bcbeee1b42ff32d2&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Quality standards&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://backster.typeform.com/to/KIIJ12La&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Onboarding Questionnaire&lt;/a&gt; &lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Quality_Test}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;Your P.K. is {!$Record.Merchant__r.Back_Office_PK__c}&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;4. &lt;/b&gt;&lt;a href=&quot;https://backmarket.notion.site/My-address-for-returns-2d3edb15193244878da1c550a7813e1b&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;My address for returns&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Address configured&lt;b style=&quot;font-size: 14px;&quot;&gt; &lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Returnaddress}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;5. &lt;/b&gt;&lt;a href=&quot;https://www.notion.so/backmarket/Get-your-payments-Legal-and-finance-validation-de12939e34b84f18a8683513ccffcedc&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Get your payments. Legal and finance validation&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;All documents provided &lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Documents_Uploaded}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Documents sent to validation &lt;b style=&quot;font-size: 14px;&quot;&gt;[{!Doc_Sent_For_Validation_ENTemplate}]&amp;nbsp;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Account validated by BM &lt;b style=&quot;font-size: 14px;&quot;&gt;[{!Doc_Validated_ENTemplate}]&amp;nbsp;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;6. &lt;/b&gt;&lt;a href=&quot;https://backmarket.notion.site/Create-your-listings-56f6a664f2b14c1cb9e711131db8488d&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Create your listings&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Listings and stocks created and enough for start selling &lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Listings}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;7. &lt;/b&gt;&lt;a href=&quot;https://backmarket.notion.site/Shipping-Aftersales-Payment-Methods-6c82af0e21db40be905c2bfdcf057fc0&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Shipping, Aftersales &amp;amp; Payment Methods&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Shipping methods created&lt;b style=&quot;font-size: 14px;&quot;&gt; &lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Shipping_Methods}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Check how aftersales work with BackCare [No action required]&lt;/li&gt;&lt;li&gt;Connect PayPal &lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Paypal}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;8. &lt;/b&gt;&lt;a href=&quot;https://backmarket.notion.site/You-must-learn-about-b8456f89e0ff48b399125cf90ad85e84&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;You must learn about&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Invoice compliance&lt;/li&gt;&lt;li&gt;Cross Border&lt;/li&gt;&lt;li&gt;BuyBox - How does it work?&lt;/li&gt;&lt;li&gt;How do Quality KPIs work?&lt;/li&gt;&lt;li&gt;Deferred Payout&lt;/li&gt;&lt;li&gt;Optional comments for your listings&lt;/li&gt;&lt;li&gt;BM Services&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;If all Steps are OK and we didn’t contact you to finish the process and activate your account, please contact us&lt;/b&gt; (activation-eu@backmarket.com).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If any of the Steps are KO, please complete the Step (&lt;a href=&quot;https://backmarket.notion.site/English-All-E-U-countries-7a08d3e21b784a60b1eec479195282eb&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Step by Step Guide&lt;/a&gt;).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Merchant Activation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Back Market&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextTemplate_Body_FR</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Bonjour {!$Record.Merchant__r.Name},&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Vérifiez le statut des étapes détaillées ci-dessous.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Une fois que toutes les étapes sont OK, nous activerons votre compte.&lt;/b&gt; Veuillez compléter les étapes KO.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Pour pouvoir accéder à toutes les informations importantes, créez un compte sur notre Seller Support Center (&lt;a href=&quot;https://backmarket.notion.site/Copy-of-SSC-Access-398bfc427190412891f9e29f146dd306&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;consultez le guide si vous avez besoin d&apos;aide&lt;/a&gt;).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;1. &lt;/b&gt;&lt;a href=&quot;https://www.notion.so/backmarket/Back-Office-Access-and-T-Cs-signature-ea502585541043d8b75702e62405bf2d&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Accès au Back Office et signature des CGUs&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;CGUs signées &lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!TCs_Signed}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;2. &lt;/b&gt;&lt;a href=&quot;https://www.notion.so/backmarket/Copy-of-My-Profile-bbdd658eb50744498d341b8d7d033600&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Mon Profil&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Toutes les informations complétées dans “Mon Profil” &lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!My_Profile}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;3. &lt;/b&gt;&lt;a href=&quot;https://www.notion.so/backmarket/Copy-of-Quality-standars-Onboarding-Questionnaire-1e9d4aad4f324ce69bb2f1c28e8f1f68&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Standards qualités&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://backster.typeform.com/to/HNX2Hwdg&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Questionnaire d’Onboarding&lt;/a&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt; &lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Quality_Test}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Votre P.K. est {!$Record.Merchant__r.Back_Office_PK__c}&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;4. &lt;/b&gt;&lt;a href=&quot;https://www.notion.so/backmarket/Copy-of-My-address-for-returns-5eba507f3b30482eb29cbeed6c7e8426&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Mon adresse de retour&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Adresse configurée &lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Returnaddress}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;5. &lt;/b&gt;&lt;a href=&quot;https://www.notion.so/backmarket/Copy-of-Get-your-payments-Legal-and-finance-validation-446d83414814468bb543cdac15001f03&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Obtenir vos paiements. Validation légale et financière&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tous les documents fournis &lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Documents_Uploaded}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Documents envoyés pour validation&lt;b style=&quot;font-size: 14px;&quot;&gt; &lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Doc_Sent_For_Validation_EUNonUK}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Compte validé par Back Market &lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Doc_Validated_EUNonUK}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;6. &lt;/b&gt;&lt;a href=&quot;https://www.notion.so/backmarket/Copy-of-Create-your-listings-d302b6aeac8f4860a4ffc69369303e81&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Créez vos annonces&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Annonces et stocks créés et suffisants pour commencer la vente&lt;b style=&quot;font-size: 14px;&quot;&gt; &lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Listings}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;7. &lt;/b&gt;&lt;a href=&quot;https://www.notion.so/backmarket/Copy-of-Shipping-Aftersales-Payment-Methods-880b95ae877b45998c560843f00e35ce&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Livraison, après-vente et méthodes de paiement&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Moyens de livraison paramétrés &lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Shipping_Methods}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;li&gt;Vérifiez comment fonctionne le service après-vente avec BackCare [Aucune action requise]&lt;/li&gt;&lt;li&gt;Connectez PayPal &lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[&lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Paypal}&lt;/b&gt;&lt;b style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;]&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;8. &lt;/b&gt;&lt;a href=&quot;https://www.notion.so/backmarket/Copy-of-You-must-learn-about-45b6b39a3c294c98a70bbc9402cdc749&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Vous devez connaître&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Conformité des factures&lt;/li&gt;&lt;li&gt;International&lt;/li&gt;&lt;li&gt;BuyBox - Comment cela fonctionne-t-il ?&lt;/li&gt;&lt;li&gt;Comment fonctionnent les indicateurs qualité ?&lt;/li&gt;&lt;li&gt;Paiement différé&lt;/li&gt;&lt;li&gt;Commentaires facultatifs pour vos annonces&lt;/li&gt;&lt;li&gt;Services Back Market&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Si toutes les étapes sont correctes (OK) et que nous ne vous avons pas contacté pour terminer le processus et activer votre compte, veuillez nous contacter.&lt;/b&gt; (activation-eu@backmarket.com).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Si l&apos;une des étapes est KO, veuillez la compléter. (&lt;a href=&quot;https://backmarket.notion.site/Fran-ais-Tous-les-pays-U-E-deb74b5b39b44f6da6334142ab3da548&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Guide étape par étape&lt;/a&gt;)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Merchant Activation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Back Market&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextTemplate_Subject_EN</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Back Market - Onboarding - Weekly Follow up - Step by Step - Professional seller - Back Market</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextTemplate_Subject_FR</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Onboarding - Suivi -  Etape par étape - Vendeur professionnel - Back Market</text>
+    </textTemplates>
+    <variables>
+        <name>Count_Contact_in_Var</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>Merchant_To_Update</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>Onboarding_Process_to_update</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Onboarding_Process__c</objectType>
+    </variables>
+    <variables>
+        <name>Var_List_Contacts</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

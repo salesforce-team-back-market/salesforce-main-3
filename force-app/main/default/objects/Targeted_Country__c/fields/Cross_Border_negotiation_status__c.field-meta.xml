@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cross_Border_negotiation_status__c</fullName>
+    <description>Use this field to store the status of your negotiation to open this Targeted Country.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to store the status of your negotiation to open this Targeted Country.</inlineHelpText>
+    <label>Cross Border negotiation status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1. Not contacted</fullName>
+                <default>false</default>
+                <label>1. Not contacted</label>
+            </value>
+            <value>
+                <fullName>2. Negotiation ongoing</fullName>
+                <default>false</default>
+                <label>2. Negotiation ongoing</label>
+            </value>
+            <value>
+                <fullName>3. Negotiation successful</fullName>
+                <default>false</default>
+                <label>3. Negotiation successful</label>
+            </value>
+            <value>
+                <fullName>4. Negotiation paused</fullName>
+                <default>false</default>
+                <label>4. Negotiation paused</label>
+            </value>
+            <value>
+                <fullName>5.a. Refused: Logistic costs</fullName>
+                <default>false</default>
+                <label>5.a. Refused: Logistic costs</label>
+            </value>
+            <value>
+                <fullName>5.b. Refused: Additional returns management</fullName>
+                <default>false</default>
+                <label>5.b. Refused: Additional returns management</label>
+            </value>
+            <value>
+                <fullName>5.c. Refused: Financial reasons</fullName>
+                <default>false</default>
+                <label>5.c. Refused: Financial reasons</label>
+            </value>
+            <value>
+                <fullName>5.d. Refused: VAT</fullName>
+                <default>false</default>
+                <label>5.d. Refused: VAT</label>
+            </value>
+            <value>
+                <fullName>5.e. Refused: New payment method</fullName>
+                <default>false</default>
+                <label>5.e. Refused: New payment method</label>
+            </value>
+            <value>
+                <fullName>5.f. Refused: Currency</fullName>
+                <default>false</default>
+                <label>5.f. Refused: Currency</label>
+            </value>
+            <value>
+                <fullName>5.g. Refused: BackCare too expensive</fullName>
+                <default>false</default>
+                <label>5.g. Refused: BackCare too expensive</label>
+            </value>
+            <value>
+                <fullName>5.h. Refused: BackShip too expensive</fullName>
+                <default>false</default>
+                <label>5.h. Refused: BackShip too expensive</label>
+            </value>
+            <value>
+                <fullName>5.i. Refused: Not interested</fullName>
+                <default>false</default>
+                <label>5.i. Refused: Not interested</label>
+            </value>
+            <value>
+                <fullName>5.j. Refused: Other reason</fullName>
+                <default>false</default>
+                <label>5.j. Refused: Other reason</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+Hi {!Receiving_User.FirstName},
+
+We're happy to inform you that we received your request for new access to the Seller Support Center.
+
+To get started and finalize your account, go to {!Community_Url}.
+
+You will first have to chose your password. Your username is {!Receiving_User.Username}.
+
+Once your account was created, you can start submit your requests to our support team directly from this new interface.
+
+Happy to see you there!
+
+Your Seller Support Center Team

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_Counter_offer_non_functional__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Merchant__r.RecordType.DeveloperName,
+&apos;E_U&apos;,
+IF( Cases_Counter_offer_rate_non_functional__c&gt;=VALUE($Label.MP_EntryCases_EU_Buyback_Counter_Proposal_Non_Functional_rate) &amp;&amp; Counter_offer_rate_non_functional__c &gt;=VALUE($Label.MP_EntryRate_EU_Buyback_Counter_Proposal_Non_Functional_rate), 1, 0 )
+,
+&apos;U_S&apos;,
+IF( Cases_Counter_offer_rate_non_functional__c&gt;=VALUE($Label.MP_EntryCases_US_Buyback_Counter_Proposal_Non_Functional_rate) &amp;&amp; Counter_offer_rate_non_functional__c &gt;=VALUE($Label.MP_EntryRate_US_Buyback_Counter_Proposal_Non_Functional_rate), 1, 0),
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TECH_Counter_offer_non_functional</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

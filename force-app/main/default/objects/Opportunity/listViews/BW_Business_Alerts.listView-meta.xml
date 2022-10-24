@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BW_Business_Alerts</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Link_to_the_Source__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Decrease_in__c</columns>
+    <columns>Decrease_in_number__c</columns>
+    <columns>KPI_Issue__c</columns>
+    <columns>KPI_Treshold__c</columns>
+    <columns>of_KPI_Contribution_in_the_SSM_Pool__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Supply_Opportunities</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Business Alerts</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>contains</operation>
+        <value>Pierre Arnaud</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Closed Won,Closed Lost,Closed</value>
+    </filters>
+    <label>BW - Business Alerts</label>
+</ListView>

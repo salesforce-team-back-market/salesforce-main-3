@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zone__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>CASE( TEXT(Merchant__r.Zone__c), 
+&quot;fr-fr&quot;,&quot;FR&quot;,  
+&quot;es-es&quot;,&quot;ES&quot;, 
+&quot;it-it&quot;,&quot;IT&quot;, 
+&quot;be-be&quot;,&quot;BE&quot;, 
+&quot;de-de&quot;,&quot;DE&quot;, 
+&quot;en-eu&quot;,&quot;EN&quot;, 
+&quot;en-us&quot;,&quot;US&quot;,
+&quot;nl-nl&quot;,&quot;NL&quot;,
+&quot;pt-pt&quot;,&quot;PT&quot;,
+&quot;en-ie&quot;,&quot;IE&quot;, 
+&quot;el-gr&quot;, &quot;GR&quot;,
+&quot;fi-fi&quot;, &quot;FI&quot;,
+&quot;sk-sk&quot;, &quot;SK&quot;,	
+
+TEXT(Merchant__r.Zone__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Zone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

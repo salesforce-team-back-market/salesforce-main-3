@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BuyBack_Bill_Pocess_Bill_Information</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT( $User.ByPassValidationRules__c ),
+RecordType.DeveloperName =&quot;BuyBack_Bill_Process&quot; ,
+Bill_Sent__c =TRUE,
+OR(
+ISBLANK( Bill_Amount__c),
+ISBLANK( Bill_Name__c )))</errorConditionFormula>
+    <errorMessage>Please add Bill Name and Amount.</errorMessage>
+</ValidationRule>

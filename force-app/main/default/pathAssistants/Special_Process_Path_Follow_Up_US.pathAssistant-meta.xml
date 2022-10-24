@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Merchant_Special_Process__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Special Process Path (Follow-Up US)</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;To move on to the next Stage, you need to submit this record for approval.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Make sure to add all required info to launch a Follow-up.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Failed = This Follow-up wasn&amp;#39;t a success. An exit draft has been created.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Failed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Phase 1 = Follow-up 1&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Phase 1</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Phase 2 = Follow-up 2&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Phase 2</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Phase 3 = Follow-up 3&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Phase 3</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Refused = The Referent Champion refused to add this merchant in Follow-up&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Refused</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Saved = This Follow-up was a success&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Saved</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Follow_Up_U_S</recordTypeName>
+</PathAssistant>

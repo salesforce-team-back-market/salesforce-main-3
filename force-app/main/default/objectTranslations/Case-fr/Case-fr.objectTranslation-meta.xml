@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>BM4B Support Case</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BackWatch - Merchant contact</layout>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Merchant and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BuyBack Bill Process</layout>
+        <sections>
+            <label></label>
+            <section>Merchant and Contact Detals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BuyBack Bill Process V2</layout>
+        <sections>
+            <label></label>
+            <section>Merchant and Contact Detals</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case - Admin</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Language Test</layout>
+        <sections>
+            <label></label>
+            <section>Answers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Merchant claim</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Qualification Form</layout>
+        <sections>
+            <label></label>
+            <section>After-Sales Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Company</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Competition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Integration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Listing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Product Test</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Supply</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quality Support cases</layout>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quality Test - Buyback</layout>
+        <sections>
+            <label></label>
+            <section>Answers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Score</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quality Test - Sales</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Questions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Score</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quality Test - US Sales</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Questions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Score</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Technical fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSC - After-Sales Management</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fraud Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSC - Back Office, Integrators &amp; Technical Support</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSC - BackMarket Services</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSC - Buyback</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSC - Catalog</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSC - Customer Portal Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSC - Customer User Layout (Public)</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSC - Finance and Legal</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSC - Generic Case</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SSC - Quality &amp; Sales Performance</layout>
+        <sections>
+            <label></label>
+            <section>Account and Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Seller Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SalesforceSupport</layout>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SF Team section</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Add_Comment</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Case_Details_Description</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Case_topic_and_sub_topic</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Claim_Details</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Claim_Management</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Close_Case</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Comment</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Key_Dates</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Language_Test</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Quality_Test</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Quality_Test_Business_part</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Quality_Test_No_Go</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Quality_Test_Quality_part</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Reply_inbound_email</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Test_Buyback</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Update_Assignee</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Update_Case</name>
+    </quickActions>
+    <recordTypes>
+        <label>Litige SAV (Incompréhension, Désaccord,...)</label>
+        <name>After_Sales_Management</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>BM4B_Support_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>BackWatch_Merchant_contact</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>BuyBack_Bill_Process</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>BuyBack_Bill_Process_V2</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Customer_Support_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Merchant_Claim</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Qualification_Form</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Qualité et Performance Commerciale</label>
+        <name>Quality_Sales_Performance</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Quality_Support_Cases</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Quality_Test</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Quality_Test_Buyback</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Quality_Test_Language_test</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Quality_Test_US_Sales</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SSC_Back_Market_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SSC_Back_Office_Integrators_Technical_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SSC_Buyback_only_available_for_EU_sellers</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SSC_Catalog</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SSC_Finance_and_Legal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Seller_Support_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Support</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BuyBack_Bill_Pocess_Bill_Information</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BuyBack_Bill_Pocess_Prevent_StatusChange</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BuyBack_Bill_Pocess_Require_Stage_V2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BuyBack_Bill_Pocess_SEPA_Offline</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BuyBack_Bill_Pocess_SEPA_Offline_TRUE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BuyBack_Bill_Pocess_SEPA_Offline_V2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Buyback_Bill_Process_Require_Bill_Amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_CHANGE_STAGE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_CLOSED_CLAIM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_Carrier_Investigation_Documents</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_LT_RefusalReason</name>
+    </validationRules>
+    <webLinks>
+        <label>Fermer les requêtes</label>
+        <name>Close_Cases</name>
+    </webLinks>
+</CustomObjectTranslation>

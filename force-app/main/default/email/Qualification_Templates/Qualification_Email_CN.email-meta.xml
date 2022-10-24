@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Qualification Email (CN)</name>
+    <style>freeForm</style>
+    <subject>Back Market x {!Account.Name}: 注册完成!</subject>
+    <textOnly>亲爱的 {!Contact.FirstName},
+
+非常感谢你在Back Market平台的注册！注册名称为 {!Account.Name}.
+
+为了尽快可以开启你们欧洲市场的销售之旅，我们现在需要更多了解你们{!Account.Name} 公司.
+
+烦请把以下表格填好 （只需5分钟）：
+点此开始
+
+我们需要您提供您在Back Market的账号号码 （PK号码）
+如果您对您的PK号码不知情，请回答：{!Account.Back_Office_PK__c}
+
+在审阅过所有信息后，我们的招商团队专员会与你们在24到48小时内取得联系。
+
+期待与您的合作！
+
+感谢，
+Back Market团队
+
+
+卖家帮助中心
+卖家后台</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

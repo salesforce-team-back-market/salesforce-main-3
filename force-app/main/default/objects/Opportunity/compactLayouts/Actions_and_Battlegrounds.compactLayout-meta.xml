@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actions_and_Battlegrounds</fullName>
+    <fields>Name</fields>
+    <fields>AccountId</fields>
+    <fields>P_K__c</fields>
+    <fields>OwnerId</fields>
+    <fields>Opportunity_Success_Rate__c</fields>
+    <label>Actions and Battlegrounds</label>
+</CompactLayout>

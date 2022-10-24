@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_3_weeks_group__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( TODAY() - Date__c &gt; 21, 
+      &apos;N/A&apos;, 
+      IF ( TODAY() - Date__c &lt; 0, 
+           &apos;N/A&apos;, 
+           IF ( TODAY() - Date__c &lt;= 7,
+                &apos;S0&apos;, 
+                IF ( TODAY() - Date__c &lt;= 14, 
+                     &apos;S-1&apos;, 
+                     &apos;S-2&apos; ) ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last 3 weeks group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unsubscribe_reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Unsubscribe reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service is too expensive</fullName>
+                <default>false</default>
+                <label>Service is too expensive</label>
+            </value>
+            <value>
+                <fullName>I already have an in-house repair resources</fullName>
+                <default>false</default>
+                <label>I already have an in-house repair resources</label>
+            </value>
+            <value>
+                <fullName>I sell other products than smartphones</fullName>
+                <default>false</default>
+                <label>I sell other products than smartphones</label>
+            </value>
+            <value>
+                <fullName>I buy the products under warranty</fullName>
+                <default>false</default>
+                <label>I buy the products under warranty</label>
+            </value>
+            <value>
+                <fullName>I&apos;m an expert already</fullName>
+                <default>false</default>
+                <label>I&apos;m an expert already</label>
+            </value>
+            <value>
+                <fullName>I just wanted to test the solution</fullName>
+                <default>false</default>
+                <label>I just wanted to test the solution</label>
+            </value>
+            <value>
+                <fullName>My logistic is outsourced</fullName>
+                <default>false</default>
+                <label>My logistic is outsourced</label>
+            </value>
+            <value>
+                <fullName>I sell on other platforms</fullName>
+                <default>false</default>
+                <label>I sell on other platforms</label>
+            </value>
+            <value>
+                <fullName>Limited functionality</fullName>
+                <default>false</default>
+                <label>Limited functionality</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Rebilling</fullName>
+                <default>false</default>
+                <label>Rebilling</label>
+            </value>
+            <value>
+                <fullName>Refunds/carrier investigation are too long</fullName>
+                <default>false</default>
+                <label>Refunds/carrier investigation are too long</label>
+            </value>
+            <value>
+                <fullName>I use an integrator and Backship is not integrable</fullName>
+                <default>false</default>
+                <label>I use an integrator and Backship is not integrable</label>
+            </value>
+            <value>
+                <fullName>Unhappy with the support</fullName>
+                <default>false</default>
+                <label>Unhappy with the support</label>
+            </value>
+            <value>
+                <fullName>Unhappy with the repair quality</fullName>
+                <default>false</default>
+                <label>Unhappy with the repair quality</label>
+            </value>
+            <value>
+                <fullName>Unhappy with the repair rebounds (a repair that leads to a second repair need)</fullName>
+                <default>false</default>
+                <label>Unhappy with the repair rebounds (a repair that leads to a second repair need)</label>
+            </value>
+            <value>
+                <fullName>Unhappy with BackCare</fullName>
+                <default>false</default>
+                <label>Unhappy with BackCare</label>
+            </value>
+            <value>
+                <fullName>Unhappy with the agents&apos; management</fullName>
+                <default>false</default>
+                <label>Unhappy with the agents&apos; management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Explanation_8__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <defaultValue>&apos;Move to Run or Exit&apos;</defaultValue>
+    <externalId>false</externalId>
+    <label>Move to Run or Exit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

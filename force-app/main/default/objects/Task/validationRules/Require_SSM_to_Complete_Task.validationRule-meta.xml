@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_SSM_to_Complete_Task</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+OR(Subject =&quot;Assign Merchant to SSM&quot;, ISPICKVAL(Subject__c ,&quot;Assign Merchant to SSM&quot;)),
+
+ISBLANK(Assign_Merchant_to_SSM__c ) ,
+
+ISPICKVAL ( Status ,&quot;Completed&quot;)
+
+)</errorConditionFormula>
+    <errorMessage>In order to mark this case as Completed, please add the new SSM for this Merchant.</errorMessage>
+</ValidationRule>

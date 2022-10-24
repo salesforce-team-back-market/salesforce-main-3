@@ -1,0 +1,303 @@
+@page {
+    size: A4;
+    
+    @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Helvetica, sans-serif !important;
+        font-size: 9px;
+        color: #787878;
+    }
+    
+    @bottom-left {
+        content: element(footer);       
+    }
+    
+}
+
+html, body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    padding-right: 0px !important;
+    font-family: Helvetica, sans-serif !important;
+    font-size: 12px;
+    color: #787878;
+}
+
+p {
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.parentDiv {
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 12px
+}
+
+.textBlock {
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+}
+
+.logo > img {
+    height: 30px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #787878;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #787878;
+}
+
+table {
+    -fs-table-paginate: paginate;
+    background-color: transparent;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.entete {
+    background-color: #F2F3F4;
+    border: 10px solid transparent;
+}
+
+td, th {
+    text-align: left;
+    vertical-align: top;
+    padding: 2px;
+}
+
+table.entete > th {
+    width: 20%;
+}
+
+table.entete > td {
+    width: 80%;
+}
+
+td.entete {
+    column-span: 2;
+    background-color: #74CCA7;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabHeader {
+    background-color: #74CCA7;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabHeader2 {
+    background-color: #37594a;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabHeader2Row {
+    border-bottom: 1px solid #787878;
+}
+
+.tabFooter2Row {
+    border-top: 1px solid #787878;
+    background-color: #F2F3F4;
+}
+
+.tabSection_orange {
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #787878;
+    color: #74CCA7;
+}
+
+.tabSection_blue {
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #787878;
+    color: #1B6F98;
+}
+
+.local {
+    color: #74CCA7;
+}
+
+.local-light {
+    color: #a2ddc4;
+}
+
+.national {
+    color: #37594a;
+}
+
+.national-light {
+    color: #b0cfc1;
+}
+
+.pageBreakBefore {
+    page-break-before: always;
+}
+
+.invisible {
+    visibility: hidden;
+    display: none;
+}
+
+.tabBorder {
+    border-left: 1px solid #787878;
+}
+
+.tabBorderCell {
+    border-right: 1px solid #787878;
+    border-bottom: 1px solid #787878;
+    background-color: transparent;
+}
+
+.valueTabCell {
+    text-align: center;
+}
+
+.rightAlignedTabCell {
+    text-align: right;
+}
+
+.rowHidden {
+    display: none;
+}
+
+.rowDisplayed {
+    display: table-row;
+}
+
+.legend {
+    width: 100%;
+    text-align: right;
+    margin-right: 40px;
+    margin-bottom: 12px
+}
+
+div.footer {
+    font-family: Helvetica, sans-serif !important;
+    font-size: 9px;
+    color: #787878;
+    display: block;
+    text-align: left;
+    position: running(footer);
+}
+
+.lessThanLowThreshold {
+    color: #C70039;
+}
+
+.moreThanHighThreshold {
+    color: #2ECC71;
+}
+
+table.metricsTab {
+    width: 60%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table.metricsTab > tr > td > h4 {
+    margin-top: 0px;
+}
+
+.metrics {
+    width: 60%;
+}
+
+.input-color {
+    position: relative;
+    right: 200px;
+    top: 0px;
+}
+
+.input-color2 {
+    position: relative;
+    right: 24px;
+    top: -27px;
+}
+
+.input-color > h4 {
+    font-size: 12px;
+}
+
+.input-color2 > h4 {
+    font-size: 12px;
+}
+
+.input-color .color-box {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 127px;
+    top: 2px;
+    background-color: #93CEEC;
+}
+
+.input-color .color-box2 {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 115px;
+    top: 2px;
+    background-color: #74CCA7;
+}
+
+.input-color2 .color-box3 {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 127px;
+    top: 2px;
+    background-color: #37594a;
+}
+
+.input-color2 .color-box4 {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 115px;
+    top: 2px;
+    background-color: #74CCA7;
+}
+
+.adjust {
+    position: relative;
+    top: -27px;
+}

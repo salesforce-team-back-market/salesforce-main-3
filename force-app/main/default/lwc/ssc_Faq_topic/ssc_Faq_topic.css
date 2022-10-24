@@ -1,0 +1,45 @@
+.topic {
+    background-color: white;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.topic-articles {
+    height: 360px;
+}
+
+.article-list-item-container {
+    padding: 1em;
+    width: 100%;
+}
+
+.article-list-item {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.article {
+    cursor: pointer;
+    padding-bottom: 1em;
+}
+
+.article h3,
+.article-list-item h3 {
+    font-family: var(--lwc-fontFamily,"Salesforce Sans");
+}
+
+.arrow {
+    border: solid grey;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+.view-articles-btn {
+    border-color: black;
+    font-weight: bold;
+}

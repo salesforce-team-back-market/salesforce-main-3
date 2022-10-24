@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_to_stop_Back_Care_multi__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason to stop Back Care</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Back Care isn’t working well with other Back Market services</fullName>
+                <default>false</default>
+                <label>Back Care isn’t working well with other Back Market services</label>
+            </value>
+            <value>
+                <fullName>I am not happy with the support provided by Back Market</fullName>
+                <default>false</default>
+                <label>I am not happy with the support provided by Back Market</label>
+            </value>
+            <value>
+                <fullName>I hired someone to handle customer requests in this country</fullName>
+                <default>false</default>
+                <label>I hired someone to handle customer requests in this country</label>
+            </value>
+            <value>
+                <fullName>I signed for a translation service and I don’t want to outsource</fullName>
+                <default>false</default>
+                <label>I signed for a translation service and I don’t want to outsource</label>
+            </value>
+            <value>
+                <fullName>I think agents refund and return too many orders</fullName>
+                <default>false</default>
+                <label>I think agents refund and return too many orders</label>
+            </value>
+            <value>
+                <fullName>It’s too expensive</fullName>
+                <default>false</default>
+                <label>It’s too expensive</label>
+            </value>
+            <value>
+                <fullName>I will use another provider to handle customer requests</fullName>
+                <default>false</default>
+                <label>I will use another provider to handle customer requests</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>The Quality isn’t what I expected</fullName>
+                <default>false</default>
+                <label>The Quality isn’t what I expected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

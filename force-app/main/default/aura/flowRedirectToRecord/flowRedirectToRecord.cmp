@@ -1,0 +1,10 @@
+<!--
+  @description       : Component callable from flow as an action to redirect user to the record associated with the Id provided from the flow
+  @author            : Martin Lezer
+  @group             : Actions
+  @last modified on  : 09-28-2022
+  @last modified by  : Martin Lezer
+-->
+<aura:component implements="force:lightningQuickAction,lightning:availableForFlowActions">
+   <aura:attribute name="recordId" type="String" />
+</aura:component>

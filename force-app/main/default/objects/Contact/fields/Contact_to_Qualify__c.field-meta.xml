@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_to_Qualify__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+
+AND(
+ISPICKVAL(Account.Stage__c ,&quot;Identification&quot;),
+ISPICKVAL( Account.AccountSource ,&quot;Entrant leads&quot;),
+NOT(ISNULL(Account.Back_Office_PK__c)),
+OR(Account.BizDev__r.Id = LEFT($Setup.UserID__c.API_BM_SF__c,15),ISBLANK(Account.BizDev__r.Id)),
+Account.RecordType.Id = LEFT($Setup.MerchantRecordTypes__c.Merchant_EU__c,15) ,
+NOT(ISBLANK(Email))),
+
+TRUE,
+FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contact to Qualify</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Just for the ones that are demotivated and not selling at all. Quick win maybe to make them motivated again.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>BF quick win</name>
+    <relatedEntityType>Account</relatedEntityType>
+    <style>none</style>
+    <subject>Increase your revenues NOW</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Performance_Data__c.GMV__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.G_M_V_target_current_month__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>(Performance_Data__c.GMV__c/Account.G_M_V_target_current_month__c)*100</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>GMV MTD / Monthly GMV Target</description>
+        <developerName>CDF1</developerName>
+        <label>Monthly target completion</label>
+        <scale>1</scale>
+    </customDetailFormulas>
+    <description>GMV month to date vs monthly target per merchant</description>
+    <filter>
+        <criteriaItems>
+            <column>Performance_Data__c.Temporal_Granularity__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Monthly</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Performance_Data__c.Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>N_DAYS_AGO:2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Performance_Data__c.Targeted_Country__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Stage__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Run</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.BizDev_Team__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Back Watch U.S.</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Back_Office_PK__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SSM - GMV Monthly %Completion [BW U.S.]</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>AccountCustomEntity$Performance_Data__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>CDF1</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

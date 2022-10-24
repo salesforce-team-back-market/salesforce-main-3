@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Assign_Subject</name>
+        <label>Assign Subject</label>
+        <locationX>650</locationX>
+        <locationY>269</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Subject__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_Subject_0</name>
+        <label>Assign Subject</label>
+        <locationX>646</locationX>
+        <locationY>438</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Subject__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Subject</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Decision</name>
+        <label>Decision</label>
+        <locationX>312</locationX>
+        <locationY>334</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Subject_is_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Subject</targetReference>
+            </connector>
+            <label>Subject is Blank</label>
+        </rules>
+        <rules>
+            <name>Other_Subject_is_blank</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18 OR 19 OR 20 OR 21 OR 22 OR 23 OR 24 OR 25)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Call	</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sabotage - Ultimatum	</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sabotage - Back Care</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Retraction - Cancelling order</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seat Belt Alert - 50</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seat Belt Alert - 200</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Time Shipping Update</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Charter Update - Merchant Feedback</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Quality Call - Follow-up 2</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Mystery Order - Result to communicate to the merchant</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Assign Merchant to SSM</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Check Merchant Cluster</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Business Review</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>KYCs to approve</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>KYCs to check</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>KYC Adyen to verify</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SeatBelt Removal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Merchant visit</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Check buyback performance</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Configure SEPA mandate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Buyback SeatBelt Removal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Request new Resale Certificate</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Subject_0</targetReference>
+            </connector>
+            <label>Other Subject is blank</label>
+        </rules>
+    </decisions>
+    <description>Buyback in US</description>
+    <formulas>
+        <name>UpdateGLOBALContactTentative</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR(
+CONTAINS({!$Record.CallDisposition}, &apos;CONTACT│No Answer&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;CONTACT│Voicemail&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;CONTACT│Not available&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;CONTACT│Request Call back&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;CONTACT|Request Email&apos;)),
+TRUE,FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>UpdateKAMMerchantManagement</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR( 
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Sales performance (GMV)&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Industry strategy&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Cross Border&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Supply (listings, stocks)&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Buyback&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Mana&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Services&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Pricing&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Logistics&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Payment methods&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Quality&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Connection &amp; Integration&apos;)),
+TRUE,FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>UpdateKAMSupport</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR(
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Catalog issues&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Churn&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Finance&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Refunds &amp; claims&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;KAM|Other troubleshooting&apos;)),
+TRUE,FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>UpdateNB_ONBGenericSupport</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR(
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Support│Business&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Support│Catalogue&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Support│Quality&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Support│Services&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Support│Finance&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Support│Services&apos;)),
+TRUE,FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>UpdateNBProspectionMacroTag</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR( 
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Sales│Find Contact&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Sales│Qualification + Pitch&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Sales│Services + Quality Intro&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Sales│BO + KYCs&apos;)),
+TRUE,FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>UpdateONB_NMOManagement_Support</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR(
+CONTAINS({!$Record.CallDisposition}, &apos;NB│N.M.O│Sales + Products&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│N.M.O│Market/Industry Data&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│N.M.O│Quality Dashboard&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│N.M.O│Services + Shipping&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│N.M.O│Intro to QAM&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│N.M.O│N.M.O Phase 2&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│N.M.O│Run&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│N.M.O│Exit&apos;)),
+TRUE,FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>UpdateONB_OnboardingManagement_Support</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR(
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Onboarding│Quality Test Feedback&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Onboarding│Payments + Invoicing + Services&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Onboarding│BO + Product Creation + Quality or Buybox&apos;),
+CONTAINS({!$Record.CallDisposition}, &apos;NB│Onboarding│Go Live&apos;)),
+TRUE,FALSE)</expression>
+    </formulas>
+    <interviewLabel>Task - Before Save Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Task - Before Save Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Decision</targetReference>
+        </connector>
+        <object>Task</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

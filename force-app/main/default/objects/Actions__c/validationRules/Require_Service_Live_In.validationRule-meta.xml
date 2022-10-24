@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Service_Live_In</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Stage__c,&quot;Merchant OK&quot;),
+ISPICKVAL( Type__c ,&quot;Push BackCare&quot;),
+ISBLANK(  Service_Live_In__c ))</errorConditionFormula>
+    <errorDisplayField>Service_Live_In__c</errorDisplayField>
+    <errorMessage>Please specify the countries service is live in.</errorMessage>
+</ValidationRule>

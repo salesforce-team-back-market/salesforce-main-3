@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_ID__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>Concatenation of the Back Office Merchant primary key, the Country Name (optional) and the Product Type Name (optional) with the following format : 
+&lt;merchant&apos;s ID&gt;[+ &apos;_&apos; + &lt;Country Name&gt;][+ &apos;_&apos; + &lt;Product Type Name&gt;]. 
+Required and case sensitive.</description>
+    <externalId>true</externalId>
+    <label>External ID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

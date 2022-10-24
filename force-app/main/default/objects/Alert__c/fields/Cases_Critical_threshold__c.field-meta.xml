@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cases_Critical_threshold__c</fullName>
+    <externalId>false</externalId>
+    <formula>If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; (ISPICKVAL(Category__c,&quot;MacBook&quot;) || ISPICKVAL(Category__c,&quot;Tablets&quot;) || ISPICKVAL(Category__c,&quot;Smartphone&quot;)) ), 0,
+If
+(ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) || ISPICKVAL(Issue_KPI__c,&quot;Late Response Rate&quot;) || ISPICKVAL(Issue_KPI__c,&quot;Accessories Rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Wrong Product Rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal (Non Functional) rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Buyback - Cancellation (Functional) rate&quot;) || ISPICKVAL(Issue_KPI__c,&quot;Buyback - Cancellation rate&quot;) || ISPICKVAL(Issue_KPI__c,&quot;Untracked Orders Rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Late Delivery Rate&quot;), 10 ,
+
+
+
+if(ISPICKVAL(Issue_KPI__c,&quot;CSAT&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Cancellation Rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Esthetic Rate&quot;),8,
+
+
+if( OR(ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal (Functional) rate&quot;), ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal rate&quot;)) ,35,
+
+
+if(OR(ISPICKVAL(Issue_KPI__c,&quot;Buyback - Pending Order rate&quot;), ISPICKVAL(Issue_KPI__c,&quot;Buyback - On-hold rate&quot;)) ,20,
+
+
+if (ISPICKVAL(Issue_KPI__c,&quot;Buyback - Late Response rate&quot;),15,
+
+if(ISPICKVAL(Issue_KPI__c,&quot;Buyback - Late Processing rate&quot;) ,25,
+			
+			0)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cases - Critical threshold</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

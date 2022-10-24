@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_MP_Creation</fullName>
+    <active>true</active>
+    <description>Prevent users from creating MP if the merchant is not in Run or is exited.</description>
+    <errorConditionFormula>AND( 
+NOT(ISPICKVAL( Business_Name__r.Stage__c , &quot;Run&quot;)),
+ Business_Name__r.Exit_granted__c = true,
+ ISNEW() ,
+RecordType.DeveloperName = &quot;Monitoring_Period_Sales&quot;)
+||
+AND ( NOT(ISPICKVAL( Business_Name__r.Stage_Buyback__c , &quot;buyback Run&quot;)),
+ Business_Name__r.Exit_Buyback_Granted__c = True,
+ ISNEW() ,
+RecordType.DeveloperName = &quot;Monitoring_Period_Buyback&quot;)</errorConditionFormula>
+    <errorMessage>Whoops, you are not able to create a MP for a merchant that is not in Run or in Exit.</errorMessage>
+</ValidationRule>

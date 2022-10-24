@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Project</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Business_Project</compactLayoutAssignment>
+    <label>New Project</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Back Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Expansion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant Experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Impacted_KPIs__c</picklist>
+        <values>
+            <fullName>Accessories Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Cancellation %28Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Charter breaches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Counter-Proposal %28Functional%29 rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Late Processing rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Late Response rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Payment issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyback - Pending Order rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Esthetic Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Compliance Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Delivery Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Response Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potential Hazardous Charger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Untracked Orders Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Product Rate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nature_of_work_required__c</picklist>
+        <values>
+            <fullName>Process Optimization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-party evaluation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Roadmap_Status__c</picklist>
+        <values>
+            <fullName>Q1 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q1 2022</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q2 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q2 2022</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q3 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q3 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q3 2022</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q4 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q4 2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q4 2022</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subcategory__c</picklist>
+        <values>
+            <fullName>Access Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accessories%2FParts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account%2FTransaction Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adoption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Algorithm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Branded Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BuyBack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carrier Compatibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commission Refunds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commission%2FModel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decks%2FOne-Pagers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deposits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education%2FEnablement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulfillment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grading Scale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grading%2FKitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Listing Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Listings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant Payouts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Official Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outsourced Customer Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payments%2FInvoices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Attributes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotions%2FFeatures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-matching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refurbishment%2FRepair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Search and Navigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller Back Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller Protections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Rates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping%2FDelivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support%2FFeedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taxes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technologies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty%2FRRR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White Papers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>T_shirt_sizing__c</picklist>
+        <values>
+            <fullName>L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Team_In_Charge__c</picklist>
+        <values>
+            <fullName>BOT - Backbox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Bucks %26 Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - DATA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Devops%2FSecops%2FSysadmin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Growth %26 Love</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - MCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Nav %26 Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - PIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - PRO SERVICES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Security Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT- CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRAND - Art %26 Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRAND - Culture %26 Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Classic%2FB2S%2FBackWatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Country%2FCategory Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - Acquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - Analytics %26 Insights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - CRM %26 PRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - Content</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - Conversion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - R%26D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - SEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Asia Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Back Market 4 Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Global Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Logistics%2FBuyBack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Mana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Public Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Quality%2FCCS%2FServices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Strategic Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>People</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Teams_Impacted__c</picklist>
+        <values>
+            <fullName>BOT - Backbox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Bucks %26 Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - DATA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Devops%2FSecops%2FSysadmin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Growth %26 Love</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - MCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Nav %26 Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - PIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - PRO SERVICES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT - Security Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOT- CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRAND - Art %26 Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRAND - Culture %26 Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Classic%2FB2S%2FBackWatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Country%2FCategory Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING  - R%26D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - Acquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - Analytics %26 Insights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - CRM %26 PRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - Content</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - Conversion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKETING - SEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Asia Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Back Market 4 Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Global Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Logistics%2FBuyBack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Mana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Public Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Quality%2FCCS%2FServices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPS - Strategic Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>People</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

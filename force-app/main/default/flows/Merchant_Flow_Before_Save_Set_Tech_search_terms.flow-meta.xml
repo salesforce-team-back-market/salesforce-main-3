@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Set_search_terms</name>
+        <label>Set search terms</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.TECH_Search_Terms__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>searchTerms</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <formulas>
+        <name>searchTerms</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Link_to_the_site__c} &amp; &quot; &quot; &amp; {!$Record.Id} &amp; &quot; &quot; &amp; {!zendeskPK} &amp; &quot; &quot; &amp; {!techPK}</expression>
+    </formulas>
+    <formulas>
+        <name>techPK</name>
+        <dataType>String</dataType>
+        <expression>if( {!$Record.RecordType.DeveloperName} = &quot;U_S&quot;, text({!$Record.Back_Office_PK__c}) &amp; &quot;US&quot;, if( {!$Record.RecordType.DeveloperName}  = &quot;JP&quot;, text({!$Record.Back_Office_PK__c}) &amp; &quot;JP&quot;, text({!$Record.Back_Office_PK__c}) &amp; &quot;EU&quot;))</expression>
+    </formulas>
+    <formulas>
+        <name>zendeskPK</name>
+        <dataType>String</dataType>
+        <expression>if( ( {!$Record.RecordType.DeveloperName}  = &quot;U_S&quot;), &quot;US_&quot;&amp; text({!$Record.Back_Office_PK__c}) , if( ({!$Record.RecordType.DeveloperName}  = &quot;JP&quot;), &quot;JP_&quot;&amp;text({!$Record.Back_Office_PK__c}) , &quot;EU_&quot;&amp;text({!$Record.Back_Office_PK__c}) ))</expression>
+    </formulas>
+    <interviewLabel>Merchant Flow - Before Save - Set Tech search termes {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Merchant Flow - Before Save - Set Tech search terms</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_search_terms</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Back_Office_PK__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Link_to_the_site__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

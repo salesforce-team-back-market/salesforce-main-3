@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Pending</fullName>
+        <default>true</default>
+        <label>Pending</label>
+    </customValue>
+    <customValue>
+        <fullName>Negotiation</fullName>
+        <default>false</default>
+        <label>Negotiation</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant OK</fullName>
+        <default>false</default>
+        <label>Merchant OK</label>
+    </customValue>
+    <customValue>
+        <fullName>Merchant KO</fullName>
+        <default>false</default>
+        <label>Merchant KO</label>
+    </customValue>
+    <customValue>
+        <fullName>No Action by Due Date</fullName>
+        <default>false</default>
+        <label>No Action by Due Date</label>
+    </customValue>
+    <masterLabel>Product Stage</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

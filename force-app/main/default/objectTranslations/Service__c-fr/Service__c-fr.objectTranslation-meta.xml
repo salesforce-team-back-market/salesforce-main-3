@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Services</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Back Care</layout>
+        <sections>
+            <label></label>
+            <section>Countries</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Back Pack</layout>
+        <sections>
+            <label></label>
+            <section>Back Pack Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Back Parts</layout>
+        <sections>
+            <label></label>
+            <section>Back Parts Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Back Ship</layout>
+        <sections>
+            <label></label>
+            <section>Countries</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BackRepair</layout>
+        <sections>
+            <label></label>
+            <section>Countries</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FBBM</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Impact Champions</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Impact Champion Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mana</layout>
+        <sections>
+            <label></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mana Buyer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mana Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mana Seller</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RAAS</layout>
+        <sections>
+            <label></label>
+            <section>Countries</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>RAAS Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Service_Back_Care</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Service_Back_Repair</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Service_Back_Ship</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Back_Care</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Back_Pack</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Back_Parts</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Back_Repair</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Back_Ship</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>FBBM</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Impact_Champions</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Mana</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>RAAS</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Require_Comment_for_Not_Interested_Stage</name>
+    </validationRules>
+</CustomObjectTranslation>

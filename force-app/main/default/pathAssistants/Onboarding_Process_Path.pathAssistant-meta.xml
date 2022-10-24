@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <entityName>Onboarding_Process__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Onboarding Process Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;For &lt;span style=&quot;font-size: 13px;&quot;&gt;this record to be &lt;/span&gt;automatically submitted for approval to your Super New BizDev so he/she can move it on to the Quality Prerequisites stage, you need to &lt;span style=&quot;font-size: 13px;&quot;&gt;make sure that &lt;/span&gt; :&lt;/p&gt;&lt;ul&gt;&lt;li&gt;all the K.Y.C. documents are provided by the merchant&lt;/li&gt;&lt;li&gt;Those documents are uploaded in the Back Office, and ticked if well uploaded in the Merchant&amp;#39;s Profile: Meaning you can&amp;#39;t update them Manually.&lt;/li&gt;&lt;li&gt;every contractual document has been signed by the merchant&lt;/li&gt;&lt;li&gt;every required B2C service has been confirmed by the merchant&lt;/li&gt;&lt;li&gt;have sent the Quality Survey (and Language test if needed)&lt;/li&gt;&lt;li&gt;a Targeted Country is selected (1 minimum)&lt;/li&gt;&lt;li&gt;a Referent Champion is assigned&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Business &amp; Quality Prerequisites</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Before submit for approval to your Head Of NB, make sure :&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 9pt;&quot;&gt;&amp;#128736; To &lt;/b&gt;&lt;b&gt;Inquire manually in Saleforce :&lt;/b&gt;&lt;/p&gt;&lt;p&gt;BO configurated&lt;/p&gt;&lt;p&gt;Stocks/ads&lt;/p&gt;&lt;p&gt;Shipping Methods&lt;/p&gt;&lt;p&gt;Ads comment&lt;/p&gt;&lt;p&gt;RIB Uploaded (in admin)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;#128184;&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt; &lt;/span&gt;&lt;b&gt; To set up, either in Salesforce or the BO:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;BIC/IBAN&lt;/p&gt;&lt;p&gt;VAT number&lt;/p&gt;&lt;p&gt;Commission&lt;/p&gt;&lt;p&gt;Monhly fees&lt;/p&gt;</info>
+        <picklistValueName>Go-Live Prerequisites</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

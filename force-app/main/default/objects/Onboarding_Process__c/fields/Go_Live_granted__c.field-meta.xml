@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Go_Live_granted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Useful for the Merchant Stage Process to allow its Stage to be updated from Onboarding to N.M.O..</description>
+    <externalId>false</externalId>
+    <label>Go-Live granted</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

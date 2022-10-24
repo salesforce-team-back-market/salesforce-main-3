@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Stage__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Discovery</fullName>
+                <default>false</default>
+                <label>Discovery</label>
+            </value>
+            <value>
+                <fullName>Hook stage</fullName>
+                <default>false</default>
+                <label>Hook stage</label>
+            </value>
+            <value>
+                <fullName>Sizing business opp</fullName>
+                <default>false</default>
+                <label>Sizing business opp</label>
+            </value>
+            <value>
+                <fullName>Due diligence</fullName>
+                <default>false</default>
+                <label>Due diligence</label>
+            </value>
+            <value>
+                <fullName>Quality test</fullName>
+                <default>false</default>
+                <label>Quality test</label>
+            </value>
+            <value>
+                <fullName>Integration/API</fullName>
+                <default>false</default>
+                <label>Integration/API</label>
+            </value>
+            <value>
+                <fullName>VAT compliance</fullName>
+                <default>false</default>
+                <label>VAT compliance</label>
+            </value>
+            <value>
+                <fullName>Logistic setup</fullName>
+                <default>false</default>
+                <label>Logistic setup</label>
+            </value>
+            <value>
+                <fullName>Negotiation Closing</fullName>
+                <default>false</default>
+                <label>Negotiation Closing</label>
+            </value>
+            <value>
+                <fullName>Handover Time</fullName>
+                <default>false</default>
+                <label>Handover Time</label>
+            </value>
+            <value>
+                <fullName>Pre-dispatching phase</fullName>
+                <default>false</default>
+                <label>Pre-dispatching phase</label>
+            </value>
+            <value>
+                <fullName>Dispatching phase</fullName>
+                <default>false</default>
+                <label>Dispatching phase</label>
+            </value>
+            <value>
+                <fullName>NB Lead Pool to contact</fullName>
+                <default>false</default>
+                <label>NB Lead Pool to contact</label>
+            </value>
+            <value>
+                <fullName>Need to fill Qualification Form</fullName>
+                <default>false</default>
+                <label>Need to fill Qualification Form</label>
+            </value>
+            <value>
+                <fullName>Coming from Back-Office</fullName>
+                <default>false</default>
+                <label>Coming from Back-Office</label>
+            </value>
+            <value>
+                <fullName>Has filled Qualification Form</fullName>
+                <default>false</default>
+                <label>Has filled Qualification Form</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <controllingFieldValue>Not relevant</controllingFieldValue>
+            <valueName>Pre-dispatching phase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <controllingFieldValue>Not relevant</controllingFieldValue>
+            <controllingFieldValue>Future partnership</controllingFieldValue>
+            <valueName>Dispatching phase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <controllingFieldValue>Future partnership</controllingFieldValue>
+            <valueName>NB Lead Pool to contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <controllingFieldValue>First-contact</controllingFieldValue>
+            <controllingFieldValue>Future partnership</controllingFieldValue>
+            <valueName>Need to fill Qualification Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Coming from Back-Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negotiation</controllingFieldValue>
+            <valueName>Discovery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negotiation</controllingFieldValue>
+            <valueName>Negotiation Closing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Negotiation</controllingFieldValue>
+            <valueName>Handover Time</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entrant_Leads_U_S1</fullName>
+    <columns>ACCOUNT_SOURCE</columns>
+    <columns>Back_Office_PK__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>Sub_Stage__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Profile__c</columns>
+    <columns>BackWatch_Onboarding_Type__c</columns>
+    <columns>Fatness__c</columns>
+    <columns>Region__c</columns>
+    <columns>Country__c</columns>
+    <columns>Send_qualification_form__c</columns>
+    <columns>Qualification_Form_completed__c</columns>
+    <columns>Relevance_Date__c</columns>
+    <columns>Last_Breath_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.U_S</value>
+    </filters>
+    <filters>
+        <field>Back_Office_PK__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ACCOUNT_SOURCE</field>
+        <operation>equals</operation>
+        <value>Entrant leads</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Identification,Future partnership</value>
+    </filters>
+    <filters>
+        <field>Country__c</field>
+        <operation>equals</operation>
+        <value>United States</value>
+    </filters>
+    <filters>
+        <field>Qualification_Form_completed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>salesforce-team</value>
+    </filters>
+    <label>Entrant Leads (U.S.)</label>
+</ListView>

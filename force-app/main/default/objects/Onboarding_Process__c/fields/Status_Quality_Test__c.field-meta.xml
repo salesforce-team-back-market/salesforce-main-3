@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Quality_Test__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Populated automatically when the merchant is answering the test.
+Can also be manually updated by the Onboarder.</inlineHelpText>
+    <label>Status - Quality Test</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All Good</fullName>
+                <default>false</default>
+                <label>All Good</label>
+            </value>
+            <value>
+                <fullName>Intervention needed</fullName>
+                <default>false</default>
+                <label>Intervention needed</label>
+            </value>
+            <value>
+                <fullName>KO</fullName>
+                <default>false</default>
+                <label>KO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

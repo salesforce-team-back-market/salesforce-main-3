@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Quality_KPIs_concerned__c</name>
+    <picklistValues>
+        <masterLabel>BB - Cancellation rate (functional)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB - Charter Breach</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB - Counter-Proposal rate (functional)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB - Counter-Proposal rate (non functional)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB - Late processing rate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB - Late response 24H rate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BB - Pending order rate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation Rate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Counter Offer Rate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Counterfeit</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hazardous charger</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice not compliant</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Processing Rate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Response 24h</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merchant payment Issue</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Rate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Order Rate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Policy Violation</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Accessories Rate</masterLabel>
+        <translation>Le tarif des accessoires</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The CSAT Rate</masterLabel>
+        <translation>Le taux CSAT</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Cancellation Rate</masterLabel>
+        <translation>Le taux d&apos;annulation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Contact Rate</masterLabel>
+        <translation>Le taux de contact</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Defective Rate</masterLabel>
+        <translation>Le taux de Défectueux</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Delivery Rate</masterLabel>
+        <translation>Le taux de livraison</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Esthetic Rate</masterLabel>
+        <translation>Le tarif Esthétique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Late Delivery Rate</masterLabel>
+        <translation>Le taux de livraison</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Late Response Rate</masterLabel>
+        <translation>Le taux de réponse tardive</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Negative Review Rate</masterLabel>
+        <translation>Le taux d&apos;avis négatif</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Return Tracking Rate</masterLabel>
+        <translation>Le taux de suivi des retours</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The SOS Claim Rate</masterLabel>
+        <translation>Le taux de sinistre SOS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Wrong Product Rate</masterLabel>
+        <translation>Le mauvais taux de produit</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unprocessed Rate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Untracked</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

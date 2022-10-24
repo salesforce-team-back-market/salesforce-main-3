@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Fields_for_BuyBack_Negotiation</fullName>
+    <active>true</active>
+    <description>Require fields to be able to move merchant to the BuyBack Negotiation stage.</description>
+    <errorConditionFormula>AND ( 
+ISPICKVAL ( PRIORVALUE ( Stage_Buyback__c ),&quot;Buyback Identification&quot; ), 
+ISPICKVAL ( Stage_Buyback__c, &quot;Buyback Negociation&quot; ), 
+Has_buyback_contact__c = FALSE,					
+    $User.ByPassValidationRules__c != true
+)</errorConditionFormula>
+    <errorMessage>Please make sure that following fields are populated before moving to the BuyBack Negotiation stage:
+1. Has BuyBack Contact</errorMessage>
+</ValidationRule>

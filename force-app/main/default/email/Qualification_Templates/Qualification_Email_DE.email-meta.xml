@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Qualification Email (DE)</name>
+    <style>freeForm</style>
+    <subject>Back Market x {!Account.Name}: Schließen Sie Ihre Anmeldung ab!</subject>
+    <textOnly>Hallo {!Contact.FirstName},
+
+Vielen Dank, dass Sie {!Account.Name} auf Back Market angemeldet haben!
+
+Damit Sie schnellst möglich mit dem Verkauf Ihrer Produkte in allen unseren europäischen Märkten beginnen können, müssen wir {!Account.Name} besser kennenlernen.
+
+Bitte füllen Sie hierzu folgenden Fragebogen aus (ca. 5 Minuten) :
+
+Hier klicken, um zu antworten.
+
+Wir werden Sie nach Ihrer Unique ID (P.K.) fragen, damit wir Sie identifizieren können.
+Auf die Frage &quot;Was ist deine P.K.?&quot; müssen Sie mit {!Account.Back_Office_PK__c} antworten.
+
+Nach der Auswertung Ihrer Antworten wird Sie einer unserer Mitarbeiter innerhalb von 24-48 Std. kontaktieren!
+
+Wir freuen uns auf die Zusammenarbeit!
+
+Beste Grüße,
+Das Back Market Team
+
+
+Merchant&apos;s Help Center
+Ihr Verkäufer Back Office</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

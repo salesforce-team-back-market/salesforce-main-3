@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PROPOSAL JULIA Feedback SSC Survey - Case</name>
+    <pageDevName>TEST_JULIA_Feedback_SSC_Survey_Case</pageDevName>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>{{{Case.Contact_FirstName__c}}}, how was your recent experience with us?</subject>
+    <textOnly>Hello {{{Case.Contact_FirstName__c}}},
+
+You recently reached out to our Seller Support Team regarding this case &lt; https://backmarketportal.force.com/ssc/s/case/{{Case.Id}} &gt; , and {{{Case.OwnerFirstName__c}}} was in charge of assisting you.
+
+We&apos;d be extremely grateful to hear your thoughts about your conversation and the way you were supported.
+
+★★ &lt; https://backster.typeform.com/to/LLNMlKa6#first_name={{Case.Contact_FirstName__c}}&amp;last_name={{Case.Contact_LastName__c}}&amp;id_sf={{Case.Id}}?email=%7B%7BCase.ContactEmail%7D%7D&amp;rating=1 &gt; ★★ &lt; https://backster.typeform.com/to/LLNMlKa6#first_name={{Case.Contact_FirstName__c}}&amp;last_name={{Case.Contact_LastName__c}}&amp;id_sf={{Case.Id}}?email=%7B%7BCase.ContactEmail%7D%7D&amp;rating=2 &gt; ★★ &lt; https://backster.typeform.com/to/LLNMlKa6#first_name={{Case.Contact_FirstName__c}}&amp;last_name={{Case.Contact_LastName__c}}&amp;id_sf={{Case.Id}}?email=%7B%7BCase.ContactEmail%7D%7D&amp;rating=3 &gt; ★★ &lt; https://backster.typeform.com/to/LLNMlKa6#first_name={{Case.Contact_FirstName__c}}&amp;last_name={{Case.Contact_LastName__c}}&amp;id_sf={{Case.Id}}?email=%7B%7BCase.ContactEmail%7D%7D&amp;rating=4 &gt; ★★ &lt; https://backster.typeform.com/to/LLNMlKa6#first_name={{Case.Contact_FirstName__c}}&amp;last_name={{Case.Contact_LastName__c}}&amp;id_sf={{Case.Id}}?email=%7B%7BCase.ContactEmail%7D%7D&amp;rating=5 &gt; 
+
+1 2 3 4 5
+
+Thanks for your feedback!
+
+The Seller Support Team
+
+This email was written and sent with 💛 from a refurbished computer.
+
+In accordance with the famous Data Protection Act of January 6, 1978, you have a right of access, rectification and opposition to personal data concerning you. Simply write to us at legal@backmarket.com or by post to Back Market, Legal Department / Personal Data Manager, 152 Boulevard Macdonald, 75019 Paris, along with a copy of an identity document (and a carambar). More information on the protection of personal data here.
+
+Legal Notice
+
+Back Market. All rights reserved.</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

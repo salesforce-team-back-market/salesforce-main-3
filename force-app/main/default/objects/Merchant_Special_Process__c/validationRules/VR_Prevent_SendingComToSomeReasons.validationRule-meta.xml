@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Prevent_SendingComToSomeReasons</fullName>
+    <active>true</active>
+    <description>Automatic emails shouldn&apos;t be sent automatically for some reasons</description>
+    <errorConditionFormula>AND(ISCHANGED( Launch_the_exit__c ),
+Launch_the_exit__c = true,
+OR(ISPICKVAL(Exit_sub_reason__c , &quot;Debt / Debit Note&quot;),
+ISPICKVAL(Exit_sub_reason__c , &quot;Refusal of T&amp;Cs Modification&quot;),
+ISPICKVAL(Exit_sub_reason__c , &quot;Gross Fault / Fraud&quot;)),
+ Disable_automatic_email__c = false)</errorConditionFormula>
+    <errorMessage>Whooops, automatic emails cannot be sent for this exit reason. Please disable automatic communication.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NextStage__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <label>NextStage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Stage__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>NMO_Stages</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Phase 1</controllingFieldValue>
+            <controllingFieldValue>N.M.O. 2</controllingFieldValue>
+            <valueName>Phase 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Phase 1</controllingFieldValue>
+            <controllingFieldValue>Phase 2</controllingFieldValue>
+            <valueName>N.M.O. 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Phase 2</controllingFieldValue>
+            <controllingFieldValue>N.M.O. 2</controllingFieldValue>
+            <valueName>Phase 1</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

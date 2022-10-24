@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_New_MO</fullName>
+    <active>true</active>
+    <description>Mandatory fields to create a MO</description>
+    <errorConditionFormula>AND ( 
+ISNEW (),
+ISBLANK ( Merchant_Name__c ),
+ISNULL( TEXT(MO_motive__c )),
+ISNULL ( TEXT( Product_category__c ) ))</errorConditionFormula>
+    <errorMessage>Whooops... To create a MO you need to:
+1) Assign it to a merchant
+2) Populate a MO Motive 
+3) Populate a product category</errorMessage>
+</ValidationRule>

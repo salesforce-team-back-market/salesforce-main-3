@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPI_concerned__c</fullName>
+    <externalId>false</externalId>
+    <label>KPI concerned</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Defective</fullName>
+                <default>false</default>
+                <label>Defective</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Wrong</fullName>
+                <default>false</default>
+                <label>Wrong</label>
+            </value>
+            <value>
+                <fullName>Late Responses</fullName>
+                <default>false</default>
+                <label>Late Responses</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Estthetic</fullName>
+                <default>false</default>
+                <label>Estthetic</label>
+            </value>
+            <value>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+                <label>Accessories</label>
+            </value>
+            <value>
+                <fullName>CSAT</fullName>
+                <default>false</default>
+                <label>CSAT</label>
+            </value>
+            <value>
+                <fullName>Non Compliance with Charter</fullName>
+                <default>false</default>
+                <label>Non Compliance with Charter</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

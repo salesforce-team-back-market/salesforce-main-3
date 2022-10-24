@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>lightning template</description>
+        <name>Email_Send_SSC_Seller_Survey_EU_A</name>
+        <label>Email - Send SSC Seller Survey EU - A</label>
+        <locationX>578</locationX>
+        <locationY>815</locationY>
+        <actionName>Case.SSC_Seller_Survey_EU_A</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Copy_2_of_Assign_template_name</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>lightning template</description>
+        <name>Email_Send_SSC_Seller_Survey_EU_B</name>
+        <label>Email - Send SSC Seller Survey EU - B</label>
+        <locationX>842</locationX>
+        <locationY>815</locationY>
+        <actionName>Case.SSC_Seller_Survey_EU_B</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Copy_3_of_Assign_template_name</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>lightning template</description>
+        <name>Email_Send_SSC_Seller_Survey_FR_A</name>
+        <label>Email - Send SSC Seller Survey FR - A</label>
+        <locationX>50</locationX>
+        <locationY>815</locationY>
+        <actionName>Case.SSC_Seller_Survey_FR_A</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Assign_template_name</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>lightning template</description>
+        <name>Email_Send_SSC_Seller_Survey_FR_B</name>
+        <label>Email - Send SSC Seller Survey FR - B</label>
+        <locationX>314</locationX>
+        <locationY>815</locationY>
+        <actionName>Case.SSC_Seller_Survey_FR_B</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Copy_1_of_Assign_template_name</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>lightning template</description>
+        <name>Email_Send_SSC_Seller_Survey_US_A</name>
+        <label>Email - Send SSC Seller Survey US - A</label>
+        <locationX>1106</locationX>
+        <locationY>815</locationY>
+        <actionName>Case.SSC_Seller_Survey_US_A</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Copy_4_of_Assign_template_name</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>lightning template</description>
+        <name>Email_Send_SSC_Seller_Survey_US_B</name>
+        <label>Email - Send SSC Seller Survey US - B</label>
+        <locationX>1370</locationX>
+        <locationY>815</locationY>
+        <actionName>Case.SSC_Seller_Survey_US_B</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Copy_5_of_Assign_template_name</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <name>Assign_template_name</name>
+        <label>Assign template name</label>
+        <locationX>50</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>emailTemplateName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>FR - A - Feedback SSC Survey - Case</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_case_template_name</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_template_name</name>
+        <label>Copy 1 of Assign template name</label>
+        <locationX>314</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>emailTemplateName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>FR - B - Feedback SSC Survey - Case</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_case_template_name</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Assign_template_name</name>
+        <label>Copy 2 of Assign template name</label>
+        <locationX>578</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>emailTemplateName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>EU - A - Feedback SSC Survey - Case</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_case_template_name</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_3_of_Assign_template_name</name>
+        <label>Copy 3 of Assign template name</label>
+        <locationX>842</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>emailTemplateName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>EU - B - Feedback SSC Survey - Case</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_case_template_name</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_4_of_Assign_template_name</name>
+        <label>Copy 4 of Assign template name</label>
+        <locationX>1106</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>emailTemplateName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>US - A - Feedback SSC Survey - Case</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_case_template_name</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_5_of_Assign_template_name</name>
+        <label>Copy 5 of Assign template name</label>
+        <locationX>1370</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>emailTemplateName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>US - B - Feedback SSC Survey - Case</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_case_template_name</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>By_pass_activated</name>
+        <label>By pass activated?</label>
+        <locationX>594</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Record_type_contain_SSC</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_bypass_activated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.ByPassFlow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Yes - bypass activated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>EU_AB_testing</name>
+        <label>EU AB testing</label>
+        <locationX>710</locationX>
+        <locationY>695</locationY>
+        <defaultConnector>
+            <targetReference>Email_Send_SSC_Seller_Survey_EU_B</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Send_EU_A_template</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FormulaModCurrentMinute</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Email_Send_SSC_Seller_Survey_EU_A</targetReference>
+            </connector>
+            <label>Send EU A template</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>FR_AB_testing</name>
+        <label>FR AB testing</label>
+        <locationX>182</locationX>
+        <locationY>695</locationY>
+        <defaultConnector>
+            <targetReference>Email_Send_SSC_Seller_Survey_FR_B</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Send_FR_A_template</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FormulaModCurrentMinute</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Email_Send_SSC_Seller_Survey_FR_A</targetReference>
+            </connector>
+            <label>Send FR A template</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Record_type_contain_SSC</name>
+        <label>Record type contain SSC</label>
+        <locationX>1403</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SSC_cases</name>
+            <conditionLogic>1 OR (2 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>SSC</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Origin</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Web</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Merchant_Claim</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Should_we_send_FR_EU_or_US_template</targetReference>
+            </connector>
+            <label>SSC cases</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Should_we_send_FR_EU_or_US_template</name>
+        <label>Should we send FR, EU or US template?</label>
+        <locationX>908</locationX>
+        <locationY>575</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>FR</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr-fr</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>FR_AB_testing</targetReference>
+            </connector>
+            <label>FR</label>
+        </rules>
+        <rules>
+            <name>EU</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Zone__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>fr-fr</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.Zone__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>en-us</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.Zone__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>jp-jp</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>EU_AB_testing</targetReference>
+            </connector>
+            <label>EU</label>
+        </rules>
+        <rules>
+            <name>US</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>en-us</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>US_AB_testing</targetReference>
+            </connector>
+            <label>US</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>US_AB_testing</name>
+        <label>US AB testing</label>
+        <locationX>1238</locationX>
+        <locationY>695</locationY>
+        <defaultConnector>
+            <targetReference>Email_Send_SSC_Seller_Survey_US_B</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Send_US_A_template</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FormulaModCurrentMinute</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Email_Send_SSC_Seller_Survey_US_A</targetReference>
+            </connector>
+            <label>Send US A template</label>
+        </rules>
+    </decisions>
+    <description>SFT-428 - Set AB testing, change template, send email on closure</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>FormulaModCurrentMinute</name>
+        <dataType>Number</dataType>
+        <expression>MOD( (NOW() - DATETIMEVALUE( &quot;1970-01-01 00:00:00&quot; ))  * 86400 ,2)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Case - SSC Seller Survey {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - SSC Seller Survey</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_case_template_name</name>
+        <label>Update case template name</label>
+        <locationX>908</locationX>
+        <locationY>1247</locationY>
+        <inputAssignments>
+            <field>SSAT_Template_Sent__c</field>
+            <value>
+                <elementReference>emailTemplateName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>468</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>By_pass_activated</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactEmail</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ContactEmail</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>emailTemplateName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

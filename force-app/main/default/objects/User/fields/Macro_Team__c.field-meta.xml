@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Macro_Team__c</fullName>
+    <externalId>false</externalId>
+    <label>Macro_Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asian Supply</fullName>
+                <default>false</default>
+                <label>Asian Supply</label>
+            </value>
+            <value>
+                <fullName>E.U. Supply</fullName>
+                <default>false</default>
+                <label>E.U. Supply</label>
+            </value>
+            <value>
+                <fullName>U.S. Supply</fullName>
+                <default>false</default>
+                <label>U.S. Supply</label>
+            </value>
+            <value>
+                <fullName>Global Distributors</fullName>
+                <default>false</default>
+                <label>Global Distributors</label>
+            </value>
+            <value>
+                <fullName>Cross-Border Supply</fullName>
+                <default>false</default>
+                <label>Cross-Border Supply</label>
+            </value>
+            <value>
+                <fullName>Category Development</fullName>
+                <default>false</default>
+                <label>Category Development</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>NewBiz Development</fullName>
+                <default>false</default>
+                <label>NewBiz Development</label>
+            </value>
+            <value>
+                <fullName>BM4B</fullName>
+                <default>false</default>
+                <label>BM4B</label>
+            </value>
+            <value>
+                <fullName>E.U. &amp; U.S. Back Watch</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>E.U. &amp; U.S. Back Watch</label>
+            </value>
+            <value>
+                <fullName>E.U. Onboarding</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>E.U. Onboarding</label>
+            </value>
+            <value>
+                <fullName>E.U. Other Diversification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>E.U. Other Diversification</label>
+            </value>
+            <value>
+                <fullName>E.U. Smartphone &amp; Core Electronics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>E.U. Smartphone &amp; Core Electronics</label>
+            </value>
+            <value>
+                <fullName>Global Accounts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Global Accounts</label>
+            </value>
+            <value>
+                <fullName>Strategic Partnership, B&amp;R &amp; Growth</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Strategic Partnership, B&amp;R &amp; Growth</label>
+            </value>
+            <value>
+                <fullName>Supply Operations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Supply Operations</label>
+            </value>
+            <value>
+                <fullName>U.S. Supply, Mana &amp; BM4B</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>U.S. Supply, Mana &amp; BM4B</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

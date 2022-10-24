@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Sales_2_flag__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>IF ( AND ( Last_Daily_Biz_Perf_Date__c &lt;&gt; NULL, 
+Last_Daily_Biz_Perf_Sales__c &lt; $Setup.Sales_Settings__c.Daily_Sales_Alert_Threshold__c ) , 
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Warning!&quot;, 15, 15), 
+IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;All Good&quot;, 15, 15) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Sales &lt; 2 flag</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

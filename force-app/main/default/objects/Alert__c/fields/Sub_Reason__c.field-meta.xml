@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Main_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Accessories Rate</fullName>
+                <default>false</default>
+                <label>Accessories Rate</label>
+            </value>
+            <value>
+                <fullName>Billing / Payout</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Billing / Payout</label>
+            </value>
+            <value>
+                <fullName>BM Policies &amp; Fees (other than &quot;Billing / Payout&quot; &amp; &quot;CCBM&quot;)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BM Policies &amp; Fees (other than &quot;Billing / Payout&quot; &amp; &quot;CCBM&quot;)</label>
+            </value>
+            <value>
+                <fullName>Business Paused</fullName>
+                <default>false</default>
+                <label>Business Paused</label>
+            </value>
+            <value>
+                <fullName>Buyback - Cancellation (Functional) rate</fullName>
+                <default>false</default>
+                <label>Buyback - Cancellation (Functional) rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - Charter breaches</fullName>
+                <default>false</default>
+                <label>Buyback - Charter breaches</label>
+            </value>
+            <value>
+                <fullName>Buyback - Counter-Proposal (Functional) rate</fullName>
+                <default>false</default>
+                <label>Buyback - Counter-Proposal (Functional) rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - Counter-Proposal (Non Functional) rate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Buyback - Counter-Proposal (Non Functional) rate</label>
+            </value>
+            <value>
+                <fullName>Buyback Exit due to Sales Exit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Buyback Exit due to Sales Exit</label>
+            </value>
+            <value>
+                <fullName>Buyback - Late Processing rate</fullName>
+                <default>false</default>
+                <label>Buyback - Late Processing rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - Late Response rate</fullName>
+                <default>false</default>
+                <label>Buyback - Late Response rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - Payment issue</fullName>
+                <default>false</default>
+                <label>Buyback - Payment issue</label>
+            </value>
+            <value>
+                <fullName>Buyback - Pending Order rate</fullName>
+                <default>false</default>
+                <label>Buyback - Pending Order rate</label>
+            </value>
+            <value>
+                <fullName>Buybox Competition</fullName>
+                <default>false</default>
+                <label>Buybox Competition</label>
+            </value>
+            <value>
+                <fullName>Cancellation Rate</fullName>
+                <default>false</default>
+                <label>Cancellation Rate</label>
+            </value>
+            <value>
+                <fullName>Catalog Issue</fullName>
+                <default>false</default>
+                <label>Catalog Issue</label>
+            </value>
+            <value>
+                <fullName>CCBM</fullName>
+                <default>false</default>
+                <label>CCBM</label>
+            </value>
+            <value>
+                <fullName>Charter Breaches</fullName>
+                <default>false</default>
+                <label>Charter Breaches</label>
+            </value>
+            <value>
+                <fullName>Closing Business</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closing Business</label>
+            </value>
+            <value>
+                <fullName>CSAT</fullName>
+                <default>false</default>
+                <label>CSAT</label>
+            </value>
+            <value>
+                <fullName>Debt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Debt</label>
+            </value>
+            <value>
+                <fullName>Defective Rate</fullName>
+                <default>false</default>
+                <label>Defective Rate</label>
+            </value>
+            <value>
+                <fullName>Esthetic Rate</fullName>
+                <default>false</default>
+                <label>Esthetic Rate</label>
+            </value>
+            <value>
+                <fullName>Forced exit due to Inactivity</fullName>
+                <default>false</default>
+                <label>Forced exit due to Inactivity</label>
+            </value>
+            <value>
+                <fullName>Gross Fault / Fraud</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gross Fault / Fraud</label>
+            </value>
+            <value>
+                <fullName>Invoicing Compliance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoicing Compliance</label>
+            </value>
+            <value>
+                <fullName>Late Delivery Rate</fullName>
+                <default>false</default>
+                <label>Late Delivery Rate</label>
+            </value>
+            <value>
+                <fullName>Late Response Rate</fullName>
+                <default>false</default>
+                <label>Late Response Rate</label>
+            </value>
+            <value>
+                <fullName>Multiple MP/LC</fullName>
+                <default>false</default>
+                <label>Multiple MP/LC</label>
+            </value>
+            <value>
+                <fullName>Mystery Order</fullName>
+                <default>false</default>
+                <label>Mystery Order</label>
+            </value>
+            <value>
+                <fullName>New categories slowly picking up</fullName>
+                <default>false</default>
+                <label>New categories slowly picking up</label>
+            </value>
+            <value>
+                <fullName>Not staffed to sell on marketplaces</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not staffed to sell on marketplaces</label>
+            </value>
+            <value>
+                <fullName>Policy violation</fullName>
+                <default>false</default>
+                <label>Policy violation</label>
+            </value>
+            <value>
+                <fullName>Refusal of T&amp;Cs Modification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refusal of T&amp;Cs Modification</label>
+            </value>
+            <value>
+                <fullName>Seller is Out of Office</fullName>
+                <default>false</default>
+                <label>Seller is Out of Office</label>
+            </value>
+            <value>
+                <fullName>Sourcing issues</fullName>
+                <default>false</default>
+                <label>Sourcing issues</label>
+            </value>
+            <value>
+                <fullName>Untracked Orders Rate</fullName>
+                <default>false</default>
+                <label>Untracked Orders Rate</label>
+            </value>
+            <value>
+                <fullName>Wrong Product Rate</fullName>
+                <default>false</default>
+                <label>Wrong Product Rate</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Accessories Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Cancellation (Functional) rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Charter breaches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Counter-Proposal (Functional) rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Late Processing rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Late Response rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Payment issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Pending Order rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Cancellation Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Charter Breaches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>CSAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Defective Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Esthetic Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Late Delivery Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Late Response Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Multiple MP/LC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Mystery Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Policy violation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Untracked Orders Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Wrong Product Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Business Paused</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Buybox Competition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Catalog Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>CCBM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>New categories slowly picking up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Seller is Out of Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Sourcing issues</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

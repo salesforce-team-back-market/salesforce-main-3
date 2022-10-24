@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NMOLanguageMailTemplate__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Merchant__r.Zone__c), &apos;fr-fr&apos;, &apos;fr&apos;,
+&apos;es-es&apos;, &apos;es&apos;,
+&apos;it-it&apos;,&apos;it&apos;,
+&apos;de-de&apos;,&apos;de&apos;,
+&apos;en_US&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>LaunchingPhaseLanguageMailTemplate</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

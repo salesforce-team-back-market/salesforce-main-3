@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Fields_for_BF_Opportunities</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+CONTAINS( Opportunity.Name ,&quot;Black Friday&quot;),
+
+OR(ISBLANK(New_Price__c) , ISBLANK(TEXT(Grade__c)) , Quantity=0 ),
+
+ISPICKVAL(Stage__c ,&quot;Merchant OK&quot;))</errorConditionFormula>
+    <errorMessage>Please add information about the New Price, Quantity and the Grade for this BMID.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exit_sub_reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Exit sub reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason_for_exit__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CCBM</fullName>
+                <default>false</default>
+                <label>CCBM</label>
+            </value>
+            <value>
+                <fullName>Accessories Rate</fullName>
+                <default>false</default>
+                <label>Accessories Rate</label>
+            </value>
+            <value>
+                <fullName>Cancellation Rate</fullName>
+                <default>false</default>
+                <label>Cancellation Rate</label>
+            </value>
+            <value>
+                <fullName>CSAT</fullName>
+                <default>false</default>
+                <label>CSAT</label>
+            </value>
+            <value>
+                <fullName>Defective Rate</fullName>
+                <default>false</default>
+                <label>Defective Rate</label>
+            </value>
+            <value>
+                <fullName>Esthetic Rate</fullName>
+                <default>false</default>
+                <label>Esthetic Rate</label>
+            </value>
+            <value>
+                <fullName>Late Delivery Rate</fullName>
+                <default>false</default>
+                <label>Late Delivery Rate</label>
+            </value>
+            <value>
+                <fullName>Late Response Rate</fullName>
+                <default>false</default>
+                <label>Late Response Rate</label>
+            </value>
+            <value>
+                <fullName>Policy violation</fullName>
+                <default>false</default>
+                <label>Policy violation</label>
+            </value>
+            <value>
+                <fullName>Billing / Payout</fullName>
+                <default>false</default>
+                <label>Billing / Payout</label>
+            </value>
+            <value>
+                <fullName>Wrong Product Rate</fullName>
+                <default>false</default>
+                <label>Wrong Product Rate</label>
+            </value>
+            <value>
+                <fullName>Untracked Orders Rate</fullName>
+                <default>false</default>
+                <label>Untracked Orders Rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - Charter breaches</fullName>
+                <default>false</default>
+                <label>Buyback - Charter breaches</label>
+            </value>
+            <value>
+                <fullName>Mystery Order</fullName>
+                <default>false</default>
+                <label>Failed Mystery Order</label>
+            </value>
+            <value>
+                <fullName>Debt</fullName>
+                <default>false</default>
+                <label>Debt</label>
+            </value>
+            <value>
+                <fullName>Gross Fault / Fraud</fullName>
+                <default>false</default>
+                <label>Gross Fault / Fraud</label>
+            </value>
+            <value>
+                <fullName>Invoicing Compliance</fullName>
+                <default>false</default>
+                <label>Invoicing Compliance</label>
+            </value>
+            <value>
+                <fullName>Refusal of T&amp;Cs Modification</fullName>
+                <default>false</default>
+                <label>Refusal of T&amp;Cs Modification</label>
+            </value>
+            <value>
+                <fullName>Forced exit due to Inactivity</fullName>
+                <default>false</default>
+                <label>Forced exit due to Inactivity</label>
+            </value>
+            <value>
+                <fullName>BM Policies &amp; Fees (other than Billing / Payout &amp; CCBM)</fullName>
+                <default>false</default>
+                <label>BM Policies &amp; Fees (other than Billing / Payout &amp; CCBM)</label>
+            </value>
+            <value>
+                <fullName>Buybox Competition</fullName>
+                <default>false</default>
+                <label>Buybox Competition</label>
+            </value>
+            <value>
+                <fullName>Catalog Issue</fullName>
+                <default>false</default>
+                <label>Catalog Issue</label>
+            </value>
+            <value>
+                <fullName>Charter Breaches</fullName>
+                <default>false</default>
+                <label>Charter Breaches</label>
+            </value>
+            <value>
+                <fullName>Not staffed to sell on marketplaces</fullName>
+                <default>false</default>
+                <label>Not staffed to sell on marketplaces</label>
+            </value>
+            <value>
+                <fullName>Sourcing issues</fullName>
+                <default>false</default>
+                <label>Sourcing issues</label>
+            </value>
+            <value>
+                <fullName>Buyback - Cancellation (Functional) rate</fullName>
+                <default>false</default>
+                <label>Buyback - Cancellation (Functional) rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - Counter-Proposal (Functional) rate</fullName>
+                <default>false</default>
+                <label>Buyback - Counter-Proposal (Functional) rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - Counter-Proposal (Non Functional) rate</fullName>
+                <default>false</default>
+                <label>Buyback - Counter-Proposal (Non Functional) rate</label>
+            </value>
+            <value>
+                <fullName>Buyback Exit due to Sales Exit</fullName>
+                <default>false</default>
+                <label>Buyback Exit due to Sales Exit</label>
+            </value>
+            <value>
+                <fullName>Buyback - Payment issue</fullName>
+                <default>false</default>
+                <label>Buyback - Payment issue</label>
+            </value>
+            <value>
+                <fullName>Buyback - Late Processing rate</fullName>
+                <default>false</default>
+                <label>Buyback - Late Processing rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - Late Response rate</fullName>
+                <default>false</default>
+                <label>Buyback - Late Response rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - Pending Order rate</fullName>
+                <default>false</default>
+                <label>Buyback - Pending Order rate</label>
+            </value>
+            <value>
+                <fullName>Multiple MP/LC</fullName>
+                <default>false</default>
+                <label>Multiple MP/LC</label>
+            </value>
+            <value>
+                <fullName>Buybox Availability (Quality)</fullName>
+                <default>false</default>
+                <label>Buybox Availability (Quality)</label>
+            </value>
+            <value>
+                <fullName>Hazardous Charger</fullName>
+                <default>false</default>
+                <label>Hazardous Charger</label>
+            </value>
+            <value>
+                <fullName>Closing Business</fullName>
+                <default>false</default>
+                <label>Closing Business</label>
+            </value>
+            <value>
+                <fullName>Buyback - Cancellation rate</fullName>
+                <default>false</default>
+                <label>Buyback - Cancellation rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - Counter-Proposal rate</fullName>
+                <default>false</default>
+                <label>Buyback - Counter-Proposal rate</label>
+            </value>
+            <value>
+                <fullName>Buyback - On-hold rate</fullName>
+                <default>false</default>
+                <label>Buyback - On-hold rate</label>
+            </value>
+            <value>
+                <fullName>BM Policies &amp; Fees</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BM Policies &amp; Fees</label>
+            </value>
+            <value>
+                <fullName>Counterfeit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Counterfeit</label>
+            </value>
+            <value>
+                <fullName>Debt / Debit Note</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Debt / Debit Note</label>
+            </value>
+            <value>
+                <fullName>Forced exit due to Inactivity/Churn</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Forced exit due to Inactivity/Churn</label>
+            </value>
+            <value>
+                <fullName>Payment issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Payment issues</label>
+            </value>
+            <value>
+                <fullName>Stop B2B Business</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stop B2B Business</label>
+            </value>
+            <value>
+                <fullName>Stop Refurbishing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stop Refurbishing</label>
+            </value>
+            <value>
+                <fullName>Termination of Business (Bankrupt)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Termination of Business (Bankrupt)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Accessories Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Cancellation Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>CSAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Defective Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Esthetic Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Late Delivery Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Late Response Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Policy violation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Wrong Product Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Untracked Orders Rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Charter breaches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Mystery Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Charter Breaches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Cancellation (Functional) rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Counter-Proposal (Functional) rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Counter-Proposal (Non Functional) rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Payment issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Late Processing rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Late Response rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Pending Order rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Multiple MP/LC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Hazardous Charger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Cancellation rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - Counter-Proposal rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <valueName>Buyback - On-hold rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legal/Finance</controllingFieldValue>
+            <valueName>Debt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legal/Finance</controllingFieldValue>
+            <valueName>Gross Fault / Fraud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legal/Finance</controllingFieldValue>
+            <valueName>Invoicing Compliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legal/Finance</controllingFieldValue>
+            <valueName>Refusal of T&amp;Cs Modification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Forced exit due to Inactivity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Buybox Competition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Catalog Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Not staffed to sell on marketplaces</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Sourcing issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <controllingFieldValue>Voluntary Leave</controllingFieldValue>
+            <valueName>Buyback Exit due to Sales Exit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business</controllingFieldValue>
+            <valueName>Closing Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Voluntary Leave</controllingFieldValue>
+            <valueName>CCBM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Voluntary Leave</controllingFieldValue>
+            <valueName>Billing / Payout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Voluntary Leave</controllingFieldValue>
+            <valueName>BM Policies &amp; Fees (other than Billing / Payout &amp; CCBM)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Voluntary Leave</controllingFieldValue>
+            <valueName>Buybox Availability (Quality)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

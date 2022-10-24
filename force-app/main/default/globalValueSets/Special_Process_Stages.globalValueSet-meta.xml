@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Pre-Exit Phase</fullName>
+        <default>false</default>
+        <label>Pre-Exit Phase</label>
+    </customValue>
+    <customValue>
+        <fullName>Ongoing Notice Period</fullName>
+        <default>false</default>
+        <label>Ongoing Notice Period</label>
+    </customValue>
+    <customValue>
+        <fullName>Draft</fullName>
+        <default>false</default>
+        <label>Draft</label>
+    </customValue>
+    <customValue>
+        <fullName>On Going</fullName>
+        <default>false</default>
+        <label>On Going</label>
+    </customValue>
+    <customValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>Phase 1</fullName>
+        <default>false</default>
+        <label>Phase 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Phase 2</fullName>
+        <default>false</default>
+        <label>Phase 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Phase 3</fullName>
+        <default>false</default>
+        <label>Phase 3</label>
+    </customValue>
+    <customValue>
+        <fullName>Saved</fullName>
+        <default>false</default>
+        <label>Saved</label>
+    </customValue>
+    <customValue>
+        <fullName>Failed</fullName>
+        <default>false</default>
+        <label>Failed</label>
+    </customValue>
+    <customValue>
+        <fullName>Refused</fullName>
+        <default>false</default>
+        <label>Refused</label>
+    </customValue>
+    <customValue>
+        <fullName>Done</fullName>
+        <default>false</default>
+        <label>Done</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </customValue>
+    <masterLabel>Special Process Stages</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

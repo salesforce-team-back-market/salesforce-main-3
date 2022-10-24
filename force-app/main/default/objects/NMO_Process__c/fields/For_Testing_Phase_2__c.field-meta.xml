@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>For_Testing_Phase_2__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <defaultValue>DATETIMEVALUE( TODAY() +1)</defaultValue>
+    <externalId>false</externalId>
+    <label>For Testing Phase 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

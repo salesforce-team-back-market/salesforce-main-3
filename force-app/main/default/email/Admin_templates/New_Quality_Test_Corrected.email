@@ -1,0 +1,10 @@
+Hello,
+
+A new Quality Test has been corrected.
+
+Merchant: {!Case.Account}
+Result: {!Case.Stage__c}
+
+Link to access the case: {!Case.Link}
+
+Have a good day,

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Alert - Doc Validation</name>
+    <style>none</style>
+    <subject>Hazardous chargers - An approval process has been submitted</subject>
+    <textOnly>Hello,  An approval process has been submitted by{!Approval_Requesting_User.FirstName} {!Approval_Requesting_User.LastName}, for the merchant {!Alert__c.Business_Name__c}.  We need you to revise the documents uploaded in the related alert and approve or reject the approval process.  Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

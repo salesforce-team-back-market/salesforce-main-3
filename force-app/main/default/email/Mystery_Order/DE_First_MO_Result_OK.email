@@ -1,0 +1,16 @@
+Hallo {!Contact.FirstName},
+
+ich kontaktiere Sie, um Sie darüber zu informieren, dass eine Test Bestellung in Ihrem Shop aufgegeben wurde. Diese Art an Bestellung ermöglicht es uns, die auf Back Market verkauften Produkte stichprobenartig zu überprüfen.
+
+Ich freue mich Ihnen nun mitteilen zu können, dass die bei Ihnen getätigte Bestellung erfolgreich ablief. In der Tat war das Gerät in einem sehr guten Zustand und auch der Kundensupport war wie erwartet. Lediglich folgende Punkte könnten noch verbessert werden:
+-
+-
+
+Es können zukünftig weitere Test Bestellungen entstehen und ich hoffe natürlich, dass diese genau so gut verlaufen werden.
+
+Anbei finden Sie den Bericht zu der "Successful Mystery Order - {!Account.Back_Office_PK__c} - {!Account.Name}"getätigten Bestellung.
+
+Bei Fragen bin ich natürlich gerne da.
+
+Beste Grüße,
+{!User.Name}

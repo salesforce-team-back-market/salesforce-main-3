@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>The e-mail template is used to inform the approver manager that a Debit Note request an approval for passing from In Progress to Saved stage.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Debit Note Process In Progress approval submission e-mail (text version)</name>
+    <style>none</style>
+    <subject>[Debit Note Process] Your approval is requested for passing on to Phase 1 stage</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

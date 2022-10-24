@@ -1,0 +1,22 @@
+Buongiorno {!Contact.FirstName},
+
+Ho ricevuto un avviso sul tuo ingresso in un periodo di monitoraggio per il mancato rispetto del nostro Regolamento della Qualità. Vorrei rivedere la situazione con te per trovare una soluzione favorevole ed evitare che le tue vendite ne risentano eccessivamente.
+
+I SAV principali correlati a questo problema sono i seguenti:
+
+SAV ###
+SAV ##
+SAV ##
+
+Tenendo presente quanto sopra menzionato, inizieremo un periodo di sostegno destinato a permetterti di soddisfare i nostri standard descritti nel Regolamento della Qualità. Questo inizia con un piano d'azione appropriato da concordare insieme. Ecco le soluzioni che possano esserti utili:
+
+
+
+
+
+L'obiettivo è quello di assicurare il rispetto degli standard di qualità previsti. Questo periodo di monitoraggio durerà fino al {!Alert__c.ETA__c}.
+
+Naturalmente, rimango a disposizione per discuterne e per accompagnarti sull’implementazione del piano d’azione, sul quale attendo un tuo riscontro in merito alle tempistiche di implementazione dei cambiamenti che metterai in atto per migliorare la tua performance.
+
+Ti auguro una buona giornata,
+{{{Sender.Signature}}}

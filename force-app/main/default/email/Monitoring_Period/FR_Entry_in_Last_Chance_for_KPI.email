@@ -1,0 +1,19 @@
+Bonjour {!Contact.FirstName},
+
+Je viens de nouveau d’être alerté sur votre taux de XXX ne s’étant pas amélioré comme souhaité. Nous avions défini un plan d’action afin de faire diminuer votre taux de "{!Alert__c.Issue_KPI__c}" à X% avant le {!Alert__c.ETA__c}.
+
+L’objectif n’ayant malheureusement pas été atteint, vous êtes entré en “dernière chance” de notre période de monitoring et vos ventes ont été limitées. Nous allons redoubler d'effort sur cet indicateur afin de pouvoir lever votre limitation des ventes et d'assurer une expérience client optimale. 
+
+L'objectif reste le même (soit X%) et devra être atteint avant la fin de cette période de dernière chance, c’est à-dire avant le {!Alert__c.ETA__c}.
+
+Afin de vous aider dans cette tâche, je joins à cet email la liste des SAV ayant négativement impacté votre taux ces 30 derniers jours.
+
+Voici les nouvelles solutions que je peux vous proposer :
+
+
+
+
+Je reste bien entendu disponible pour en discuter de vive voix et vous accompagner dans votre plan d’action.
+
+Bonne journée,
+{{{Sender.Signature}}}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Merchant_Special_Process__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Special Process Path (Debit Note)</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;To move on to the next Stage, you need to submit this record for approval.&lt;/p&gt;</info>
+        <picklistValueName>In Progress</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Debit_Note</recordTypeName>
+</PathAssistant>

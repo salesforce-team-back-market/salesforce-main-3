@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Language test - FR</name>
+    <style>freeForm</style>
+    <subject>Back Market - Voici votre P.K.</subject>
+    <textOnly>Bonjour {!Contact.FirstName},
+
+
+Dans le cadre de votre processus d&apos;onboarding sur Back Market, vous souhaitez compléter notre test de langue ? Super ! Cet email est pour vous.
+
+
+Nous allons vous demander votre Identifiant Unique (P.K.) afin de vous identifier et ainsi pouvoir associer vos réponses à votre compte marchand.
+
+
+A la question “What is your P.K.?” vous devrez répondre {!Account.Back_Office_PK__c}.
+
+
+Il est important de renseigner le bon nombre sans quoi nous ne pourrons récupérer vos réponses.
+
+
+Vous pouvez accéder au test de langue en cliquant ici.
+
+
+Bonne chance pour le test et bonne journée à vous,
+
+{!User.Name},
+
+Back Market</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

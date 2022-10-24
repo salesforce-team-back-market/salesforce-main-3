@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <name>Decision_Diversification_Tag_Sales_threshold</name>
+        <label>Decision - Diversification Tag - Sales threshold</label>
+        <locationX>731</locationX>
+        <locationY>858</locationY>
+        <defaultConnectorLabel>Threshold not reached</defaultConnectorLabel>
+        <rules>
+            <name>Threshold_reached</name>
+            <conditionLogic>(1 AND 2) OR (3 AND 4) OR (5 AND 6)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Diversification_tag__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Smartphones</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Has_Reached_100_Sales_on__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Diversification_tag__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Core Electronics</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Has_reached_70_sales_on__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Diversification_tag__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other Diversification</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Has_reached_50_sales_on__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_NMO_record_Sales_objective_reached</targetReference>
+            </connector>
+            <label>Threshold reached</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Is_RecordType_Sales</name>
+        <label>Decision - Is RecordType Sales</label>
+        <locationX>269</locationX>
+        <locationY>309</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NMO_Sales</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.NMO_buyback__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NMO_Process_is_new</targetReference>
+            </connector>
+            <label>NMO Sales</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Product_Cluster_or_Diversification_Tag</name>
+        <label>Decision - Product Cluster or Diversification Tag</label>
+        <locationX>516</locationX>
+        <locationY>948</locationY>
+        <defaultConnector>
+            <targetReference>Decision_Product_Cluster_Sales_threshold</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Product_Cluster_is_empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Product_cluster__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_Diversification_Tag_Sales_threshold</targetReference>
+            </connector>
+            <label>Product Cluster is empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Product_Cluster_Sales_threshold</name>
+        <label>Decision - Product Cluster - Sales threshold</label>
+        <locationX>734</locationX>
+        <locationY>1031</locationY>
+        <defaultConnectorLabel>Threshold not reached</defaultConnectorLabel>
+        <rules>
+            <name>Threshold_reached_0</name>
+            <conditionLogic>(1 AND 2) OR (3 AND 4) OR (5 AND 6)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Product_cluster__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Smartphones</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Has_Reached_100_Sales_on__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Product_cluster__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Core Electronics</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Has_reached_70_sales_on__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Product_cluster__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other Diversification</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Has_reached_50_sales_on__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_NMO_record_Sales_objective_reached</targetReference>
+            </connector>
+            <label>Threshold reached</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Stage_updated</name>
+        <label>Decision - Stage updated</label>
+        <locationX>309</locationX>
+        <locationY>946</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Updated_to_Phase_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Phase 3</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_Product_Cluster_or_Diversification_Tag</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Updated to Phase 3</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_User_Bypass</name>
+        <label>Decision - User Bypass</label>
+        <locationX>699</locationX>
+        <locationY>227</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>User_Bypass_Flow_isn_t_activated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.ByPassFlow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_Is_RecordType_Sales</targetReference>
+            </connector>
+            <label>User Bypass Flow isn&apos;t activated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>NMO_Process_is_new</name>
+        <label>NMO Process is new</label>
+        <locationX>308</locationX>
+        <locationY>561</locationY>
+        <defaultConnector>
+            <targetReference>Decision_Stage_updated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.NMO__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_NMO_Populate_Teams</targetReference>
+            </connector>
+            <label>Is New</label>
+        </rules>
+    </decisions>
+    <description>BizdevForLP formula fix
+Task formula fix</description>
+    <formulas>
+        <name>BizDevforLP</name>
+        <dataType>String</dataType>
+        <expression>if(isblank({!$Record.Merchant__r.Activation_Specialist_LP__c}), {!$Record.Merchant__r.Owner.Id} ,{!$Record.Merchant__r.Activation_Specialist_LP__r.Id})</expression>
+    </formulas>
+    <formulas>
+        <name>TaskD13</name>
+        <dataType>Date</dataType>
+        <expression>if(WEEKDAY(({!$Record.Has_Begun_On__c}+12))= 7, ({!$Record.Has_Begun_On__c}+14), 
+if(WEEKDAY(({!$Record.Has_Begun_On__c}+12))= 1, ({!$Record.Has_Begun_On__c}+13),({!$Record.Has_Begun_On__c}+12)))</expression>
+    </formulas>
+    <formulas>
+        <name>TaskD18</name>
+        <dataType>Date</dataType>
+        <expression>if(WEEKDAY(({!$Record.Has_Begun_On__c}+17))= 7, ({!$Record.Has_Begun_On__c}+19), 
+if(WEEKDAY(({!$Record.Has_Begun_On__c}+17))= 1, ({!$Record.Has_Begun_On__c}+18),({!$Record.Has_Begun_On__c}+17)))</expression>
+    </formulas>
+    <formulas>
+        <name>TaskD2</name>
+        <dataType>Date</dataType>
+        <expression>if(WEEKDAY(DATEVALUE({!$Record.CreatedDate} +1))= 7, DATEVALUE({!$Record.CreatedDate} +3), 
+if(WEEKDAY(DATEVALUE({!$Record.CreatedDate} +1))= 1, DATEVALUE({!$Record.CreatedDate} +2),
+DATEVALUE({!$Record.CreatedDate} +1)))</expression>
+    </formulas>
+    <formulas>
+        <name>TaskD5</name>
+        <dataType>Date</dataType>
+        <expression>if(WEEKDAY(({!$Record.Has_Begun_On__c}+4))= 7, ({!$Record.Has_Begun_On__c}+6), 
+if(WEEKDAY(({!$Record.Has_Begun_On__c}+4))= 1, ({!$Record.Has_Begun_On__c}+5),({!$Record.Has_Begun_On__c}+4)))</expression>
+    </formulas>
+    <formulas>
+        <name>TaskD7</name>
+        <dataType>Date</dataType>
+        <expression>if(WEEKDAY(({!$Record.Has_Begun_On__c}+6))= 7, ({!$Record.Has_Begun_On__c}+8), 
+if(WEEKDAY(({!$Record.Has_Begun_On__c}+6))= 1, ({!$Record.Has_Begun_On__c}+7),({!$Record.Has_Begun_On__c}+6)))</expression>
+    </formulas>
+    <interviewLabel>NMO - After Save Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>NMO - After Save Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_task_D13</name>
+        <label>Create task D13</label>
+        <locationX>1010</locationX>
+        <locationY>691</locationY>
+        <connector>
+            <targetReference>Create_task_D18</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>TaskD13</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>BizDevforLP</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Sales + Quality check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject__c</field>
+            <value>
+                <stringValue>Sales + Quality check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_task_D18</name>
+        <label>Create task D18</label>
+        <locationX>1129</locationX>
+        <locationY>691</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>TaskD18</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>BizDevforLP</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Final check before approval</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject__c</field>
+            <value>
+                <stringValue>Final check before approval</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_task_D2</name>
+        <label>Create task D2</label>
+        <locationX>643</locationX>
+        <locationY>685</locationY>
+        <connector>
+            <targetReference>Create_task_D5</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>TaskD2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>BizDevforLP</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>First sale Check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject__c</field>
+            <value>
+                <stringValue>First sale Check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_task_D5</name>
+        <label>Create task D5</label>
+        <locationX>774</locationX>
+        <locationY>692</locationY>
+        <connector>
+            <targetReference>Create_task_D7</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>TaskD5</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>BizDevforLP</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Sales check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject__c</field>
+            <value>
+                <stringValue>Sales check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_task_D7</name>
+        <label>Create task D7</label>
+        <locationX>888</locationX>
+        <locationY>692</locationY>
+        <connector>
+            <targetReference>Create_task_D13</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>TaskD7</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>BizDevforLP</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>1st Quality check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject__c</field>
+            <value>
+                <stringValue>1st Quality check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Update_NMO_Populate_Teams</name>
+        <label>Update NMO - Populate Teams</label>
+        <locationX>483</locationX>
+        <locationY>602</locationY>
+        <connector>
+            <targetReference>Create_task_D2</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>BizDevApproval__c</field>
+            <value>
+                <elementReference>BizDevforLP</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Manager__c</field>
+            <value>
+                <elementReference>$Record.Merchant__r.Manager_Sales__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_NMO_record_Sales_objective_reached</name>
+        <label>Update NMO record - Sales objective reached</label>
+        <locationX>990</locationX>
+        <locationY>943</locationY>
+        <inputAssignments>
+            <field>Sales_objective_reached_in_Phase_3__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>193</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Decision_User_Bypass</targetReference>
+        </connector>
+        <object>NMO_Process__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>PopulateActivationSpecialistLP</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hello {!$Record.Merchant__r.Owner.Name}&lt;/p&gt;&lt;p&gt;Please populate the field activation specialist (LP) for this merchant {!$Record.Merchant__c}.&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

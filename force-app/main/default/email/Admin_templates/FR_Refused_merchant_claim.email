@@ -1,0 +1,12 @@
+Bonjour,
+
+Nous avons reçu votre réclamation concernant la commande {!Case.Order_ID__c}.
+Pour rappel, voici les informations que nous avons eu de votre part :
+- {!Case.Claim_Reason__c}
+- {!Case.Description}
+
+Nous avons revu le cas et avons refusé votre réclamation pour la raison suivante : 
+{!Case.Comment_if_refused__c}
+
+Bonne journée,
+L'équipe Back Market

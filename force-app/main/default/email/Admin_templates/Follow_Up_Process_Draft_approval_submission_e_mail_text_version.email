@@ -1,0 +1,14 @@
+Hi,  {!Receiving_User.FirstName}!
+
+{!$User.FirstName} has requested your approval for the following item : 
+{!Account.Name}
+{!Merchant_Special_Process__c.RecordType} Special Process "{!Merchant_Special_Process__c.Name}" for the Merchant "{!Merchant_Special_Process__c.Merchant_Name__c}" that is for now on stage "{!Merchant_Special_Process__c.Stage__c}".
+Your verification is needed to move on to the next stage.
+
+To approve or reject this item, click this link : {!ApprovalRequest.Internal_URL}
+
+If previously checked, you can also directly reply to this email with the word APPROVE, APPROVED, YES, REJECT, REJECTED, or NO in the first line of the email message and add comments on the second line. The comments will be stored with the approval request in Salesforce CRM.
+Note: For salesforce.com to process your response the word APPROVE, APPROVED, YES, REJECT, REJECTED, or NO must be in the very first line of the reply email. Also, any comment must be in the second line.
+
+Thanks in advance,
+Your Salesforce administrator

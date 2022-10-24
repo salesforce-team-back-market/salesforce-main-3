@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Qualification Email (NL)</name>
+    <style>freeForm</style>
+    <subject>Back Market x &lt;&lt; Business name &gt;&gt;: Finaliseer je registratie!</subject>
+    <textOnly>Beste {!Contact.FirstName},
+
+Bedankt om {!Account.Name} te registreren op Back Market!
+
+Om zo snel mogelijk te kunnen starten met de verkoop op al onze Europese markten, hebben we nog wat informatie over {!Account.Name} nodig.
+
+Daarom mag je deze vragenlijst invullen (5 minuten):
+
+Klik hier
+
+We zullen je jouw nieuwe Unieke Identificatienummer (P.K.) vragen om je te kunnen identificeren.
+Op de vraag &quot;Wat is jouw P.K.?&quot;, mag je {!Account.Back_Office_PK__c} antwoorden.
+
+Nadat we je antwoorden hebben nagekeken, komt een van onze Business Developers bij je terug binnen 24-48 uur!
+
+We kijken alvast uit naar onze samenwerking.
+
+Met vriendelijke groet,
+Team Back Market
+
+Help Center voor Verkopers
+Jouw Back-Office</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

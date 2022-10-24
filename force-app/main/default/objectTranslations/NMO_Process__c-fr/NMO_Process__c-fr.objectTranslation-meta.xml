@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Launching Phase</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Launching Phases</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Buyback - N.M.O. Process Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quality</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EU Sales - N.M.O. Process Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quality</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales - N.M.O. Process Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dates info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>NMO 2 - Action Plan</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sales &amp; Limitation info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>US Sales - N.M.O. Process Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quality</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Activity</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Buyback_information</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Check_SAV</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Flags_Business</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Key_Dates</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SAV</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Support_Ticket</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>NMO_E_U</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>NMO_E_U_buyback</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>NMO_U_S</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Is_Ended_Checks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Double_False_Start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_ReUpdate_Limitation_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Update_to_Saved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR_RECORDTYPE</name>
+    </validationRules>
+</CustomObjectTranslation>

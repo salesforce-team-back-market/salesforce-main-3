@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$Back_Office_PK__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Profile__c</field>
+    </columns>
+    <columns>
+        <field>Account.Merchant_Special_Processes__r$Stage__c</field>
+    </columns>
+    <columns>
+        <field>Account.Merchant_Special_Processes__r$Has_Begun_On__c</field>
+    </columns>
+    <columns>
+        <field>Account.Merchant_Special_Processes__r$BizDev__c</field>
+    </columns>
+    <columns>
+        <field>Account.Merchant_Special_Processes__r$View_details__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>if(Merchant_Special_Process__c.Expired_draft__c &gt;=7, &quot;KO&quot;, &quot;OK&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Draft &quot;Expired&quot;</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>Account.Merchant_Special_Processes__r$Stage__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Draft</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Merchant_Special_Processes__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Merchant_Special_Process__c.Follow_Up,Merchant_Special_Process__c.Follow_Up_U_S</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>EU &amp; US - Drafts Follow-ups (/QAM)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_MSP_Custom_Report__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Last_Breath_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

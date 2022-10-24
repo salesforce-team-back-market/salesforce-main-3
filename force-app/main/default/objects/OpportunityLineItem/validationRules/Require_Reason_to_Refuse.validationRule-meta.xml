@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Reason_to_Refuse</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(ISPICKVAL(Stage__c,&quot;Merchant KO&quot;),ISPICKVAL(Stage__c,&quot;No Action by Due Date&quot;)),
+ISBLANK(TEXT( Reason_to_Refuse__c )))</errorConditionFormula>
+    <errorDisplayField>Reason_to_Refuse__c</errorDisplayField>
+    <errorMessage>Please add the reason to refuse the Opportunity.</errorMessage>
+</ValidationRule>

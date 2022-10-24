@@ -1,0 +1,20 @@
+Bonjour {!Contact.FirstName},
+
+Je viens de nouveau d’être alerté sur votre entrée en dernière chance de notre période de monitoring concernant le non-respect de notre charte. Nous avions défini un plan d’action à mettre en place afin de répondre à nos standards de qualité détaillés dans notre charte qualité.
+
+La situation ne s’étant malheureusement pas améliorée, vous êtes entrée en “dernière chance” de notre période de monitoring et vos ventes ont été limitées. Nous allons donc continuer à travailler sur l’analyse de votre indicateur. 
+
+L'objectif reste le même et devra être atteint avant la fin de cette période de dernière chance, c’est à-dire avant le {!Alert__c.ETA__c}.
+
+Afin de vous aider dans cette tâche, voici les facteurs qui en sont généralement à l'origine :
+
+SAV ###
+SAV ###
+SAV ###
+
+Comme détaillé dans notre charte qualité, il est impératif de … (écrire ce qu’impose la charte)
+
+Je reste bien entendu disponible pour en discuter de vive voix et vous accompagner dans votre plan d’action.
+
+Bonne journée,
+{{{Sender.Signature}}}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Buyback_Bill_Process_Require_Bill_Amount</fullName>
+    <active>true</active>
+    <description>Bill amount is required to be able to move case to In progress or Closed.</description>
+    <errorConditionFormula>AND(
+ISBLANK(  Bill_Amount__c  ),
+OR( 
+ISPICKVAL (Status ,&quot;Chargeback in Progress&quot;),
+ISPICKVAL (Status ,&quot;Bill Paid&quot;),
+ISPICKVAL (Status ,&quot;Dead Bill&quot;)))</errorConditionFormula>
+    <errorDisplayField>Bill_Amount__c</errorDisplayField>
+    <errorMessage>Please add Bill Amount to be able to move this case to the following stage.</errorMessage>
+</ValidationRule>

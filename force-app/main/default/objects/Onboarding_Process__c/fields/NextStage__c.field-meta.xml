@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NextStage__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <description>Stage dependent picklist used by the Apex class DCE_StepsPathController to grant stage modifications.</description>
+    <externalId>false</externalId>
+    <label>NextStage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Stage__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Onboarding_Stages</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Business &amp; Quality Prerequisites</controllingFieldValue>
+            <valueName>Go-Live Prerequisites</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Go-Live Prerequisites</controllingFieldValue>
+            <valueName>Business &amp; Quality Prerequisites</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

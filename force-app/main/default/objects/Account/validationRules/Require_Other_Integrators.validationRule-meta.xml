@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Other_Integrators</fullName>
+    <active>true</active>
+    <description>Require details about integrators if API/FTP Integrations is Other.</description>
+    <errorConditionFormula>AND(
+INCLUDES( API_FTP_integration__c ,&quot;Other&quot;),
+ISBLANK( Other_Integration_s_Solution_s_Used__c ))</errorConditionFormula>
+    <errorDisplayField>Other_Integration_s_Solution_s_Used__c</errorDisplayField>
+    <errorMessage>Please add the names of other Integrators that this merchant is using.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Targeted_Country__c</entityName>
+    <fieldName>Online_Status__c</fieldName>
+    <masterLabel>Targeted Country Path EU</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;To move to &amp;quot;Ready&amp;quot; you need your merchant to:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Be a native speaker&lt;/li&gt;&lt;li&gt;Use Back Care&lt;/li&gt;&lt;li&gt;Or have a language tet at &amp;quot;Accepted&amp;quot;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Candidate</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;You can&amp;#39;t move to &amp;quot;Live&amp;quot; ?&lt;/p&gt;&lt;p&gt;Check this &lt;a href=&quot;https://www.notion.so/Targeted-Country-33118caa0de843c49b8c6ee636573805&quot; target=&quot;_blank&quot;&gt;&lt;u&gt;Notion article&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;</info>
+        <picklistValueName>Ready</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;To move to &amp;quot;Ready&amp;quot; you need your merchant to:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Be a native speaker&lt;/li&gt;&lt;li&gt;Use Back Care&lt;/li&gt;&lt;li&gt;Or have a language tet at &amp;quot;Accepted&amp;quot;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Selected</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>E_U</recordTypeName>
+</PathAssistant>

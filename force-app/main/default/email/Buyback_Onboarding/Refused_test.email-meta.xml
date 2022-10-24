@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Refused test</name>
+    <style>freeForm</style>
+    <subject>Back Market x {!Account.Name} - Questionnaire Qualité Reprise refusé</subject>
+    <textOnly>Bonjour {!Contact.FirstName},
+
+
+Merci d&apos;avoir pris le temps de répondre à notre questionnaire Qualité reprise. Comme expliqué en amont celui-ci nous permet de comprendre les pratiques de l&apos;entreprise et de nous assurer que celles-ci sont en adéquation/accord avec notre Charte Qualité.
+
+
+
+Je suis cependant dans le regret de vous annoncer que votre test n’a pas été validé. En effet, la charte ne semble pas tout à fait comprise. Votre erreur se situe dans un de ces différents points cruciaux pour passer en ligne sur la reprise :
+
+Vous devez répondre aux clients en 1 jour ouvré
+Vous devez renvoyer le produit au client en 2 jours ouvrés en cas de refus de contre-proposition
+A réception d&apos;un produit non fonctionnel, vous devez déclencher le paiement en 2 jours ouvrés
+L&apos;état de la batterie n&apos;est pas un motif de contre-proposition
+Vous devez vérifier et conserver les numéros de série/IMEI des produits rachetés
+
+Nous allons alors vous laisser le temps de relire la Charte Qualité en pièce jointe.
+
+Vous serez autorisé à repasser le questionnaire dès le {{insert date}} via ce lien : https://backster.typeform.com/to/pC7RQf
+
+Dans cet intervalle de temps, je peux vous aider à clarifier les points qui vous semblent peu clairs et vous pouvez compléter les autres étapes de la procédure d&apos;inscription.
+
+En vous souhaitant une bonne journée.
+
+
+
+Cordialement,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

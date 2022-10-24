@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>The e-mail template is used to inform the approver manager that an onboarding request an approval for passing from 3.3 step to N.M.O..</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Onboarding Process 3.3 step to N.M.O. approval submission e-mail (text version)</name>
+    <style>none</style>
+    <subject>[Onboarding Process] Your approval is requested for passing on to N.M.O.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

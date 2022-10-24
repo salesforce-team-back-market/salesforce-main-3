@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Targeted_Country__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Targeted Country</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Targeted_Country__c.Merchant__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Merchant__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Targeted_Country__c</referenceTo>
+    <relationshipLabel>Sales Limitations</relationshipLabel>
+    <relationshipName>Sales_Limitations</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

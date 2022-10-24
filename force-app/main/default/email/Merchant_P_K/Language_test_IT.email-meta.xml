@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Back_Market</letterhead>
+    <name>Language test - IT</name>
+    <style>freeForm</style>
+    <subject>Back Market - Ecco il tuo P.K.</subject>
+    <textOnly>Caro {!Contact.FirstName},
+
+
+Come parte del processo di integrazione nel nostro portale, ti verrà chiesto di effettuare nostro test di lingua?
+
+
+In questi test, ti verrà richiesto il tuo codice univoco venditore (P.K.), in modo che potremo identificarti ed associare quel determinato test a te.
+
+
+Alla domanda “What is your P.K.?” dovrai rispondere {!Account.Back_Office_PK__c}.
+
+
+E’ davvero importante inserire il numero corretto, altrimenti avremo delle belle difficoltà a ritrovare le tue risposte!
+
+
+Potete accedere al test di lingua cliccando qui.
+
+
+Buona fortuna con i test!
+
+Un caro saluto e buon lavoro,
+
+{!User.Name},
+
+Back Market</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

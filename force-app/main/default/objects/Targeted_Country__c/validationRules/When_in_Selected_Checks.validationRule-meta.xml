@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_in_Selected_Checks</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT ( Force__c ) 
+&amp;&amp; 
+AND ( AND ( ISPICKVAL ( PRIORVALUE ( Online_Status__c ), &quot;Selected&quot; ), 
+            ISPICKVAL ( Online_Status__c, &quot;Selected&quot; )
+	   ), 
+      OR ( AND ( Back_Care__c = FALSE, 
+                 TEXT( Language_proficiency_test__c ) = &quot;Not answered&quot;,
+           AND ( Back_Care__c = TRUE, 
+                 TEXT( Language_proficiency_test__c ) &lt;&gt; &quot;Not answered&quot; ) ) ) )
+&amp;&amp; NOT( Native_Speaker__c )
+&amp;&amp; NOT($RecordType.DeveloperName=&quot;U_S&quot;)
+&amp;&amp; $User.ByPassValidationRules__c !=true</errorConditionFormula>
+    <errorDisplayField>Language_proficiency_test__c</errorDisplayField>
+    <errorMessage>Either Language Proficiency Test must be &quot;Not sent&quot; or Back Care must be unchecked (not both or none).</errorMessage>
+</ValidationRule>
