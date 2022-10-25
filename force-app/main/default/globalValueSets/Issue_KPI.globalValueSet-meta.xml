@@ -161,9 +161,9 @@
         <label>On Time Delivery Rate</label>
     </customValue>
     <customValue>
-        <fullName>On Time Delivery Rate Selfcare</fullName>
+        <fullName>On Time Delivery Rate Self-care</fullName>
         <default>false</default>
-        <label>On Time Delivery Rate Selfcare</label>
+        <label>On Time Delivery Rate Self-care</label>
     </customValue>
     <customValue>
         <fullName>Processing time (non-functional)</fullName>
