@@ -1076,6 +1076,20 @@
                     <elementReference>$Setup.CaseRecordType__c.Generic_Case__c</elementReference>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.CaseRecordType__c.Seller_Support_Case__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.CaseRecordType__c.Customer_Support_Case__c</elementReference>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Update_the_case_status_to_in_progress</targetReference>
             </connector>
@@ -1199,8 +1213,7 @@
             <label>Case is Email-to-case</label>
         </rules>
     </decisions>
-    <description>Bug when multiple onboarding processes : select only the last one created</description>
-    <environments>Default</environments>
+    <description>SSC - Cases not going back to &quot;in progress&quot; after deadline is over</description>
     <formulas>
         <name>After3BusinessDays</name>
         <dataType>DateTime</dataType>
