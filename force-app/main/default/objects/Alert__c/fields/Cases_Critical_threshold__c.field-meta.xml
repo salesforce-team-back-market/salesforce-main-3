@@ -7,6 +7,9 @@ If
 (ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) || ISPICKVAL(Issue_KPI__c,&quot;Late Response Rate&quot;) || ISPICKVAL(Issue_KPI__c,&quot;Accessories Rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Wrong Product Rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Buyback - Counter-Proposal (Non Functional) rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Buyback - Cancellation (Functional) rate&quot;) || ISPICKVAL(Issue_KPI__c,&quot;Buyback - Cancellation rate&quot;) || ISPICKVAL(Issue_KPI__c,&quot;Untracked Orders Rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Late Delivery Rate&quot;), 10 ,
 
 
+if(ISPICKVAL(Issue_KPI__c,&quot;Perfect Order Rate&quot;),20,
+if(OR(ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate Self-care&quot;), ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate&quot;)),17,
+
 
 if(ISPICKVAL(Issue_KPI__c,&quot;CSAT&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Cancellation Rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Esthetic Rate&quot;),8,
 
@@ -21,7 +24,7 @@ if (ISPICKVAL(Issue_KPI__c,&quot;Buyback - Late Response rate&quot;),15,
 
 if(ISPICKVAL(Issue_KPI__c,&quot;Buyback - Late Processing rate&quot;) ,25,
 			
-			0)))))))</formula>
+			0)))))))))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Cases - Critical threshold</label>
     <precision>18</precision>
