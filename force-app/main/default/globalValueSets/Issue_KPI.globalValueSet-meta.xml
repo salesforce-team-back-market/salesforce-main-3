@@ -151,64 +151,19 @@
         <label>Buyback - On-hold rate</label>
     </customValue>
     <customValue>
-        <fullName>Burning Chargers</fullName>
+        <fullName>Perfect Order Rate</fullName>
         <default>false</default>
-        <isActive>false</isActive>
-        <label>Burning Chargers</label>
+        <label>Perfect Order Rate</label>
     </customValue>
     <customValue>
-        <fullName>Average number of messages / order</fullName>
+        <fullName>On Time Delivery Rate</fullName>
         <default>false</default>
-        <isActive>false</isActive>
-        <label>Average number of messages / order</label>
+        <label>On Time Delivery Rate</label>
     </customValue>
     <customValue>
-        <fullName>Processing time (functional)</fullName>
+        <fullName>On Time Delivery Rate Self-care</fullName>
         <default>false</default>
-        <isActive>false</isActive>
-        <label>Processing time (functional)</label>
-    </customValue>
-    <customValue>
-        <fullName>Inactivity Risk</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Inactivity Risk</label>
-    </customValue>
-    <customValue>
-        <fullName>None</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>None</label>
-    </customValue>
-    <customValue>
-        <fullName>Inactivity</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Inactivity</label>
-    </customValue>
-    <customValue>
-        <fullName>Paypal Refund Issue</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Paypal Refund Issue</label>
-    </customValue>
-    <customValue>
-        <fullName>Unprocessed order rate D+2</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Unprocessed order rate D+2</label>
-    </customValue>
-    <customValue>
-        <fullName>NRR</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>NRR</label>
-    </customValue>
-    <customValue>
-        <fullName>Response time</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Response time</label>
+        <label>On Time Delivery Rate Self-care</label>
     </customValue>
     <customValue>
         <fullName>Processing time (non-functional)</fullName>
@@ -217,10 +172,70 @@
         <label>Processing time (non-functional)</label>
     </customValue>
     <customValue>
+        <fullName>Processing time (functional)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Processing time (functional)</label>
+    </customValue>
+    <customValue>
+        <fullName>NRR</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NRR</label>
+    </customValue>
+    <customValue>
         <fullName>Charter Breaches</fullName>
         <default>false</default>
         <isActive>false</isActive>
         <label>Charter Breaches</label>
+    </customValue>
+    <customValue>
+        <fullName>Average number of messages / order</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Average number of messages / order</label>
+    </customValue>
+    <customValue>
+        <fullName>Inactivity</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Inactivity</label>
+    </customValue>
+    <customValue>
+        <fullName>Inactivity Risk</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Inactivity Risk</label>
+    </customValue>
+    <customValue>
+        <fullName>Response time</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Response time</label>
+    </customValue>
+    <customValue>
+        <fullName>Unprocessed order rate D+2</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Unprocessed order rate D+2</label>
+    </customValue>
+    <customValue>
+        <fullName>Paypal Refund Issue</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Paypal Refund Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Burning Chargers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Burning Chargers</label>
     </customValue>
     <masterLabel>Issue - KPI</masterLabel>
     <sorted>false</sorted>

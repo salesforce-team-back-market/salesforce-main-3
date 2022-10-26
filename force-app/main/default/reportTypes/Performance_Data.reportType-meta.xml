@@ -591,6 +591,41 @@
             <field>Monthly_Data_to_Delete__c</field>
             <table>Performance_Data__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>POR__c</field>
+            <table>Performance_Data__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>POR_Cases__c</field>
+            <table>Performance_Data__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OTDR__c</field>
+            <table>Performance_Data__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OTDR_Cases__c</field>
+            <table>Performance_Data__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LTDR__c</field>
+            <table>Performance_Data__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LTDR_Cases__c</field>
+            <table>Performance_Data__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OTDR_Last_100_Orders__c</field>
+            <table>Performance_Data__c</table>
+        </columns>
         <masterLabel>Performances Data</masterLabel>
     </sections>
 </ReportType>
