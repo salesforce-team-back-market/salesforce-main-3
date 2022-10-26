@@ -1,10 +1,684 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
+        <name>Copy_10_of_Send_log</name>
+        <label>Copy 10 of Send log</label>
+        <locationX>3097</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_Last_Chance_values_to_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update critical rate PP - LC</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_11_of_Send_log</name>
+        <label>Copy 11 of Send log</label>
+        <locationX>809</locationX>
+        <locationY>2976</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_list_of_alerts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update - update start</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_10_of_Send_log</name>
+        <label>Copy 1 of Copy 10 of Send log</label>
+        <locationX>3361</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_Last_Chance_values_to_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update critical rate On Time Delivery Rate Selfcare - LC</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_11_of_Send_log</name>
+        <label>Copy 1 of Copy 11 of Send log</label>
+        <locationX>809</locationX>
+        <locationY>3216</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_Is_notification_needed</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update - update success</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>SUCCESS</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_1_of_Copy_11_of_Send_log</name>
+        <label>Copy 1 of Copy 1 of Copy 11 of Send log</label>
+        <locationX>1458</locationX>
+        <locationY>3216</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>ERROR</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_4_of_Send_log</name>
+        <label>Copy 1 of Copy 4 of Send log</label>
+        <locationX>1513</locationX>
+        <locationY>1356</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Decision_Test_Actual_rate</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update On Time Delivery Rate Selfcare</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Send_log</name>
+        <label>Copy 1 of Send log</label>
+        <locationX>1469</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_test_number_of_case</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update ETA today</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_2_of_Send_log</name>
+        <label>Copy 2 of Send log</label>
+        <locationX>1469</locationX>
+        <locationY>2304</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Assign_Saved_Reason_Not_enough_cases</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update not enough cases - Saved</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_3_of_Send_log</name>
+        <label>Copy 3 of Send log</label>
+        <locationX>1249</locationX>
+        <locationY>1356</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Assign_Failed_values_to_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update PP violation - Failed</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_4_of_Send_log</name>
+        <label>Copy 4 of Send log</label>
+        <locationX>2041</locationX>
+        <locationY>1356</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_Test_Actual_rate</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update cases above objective</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_5_of_Send_log</name>
+        <label>Copy 5 of Send log</label>
+        <locationX>1777</locationX>
+        <locationY>1596</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Assign_Saved_Reason_Rate_better_than_threshold</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update rate objective reached - Saved</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_6_of_Send_log</name>
+        <label>Copy 6 of Send log</label>
+        <locationX>2305</locationX>
+        <locationY>1596</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_Stage</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update rate objective not reached</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_7_of_Send_log</name>
+        <label>Copy 7 of Send log</label>
+        <locationX>2041</locationX>
+        <locationY>1836</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_Last_Chance_values_to_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update rate objective not reached - LC</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_8_of_Send_log</name>
+        <label>Copy 8 of Send log</label>
+        <locationX>2305</locationX>
+        <locationY>1836</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_Failed_values_to_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update rate objective not reached - Failed</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_9_of_Send_log</name>
+        <label>Copy 9 of Send log</label>
+        <locationX>2833</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Assign_Last_Chance_values_to_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update critical rate - LC</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_log</name>
+        <label>Send log</label>
+        <locationX>809</locationX>
+        <locationY>636</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Loop_on_alerts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update process start</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
         <name>Send_notif</name>
         <label>Send notif</label>
-        <locationX>1144</locationX>
-        <locationY>1424</locationY>
+        <locationX>424</locationX>
+        <locationY>4248</locationY>
         <actionName>customNotificationAction</actionName>
         <actionType>customNotificationAction</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -43,8 +717,8 @@
     <assignments>
         <name>Assign_BizDev_to_recipient_List</name>
         <label>Assign BizDev to recipient List</label>
-        <locationX>769</locationX>
-        <locationY>1133</locationY>
+        <locationX>490</locationX>
+        <locationY>3816</locationY>
         <assignmentItems>
             <assignToReference>Notification_Recipient_Ids</assignToReference>
             <operator>Add</operator>
@@ -59,8 +733,8 @@
     <assignments>
         <name>Assign_BizDev_to_recipient_List_0</name>
         <label>Assign BizDev to recipient List</label>
-        <locationX>768</locationX>
-        <locationY>1705</locationY>
+        <locationX>138</locationX>
+        <locationY>3816</locationY>
         <assignmentItems>
             <assignToReference>Notification_Recipient_Ids</assignToReference>
             <operator>Add</operator>
@@ -75,8 +749,8 @@
     <assignments>
         <name>Assign_current_alert_to_LIST</name>
         <label>Assign current alert to LIST</label>
-        <locationX>1954</locationX>
-        <locationY>705</locationY>
+        <locationX>2547</locationX>
+        <locationY>2760</locationY>
         <assignmentItems>
             <assignToReference>Alerts_List_To_Update</assignToReference>
             <operator>Add</operator>
@@ -91,8 +765,8 @@
     <assignments>
         <name>Assign_Failed_values_to_alert</name>
         <label>Assign Failed values to alert</label>
-        <locationX>1793</locationX>
-        <locationY>705</locationY>
+        <locationX>1249</locationX>
+        <locationY>1476</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Has_failed_on__c</assignToReference>
             <operator>Assign</operator>
@@ -122,14 +796,15 @@
             </value>
         </assignmentItems>
         <connector>
+            <isGoTo>true</isGoTo>
             <targetReference>Assign_current_alert_to_LIST</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_Last_Chance_values_to_alert</name>
         <label>Assign Last Chance values to alert</label>
-        <locationX>1812</locationX>
-        <locationY>573</locationY>
+        <locationX>2833</locationX>
+        <locationY>1236</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Has_entered_Last_chance_on__c</assignToReference>
             <operator>Assign</operator>
@@ -172,8 +847,8 @@
     <assignments>
         <name>Assign_loop_iteration_to_current_alert</name>
         <label>Assign loop iteration to current alert</label>
-        <locationX>932</locationX>
-        <locationY>318</locationY>
+        <locationX>2547</locationX>
+        <locationY>876</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert</assignToReference>
             <operator>Assign</operator>
@@ -188,8 +863,8 @@
     <assignments>
         <name>Assign_Merchant_Owner_to_Recipient_Ids</name>
         <label>Assign Merchant Owner to Recipient Ids</label>
-        <locationX>875</locationX>
-        <locationY>1426</locationY>
+        <locationX>666</locationX>
+        <locationY>3696</locationY>
         <assignmentItems>
             <assignToReference>Notification_Recipient_Ids</assignToReference>
             <operator>Add</operator>
@@ -204,8 +879,8 @@
     <assignments>
         <name>Assign_Saved_Reason_Not_enough_cases</name>
         <label>Assign Saved Reason - Not enough cases</label>
-        <locationX>1553</locationX>
-        <locationY>1015</locationY>
+        <locationX>1469</locationX>
+        <locationY>2424</locationY>
         <assignmentItems>
             <assignToReference>Saved_Reason</assignToReference>
             <operator>Assign</operator>
@@ -220,8 +895,8 @@
     <assignments>
         <name>Assign_Saved_Reason_Rate_better_than_threshold</name>
         <label>Assign Saved Reason - Rate better than threshold</label>
-        <locationX>1553</locationX>
-        <locationY>1202</locationY>
+        <locationX>1777</locationX>
+        <locationY>1716</locationY>
         <assignmentItems>
             <assignToReference>Saved_Reason</assignToReference>
             <operator>Assign</operator>
@@ -230,30 +905,15 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Assign_Saved_values_to_alert</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Assign_Saved_Reason_Service_subscription</name>
-        <label>Assign Saved Reason - Service subscription</label>
-        <locationX>1534</locationX>
-        <locationY>802</locationY>
-        <assignmentItems>
-            <assignToReference>Saved_Reason</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <stringValue>Service subscription</stringValue>
-            </value>
-        </assignmentItems>
-        <connector>
+            <isGoTo>true</isGoTo>
             <targetReference>Assign_Saved_values_to_alert</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_Saved_values_to_alert</name>
         <label>Assign Saved values to alert</label>
-        <locationX>1807</locationX>
-        <locationY>846</locationY>
+        <locationX>1469</locationX>
+        <locationY>2544</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Has_been_saved_on__c</assignToReference>
             <operator>Assign</operator>
@@ -290,9 +950,10 @@
     <decisions>
         <name>Decision_ETA_equal_today</name>
         <label>Decision ETA equal today</label>
-        <locationX>1153</locationX>
-        <locationY>323</locationY>
+        <locationX>2547</locationX>
+        <locationY>996</locationY>
         <defaultConnector>
+            <isGoTo>true</isGoTo>
             <targetReference>Loop_on_alerts</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
@@ -321,66 +982,9 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_KPI_is_LRR_or_CSAT</targetReference>
+                <targetReference>Copy_1_of_Send_log</targetReference>
             </connector>
             <label>Yes - ETA is Today</label>
-        </rules>
-        <rules>
-            <name>No_But_MP_Critical_for_CSAT</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.ETA__c</leftValueReference>
-                <operator>GreaterThan</operator>
-                <rightValue>
-                    <elementReference>$Flow.CurrentDate</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Stage__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Monitoring Period</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
-                <operator>LessThanOrEqualTo</operator>
-                <rightValue>
-                    <elementReference>Loop_on_alerts.Rate_Critical_threshold__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Actual_Number_of_cases__c</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
-                <rightValue>
-                    <elementReference>Loop_on_alerts.Cases_Critical_threshold__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>CSAT</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Flow.CurrentDate</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
-                <rightValue>
-                    <elementReference>DateForCritical</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.CreatedDate</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <elementReference>$Flow.CurrentDate</elementReference>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Decision_TC_all_BC_0</targetReference>
-            </connector>
-            <label>No - But MP Critical for CSAT</label>
         </rules>
         <rules>
             <name>No_But_MP_Critical_for_other_KPIs</name>
@@ -414,13 +1018,6 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>CSAT</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
                 <leftValueReference>$Flow.CurrentDate</leftValueReference>
                 <operator>GreaterThanOrEqualTo</operator>
                 <rightValue>
@@ -448,8 +1045,15 @@
                     <stringValue>Policy violation</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
-                <targetReference>Decision_KPI_is_LRR</targetReference>
+                <targetReference>Copy_9_of_Send_log</targetReference>
             </connector>
             <label>No - But MP Critical for other KPIs</label>
         </rules>
@@ -492,16 +1096,87 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_Last_Chance_values_to_alert</targetReference>
+                <targetReference>Copy_10_of_Send_log</targetReference>
             </connector>
             <label>No - But critical rate from Policy Violation</label>
+        </rules>
+        <rules>
+            <name>No_But_MP_Critical_for_On_Time_Delivery_Rate_Selfcare</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Monitoring Period</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.ETA__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Flow.CurrentDate</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>DateForCritical</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.CreatedDate</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Cases_Critical_threshold__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Actual_Number_of_cases__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>Current_Alert.Entry_number_of_cases__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Actual_Number_of_cases__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Current_Alert.Cases_Critical_threshold__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Current_Alert.Rate_Critical_threshold__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_10_of_Send_log</targetReference>
+            </connector>
+            <label>No - But MP Critical for On Time Delivery Rate Selfcare</label>
         </rules>
     </decisions>
     <decisions>
         <name>Decision_Is_notification_needed</name>
         <label>Decision Is notification needed and merchant owner no empty</label>
-        <locationX>354</locationX>
-        <locationY>1194</locationY>
+        <locationX>809</locationX>
+        <locationY>3336</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes_notification_is_needed</name>
@@ -536,8 +1211,8 @@
     <decisions>
         <name>Decision_Is_there_any_Alert</name>
         <label>Decision Is there any Alert?</label>
-        <locationX>357</locationX>
-        <locationY>550</locationY>
+        <locationX>1265</locationX>
+        <locationY>516</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Alerts_should_be_treated</name>
@@ -550,73 +1225,16 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_TC_without_BC_Sales</targetReference>
+                <targetReference>Send_log</targetReference>
             </connector>
             <label>Alerts should be treated</label>
         </rules>
     </decisions>
     <decisions>
-        <name>Decision_KPI_is_LRR</name>
-        <label>Decision - KPI is LRR</label>
-        <locationX>1330</locationX>
-        <locationY>329</locationY>
-        <defaultConnector>
-            <targetReference>Assign_Last_Chance_values_to_alert</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>LRR</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Late Response Rate</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Decision_TC_all_BC_0</targetReference>
-            </connector>
-            <label>LRR</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Decision_KPI_is_LRR_or_CSAT</name>
-        <label>Decision - KPI is LRR or CSAT</label>
-        <locationX>1157</locationX>
-        <locationY>801</locationY>
-        <defaultConnector>
-            <targetReference>Decision_test_number_of_case</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>LRR_or_CSAT</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>CSAT</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Late Response Rate</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Decision_TC_all_BC</targetReference>
-            </connector>
-            <label>LRR or CSAT</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>Decision_on_Active_user</name>
         <label>Decision on Active user</label>
-        <locationX>675</locationX>
-        <locationY>1447</locationY>
+        <locationX>798</locationX>
+        <locationY>3576</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Merchant_Owner_is_active</name>
@@ -637,8 +1255,8 @@
     <decisions>
         <name>Decision_on_Merchant_Owner_Team</name>
         <label>Decision on Merchant Owner Team</label>
-        <locationX>355</locationX>
-        <locationY>1434</locationY>
+        <locationX>424</locationX>
+        <locationY>3456</locationY>
         <defaultConnector>
             <targetReference>Decision_on_Active_user</targetReference>
         </defaultConnector>
@@ -698,55 +1316,13 @@
     <decisions>
         <name>Decision_Stage</name>
         <label>Decision - Stage</label>
-        <locationX>1816</locationX>
-        <locationY>1207</locationY>
+        <locationX>2305</locationX>
+        <locationY>1716</locationY>
         <defaultConnector>
+            <isGoTo>true</isGoTo>
             <targetReference>Loop_on_alerts</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>CSAT_OR_LRR_objective_not_reached_on_ETA</name>
-            <conditionLogic>1 AND ((2 AND 3) OR (4 AND 5))</conditionLogic>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.ETA__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Flow.CurrentDate</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>CSAT</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Objective_to_reach__c</leftValueReference>
-                <operator>LessThan</operator>
-                <rightValue>
-                    <elementReference>Loop_on_alerts.Actual_Rate__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Late Response Rate</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Objective_to_reach__c</leftValueReference>
-                <operator>GreaterThan</operator>
-                <rightValue>
-                    <elementReference>Loop_on_alerts.Actual_Rate__c</elementReference>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Assign_Failed_values_to_alert</targetReference>
-            </connector>
-            <label>CSAT OR LRR objective not reached on ETA</label>
-        </rules>
         <rules>
             <name>Actual_Stage_is_MP</name>
             <conditionLogic>and</conditionLogic>
@@ -758,7 +1334,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_Last_Chance_values_to_alert</targetReference>
+                <targetReference>Copy_7_of_Send_log</targetReference>
             </connector>
             <label>Actual Stage is MP</label>
         </rules>
@@ -773,92 +1349,20 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_Failed_values_to_alert</targetReference>
+                <targetReference>Copy_8_of_Send_log</targetReference>
             </connector>
             <label>Actual Stage is LC</label>
         </rules>
     </decisions>
     <decisions>
-        <name>Decision_TC_all_BC</name>
-        <label>Decision - TC all BC</label>
-        <locationX>1360</locationX>
-        <locationY>804</locationY>
-        <defaultConnector>
-            <targetReference>Decision_test_number_of_case</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>TC_are_all_BC</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Get_TC_without_BC_Sales</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Assign_Saved_Reason_Service_subscription</targetReference>
-            </connector>
-            <label>TC are all BC</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Decision_TC_all_BC_0</name>
-        <label>Decision - TC all BC</label>
-        <locationX>1530</locationX>
-        <locationY>320</locationY>
-        <defaultConnector>
-            <targetReference>Assign_Last_Chance_values_to_alert</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>TC_are_all_BC_0</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Get_TC_without_BC_Sales</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Assign_Saved_Reason_Service_subscription</targetReference>
-            </connector>
-            <label>TC are all BC</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>Decision_Test_Actual_rate</name>
         <label>Decision Test Actual rate</label>
-        <locationX>1362</locationX>
-        <locationY>1207</locationY>
+        <locationX>2041</locationX>
+        <locationY>1476</locationY>
         <defaultConnector>
-            <targetReference>Decision_Stage</targetReference>
+            <targetReference>Copy_6_of_Send_log</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Objective isn&apos;t reached</defaultConnectorLabel>
-        <rules>
-            <name>Objective_reached_for_CSAT</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Actual_Number_of_cases__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>Loop_on_alerts.Cases_Objective_to_reach__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>CSAT</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Assign_Saved_Reason_Rate_better_than_threshold</targetReference>
-            </connector>
-            <label>Objective reached for CSAT</label>
-        </rules>
         <rules>
             <name>Objective_reached_for_other_KPIs</name>
             <conditionLogic>and</conditionLogic>
@@ -869,15 +1373,8 @@
                     <elementReference>Loop_on_alerts.Objective_to_reach__c</elementReference>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>CSAT</stringValue>
-                </rightValue>
-            </conditions>
             <connector>
-                <targetReference>Assign_Saved_Reason_Rate_better_than_threshold</targetReference>
+                <targetReference>Copy_5_of_Send_log</targetReference>
             </connector>
             <label>Objective reached for other KPIs</label>
         </rules>
@@ -885,10 +1382,10 @@
     <decisions>
         <name>Decision_test_number_of_case</name>
         <label>Decision test number of case</label>
-        <locationX>1358</locationX>
-        <locationY>1022</locationY>
+        <locationX>1469</locationX>
+        <locationY>1236</locationY>
         <defaultConnector>
-            <targetReference>Decision_Test_Actual_rate</targetReference>
+            <targetReference>Copy_4_of_Send_log</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Number of cases above objective</defaultConnectorLabel>
         <rules>
@@ -908,8 +1405,15 @@
                     <stringValue>Policy violation</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
-                <targetReference>Assign_Saved_Reason_Not_enough_cases</targetReference>
+                <targetReference>Copy_2_of_Send_log</targetReference>
             </connector>
             <label>Low number of cases</label>
         </rules>
@@ -931,7 +1435,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_Saved_Reason_Not_enough_cases</targetReference>
+                <targetReference>Copy_2_of_Send_log</targetReference>
             </connector>
             <label>No cases and Policy Violation</label>
         </rules>
@@ -946,16 +1450,45 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_Failed_values_to_alert</targetReference>
+                <targetReference>Copy_3_of_Send_log</targetReference>
             </connector>
             <label>Still some cases and Policy Violation</label>
+        </rules>
+        <rules>
+            <name>New_KPIs</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Time Delivery Rate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Perfect Order Rate</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_4_of_Send_log</targetReference>
+            </connector>
+            <label>New KPIs</label>
         </rules>
     </decisions>
     <decisions>
         <name>Decision_Weekday</name>
         <label>Decision - Weekday</label>
-        <locationX>356</locationX>
-        <locationY>278</locationY>
+        <locationX>1625</locationX>
+        <locationY>276</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Weekday_Stages_to_update</name>
@@ -980,9 +1513,7 @@
             <label>Weekday - Stages to update</label>
         </rules>
     </decisions>
-    <description>SFS-417 - entered LC at the same day as MP starts
-Was based on account created date instead of alert created date + 7</description>
-    <environments>Default</environments>
+    <description>SFT-230 - New KPIs in Quality Perf Data</description>
     <formulas>
         <name>Date_14_days_Ago</name>
         <dataType>Date</dataType>
@@ -1306,22 +1837,22 @@ Was based on account created date instead of alert created date + 7</description
     <loops>
         <name>Loop_on_alerts</name>
         <label>Loop on alerts</label>
-        <locationX>362</locationX>
-        <locationY>829</locationY>
+        <locationX>809</locationX>
+        <locationY>756</locationY>
         <collectionReference>Get_merchant_alerts</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
             <targetReference>Assign_loop_iteration_to_current_alert</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Update_list_of_alerts</targetReference>
+            <targetReference>Copy_11_of_Send_log</targetReference>
         </noMoreValuesConnector>
     </loops>
     <loops>
         <name>Loop_on_EU_Team</name>
         <label>Loop on EU Team</label>
-        <locationX>772</locationX>
-        <locationY>1318</locationY>
+        <locationX>402</locationX>
+        <locationY>3696</locationY>
         <collectionReference>Get_users_EU_Team</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1334,8 +1865,8 @@ Was based on account created date instead of alert created date + 7</description
     <loops>
         <name>Loop_on_US_Team</name>
         <label>Loop on US Team</label>
-        <locationX>774</locationX>
-        <locationY>1551</locationY>
+        <locationX>50</locationX>
+        <locationY>3696</locationY>
         <collectionReference>Get_users_US_Team</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1354,7 +1885,7 @@ Was based on account created date instead of alert created date + 7</description
     <processMetadataValues>
         <name>CanvasMode</name>
         <value>
-            <stringValue>FREE_FORM_CANVAS</stringValue>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
         </value>
     </processMetadataValues>
     <processMetadataValues>
@@ -1367,8 +1898,8 @@ Was based on account created date instead of alert created date + 7</description
     <recordLookups>
         <name>Get_merchant_alerts</name>
         <label>Get merchant alerts</label>
-        <locationX>363</locationX>
-        <locationY>426</locationY>
+        <locationX>1265</locationX>
+        <locationY>396</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Decision_Is_there_any_Alert</targetReference>
@@ -1479,6 +2010,13 @@ Was based on account created date instead of alert created date + 7</description
                 <elementReference>$Record.Id</elementReference>
             </value>
         </filters>
+        <filters>
+            <field>Is_archived__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>Alert__c</object>
         <sortField>ETA__c</sortField>
@@ -1488,8 +2026,8 @@ Was based on account created date instead of alert created date + 7</description
     <recordLookups>
         <name>Get_notification_id</name>
         <label>Get notification id</label>
-        <locationX>1002</locationX>
-        <locationY>1417</locationY>
+        <locationX>424</locationX>
+        <locationY>4128</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Send_notif</targetReference>
@@ -1507,45 +2045,10 @@ Was based on account created date instead of alert created date + 7</description
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>Get_TC_without_BC_Sales</name>
-        <label>Get TC without BC Sales</label>
-        <locationX>361</locationX>
-        <locationY>694</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Loop_on_alerts</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Back_Care__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Merchant__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Online_Status__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Live</stringValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Targeted_Country__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
         <name>Get_users_EU_Team</name>
         <label>Get users EU Team</label>
-        <locationX>603</locationX>
-        <locationY>1321</locationY>
+        <locationX>402</locationX>
+        <locationY>3576</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_EU_Team</targetReference>
@@ -1579,8 +2082,8 @@ Was based on account created date instead of alert created date + 7</description
     <recordLookups>
         <name>Get_users_US_Team</name>
         <label>Get users US Team</label>
-        <locationX>590</locationX>
-        <locationY>1570</locationY>
+        <locationX>50</locationX>
+        <locationY>3576</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_US_Team</targetReference>
@@ -1614,16 +2117,19 @@ Was based on account created date instead of alert created date + 7</description
     <recordUpdates>
         <name>Update_list_of_alerts</name>
         <label>Update list of alerts</label>
-        <locationX>362</locationX>
-        <locationY>1008</locationY>
+        <locationX>809</locationX>
+        <locationY>3096</locationY>
         <connector>
-            <targetReference>Decision_Is_notification_needed</targetReference>
+            <targetReference>Copy_1_of_Copy_11_of_Send_log</targetReference>
         </connector>
+        <faultConnector>
+            <targetReference>Copy_1_of_Copy_1_of_Copy_11_of_Send_log</targetReference>
+        </faultConnector>
         <inputReference>Alerts_List_To_Update</inputReference>
     </recordUpdates>
     <start>
-        <locationX>237</locationX>
-        <locationY>19</locationY>
+        <locationX>1499</locationX>
+        <locationY>0</locationY>
         <connector>
             <targetReference>Decision_Weekday</targetReference>
         </connector>
