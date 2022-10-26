@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Severe_Issue</fullName>
+    <fullName>Monitoring_Period_Sales_Archived</fullName>
     <active>true</active>
-    <compactLayoutAssignment>Severe_Issue</compactLayoutAssignment>
-    <label>Legal &amp; Safety Issue</label>
+    <label>Monitoring Period - Sales - Archived</label>
     <picklistValues>
         <picklist>Action_Plan_s_pushed__c</picklist>
         <values>
@@ -310,10 +309,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Allocate %2F dedicate stock to BM</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Answer faster</fullName>
             <default>false</default>
         </values>
@@ -343,10 +338,6 @@
         </values>
         <values>
             <fullName>Better plan departures on vacation</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>BuyBack - Develop additional sourcing options</fullName>
             <default>false</default>
         </values>
         <values>
@@ -415,10 +406,6 @@
         </values>
         <values>
             <fullName>I have explained the Quality Charter</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Mana - Develop additional sourcing options</fullName>
             <default>false</default>
         </values>
         <values>
@@ -499,10 +486,6 @@
         </values>
         <values>
             <fullName>Technical issue in the BO - Doesn%27t receive a notification for each message</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Use integrator %28Sellermania%3F%29</fullName>
             <default>false</default>
         </values>
         <values>
@@ -607,8 +590,60 @@
     <picklistValues>
         <picklist>Issue_KPI__c</picklist>
         <values>
-            <fullName>Potential Hazardous Charger</fullName>
-            <default>true</default>
+            <fullName>Accessories Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Esthetic Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Delivery Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Response Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Time Delivery Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Time Delivery Rate Self-care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perfect Order Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policy violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Untracked Orders Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Product Rate</fullName>
+            <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
@@ -702,6 +737,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Duplicate MP</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Event external to BM %2F merchant %2F 3rd party provider %28Storm%2C Brexit%2C %2E%2E%2E%29</fullName>
             <default>false</default>
         </values>
@@ -711,6 +750,10 @@
         </values>
         <values>
             <fullName>KPI OK 7 days in a row</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long-term exception</fullName>
             <default>false</default>
         </values>
         <values>
@@ -743,14 +786,6 @@
     </picklistValues>
     <picklistValues>
         <picklist>Stage__c</picklist>
-        <values>
-            <fullName>Charter breach identified</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Doc validated pending MO result</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Failed</fullName>
             <default>false</default>

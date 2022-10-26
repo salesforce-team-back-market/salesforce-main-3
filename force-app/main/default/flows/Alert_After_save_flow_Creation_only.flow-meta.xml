@@ -4,7 +4,7 @@
         <name>Action_Send_EN_Email</name>
         <label>Action - Send EN Email</label>
         <locationX>842</locationX>
-        <locationY>2783</locationY>
+        <locationY>1608</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -42,8 +42,8 @@
     <actionCalls>
         <name>Action_Send_EN_Email_for_greater_than_10000</name>
         <label>Action - Send EN Email for greater than 10000</label>
-        <locationX>3562</locationX>
-        <locationY>2783</locationY>
+        <locationX>4266</locationX>
+        <locationY>1608</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -91,8 +91,8 @@
     <actionCalls>
         <name>Action_Send_EN_Email_for_less_than_10000</name>
         <label>Action - Send EN Email for less than 10000</label>
-        <locationX>4354</locationX>
-        <locationY>2783</locationY>
+        <locationX>5058</locationX>
+        <locationY>1608</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -140,7 +140,7 @@
         <name>Action_Send_FR_Email</name>
         <label>Action - Send FR Email</label>
         <locationX>314</locationX>
-        <locationY>2783</locationY>
+        <locationY>1608</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -178,8 +178,8 @@
     <actionCalls>
         <name>Action_Send_FR_Email_for_greater_than_10000</name>
         <label>Action - Send FR Email for greater than 10000</label>
-        <locationX>3298</locationX>
-        <locationY>2783</locationY>
+        <locationX>4002</locationX>
+        <locationY>1608</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -227,8 +227,8 @@
     <actionCalls>
         <name>Action_Send_FR_Email_for_less_than_10000</name>
         <label>Action - Send FR Email for less than 10000</label>
-        <locationX>4090</locationX>
-        <locationY>2783</locationY>
+        <locationX>4794</locationX>
+        <locationY>1608</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -275,8 +275,8 @@
     <actionCalls>
         <name>Action_Send_US_Email_for_greater_than_10000</name>
         <label>Action - Send US Email for greater than 10000</label>
-        <locationX>3826</locationX>
-        <locationY>2783</locationY>
+        <locationX>4530</locationX>
+        <locationY>1608</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -323,8 +323,8 @@
     <actionCalls>
         <name>Action_Send_US_Email_for_less_than_10000</name>
         <label>Action - Send US Email for less than 10000</label>
-        <locationX>4618</locationX>
-        <locationY>2783</locationY>
+        <locationX>5322</locationX>
+        <locationY>1608</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -371,15 +371,15 @@
     <actionCalls>
         <name>Send_Notif_to_BizDev</name>
         <label>Send Notif to BizDev</label>
-        <locationX>1230</locationX>
-        <locationY>3215</locationY>
+        <locationX>1802</locationX>
+        <locationY>3168</locationY>
         <actionName>customNotificationAction</actionName>
         <actionType>customNotificationAction</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>customNotifTypeId</name>
             <value>
-                <elementReference>Get_notification_id.Id</elementReference>
+                <elementReference>Copy_2_of_Get_notification_id.Id</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -410,15 +410,15 @@
     <actionCalls>
         <name>Send_Notif_to_Merchant_Owner_MP_Creation</name>
         <label>Send Notif to Merchant Owner - MP Creation</label>
-        <locationX>4786</locationX>
-        <locationY>2159</locationY>
+        <locationX>6282</locationX>
+        <locationY>2232</locationY>
         <actionName>customNotificationAction</actionName>
         <actionType>customNotificationAction</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>customNotifTypeId</name>
             <value>
-                <elementReference>Get_notification_id.Id</elementReference>
+                <elementReference>Copy_1_of_Get_notification_id.Id</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -451,7 +451,7 @@
         <name>Add_B_F_contacts_to_final_list</name>
         <label>Add B&amp;F contacts to final list</label>
         <locationX>970</locationX>
-        <locationY>2183</locationY>
+        <locationY>1008</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -474,7 +474,7 @@
         <name>Add_B_F_contacts_to_final_list_0</name>
         <label>Add B&amp;F contacts to final list</label>
         <locationX>358</locationX>
-        <locationY>2303</locationY>
+        <locationY>1128</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -496,8 +496,8 @@
     <assignments>
         <name>Add_B_F_contacts_to_final_list_0_0</name>
         <label>Add B&amp;F contacts to final list</label>
-        <locationX>4482</locationX>
-        <locationY>2183</locationY>
+        <locationX>5186</locationX>
+        <locationY>1008</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -519,8 +519,8 @@
     <assignments>
         <name>Add_B_F_contacts_to_final_list_0_0_0</name>
         <label>Add B&amp;F contacts to final list</label>
-        <locationX>3606</locationX>
-        <locationY>2303</locationY>
+        <locationX>4310</locationX>
+        <locationY>1128</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -543,7 +543,7 @@
         <name>Add_BizDev_Email_address</name>
         <label>Add BizDev Email address</label>
         <locationX>578</locationX>
-        <locationY>2543</locationY>
+        <locationY>1368</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -565,8 +565,8 @@
     <assignments>
         <name>Add_BizDev_Email_address_0</name>
         <label>Add BizDev Email address</label>
-        <locationX>4090</locationX>
-        <locationY>2543</locationY>
+        <locationX>4794</locationX>
+        <locationY>1368</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -586,81 +586,10 @@
         </connector>
     </assignments>
     <assignments>
-        <name>Assign_bizdev_to_recipient_ids</name>
-        <label>Assign bizdev to recipient ids</label>
-        <locationX>2989</locationX>
-        <locationY>1175</locationY>
-        <assignmentItems>
-            <assignToReference>Recipient_Ids</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>$Record.Business_Name__r.OwnerId</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Filter_on_recordtype</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Assign_bizdev_to_recipient_ids_EU_team</name>
-        <label>Assign bizdev to recipient ids EU team</label>
-        <locationX>2549</locationX>
-        <locationY>1295</locationY>
-        <assignmentItems>
-            <assignToReference>Recipient_Ids</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Loop_on_EU_Team.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Loop_on_EU_Team</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Assign_bizdev_to_recipient_ids_us_team</name>
-        <label>Assign bizdev to recipient ids us team</label>
-        <locationX>2197</locationX>
-        <locationY>1295</locationY>
-        <assignmentItems>
-            <assignToReference>Recipient_Ids</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Loop_on_US_Team.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Loop_on_US_Team</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Assign_notification_type_id_and_current_record</name>
-        <label>Assign notification type id and current record</label>
-        <locationX>2868</locationX>
-        <locationY>695</locationY>
-        <assignmentItems>
-            <assignToReference>Notification_type_id</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Get_notification_id.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>Current_Alert_to_update</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Decision_on_bizdev</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>Assign_Sales_limitation_before_alert_0_0</name>
         <label>Assign Sales limitation before alert</label>
-        <locationX>1274</locationX>
-        <locationY>2759</locationY>
+        <locationX>1978</locationX>
+        <locationY>1584</locationY>
         <assignmentItems>
             <assignToReference>Limitation_before_alert</assignToReference>
             <operator>Assign</operator>
@@ -673,10 +602,152 @@
         </connector>
     </assignments>
     <assignments>
+        <name>Copy_1_of_Assign_bizdev_to_recipient_ids</name>
+        <label>Copy 1 of Assign bizdev to recipient ids</label>
+        <locationX>6370</locationX>
+        <locationY>1704</locationY>
+        <assignmentItems>
+            <assignToReference>Recipient_Ids</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Business_Name__r.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_bizdev_to_recipient_ids_EU_team</name>
+        <label>Copy 1 of Assign bizdev to recipient ids EU team</label>
+        <locationX>6018</locationX>
+        <locationY>1824</locationY>
+        <assignmentItems>
+            <assignToReference>Recipient_Ids</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Copy_1_of_Loop_on_EU_Team.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Loop_on_EU_Team</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_bizdev_to_recipient_ids_us_team</name>
+        <label>Copy 1 of Assign bizdev to recipient ids us team</label>
+        <locationX>5666</locationX>
+        <locationY>1824</locationY>
+        <assignmentItems>
+            <assignToReference>Recipient_Ids</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Copy_1_of_Loop_on_US_Team.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Loop_on_US_Team</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_notification_type_id_and_current_record</name>
+        <label>Copy 1 of Assign notification type id and current record</label>
+        <locationX>6282</locationX>
+        <locationY>1224</locationY>
+        <assignmentItems>
+            <assignToReference>Notification_type_id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Copy_1_of_Get_notification_id.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Current_Alert_to_update</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Decision_on_bizdev_bizdev_buyback</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Assign_bizdev_to_recipient_ids</name>
+        <label>Copy 2 of Assign bizdev to recipient ids</label>
+        <locationX>1890</locationX>
+        <locationY>2640</locationY>
+        <assignmentItems>
+            <assignToReference>Recipient_Ids</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Business_Name__r.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Notif_to_BizDev</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Assign_bizdev_to_recipient_ids_EU_team</name>
+        <label>Copy 2 of Assign bizdev to recipient ids EU team</label>
+        <locationX>1538</locationX>
+        <locationY>2760</locationY>
+        <assignmentItems>
+            <assignToReference>Recipient_Ids</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Copy_2_of_Loop_on_EU_Team.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Loop_on_EU_Team</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Assign_bizdev_to_recipient_ids_us_team</name>
+        <label>Copy 2 of Assign bizdev to recipient ids us team</label>
+        <locationX>1186</locationX>
+        <locationY>2760</locationY>
+        <assignmentItems>
+            <assignToReference>Recipient_Ids</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Copy_2_of_Loop_on_US_Team.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Loop_on_US_Team</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Assign_notification_type_id_and_current_record</name>
+        <label>Copy 2 of Assign notification type id and current record</label>
+        <locationX>1802</locationX>
+        <locationY>2160</locationY>
+        <assignmentItems>
+            <assignToReference>Notification_type_id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Copy_2_of_Get_notification_id.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Current_Alert_to_update</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Decision_on_bizdev_bizdev_buyback</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Count</name>
         <label>Count</label>
-        <locationX>1362</locationX>
-        <locationY>1943</locationY>
+        <locationX>2066</locationX>
+        <locationY>768</locationY>
         <assignmentItems>
             <assignToReference>VariableCount</assignToReference>
             <operator>AssignCount</operator>
@@ -691,8 +762,8 @@
     <decisions>
         <name>Already_limited_because_of_a_Sales_alert</name>
         <label>Already limited because of a Sales alert</label>
-        <locationX>1362</locationX>
-        <locationY>2639</locationY>
+        <locationX>2066</locationX>
+        <locationY>1464</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes_Already_limited</name>
@@ -755,16 +826,16 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Decision_on_bizdev</name>
-        <label>Decision on bizdev / bizdev buyback</label>
-        <locationX>2868</locationX>
-        <locationY>815</locationY>
+        <name>Copy_1_of_Decision_on_bizdev_bizdev_buyback</name>
+        <label>Copy 1 of Decision on bizdev / bizdev buyback</label>
+        <locationX>6282</locationX>
+        <locationY>1344</locationY>
         <defaultConnector>
-            <targetReference>Filter_on_recordtype</targetReference>
+            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Champion_is_not_null_0</name>
+            <name>Copy_1_of_Bizdev_is_not_null</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
@@ -774,16 +845,265 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_on_sales_bizdev</targetReference>
+                <targetReference>Copy_1_of_Decision_on_sales_bizdev</targetReference>
             </connector>
-            <label>Bizdev is not null</label>
+            <label>Copy 1 of Bizdev is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_Decision_on_Sales_Active_user</name>
+        <label>Copy 1 of Decision on Sales Active user</label>
+        <locationX>6282</locationX>
+        <locationY>1584</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Assign_bizdev_to_recipient_ids</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Yes_Sales_user_is_Inactive</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Owner.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
+            </connector>
+            <label>Copy 1 of Yes Sales user is Inactive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_Decision_on_sales_bizdev</name>
+        <label>Copy 1 of Decision on sales bizdev</label>
+        <locationX>5930</locationX>
+        <locationY>1464</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Decision_on_Sales_Active_user</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_BackWatch_US</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.UserID__c.Sam__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_US__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Hand Free</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Get_US_Team</targetReference>
+            </connector>
+            <label>Copy 1 of BackWatch US</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_BackWatch_EU</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.UserID__c.PA__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_EU__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Hand Free</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Get_users_EU_Team</targetReference>
+            </connector>
+            <label>Copy 1 of BackWatch EU</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Decision_on_bizdev_bizdev_buyback</name>
+        <label>Copy 2 of Decision on bizdev / bizdev buyback</label>
+        <locationX>1802</locationX>
+        <locationY>2280</locationY>
+        <defaultConnector>
+            <targetReference>Send_Notif_to_BizDev</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_Bizdev_is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Decision_on_sales_bizdev</targetReference>
+            </connector>
+            <label>Copy 2 of Bizdev is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Decision_on_Sales_Active_user</name>
+        <label>Copy 2 of Decision on Sales Active user</label>
+        <locationX>1802</locationX>
+        <locationY>2520</locationY>
+        <defaultConnector>
+            <targetReference>Copy_2_of_Assign_bizdev_to_recipient_ids</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_Yes_Sales_user_is_Inactive</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Owner.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Notif_to_BizDev</targetReference>
+            </connector>
+            <label>Copy 2 of Yes Sales user is Inactive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Decision_on_sales_bizdev</name>
+        <label>Copy 2 of Decision on sales bizdev</label>
+        <locationX>1450</locationX>
+        <locationY>2400</locationY>
+        <defaultConnector>
+            <targetReference>Copy_2_of_Decision_on_Sales_Active_user</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_BackWatch_US</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.UserID__c.Sam__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_US__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Hand Free</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Get_US_Team</targetReference>
+            </connector>
+            <label>Copy 2 of BackWatch US</label>
+        </rules>
+        <rules>
+            <name>Copy_2_of_BackWatch_EU</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.UserID__c.PA__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_EU__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Hand Free</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Get_users_EU_Team</targetReference>
+            </connector>
+            <label>Copy 2 of BackWatch EU</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Data_team_check</name>
+        <label>Data team check</label>
+        <locationX>7866</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Data_team_check__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Copy_1_of_Get_notification_id</targetReference>
+            </connector>
+            <label>Approved</label>
+        </rules>
+        <rules>
+            <name>To_archive</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Data_team_check__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To archive</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Archived_Record_Type</targetReference>
+            </connector>
+            <label>To archive</label>
         </rules>
     </decisions>
     <decisions>
         <name>Decision_on_bypass_flow</name>
         <label>Decision on bypass flow</label>
-        <locationX>2550</locationX>
-        <locationY>335</locationY>
+        <locationX>3298</locationX>
+        <locationY>288</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Category_should_be_bypass</name>
@@ -830,8 +1150,8 @@
     <decisions>
         <name>Decision_on_recipient_id_list_empty</name>
         <label>Decision on recipient id list empty</label>
-        <locationX>1362</locationX>
-        <locationY>3095</locationY>
+        <locationX>2066</locationX>
+        <locationY>1920</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Recipient_Id_List_isn_t_empty</name>
@@ -844,7 +1164,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Send_Notif_to_BizDev</targetReference>
+                <targetReference>Copy_2_of_Get_notification_id</targetReference>
             </connector>
             <label>Recipient Id List isn&apos;t empty</label>
         </rules>
@@ -852,8 +1172,8 @@
     <decisions>
         <name>Decision_on_record_type</name>
         <label>Decision on record type</label>
-        <locationX>4786</locationX>
-        <locationY>1823</locationY>
+        <locationX>5754</locationX>
+        <locationY>648</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>MP_Sales</name>
@@ -887,100 +1207,10 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Decision_on_Sales_Active_user</name>
-        <label>Decision on Sales Active user</label>
-        <locationX>2857</locationX>
-        <locationY>1055</locationY>
-        <defaultConnector>
-            <targetReference>Assign_bizdev_to_recipient_ids</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Yes_sales_user_is_Inactive_0</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Owner.IsActive</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <label>Yes Sales user is Inactive</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Decision_on_sales_bizdev</name>
-        <label>Decision on sales bizdev</label>
-        <locationX>2483</locationX>
-        <locationY>935</locationY>
-        <defaultConnector>
-            <targetReference>Decision_on_Sales_Active_user</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>BackWatch_US</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.UserID__c.Sam__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_US__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Hand Free</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Get_US_Team</targetReference>
-            </connector>
-            <label>BackWatch US</label>
-        </rules>
-        <rules>
-            <name>BackWatch_EU</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.UserID__c.PA__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_EU__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Hand Free</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Get_users_EU_Team</targetReference>
-            </connector>
-            <label>BackWatch EU</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>Do_we_have_F_B_contacts</name>
         <label>Do we have F&amp;B contacts</label>
         <locationX>422</locationX>
-        <locationY>1943</locationY>
+        <locationY>768</locationY>
         <defaultConnector>
             <targetReference>Loop_on_B_F_contacts</targetReference>
         </defaultConnector>
@@ -1004,8 +1234,8 @@
     <decisions>
         <name>Do_we_have_F_B_contacts_0</name>
         <label>Do we have F&amp;B contacts</label>
-        <locationX>3670</locationX>
-        <locationY>1943</locationY>
+        <locationX>4374</locationX>
+        <locationY>768</locationY>
         <defaultConnector>
             <targetReference>Loop_on_B_F_contacts_0</targetReference>
         </defaultConnector>
@@ -1029,8 +1259,8 @@
     <decisions>
         <name>Filter_on_recordtype</name>
         <label>Filter on recordtype</label>
-        <locationX>2868</locationX>
-        <locationY>1703</locationY>
+        <locationX>3616</locationX>
+        <locationY>528</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>RecordType_is_Invoice_Compliance_Audit</name>
@@ -1117,8 +1347,8 @@
     <decisions>
         <name>Filter_on_recordtype_0</name>
         <label>Filter on recordtype</label>
-        <locationX>4223</locationX>
-        <locationY>455</locationY>
+        <locationX>5345</locationX>
+        <locationY>408</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>RecordType_isn_t_Business_Alert</name>
@@ -1131,7 +1361,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_notification_id</targetReference>
+                <targetReference>Filter_on_recordtype</targetReference>
             </connector>
             <label>RecordType isn&apos;t Business Alert</label>
         </rules>
@@ -1139,8 +1369,8 @@
     <decisions>
         <name>Is_first_alert</name>
         <label>Is first alert ?</label>
-        <locationX>1362</locationX>
-        <locationY>2063</locationY>
+        <locationX>2066</locationX>
+        <locationY>888</locationY>
         <defaultConnector>
             <targetReference>Update_2nd_case_or_more_Alert_Hand_Free</targetReference>
         </defaultConnector>
@@ -1187,7 +1417,7 @@
         <name>Is_limit_reached</name>
         <label>Is limit reached</label>
         <locationX>358</locationX>
-        <locationY>2423</locationY>
+        <locationY>1248</locationY>
         <defaultConnector>
             <targetReference>Add_BizDev_Email_address</targetReference>
         </defaultConnector>
@@ -1212,7 +1442,7 @@
         <name>Is_limit_reached_0</name>
         <label>Is limit reached</label>
         <locationX>970</locationX>
-        <locationY>2303</locationY>
+        <locationY>1128</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Add_BizDev_Email_address</targetReference>
@@ -1237,8 +1467,8 @@
     <decisions>
         <name>Is_limit_reached_0_0</name>
         <label>Is limit reached</label>
-        <locationX>3606</locationX>
-        <locationY>2423</locationY>
+        <locationX>4310</locationX>
+        <locationY>1248</locationY>
         <defaultConnector>
             <targetReference>Add_BizDev_Email_address_0</targetReference>
         </defaultConnector>
@@ -1262,8 +1492,8 @@
     <decisions>
         <name>Is_limit_reached_0_0_0</name>
         <label>Is limit reached</label>
-        <locationX>4482</locationX>
-        <locationY>2303</locationY>
+        <locationX>5186</locationX>
+        <locationY>1128</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Add_BizDev_Email_address_0</targetReference>
@@ -1289,7 +1519,7 @@
         <name>Merchant_Zone</name>
         <label>Merchant Zone</label>
         <locationX>578</locationX>
-        <locationY>2663</locationY>
+        <locationY>1488</locationY>
         <defaultConnector>
             <targetReference>Action_Send_EN_Email</targetReference>
         </defaultConnector>
@@ -1332,8 +1562,8 @@
     <decisions>
         <name>Merchant_Zone_abd_merchant_debt</name>
         <label>Merchant Zone abd merchant debt</label>
-        <locationX>4090</locationX>
-        <locationY>2663</locationY>
+        <locationX>4794</locationX>
+        <locationY>1488</locationY>
         <defaultConnectorLabel>Default</defaultConnectorLabel>
         <rules>
             <name>FR_or_BE_Zone_and_greater_than_10000</name>
@@ -1552,6 +1782,35 @@
             <label>US - Below 10000</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Type_of_KPI</name>
+        <label>Type of KPI</label>
+        <locationX>5754</locationX>
+        <locationY>984</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Get_notification_id</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>On_Time_Delivery_Rate</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Time Delivery Rate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                </rightValue>
+            </conditions>
+            <label>On Time Delivery Rate</label>
+        </rules>
+    </decisions>
     <description>SFT-447 - Modify the 2 formulas for Buyback seller enters MP or LC</description>
     <formulas>
         <name>Alert_LastChance_Limitation_Sales_formula</name>
@@ -1647,10 +1906,66 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <interviewLabel>Alert - After save flow (Creation only) {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Alert - After save flow (Creation only)</label>
     <loops>
+        <name>Copy_1_of_Loop_on_EU_Team</name>
+        <label>Copy 1 of Loop on EU Team</label>
+        <locationX>5930</locationX>
+        <locationY>1704</locationY>
+        <collectionReference>Copy_1_of_Get_users_EU_Team</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Copy_1_of_Assign_bizdev_to_recipient_ids_EU_team</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Copy_1_of_Loop_on_US_Team</name>
+        <label>Copy 1 of Loop on US Team</label>
+        <locationX>5578</locationX>
+        <locationY>1704</locationY>
+        <collectionReference>Copy_1_of_Get_US_Team</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Copy_1_of_Assign_bizdev_to_recipient_ids_us_team</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Copy_2_of_Loop_on_EU_Team</name>
+        <label>Copy 2 of Loop on EU Team</label>
+        <locationX>1450</locationX>
+        <locationY>2640</locationY>
+        <collectionReference>Copy_2_of_Get_users_EU_Team</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Copy_2_of_Assign_bizdev_to_recipient_ids_EU_team</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Send_Notif_to_BizDev</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Copy_2_of_Loop_on_US_Team</name>
+        <label>Copy 2 of Loop on US Team</label>
+        <locationX>1098</locationX>
+        <locationY>2640</locationY>
+        <collectionReference>Copy_2_of_Get_US_Team</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Copy_2_of_Assign_bizdev_to_recipient_ids_us_team</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Send_Notif_to_BizDev</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
         <name>Loop_on_B_F_contacts</name>
         <label>Loop on B&amp;F contacts</label>
         <locationX>794</locationX>
-        <locationY>2063</locationY>
+        <locationY>888</locationY>
         <collectionReference>Get_Business_and_Finance_Contacts</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1664,8 +1979,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <loops>
         <name>Loop_on_B_F_contacts_0</name>
         <label>Loop on B&amp;F contacts</label>
-        <locationX>4306</locationX>
-        <locationY>2063</locationY>
+        <locationX>5010</locationX>
+        <locationY>888</locationY>
         <collectionReference>Get_Business_and_Finance_Contacts_for_merchant_debt</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1680,7 +1995,7 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <name>Loop_on_contacts</name>
         <label>Loop on contacts</label>
         <locationX>50</locationX>
-        <locationY>2183</locationY>
+        <locationY>1008</locationY>
         <collectionReference>Get_Contacts</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1694,8 +2009,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <loops>
         <name>Loop_on_contacts_0</name>
         <label>Loop on contacts</label>
-        <locationX>3034</locationX>
-        <locationY>2183</locationY>
+        <locationX>3738</locationX>
+        <locationY>1008</locationY>
         <collectionReference>Get_Contacts_for_merchant_debt</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1704,34 +2019,6 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <noMoreValuesConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Add_BizDev_Email_address_0</targetReference>
-        </noMoreValuesConnector>
-    </loops>
-    <loops>
-        <name>Loop_on_EU_Team</name>
-        <label>Loop on EU Team</label>
-        <locationX>2461</locationX>
-        <locationY>1175</locationY>
-        <collectionReference>Get_users_EU_Team</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>Assign_bizdev_to_recipient_ids_EU_team</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>Filter_on_recordtype</targetReference>
-        </noMoreValuesConnector>
-    </loops>
-    <loops>
-        <name>Loop_on_US_Team</name>
-        <label>Loop on US Team</label>
-        <locationX>2109</locationX>
-        <locationY>1175</locationY>
-        <collectionReference>Get_US_Team</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>Assign_bizdev_to_recipient_ids_us_team</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>Filter_on_recordtype</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -1756,8 +2043,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordCreates>
         <name>Create_Exit_Process_draft</name>
         <label>Create Exit Process draft</label>
-        <locationX>1626</locationX>
-        <locationY>2303</locationY>
+        <locationX>2330</locationX>
+        <locationY>1128</locationY>
         <inputAssignments>
             <field>BizDev_for_Approval__c</field>
             <value>
@@ -1816,10 +2103,214 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
+        <name>Copy_1_of_Get_notification_id</name>
+        <label>Copy 1 of Get notification id</label>
+        <locationX>6282</locationX>
+        <locationY>1104</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_1_of_Assign_notification_type_id_and_current_record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>All_supported_channels</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CustomNotificationType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Copy_1_of_Get_US_Team</name>
+        <label>Copy 1 of Get US Team</label>
+        <locationX>5578</locationX>
+        <locationY>1584</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_1_of_Loop_on_US_Team</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ManagerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Setup.UserID__c.Richard__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Team__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SSM Back Watch U.S.</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Copy_1_of_Get_users_EU_Team</name>
+        <label>Copy 1 of Get users EU Team</label>
+        <locationX>5930</locationX>
+        <locationY>1584</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_1_of_Loop_on_EU_Team</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ManagerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Setup.UserID__c.PA__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Team__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SSM Back Watch E.U.</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Copy_2_of_Get_notification_id</name>
+        <label>Copy 2 of Get notification id</label>
+        <locationX>1802</locationX>
+        <locationY>2040</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Assign_notification_type_id_and_current_record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>All_supported_channels</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CustomNotificationType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Copy_2_of_Get_US_Team</name>
+        <label>Copy 2 of Get US Team</label>
+        <locationX>1098</locationX>
+        <locationY>2520</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Loop_on_US_Team</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ManagerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Setup.UserID__c.Richard__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Team__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SSM Back Watch U.S.</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Copy_2_of_Get_users_EU_Team</name>
+        <label>Copy 2 of Get users EU Team</label>
+        <locationX>1450</locationX>
+        <locationY>2520</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_2_of_Loop_on_EU_Team</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ManagerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Setup.UserID__c.PA__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Team__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SSM Back Watch E.U.</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Archived_Record_Type</name>
+        <label>Get Archived Record Type</label>
+        <locationX>7866</locationX>
+        <locationY>408</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Archive_alert</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Monitoring_Period_Sales_Archived	</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>Get_Business_and_Finance_Contacts</name>
         <label>Get Business and Finance Contacts</label>
         <locationX>422</locationX>
-        <locationY>1823</locationY>
+        <locationY>648</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Do_we_have_F_B_contacts</targetReference>
@@ -1867,8 +2358,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordLookups>
         <name>Get_Business_and_Finance_Contacts_for_merchant_debt</name>
         <label>Get Business and Finance Contacts for merchant debt</label>
-        <locationX>3670</locationX>
-        <locationY>1823</locationY>
+        <locationX>4374</locationX>
+        <locationY>648</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Do_we_have_F_B_contacts_0</targetReference>
@@ -1917,7 +2408,7 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <name>Get_Contacts</name>
         <label>Get Contacts</label>
         <locationX>50</locationX>
-        <locationY>2063</locationY>
+        <locationY>888</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_contacts</targetReference>
@@ -1958,8 +2449,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordLookups>
         <name>Get_Contacts_for_merchant_debt</name>
         <label>Get Contacts for merchant debt</label>
-        <locationX>3034</locationX>
-        <locationY>2063</locationY>
+        <locationX>3738</locationX>
+        <locationY>888</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_contacts_0</targetReference>
@@ -1998,31 +2489,10 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>Get_notification_id</name>
-        <label>Get notification id</label>
-        <locationX>2868</locationX>
-        <locationY>575</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Assign_notification_type_id_and_current_record</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>DeveloperName</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>All_supported_channels</stringValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>CustomNotificationType</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
         <name>Get_past_alerts_on_Hazardous_chargers</name>
         <label>Get past alerts on Hazardous chargers</label>
-        <locationX>1362</locationX>
-        <locationY>1823</locationY>
+        <locationX>2066</locationX>
+        <locationY>648</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Count</targetReference>
@@ -2060,81 +2530,24 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <object>Alert__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
-    <recordLookups>
-        <name>Get_US_Team</name>
-        <label>Get US Team</label>
-        <locationX>2109</locationX>
-        <locationY>1055</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Loop_on_US_Team</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>ManagerId</field>
-            <operator>EqualTo</operator>
+    <recordUpdates>
+        <name>Archive_alert</name>
+        <label>Archive alert</label>
+        <locationX>7866</locationX>
+        <locationY>528</locationY>
+        <inputAssignments>
+            <field>RecordTypeId</field>
             <value>
-                <elementReference>$Setup.UserID__c.Richard__c</elementReference>
+                <elementReference>Get_Archived_Record_Type.Id</elementReference>
             </value>
-        </filters>
-        <filters>
-            <field>Team__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>SSM Back Watch U.S.</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>IsActive</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>User</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Get_users_EU_Team</name>
-        <label>Get users EU Team</label>
-        <locationX>2461</locationX>
-        <locationY>1055</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Loop_on_EU_Team</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>ManagerId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Setup.UserID__c.PA__c</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Team__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>SSM Back Watch E.U.</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>IsActive</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>User</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
     <recordUpdates>
         <name>Update_1st_case_Warning_Alert</name>
         <label>Update 1st case Warning Alert</label>
-        <locationX>1098</locationX>
-        <locationY>2183</locationY>
+        <locationX>1802</locationX>
+        <locationY>1008</locationY>
         <connector>
             <targetReference>Already_limited_because_of_a_Sales_alert</targetReference>
         </connector>
@@ -2187,8 +2600,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_2nd_case_or_more_Alert_Hand_Free</name>
         <label>Update 2nd case or more Alert - Hand Free</label>
-        <locationX>1626</locationX>
-        <locationY>2183</locationY>
+        <locationX>2330</locationX>
+        <locationY>1008</locationY>
         <connector>
             <targetReference>Create_Exit_Process_draft</targetReference>
         </connector>
@@ -2235,8 +2648,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_2nd_case_or_more_Alert_Not_Hand_Free</name>
         <label>Update 2nd case or more Alert - Not Hand Free</label>
-        <locationX>1362</locationX>
-        <locationY>2183</locationY>
+        <locationX>2066</locationX>
+        <locationY>1008</locationY>
         <connector>
             <targetReference>Already_limited_because_of_a_Sales_alert</targetReference>
         </connector>
@@ -2289,8 +2702,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_alert_record_with_limitation</name>
         <label>Update alert record with limitation</label>
-        <locationX>3826</locationX>
-        <locationY>2903</locationY>
+        <locationX>4530</locationX>
+        <locationY>1728</locationY>
         <inputAssignments>
             <field>AlertLimitation__c</field>
             <value>
@@ -2320,8 +2733,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_alert_record_with_team</name>
         <label>Update alert record with team</label>
-        <locationX>4090</locationX>
-        <locationY>3239</locationY>
+        <locationX>4794</locationX>
+        <locationY>2064</locationY>
         <inputAssignments>
             <field>BizDev__c</field>
             <value>
@@ -2345,10 +2758,10 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_Buyback_Alert</name>
         <label>Update Buyback Alert</label>
-        <locationX>4786</locationX>
-        <locationY>1943</locationY>
+        <locationX>5754</locationX>
+        <locationY>768</locationY>
         <connector>
-            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
+            <targetReference>Type_of_KPI</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -2387,8 +2800,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_merchant_limitation</name>
         <label>Update merchant limitation</label>
-        <locationX>1010</locationX>
-        <locationY>2759</locationY>
+        <locationX>1714</locationX>
+        <locationY>1584</locationY>
         <connector>
             <targetReference>Decision_on_recipient_id_list_empty</targetReference>
         </connector>
@@ -2417,8 +2830,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_merchant_limitation_Archive_info</name>
         <label>Update merchant limitation+ Archive info</label>
-        <locationX>1274</locationX>
-        <locationY>2879</locationY>
+        <locationX>1978</locationX>
+        <locationY>1704</locationY>
         <connector>
             <targetReference>Decision_on_recipient_id_list_empty</targetReference>
         </connector>
@@ -2459,10 +2872,10 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_Sales_Alert</name>
         <label>Update Sales Alert</label>
-        <locationX>4522</locationX>
-        <locationY>1943</locationY>
+        <locationX>5490</locationX>
+        <locationY>768</locationY>
         <connector>
-            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
+            <targetReference>Type_of_KPI</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -2493,13 +2906,23 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <object>Alert__c</object>
     </recordUpdates>
     <start>
-        <locationX>2424</locationX>
+        <locationX>5456</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Decision_on_bypass_flow</targetReference>
         </connector>
         <object>Alert__c</object>
         <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>X1_hour_later</name>
+            <connector>
+                <targetReference>Data_team_check</targetReference>
+            </connector>
+            <label>1 hour later</label>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
