@@ -281,6 +281,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Data_team_check__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To archive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>External_recovery_agency__c</picklist>
         <values>
             <fullName>Paris Contentieux</fullName>

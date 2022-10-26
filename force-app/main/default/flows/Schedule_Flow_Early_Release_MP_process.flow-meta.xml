@@ -1,11 +1,386 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Copy_1_of_Send_log</name>
+        <label>Copy 1 of Send log</label>
+        <locationX>842</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Reset_Count_Early_Release_for_violation</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Schedule Flow - Early Release MP process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>PP case above objective</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_2_of_Send_log</name>
+        <label>Copy 2 of Send log</label>
+        <locationX>446</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Assign_1_to_Count_Early_Release</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Schedule Flow - Early Release MP process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>PP no case</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_3_of_Send_log</name>
+        <label>Copy 3 of Send log</label>
+        <locationX>1106</locationX>
+        <locationY>1236</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_1_to_Count_Early_Release</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Schedule Flow - Early Release MP process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Rate below objective</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_4_of_Send_log</name>
+        <label>Copy 4 of Send log</label>
+        <locationX>1370</locationX>
+        <locationY>1236</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_1_to_Count_Early_Release</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Schedule Flow - Early Release MP process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Rate below objective OTDR selfcare</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_5_of_Send_log</name>
+        <label>Copy 5 of Send log</label>
+        <locationX>1634</locationX>
+        <locationY>1236</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Reset_Count_Early_Release_for_violation</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Schedule Flow - Early Release MP process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Rate above objective</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_6_of_Send_log</name>
+        <label>Copy 6 of Send log</label>
+        <locationX>50</locationX>
+        <locationY>2100</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_list_of_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Schedule Flow - Early Release MP process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Update alerts start</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_7_of_Send_log</name>
+        <label>Copy 7 of Send log</label>
+        <locationX>50</locationX>
+        <locationY>2340</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Schedule Flow - Early Release MP process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Update alerts success</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>SUCCESS</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_8_of_Send_log</name>
+        <label>Copy 8 of Send log</label>
+        <locationX>992</locationX>
+        <locationY>2340</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Schedule Flow - Early Release MP process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>ERROR</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_log</name>
+        <label>Send log</label>
+        <locationX>50</locationX>
+        <locationY>516</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Loop_on_on_going_alerts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Schedule Flow - Early Release MP process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Process start - alerts found</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
     <apiVersion>54.0</apiVersion>
     <assignments>
         <name>Assign_1_to_Count_Early_Release</name>
         <label>Assign +1 to Count Early Release</label>
         <locationX>446</locationX>
-        <locationY>996</locationY>
+        <locationY>1236</locationY>
         <assignmentItems>
             <assignToReference>Count_Early_Release</assignToReference>
             <operator>Add</operator>
@@ -21,7 +396,7 @@
         <name>Assign_Count_Early_Release_to_variable</name>
         <label>Assign Count Early Release to variable</label>
         <locationX>908</locationX>
-        <locationY>756</locationY>
+        <locationY>876</locationY>
         <assignmentItems>
             <assignToReference>Count_Early_Release</assignToReference>
             <operator>Assign</operator>
@@ -37,7 +412,7 @@
         <name>Assign_current_alert_to_list_for_update</name>
         <label>Assign current alert to list for update</label>
         <locationX>908</locationX>
-        <locationY>1548</locationY>
+        <locationY>1788</locationY>
         <assignmentItems>
             <assignToReference>List_Alert_To_Update</assignToReference>
             <operator>Add</operator>
@@ -53,7 +428,7 @@
         <name>Assign_current_alert_to_SAVED</name>
         <label>Assign current alert to SAVED</label>
         <locationX>314</locationX>
-        <locationY>1236</locationY>
+        <locationY>1476</locationY>
         <assignmentItems>
             <assignToReference>Loop_on_on_going_alerts.Has_been_saved_on__c</assignToReference>
             <operator>Assign</operator>
@@ -83,7 +458,7 @@
         <name>Assign_current_alert_with_early_release_variable</name>
         <label>Assign current alert with early release variable</label>
         <locationX>842</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <assignmentItems>
             <assignToReference>Loop_on_on_going_alerts.Tech_Count_early_release__c</assignToReference>
             <operator>Assign</operator>
@@ -99,7 +474,7 @@
         <name>Reset_Count_Early_Release_for_violation</name>
         <label>Reset Count Early Release for violation</label>
         <locationX>842</locationX>
-        <locationY>996</locationY>
+        <locationY>1236</locationY>
         <assignmentItems>
             <assignToReference>Count_Early_Release</assignToReference>
             <operator>Assign</operator>
@@ -115,7 +490,7 @@
         <name>Decision_Count_Early_Release_is_at_7</name>
         <label>Decision - Count Early Release is at 7</label>
         <locationX>446</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Assign_current_alert_with_early_release_variable</targetReference>
@@ -141,7 +516,7 @@
         <name>Decision_Don_t_run_for_Selfcare</name>
         <label>Decision - Don&apos;t run for Selfcare</label>
         <locationX>523</locationX>
-        <locationY>636</locationY>
+        <locationY>756</locationY>
         <defaultConnector>
             <targetReference>Assign_Count_Early_Release_to_variable</targetReference>
         </defaultConnector>
@@ -214,7 +589,7 @@
     <decisions>
         <name>Decision_on_number_of_alert</name>
         <label>Is there any alert</label>
-        <locationX>521</locationX>
+        <locationX>653</locationX>
         <locationY>396</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -228,7 +603,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Loop_on_on_going_alerts</targetReference>
+                <targetReference>Send_log</targetReference>
             </connector>
             <label>Yes alerts should be processed</label>
         </rules>
@@ -237,7 +612,7 @@
         <name>Decision_On_number_of_cases</name>
         <label>Decision - On number of cases</label>
         <locationX>908</locationX>
-        <locationY>876</locationY>
+        <locationY>996</locationY>
         <defaultConnector>
             <targetReference>Decision_On_rate</targetReference>
         </defaultConnector>
@@ -260,7 +635,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_1_to_Count_Early_Release</targetReference>
+                <targetReference>Copy_2_of_Send_log</targetReference>
             </connector>
             <label>Policy Violation - No cases</label>
         </rules>
@@ -282,7 +657,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Reset_Count_Early_Release_for_violation</targetReference>
+                <targetReference>Copy_1_of_Send_log</targetReference>
             </connector>
             <label>Policy Violation - Above objective</label>
         </rules>
@@ -291,14 +666,13 @@
         <name>Decision_On_rate</name>
         <label>Decision - On rate</label>
         <locationX>1370</locationX>
-        <locationY>996</locationY>
+        <locationY>1116</locationY>
         <defaultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Reset_Count_Early_Release_for_violation</targetReference>
+            <targetReference>Copy_5_of_Send_log</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Rate_Below_objective_Not_CSAT</name>
+            <name>Rate_Below_objective_Not_OTDR_selfcare</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>Loop_on_on_going_alerts.Actual_Rate__c</leftValueReference>
@@ -311,37 +685,35 @@
                 <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
                 <operator>NotEqualTo</operator>
                 <rightValue>
-                    <stringValue>CSAT</stringValue>
+                    <stringValue>On Time Delivery Rate Self-care</stringValue>
                 </rightValue>
             </conditions>
             <connector>
-                <isGoTo>true</isGoTo>
-                <targetReference>Assign_1_to_Count_Early_Release</targetReference>
+                <targetReference>Copy_3_of_Send_log</targetReference>
             </connector>
-            <label>Rate - Below objective - Not CSAT</label>
+            <label>Rate - Below objective - Not OTDR selfcare</label>
         </rules>
         <rules>
-            <name>Rate_Below_Objective_For_CSAT</name>
+            <name>Rate_Below_Objective_For_On_Time_Delivery_Rate_Selfcare</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Loop_on_on_going_alerts.Actual_Rate__c</leftValueReference>
+                <leftValueReference>Loop_on_on_going_alerts.Actual_Number_of_cases__c</leftValueReference>
                 <operator>GreaterThan</operator>
                 <rightValue>
-                    <elementReference>Loop_on_on_going_alerts.Objective_to_reach__c</elementReference>
+                    <elementReference>Loop_on_on_going_alerts.Cases_Objective_to_reach__c</elementReference>
                 </rightValue>
             </conditions>
             <conditions>
                 <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>CSAT</stringValue>
+                    <stringValue>On Time Delivery Rate Self-care</stringValue>
                 </rightValue>
             </conditions>
             <connector>
-                <isGoTo>true</isGoTo>
-                <targetReference>Assign_1_to_Count_Early_Release</targetReference>
+                <targetReference>Copy_4_of_Send_log</targetReference>
             </connector>
-            <label>Rate - Below Objective - For CSAT</label>
+            <label>Rate - Below Objective - For On Time Delivery Rate Selfcare</label>
         </rules>
     </decisions>
     <description>SFT-310 - add filter on account query</description>
@@ -351,14 +723,14 @@
         <name>Loop_on_on_going_alerts</name>
         <label>Loop on on going alerts</label>
         <locationX>50</locationX>
-        <locationY>516</locationY>
+        <locationY>636</locationY>
         <collectionReference>Get_all_MP_and_LC_alerts_for_specified_KPIs</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
             <targetReference>Decision_Don_t_run_for_Selfcare</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Update_list_of_alert</targetReference>
+            <targetReference>Copy_6_of_Send_log</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -384,13 +756,13 @@
         <description>with ETA in the future</description>
         <name>Get_all_MP_and_LC_alerts_for_specified_KPIs</name>
         <label>Get all MP and LC alerts for specified KPIs</label>
-        <locationX>521</locationX>
+        <locationX>653</locationX>
         <locationY>276</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Decision_on_number_of_alert</targetReference>
         </connector>
-        <filterLogic>(1 OR 2) AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12 AND 13</filterLogic>
+        <filterLogic>(1 OR 2) AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12 AND 13 AND 14</filterLogic>
         <filters>
             <field>Stage__c</field>
             <operator>EqualTo</operator>
@@ -482,6 +854,13 @@
                 <elementReference>$Record.Id</elementReference>
             </value>
         </filters>
+        <filters>
+            <field>Is_archived__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>Alert__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -490,11 +869,17 @@
         <name>Update_list_of_alert</name>
         <label>Update list of alert</label>
         <locationX>50</locationX>
-        <locationY>1860</locationY>
+        <locationY>2220</locationY>
+        <connector>
+            <targetReference>Copy_7_of_Send_log</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Copy_8_of_Send_log</targetReference>
+        </faultConnector>
         <inputReference>List_Alert_To_Update</inputReference>
     </recordUpdates>
     <start>
-        <locationX>395</locationX>
+        <locationX>527</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_all_MP_and_LC_alerts_for_specified_KPIs</targetReference>
