@@ -736,888 +736,17 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
-        <name>Copy_10_of_Copy_2_of_Send_log</name>
-        <label>Copy 10 of Copy 2 of Send log</label>
-        <locationX>15962</locationX>
-        <locationY>3191</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to saved - PP - updating sales limitation merchant start</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_11_of_Copy_2_of_Send_log</name>
-        <label>Copy 11 of Copy 2 of Send log</label>
-        <locationX>15962</locationX>
-        <locationY>3431</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to saved - PP - updating sales limitation merchant success</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>SUCCESS</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_1_of_Copy_11_of_Copy_2_of_Send_log</name>
-        <label>Copy 1 of Copy 11 of Copy 2 of Send log</label>
-        <locationX>16754</locationX>
-        <locationY>3431</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <elementReference>$Flow.FaultMessage</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>ERROR</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_2_of_Send_log</name>
-        <label>Copy 1 of Copy 1 of Copy 3 of Copy 2 of Send log</label>
-        <locationX>11738</locationX>
-        <locationY>1871</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to LC - Update limitation start</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>SUCCESS</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_1_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</name>
-        <label>Copy 1 of Copy 2 of Copy 11 of Copy 2 of Send log</label>
-        <locationX>10946</locationX>
-        <locationY>1415</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Buyback MP - Stage changed to failed - Create exit success</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>SUCCESS</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_1_of_Copy_2_of_Send_log</name>
-        <label>Copy 1 of Copy 2 of Send log</label>
-        <locationX>10682</locationX>
-        <locationY>1175</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Create_Exit_Sales</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>EU MP - Stage changed to failed</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_1_of_Copy_3_of_Copy_2_of_Send_log</name>
-        <label>Copy 1 of Copy 3 of Copy 2 of Send log</label>
-        <locationX>11738</locationX>
-        <locationY>1631</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Update_limitation_to_apply_and_ETA_fot_test</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to LC - Update limitation start</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_1_of_Send_log</name>
-        <label>Copy 1 of Send log</label>
-        <locationX>13274</locationX>
-        <locationY>935</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Decision_on_stage</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Alert stage changed</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_2_of_Copy_11_of_Copy_2_of_Send_log</name>
-        <label>Copy 2 of Copy 11 of Copy 2 of Send log</label>
-        <locationX>10154</locationX>
-        <locationY>1415</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>US MP - Stage changed to failed - Create exit success</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>SUCCESS</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_2_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</name>
-        <label>Copy 2 of Copy 2 of Copy 11 of Copy 2 of Send log</label>
-        <locationX>10418</locationX>
-        <locationY>1415</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <elementReference>$Flow.FaultMessage</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>ERROR</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_2_of_Copy_2_of_Send_log</name>
-        <label>Copy 2 of Copy 2 of Send log</label>
-        <locationX>10946</locationX>
-        <locationY>1175</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Create_Exit_Buyback</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Buyback MP - Stage changed to failed - Create exit start</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_2_of_Send_log</name>
-        <label>Copy 2 of Send log</label>
-        <locationX>10154</locationX>
-        <locationY>1175</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Create_Exit_Sales</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>US MP - Stage changed to failed - Create exit start</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_3_of_Copy_2_of_Send_log</name>
-        <label>Copy 3 of Copy 2 of Send log</label>
-        <locationX>11738</locationX>
-        <locationY>1175</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Decision_on_limitation_to_apply</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to LC</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_4_of_Copy_2_of_Send_log</name>
-        <label>Copy 4 of Copy 2 of Send log</label>
-        <locationX>15014</locationX>
-        <locationY>1175</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Get_all_contact_quality_with_email</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to saved</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_5_of_Copy_2_of_Send_log</name>
-        <label>Copy 5 of Copy 2 of Send log</label>
-        <locationX>16130</locationX>
-        <locationY>1175</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to rejected</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_6_of_Copy_2_of_Send_log</name>
-        <label>Copy 6 of Copy 2 of Send log</label>
-        <locationX>15698</locationX>
-        <locationY>2135</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Decision_on_zone</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to saved - sending emails start</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_7_of_Copy_2_of_Send_log</name>
-        <label>Copy 7 of Copy 2 of Send log</label>
-        <locationX>15962</locationX>
-        <locationY>2375</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Send_saved_email_EN_Policy_Violation</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to saved - Sending emails PP</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_8_of_Copy_2_of_Send_log</name>
-        <label>Copy 8 of Copy 2 of Send log</label>
-        <locationX>15698</locationX>
-        <locationY>2735</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Get_smallest_limitation_on_ongoing_sales_alert</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to failed</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Copy_9_of_Copy_2_of_Send_log</name>
-        <label>Copy 9 of Copy 2 of Send log</label>
-        <locationX>16226</locationX>
-        <locationY>2735</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Get_smallest_limitation_on_ongoing_buyback_alert</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Stage changed to failed</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Send_log</name>
-        <label>Send log</label>
-        <locationX>14966</locationX>
-        <locationY>695</locationY>
-        <actionName>LogService</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Stage_is_changed_MP</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>process</name>
-            <value>
-                <stringValue>monitoring-period</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>component</name>
-            <value>
-                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>recordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>message</name>
-            <value>
-                <stringValue>Alert updated process start</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>INFO</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Send_saved_email_EN</name>
+        <name>Copy_1_of_Send_saved_email_EN</name>
         <label>Send saved email - EN</label>
-        <locationX>17018</locationX>
-        <locationY>2375</locationY>
+        <locationX>16724</locationX>
+        <locationY>2627</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
-        <connector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
-        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>emailBody</name>
             <value>
-                <elementReference>TextTemplate_EN_Body_MP_Saved</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>emailAddressesArray</name>
-            <value>
-                <elementReference>List_of_email_to_contact</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>senderAddress</name>
-            <value>
-                <stringValue>merchant.no-reply@backmarket.com</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>senderType</name>
-            <value>
-                <stringValue>OrgWideEmailAddress</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>emailSubject</name>
-            <value>
-                <elementReference>TextTemplate_EN_Subject_MP_Saved</elementReference>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Send_saved_email_EN_CSAT_or_LRR</name>
-        <label>Send saved email - EN (CSAT or LRR)</label>
-        <locationX>15170</locationX>
-        <locationY>2375</locationY>
-        <actionName>emailSimple</actionName>
-        <actionType>emailSimple</actionType>
-        <connector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>emailBody</name>
-            <value>
-                <elementReference>TextTemplate_EN_Body_MP_Saved_CSAT_LateResponse</elementReference>
+                <elementReference>BB_TextTemplate_EN_Body_MP_Saved</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -1647,15 +776,195 @@
         <inputParameters>
             <name>emailSubject</name>
             <value>
-                <elementReference>TextTemplate_EN_Subject_MP_Saved_CSAT_LateResponse</elementReference>
+                <elementReference>TextTemplate_EN_Subject_MP_Saved</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Send_saved_email_FR</name>
+        <label>Send saved email - FR</label>
+        <locationX>14876</locationX>
+        <locationY>2627</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>BB_TextTemplate_FR_Body_MP_Saved</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>merchant.no-reply@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_FR_Subject_MP_Saved</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_failed_email_EN_Policy_Violation</name>
+        <label>Send failed email - EN (Policy Violation)</label>
+        <locationX>11210</locationX>
+        <locationY>2627</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_EN_Body_MP_Failed_Policy_Violation</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>merchant.no-reply@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_EN_Subject_MP_Failed_Policy_Violation</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_failed_email_FR_Policy_Violation</name>
+        <label>Send failed email - FR (Policy Violation)</label>
+        <locationX>10946</locationX>
+        <locationY>2627</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_FR_Body_MP_Failed_Policy_Violation</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>merchant.no-reply@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_FR_Subject_MP_Failed_Policy_Violation</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_saved_email_EN</name>
+        <label>Send saved email - EN</label>
+        <locationX>16988</locationX>
+        <locationY>2627</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextTemplate_EN_Body_MP_Saved</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>merchant.no-reply@backmarket.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TextTemplate_EN_Subject_MP_Saved</elementReference>
             </value>
         </inputParameters>
     </actionCalls>
     <actionCalls>
         <name>Send_saved_email_EN_Policy_Violation</name>
         <label>Send saved email - EN (Policy Violation)</label>
-        <locationX>15962</locationX>
-        <locationY>2495</locationY>
+        <locationX>15932</locationX>
+        <locationY>2507</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -1702,62 +1011,15 @@
     <actionCalls>
         <name>Send_saved_email_FR</name>
         <label>Send saved email - FR</label>
-        <locationX>14906</locationX>
-        <locationY>2375</locationY>
+        <locationX>15140</locationX>
+        <locationY>2627</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
-        <connector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
-        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>emailBody</name>
             <value>
                 <elementReference>TextTemplate_FR_Body_MP_Saved</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>emailAddressesArray</name>
-            <value>
-                <elementReference>List_of_email_to_contact</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>senderAddress</name>
-            <value>
-                <stringValue>merchant.no-reply@backmarket.com</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>senderType</name>
-            <value>
-                <stringValue>OrgWideEmailAddress</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>emailSubject</name>
-            <value>
-                <elementReference>TextTemplate_FR_Subject_MP_Saved</elementReference>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <name>Send_saved_email_FR_CSAT_or_LRR</name>
-        <label>Send saved email - FR (CSAT or LRR)</label>
-        <locationX>14378</locationX>
-        <locationY>2375</locationY>
-        <actionName>emailSimple</actionName>
-        <actionType>emailSimple</actionType>
-        <connector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>emailBody</name>
-            <value>
-                <elementReference>TextTemplate_FR_Body_MP_Saved_CSAT_LateResponse</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -1787,15 +1049,15 @@
         <inputParameters>
             <name>emailSubject</name>
             <value>
-                <elementReference>TextTemplate_FR_Subject_MP_Saved_CSAT_LateResponse</elementReference>
+                <elementReference>TextTemplate_FR_Subject_MP_Saved</elementReference>
             </value>
         </inputParameters>
     </actionCalls>
     <actionCalls>
         <name>Send_saved_email_FR_Policy_Violation</name>
         <label>Send saved email - FR (Policy Violation)</label>
-        <locationX>14642</locationX>
-        <locationY>2375</locationY>
+        <locationX>14612</locationX>
+        <locationY>2507</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -1913,8 +1175,8 @@
     <assignments>
         <name>Add_bizdev_to_email_list</name>
         <label>Add bizdev to email list</label>
-        <locationX>15698</locationX>
-        <locationY>2015</locationY>
+        <locationX>15734</locationX>
+        <locationY>2267</locationY>
         <assignmentItems>
             <assignToReference>List_of_email_to_contact</assignToReference>
             <operator>Add</operator>
@@ -1930,7 +1192,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Copy_6_of_Copy_2_of_Send_log</targetReference>
+            <targetReference>Decision_on_zone</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -2155,8 +1417,8 @@
     <assignments>
         <name>Assign_buyback_alert_limitation</name>
         <label>Assign buyback alert limitation</label>
-        <locationX>11738</locationX>
-        <locationY>1415</locationY>
+        <locationX>12434</locationX>
+        <locationY>1667</locationY>
         <assignmentItems>
             <assignToReference>Alert_MonitoringPeriod_LC_limitation_to_apply</assignToReference>
             <operator>Assign</operator>
@@ -2165,7 +1427,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Copy_1_of_Copy_3_of_Copy_2_of_Send_log</targetReference>
+            <targetReference>Update_limitation_to_apply_and_ETA_fot_test</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -2194,8 +1456,8 @@
     <assignments>
         <name>Assign_contact_to_list</name>
         <label>Assign contact to list</label>
-        <locationX>14950</locationX>
-        <locationY>1775</locationY>
+        <locationX>15085</locationX>
+        <locationY>2027</locationY>
         <assignmentItems>
             <assignToReference>List_of_email_to_contact</assignToReference>
             <operator>Add</operator>
@@ -2217,7 +1479,7 @@
     <assignments>
         <name>Assign_Merchant_ID_to_variable</name>
         <label>Assign Merchant ID to variable</label>
-        <locationX>10552</locationX>
+        <locationX>10504</locationX>
         <locationY>455</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Id</assignToReference>
@@ -2257,8 +1519,8 @@
     <assignments>
         <name>Assign_quality_contact_to_list</name>
         <label>Assign quality contact to list</label>
-        <locationX>16090</locationX>
-        <locationY>1655</locationY>
+        <locationX>16258</locationX>
+        <locationY>1907</locationY>
         <assignmentItems>
             <assignToReference>List_of_email_to_contact</assignToReference>
             <operator>Add</operator>
@@ -2280,8 +1542,8 @@
     <assignments>
         <name>Assign_reset_Buyback_limitation</name>
         <label>Assign reset Buyback limitation</label>
-        <locationX>15962</locationX>
-        <locationY>2735</locationY>
+        <locationX>15932</locationX>
+        <locationY>2747</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Buyback_limitation__c</assignToReference>
             <operator>Assign</operator>
@@ -2297,14 +1559,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Copy_10_of_Copy_2_of_Send_log</targetReference>
+            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_reset_Sales_limitation</name>
         <label>Assign reset Sales limitation</label>
-        <locationX>15434</locationX>
-        <locationY>2735</locationY>
+        <locationX>15404</locationX>
+        <locationY>2747</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.LimitationBeforeAlert__c</assignToReference>
             <operator>Assign</operator>
@@ -2334,7 +1596,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Copy_10_of_Copy_2_of_Send_log</targetReference>
+            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -2414,8 +1676,8 @@
     <assignments>
         <name>Assign_sales_alert_limitation</name>
         <label>Assign sales alert limitation</label>
-        <locationX>11474</locationX>
-        <locationY>1415</locationY>
+        <locationX>12170</locationX>
+        <locationY>1667</locationY>
         <assignmentItems>
             <assignToReference>Alert_MonitoringPeriod_LC_limitation_to_apply</assignToReference>
             <operator>Assign</operator>
@@ -2424,7 +1686,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Copy_1_of_Copy_3_of_Copy_2_of_Send_log</targetReference>
+            <targetReference>Update_limitation_to_apply_and_ETA_fot_test</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -2490,8 +1752,8 @@
     <assignments>
         <name>Assign_smallest_Buyback_alert_limitation</name>
         <label>Assign smallest Buyback alert limitation</label>
-        <locationX>16226</locationX>
-        <locationY>2975</locationY>
+        <locationX>16196</locationX>
+        <locationY>2867</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Buyback_limitation__c</assignToReference>
             <operator>Assign</operator>
@@ -2500,14 +1762,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Copy_10_of_Copy_2_of_Send_log</targetReference>
+            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_smallest_Sales_alert_limitation</name>
         <label>Assign smallest Sales alert limitation</label>
-        <locationX>15698</locationX>
-        <locationY>2975</locationY>
+        <locationX>15668</locationX>
+        <locationY>2867</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Reason_for_last_Sales_limitation__c</assignToReference>
             <operator>Assign</operator>
@@ -2523,7 +1785,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Copy_10_of_Copy_2_of_Send_log</targetReference>
+            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -2570,6 +1832,75 @@
         </assignmentItems>
         <connector>
             <targetReference>Update_merchant_record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Add_bizdev_to_email_list</name>
+        <label>Copy 1 of Add bizdev to email list</label>
+        <locationX>11210</locationX>
+        <locationY>2387</locationY>
+        <assignmentItems>
+            <assignToReference>List_of_email_to_contact</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>BizDev_Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>List_of_email_to_contact</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>legal-sellers@backmarket.com</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Decision_on_zone</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_contact_to_list</name>
+        <label>Copy 1 of Assign contact to list</label>
+        <locationX>10990</locationX>
+        <locationY>2147</locationY>
+        <assignmentItems>
+            <assignToReference>List_of_email_to_contact</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_on_all_contact_with_email.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Tech_Count_Contacts</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Is_limit_reached</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_quality_contact_to_list</name>
+        <label>Copy 1 of Assign quality contact to list</label>
+        <locationX>11602</locationX>
+        <locationY>2027</locationY>
+        <assignmentItems>
+            <assignToReference>List_of_email_to_contact</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_on_quality_contact_with_email.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Tech_Count_Contacts</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>List_of_email_to_contact</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Is_limit_reached</targetReference>
         </connector>
     </assignments>
     <decisions>
@@ -2628,6 +1959,198 @@
                 <targetReference>Create_Exit_Draft</targetReference>
             </connector>
             <label>To Failed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_Decision_on_zone</name>
+        <label>Decision on zone</label>
+        <locationX>11210</locationX>
+        <locationY>2507</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_FR_or_BE_Policy_Violation</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr-fr</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr-be</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Policy violation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_failed_email_FR_Policy_Violation</targetReference>
+            </connector>
+            <label>FR or BE (Policy Violation)</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_Other_Policy_Violation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Policy violation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_failed_email_EN_Policy_Violation</targetReference>
+            </connector>
+            <label>Other (Policy Violation)</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_If_no_quality_contact</name>
+        <label>Copy 1 of If no quality contact</label>
+        <locationX>11054</locationX>
+        <locationY>1787</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Loop_on_quality_contact_with_email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Take_all_contacts</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_all_contact_quality_with_email</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Get_all_contact_with_email</targetReference>
+            </connector>
+            <label>Copy 1 of Take all contacts</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_Is_limit_reached</name>
+        <label>Copy 1 of Is limit reached</label>
+        <locationX>10990</locationX>
+        <locationY>2267</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Add_bizdev_to_email_list</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Limit_isn_t_reached</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Tech_Count_Contacts</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>3.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Loop_on_all_contact_with_email</targetReference>
+            </connector>
+            <label>Copy 1 of Limit isn&apos;t reached</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_Is_limit_reached</name>
+        <label>Copy 2 of Is limit reached</label>
+        <locationX>11602</locationX>
+        <locationY>2147</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Copy_1_of_Add_bizdev_to_email_list</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_Limit_isn_t_reached</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Tech_Count_Contacts</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>3.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Loop_on_quality_contact_with_email</targetReference>
+            </connector>
+            <label>Copy 2 of Limit isn&apos;t reached</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_KPI_is_CSAT_or_LRR</name>
+        <label>Decision - KPI is CSAT or LRR</label>
+        <locationX>13808</locationX>
+        <locationY>695</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_is_changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_on_stage</targetReference>
+            </connector>
+            <label>Stage is changed</label>
+        </rules>
+        <rules>
+            <name>CSAT_or_LRR</name>
+            <conditionLogic>(1 OR 2) AND (3 OR 4) AND 5</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CSAT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Late Response Rate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Monitoring Period</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Last chance</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ETA__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_TC_without_BC_Sales</targetReference>
+            </connector>
+            <label>CSAT or LRR</label>
         </rules>
     </decisions>
     <decisions>
@@ -2720,8 +2243,8 @@
     <decisions>
         <name>Decision_on_limitation_to_apply</name>
         <label>Decision on limitation to apply</label>
-        <locationX>11738</locationX>
-        <locationY>1295</locationY>
+        <locationX>12434</locationX>
+        <locationY>1547</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Sales_LC</name>
@@ -2804,8 +2327,8 @@
     <decisions>
         <name>Decision_on_record_type_after_email_is_sent</name>
         <label>Decision on record type after email is sent</label>
-        <locationX>15962</locationX>
-        <locationY>2615</locationY>
+        <locationX>15932</locationX>
+        <locationY>2627</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>MP_sales_no_ongoing_alerts</name>
@@ -2861,7 +2384,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_8_of_Copy_2_of_Send_log</targetReference>
+                <targetReference>Get_smallest_limitation_on_ongoing_sales_alert</targetReference>
             </connector>
             <label>MP sales - ongoing alerts</label>
         </rules>
@@ -2919,7 +2442,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_9_of_Copy_2_of_Send_log</targetReference>
+                <targetReference>Get_smallest_limitation_on_ongoing_buyback_alert</targetReference>
             </connector>
             <label>MP buyback - ongoing alerts</label>
         </rules>
@@ -2978,7 +2501,7 @@
     <decisions>
         <name>Decision_on_RecordType</name>
         <label>Decision on RecordType</label>
-        <locationX>10552</locationX>
+        <locationX>10504</locationX>
         <locationY>575</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -3043,7 +2566,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Send_log</targetReference>
+                <targetReference>Decision_KPI_is_CSAT_or_LRR</targetReference>
             </connector>
             <label>Monitoring period</label>
         </rules>
@@ -3103,8 +2626,8 @@
     <decisions>
         <name>Decision_on_stage</name>
         <label>Decision on stage</label>
-        <locationX>13274</locationX>
-        <locationY>1055</locationY>
+        <locationX>13808</locationX>
+        <locationY>1427</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>US_Stage_is_failed</name>
@@ -3138,7 +2661,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_2_of_Send_log</targetReference>
+                <targetReference>Create_Exit_Sales</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>US - Stage is failed</label>
@@ -3175,7 +2698,8 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_1_of_Copy_2_of_Send_log</targetReference>
+                <isGoTo>true</isGoTo>
+                <targetReference>Create_Exit_Sales</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>EU - stage is failed</label>
@@ -3205,7 +2729,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_2_of_Copy_2_of_Send_log</targetReference>
+                <targetReference>Create_Exit_Buyback</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>Buyback - stage is failed</label>
@@ -3221,7 +2745,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_3_of_Copy_2_of_Send_log</targetReference>
+                <targetReference>Decision_on_limitation_to_apply</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>Stage is last chance</label>
@@ -3237,7 +2761,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_4_of_Copy_2_of_Send_log</targetReference>
+                <targetReference>Get_all_contact_quality_with_email</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>Stage is saved</label>
@@ -3253,7 +2777,8 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_5_of_Copy_2_of_Send_log</targetReference>
+                <isGoTo>true</isGoTo>
+                <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>Stage is Rejected</label>
@@ -3322,9 +2847,34 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Decision_on_TC_without_BC</name>
+        <label>Decision on TC without BC</label>
+        <locationX>13808</locationX>
+        <locationY>935</locationY>
+        <defaultConnector>
+            <targetReference>Decision_on_stage</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ALL_TCs_got_BC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_TC_without_BC_Sales</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_stage_alert_to_saved</targetReference>
+            </connector>
+            <label>ALL TCs got BC</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Decision_on_user_bypass</name>
         <label>Decision on user bypass</label>
-        <locationX>8838</locationX>
+        <locationX>8790</locationX>
         <locationY>335</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -3401,48 +2951,12 @@
     <decisions>
         <name>Decision_on_zone</name>
         <label>Decision on zone</label>
-        <locationX>15698</locationX>
-        <locationY>2255</locationY>
+        <locationX>15734</locationX>
+        <locationY>2387</locationY>
         <defaultConnector>
-            <targetReference>Send_saved_email_EN</targetReference>
+            <targetReference>Is_buyback</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>FR_or_BE_CSAT_Late_response</name>
-            <conditionLogic>(1 OR 2) AND (3 OR 4)</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>fr-fr</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Zone__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>fr-be</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>CSAT</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Late Response Rate</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Send_saved_email_FR_CSAT_or_LRR</targetReference>
-            </connector>
-            <label>FR or BE (CSAT - Late response)</label>
-        </rules>
         <rules>
             <name>FR_or_BE_Policy_Violation</name>
             <conditionLogic>(1 OR 2) AND 3</conditionLogic>
@@ -3490,31 +3004,9 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Send_saved_email_FR</targetReference>
+                <targetReference>Is_buyback_fr</targetReference>
             </connector>
             <label>FR or BE</label>
-        </rules>
-        <rules>
-            <name>Other_CSAT_Late_response</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>CSAT</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Late Response Rate</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Send_saved_email_EN_CSAT_or_LRR</targetReference>
-            </connector>
-            <label>Other (CSAT - Late response)</label>
         </rules>
         <rules>
             <name>Other_Policy_Violation</name>
@@ -3527,7 +3019,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_7_of_Copy_2_of_Send_log</targetReference>
+                <targetReference>Send_saved_email_EN_Policy_Violation</targetReference>
             </connector>
             <label>Other (Policy Violation)</label>
         </rules>
@@ -3711,8 +3203,8 @@
     <decisions>
         <name>If_no_quality_contact</name>
         <label>If no quality contact</label>
-        <locationX>15014</locationX>
-        <locationY>1415</locationY>
+        <locationX>15215</locationX>
+        <locationY>1667</locationY>
         <defaultConnector>
             <targetReference>Loop_on_quality_contact_with_email</targetReference>
         </defaultConnector>
@@ -3734,10 +3226,60 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Is_buyback</name>
+        <label>Is buyback</label>
+        <locationX>16856</locationX>
+        <locationY>2507</locationY>
+        <defaultConnector>
+            <targetReference>Send_saved_email_EN</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Monitoring_Period_Buyback</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Send_saved_email_EN</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_buyback_fr</name>
+        <label>Is buyback</label>
+        <locationX>15008</locationX>
+        <locationY>2507</locationY>
+        <defaultConnector>
+            <targetReference>Send_saved_email_FR</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True_fr</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Monitoring_Period_Buyback</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Send_saved_email_FR</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Is_limit_reached</name>
         <label>Is limit reached</label>
-        <locationX>14950</locationX>
-        <locationY>1895</locationY>
+        <locationX>15085</locationX>
+        <locationY>2147</locationY>
         <defaultConnector>
             <targetReference>Add_bizdev_to_email_list</targetReference>
         </defaultConnector>
@@ -3761,8 +3303,8 @@
     <decisions>
         <name>Is_limit_reached_0</name>
         <label>Is limit reached</label>
-        <locationX>16090</locationX>
-        <locationY>1775</locationY>
+        <locationX>16258</locationX>
+        <locationY>2027</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Add_bizdev_to_email_list</targetReference>
@@ -4304,7 +3846,7 @@
     <decisions>
         <name>Move_to_Saved</name>
         <label>Move to Saved</label>
-        <locationX>17098</locationX>
+        <locationX>17002</locationX>
         <locationY>695</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -4469,28 +4011,6 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Stage_is_changed_MP</name>
-        <label>Stage is changed</label>
-        <locationX>14966</locationX>
-        <locationY>815</locationY>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Stage_is_changed</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Stage__c</leftValueReference>
-                <operator>IsChanged</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Copy_1_of_Send_log</targetReference>
-            </connector>
-            <label>Stage is changed</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>Stage_is_updated</name>
         <label>Stage is updated</label>
         <locationX>3302</locationX>
@@ -4606,6 +4126,11 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <expression>if({!$Record.Business_Name__r.RecordType.DeveloperName}=&apos;E_U&apos;, {!$Setup.Special_Process_Record_Types_Ids__c.Exit__c}, {!$Setup.Special_Process_Record_Types_Ids__c.Exit_US__c})</expression>
     </formulas>
     <formulas>
+        <name>hasBegunOn</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.Has_begun_on__c})</expression>
+    </formulas>
+    <formulas>
         <name>InvCom_ResaonForLimitation_SmallesAlert</name>
         <dataType>String</dataType>
         <expression>if(ISPICKVAL({!Get_ongoing_Sales_alerts.Issue_KPI__c},&quot;Potential Hazardous Charger&quot;),&quot;QUALITY_LEGAL_AND_SAFETY_ISSUE&quot;,
@@ -4670,7 +4195,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <formulas>
         <name>SalesLimitation_LC_Alert</name>
         <dataType>Number</dataType>
-        <expression>If({!SalesLimitation_LC_KPI}&gt;3,{!SalesLimitation_LC_KPI} , 3)</expression>
+        <expression>If({!SalesLimitation_LC_KPI}&gt;5,{!SalesLimitation_LC_KPI} , 5)</expression>
         <scale>0</scale>
     </formulas>
     <formulas>
@@ -4727,10 +4252,40 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <interviewLabel>Alert - After Save Flow (Update Only) {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Alert - After Save Flow (Update Only)</label>
     <loops>
+        <name>Copy_1_of_Loop_on_all_contact_with_email</name>
+        <label>Copy 1 of Loop on all contact with email</label>
+        <locationX>10682</locationX>
+        <locationY>2027</locationY>
+        <collectionReference>Get_all_contact_with_email</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Copy_1_of_Assign_contact_to_list</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Copy_1_of_Add_bizdev_to_email_list</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Copy_1_of_Loop_on_quality_contact_with_email</name>
+        <label>Copy 1 of Loop on quality contact with email</label>
+        <locationX>11426</locationX>
+        <locationY>1907</locationY>
+        <collectionReference>Get_all_contact_quality_with_email</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Copy_1_of_Assign_quality_contact_to_list</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Copy_1_of_Add_bizdev_to_email_list</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
         <name>Loop_on_all_contact_with_email</name>
         <label>Loop on all contact with email</label>
-        <locationX>14114</locationX>
-        <locationY>1655</locationY>
+        <locationX>14348</locationX>
+        <locationY>1907</locationY>
         <collectionReference>Get_all_contact_with_email</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -4789,8 +4344,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <loops>
         <name>Loop_on_quality_contact_with_email</name>
         <label>Loop on quality contact with email</label>
-        <locationX>15914</locationX>
-        <locationY>1535</locationY>
+        <locationX>16082</locationX>
+        <locationY>1787</locationY>
         <collectionReference>Get_all_contact_quality_with_email</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -4838,15 +4393,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordCreates>
         <name>Create_Exit_Buyback</name>
         <label>Create Exit Buyback</label>
-        <locationX>10946</locationX>
-        <locationY>1295</locationY>
-        <connector>
-            <targetReference>Copy_1_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Copy_2_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
-        </faultConnector>
+        <locationX>11906</locationX>
+        <locationY>1547</locationY>
         <inputAssignments>
             <field>BizDev_for_Approval__c</field>
             <value>
@@ -5093,14 +4641,11 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordCreates>
         <name>Create_Exit_Sales</name>
         <label>Create Exit Sales</label>
-        <locationX>10154</locationX>
-        <locationY>1295</locationY>
+        <locationX>11054</locationX>
+        <locationY>1547</locationY>
         <connector>
-            <targetReference>Copy_2_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
+            <targetReference>Copy_1_of_Get_all_contact_quality_with_email</targetReference>
         </connector>
-        <faultConnector>
-            <targetReference>Copy_2_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
-        </faultConnector>
         <inputAssignments>
             <field>BizDev_for_Approval__c</field>
             <value>
@@ -5158,6 +4703,97 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
         <object>Merchant_Special_Process__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
+    <recordLookups>
+        <name>Copy_1_of_Get_all_contact_quality_with_email</name>
+        <label>Copy 1 of Get all contact quality with email</label>
+        <locationX>11054</locationX>
+        <locationY>1667</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_1_of_If_no_quality_contact</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Business_Name__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TECH_Role_contain_quality_business__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Quality</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>HasOptedOutOfEmail</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Copy_1_of_Get_all_contact_with_email</name>
+        <label>Copy 1 of Get all contact with email</label>
+        <locationX>10682</locationX>
+        <locationY>1907</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Copy_1_of_Loop_on_all_contact_with_email</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Business_Name__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>HasOptedOutOfEmail</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordLookups>
         <name>Get_alert_with_smallest_limitation</name>
         <label>Get alert with smallest limitation</label>
@@ -5226,8 +4862,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_all_contact_quality_with_email</name>
         <label>Get all contact quality with email</label>
-        <locationX>15014</locationX>
-        <locationY>1295</locationY>
+        <locationX>15215</locationX>
+        <locationY>1547</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>If_no_quality_contact</targetReference>
@@ -5275,8 +4911,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_all_contact_with_email</name>
         <label>Get all contact with email</label>
-        <locationX>14114</locationX>
-        <locationY>1535</locationY>
+        <locationX>14348</locationX>
+        <locationY>1787</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_all_contact_with_email</targetReference>
@@ -5592,8 +5228,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_smallest_limitation_on_ongoing_buyback_alert</name>
         <label>Get smallest limitation on ongoing buyback alert</label>
-        <locationX>16226</locationX>
-        <locationY>2855</locationY>
+        <locationX>16196</locationX>
+        <locationY>2747</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Assign_smallest_Buyback_alert_limitation</targetReference>
@@ -5650,8 +5286,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_smallest_limitation_on_ongoing_sales_alert</name>
         <label>Get smallest limitation on ongoing sales alert</label>
-        <locationX>15698</locationX>
-        <locationY>2855</locationY>
+        <locationX>15668</locationX>
+        <locationY>2747</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Assign_smallest_Sales_alert_limitation</targetReference>
@@ -5777,6 +5413,41 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
+    <recordLookups>
+        <name>Get_TC_without_BC_Sales</name>
+        <label>Get TC without BC Sales</label>
+        <locationX>13808</locationX>
+        <locationY>815</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Decision_on_TC_without_BC</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Back_Care__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Merchant__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Business_Name__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Online_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Live</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Targeted_Country__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordUpdates>
         <name>Update_Alert_limitation</name>
         <label>Update Alert limitation</label>
@@ -5846,15 +5517,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordUpdates>
         <name>Update_limitation_to_apply_and_ETA_fot_test</name>
         <label>Update limitation to apply and ETA fot test</label>
-        <locationX>11738</locationX>
-        <locationY>1751</locationY>
-        <connector>
-            <targetReference>Copy_1_of_Copy_1_of_Copy_3_of_Copy_2_of_Send_log</targetReference>
-        </connector>
-        <faultConnector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Copy_2_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
-        </faultConnector>
+        <locationX>12434</locationX>
+        <locationY>1883</locationY>
         <inputAssignments>
             <field>AlertLimitation__c</field>
             <value>
@@ -5872,14 +5536,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordUpdates>
         <name>Update_merchant_limitations_sales_alert</name>
         <label>Update merchant limitations - sales alert</label>
-        <locationX>15962</locationX>
-        <locationY>3311</locationY>
-        <connector>
-            <targetReference>Copy_11_of_Copy_2_of_Send_log</targetReference>
-        </connector>
-        <faultConnector>
-            <targetReference>Copy_1_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
-        </faultConnector>
+        <locationX>15932</locationX>
+        <locationY>3083</locationY>
         <inputReference>Merchant_to_update</inputReference>
     </recordUpdates>
     <recordUpdates>
@@ -5922,7 +5580,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordUpdates>
         <name>Update_ongoing_Alert_to_Save</name>
         <label>Update ongoing Alert to Save</label>
-        <locationX>17098</locationX>
+        <locationX>17002</locationX>
         <locationY>1031</locationY>
         <inputAssignments>
             <field>Has_been_saved_on__c</field>
@@ -5938,8 +5596,31 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
         </inputAssignments>
         <inputReference>$Record</inputReference>
     </recordUpdates>
+    <recordUpdates>
+        <name>Update_stage_alert_to_saved</name>
+        <label>Update stage alert to saved</label>
+        <locationX>13676</locationX>
+        <locationY>1055</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Get_all_contact_quality_with_email</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Has_been_saved_on__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Stage__c</field>
+            <value>
+                <stringValue>Saved</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
     <start>
-        <locationX>8712</locationX>
+        <locationX>8664</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Decision_on_user_bypass</targetReference>
@@ -5952,18 +5633,21 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
                 <booleanValue>false</booleanValue>
             </value>
         </filters>
-        <filters>
-            <field>Is_archived__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
         <object>Alert__c</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
+    <textTemplates>
+        <name>BB_TextTemplate_EN_Body_MP_Saved</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Hi {!$Record.Business_Name__r.Name},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;We’re delighted to inform you that, thanks to your hard work, you’ve improved your {!$Record.Issue_KPI__c} and are now in compliance with Back Market’s quality standards! &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Your monitoring period for the {!$Record.Issue_KPI__c} ends today and your BuyBack purchase limitations will be lifted as long as you’re not subject to any other BuyBack restrictions.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;To avoid any monitoring periods in the future, visit the &lt;/span&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/topic/0TO3X0000009ahcWAA/buyback&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: transparent; color: rgb(17, 85, 204); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;&lt;u&gt;Seller Support Center&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt; to review the process, track your performance via the &lt;/span&gt;&lt;a href=&quot;https://backmarket.fr/bo_merchant/insights?tableau=buyback&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: transparent; color: rgb(17, 85, 204); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;&lt;u&gt;BuyBack insights dashboard&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt; in your Back Office,&amp;nbsp; or reach out to your Back Market point of contact with any questions.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Thanks for your partnership,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Back Market&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>BB_TextTemplate_FR_Body_MP_Saved</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Bonjour {!$Record.Business_Name__r.Name},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Nous sommes ravis de vous informer que, grâce à vos efforts, vous avez amélioré votre {!$Record.Issue_KPI__c} et que vous êtes maintenant en conformité avec les normes de qualité Back Market !&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Votre &lt;/span&gt;&lt;em style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;monitoring period&lt;/em&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; se termine donc aujourd&apos;hui pour votre {!$Record.Issue_KPI__c} et votre limite de reprises est levée, sous réserve que vous ne soyez sujet à aucune autre restriction de reprises.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Nous comptons sur vous pour poursuivre les améliorations que vous avez apportées.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Afin d’éviter toute &lt;/span&gt;&lt;em style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;monitoring period&lt;/em&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; à l’avenir, nous vous recommandons de consulter régulièrement le &lt;/span&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/topic/0TO3X0000009ahcWAA/buyback&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(17, 85, 204); background-color: transparent;&quot;&gt;&lt;u&gt;Seller Support Center pour le Buyback&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; et de suivre vos performances en qualité à l’aide du &lt;/span&gt;&lt;a href=&quot;https://backmarket.fr/bo_merchant/insights?tableau=buyback&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(17, 85, 204); background-color: transparent;&quot;&gt;&lt;u&gt;dashboard Qualité Buyback&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(68, 68, 68); background-color: transparent;&quot;&gt; disponible dans votre back-office&lt;/span&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;. Votre contact Back Market reste bien entendu à votre disposition pour toute question complémentaire.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Cordialement,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Back Market&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
     <textTemplates>
         <name>TextTemplate_Chargers_ENBody_LastChance</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
@@ -6051,20 +5735,14 @@ https://backmarketportal.force.com/ssc/s/article/Conformité-des-chargeurs-aux-n
         <text>&lt;p&gt;Hello,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Following our previous communication notifying you of a negative balance on your Back Market wallet superior to 10k{!$Record.Currency__c}, we notice that it decreased to a negative balance inferior to 5k&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!$Record.Currency__c}&lt;/span&gt;. As a consequence, we hereby inform you that we are lifting the 1 sale per day limitation on your sales, and are reverting to the previous applicable limitation of {!$Record.Business_Name__r.LimitationBeforeAlert__c} sales per day.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;We however kindly ask you again to regularize your account by paying the invoice available in the &lt;a href=&quot;https://www.backmarket.fr/bo_merchant/invoices&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;invoice tab&lt;/a&gt; of your Back Office. Please use the &lt;a href=&quot;https://backmarket--c.documentforce.com/servlet/servlet.ImageServer?id=0153X000006YfFN&amp;amp;oid=00D1t000000xUVO&amp;amp;lastMod=1643885965000&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Back Market bank details&lt;/a&gt; to make such payment.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please be informed that according to our general terms and conditions, if your account is not regularized before the end of the 30-day delay mentioned in our previous email, Back Market may close your seller account and take all legal actions to recover this amount plus interests for late payment and any applicable penalties.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Best regards,&lt;/p&gt;&lt;p&gt;Back Market&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
+        <name>TextTemplate_EN_Body_MP_Failed_Policy_Violation</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Hi {!$Record.Business_Name__r.Name},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Since you entered a Probation period for policy violations&lt;/span&gt;&lt;strong style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; &lt;/strong&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;on {!hasBegunOn}, your account continues to be in violation.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;As a result, Back Market might close your account as outlined in article 19.2 of the Seller’s Terms and Conditions. Your sales account will be limited until you correct the policy violations or until your account is closed. For now, your sales account is limited to {!$Record.AlertLimitation__c} sales per day or approximately 30% of your most recent 30-day sales average unless you’re subject to a lower restriction.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;For more information about the policy violation process, read &lt;/span&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/article/What-is-the-process-in-case-of-Policy-Violation&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(17, 85, 204); background-color: transparent;&quot;&gt;&lt;u&gt;this Seller Support Center article&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; or reach out to your Back Market point of contact.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Thank you,&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;The Back Market team&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
         <name>TextTemplate_EN_Body_MP_Saved</name>
-        <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>Hello {!$Record.Business_Name__r.Name},
-
-Thanks to your effort, we are delighted to inform you that you have reached the aforementioned goal for the {!$Record.Issue_KPI__c} and are now in compliance with our quality standards. Therefore, your monitoring period ends today for the {!$Record.Issue_KPI__c} and your {!SalesBuyback} limitation will be lifted, provided that you are not subject to any other {!SalesBuyback} restriction.
-
-We are pleased with the improvements you have made and are counting on you to continue them.
-
-We encourage you to consult the Merchant Support Center to review the monitoring period process and thresholds. Additionally, your Back Market contact is available to answer any remaining questions you may have. 
-
-Sincerely,
-Back Market
-
-https://merchant-support.backmarket.com/hc/en-gb/sections/360005071293-Quality-Monitoring</text>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Hi {!$Record.Business_Name__r.Name},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;We’re delighted to inform you that, thanks to your hard work, you’ve improved your {!$Record.Issue_KPI__c} and are now in compliance with Back Market’s quality standards! &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Your Monitoring period for the {!$Record.Issue_KPI__c} ends today and your sales limitations will be lifted as long as you’re not subject to any other sales restrictions.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;To avoid any Monitoring periods in the future, visit the &lt;/span&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/article/What-is-the-Monitoring-Period-process-%EF%B8%8F-%EF%B8%8F&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: transparent; color: rgb(17, 85, 204); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;&lt;u&gt;Seller Support Center&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt; to review the process or reach out to your Back Market point of contact with any questions.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Thanks for your partnership,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;The Back Market team&lt;/span&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>TextTemplate_EN_Body_MP_Saved_CSAT_LateResponse</name>
@@ -6074,7 +5752,7 @@ https://merchant-support.backmarket.com/hc/en-gb/sections/360005071293-Quality-M
     <textTemplates>
         <name>TextTemplate_EN_Body_MP_Saved_Policy_Violation</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Hello {!$Record.Business_Name__r.Name},&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Congratulations, you are now in compliance with our Policy Violation standards!&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Your Policy Violation process ends today and your sales limitation will be lifted, provided that you are not subject to any other sales restriction.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;We are pleased with the improvements and are counting on you to continue to keep your account compliant with Seller’s Terms and Conditions and Quality Charter.&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;To stay updated on the Policy Violation, please refer to the &lt;a href=&quot;https://merchant-support.backmarket.com/hc/en-gb/articles/4414674693394-What-is-the-process-in-case-of-Policy-Violation-&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Policy Violation process&lt;/a&gt; and &lt;a href=&quot;https://merchant-support.backmarket.com/hc/en-gb/articles/4414576023954-Insights-tab-Policy-Violations-in-the-Back-Office&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Policy Violation tab&lt;/a&gt; in the Seller Support Center, or reach out to your Back Market point of contact if you have any questions.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The Back Market team&lt;/p&gt;</text>
+        <text>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Hi {!$Record.Business_Name__r.Name},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Congratulations! You’re now fully compliant with Back Market’s Quality Charter. Your Probation period for policy violations ends today.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;To make sure you’re always in compliance with our policies, read &lt;/span&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/article/What-is-the-process-in-case-of-Policy-Violation&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: transparent; color: rgb(17, 85, 204); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;&lt;u&gt;this Seller Support Center article&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt; or reach out to your Back Market point of contact.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Nice work,&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;The Back Market team&lt;/span&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>TextTemplate_EN_Subject_great_debt</name>
@@ -6082,9 +5760,14 @@ https://merchant-support.backmarket.com/hc/en-gb/sections/360005071293-Quality-M
         <text>{!$Record.Business_Name__r.Back_Office_PK__c} - {!$Record.Business_Name__r.Name} - Alert - Negative balance</text>
     </textTemplates>
     <textTemplates>
+        <name>TextTemplate_EN_Subject_MP_Failed_Policy_Violation</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Take action now to avoid your account being closed</text>
+    </textTemplates>
+    <textTemplates>
         <name>TextTemplate_EN_Subject_MP_Saved</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>Monitoring Period on your {!$Record.Issue_KPI__c} succeeded!</text>
+        <text>Good news: Your {!$Record.Issue_KPI__c} has improved!</text>
     </textTemplates>
     <textTemplates>
         <name>TextTemplate_EN_Subject_MP_Saved_CSAT_LateResponse</name>
@@ -6094,7 +5777,7 @@ https://merchant-support.backmarket.com/hc/en-gb/sections/360005071293-Quality-M
     <textTemplates>
         <name>TextTemplate_EN_Subject_MP_Saved_Policy_Violation</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>Policy Violation process succeeded!</text>
+        <text>Thank you for correcting your policy violations!</text>
     </textTemplates>
     <textTemplates>
         <name>TextTemplate_EN_US_Body_Debt_Saved</name>
@@ -6117,19 +5800,14 @@ https://merchant-support.backmarket.com/hc/en-gb/sections/360005071293-Quality-M
         <text>&lt;p&gt;Bonjour,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Suite à notre précédente communication vous notifiant d’un solde négatif de plus de 10k{!$Record.Currency__c} sur votre porte-monnaie virtuel, nous constatons que celui-ci est revenu à un solde négatif de moins de 5k{!$Record.Currency__c}. Par conséquent, nous vous informons que nous levons la limitation à 1 vente par jour de vos ventes, et appliquons la précédente limitation applicable à {!$Record.Business_Name__r.LimitationBeforeAlert__c} ventes par jour.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Nous vous prions toutefois de bien vouloir régulariser votre situation dans son intégralité en payant la facture disponible dans l&apos;onglet&lt;a href=&quot;https://www.backmarket.fr/bo_merchant/invoices&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt; facture &lt;/a&gt;de votre Back office. Vous trouverez sur&lt;a href=&quot;https://backmarket--c.documentforce.com/servlet/servlet.ImageServer?id=0153X000006YfFN&amp;amp;oid=00D1t000000xUVO&amp;amp;lastMod=1643885965000&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt; ce lien&lt;/a&gt; le RIB de Back Market sur lequel réaliser votre paiement. Nous vous remercions de préciser “votre numéro PK et le numéro de la facture” comme motif de paiement.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Nous attirons votre attention sur le fait que, conformément à nos conditions générales, faute de régularisation de votre compte avant le délai de 30 jours visé dans notre email précédent, Back Market pourra clore votre compte vendeur et mettra en œuvre toute action judiciaire pour recouvrer cette somme, outre tout intérêt de retard et toutes pénalités applicables.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Cordialement,&lt;/p&gt;&lt;p&gt;Back Market&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
+        <name>TextTemplate_FR_Body_MP_Failed_Policy_Violation</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Bonjour {!$Record.Business_Name__r.Name},&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Depuis votre &lt;/span&gt;&lt;strong style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;entrée en &lt;em&gt;Probation Period &lt;/em&gt;en raison de&lt;em&gt; Policy Violations&lt;/em&gt; &lt;/strong&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;le {!hasBegunOn}, votre Compte Vendeur continue d’être en violation de nos règles.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Par conséquent, nous pouvons clore votre Compte Vendeur, comme le prévoit l’article 19.2 de nos CGV, et votre compte sera limité à {!$Record.AlertLimitation__c} ventes par jour soit environ 30% de votre volume de ventes quotidien moyen réalisé au cours des 30 derniers jours à compter de ce jour (sauf si vous avez déjà une restriction plus basse) jusqu’à ce que vous remédiez à la situation, ou jusqu’à la date effective de la fermeture de votre compte le cas échéant.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Nous vous encourageons à consulter le &lt;/span&gt;&lt;em style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Seller Support Center&lt;/em&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; pour plus d&apos;informations sur le &lt;/span&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/article/What-is-the-process-in-case-of-Policy-Violation&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(17, 85, 204); background-color: transparent;&quot;&gt;&lt;u&gt;processus de Policy Violation&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; ou contactez votre point de contact Back Market si vous avez des questions.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Merci, &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;L’équipe Back Market&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
         <name>TextTemplate_FR_Body_MP_Saved</name>
-        <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>Bonjour {!$Record.Business_Name__r.Name},
-
-Grâce à vos efforts, nous avons le plaisir de vous informer que vous avez atteint l&apos;objectif fixé pour l’indicateur {!$Record.Issue_KPI__c} et que vous êtes maintenant en conformité avec nos normes de qualité. Par conséquent, votre période de suivi se termine aujourd&apos;hui pour votre indicateur {!$Record.Issue_KPI__c} et votre limite de {!VenteReprise} est enlevée, sous réserve que vous ne soyez sujet à aucune autre restriction de {!VenteReprise}.
-
-Nous comptons sur vous pour poursuivre les améliorations que vous avez apportées.
-
-Nous vous recommandons de consulter le Merchant Support Center pour toute information concernant le processus de Période de suivi. Votre contact Back Market reste bien entendu à votre disposition pour toute question supplémentaire. 
-
-Cordialement,
-Back Market
-https://merchant-support.backmarket.com/hc/fr/sections/360005071293-Suivi-Qualit%C3%A9</text>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Bonjour {!$Record.Business_Name__r.Name},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Nous avons le plaisir de vous informer que, grâce à votre travail, vous avez amélioré votre {!$Record.Issue_KPI__c} et êtes maintenant en conformité avec les standards de qualité Back Market!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Votre &lt;/span&gt;&lt;em style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Monitoring period&lt;/em&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt; se termine aujourd&apos;hui pour votre indicateur {!$Record.Issue_KPI__c} et votre limite de vente est levée,&amp;nbsp; sous réserve que vous ne soyez sujet à aucune autre restriction de vente.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Pour éviter toute &lt;/span&gt;&lt;em style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Monitoring period&lt;/em&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt; à l&apos;avenir, visitez le &lt;/span&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/article/What-is-the-Monitoring-Period-process-%EF%B8%8F-%EF%B8%8F&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: transparent; color: rgb(17, 85, 204); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;&lt;u&gt;Seller Support Center&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt; pour revoir le processus ou adressez-vous à votre point de contact de Back Market pour toute question.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Cordialement,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); font-family: Calibri, sans-serif; font-size: 11pt;&quot;&gt;Back Market&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>TextTemplate_FR_Body_MP_Saved_CSAT_LateResponse</name>
@@ -6139,12 +5817,17 @@ https://merchant-support.backmarket.com/hc/fr/sections/360005071293-Suivi-Qualit
     <textTemplates>
         <name>TextTemplate_FR_Body_MP_Saved_Policy_Violation</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Bonjour {!$Record.Business_Name__r.Name},&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Félicitations, vous êtes maintenant en conformité avec nos standards sur les Policy Violations!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Votre processus de Policy Violation se termine aujourd&apos;hui et la restriction de votre volume de ventes quotidien est levée, sous réserve que vous ne soyez sujet à aucune autre restriction sur vos ventes.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Nous sommes heureux des améliorations et comptons sur vous pour continuer à être conforme aux Conditions générales vendeur et à la Charte Qualité.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Pour vous tenir à jour sur les Policy Violations, nous vous encourageons à consulter le Seller Support Center sur le &lt;a href=&quot;https://merchant-support.backmarket.com/hc/fr/articles/4414674693394-Quel-est-le-processus-en-cas-de-Policy-Violation-&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;processus de Policy Violation&lt;/a&gt; et &lt;a href=&quot;https://merchant-support.backmarket.com/hc/fr/articles/4414576023954-Onglet-Insights-Policy-Violation&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;l&apos;onglet Policy Violation&lt;/a&gt;, ou à contacter votre point de contact Back Market si vous avez des questions.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Merci !&lt;/p&gt;&lt;p&gt;L’équipe Back Market&lt;/p&gt;</text>
+        <text>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Bonjour {!$Record.Business_Name__r.Name},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Félicitations ! Vous êtes maintenant entièrement conforme à la Charte qualité de Back Market.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Votre &lt;/span&gt;&lt;em style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Probation Period&lt;/em&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; pour violations de nos règles &lt;/span&gt;&lt;em style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;(policy violations)&lt;/em&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; se termine aujourd&apos;hui.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Pour vous assurer que votre compte est toujours en conformité, veuillez consulter &lt;/span&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/article/What-is-the-process-in-case-of-Policy-Violation&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(17, 85, 204); background-color: transparent;&quot;&gt;&lt;u&gt;l&apos;article du Seller Support Center.&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; En outre, votre contact Back Market est disponible pour répondre à toutes les questions que vous pourriez avoir.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Excellent travail !&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Cordialement,&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri, sans-serif; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Votre équipe Back Market&lt;/span&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>TextTemplate_FR_Subject_great_debt</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
         <text>{!$Record.Business_Name__r.Back_Office_PK__c} - {!$Record.Business_Name__r.Name} - Alerte - Balance négative</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextTemplate_FR_Subject_MP_Failed_Policy_Violation</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Agissez maintenant pour éviter la fermeture de votre compte</text>
     </textTemplates>
     <textTemplates>
         <name>TextTemplate_FR_Subject_MP_Saved</name>
@@ -6159,7 +5842,7 @@ https://merchant-support.backmarket.com/hc/fr/sections/360005071293-Suivi-Qualit
     <textTemplates>
         <name>TextTemplate_FR_Subject_MP_Saved_Policy_Violation</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>Succès de votre Processus de Policy Violation</text>
+        <text>Merci de avoir corrigé vos policy violations !</text>
     </textTemplates>
     <textTemplates>
         <name>TextTemplate_Invoice_ENBody</name>
