@@ -10589,9 +10589,11 @@ L’équipe Back Market</label>
     <flowDefinitions>
         <flows>
             <choices>
+                <choiceText>Demande d&apos;autorisation de vente d&apos;un produit d&apos;une catégorie restreinte</choiceText>
                 <name>Apply_to_sell_a_restricted_product_category</name>
             </choices>
             <choices>
+                <choiceText>Demande concernant une facture</choiceText>
                 <name>Ask_question_related_to_an_invoice</name>
             </choices>
             <choices>
@@ -10610,174 +10612,231 @@ L’équipe Back Market</label>
                 <name>BackShip</name>
             </choices>
             <choices>
+                <choiceText>Les Services Back Market</choiceText>
                 <name>Back_Market_Services</name>
             </choices>
             <choices>
+                <choiceText>Back Market n&apos;est pas conforme à la réglementation P2B</choiceText>
                 <name>Back_Market_is_not_being_compliant_with_the_P2B_regulation</name>
             </choices>
             <choices>
+                <choiceText>Commande - BuyBack</choiceText>
                 <name>BuyBack_order</name>
             </choices>
             <choices>
+                <choiceText>Contester un remboursement client</choiceText>
                 <name>Challenge_a_refund_issued_to_a_customer</name>
             </choices>
             <choices>
+                <choiceText>Paiements différés</choiceText>
                 <name>Deferred_Payout</name>
             </choices>
             <choices>
+                <choiceText>Finance ou Légal</choiceText>
                 <name>Finance_Legal</name>
             </choices>
             <choices>
+                <choiceText>Je dispose déjà des capacités de réparation</choiceText>
                 <name>I_already_have_an_in_house_repair_resources</name>
             </choices>
             <choices>
+                <choiceText>J&apos;achète les produits sous garantie</choiceText>
                 <name>I_buy_the_products_under_warranty</name>
             </choices>
             <choices>
+                <choiceText>Je voulais juste tester la solution</choiceText>
                 <name>I_just_wanted_to_test_the_solution</name>
             </choices>
             <choices>
+                <choiceText>Je suis déjà un expert</choiceText>
                 <name>I_m_an_expert_already</name>
             </choices>
             <choices>
+                <choiceText>Je vends sur d&apos;autres plateformes</choiceText>
                 <name>I_sell_on_other_platforms</name>
             </choices>
             <choices>
+                <choiceText>Je vends d&apos;autres produits que les smartphones</choiceText>
                 <name>I_sell_other_products_than_smartphones</name>
             </choices>
             <choices>
+                <choiceText>J&apos;utilise un intégrateur</choiceText>
                 <name>I_use_an_integrator_and_Backship_is_not_integrable</name>
             </choices>
             <choices>
+                <choiceText>Assurance</choiceText>
                 <name>Insurance</name>
             </choices>
             <choices>
+                <choiceText>Intégration et Intégrateurs</choiceText>
                 <name>Integrations</name>
             </choices>
             <choices>
+                <choiceText>Problème avec une étiquette d&apos;envoi</choiceText>
                 <name>Issue_with_a_label</name>
             </choices>
             <choices>
+                <choiceText>Problème avec un enlèvement</choiceText>
                 <name>Issue_with_a_pick_up</name>
             </choices>
             <choices>
+                <choiceText>Fonctionnalité limitée</choiceText>
                 <name>Limited_functionality</name>
             </choices>
             <choices>
+                <choiceText>Annonces</choiceText>
                 <name>Listings</name>
             </choices>
             <choices>
+                <choiceText>Oui</choiceText>
                 <name>Multiple_Order_Id</name>
             </choices>
             <choices>
+                <choiceText>Ma logistique est externalisée</choiceText>
                 <name>My_logistic_is_outsourced</name>
             </choices>
             <choices>
+                <choiceText>Non</choiceText>
                 <name>No</name>
             </choices>
             <choices>
+                <choiceText>Non</choiceText>
                 <name>One_Order_Id</name>
             </choices>
             <choices>
+                <choiceText>Colis indiqué comme livré, mais non reçu</choiceText>
                 <name>Parcel_appears_delivered_but_not_received</name>
             </choices>
             <choices>
+                <choiceText>Colis non récupéré par le transporteur</choiceText>
                 <name>Parcel_not_picked_up</name>
             </choices>
             <choices>
+                <choiceText>Passer une commande BackPack</choiceText>
                 <name>Place_a_BackPack_order</name>
             </choices>
             <choices>
+                <choiceText>Passer une commande BackParts</choiceText>
                 <name>Place_a_BackParts_order</name>
             </choices>
             <choices>
+                <choiceText>Passer une commande</choiceText>
                 <name>Place_an_order</name>
             </choices>
             <choices>
+                <choiceText>Prix</choiceText>
                 <name>Price</name>
             </choices>
             <choices>
+                <choiceText>Produit reçu bloqué par un compte / mot de passe</choiceText>
                 <name>Product_received_account_locked</name>
             </choices>
             <choices>
+                <choiceText>Produit reçu endommagé</choiceText>
                 <name>Product_received_damaged</name>
             </choices>
             <choices>
+                <choiceText>Refacturation</choiceText>
                 <name>Rebilling</name>
             </choices>
             <choices>
+                <choiceText>Délais remboursements/enquêtes transporteurs</choiceText>
                 <name>Refunds_carrier_investigation_are_too_long</name>
             </choices>
             <choices>
+                <choiceText>Déclarer une suspicion de fraude client</choiceText>
                 <name>Report_a_suspicious_customer_behavior</name>
             </choices>
             <choices>
+                <choiceText>Déclarer un problème technique</choiceText>
                 <name>Report_a_technical_issue</name>
             </choices>
             <choices>
+                <choiceText>Déclarer un problème technique sur le Back Office</choiceText>
                 <name>Report_a_technical_issue_on_the_Back_Office</name>
             </choices>
             <choices>
+                <choiceText>Déclarer des produits dupliqués</choiceText>
                 <name>Report_duplicated_products</name>
             </choices>
             <choices>
+                <choiceText>Déclarer un &quot;prix neuf&quot; incorrect</choiceText>
                 <name>Report_incorrect_Price_new</name>
             </choices>
             <choices>
+                <choiceText>Déclarer une information ou image incorrecte</choiceText>
                 <name>Report_incorrect_info_picture</name>
             </choices>
             <choices>
+                <choiceText>Déclarer un rematch de produit incorrect</choiceText>
                 <name>Report_wrong_rematch</name>
             </choices>
             <choices>
+                <choiceText>Demander le numéro d&apos;éco contribution de Back Market</choiceText>
                 <name>Request_Back_Market_s_eco_contribution_number</name>
             </choices>
             <choices>
+                <choiceText>Demander plus d&apos;informations concernant le règlement P2B</choiceText>
                 <name>Request_info_on_P2B_regulation</name>
             </choices>
             <choices>
+                <choiceText>Demander de l&apos;aide concernant un service</choiceText>
                 <name>Request_support_related_to_a_service</name>
             </choices>
             <choices>
+                <choiceText>Demander de l&apos;aide avec une demande client</choiceText>
                 <name>Request_support_with_a_customer_claim</name>
             </choices>
             <choices>
+                <choiceText>Demander de l&apos;aide avec une livraison (hors BackShip)</choiceText>
                 <name>Request_support_with_a_non_Backship_delivery</name>
             </choices>
             <choices>
+                <choiceText>Demander de l&apos;aide avec les intégrateurs</choiceText>
                 <name>Request_support_with_integrations</name>
             </choices>
             <choices>
+                <choiceText>Demander de l&apos;aide avec la logistique</choiceText>
                 <name>Request_support_with_logistics</name>
             </choices>
             <choices>
+                <choiceText>Demander de l&apos;aide pour la création de produit</choiceText>
                 <name>Request_support_with_product_creation</name>
             </choices>
             <choices>
+                <choiceText>Demander de l&apos;aide pour la validation de produit</choiceText>
                 <name>Request_support_with_product_validation</name>
             </choices>
             <choices>
+                <choiceText>Demander le remboursement des frais de retour</choiceText>
                 <name>Request_the_refund_of_return_costs</name>
             </choices>
             <choices>
+                <choiceText>Demander la mise en ligne d&apos;un produit</choiceText>
                 <name>Request_to_put_a_product_back_online</name>
             </choices>
             <choices>
+                <choiceText>Commande - Vente</choiceText>
                 <name>Sales_order</name>
             </choices>
             <choices>
+                <choiceText>Frais de service</choiceText>
                 <name>Service_Fees</name>
             </choices>
             <choices>
+                <choiceText>Le service est trop cher</choiceText>
                 <name>Service_is_too_expensive</name>
             </choices>
             <choices>
+                <choiceText>Mise en place d&apos;un enlèvement transporteur récurrent</choiceText>
                 <name>Set_up_a_regular_pick_up</name>
             </choices>
             <choices>
+                <choiceText>Souscrire</choiceText>
                 <name>Subscribe</name>
             </choices>
             <choices>
+                <choiceText>Les problèmes techniques rencontrés sont directement liés à un service fourni par Back Market</choiceText>
                 <name>The_technological_issues_experienced_relate_directly_to_a_service_provided_by_Ba</name>
             </choices>
             <choices>
@@ -10793,25 +10852,32 @@ L’équipe Back Market</label>
                 <name>Unhappy_with_the_repair_rebounds_a_repair_that_leads_to_a_second_repair_need</name>
             </choices>
             <choices>
+                <choiceText>Je ne suis pas satisfait de l&apos;assistance du service</choiceText>
                 <name>Unhappy_with_the_support</name>
             </choices>
             <choices>
+                <choiceText>Se désabonner</choiceText>
                 <name>Unsubscribe</name>
             </choices>
             <choices>
+                <choiceText>Mise à jour d&apos;informations bancaires</choiceText>
                 <name>Update_banking_details</name>
             </choices>
             <choices>
+                <choiceText>Les mesures prises par Back Market dans le cadre de la fourniture des services sont impactantes</choiceText>
                 <name>What_measures_does_Back_Market_take_towards_the_provision_of_the_services_which</name>
             </choices>
             <choices>
+                <choiceText>Réception du mauvais produit</choiceText>
                 <name>Wrong_product_received</name>
             </choices>
             <choices>
+                <choiceText>Oui</choiceText>
                 <name>Yes</name>
             </choices>
             <screens>
                 <fields>
+                    <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 20px; color: rgb(17, 17, 17); background-color: rgb(255, 255, 255);&quot;&gt;Envoyer une demande&lt;/strong&gt;&lt;/p&gt;</fieldText>
                     <name>Copy_1_of_End_Screen_BackRepair_Unsubscribe</name>
                 </fields>
                 <fields>
@@ -10860,6 +10926,7 @@ L’équipe Back Market</label>
                     <name>Copy_1_of_Upload_File_BackParts_Order</name>
                 </fields>
                 <name>Copy_1_of_Submit_a_request_end_screen</name>
+                <nextOrFinishButtonLabel>Voir la demande</nextOrFinishButtonLabel>
             </screens>
             <screens>
                 <fields>
@@ -10869,6 +10936,7 @@ L’équipe Back Market</label>
                     <name>Copy_1_of_Fill_Form_Header</name>
                 </fields>
                 <name>Copy_1_of_Submit_a_request_standard_end_screen</name>
+                <nextOrFinishButtonLabel>Voir la demande</nextOrFinishButtonLabel>
             </screens>
             <screens>
                 <fields>
@@ -11042,6 +11110,7 @@ L’équipe Back Market</label>
                     <name>Upload_File_BackParts_Order</name>
                 </fields>
                 <name>Submit_a_request_end_screen</name>
+                <nextOrFinishButtonLabel>Voir la demande</nextOrFinishButtonLabel>
             </screens>
             <screens>
                 <fields>
@@ -11075,6 +11144,7 @@ L’équipe Back Market</label>
                     <name>Fill_Form_Header</name>
                 </fields>
                 <name>Submit_a_request_standard_end_screen</name>
+                <nextOrFinishButtonLabel>Voir la demande</nextOrFinishButtonLabel>
             </screens>
             <screens>
                 <fields>
