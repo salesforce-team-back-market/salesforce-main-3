@@ -13,8 +13,8 @@ if(ISPICKVAL(Issue_KPI__c,&quot;Cancellation Rate&quot;),5,
 if(ISPICKVAL(Issue_KPI__c,&quot;Esthetic Rate&quot;),5,
 if(ISPICKVAL(Issue_KPI__c,&quot;Wrong Product Rate&quot;),4,
 
-if(ISPICKVAL(Issue_KPI__c,&quot;Perfect Order Rate&quot;),85,
-if(OR(ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate Self-care&quot;), ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate&quot;)),80,
+if(ISPICKVAL(Issue_KPI__c,&quot;Perfect Order Rate&quot;),0.85,
+if(OR(ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate Self-care&quot;), ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate&quot;)),0.8,
 
 if(ISPICKVAL(Issue_KPI__c,&quot;Buyback - Pending Order rate&quot;),0.35,
 if(ISPICKVAL(Issue_KPI__c,&quot;Buyback - On-hold rate&quot;),0.35,
