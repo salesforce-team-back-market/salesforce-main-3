@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>NewBiz_Onboarder</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>Operations</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>SSM</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>Team_Leader</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>ETA__c</field>
+        <field>Stage__c</field>
+        <field>Comments__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>congcong.liu@backmarket.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>jonathan.levine@backmarket.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>julien.mercier@backmarket.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>svetlana.galkovskaia@backmarket.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Field Update</label>
+        <name>Field_Update</name>
+    </approvalStep>
+    <description>Field update on stage</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Alert - Quality Exception - Stage</label>
+    <processOrder>8</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

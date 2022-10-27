@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>NewBiz_Onboarder</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>Operations</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>SSM</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>Team_Leader</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>ETA__c</field>
+        <field>Stage__c</field>
+        <field>Comments__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>jonathan.levine@backmarket.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>narciane.muniz@backmarket.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Field Update</label>
+        <name>Field_Update</name>
+    </approvalStep>
+    <description>Field update on stage for US</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Alert__c.Is_Buyback__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Alert - Quality Exception - Stage</label>
+    <processOrder>9</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>
