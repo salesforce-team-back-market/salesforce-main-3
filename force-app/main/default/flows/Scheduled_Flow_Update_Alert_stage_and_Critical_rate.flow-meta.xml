@@ -1455,8 +1455,8 @@
             <label>Still some cases and Policy Violation</label>
         </rules>
         <rules>
-            <name>New_KPIs</name>
-            <conditionLogic>or</conditionLogic>
+            <name>On_Time_Delivery_Rate_Selfcare_no_check_cases</name>
+            <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -1464,24 +1464,10 @@
                     <stringValue>On Time Delivery Rate Self-care</stringValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>On Time Delivery Rate</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Perfect Order Rate</stringValue>
-                </rightValue>
-            </conditions>
             <connector>
                 <targetReference>Copy_1_of_Copy_4_of_Send_log</targetReference>
             </connector>
-            <label>New KPIs</label>
+            <label>On Time Delivery Rate Selfcare no check cases</label>
         </rules>
     </decisions>
     <decisions>
