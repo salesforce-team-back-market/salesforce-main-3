@@ -736,10 +736,834 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
-        <name>Copy_1_of_Send_saved_email_EN</name>
+        <name>Copy_10_of_Copy_2_of_Send_log</name>
+        <label>Copy 10 of Copy 2 of Send log</label>
+        <locationX>15962</locationX>
+        <locationY>3191</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to saved - PP - updating sales limitation merchant start</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_11_of_Copy_2_of_Send_log</name>
+        <label>Copy 11 of Copy 2 of Send log</label>
+        <locationX>15962</locationX>
+        <locationY>3431</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to saved - PP - updating sales limitation merchant success</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>SUCCESS</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_11_of_Copy_2_of_Send_log</name>
+        <label>Copy 1 of Copy 11 of Copy 2 of Send log</label>
+        <locationX>16754</locationX>
+        <locationY>3431</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>ERROR</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_2_of_Send_log</name>
+        <label>Copy 1 of Copy 1 of Copy 3 of Copy 2 of Send log</label>
+        <locationX>11738</locationX>
+        <locationY>1871</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to LC - Update limitation start</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>SUCCESS</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</name>
+        <label>Copy 1 of Copy 2 of Copy 11 of Copy 2 of Send log</label>
+        <locationX>10946</locationX>
+        <locationY>1415</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Buyback MP - Stage changed to failed - Create exit success</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>SUCCESS</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_2_of_Send_log</name>
+        <label>Copy 1 of Copy 2 of Send log</label>
+        <locationX>10682</locationX>
+        <locationY>1175</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Exit_Sales</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>EU MP - Stage changed to failed</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_3_of_Copy_2_of_Send_log</name>
+        <label>Copy 1 of Copy 3 of Copy 2 of Send log</label>
+        <locationX>11738</locationX>
+        <locationY>1631</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_limitation_to_apply_and_ETA_fot_test</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to LC - Update limitation start</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Send_log</name>
+        <label>Copy 1 of Send log</label>
+        <locationX>13274</locationX>
+        <locationY>935</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_stage</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alert stage changed</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_2_of_Copy_11_of_Copy_2_of_Send_log</name>
+        <label>Copy 2 of Copy 11 of Copy 2 of Send log</label>
+        <locationX>10154</locationX>
+        <locationY>1415</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>US MP - Stage changed to failed - Create exit success</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>SUCCESS</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_2_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</name>
+        <label>Copy 2 of Copy 2 of Copy 11 of Copy 2 of Send log</label>
+        <locationX>10418</locationX>
+        <locationY>1415</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>ERROR</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_2_of_Copy_2_of_Send_log</name>
+        <label>Copy 2 of Copy 2 of Send log</label>
+        <locationX>10946</locationX>
+        <locationY>1175</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Create_Exit_Buyback</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Buyback MP - Stage changed to failed - Create exit start</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_2_of_Send_log</name>
+        <label>Copy 2 of Send log</label>
+        <locationX>10154</locationX>
+        <locationY>1175</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Create_Exit_Sales</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>US MP - Stage changed to failed - Create exit start</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_3_of_Copy_2_of_Send_log</name>
+        <label>Copy 3 of Copy 2 of Send log</label>
+        <locationX>11738</locationX>
+        <locationY>1175</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_limitation_to_apply</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to LC</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_4_of_Copy_2_of_Send_log</name>
+        <label>Copy 4 of Copy 2 of Send log</label>
+        <locationX>15014</locationX>
+        <locationY>1175</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_all_contact_quality_with_email</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to saved</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_5_of_Copy_2_of_Send_log</name>
+        <label>Copy 5 of Copy 2 of Send log</label>
+        <locationX>16130</locationX>
+        <locationY>1175</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to rejected</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_6_of_Copy_2_of_Send_log</name>
+        <label>Copy 6 of Copy 2 of Send log</label>
+        <locationX>15698</locationX>
+        <locationY>2135</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_zone</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to saved - sending emails start</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_7_of_Copy_2_of_Send_log</name>
+        <label>Copy 7 of Copy 2 of Send log</label>
+        <locationX>15962</locationX>
+        <locationY>2375</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Send_saved_email_EN_Policy_Violation</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to saved - Sending emails PP</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_8_of_Copy_2_of_Send_log</name>
+        <label>Copy 8 of Copy 2 of Send log</label>
+        <locationX>15698</locationX>
+        <locationY>2735</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_smallest_limitation_on_ongoing_sales_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to failed</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_9_of_Copy_2_of_Send_log</name>
+        <label>Copy 9 of Copy 2 of Send log</label>
+        <locationX>16226</locationX>
+        <locationY>2735</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_smallest_limitation_on_ongoing_buyback_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Stage changed to failed</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_log</name>
+        <label>Send log</label>
+        <locationX>14966</locationX>
+        <locationY>695</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Stage_is_changed_MP</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After Save Flow (Update Only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alert updated process start</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_saved_email_EN</name>
         <label>Send saved email - EN</label>
-        <locationX>16724</locationX>
-        <locationY>2627</locationY>
+        <locationX>17018</locationX>
+        <locationY>2375</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -781,10 +1605,10 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
-        <name>Copy_1_of_Send_saved_email_FR</name>
-        <label>Send saved email - FR</label>
-        <locationX>14876</locationX>
-        <locationY>2627</locationY>
+        <name>Send_saved_email_EN_CSAT_or_LRR</name>
+        <label>Send saved email - EN (CSAT or LRR)</label>
+        <locationX>15170</locationX>
+        <locationY>2375</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -826,10 +1650,10 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
-        <name>Send_failed_email_EN_Policy_Violation</name>
-        <label>Send failed email - EN (Policy Violation)</label>
-        <locationX>11210</locationX>
-        <locationY>2627</locationY>
+        <name>Send_saved_email_EN_Policy_Violation</name>
+        <label>Send saved email - EN (Policy Violation)</label>
+        <locationX>15962</locationX>
+        <locationY>2495</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -871,10 +1695,10 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
-        <name>Send_failed_email_FR_Policy_Violation</name>
-        <label>Send failed email - FR (Policy Violation)</label>
-        <locationX>10946</locationX>
-        <locationY>2627</locationY>
+        <name>Send_saved_email_FR</name>
+        <label>Send saved email - FR</label>
+        <locationX>14906</locationX>
+        <locationY>2375</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -961,10 +1785,10 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
-        <name>Send_saved_email_EN_Policy_Violation</name>
-        <label>Send saved email - EN (Policy Violation)</label>
-        <locationX>15932</locationX>
-        <locationY>2507</locationY>
+        <name>Send_saved_email_FR_CSAT_or_LRR</name>
+        <label>Send saved email - FR (CSAT or LRR)</label>
+        <locationX>14378</locationX>
+        <locationY>2375</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -1056,8 +1880,8 @@
     <actionCalls>
         <name>Send_saved_email_FR_Policy_Violation</name>
         <label>Send saved email - FR (Policy Violation)</label>
-        <locationX>14612</locationX>
-        <locationY>2507</locationY>
+        <locationX>14642</locationX>
+        <locationY>2375</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -1175,8 +1999,8 @@
     <assignments>
         <name>Add_bizdev_to_email_list</name>
         <label>Add bizdev to email list</label>
-        <locationX>15734</locationX>
-        <locationY>2267</locationY>
+        <locationX>15698</locationX>
+        <locationY>2015</locationY>
         <assignmentItems>
             <assignToReference>List_of_email_to_contact</assignToReference>
             <operator>Add</operator>
@@ -1192,7 +2016,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Decision_on_zone</targetReference>
+            <targetReference>Copy_6_of_Copy_2_of_Send_log</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -1417,8 +2241,8 @@
     <assignments>
         <name>Assign_buyback_alert_limitation</name>
         <label>Assign buyback alert limitation</label>
-        <locationX>12434</locationX>
-        <locationY>1667</locationY>
+        <locationX>11738</locationX>
+        <locationY>1415</locationY>
         <assignmentItems>
             <assignToReference>Alert_MonitoringPeriod_LC_limitation_to_apply</assignToReference>
             <operator>Assign</operator>
@@ -1427,7 +2251,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_limitation_to_apply_and_ETA_fot_test</targetReference>
+            <targetReference>Copy_1_of_Copy_3_of_Copy_2_of_Send_log</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -1456,8 +2280,8 @@
     <assignments>
         <name>Assign_contact_to_list</name>
         <label>Assign contact to list</label>
-        <locationX>15085</locationX>
-        <locationY>2027</locationY>
+        <locationX>14950</locationX>
+        <locationY>1775</locationY>
         <assignmentItems>
             <assignToReference>List_of_email_to_contact</assignToReference>
             <operator>Add</operator>
@@ -1479,7 +2303,7 @@
     <assignments>
         <name>Assign_Merchant_ID_to_variable</name>
         <label>Assign Merchant ID to variable</label>
-        <locationX>10504</locationX>
+        <locationX>10552</locationX>
         <locationY>455</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Id</assignToReference>
@@ -1519,8 +2343,8 @@
     <assignments>
         <name>Assign_quality_contact_to_list</name>
         <label>Assign quality contact to list</label>
-        <locationX>16258</locationX>
-        <locationY>1907</locationY>
+        <locationX>16090</locationX>
+        <locationY>1655</locationY>
         <assignmentItems>
             <assignToReference>List_of_email_to_contact</assignToReference>
             <operator>Add</operator>
@@ -1542,8 +2366,8 @@
     <assignments>
         <name>Assign_reset_Buyback_limitation</name>
         <label>Assign reset Buyback limitation</label>
-        <locationX>15932</locationX>
-        <locationY>2747</locationY>
+        <locationX>15962</locationX>
+        <locationY>2735</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Buyback_limitation__c</assignToReference>
             <operator>Assign</operator>
@@ -1559,14 +2383,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
+            <targetReference>Copy_10_of_Copy_2_of_Send_log</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_reset_Sales_limitation</name>
         <label>Assign reset Sales limitation</label>
-        <locationX>15404</locationX>
-        <locationY>2747</locationY>
+        <locationX>15434</locationX>
+        <locationY>2735</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.LimitationBeforeAlert__c</assignToReference>
             <operator>Assign</operator>
@@ -1596,7 +2420,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
+            <targetReference>Copy_10_of_Copy_2_of_Send_log</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -1676,8 +2500,8 @@
     <assignments>
         <name>Assign_sales_alert_limitation</name>
         <label>Assign sales alert limitation</label>
-        <locationX>12170</locationX>
-        <locationY>1667</locationY>
+        <locationX>11474</locationX>
+        <locationY>1415</locationY>
         <assignmentItems>
             <assignToReference>Alert_MonitoringPeriod_LC_limitation_to_apply</assignToReference>
             <operator>Assign</operator>
@@ -1686,7 +2510,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_limitation_to_apply_and_ETA_fot_test</targetReference>
+            <targetReference>Copy_1_of_Copy_3_of_Copy_2_of_Send_log</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -1752,8 +2576,8 @@
     <assignments>
         <name>Assign_smallest_Buyback_alert_limitation</name>
         <label>Assign smallest Buyback alert limitation</label>
-        <locationX>16196</locationX>
-        <locationY>2867</locationY>
+        <locationX>16226</locationX>
+        <locationY>2975</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Buyback_limitation__c</assignToReference>
             <operator>Assign</operator>
@@ -1762,14 +2586,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
+            <targetReference>Copy_10_of_Copy_2_of_Send_log</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_smallest_Sales_alert_limitation</name>
         <label>Assign smallest Sales alert limitation</label>
-        <locationX>15668</locationX>
-        <locationY>2867</locationY>
+        <locationX>15698</locationX>
+        <locationY>2975</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Reason_for_last_Sales_limitation__c</assignToReference>
             <operator>Assign</operator>
@@ -1785,7 +2609,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
+            <targetReference>Copy_10_of_Copy_2_of_Send_log</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -2089,71 +2913,6 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Decision_KPI_is_CSAT_or_LRR</name>
-        <label>Decision - KPI is CSAT or LRR</label>
-        <locationX>13808</locationX>
-        <locationY>695</locationY>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Stage_is_changed</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Stage__c</leftValueReference>
-                <operator>IsChanged</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Decision_on_stage</targetReference>
-            </connector>
-            <label>Stage is changed</label>
-        </rules>
-        <rules>
-            <name>CSAT_or_LRR</name>
-            <conditionLogic>(1 OR 2) AND (3 OR 4) AND 5</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>CSAT</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Late Response Rate</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Stage__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Monitoring Period</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Stage__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Last chance</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.ETA__c</leftValueReference>
-                <operator>GreaterThan</operator>
-                <rightValue>
-                    <elementReference>$Flow.CurrentDate</elementReference>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Get_TC_without_BC_Sales</targetReference>
-            </connector>
-            <label>CSAT or LRR</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>Decision_List_is_empty</name>
         <label>Decision - List is empty</label>
         <locationX>9153</locationX>
@@ -2243,8 +3002,8 @@
     <decisions>
         <name>Decision_on_limitation_to_apply</name>
         <label>Decision on limitation to apply</label>
-        <locationX>12434</locationX>
-        <locationY>1547</locationY>
+        <locationX>11738</locationX>
+        <locationY>1295</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Sales_LC</name>
@@ -2327,8 +3086,8 @@
     <decisions>
         <name>Decision_on_record_type_after_email_is_sent</name>
         <label>Decision on record type after email is sent</label>
-        <locationX>15932</locationX>
-        <locationY>2627</locationY>
+        <locationX>15962</locationX>
+        <locationY>2615</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>MP_sales_no_ongoing_alerts</name>
@@ -2384,7 +3143,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_smallest_limitation_on_ongoing_sales_alert</targetReference>
+                <targetReference>Copy_8_of_Copy_2_of_Send_log</targetReference>
             </connector>
             <label>MP sales - ongoing alerts</label>
         </rules>
@@ -2442,7 +3201,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_smallest_limitation_on_ongoing_buyback_alert</targetReference>
+                <targetReference>Copy_9_of_Copy_2_of_Send_log</targetReference>
             </connector>
             <label>MP buyback - ongoing alerts</label>
         </rules>
@@ -2501,7 +3260,7 @@
     <decisions>
         <name>Decision_on_RecordType</name>
         <label>Decision on RecordType</label>
-        <locationX>10504</locationX>
+        <locationX>10552</locationX>
         <locationY>575</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -2566,7 +3325,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_KPI_is_CSAT_or_LRR</targetReference>
+                <targetReference>Send_log</targetReference>
             </connector>
             <label>Monitoring period</label>
         </rules>
@@ -2626,8 +3385,8 @@
     <decisions>
         <name>Decision_on_stage</name>
         <label>Decision on stage</label>
-        <locationX>13808</locationX>
-        <locationY>1427</locationY>
+        <locationX>13274</locationX>
+        <locationY>1055</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>US_Stage_is_failed</name>
@@ -2661,7 +3420,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Create_Exit_Sales</targetReference>
+                <targetReference>Copy_2_of_Send_log</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>US - Stage is failed</label>
@@ -2698,8 +3457,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <isGoTo>true</isGoTo>
-                <targetReference>Create_Exit_Sales</targetReference>
+                <targetReference>Copy_1_of_Copy_2_of_Send_log</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>EU - stage is failed</label>
@@ -2729,7 +3487,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Create_Exit_Buyback</targetReference>
+                <targetReference>Copy_2_of_Copy_2_of_Send_log</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>Buyback - stage is failed</label>
@@ -2745,7 +3503,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_on_limitation_to_apply</targetReference>
+                <targetReference>Copy_3_of_Copy_2_of_Send_log</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>Stage is last chance</label>
@@ -2761,7 +3519,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_all_contact_quality_with_email</targetReference>
+                <targetReference>Copy_4_of_Copy_2_of_Send_log</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>Stage is saved</label>
@@ -2777,8 +3535,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <isGoTo>true</isGoTo>
-                <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
+                <targetReference>Copy_5_of_Copy_2_of_Send_log</targetReference>
             </connector>
             <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>Stage is Rejected</label>
@@ -2847,34 +3604,9 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Decision_on_TC_without_BC</name>
-        <label>Decision on TC without BC</label>
-        <locationX>13808</locationX>
-        <locationY>935</locationY>
-        <defaultConnector>
-            <targetReference>Decision_on_stage</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>ALL_TCs_got_BC</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Get_TC_without_BC_Sales</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Update_stage_alert_to_saved</targetReference>
-            </connector>
-            <label>ALL TCs got BC</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>Decision_on_user_bypass</name>
         <label>Decision on user bypass</label>
-        <locationX>8790</locationX>
+        <locationX>8838</locationX>
         <locationY>335</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -2951,8 +3683,8 @@
     <decisions>
         <name>Decision_on_zone</name>
         <label>Decision on zone</label>
-        <locationX>15734</locationX>
-        <locationY>2387</locationY>
+        <locationX>15698</locationX>
+        <locationY>2255</locationY>
         <defaultConnector>
             <targetReference>Is_buyback</targetReference>
         </defaultConnector>
@@ -3019,7 +3751,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Send_saved_email_EN_Policy_Violation</targetReference>
+                <targetReference>Copy_7_of_Copy_2_of_Send_log</targetReference>
             </connector>
             <label>Other (Policy Violation)</label>
         </rules>
@@ -3203,8 +3935,8 @@
     <decisions>
         <name>If_no_quality_contact</name>
         <label>If no quality contact</label>
-        <locationX>15215</locationX>
-        <locationY>1667</locationY>
+        <locationX>15014</locationX>
+        <locationY>1415</locationY>
         <defaultConnector>
             <targetReference>Loop_on_quality_contact_with_email</targetReference>
         </defaultConnector>
@@ -3278,8 +4010,8 @@
     <decisions>
         <name>Is_limit_reached</name>
         <label>Is limit reached</label>
-        <locationX>15085</locationX>
-        <locationY>2147</locationY>
+        <locationX>14950</locationX>
+        <locationY>1895</locationY>
         <defaultConnector>
             <targetReference>Add_bizdev_to_email_list</targetReference>
         </defaultConnector>
@@ -3303,8 +4035,8 @@
     <decisions>
         <name>Is_limit_reached_0</name>
         <label>Is limit reached</label>
-        <locationX>16258</locationX>
-        <locationY>2027</locationY>
+        <locationX>16090</locationX>
+        <locationY>1775</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Add_bizdev_to_email_list</targetReference>
@@ -3846,7 +4578,7 @@
     <decisions>
         <name>Move_to_Saved</name>
         <label>Move to Saved</label>
-        <locationX>17002</locationX>
+        <locationX>17098</locationX>
         <locationY>695</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -4008,6 +4740,28 @@
                 <targetReference>Get_ongoing_Sales_alerts</targetReference>
             </connector>
             <label>Yes and no NMO</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Stage_is_changed_MP</name>
+        <label>Stage is changed</label>
+        <locationX>14966</locationX>
+        <locationY>815</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_is_changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Send_log</targetReference>
+            </connector>
+            <label>Stage is changed</label>
         </rules>
     </decisions>
     <decisions>
@@ -4195,7 +4949,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <formulas>
         <name>SalesLimitation_LC_Alert</name>
         <dataType>Number</dataType>
-        <expression>If({!SalesLimitation_LC_KPI}&gt;5,{!SalesLimitation_LC_KPI} , 5)</expression>
+        <expression>If({!SalesLimitation_LC_KPI}&gt;3,{!SalesLimitation_LC_KPI} , 3)</expression>
         <scale>0</scale>
     </formulas>
     <formulas>
@@ -4284,8 +5038,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <loops>
         <name>Loop_on_all_contact_with_email</name>
         <label>Loop on all contact with email</label>
-        <locationX>14348</locationX>
-        <locationY>1907</locationY>
+        <locationX>14114</locationX>
+        <locationY>1655</locationY>
         <collectionReference>Get_all_contact_with_email</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -4344,8 +5098,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <loops>
         <name>Loop_on_quality_contact_with_email</name>
         <label>Loop on quality contact with email</label>
-        <locationX>16082</locationX>
-        <locationY>1787</locationY>
+        <locationX>15914</locationX>
+        <locationY>1535</locationY>
         <collectionReference>Get_all_contact_quality_with_email</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -4393,8 +5147,15 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordCreates>
         <name>Create_Exit_Buyback</name>
         <label>Create Exit Buyback</label>
-        <locationX>11906</locationX>
-        <locationY>1547</locationY>
+        <locationX>10946</locationX>
+        <locationY>1295</locationY>
+        <connector>
+            <targetReference>Copy_1_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Copy_2_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
+        </faultConnector>
         <inputAssignments>
             <field>BizDev_for_Approval__c</field>
             <value>
@@ -4641,11 +5402,14 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordCreates>
         <name>Create_Exit_Sales</name>
         <label>Create Exit Sales</label>
-        <locationX>11054</locationX>
-        <locationY>1547</locationY>
+        <locationX>10154</locationX>
+        <locationY>1295</locationY>
         <connector>
-            <targetReference>Copy_1_of_Get_all_contact_quality_with_email</targetReference>
+            <targetReference>Copy_2_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
         </connector>
+        <faultConnector>
+            <targetReference>Copy_2_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
+        </faultConnector>
         <inputAssignments>
             <field>BizDev_for_Approval__c</field>
             <value>
@@ -4862,8 +5626,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_all_contact_quality_with_email</name>
         <label>Get all contact quality with email</label>
-        <locationX>15215</locationX>
-        <locationY>1547</locationY>
+        <locationX>15014</locationX>
+        <locationY>1295</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>If_no_quality_contact</targetReference>
@@ -4911,8 +5675,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_all_contact_with_email</name>
         <label>Get all contact with email</label>
-        <locationX>14348</locationX>
-        <locationY>1787</locationY>
+        <locationX>14114</locationX>
+        <locationY>1535</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_all_contact_with_email</targetReference>
@@ -5228,8 +5992,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_smallest_limitation_on_ongoing_buyback_alert</name>
         <label>Get smallest limitation on ongoing buyback alert</label>
-        <locationX>16196</locationX>
-        <locationY>2747</locationY>
+        <locationX>16226</locationX>
+        <locationY>2855</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Assign_smallest_Buyback_alert_limitation</targetReference>
@@ -5286,8 +6050,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_smallest_limitation_on_ongoing_sales_alert</name>
         <label>Get smallest limitation on ongoing sales alert</label>
-        <locationX>15668</locationX>
-        <locationY>2747</locationY>
+        <locationX>15698</locationX>
+        <locationY>2855</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Assign_smallest_Sales_alert_limitation</targetReference>
@@ -5413,41 +6177,6 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
-    <recordLookups>
-        <name>Get_TC_without_BC_Sales</name>
-        <label>Get TC without BC Sales</label>
-        <locationX>13808</locationX>
-        <locationY>815</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Decision_on_TC_without_BC</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Back_Care__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Merchant__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Record.Business_Name__c</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Online_Status__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Live</stringValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Targeted_Country__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
     <recordUpdates>
         <name>Update_Alert_limitation</name>
         <label>Update Alert limitation</label>
@@ -5517,8 +6246,15 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordUpdates>
         <name>Update_limitation_to_apply_and_ETA_fot_test</name>
         <label>Update limitation to apply and ETA fot test</label>
-        <locationX>12434</locationX>
-        <locationY>1883</locationY>
+        <locationX>11738</locationX>
+        <locationY>1751</locationY>
+        <connector>
+            <targetReference>Copy_1_of_Copy_1_of_Copy_3_of_Copy_2_of_Send_log</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Copy_2_of_Copy_2_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
+        </faultConnector>
         <inputAssignments>
             <field>AlertLimitation__c</field>
             <value>
@@ -5536,8 +6272,14 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordUpdates>
         <name>Update_merchant_limitations_sales_alert</name>
         <label>Update merchant limitations - sales alert</label>
-        <locationX>15932</locationX>
-        <locationY>3083</locationY>
+        <locationX>15962</locationX>
+        <locationY>3311</locationY>
+        <connector>
+            <targetReference>Copy_11_of_Copy_2_of_Send_log</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Copy_1_of_Copy_11_of_Copy_2_of_Send_log</targetReference>
+        </faultConnector>
         <inputReference>Merchant_to_update</inputReference>
     </recordUpdates>
     <recordUpdates>
@@ -5580,7 +6322,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordUpdates>
         <name>Update_ongoing_Alert_to_Save</name>
         <label>Update ongoing Alert to Save</label>
-        <locationX>17002</locationX>
+        <locationX>17098</locationX>
         <locationY>1031</locationY>
         <inputAssignments>
             <field>Has_been_saved_on__c</field>
@@ -5596,31 +6338,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
         </inputAssignments>
         <inputReference>$Record</inputReference>
     </recordUpdates>
-    <recordUpdates>
-        <name>Update_stage_alert_to_saved</name>
-        <label>Update stage alert to saved</label>
-        <locationX>13676</locationX>
-        <locationY>1055</locationY>
-        <connector>
-            <isGoTo>true</isGoTo>
-            <targetReference>Get_all_contact_quality_with_email</targetReference>
-        </connector>
-        <inputAssignments>
-            <field>Has_been_saved_on__c</field>
-            <value>
-                <elementReference>$Flow.CurrentDate</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Stage__c</field>
-            <value>
-                <stringValue>Saved</stringValue>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
     <start>
-        <locationX>8664</locationX>
+        <locationX>8712</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Decision_on_user_bypass</targetReference>
@@ -5629,6 +6348,13 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
         <filters>
             <field>Issue_KPI__c</field>
             <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Is_archived__c</field>
+            <operator>EqualTo</operator>
             <value>
                 <booleanValue>false</booleanValue>
             </value>

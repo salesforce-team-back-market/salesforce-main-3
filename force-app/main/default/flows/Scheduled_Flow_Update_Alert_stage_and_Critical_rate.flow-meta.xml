@@ -1171,6 +1171,77 @@
             </connector>
             <label>No - But MP Critical for On Time Delivery Rate Selfcare</label>
         </rules>
+        <rules>
+            <name>No_But_MP_Critical_for_On_Time_Delivery_Rate_Selfcare</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Monitoring Period</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.ETA__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Flow.CurrentDate</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>DateForCritical</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.CreatedDate</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Cases_Critical_threshold__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Actual_Number_of_cases__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>Current_Alert.Entry_number_of_cases__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Actual_Number_of_cases__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Current_Alert.Cases_Critical_threshold__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Current_Alert.Rate_Critical_threshold__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_10_of_Send_log</targetReference>
+            </connector>
+            <label>No - But MP Critical for On Time Delivery Rate Selfcare</label>
+        </rules>
     </decisions>
     <decisions>
         <name>Decision_Is_notification_needed</name>
@@ -1455,8 +1526,8 @@
             <label>Still some cases and Policy Violation</label>
         </rules>
         <rules>
-            <name>On_Time_Delivery_Rate_Selfcare_no_check_cases</name>
-            <conditionLogic>and</conditionLogic>
+            <name>New_KPIs</name>
+            <conditionLogic>or</conditionLogic>
             <conditions>
                 <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -1464,10 +1535,24 @@
                     <stringValue>On Time Delivery Rate Self-care</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Time Delivery Rate</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Perfect Order Rate</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Copy_1_of_Copy_4_of_Send_log</targetReference>
             </connector>
-            <label>On Time Delivery Rate Selfcare no check cases</label>
+            <label>New KPIs</label>
         </rules>
     </decisions>
     <decisions>
