@@ -88,7 +88,7 @@
         <name>Send_log_0_0</name>
         <label>Send log</label>
         <locationX>2624</locationX>
-        <locationY>5255</locationY>
+        <locationY>5111</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -130,7 +130,7 @@
         <name>Send_log_0_0_0</name>
         <label>Send log</label>
         <locationX>710</locationX>
-        <locationY>5855</locationY>
+        <locationY>5711</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -172,7 +172,7 @@
         <name>Send_log_0_0_0_0</name>
         <label>Send log</label>
         <locationX>974</locationX>
-        <locationY>5855</locationY>
+        <locationY>5711</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -214,7 +214,7 @@
         <name>Send_log_0_0_0_0_0</name>
         <label>Send log</label>
         <locationX>4934</locationX>
-        <locationY>5735</locationY>
+        <locationY>5591</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -256,7 +256,7 @@
         <name>Send_log_0_0_0_0_0_0</name>
         <label>Send log</label>
         <locationX>4934</locationX>
-        <locationY>6335</locationY>
+        <locationY>6191</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -295,7 +295,7 @@
         <name>Send_log_0_0_0_0_0_0_0</name>
         <label>Send log</label>
         <locationX>5198</locationX>
-        <locationY>5735</locationY>
+        <locationY>5591</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -334,7 +334,7 @@
         <name>Send_log_0_0_0_0_0_0_0_0</name>
         <label>Send log</label>
         <locationX>5198</locationX>
-        <locationY>6335</locationY>
+        <locationY>6191</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -456,12 +456,12 @@
     <actionCalls>
         <name>Send_log_No_OTD_MP</name>
         <label>Send log - No OTD MP</label>
-        <locationX>4571</locationX>
+        <locationX>4934</locationX>
         <locationY>3623</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
-            <targetReference>Assign_On_Time_Delivery_Selfcare</targetReference>
+            <targetReference>If_merchant_is_selfcare</targetReference>
         </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
@@ -498,8 +498,8 @@
     <actionCalls>
         <name>Send_log_No_OTD_Selfcare_MP</name>
         <label>Send log - No OTD Selfcare MP</label>
-        <locationX>4571</locationX>
-        <locationY>4559</locationY>
+        <locationX>5000</locationX>
+        <locationY>4223</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -624,7 +624,7 @@
     <actionCalls>
         <name>Send_log_OTD</name>
         <label>Send log - OTD</label>
-        <locationX>3779</locationX>
+        <locationX>3416</locationX>
         <locationY>3623</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -666,7 +666,7 @@
     <actionCalls>
         <name>Send_log_OTD_MP_Create_1</name>
         <label>Send log - OTD MP Create_1</label>
-        <locationX>4307</locationX>
+        <locationX>3944</locationX>
         <locationY>3623</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -708,8 +708,8 @@
     <actionCalls>
         <name>Send_log_OTD_Selfcare</name>
         <label>Send log - OTD Selfcare</label>
-        <locationX>3779</locationX>
-        <locationY>4559</locationY>
+        <locationX>4208</locationX>
+        <locationY>4223</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -750,8 +750,8 @@
     <actionCalls>
         <name>Send_log_OTD_SelfcareMP_Create_1</name>
         <label>Send log - OTD Selfcare MP Create_1</label>
-        <locationX>4307</locationX>
-        <locationY>4559</locationY>
+        <locationX>4736</locationX>
+        <locationY>4223</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -1044,7 +1044,7 @@
     <actionCalls>
         <name>Send_log_Update_OTD_MP_or_LC</name>
         <label>Send log - Update OTD MP or LC</label>
-        <locationX>4043</locationX>
+        <locationX>3680</locationX>
         <locationY>3623</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -1086,8 +1086,8 @@
     <actionCalls>
         <name>Send_log_Update_OTD_Selfcare_MP_or_LC</name>
         <label>Send log - Update OTD Selfcare MP or LC</label>
-        <locationX>4043</locationX>
-        <locationY>4559</locationY>
+        <locationX>4472</locationX>
+        <locationY>4223</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -1226,7 +1226,7 @@
         <name>Assign_Buyback_Late_Processing_rate</name>
         <label>Assign Buyback - Late Processing rate</label>
         <locationX>3218</locationX>
-        <locationY>5495</locationY>
+        <locationY>5351</locationY>
         <assignmentItems>
             <assignToReference>Issue_KPI</assignToReference>
             <operator>Assign</operator>
@@ -1263,7 +1263,7 @@
         <name>Assign_Buyback_Late_Response_rate</name>
         <label>Assign Buyback - Late Response rate</label>
         <locationX>4274</locationX>
-        <locationY>5495</locationY>
+        <locationY>5351</locationY>
         <assignmentItems>
             <assignToReference>Issue_KPI</assignToReference>
             <operator>Assign</operator>
@@ -1300,7 +1300,7 @@
         <name>Assign_Cancellation_rate</name>
         <label>Assign Cancellation rate</label>
         <locationX>50</locationX>
-        <locationY>5495</locationY>
+        <locationY>5351</locationY>
         <assignmentItems>
             <assignToReference>Issue_KPI</assignToReference>
             <operator>Assign</operator>
@@ -1337,7 +1337,7 @@
         <name>Assign_Counter_offer_rate</name>
         <label>Assign Counter-offer rate</label>
         <locationX>1106</locationX>
-        <locationY>5495</locationY>
+        <locationY>5351</locationY>
         <assignmentItems>
             <assignToReference>Issue_KPI</assignToReference>
             <operator>Assign</operator>
@@ -1420,7 +1420,7 @@
         <name>Assign_current_alert_to_create_list_buyback</name>
         <label>Assign current alert to create list (buyback)</label>
         <locationX>974</locationX>
-        <locationY>6095</locationY>
+        <locationY>5951</locationY>
         <assignmentItems>
             <assignToReference>List_of_alert_to_create</assignToReference>
             <operator>Add</operator>
@@ -1435,7 +1435,7 @@
     <assignments>
         <name>Assign_current_alert_to_create_list_OTD</name>
         <label>Assign current alert to create list - OTD</label>
-        <locationX>4043</locationX>
+        <locationX>3680</locationX>
         <locationY>3863</locationY>
         <assignmentItems>
             <assignToReference>List_of_alert_to_create</assignToReference>
@@ -1451,7 +1451,7 @@
     <assignments>
         <name>Assign_current_alert_to_create_list_OTD_1</name>
         <label>Assign current alert to create list - OTD</label>
-        <locationX>4307</locationX>
+        <locationX>3944</locationX>
         <locationY>3863</locationY>
         <assignmentItems>
             <assignToReference>List_of_alert_to_create</assignToReference>
@@ -1467,8 +1467,8 @@
     <assignments>
         <name>Assign_current_alert_to_create_list_OTD_Selfcare</name>
         <label>Assign current alert to create list - OTD Selfcare</label>
-        <locationX>4043</locationX>
-        <locationY>4799</locationY>
+        <locationX>4472</locationX>
+        <locationY>4463</locationY>
         <assignmentItems>
             <assignToReference>List_of_alert_to_create</assignToReference>
             <operator>Add</operator>
@@ -1483,8 +1483,8 @@
     <assignments>
         <name>Assign_current_alert_to_create_list_OTD_Selfcare_1</name>
         <label>Assign current alert to create list - OTD Selfcare</label>
-        <locationX>4307</locationX>
-        <locationY>4799</locationY>
+        <locationX>4736</locationX>
+        <locationY>4463</locationY>
         <assignmentItems>
             <assignToReference>List_of_alert_to_create</assignToReference>
             <operator>Add</operator>
@@ -1564,7 +1564,7 @@
         <name>Assign_current_alert_to_update_list_buyback</name>
         <label>Assign current alert to update list (buyback)</label>
         <locationX>710</locationX>
-        <locationY>6095</locationY>
+        <locationY>5951</locationY>
         <assignmentItems>
             <assignToReference>List_of_alert_to_update</assignToReference>
             <operator>Add</operator>
@@ -1580,7 +1580,7 @@
     <assignments>
         <name>Assign_current_alert_to_update_list_OTD</name>
         <label>Assign current alert to update list - OTD</label>
-        <locationX>3779</locationX>
+        <locationX>3416</locationX>
         <locationY>3863</locationY>
         <assignmentItems>
             <assignToReference>List_of_alert_to_update</assignToReference>
@@ -1590,14 +1590,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Assign_On_Time_Delivery_Selfcare</targetReference>
+            <targetReference>Decision_Merchant_buyback_or_not</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_current_alert_to_update_list_OTD_Selfcare</name>
         <label>Assign current alert to update list - OTD Selfcare</label>
-        <locationX>3779</locationX>
-        <locationY>4799</locationY>
+        <locationX>4208</locationX>
+        <locationY>4463</locationY>
         <assignmentItems>
             <assignToReference>List_of_alert_to_update</assignToReference>
             <operator>Add</operator>
@@ -1677,7 +1677,7 @@
         <name>Assign_empty_info_to_current_alert_record_create_buyback</name>
         <label>Assign empty info to current alert record (create buyback)</label>
         <locationX>974</locationX>
-        <locationY>6215</locationY>
+        <locationY>6071</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert</assignToReference>
             <operator>Assign</operator>
@@ -1693,7 +1693,7 @@
     <assignments>
         <name>Assign_empty_info_to_current_alert_record_OTD</name>
         <label>Assign empty info to current alert record - OTD</label>
-        <locationX>4043</locationX>
+        <locationX>3680</locationX>
         <locationY>3983</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert</assignToReference>
@@ -1703,13 +1703,13 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Assign_On_Time_Delivery_Selfcare</targetReference>
+            <targetReference>Decision_Merchant_buyback_or_not</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_empty_info_to_current_alert_record_OTD_3</name>
         <label>Assign empty info to current alert record - OTD</label>
-        <locationX>4307</locationX>
+        <locationX>3944</locationX>
         <locationY>3983</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert</assignToReference>
@@ -1719,14 +1719,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Assign_On_Time_Delivery_Selfcare</targetReference>
+            <targetReference>Decision_Merchant_buyback_or_not</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_empty_info_to_current_alert_record_OTD_Selfcare</name>
         <label>Assign empty info to current alert record - OTD Selfcare</label>
-        <locationX>4043</locationX>
-        <locationY>4919</locationY>
+        <locationX>4472</locationX>
+        <locationY>4583</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert</assignToReference>
             <operator>Assign</operator>
@@ -1741,8 +1741,8 @@
     <assignments>
         <name>Assign_empty_info_to_current_alert_record_OTD_Selfcare_1</name>
         <label>Assign empty info to current alert record - OTD Selfcare_1</label>
-        <locationX>4307</locationX>
-        <locationY>4919</locationY>
+        <locationX>4736</locationX>
+        <locationY>4583</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert</assignToReference>
             <operator>Assign</operator>
@@ -1924,7 +1924,7 @@
         <name>Assign_info_to_current_alert_record_create_buyback</name>
         <label>Assign info to current alert record (create buyback)</label>
         <locationX>974</locationX>
-        <locationY>5975</locationY>
+        <locationY>5831</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.BizDev__c</assignToReference>
             <operator>Assign</operator>
@@ -2002,7 +2002,7 @@
     <assignments>
         <name>Assign_info_to_current_alert_record_OTD</name>
         <label>Assign info to current alert record - OTD</label>
-        <locationX>3779</locationX>
+        <locationX>3416</locationX>
         <locationY>3743</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Actual_Number_of_cases__c</assignToReference>
@@ -2032,7 +2032,7 @@
     <assignments>
         <name>Assign_info_to_current_alert_record_OTD_1</name>
         <label>Assign info to current alert record - OTD</label>
-        <locationX>4043</locationX>
+        <locationX>3680</locationX>
         <locationY>3743</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Actual_Number_of_cases__c</assignToReference>
@@ -2104,7 +2104,7 @@
     <assignments>
         <name>Assign_info_to_current_alert_record_OTD_2</name>
         <label>Assign info to current alert record - OTD</label>
-        <locationX>4307</locationX>
+        <locationX>3944</locationX>
         <locationY>3743</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Actual_Number_of_cases__c</assignToReference>
@@ -2176,8 +2176,8 @@
     <assignments>
         <name>Assign_info_to_current_alert_record_OTD_Selfcare</name>
         <label>Assign info to current alert record - OTD Selfcare</label>
-        <locationX>3779</locationX>
-        <locationY>4679</locationY>
+        <locationX>4208</locationX>
+        <locationY>4343</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Actual_Number_of_cases__c</assignToReference>
             <operator>Assign</operator>
@@ -2206,8 +2206,8 @@
     <assignments>
         <name>Assign_info_to_current_alert_record_OTD_Selfcare_1</name>
         <label>Assign info to current alert record - OTD Selfcare_1</label>
-        <locationX>4043</locationX>
-        <locationY>4679</locationY>
+        <locationX>4472</locationX>
+        <locationY>4343</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Actual_Number_of_cases__c</assignToReference>
             <operator>Assign</operator>
@@ -2269,6 +2269,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>MP_Sales_Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Current_Alert.OTDR_Selfcare__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </assignmentItems>
         <connector>
@@ -2278,8 +2285,8 @@
     <assignments>
         <name>Assign_info_to_current_alert_record_OTD_Selfcare_2</name>
         <label>Assign info to current alert record - OTD Selfcare_2</label>
-        <locationX>4307</locationX>
-        <locationY>4679</locationY>
+        <locationX>4736</locationX>
+        <locationY>4343</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Actual_Number_of_cases__c</assignToReference>
             <operator>Assign</operator>
@@ -2341,6 +2348,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>MP_Sales_Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Current_Alert.OTDR_Selfcare__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </assignmentItems>
         <connector>
@@ -2618,7 +2632,7 @@
         <name>Assign_info_to_current_alert_record_update_buyback</name>
         <label>Assign info to current alert record (update buyback)</label>
         <locationX>710</locationX>
-        <locationY>5975</locationY>
+        <locationY>5831</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Actual_Number_of_cases__c</assignToReference>
             <operator>Assign</operator>
@@ -2664,7 +2678,7 @@
         <name>Assign_on_hold_rate</name>
         <label>Assign on-hold rate</label>
         <locationX>2162</locationX>
-        <locationY>5495</locationY>
+        <locationY>5351</locationY>
         <assignmentItems>
             <assignToReference>Issue_KPI</assignToReference>
             <operator>Assign</operator>
@@ -2730,13 +2744,13 @@
     <assignments>
         <name>Assign_On_Time_Delivery_Selfcare</name>
         <label>Assign On Time Delivery Selfcare</label>
-        <locationX>4175</locationX>
-        <locationY>4199</locationY>
+        <locationX>4604</locationX>
+        <locationY>3863</locationY>
         <assignmentItems>
             <assignToReference>Issue_KPI</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>On Time Delivery Rate Self-care</stringValue>
+                <stringValue>On Time Delivery Rate</stringValue>
             </value>
         </assignmentItems>
         <connector>
@@ -2979,8 +2993,8 @@
         <description>Care of period of rejection for tests</description>
         <name>Create_MP_Sales_alert_On_Time_Delivery_Selfcare</name>
         <label>Create MP Sales alert? On Time Delivery Selfcare</label>
-        <locationX>4175</locationX>
-        <locationY>4439</locationY>
+        <locationX>4604</locationX>
+        <locationY>4103</locationY>
         <defaultConnector>
             <targetReference>Send_log_No_OTD_Selfcare_MP</targetReference>
         </defaultConnector>
@@ -3397,7 +3411,7 @@
         <name>Decision_check_all_KPIs_buyback</name>
         <label>Decision check all KPIs buyback</label>
         <locationX>2624</locationX>
-        <locationY>5375</locationY>
+        <locationY>5231</locationY>
         <defaultConnector>
             <targetReference>Decision_list_of_alert_for_creation</targetReference>
         </defaultConnector>
@@ -3483,7 +3497,7 @@
         <name>Decision_Create_MP_alert_Buyback_Late_Processing_rate</name>
         <label>Decision Create MP alert? Buyback - Late Processing rate</label>
         <locationX>3218</locationX>
-        <locationY>5735</locationY>
+        <locationY>5591</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Decision_check_all_KPIs_buyback</targetReference>
@@ -3627,7 +3641,7 @@
         <name>Decision_Create_MP_alert_Buyback_Late_Response</name>
         <label>Decision Create MP alert? Buyback Late Response</label>
         <locationX>4274</locationX>
-        <locationY>5735</locationY>
+        <locationY>5591</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Decision_check_all_KPIs_buyback</targetReference>
@@ -3771,7 +3785,7 @@
         <name>Decision_Create_MP_alert_Cancellation_rate_funtional</name>
         <label>Decision Create MP alert? Cancellation rate (funtional)</label>
         <locationX>50</locationX>
-        <locationY>5735</locationY>
+        <locationY>5591</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Decision_check_all_KPIs_buyback</targetReference>
@@ -3915,7 +3929,7 @@
         <name>Decision_Create_MP_alert_wrong_product_0_0_0_0</name>
         <label>Decision Create MP alert? Counter-offer rate (functional)</label>
         <locationX>1106</locationX>
-        <locationY>5735</locationY>
+        <locationY>5591</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Decision_check_all_KPIs_buyback</targetReference>
@@ -4057,7 +4071,7 @@
         <name>Decision_Create_MP_alert_wrong_product_0_0_0_0_0_0_0</name>
         <label>Decision Create MP alert? Pending orders rate</label>
         <locationX>2162</locationX>
-        <locationY>5735</locationY>
+        <locationY>5591</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Decision_check_all_KPIs_buyback</targetReference>
@@ -4372,7 +4386,7 @@
         <name>Decision_list_of_alert_for_creation</name>
         <label>Decision list of alert for creation</label>
         <locationX>5198</locationX>
-        <locationY>5495</locationY>
+        <locationY>5351</locationY>
         <defaultConnector>
             <targetReference>Decision_list_of_alert_for_update</targetReference>
         </defaultConnector>
@@ -4397,7 +4411,7 @@
         <name>Decision_list_of_alert_for_update</name>
         <label>Decision list of alert for update</label>
         <locationX>5198</locationX>
-        <locationY>6095</locationY>
+        <locationY>5951</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Update_list_not_empty</name>
@@ -4419,7 +4433,7 @@
         <name>Decision_Merchant_buyback_or_not</name>
         <label>Decision Merchant buyback or not</label>
         <locationX>4175</locationX>
-        <locationY>5135</locationY>
+        <locationY>4991</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Decision_list_of_alert_for_creation</targetReference>
@@ -4860,6 +4874,31 @@
         </rules>
     </decisions>
     <decisions>
+        <name>If_merchant_is_selfcare</name>
+        <label>If merchant is selfcare</label>
+        <locationX>4934</locationX>
+        <locationY>3743</locationY>
+        <defaultConnector>
+            <targetReference>Decision_Merchant_buyback_or_not</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Merchant__r.Story__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>hand_free</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_On_Time_Delivery_Selfcare</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>NMO_Process_found</name>
         <label>NMO Process found</label>
         <locationX>6122</locationX>
@@ -4894,7 +4933,7 @@
     <formulas>
         <name>MP_OnTimeDeliveryEntry</name>
         <dataType>Number</dataType>
-        <expression>IF( {!$Record.POR_Cases__c}&gt;=15 &amp;&amp; {!$Record.OTDR__c}&lt; 91, 1, 0 )</expression>
+        <expression>IF( {!$Record.POR_Cases__c}&gt;=15 &amp;&amp; {!$Record.OTDR__c}&lt; 90, 1, 0 )</expression>
         <scale>2</scale>
     </formulas>
     <formulas>
@@ -5009,7 +5048,7 @@ IF({!$Record.Merchant__r.BizDev__c}=&quot;{!$Setup.UserID__c.PA__c}&quot;,&quot;
         <name>Create_list_to_create</name>
         <label>Create list to create</label>
         <locationX>4934</locationX>
-        <locationY>5615</locationY>
+        <locationY>5471</locationY>
         <connector>
             <targetReference>Send_log_0_0_0_0_0</targetReference>
         </connector>
@@ -5318,7 +5357,7 @@ IF({!$Record.Merchant__r.BizDev__c}=&quot;{!$Setup.UserID__c.PA__c}&quot;,&quot;
         <name>Get_MP_buyback_Cancellation_rate_funtional</name>
         <label>Get MP buyback Cancellation rate (funtional)</label>
         <locationX>50</locationX>
-        <locationY>5615</locationY>
+        <locationY>5471</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Decision_Create_MP_alert_Cancellation_rate_funtional</targetReference>
@@ -5360,7 +5399,7 @@ IF({!$Record.Merchant__r.BizDev__c}=&quot;{!$Setup.UserID__c.PA__c}&quot;,&quot;
         <name>Get_MP_buyback_Counter_offer_rate_functional</name>
         <label>Get MP buyback Counter-offer rate (functional)</label>
         <locationX>1106</locationX>
-        <locationY>5615</locationY>
+        <locationY>5471</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Decision_Create_MP_alert_wrong_product_0_0_0_0</targetReference>
@@ -5402,7 +5441,7 @@ IF({!$Record.Merchant__r.BizDev__c}=&quot;{!$Setup.UserID__c.PA__c}&quot;,&quot;
         <name>Get_MP_Buyback_Late_Processing_rate</name>
         <label>Get MP Buyback - Late Processing rate</label>
         <locationX>3218</locationX>
-        <locationY>5615</locationY>
+        <locationY>5471</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Decision_Create_MP_alert_Buyback_Late_Processing_rate</targetReference>
@@ -5444,7 +5483,7 @@ IF({!$Record.Merchant__r.BizDev__c}=&quot;{!$Setup.UserID__c.PA__c}&quot;,&quot;
         <name>Get_MP_buyback_late_response</name>
         <label>Get MP buyback late response</label>
         <locationX>4274</locationX>
-        <locationY>5615</locationY>
+        <locationY>5471</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Decision_Create_MP_alert_Buyback_Late_Response</targetReference>
@@ -5486,7 +5525,7 @@ IF({!$Record.Merchant__r.BizDev__c}=&quot;{!$Setup.UserID__c.PA__c}&quot;,&quot;
         <name>Get_MP_buyback_Pending_orders</name>
         <label>Get MP buyback Pending orders</label>
         <locationX>2162</locationX>
-        <locationY>5615</locationY>
+        <locationY>5471</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Decision_Create_MP_alert_wrong_product_0_0_0_0_0_0_0</targetReference>
@@ -5569,8 +5608,8 @@ IF({!$Record.Merchant__r.BizDev__c}=&quot;{!$Setup.UserID__c.PA__c}&quot;,&quot;
         <description>Need to add comparison between KPIs</description>
         <name>Get_MP_Sales_On_Time_Delivery_Selfcare</name>
         <label>Get MP Sales On Time Delivery Selfcare</label>
-        <locationX>4175</locationX>
-        <locationY>4319</locationY>
+        <locationX>4604</locationX>
+        <locationY>3983</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Create_MP_Sales_alert_On_Time_Delivery_Selfcare</targetReference>
@@ -5595,6 +5634,13 @@ IF({!$Record.Merchant__r.BizDev__c}=&quot;{!$Setup.UserID__c.PA__c}&quot;,&quot;
             <operator>EqualTo</operator>
             <value>
                 <elementReference>MP_Sales_Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>OTDR_Selfcare__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>Alert__c</object>
@@ -5751,7 +5797,7 @@ IF({!$Record.Merchant__r.BizDev__c}=&quot;{!$Setup.UserID__c.PA__c}&quot;,&quot;
         <name>Update_list_to_update</name>
         <label>Update list to update</label>
         <locationX>4934</locationX>
-        <locationY>6215</locationY>
+        <locationY>6071</locationY>
         <connector>
             <targetReference>Send_log_0_0_0_0_0_0</targetReference>
         </connector>
