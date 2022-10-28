@@ -1708,6 +1708,11 @@
             <field>Is_archived__c</field>
             <table>Account.Alerts__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OTDR_Selfcare__c</field>
+            <table>Account.Alerts__r</table>
+        </columns>
         <masterLabel>Alerts</masterLabel>
     </sections>
     <sections>

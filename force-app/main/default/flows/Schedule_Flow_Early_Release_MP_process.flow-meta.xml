@@ -682,10 +682,10 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <leftValueReference>Loop_on_on_going_alerts.OTDR_Selfcare__c</leftValueReference>
                 <operator>NotEqualTo</operator>
                 <rightValue>
-                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -704,10 +704,10 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>Loop_on_on_going_alerts.Issue_KPI__c</leftValueReference>
+                <leftValueReference>Loop_on_on_going_alerts.OTDR_Selfcare__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
