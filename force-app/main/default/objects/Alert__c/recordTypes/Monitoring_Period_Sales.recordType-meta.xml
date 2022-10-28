@@ -623,10 +623,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>On Time Delivery Rate Self-care</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Payment issues</fullName>
             <default>false</default>
         </values>

@@ -1801,13 +1801,6 @@
                     <stringValue>On Time Delivery Rate</stringValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>On Time Delivery Rate Self-care</stringValue>
-                </rightValue>
-            </conditions>
             <label>On Time Delivery Rate</label>
         </rules>
     </decisions>
