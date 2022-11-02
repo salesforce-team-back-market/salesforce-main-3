@@ -4933,15 +4933,15 @@
     <formulas>
         <name>MP_OnTimeDeliveryEntry</name>
         <dataType>Number</dataType>
-        <expression>IF( {!$Record.POR_Cases__c}&gt;=15 &amp;&amp; {!$Record.OTDR__c}&lt; 90, 1, 0 )</expression>
+        <expression>IF( {!$Record.POR_Cases__c}&gt;=15 &amp;&amp; {!$Record.OTDR__c}&lt; 90 &amp;&amp; {!$Record.OTDR__c} != 0, 1, 0 )</expression>
         <scale>2</scale>
     </formulas>
     <formulas>
         <name>MP_OTD_Selfcare</name>
         <dataType>Number</dataType>
         <expression>IF
-({!$Record.OTDR_Cases__c}&gt;=15&amp;&amp;{!$Record.OTDR__c}&lt;90,1,
-(IF({!$Record.OTDR_Cases__c}&lt;15&amp;&amp;{!$Record.OTDR_Last_100_Orders__c}&lt;90&amp;&amp;{!$Record.OTDR__c}&lt;90,1,0)))</expression>
+({!$Record.OTDR_Cases__c}&gt;=15&amp;&amp;{!$Record.OTDR__c}&lt;90&amp;&amp;{!$Record.OTDR__c}!=0,1,
+(IF({!$Record.OTDR_Cases__c}&lt;15&amp;&amp;{!$Record.OTDR_Last_100_Orders__c}&lt;90&amp;&amp;{!$Record.OTDR__c}&lt;90&amp;&amp;{!$Record.OTDR__c}!=0&amp;&amp;{!$Record.OTDR_Last_100_Orders__c}!=0,1,0)))</expression>
         <scale>0</scale>
     </formulas>
     <formulas>
@@ -4949,9 +4949,9 @@
         <dataType>Number</dataType>
         <expression>CASE({!$Record.Merchant__r.RecordType.DeveloperName},
 &apos;E_U&apos;,
-IF( {!$Record.POR_Cases__c}&gt;=20 &amp;&amp; {!$Record.POR__c}&lt;91, 1, 0 ),
+IF( {!$Record.POR_Cases__c}&gt;=20 &amp;&amp; {!$Record.POR__c}&lt;91 &amp;&amp; {!$Record.POR__c} != 0, 1, 0 ),
 &apos;U_S&apos;,
-IF( {!$Record.POR_Cases__c}&gt;=20 &amp;&amp;{!$Record.POR__c} &lt;90.5, 1, 0),
+IF( {!$Record.POR_Cases__c}&gt;=20 &amp;&amp;{!$Record.POR__c} &lt;90.5 &amp;&amp; {!$Record.POR__c} != 0, 1, 0),
 0
 )</expression>
         <scale>2</scale>
