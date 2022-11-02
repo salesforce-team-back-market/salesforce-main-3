@@ -1012,7 +1012,7 @@
             </conditions>
             <conditions>
                 <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
+                <operator>LessThanOrEqualTo</operator>
                 <rightValue>
                     <elementReference>Loop_on_alerts.Rate_Critical_threshold__c</elementReference>
                 </rightValue>
@@ -1161,7 +1161,7 @@
             </conditions>
             <conditions>
                 <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
+                <operator>LessThanOrEqualTo</operator>
                 <rightValue>
                     <elementReference>Current_Alert.Rate_Critical_threshold__c</elementReference>
                 </rightValue>
@@ -1368,7 +1368,7 @@
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
-                <operator>LessThan</operator>
+                <operator>GreaterThan</operator>
                 <rightValue>
                     <elementReference>Loop_on_alerts.Objective_to_reach__c</elementReference>
                 </rightValue>

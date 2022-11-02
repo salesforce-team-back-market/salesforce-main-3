@@ -2231,4 +2231,50 @@ The Back Market Team</value>
         <shortDescription>ssc_Faq_Views</shortDescription>
         <value>Views</value>
     </labels>
+    <labels>
+        <fullName>PopUp_Blacklisted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PopUp_Blacklisted</shortDescription>
+        <value>This merchant is Blacklisted.</value>
+    </labels>
+    <labels>
+        <fullName>PopUp_DMP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PopUp_DMP</shortDescription>
+        <value>This merchant is in DMP.</value>
+    </labels>
+    <labels>
+        <fullName>PopUp_ExitBuyback</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PopUp_ExitBuyback</shortDescription>
+        <value>This merchant has been exited on Buyback part.</value>
+    </labels>
+    <labels>
+        <fullName>PopUp_ExitSales</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PopUp_ExitSales</shortDescription>
+        <value>This merchant has been exited on Sales part.</value>
+    </labels>
+    <labels>
+        <fullName>PopUp_OngoingAlert</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PopUp_OngoingAlert</shortDescription>
+        <value>This merchant has ongoing Sales alerts.
+
+(MP/LC, hazardous chargers, Invoice compliance...)</value>
+    </labels>
+    <labels>
+        <fullName>PopUp_OngoingBuyBackAlert</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PopUp_OngoingBuyBackAlert</shortDescription>
+        <value>This merchant has ongoing Buyback alerts.
+
+(MP/LC)</value>
+    </labels>
 </CustomLabels>

@@ -676,7 +676,7 @@
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>Loop_on_on_going_alerts.Actual_Rate__c</leftValueReference>
-                <operator>LessThan</operator>
+                <operator>GreaterThan</operator>
                 <rightValue>
                     <elementReference>Loop_on_on_going_alerts.Objective_to_reach__c</elementReference>
                 </rightValue>
@@ -698,7 +698,7 @@
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>Loop_on_on_going_alerts.Actual_Number_of_cases__c</leftValueReference>
-                <operator>GreaterThan</operator>
+                <operator>LessThan</operator>
                 <rightValue>
                     <elementReference>Loop_on_on_going_alerts.Cases_Objective_to_reach__c</elementReference>
                 </rightValue>

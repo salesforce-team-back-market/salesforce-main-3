@@ -26,7 +26,9 @@ if((ISPICKVAL(Issue_KPI__c,&quot;Buyback - Charter breaches&quot;)),0,
 if((ISPICKVAL(Issue_KPI__c,&quot;Untracked Orders Rate&quot;)),10,
 if((ISPICKVAL(Issue_KPI__c,&quot;Payment issues&quot;)),0,
 if((ISPICKVAL(Issue_KPI__c,&quot;Policy violation&quot;)),0,
-0))))))))))))))))))))))))</formula>
+if((ISPICKVAL(Issue_KPI__c,&quot;Perfect Order Rate&quot;)),20,
+if((ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate&quot;)),15,
+0))))))))))))))))))))))))))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Cases - Objective to reach</label>
     <precision>18</precision>
