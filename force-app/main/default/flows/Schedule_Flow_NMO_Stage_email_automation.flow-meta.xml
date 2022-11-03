@@ -1,10 +1,343 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
+        <name>Merchant_EU_and_NMO</name>
+        <label>Merchant EU and NMO</label>
+        <locationX>50</locationX>
+        <locationY>396</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_all_contacts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>NMO-Emails</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue> Schedule Flow - NMO Stage email automation</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Merchant owner in EU Activation Team and Onboarding is not Type S and RecordType is NMO</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Merchant_not_EU_or_not_NMO</name>
+        <label>Merchant not EU or not NMO</label>
+        <locationX>2510</locationX>
+        <locationY>396</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>NMO-Emails</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue> Schedule Flow - NMO Stage email automation</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Merchant owner not in EU Activation Team and/or Onboarding is Type S and/or RecordType is not NMO</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>NMO_0_days_ago</name>
+        <label>NMO 0 days ago</label>
+        <locationX>4538</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_onboarding_language_0_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>NMO-Emails</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue> Schedule Flow - NMO Stage email automation</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Phase 1 or 2 or 3 and NMO started today</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>NMO_11_days_ago</name>
+        <label>NMO 11 days ago</label>
+        <locationX>2162</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_onboarding_language_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>NMO-Emails</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue> Schedule Flow - NMO Stage email automation</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Phase 1 or 2 or 3 and NMO started 11 days ago</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>NMO_14_days_ago</name>
+        <label>NMO 14 days ago</label>
+        <locationX>1370</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_onboarding_language_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>NMO-Emails</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue> Schedule Flow - NMO Stage email automation</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Phase 1 or 2 or 3 and NMO started 14 days ago</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>NMO_22_days_ago</name>
+        <label>NMO 22 days ago</label>
+        <locationX>578</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_onboarding_language_0_0_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>NMO-Emails</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue> Schedule Flow - NMO Stage email automation</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Phase 1 or 2 or 3 and NMO started 22 days ago</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>NMO_4_days_ago</name>
+        <label>NMO 4 days ago</label>
+        <locationX>3746</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_onboarding_language</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>NMO-Emails</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue> Schedule Flow - NMO Stage email automation</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Phase 1 or 2 or 3 and NMO started 4 days ago</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>NMO_7_days_ago</name>
+        <label>NMO 7 days ago</label>
+        <locationX>2954</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_onboarding_language_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>NMO-Emails</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue> Schedule Flow - NMO Stage email automation</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Phase 1 or 2 or 3 and NMO started 7 days ago</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
         <name>Send_saved_email_11_EN</name>
         <label>Send saved email 11 - EN</label>
         <locationX>2426</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -49,7 +382,7 @@
         <name>Send_saved_email_11_ES</name>
         <label>Send saved email 11 - ES</label>
         <locationX>2162</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -94,7 +427,7 @@
         <name>Send_saved_email_11_FR</name>
         <label>Send saved email 11 - FR</label>
         <locationX>1898</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -139,7 +472,7 @@
         <name>Send_saved_email_14_EN</name>
         <label>Send saved email 14 - EN</label>
         <locationX>1634</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -184,7 +517,7 @@
         <name>Send_saved_email_14_ES</name>
         <label>Send saved email 14 - ES</label>
         <locationX>1370</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -229,7 +562,7 @@
         <name>Send_saved_email_14_FR</name>
         <label>Send saved email 14 - FR</label>
         <locationX>1106</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -274,7 +607,7 @@
         <name>Send_saved_email_22_EN</name>
         <label>Send saved email 22 - EN</label>
         <locationX>842</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -319,7 +652,7 @@
         <name>Send_saved_email_22_ES</name>
         <label>Send saved email 22 - ES</label>
         <locationX>578</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -364,7 +697,7 @@
         <name>Send_saved_email_22_FR</name>
         <label>Send saved email 22 - FR</label>
         <locationX>314</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -409,7 +742,7 @@
         <name>Send_saved_email_4_EN</name>
         <label>Send saved email 4 - EN</label>
         <locationX>4010</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -454,7 +787,7 @@
         <name>Send_saved_email_4_ES</name>
         <label>Send saved email 4 - ES</label>
         <locationX>3746</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -499,7 +832,7 @@
         <name>Send_saved_email_4_FR</name>
         <label>Send saved email 4 - FR</label>
         <locationX>3482</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -544,7 +877,7 @@
         <name>Send_saved_email_7_EN</name>
         <label>Send saved email 7 - EN</label>
         <locationX>3218</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -589,7 +922,7 @@
         <name>Send_saved_email_7_ES</name>
         <label>Send saved email 7 - ES</label>
         <locationX>2954</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -634,7 +967,7 @@
         <name>Send_saved_email_7_FR</name>
         <label>Send saved email 7 - FR</label>
         <locationX>2690</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -679,7 +1012,7 @@
         <name>Send_saved_email_New_NMO_EN</name>
         <label>Send saved email - New NMO - EN</label>
         <locationX>4802</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -724,7 +1057,7 @@
         <name>Send_saved_email_New_NMO_ES</name>
         <label>Send saved email - New NMO - ES</label>
         <locationX>4538</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -769,7 +1102,7 @@
         <name>Send_saved_email_New_NMO_FR</name>
         <label>Send saved email - New NMO - FR</label>
         <locationX>4274</locationX>
-        <locationY>1116</locationY>
+        <locationY>1356</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -815,7 +1148,7 @@
         <name>Assign_contact_to_list</name>
         <label>Assign contact to list</label>
         <locationX>1480</locationX>
-        <locationY>636</locationY>
+        <locationY>756</locationY>
         <assignmentItems>
             <assignToReference>List_of_email_to_contact</assignToReference>
             <operator>Add</operator>
@@ -838,7 +1171,7 @@
         <name>Decision_on_onboarding_language</name>
         <label>Decision on onboarding language</label>
         <locationX>3746</locationX>
-        <locationY>996</locationY>
+        <locationY>1236</locationY>
         <defaultConnector>
             <targetReference>Send_saved_email_4_EN</targetReference>
         </defaultConnector>
@@ -878,7 +1211,7 @@
         <name>Decision_on_onboarding_language_0</name>
         <label>Decision on onboarding language</label>
         <locationX>2954</locationX>
-        <locationY>996</locationY>
+        <locationY>1236</locationY>
         <defaultConnector>
             <targetReference>Send_saved_email_7_EN</targetReference>
         </defaultConnector>
@@ -918,7 +1251,7 @@
         <name>Decision_on_onboarding_language_0_0</name>
         <label>Decision on onboarding language</label>
         <locationX>2162</locationX>
-        <locationY>996</locationY>
+        <locationY>1236</locationY>
         <defaultConnector>
             <targetReference>Send_saved_email_11_EN</targetReference>
         </defaultConnector>
@@ -958,7 +1291,7 @@
         <name>Decision_on_onboarding_language_0_0_0</name>
         <label>Decision on onboarding language</label>
         <locationX>1370</locationX>
-        <locationY>996</locationY>
+        <locationY>1236</locationY>
         <defaultConnector>
             <targetReference>Send_saved_email_14_EN</targetReference>
         </defaultConnector>
@@ -998,7 +1331,7 @@
         <name>Decision_on_onboarding_language_0_0_0_0</name>
         <label>Decision on onboarding language</label>
         <locationX>578</locationX>
-        <locationY>996</locationY>
+        <locationY>1236</locationY>
         <defaultConnector>
             <targetReference>Send_saved_email_22_EN</targetReference>
         </defaultConnector>
@@ -1038,7 +1371,7 @@
         <name>Decision_on_onboarding_language_0_0_0_0_0</name>
         <label>Decision on onboarding language</label>
         <locationX>4538</locationX>
-        <locationY>996</locationY>
+        <locationY>1236</locationY>
         <defaultConnector>
             <targetReference>Send_saved_email_New_NMO_EN</targetReference>
         </defaultConnector>
@@ -1078,7 +1411,7 @@
         <name>Decision_on_stage_and_dates</name>
         <label>Decision on stage and dates</label>
         <locationX>2822</locationX>
-        <locationY>876</locationY>
+        <locationY>996</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>NMO_and_has_begun_on_22_days_ago</name>
@@ -1112,7 +1445,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_on_onboarding_language_0_0_0_0</targetReference>
+                <targetReference>NMO_22_days_ago</targetReference>
             </connector>
             <label>NMO and has begun on 22 days ago</label>
         </rules>
@@ -1148,7 +1481,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_on_onboarding_language_0_0_0</targetReference>
+                <targetReference>NMO_14_days_ago</targetReference>
             </connector>
             <label>NMO and has begun on 14 days ago</label>
         </rules>
@@ -1184,7 +1517,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_on_onboarding_language_0_0</targetReference>
+                <targetReference>NMO_11_days_ago</targetReference>
             </connector>
             <label>NMO and has begun on 11 days ago</label>
         </rules>
@@ -1220,7 +1553,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_on_onboarding_language_0</targetReference>
+                <targetReference>NMO_7_days_ago</targetReference>
             </connector>
             <label>NMO and has begun on 7 days ago</label>
         </rules>
@@ -1256,7 +1589,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_on_onboarding_language</targetReference>
+                <targetReference>NMO_4_days_ago</targetReference>
             </connector>
             <label>NMO and has begun on 4 days ago</label>
         </rules>
@@ -1292,7 +1625,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_on_onboarding_language_0_0_0_0_0</targetReference>
+                <targetReference>NMO_0_days_ago</targetReference>
             </connector>
             <label>NMO and has begun on today</label>
         </rules>
@@ -1302,6 +1635,9 @@
         <label>Filter on merchant stage and bizdev team</label>
         <locationX>1280</locationX>
         <locationY>276</locationY>
+        <defaultConnector>
+            <targetReference>Merchant_not_EU_or_not_NMO</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>NMO_EU_and_Activation_EU_bizdev_team</name>
@@ -1328,7 +1664,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_all_contacts</targetReference>
+                <targetReference>Merchant_EU_and_NMO</targetReference>
             </connector>
             <label>NMO EU and Activation EU bizdev team</label>
         </rules>
@@ -1337,7 +1673,7 @@
         <name>Is_limit_reached</name>
         <label>Is limit reached</label>
         <locationX>1480</locationX>
-        <locationY>756</locationY>
+        <locationY>876</locationY>
         <defaultConnector>
             <targetReference>Decision_on_stage_and_dates</targetReference>
         </defaultConnector>
@@ -1358,10 +1694,7 @@
             <label>Limit isn&apos;t reached</label>
         </rules>
     </decisions>
-    <description>Change links with SSC links.
-Type S merchants will not recieve any of the emails from the flow 
-Day 14 new email template</description>
-    <environments>Default</environments>
+    <description>Changed Body_FR_NMO_has_begun_on_11_day updated the hyperlink for the grades</description>
     <formulas>
         <name>eleven_days_ago</name>
         <dataType>Date</dataType>
@@ -1418,7 +1751,7 @@ Day 14 new email template</description>
         <name>Loop_on_All_Contacts</name>
         <label>Loop on All Contacts</label>
         <locationX>50</locationX>
-        <locationY>516</locationY>
+        <locationY>636</locationY>
         <collectionReference>Get_all_contacts</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1452,7 +1785,7 @@ Day 14 new email template</description>
         <name>Get_all_contacts</name>
         <label>Get all contacts</label>
         <locationX>50</locationX>
-        <locationY>396</locationY>
+        <locationY>516</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_All_Contacts</targetReference>
@@ -1588,7 +1921,7 @@ Day 14 new email template</description>
     <textTemplates>
         <name>Body_FR_NMO_has_begun_on_11_days_ago</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Bonjour&amp;nbsp;{!$Record.Merchant_Name__c},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Cela fait 11 jours que vous avez commencé votre Phase de Lancement et vous avez donc eu la possibilité de réaliser 110 ventes. Si votre Qualité est bonne, votre accès à la &lt;/span&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/article/Buybox-Comment-%C3%A7a-fonctionne&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent;&quot;&gt;&lt;u&gt;Buybox&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; va s’améliorer avec de meilleurs prix et grades.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Est ce que vous savez &lt;/b&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/article/Passage-%C3%A0-3-Grades-clients&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent;&quot;&gt;&lt;b&gt;&lt;u&gt;comment fonctionnent les grades pour les clients ?&lt;/u&gt;&lt;/b&gt;&lt;/a&gt;&lt;b style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; Ils ne peuvent choisir qu’entre 3 grades différents tandis que vous en avez 5 à disposition.&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Le savoir se traduit par des ventes.&lt;/b&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; &lt;/span&gt;&lt;b style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Voici quelques informations supplémentaires que vous devez savoir :&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Vers l&apos;infini et au-delà!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;L&apos;Équipe Back Market&lt;/b&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Bonjour&amp;nbsp;{!$Record.Merchant_Name__c},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Cela fait 11 jours que vous avez commencé votre Phase de Lancement et vous avez donc eu la possibilité de réaliser 110 ventes. Si votre Qualité est bonne, votre accès à la &lt;/span&gt;&lt;a href=&quot;https://backmarketportal.force.com/ssc/s/article/Buybox-Comment-%C3%A7a-fonctionne&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent;&quot;&gt;&lt;u&gt;Buybox&lt;/u&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; va s’améliorer avec de meilleurs prix et grades.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Est ce que vous savez &lt;/strong&gt;&lt;a href=&quot;https://backmarket.my.site.com/ssc/s/article/Nos-3-Grades-Clients&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent;&quot;&gt;&lt;strong&gt;&lt;u&gt;comment fonctionnent les grades pour les clients ?&lt;/u&gt;&lt;/strong&gt;&lt;/a&gt;&lt;strong style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt; Ils ne peuvent choisir qu’entre 3 grades différents tandis que vous en avez 5 à disposition.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;Vers l&apos;infini et au-delà!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;L&apos;Équipe Back Market&lt;/strong&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <name>Body_FR_NMO_has_begun_on_14_days_ago</name>
@@ -1700,6 +2033,13 @@ Day 14 new email template</description>
         <isViewedAsPlainText>true</isViewedAsPlainText>
         <text>Jour 7. Phase de Lancement: {!$Record.Merchant_Name__c}.</text>
     </textTemplates>
+    <variables>
+        <name>FR_11_Days</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
     <variables>
         <name>List_of_email_to_contact</name>
         <dataType>String</dataType>
