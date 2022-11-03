@@ -1,10 +1,385 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
+        <name>Account_BizDev_is_null</name>
+        <label>Account BizDev is null</label>
+        <locationX>4137</locationX>
+        <locationY>1175</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Filter_on_recordtype</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Account BizDev is not populated</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Account_BizDev_not_null</name>
+        <label>Account BizDev not null</label>
+        <locationX>3367</locationX>
+        <locationY>1175</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_sales_bizdev</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Account BizDev is populated</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Account_has_F_B_Contacts</name>
+        <label>Account has F&amp;B Contacts</label>
+        <locationX>1586</locationX>
+        <locationY>2663</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Loop_on_B_F_contacts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Account has F&amp;B Contacts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Account_has_no_F_B_Contacts</name>
+        <label>Account has no F&amp;B Contacts</label>
+        <locationX>842</locationX>
+        <locationY>2663</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_Contacts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Account has no F&amp;B Contacts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Account_is_EU_BackWatch</name>
+        <label>Account is EU BackWatch</label>
+        <locationX>3345</locationX>
+        <locationY>1415</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_users_EU_Team</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Account is EU BackWatch</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Account_is_not_US_or_EU_BackWatch</name>
+        <label>Account is not US or EU BackWatch</label>
+        <locationX>3741</locationX>
+        <locationY>1415</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_Sales_Active_user</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Account is not US or EU BackWatch</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Account_is_US_BackWatch</name>
+        <label>Account is US BackWatch</label>
+        <locationX>2993</locationX>
+        <locationY>1415</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_US_Team</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Account is US BackWatch</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Account_Owner_is_active</name>
+        <label>Account Owner is active</label>
+        <locationX>3873</locationX>
+        <locationY>1655</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Assign_bizdev_to_recipient_ids</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Account owner is active</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Account_Owner_is_inactive</name>
+        <label>Account Owner is inactive</label>
+        <locationX>3609</locationX>
+        <locationY>1655</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Account owner is inactive</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
         <name>Action_Send_EN_Email</name>
         <label>Action - Send EN Email</label>
-        <locationX>842</locationX>
-        <locationY>1608</locationY>
+        <locationX>1634</locationX>
+        <locationY>3623</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -42,8 +417,8 @@
     <actionCalls>
         <name>Action_Send_EN_Email_for_greater_than_10000</name>
         <label>Action - Send EN Email for greater than 10000</label>
-        <locationX>4266</locationX>
-        <locationY>1608</locationY>
+        <locationX>4490</locationX>
+        <locationY>3743</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -91,8 +466,8 @@
     <actionCalls>
         <name>Action_Send_EN_Email_for_less_than_10000</name>
         <label>Action - Send EN Email for less than 10000</label>
-        <locationX>5058</locationX>
-        <locationY>1608</locationY>
+        <locationX>5282</locationX>
+        <locationY>3623</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -139,8 +514,8 @@
     <actionCalls>
         <name>Action_Send_FR_Email</name>
         <label>Action - Send FR Email</label>
-        <locationX>314</locationX>
-        <locationY>1608</locationY>
+        <locationX>1106</locationX>
+        <locationY>3623</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -178,8 +553,8 @@
     <actionCalls>
         <name>Action_Send_FR_Email_for_greater_than_10000</name>
         <label>Action - Send FR Email for greater than 10000</label>
-        <locationX>4002</locationX>
-        <locationY>1608</locationY>
+        <locationX>4226</locationX>
+        <locationY>3743</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -227,8 +602,8 @@
     <actionCalls>
         <name>Action_Send_FR_Email_for_less_than_10000</name>
         <label>Action - Send FR Email for less than 10000</label>
-        <locationX>4794</locationX>
-        <locationY>1608</locationY>
+        <locationX>5018</locationX>
+        <locationY>3623</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -275,8 +650,8 @@
     <actionCalls>
         <name>Action_Send_US_Email_for_greater_than_10000</name>
         <label>Action - Send US Email for greater than 10000</label>
-        <locationX>4530</locationX>
-        <locationY>1608</locationY>
+        <locationX>4754</locationX>
+        <locationY>3743</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -323,8 +698,8 @@
     <actionCalls>
         <name>Action_Send_US_Email_for_less_than_10000</name>
         <label>Action - Send US Email for less than 10000</label>
-        <locationX>5322</locationX>
-        <locationY>1608</locationY>
+        <locationX>5546</locationX>
+        <locationY>3623</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
@@ -369,17 +744,1139 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
+        <name>Alert_is_1st_Case</name>
+        <label>Alert is 1st Case</label>
+        <locationX>1982</locationX>
+        <locationY>2783</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_1st_case_Warning_Alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alert is 1st Case</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Alert_is_not_1st_Case_hand_free</name>
+        <label>Alert is not 1st Case + hand free</label>
+        <locationX>2510</locationX>
+        <locationY>2783</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_2nd_case_or_more_Alert_Hand_Free</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alert is not 1st Case + hand free</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Alert_is_not_1st_Case_not_hand_free</name>
+        <label>Alert is not 1st Case + not hand free</label>
+        <locationX>2246</locationX>
+        <locationY>2783</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_2nd_case_or_more_Alert_Not_Hand_Free</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alert is not 1st Case &amp; merchant is not hand free</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Category_not_Macbook_Tablet_Smartphone_and_User_don_t_byPass</name>
+        <label>Category not Macbook Tablet Smartphone and User don&apos;t byPass</label>
+        <locationX>5153</locationX>
+        <locationY>455</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Filter_on_recordtype_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Category is not smartphone Macbook or Tablet and User don&apos;t byPass</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Category_should_byPass</name>
+        <label>Category should byPass</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Category is smartphone Macbook or Tablet</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Created_Drafted_EP</name>
+        <label>Created Drafted EP</label>
+        <locationX>2510</locationX>
+        <locationY>3263</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Created Drafted EP</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>EU_not_FR_or_BE_Debt_Greater_than_10k</name>
+        <label>EU not FR or BE Debt Greater than 10k</label>
+        <locationX>4490</locationX>
+        <locationY>3503</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Add_Legal_Email_address_EU_NOT_FR_or_BE</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>UE but Zone is not FR or BE and Debt is Greater than 10k</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>EU_not_FR_or_BE_Debt_Less_than_10k</name>
+        <label>EU not FR or BE Debt Less than 10k</label>
+        <locationX>5282</locationX>
+        <locationY>3503</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Action_Send_EN_Email_for_less_than_10000</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>UE but Zone is not FR or BE and Debt is Less than 10k</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Financial_Issue_F_B_Contacts_found</name>
+        <label>Financial Issue F&amp;B Contacts found</label>
+        <locationX>5234</locationX>
+        <locationY>2663</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Loop_on_B_F_contacts_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alert is Financial Issue &amp; Account has F&amp;B Contacts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Financial_Issue_no_F_B_Contacts</name>
+        <label>Financial Issue no F&amp;B Contacts</label>
+        <locationX>3962</locationX>
+        <locationY>2663</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_Contacts_for_merchant_debt</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alert is Financial Issue &amp; Account has no F&amp;B Contacts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>FR_or_BE_Debt_Greater_than_10k</name>
+        <label>FR or BE Debt Greater than 10k</label>
+        <locationX>4226</locationX>
+        <locationY>3503</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Add_Legal_Email_address_FR_Or_BE</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Zone is FR or BE and Debt is Greater than 10k</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>FR_or_BE_Debt_Les_than_10k</name>
+        <label>FR or BE Debt Les than 10k</label>
+        <locationX>5018</locationX>
+        <locationY>3503</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Action_Send_FR_Email_for_less_than_10000</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Zone is FR or BE and Debt is Less than 10k</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Hazardous_Charger_email_to_BizDev</name>
+        <label>Hazardous Charger email to BizDev</label>
+        <locationX>2114</locationX>
+        <locationY>4295</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Send_Notif_to_BizDev</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Send Hazardous Charger email to BizDev</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Invoice_Compliance_EN_Email</name>
+        <label>Invoice &amp; Compliance EN Email</label>
+        <locationX>1634</locationX>
+        <locationY>3503</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Action_Send_EN_Email</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Invoice &amp; Compliance EN Email</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Invoice_Compliance_FR_Email</name>
+        <label>Invoice &amp; Compliance FR Email</label>
+        <locationX>1106</locationX>
+        <locationY>3503</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Action_Send_FR_Email</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Invoice &amp; Compliance FR Email</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Launching_Phase</name>
+        <label>Launching Phase</label>
+        <locationX>2378</locationX>
+        <locationY>3719</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_recipient_id_list_empty</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Merchant is in launching phase</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Limited_Sales</name>
+        <label>Limited Sales</label>
+        <locationX>1850</locationX>
+        <locationY>3719</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_merchant_limitation</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Merchant is Limited Sales</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Not_Limited_Sales</name>
+        <label>Not Limited Sales</label>
+        <locationX>2114</locationX>
+        <locationY>3719</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Assign_Sales_limitation_before_alert_0_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Merchant is Not Limited Sales</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Record_Type_Financial_Issue</name>
+        <label>Record Type Financial Issue</label>
+        <locationX>4598</locationX>
+        <locationY>2303</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_Business_and_Finance_Contacts_for_merchant_debt</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Record Type Financial Issue</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Record_Type_Invoice_Compliance_Audit</name>
+        <label>Record Type Invoice Compliance Audit</label>
+        <locationX>1214</locationX>
+        <locationY>2303</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_Business_and_Finance_Contacts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Record Type Invoice Compliance Audit</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Record_Type_is_Business_Alert</name>
+        <label>Record Type is Business Alert</label>
+        <locationX>6554</locationX>
+        <locationY>695</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>The Alert record type is a Business Alert</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Record_Type_MP</name>
+        <label>Record Type MP</label>
+        <locationX>5762</locationX>
+        <locationY>2303</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Decision_on_record_type</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Record Type MP</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Record_Type_MP_BuyBack</name>
+        <label>Record Type MP BuyBack</label>
+        <locationX>5762</locationX>
+        <locationY>2543</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_Buyback_Alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Record Type MP BuyBack</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Record_Type_MP_Sales</name>
+        <label>Record Type MP Sales</label>
+        <locationX>5498</locationX>
+        <locationY>2543</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_Sales_Alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Record Type MP Sales</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Record_Type_not_Business_Alert</name>
+        <label>Record Type not Business Alert</label>
+        <locationX>3752</locationX>
+        <locationY>695</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_notification_id</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>The Alert record type is not a Business Alert</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Record_Type_not_MP_Sales_or_BuyBack</name>
+        <label>Record Type not MP Sales or BuyBack</label>
+        <locationX>6026</locationX>
+        <locationY>2543</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Record Type not MP Sales or BuyBack</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Record_Type_Severe_Issue</name>
+        <label>Record Type Severe Issue</label>
+        <locationX>2246</locationX>
+        <locationY>2303</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_past_alerts_on_Hazardous_chargers</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Record Type Severe Issue</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
         <name>Send_Notif_to_BizDev</name>
         <label>Send Notif to BizDev</label>
-        <locationX>1802</locationX>
-        <locationY>3168</locationY>
+        <locationX>2114</locationX>
+        <locationY>4415</locationY>
         <actionName>customNotificationAction</actionName>
         <actionType>customNotificationAction</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>customNotifTypeId</name>
             <value>
-                <elementReference>Copy_2_of_Get_notification_id.Id</elementReference>
+                <elementReference>Get_notification_id.Id</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -410,15 +1907,15 @@
     <actionCalls>
         <name>Send_Notif_to_Merchant_Owner_MP_Creation</name>
         <label>Send Notif to Merchant Owner - MP Creation</label>
-        <locationX>6282</locationX>
-        <locationY>2232</locationY>
+        <locationX>5762</locationX>
+        <locationY>2879</locationY>
         <actionName>customNotificationAction</actionName>
         <actionType>customNotificationAction</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>customNotifTypeId</name>
             <value>
-                <elementReference>Copy_1_of_Get_notification_id.Id</elementReference>
+                <elementReference>Get_notification_id.Id</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -446,12 +1943,261 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <actionCalls>
+        <name>Updated_alert_as_1st_Case</name>
+        <label>Updated alert as 1st Case</label>
+        <locationX>1982</locationX>
+        <locationY>3023</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Already_limited_because_of_a_Sales_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Updated alert as 1st Case</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Updated_alert_as_2nd_Case</name>
+        <label>Updated alert as 2nd Case</label>
+        <locationX>2246</locationX>
+        <locationY>3023</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Already_limited_because_of_a_Sales_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Updated alert as 2nd Case</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Updated_alert_as_2nd_Case_Failed</name>
+        <label>Updated alert as 2nd Case &amp; Failed</label>
+        <locationX>2510</locationX>
+        <locationY>3023</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Create_Exit_Process_draft</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Updated alert as 2nd Case &amp; Failed</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>US_Debt_Greater_than_10k</name>
+        <label>US Debt Greater than 10k</label>
+        <locationX>4754</locationX>
+        <locationY>3503</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Add_Legal_Email_address_US</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Zone is US and Debt is Greater than 10k</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>US_Debt_Less_than_10k</name>
+        <label>US Debt Less than 10k</label>
+        <locationX>5546</locationX>
+        <locationY>3503</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Action_Send_US_Email_for_less_than_10000</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Zone is US and Debt is Less than 10k</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>User_should_byPass</name>
+        <label>User should byPass</label>
+        <locationX>6818</locationX>
+        <locationY>455</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>Alert-Afert-Save</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Alert - After save flow (Creation only)</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>User should byPass</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
     <apiVersion>51.0</apiVersion>
     <assignments>
         <name>Add_B_F_contacts_to_final_list</name>
         <label>Add B&amp;F contacts to final list</label>
-        <locationX>970</locationX>
-        <locationY>1008</locationY>
+        <locationX>1762</locationX>
+        <locationY>2903</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -473,8 +2219,8 @@
     <assignments>
         <name>Add_B_F_contacts_to_final_list_0</name>
         <label>Add B&amp;F contacts to final list</label>
-        <locationX>358</locationX>
-        <locationY>1128</locationY>
+        <locationX>1150</locationX>
+        <locationY>3023</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -496,8 +2242,8 @@
     <assignments>
         <name>Add_B_F_contacts_to_final_list_0_0</name>
         <label>Add B&amp;F contacts to final list</label>
-        <locationX>5186</locationX>
-        <locationY>1008</locationY>
+        <locationX>5410</locationX>
+        <locationY>2903</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -519,8 +2265,8 @@
     <assignments>
         <name>Add_B_F_contacts_to_final_list_0_0_0</name>
         <label>Add B&amp;F contacts to final list</label>
-        <locationX>4310</locationX>
-        <locationY>1128</locationY>
+        <locationX>4534</locationX>
+        <locationY>3023</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -542,8 +2288,8 @@
     <assignments>
         <name>Add_BizDev_Email_address</name>
         <label>Add BizDev Email address</label>
-        <locationX>578</locationX>
-        <locationY>1368</locationY>
+        <locationX>1370</locationX>
+        <locationY>3263</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -565,8 +2311,8 @@
     <assignments>
         <name>Add_BizDev_Email_address_0</name>
         <label>Add BizDev Email address</label>
-        <locationX>4794</locationX>
-        <locationY>1368</locationY>
+        <locationX>5018</locationX>
+        <locationY>3263</locationY>
         <assignmentItems>
             <assignToReference>Var_FinalListForInvoice</assignToReference>
             <operator>Add</operator>
@@ -586,10 +2332,129 @@
         </connector>
     </assignments>
     <assignments>
+        <name>Add_Legal_Email_address_EU_NOT_FR_or_BE</name>
+        <label>Add Legal Email address_EU-NOT FR or BE</label>
+        <locationX>4490</locationX>
+        <locationY>3623</locationY>
+        <assignmentItems>
+            <assignToReference>Var_FinalListForInvoice</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>legal-team@backmarket.com</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Action_Send_EN_Email_for_greater_than_10000</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Legal_Email_address_FR_Or_BE</name>
+        <label>Add Legal Email address_FR_Or_BE</label>
+        <locationX>4226</locationX>
+        <locationY>3623</locationY>
+        <assignmentItems>
+            <assignToReference>Var_FinalListForInvoice</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>legal-team@backmarket.com</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Action_Send_FR_Email_for_greater_than_10000</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Legal_Email_address_US</name>
+        <label>Add Legal Email address_US</label>
+        <locationX>4754</locationX>
+        <locationY>3623</locationY>
+        <assignmentItems>
+            <assignToReference>Var_FinalListForInvoice</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>legal-team@backmarket.com</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Action_Send_US_Email_for_greater_than_10000</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_bizdev_to_recipient_ids</name>
+        <label>Assign bizdev to recipient ids</label>
+        <locationX>3873</locationX>
+        <locationY>1775</locationY>
+        <assignmentItems>
+            <assignToReference>Recipient_Ids</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Business_Name__r.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Filter_on_recordtype</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_bizdev_to_recipient_ids_EU_team</name>
+        <label>Assign bizdev to recipient ids EU team</label>
+        <locationX>3433</locationX>
+        <locationY>1775</locationY>
+        <assignmentItems>
+            <assignToReference>Recipient_Ids</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_on_EU_Team.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_on_EU_Team</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_bizdev_to_recipient_ids_us_team</name>
+        <label>Assign bizdev to recipient ids us team</label>
+        <locationX>3081</locationX>
+        <locationY>1775</locationY>
+        <assignmentItems>
+            <assignToReference>Recipient_Ids</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_on_US_Team.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_on_US_Team</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_notification_type_id_and_current_record</name>
+        <label>Assign notification type id and current record</label>
+        <locationX>3752</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>Notification_type_id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_notification_id.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Current_Alert_to_update</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Decision_on_bizdev</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Assign_Sales_limitation_before_alert_0_0</name>
         <label>Assign Sales limitation before alert</label>
-        <locationX>1978</locationX>
-        <locationY>1584</locationY>
+        <locationX>2114</locationX>
+        <locationY>3839</locationY>
         <assignmentItems>
             <assignToReference>Limitation_before_alert</assignToReference>
             <operator>Assign</operator>
@@ -602,152 +2467,10 @@
         </connector>
     </assignments>
     <assignments>
-        <name>Copy_1_of_Assign_bizdev_to_recipient_ids</name>
-        <label>Copy 1 of Assign bizdev to recipient ids</label>
-        <locationX>6370</locationX>
-        <locationY>1704</locationY>
-        <assignmentItems>
-            <assignToReference>Recipient_Ids</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>$Record.Business_Name__r.OwnerId</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_1_of_Assign_bizdev_to_recipient_ids_EU_team</name>
-        <label>Copy 1 of Assign bizdev to recipient ids EU team</label>
-        <locationX>6018</locationX>
-        <locationY>1824</locationY>
-        <assignmentItems>
-            <assignToReference>Recipient_Ids</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Copy_1_of_Loop_on_EU_Team.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Copy_1_of_Loop_on_EU_Team</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_1_of_Assign_bizdev_to_recipient_ids_us_team</name>
-        <label>Copy 1 of Assign bizdev to recipient ids us team</label>
-        <locationX>5666</locationX>
-        <locationY>1824</locationY>
-        <assignmentItems>
-            <assignToReference>Recipient_Ids</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Copy_1_of_Loop_on_US_Team.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Copy_1_of_Loop_on_US_Team</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_1_of_Assign_notification_type_id_and_current_record</name>
-        <label>Copy 1 of Assign notification type id and current record</label>
-        <locationX>6282</locationX>
-        <locationY>1224</locationY>
-        <assignmentItems>
-            <assignToReference>Notification_type_id</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Copy_1_of_Get_notification_id.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>Current_Alert_to_update</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Copy_1_of_Decision_on_bizdev_bizdev_buyback</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_2_of_Assign_bizdev_to_recipient_ids</name>
-        <label>Copy 2 of Assign bizdev to recipient ids</label>
-        <locationX>1890</locationX>
-        <locationY>2640</locationY>
-        <assignmentItems>
-            <assignToReference>Recipient_Ids</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>$Record.Business_Name__r.OwnerId</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Send_Notif_to_BizDev</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_2_of_Assign_bizdev_to_recipient_ids_EU_team</name>
-        <label>Copy 2 of Assign bizdev to recipient ids EU team</label>
-        <locationX>1538</locationX>
-        <locationY>2760</locationY>
-        <assignmentItems>
-            <assignToReference>Recipient_Ids</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Copy_2_of_Loop_on_EU_Team.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Copy_2_of_Loop_on_EU_Team</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_2_of_Assign_bizdev_to_recipient_ids_us_team</name>
-        <label>Copy 2 of Assign bizdev to recipient ids us team</label>
-        <locationX>1186</locationX>
-        <locationY>2760</locationY>
-        <assignmentItems>
-            <assignToReference>Recipient_Ids</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Copy_2_of_Loop_on_US_Team.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Copy_2_of_Loop_on_US_Team</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Copy_2_of_Assign_notification_type_id_and_current_record</name>
-        <label>Copy 2 of Assign notification type id and current record</label>
-        <locationX>1802</locationX>
-        <locationY>2160</locationY>
-        <assignmentItems>
-            <assignToReference>Notification_type_id</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Copy_2_of_Get_notification_id.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>Current_Alert_to_update</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Copy_2_of_Decision_on_bizdev_bizdev_buyback</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>Count</name>
         <label>Count</label>
-        <locationX>2066</locationX>
-        <locationY>768</locationY>
+        <locationX>2246</locationX>
+        <locationY>2543</locationY>
         <assignmentItems>
             <assignToReference>VariableCount</assignToReference>
             <operator>AssignCount</operator>
@@ -762,8 +2485,8 @@
     <decisions>
         <name>Already_limited_because_of_a_Sales_alert</name>
         <label>Already limited because of a Sales alert</label>
-        <locationX>2066</locationX>
-        <locationY>1464</locationY>
+        <locationX>2246</locationX>
+        <locationY>3599</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes_Already_limited</name>
@@ -783,7 +2506,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_merchant_limitation</targetReference>
+                <targetReference>Limited_Sales</targetReference>
             </connector>
             <label>Yes - Already limited</label>
         </rules>
@@ -805,7 +2528,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_Sales_limitation_before_alert_0_0</targetReference>
+                <targetReference>Not_Limited_Sales</targetReference>
             </connector>
             <label>No - Need to archive imitation info</label>
         </rules>
@@ -820,22 +2543,22 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_on_recipient_id_list_empty</targetReference>
+                <targetReference>Launching_Phase</targetReference>
             </connector>
             <label>Is NMO</label>
         </rules>
     </decisions>
     <decisions>
-        <name>Copy_1_of_Decision_on_bizdev_bizdev_buyback</name>
-        <label>Copy 1 of Decision on bizdev / bizdev buyback</label>
-        <locationX>6282</locationX>
-        <locationY>1344</locationY>
+        <name>Decision_on_bizdev</name>
+        <label>Decision on bizdev / bizdev buyback</label>
+        <locationX>3752</locationX>
+        <locationY>1055</locationY>
         <defaultConnector>
-            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
+            <targetReference>Account_BizDev_is_null</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Copy_1_of_Bizdev_is_not_null</name>
+            <name>Champion_is_not_null_0</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
@@ -845,265 +2568,19 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_1_of_Decision_on_sales_bizdev</targetReference>
+                <targetReference>Account_BizDev_not_null</targetReference>
             </connector>
-            <label>Copy 1 of Bizdev is not null</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Copy_1_of_Decision_on_Sales_Active_user</name>
-        <label>Copy 1 of Decision on Sales Active user</label>
-        <locationX>6282</locationX>
-        <locationY>1584</locationY>
-        <defaultConnector>
-            <targetReference>Copy_1_of_Assign_bizdev_to_recipient_ids</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Copy_1_of_Yes_Sales_user_is_Inactive</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Owner.IsActive</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
-            </connector>
-            <label>Copy 1 of Yes Sales user is Inactive</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Copy_1_of_Decision_on_sales_bizdev</name>
-        <label>Copy 1 of Decision on sales bizdev</label>
-        <locationX>5930</locationX>
-        <locationY>1464</locationY>
-        <defaultConnector>
-            <targetReference>Copy_1_of_Decision_on_Sales_Active_user</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Copy_1_of_BackWatch_US</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.UserID__c.Sam__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_US__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Hand Free</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Copy_1_of_Get_US_Team</targetReference>
-            </connector>
-            <label>Copy 1 of BackWatch US</label>
-        </rules>
-        <rules>
-            <name>Copy_1_of_BackWatch_EU</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.UserID__c.PA__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_EU__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Hand Free</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Copy_1_of_Get_users_EU_Team</targetReference>
-            </connector>
-            <label>Copy 1 of BackWatch EU</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Copy_2_of_Decision_on_bizdev_bizdev_buyback</name>
-        <label>Copy 2 of Decision on bizdev / bizdev buyback</label>
-        <locationX>1802</locationX>
-        <locationY>2280</locationY>
-        <defaultConnector>
-            <targetReference>Send_Notif_to_BizDev</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Copy_2_of_Bizdev_is_not_null</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Copy_2_of_Decision_on_sales_bizdev</targetReference>
-            </connector>
-            <label>Copy 2 of Bizdev is not null</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Copy_2_of_Decision_on_Sales_Active_user</name>
-        <label>Copy 2 of Decision on Sales Active user</label>
-        <locationX>1802</locationX>
-        <locationY>2520</locationY>
-        <defaultConnector>
-            <targetReference>Copy_2_of_Assign_bizdev_to_recipient_ids</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Copy_2_of_Yes_Sales_user_is_Inactive</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Owner.IsActive</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Send_Notif_to_BizDev</targetReference>
-            </connector>
-            <label>Copy 2 of Yes Sales user is Inactive</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Copy_2_of_Decision_on_sales_bizdev</name>
-        <label>Copy 2 of Decision on sales bizdev</label>
-        <locationX>1450</locationX>
-        <locationY>2400</locationY>
-        <defaultConnector>
-            <targetReference>Copy_2_of_Decision_on_Sales_Active_user</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Copy_2_of_BackWatch_US</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.UserID__c.Sam__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_US__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Hand Free</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Copy_2_of_Get_US_Team</targetReference>
-            </connector>
-            <label>Copy 2 of BackWatch US</label>
-        </rules>
-        <rules>
-            <name>Copy_2_of_BackWatch_EU</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.UserID__c.PA__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_EU__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Hand Free</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Copy_2_of_Get_users_EU_Team</targetReference>
-            </connector>
-            <label>Copy 2 of BackWatch EU</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>Data_team_check</name>
-        <label>Data team check</label>
-        <locationX>7866</locationX>
-        <locationY>288</locationY>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Approved</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Data_team_check__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Approved</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <isGoTo>true</isGoTo>
-                <targetReference>Copy_1_of_Get_notification_id</targetReference>
-            </connector>
-            <label>Approved</label>
-        </rules>
-        <rules>
-            <name>To_archive</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Data_team_check__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>To archive</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Get_Archived_Record_Type</targetReference>
-            </connector>
-            <label>To archive</label>
+            <label>Bizdev is not null</label>
         </rules>
     </decisions>
     <decisions>
         <name>Decision_on_bypass_flow</name>
         <label>Decision on bypass flow</label>
-        <locationX>3298</locationX>
-        <locationY>288</locationY>
+        <locationX>3434</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>User_should_byPass</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Category_should_be_bypass</name>
@@ -1129,6 +2606,9 @@
                     <stringValue>Smartphone</stringValue>
                 </rightValue>
             </conditions>
+            <connector>
+                <targetReference>Category_should_byPass</targetReference>
+            </connector>
             <label>Category should be bypass</label>
         </rules>
         <rules>
@@ -1142,7 +2622,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Filter_on_recordtype_0</targetReference>
+                <targetReference>Category_not_Macbook_Tablet_Smartphone_and_User_don_t_byPass</targetReference>
             </connector>
             <label>User dont bypass</label>
         </rules>
@@ -1150,8 +2630,8 @@
     <decisions>
         <name>Decision_on_recipient_id_list_empty</name>
         <label>Decision on recipient id list empty</label>
-        <locationX>2066</locationX>
-        <locationY>1920</locationY>
+        <locationX>2246</locationX>
+        <locationY>4175</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Recipient_Id_List_isn_t_empty</name>
@@ -1164,7 +2644,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_2_of_Get_notification_id</targetReference>
+                <targetReference>Hazardous_Charger_email_to_BizDev</targetReference>
             </connector>
             <label>Recipient Id List isn&apos;t empty</label>
         </rules>
@@ -1172,8 +2652,11 @@
     <decisions>
         <name>Decision_on_record_type</name>
         <label>Decision on record type</label>
-        <locationX>5754</locationX>
-        <locationY>648</locationY>
+        <locationX>5762</locationX>
+        <locationY>2423</locationY>
+        <defaultConnector>
+            <targetReference>Record_Type_not_MP_Sales_or_BuyBack</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>MP_Sales</name>
@@ -1186,7 +2669,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_Sales_Alert</targetReference>
+                <targetReference>Record_Type_MP_Sales</targetReference>
             </connector>
             <label>MP Sales</label>
         </rules>
@@ -1201,18 +2684,111 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_Buyback_Alert</targetReference>
+                <targetReference>Record_Type_MP_BuyBack</targetReference>
             </connector>
             <label>MP buyback</label>
         </rules>
     </decisions>
     <decisions>
+        <name>Decision_on_Sales_Active_user</name>
+        <label>Decision on Sales Active user</label>
+        <locationX>3741</locationX>
+        <locationY>1535</locationY>
+        <defaultConnector>
+            <targetReference>Account_Owner_is_active</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_sales_user_is_Inactive_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Owner.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Account_Owner_is_inactive</targetReference>
+            </connector>
+            <label>Yes Sales user is Inactive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_on_sales_bizdev</name>
+        <label>Decision on sales bizdev</label>
+        <locationX>3367</locationX>
+        <locationY>1295</locationY>
+        <defaultConnector>
+            <targetReference>Account_is_not_US_or_EU_BackWatch</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>BackWatch_US</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.UserID__c.Sam__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_US__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Hand Free</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Account_is_US_BackWatch</targetReference>
+            </connector>
+            <label>BackWatch US</label>
+        </rules>
+        <rules>
+            <name>BackWatch_EU</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.OwnerId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.UserID__c.PA__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Setup.Special_Process_Record_Types_Ids__c.Merchant_EU__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Story__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Hand Free</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Account_is_EU_BackWatch</targetReference>
+            </connector>
+            <label>BackWatch EU</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Do_we_have_F_B_contacts</name>
         <label>Do we have F&amp;B contacts</label>
-        <locationX>422</locationX>
-        <locationY>768</locationY>
+        <locationX>1214</locationX>
+        <locationY>2543</locationY>
         <defaultConnector>
-            <targetReference>Loop_on_B_F_contacts</targetReference>
+            <targetReference>Account_has_F_B_Contacts</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -1226,7 +2802,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_Contacts</targetReference>
+                <targetReference>Account_has_no_F_B_Contacts</targetReference>
             </connector>
             <label>No</label>
         </rules>
@@ -1234,10 +2810,10 @@
     <decisions>
         <name>Do_we_have_F_B_contacts_0</name>
         <label>Do we have F&amp;B contacts</label>
-        <locationX>4374</locationX>
-        <locationY>768</locationY>
+        <locationX>4598</locationX>
+        <locationY>2543</locationY>
         <defaultConnector>
-            <targetReference>Loop_on_B_F_contacts_0</targetReference>
+            <targetReference>Financial_Issue_F_B_Contacts_found</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -1251,7 +2827,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_Contacts_for_merchant_debt</targetReference>
+                <targetReference>Financial_Issue_no_F_B_Contacts</targetReference>
             </connector>
             <label>No</label>
         </rules>
@@ -1259,8 +2835,8 @@
     <decisions>
         <name>Filter_on_recordtype</name>
         <label>Filter on recordtype</label>
-        <locationX>3616</locationX>
-        <locationY>528</locationY>
+        <locationX>3752</locationX>
+        <locationY>2183</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>RecordType_is_Invoice_Compliance_Audit</name>
@@ -1273,7 +2849,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_Business_and_Finance_Contacts</targetReference>
+                <targetReference>Record_Type_Invoice_Compliance_Audit</targetReference>
             </connector>
             <label>RecordType is Invoice Compliance Audit</label>
         </rules>
@@ -1295,7 +2871,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_past_alerts_on_Hazardous_chargers</targetReference>
+                <targetReference>Record_Type_Severe_Issue</targetReference>
             </connector>
             <label>RecordType is Severe Issue - Hazardous Chargers</label>
         </rules>
@@ -1317,7 +2893,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_Business_and_Finance_Contacts_for_merchant_debt</targetReference>
+                <targetReference>Record_Type_Financial_Issue</targetReference>
             </connector>
             <label>Recordtype is Financial Issue- Merchant Debt</label>
         </rules>
@@ -1339,7 +2915,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Decision_on_record_type</targetReference>
+                <targetReference>Record_Type_MP</targetReference>
             </connector>
             <label>RecordType is Monitoring Period</label>
         </rules>
@@ -1347,8 +2923,11 @@
     <decisions>
         <name>Filter_on_recordtype_0</name>
         <label>Filter on recordtype</label>
-        <locationX>5345</locationX>
-        <locationY>408</locationY>
+        <locationX>5153</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Record_Type_is_Business_Alert</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>RecordType_isn_t_Business_Alert</name>
@@ -1361,7 +2940,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Filter_on_recordtype</targetReference>
+                <targetReference>Record_Type_not_Business_Alert</targetReference>
             </connector>
             <label>RecordType isn&apos;t Business Alert</label>
         </rules>
@@ -1369,10 +2948,10 @@
     <decisions>
         <name>Is_first_alert</name>
         <label>Is first alert ?</label>
-        <locationX>2066</locationX>
-        <locationY>888</locationY>
+        <locationX>2246</locationX>
+        <locationY>2663</locationY>
         <defaultConnector>
-            <targetReference>Update_2nd_case_or_more_Alert_Hand_Free</targetReference>
+            <targetReference>Alert_is_not_1st_Case_hand_free</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -1386,7 +2965,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_1st_case_Warning_Alert</targetReference>
+                <targetReference>Alert_is_1st_Case</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -1408,7 +2987,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_2nd_case_or_more_Alert_Not_Hand_Free</targetReference>
+                <targetReference>Alert_is_not_1st_Case_not_hand_free</targetReference>
             </connector>
             <label>No and not Hand Free</label>
         </rules>
@@ -1416,8 +2995,8 @@
     <decisions>
         <name>Is_limit_reached</name>
         <label>Is limit reached</label>
-        <locationX>358</locationX>
-        <locationY>1248</locationY>
+        <locationX>1150</locationX>
+        <locationY>3143</locationY>
         <defaultConnector>
             <targetReference>Add_BizDev_Email_address</targetReference>
         </defaultConnector>
@@ -1441,8 +3020,8 @@
     <decisions>
         <name>Is_limit_reached_0</name>
         <label>Is limit reached</label>
-        <locationX>970</locationX>
-        <locationY>1128</locationY>
+        <locationX>1762</locationX>
+        <locationY>3023</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Add_BizDev_Email_address</targetReference>
@@ -1467,8 +3046,8 @@
     <decisions>
         <name>Is_limit_reached_0_0</name>
         <label>Is limit reached</label>
-        <locationX>4310</locationX>
-        <locationY>1248</locationY>
+        <locationX>4534</locationX>
+        <locationY>3143</locationY>
         <defaultConnector>
             <targetReference>Add_BizDev_Email_address_0</targetReference>
         </defaultConnector>
@@ -1492,8 +3071,8 @@
     <decisions>
         <name>Is_limit_reached_0_0_0</name>
         <label>Is limit reached</label>
-        <locationX>5186</locationX>
-        <locationY>1128</locationY>
+        <locationX>5410</locationX>
+        <locationY>3023</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Add_BizDev_Email_address_0</targetReference>
@@ -1518,10 +3097,10 @@
     <decisions>
         <name>Merchant_Zone</name>
         <label>Merchant Zone</label>
-        <locationX>578</locationX>
-        <locationY>1488</locationY>
+        <locationX>1370</locationX>
+        <locationY>3383</locationY>
         <defaultConnector>
-            <targetReference>Action_Send_EN_Email</targetReference>
+            <targetReference>Invoice_Compliance_EN_Email</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -1542,7 +3121,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Action_Send_FR_Email</targetReference>
+                <targetReference>Invoice_Compliance_FR_Email</targetReference>
             </connector>
             <label>FR or BE Zone</label>
         </rules>
@@ -1562,8 +3141,8 @@
     <decisions>
         <name>Merchant_Zone_abd_merchant_debt</name>
         <label>Merchant Zone abd merchant debt</label>
-        <locationX>4794</locationX>
-        <locationY>1488</locationY>
+        <locationX>5018</locationX>
+        <locationY>3383</locationY>
         <defaultConnectorLabel>Default</defaultConnectorLabel>
         <rules>
             <name>FR_or_BE_Zone_and_greater_than_10000</name>
@@ -1597,7 +3176,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Action_Send_FR_Email_for_greater_than_10000</targetReference>
+                <targetReference>FR_or_BE_Debt_Greater_than_10k</targetReference>
             </connector>
             <label>FR or BE Zone and greater than 10000</label>
         </rules>
@@ -1640,7 +3219,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Action_Send_EN_Email_for_greater_than_10000</targetReference>
+                <targetReference>EU_not_FR_or_BE_Debt_Greater_than_10k</targetReference>
             </connector>
             <label>EU - NOT FR or BE Zone and greater than 10000</label>
         </rules>
@@ -1669,7 +3248,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Action_Send_US_Email_for_greater_than_10000</targetReference>
+                <targetReference>US_Debt_Greater_than_10k</targetReference>
             </connector>
             <label>US - greater than 10000</label>
         </rules>
@@ -1705,7 +3284,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Action_Send_FR_Email_for_less_than_10000</targetReference>
+                <targetReference>FR_or_BE_Debt_Les_than_10k</targetReference>
             </connector>
             <label>FR or BE Zone and less than 10000</label>
         </rules>
@@ -1748,7 +3327,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Action_Send_EN_Email_for_less_than_10000</targetReference>
+                <targetReference>EU_not_FR_or_BE_Debt_Less_than_10k</targetReference>
             </connector>
             <label>EU - NOT FR or BE Zone and less than 10000</label>
         </rules>
@@ -1777,34 +3356,12 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Action_Send_US_Email_for_less_than_10000</targetReference>
+                <targetReference>US_Debt_Less_than_10k</targetReference>
             </connector>
             <label>US - Below 10000</label>
         </rules>
     </decisions>
-    <decisions>
-        <name>Type_of_KPI</name>
-        <label>Type of KPI</label>
-        <locationX>5754</locationX>
-        <locationY>984</locationY>
-        <defaultConnector>
-            <targetReference>Copy_1_of_Get_notification_id</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>On_Time_Delivery_Rate</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Issue_KPI__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>On Time Delivery Rate</stringValue>
-                </rightValue>
-            </conditions>
-            <label>On Time Delivery Rate</label>
-        </rules>
-    </decisions>
-    <description>SFT-447 - Modify the 2 formulas for Buyback seller enters MP or LC</description>
+    <description>SFT-512 Include the email legal-team@backmarket.com in recipients for alert of debt&gt;20k</description>
     <formulas>
         <name>Alert_LastChance_Limitation_Sales_formula</name>
         <dataType>Number</dataType>
@@ -1899,66 +3456,10 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <interviewLabel>Alert - After save flow (Creation only) {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Alert - After save flow (Creation only)</label>
     <loops>
-        <name>Copy_1_of_Loop_on_EU_Team</name>
-        <label>Copy 1 of Loop on EU Team</label>
-        <locationX>5930</locationX>
-        <locationY>1704</locationY>
-        <collectionReference>Copy_1_of_Get_users_EU_Team</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>Copy_1_of_Assign_bizdev_to_recipient_ids_EU_team</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
-        </noMoreValuesConnector>
-    </loops>
-    <loops>
-        <name>Copy_1_of_Loop_on_US_Team</name>
-        <label>Copy 1 of Loop on US Team</label>
-        <locationX>5578</locationX>
-        <locationY>1704</locationY>
-        <collectionReference>Copy_1_of_Get_US_Team</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>Copy_1_of_Assign_bizdev_to_recipient_ids_us_team</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
-        </noMoreValuesConnector>
-    </loops>
-    <loops>
-        <name>Copy_2_of_Loop_on_EU_Team</name>
-        <label>Copy 2 of Loop on EU Team</label>
-        <locationX>1450</locationX>
-        <locationY>2640</locationY>
-        <collectionReference>Copy_2_of_Get_users_EU_Team</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>Copy_2_of_Assign_bizdev_to_recipient_ids_EU_team</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>Send_Notif_to_BizDev</targetReference>
-        </noMoreValuesConnector>
-    </loops>
-    <loops>
-        <name>Copy_2_of_Loop_on_US_Team</name>
-        <label>Copy 2 of Loop on US Team</label>
-        <locationX>1098</locationX>
-        <locationY>2640</locationY>
-        <collectionReference>Copy_2_of_Get_US_Team</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>Copy_2_of_Assign_bizdev_to_recipient_ids_us_team</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>Send_Notif_to_BizDev</targetReference>
-        </noMoreValuesConnector>
-    </loops>
-    <loops>
         <name>Loop_on_B_F_contacts</name>
         <label>Loop on B&amp;F contacts</label>
-        <locationX>794</locationX>
-        <locationY>888</locationY>
+        <locationX>1586</locationX>
+        <locationY>2783</locationY>
         <collectionReference>Get_Business_and_Finance_Contacts</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1972,8 +3473,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <loops>
         <name>Loop_on_B_F_contacts_0</name>
         <label>Loop on B&amp;F contacts</label>
-        <locationX>5010</locationX>
-        <locationY>888</locationY>
+        <locationX>5234</locationX>
+        <locationY>2783</locationY>
         <collectionReference>Get_Business_and_Finance_Contacts_for_merchant_debt</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1987,8 +3488,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <loops>
         <name>Loop_on_contacts</name>
         <label>Loop on contacts</label>
-        <locationX>50</locationX>
-        <locationY>1008</locationY>
+        <locationX>842</locationX>
+        <locationY>2903</locationY>
         <collectionReference>Get_Contacts</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -2002,8 +3503,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <loops>
         <name>Loop_on_contacts_0</name>
         <label>Loop on contacts</label>
-        <locationX>3738</locationX>
-        <locationY>1008</locationY>
+        <locationX>3962</locationX>
+        <locationY>2903</locationY>
         <collectionReference>Get_Contacts_for_merchant_debt</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -2012,6 +3513,34 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <noMoreValuesConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Add_BizDev_Email_address_0</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_on_EU_Team</name>
+        <label>Loop on EU Team</label>
+        <locationX>3345</locationX>
+        <locationY>1655</locationY>
+        <collectionReference>Get_users_EU_Team</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_bizdev_to_recipient_ids_EU_team</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Filter_on_recordtype</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_on_US_Team</name>
+        <label>Loop on US Team</label>
+        <locationX>2993</locationX>
+        <locationY>1655</locationY>
+        <collectionReference>Get_US_Team</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_bizdev_to_recipient_ids_us_team</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Filter_on_recordtype</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -2036,8 +3565,11 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordCreates>
         <name>Create_Exit_Process_draft</name>
         <label>Create Exit Process draft</label>
-        <locationX>2330</locationX>
-        <locationY>1128</locationY>
+        <locationX>2510</locationX>
+        <locationY>3143</locationY>
+        <connector>
+            <targetReference>Created_Drafted_EP</targetReference>
+        </connector>
         <inputAssignments>
             <field>BizDev_for_Approval__c</field>
             <value>
@@ -2096,214 +3628,10 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
-        <name>Copy_1_of_Get_notification_id</name>
-        <label>Copy 1 of Get notification id</label>
-        <locationX>6282</locationX>
-        <locationY>1104</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Copy_1_of_Assign_notification_type_id_and_current_record</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>DeveloperName</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>All_supported_channels</stringValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>CustomNotificationType</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Copy_1_of_Get_US_Team</name>
-        <label>Copy 1 of Get US Team</label>
-        <locationX>5578</locationX>
-        <locationY>1584</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Copy_1_of_Loop_on_US_Team</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>ManagerId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Setup.UserID__c.Richard__c</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Team__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>SSM Back Watch U.S.</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>IsActive</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>User</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Copy_1_of_Get_users_EU_Team</name>
-        <label>Copy 1 of Get users EU Team</label>
-        <locationX>5930</locationX>
-        <locationY>1584</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Copy_1_of_Loop_on_EU_Team</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>ManagerId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Setup.UserID__c.PA__c</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Team__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>SSM Back Watch E.U.</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>IsActive</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>User</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Copy_2_of_Get_notification_id</name>
-        <label>Copy 2 of Get notification id</label>
-        <locationX>1802</locationX>
-        <locationY>2040</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Copy_2_of_Assign_notification_type_id_and_current_record</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>DeveloperName</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>All_supported_channels</stringValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>CustomNotificationType</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Copy_2_of_Get_US_Team</name>
-        <label>Copy 2 of Get US Team</label>
-        <locationX>1098</locationX>
-        <locationY>2520</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Copy_2_of_Loop_on_US_Team</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>ManagerId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Setup.UserID__c.Richard__c</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Team__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>SSM Back Watch U.S.</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>IsActive</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>User</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Copy_2_of_Get_users_EU_Team</name>
-        <label>Copy 2 of Get users EU Team</label>
-        <locationX>1450</locationX>
-        <locationY>2520</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Copy_2_of_Loop_on_EU_Team</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>ManagerId</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Setup.UserID__c.PA__c</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Team__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>SSM Back Watch E.U.</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>IsActive</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>User</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Get_Archived_Record_Type</name>
-        <label>Get Archived Record Type</label>
-        <locationX>7866</locationX>
-        <locationY>408</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Archive_alert</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>DeveloperName</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Monitoring_Period_Sales_Archived	</stringValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>RecordType</object>
-        <queriedFields>Id</queriedFields>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
         <name>Get_Business_and_Finance_Contacts</name>
         <label>Get Business and Finance Contacts</label>
-        <locationX>422</locationX>
-        <locationY>648</locationY>
+        <locationX>1214</locationX>
+        <locationY>2423</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Do_we_have_F_B_contacts</targetReference>
@@ -2351,8 +3679,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordLookups>
         <name>Get_Business_and_Finance_Contacts_for_merchant_debt</name>
         <label>Get Business and Finance Contacts for merchant debt</label>
-        <locationX>4374</locationX>
-        <locationY>648</locationY>
+        <locationX>4598</locationX>
+        <locationY>2423</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Do_we_have_F_B_contacts_0</targetReference>
@@ -2400,8 +3728,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordLookups>
         <name>Get_Contacts</name>
         <label>Get Contacts</label>
-        <locationX>50</locationX>
-        <locationY>888</locationY>
+        <locationX>842</locationX>
+        <locationY>2783</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_contacts</targetReference>
@@ -2442,8 +3770,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordLookups>
         <name>Get_Contacts_for_merchant_debt</name>
         <label>Get Contacts for merchant debt</label>
-        <locationX>3738</locationX>
-        <locationY>888</locationY>
+        <locationX>3962</locationX>
+        <locationY>2783</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_contacts_0</targetReference>
@@ -2482,10 +3810,31 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
+        <name>Get_notification_id</name>
+        <label>Get notification id</label>
+        <locationX>3752</locationX>
+        <locationY>815</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_notification_type_id_and_current_record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>All_supported_channels</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CustomNotificationType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>Get_past_alerts_on_Hazardous_chargers</name>
         <label>Get past alerts on Hazardous chargers</label>
-        <locationX>2066</locationX>
-        <locationY>648</locationY>
+        <locationX>2246</locationX>
+        <locationY>2423</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Count</targetReference>
@@ -2523,26 +3872,83 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <object>Alert__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
-    <recordUpdates>
-        <name>Archive_alert</name>
-        <label>Archive alert</label>
-        <locationX>7866</locationX>
-        <locationY>528</locationY>
-        <inputAssignments>
-            <field>RecordTypeId</field>
+    <recordLookups>
+        <name>Get_US_Team</name>
+        <label>Get US Team</label>
+        <locationX>2993</locationX>
+        <locationY>1535</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_on_US_Team</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ManagerId</field>
+            <operator>EqualTo</operator>
             <value>
-                <elementReference>Get_Archived_Record_Type.Id</elementReference>
+                <elementReference>$Setup.UserID__c.Richard__c</elementReference>
             </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
+        </filters>
+        <filters>
+            <field>Team__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SSM Back Watch U.S.</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_users_EU_Team</name>
+        <label>Get users EU Team</label>
+        <locationX>3345</locationX>
+        <locationY>1535</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_on_EU_Team</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ManagerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Setup.UserID__c.PA__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Team__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SSM Back Watch E.U.</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordUpdates>
         <name>Update_1st_case_Warning_Alert</name>
         <label>Update 1st case Warning Alert</label>
-        <locationX>1802</locationX>
-        <locationY>1008</locationY>
+        <locationX>1982</locationX>
+        <locationY>2903</locationY>
         <connector>
-            <targetReference>Already_limited_because_of_a_Sales_alert</targetReference>
+            <targetReference>Updated_alert_as_1st_Case</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -2593,10 +3999,10 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_2nd_case_or_more_Alert_Hand_Free</name>
         <label>Update 2nd case or more Alert - Hand Free</label>
-        <locationX>2330</locationX>
-        <locationY>1008</locationY>
+        <locationX>2510</locationX>
+        <locationY>2903</locationY>
         <connector>
-            <targetReference>Create_Exit_Process_draft</targetReference>
+            <targetReference>Updated_alert_as_2nd_Case_Failed</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -2641,10 +4047,10 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_2nd_case_or_more_Alert_Not_Hand_Free</name>
         <label>Update 2nd case or more Alert - Not Hand Free</label>
-        <locationX>2066</locationX>
-        <locationY>1008</locationY>
+        <locationX>2246</locationX>
+        <locationY>2903</locationY>
         <connector>
-            <targetReference>Already_limited_because_of_a_Sales_alert</targetReference>
+            <targetReference>Updated_alert_as_2nd_Case</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -2695,8 +4101,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_alert_record_with_limitation</name>
         <label>Update alert record with limitation</label>
-        <locationX>4530</locationX>
-        <locationY>1728</locationY>
+        <locationX>4754</locationX>
+        <locationY>3863</locationY>
         <inputAssignments>
             <field>AlertLimitation__c</field>
             <value>
@@ -2726,8 +4132,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_alert_record_with_team</name>
         <label>Update alert record with team</label>
-        <locationX>4794</locationX>
-        <locationY>2064</locationY>
+        <locationX>5018</locationX>
+        <locationY>4199</locationY>
         <inputAssignments>
             <field>BizDev__c</field>
             <value>
@@ -2751,10 +4157,10 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_Buyback_Alert</name>
         <label>Update Buyback Alert</label>
-        <locationX>5754</locationX>
-        <locationY>768</locationY>
+        <locationX>5762</locationX>
+        <locationY>2663</locationY>
         <connector>
-            <targetReference>Type_of_KPI</targetReference>
+            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -2793,8 +4199,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_merchant_limitation</name>
         <label>Update merchant limitation</label>
-        <locationX>1714</locationX>
-        <locationY>1584</locationY>
+        <locationX>1850</locationX>
+        <locationY>3839</locationY>
         <connector>
             <targetReference>Decision_on_recipient_id_list_empty</targetReference>
         </connector>
@@ -2823,8 +4229,8 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_merchant_limitation_Archive_info</name>
         <label>Update merchant limitation+ Archive info</label>
-        <locationX>1978</locationX>
-        <locationY>1704</locationY>
+        <locationX>2114</locationX>
+        <locationY>3959</locationY>
         <connector>
             <targetReference>Decision_on_recipient_id_list_empty</targetReference>
         </connector>
@@ -2865,10 +4271,10 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
     <recordUpdates>
         <name>Update_Sales_Alert</name>
         <label>Update Sales Alert</label>
-        <locationX>5490</locationX>
-        <locationY>768</locationY>
+        <locationX>5498</locationX>
+        <locationY>2663</locationY>
         <connector>
-            <targetReference>Type_of_KPI</targetReference>
+            <targetReference>Send_Notif_to_Merchant_Owner_MP_Creation</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -2899,23 +4305,13 @@ if( TEXT({!$Record.Business_Name__r.Owner.Team__c})= &apos;SSM Selfcare E.U.&apo
         <object>Alert__c</object>
     </recordUpdates>
     <start>
-        <locationX>5456</locationX>
+        <locationX>3308</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Decision_on_bypass_flow</targetReference>
         </connector>
         <object>Alert__c</object>
         <recordTriggerType>Create</recordTriggerType>
-        <scheduledPaths>
-            <name>X1_hour_later</name>
-            <connector>
-                <targetReference>Data_team_check</targetReference>
-            </connector>
-            <label>1 hour later</label>
-            <offsetNumber>1</offsetNumber>
-            <offsetUnit>Hours</offsetUnit>
-            <timeSource>RecordTriggerEvent</timeSource>
-        </scheduledPaths>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
