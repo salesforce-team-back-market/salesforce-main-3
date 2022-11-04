@@ -60,16 +60,28 @@ public class DeleteDuplicatedContactsBatch implements Database.Batchable<sObject
         }     
 
         try{
-            update casesToUpdate.values();
-            logs.addLog(LogService.LOG_TYPE.INFO, LogService.PROCESS.DUPLICATED_CONTACTS, casesToUpdate.keySet(), 'Cases contacts updated');
+            if(casesToUpdate.isEmpty() == false){
+                update casesToUpdate.values();
+                logs.addLog(LogService.LOG_TYPE.INFO, LogService.PROCESS.DUPLICATED_CONTACTS, casesToUpdate.keySet(), 'Cases contacts updated');
+            }
+
+            User[] portalUsers = [SELECT Id FROM User WHERE ContactId IN :contactsToDelete];
+            if(portalUsers.isEmpty() == false){
+                for(User u : portalUsers){
+                    u.IsActive = false;
+                }
+                update portalUsers;
+            }
 
             delete contactsToDelete;
             logs.addLog(LogService.LOG_TYPE.INFO, LogService.PROCESS.DUPLICATED_CONTACTS, new Set<Id>(), 'Duplicated contacts deleted');
 
-            for(Case c : casesToUpdate.values()){
-                c.ByPassVR__c = false;
+            if(casesToUpdate.isEmpty() == false){
+                for(Case c : casesToUpdate.values()){
+                    c.ByPassVR__c = false;
+                }
+                update casesToUpdate.values();
             }
-            update casesToUpdate.values();
         }catch(DmlException e){
             logs.addLog(LogService.LOG_TYPE.ERROR, LogService.PROCESS.DUPLICATED_CONTACTS, casesToUpdate.keySet(), e.getMessage());
         }
@@ -77,5 +89,7 @@ public class DeleteDuplicatedContactsBatch implements Database.Batchable<sObject
  
     public void finish(Database.BatchableContext BC){
         logs.addLog(LogService.LOG_TYPE.INFO, LogService.PROCESS.DUPLICATED_CONTACTS, new Set<Id>(), 'Process ended');
+
+        logs.publishLogs();
     }
  }
