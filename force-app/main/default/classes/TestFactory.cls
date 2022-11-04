@@ -2,7 +2,7 @@
  * @description       : Generic test class used to create data for unit tests
  * @author            : Martin Lezer
  * @group             : Tests
- * @last modified on  : 09-06-2022
+ * @last modified on  : 11-04-2022
  * @last modified by  : Martin Lezer
 **/
 @IsTest public class TestFactory {
@@ -18,6 +18,8 @@
     private List<Alert__c> alerts = new List<Alert__c>();
     private List<Targeted_Country__c> countries = new List<Targeted_Country__c>();
     private List<Case> cases = new List<Case>();
+    private List<Wallet__c> wallets = new List<Wallet__c>();
+    private List<Wallet_Invoice__c> walletInvoices = new List<Wallet_Invoice__c>();
     
     private Boolean buyback;
 
@@ -185,9 +187,10 @@
         );
     }
 
-    public Case getCase(Id accId){
+    public Case getCase(Id accId, Id contactId){
         return new Case(
             AccountId = accId,
+            ContactId = contactId,
             Stage__c = 'Draft',
             RecordTypeId = this.buyback ? Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(String.valueOf(CASE_RECORD_TYPE.Quality_Test_Buyback)).getRecordTypeId()
                                         : Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(String.valueOf(CASE_RECORD_TYPE.Quality_Test)).getRecordTypeId()
@@ -358,7 +361,7 @@
 
         for(Integer i = 0; i < this.accountsToInsert.size(); i++){
             for(Integer j = 0; j < nbRecordsByAccount; j++){
-                this.cases.add(this.getCase(accountsToInsert[i].Id));
+                this.cases.add(this.getCase(accountsToInsert[i].Id, contactsToInsert[i].Id));
             }
         }
         insert this.cases;
@@ -396,5 +399,70 @@
             }
             when else {}
         }
+    }
+
+    public TestFactory insertWallets(){
+        if(this.accountsToInsert.size() == 0){
+            throw new CustomException('You have to insert accounts first by using the insertAccounts method');
+        }
+
+        this.accountsToInsert = [SELECT Id, TECH_P_K__c FROM Account WHERE Id IN :this.accountsToInsert];
+
+        for(Integer i = 0; i < this.accountsToInsert.size(); i++){
+            this.wallets.add(this.getWallet(accountsToInsert[i].Id, accountsToInsert[i].TECH_P_K__c));
+        }
+        insert this.wallets;
+        return this;
+    }
+
+    public TestFactory insertWalletInvoices(){
+        if(this.wallets.size() == 0){
+            throw new CustomException('You have to insert wallets first by using the insertAccounts method');
+        }
+
+        for(Integer i = 0; i < this.wallets.size(); i++){
+            this.walletInvoices.add(this.getWalletInvoice(this.wallets[i].Id, 'Past', this.wallets[i].PK__c));
+        }
+        for(Integer i = 0; i < this.wallets.size(); i++){
+            this.walletInvoices.add(this.getWalletInvoice(this.wallets[i].Id, 'Coming', this.wallets[i].PK__c));
+        }
+        for(Integer i = 0; i < this.wallets.size(); i++){
+            this.walletInvoices.add(this.getWalletInvoice(this.wallets[i].Id, 'Future', this.wallets[i].PK__c));
+        }
+        insert this.walletInvoices;
+        return this;
+    }
+
+    public Wallet__c getWallet(Id accId, String pk){
+        return new Wallet__c(
+            All_wallets_snapshot__c = 10,
+            Contact_Rate__c = 10,
+            Currency__c = 'EUR',
+            Defective_Rate__c = 10,
+            Estimated_natural_deposit__c = 10,
+            GMV_under_warranty__c = 10,
+            PSP__c = 'ADYEN',
+            Merchant__c = accId,
+            Total_balance__c = 10,
+            Total_payable_balance__c = 10,
+            PK__c = pk,
+            External_Id__c = pk+'EUR'+'ADYEN'
+        );
+    }
+
+    public Wallet_Invoice__c getWalletInvoice(Id walletId, String type, String pk){
+        return new Wallet_Invoice__c(
+            Amount_paid__c = 10,
+            Deferred_payout__c = 10,
+            Currency__c = 'EUR',
+            Deferred_payout_increase_decrease__c = 10,
+            Future_refunds__c = 10,
+            Payable_balance__c = 10,
+            PSP__c = 'ADYEN',
+            Wallet__c = walletId,
+            Invoice_Type__c = type,
+            External_Id__c = pk+'EUR'+'ADYEN'+type,
+            PK__c = pk
+        );
     }
 }
