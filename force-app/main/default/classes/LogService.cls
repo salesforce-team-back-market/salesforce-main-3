@@ -2,7 +2,7 @@
  * @description       : Service handling logs as platform events sent to Datadog
  * @author            : Martin Lezer
  * @group             : Utils
- * @last modified on  : 09-12-2022
+ * @last modified on  : 11-04-2022
  * @last modified by  : Martin Lezer
 **/
 global class LogService {
@@ -21,7 +21,8 @@ global class LogService {
     public Enum PROCESS{
         BACK_OFFICE_CALLOUT,
         ACCOUNT_BIZDEV_CHANGED,
-        USER_MANAGER_CHANGED
+        USER_MANAGER_CHANGED,
+        DUPLICATED_CONTACTS
     }
 
     public LogService(String currentClassName){
