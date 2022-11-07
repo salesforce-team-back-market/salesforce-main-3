@@ -11,36 +11,16 @@
     <valueSet>
         <restricted>true</restricted>
         <valueSetDefinition>
-            <sorted>false</sorted>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Action plan with KPI OK on a 2-week cohort (OTDR Only)</fullName>
+                <default>false</default>
+                <label>Action plan with KPI OK on a 2-week cohort (OTDR Only)</label>
+            </value>
             <value>
                 <fullName>BM fault (e.g. catalog, service, Parcel Lab, ...)</fullName>
                 <default>false</default>
                 <label>BM fault (e.g. catalog, service, Parcel Lab, ...)</label>
-            </value>
-            <value>
-                <fullName>Event external to BM / merchant / 3rd party provider (Storm, Brexit, ...)</fullName>
-                <default>false</default>
-                <label>Event external to BM / merchant / 3rd party provider (Storm, Brexit, ...)</label>
-            </value>
-            <value>
-                <fullName>Action plan with KPI OK on a 2-week cohort</fullName>
-                <default>false</default>
-                <label>Action plan with KPI OK on a 2-week cohort</label>
-            </value>
-            <value>
-                <fullName>Defective OK at the model or category level (on 100+ orders)</fullName>
-                <default>false</default>
-                <label>Defective OK at the model or category level (on 100+ orders)</label>
-            </value>
-            <value>
-                <fullName>Safety / Legal issue already properly handled by Merchant</fullName>
-                <default>false</default>
-                <label>Safety / Legal issue already properly handled by Merchant</label>
-            </value>
-            <value>
-                <fullName>GateKeeper batch Certification</fullName>
-                <default>false</default>
-                <label>GateKeeper batch Certification</label>
             </value>
             <value>
                 <fullName>Business Arbitration</fullName>
@@ -48,9 +28,24 @@
                 <label>Business Arbitration</label>
             </value>
             <value>
-                <fullName>Service subscription</fullName>
+                <fullName>Defective OK at the model or category level (on 100+ orders)</fullName>
                 <default>false</default>
-                <label>Service subscription</label>
+                <label>Defective OK at the model or category level (on 100+ orders)</label>
+            </value>
+            <value>
+                <fullName>Duplicate MP</fullName>
+                <default>false</default>
+                <label>Duplicate MP</label>
+            </value>
+            <value>
+                <fullName>Event external to BM / merchant / 3rd party provider (Storm, Brexit, ...)</fullName>
+                <default>false</default>
+                <label>Event external to BM / merchant / 3rd party provider (Storm, Brexit, ...)</label>
+            </value>
+            <value>
+                <fullName>GateKeeper batch Certification</fullName>
+                <default>false</default>
+                <label>GateKeeper batch Certification</label>
             </value>
             <value>
                 <fullName>KPI OK 7 days in a row</fullName>
@@ -58,9 +53,9 @@
                 <label>KPI OK 7 days in a row</label>
             </value>
             <value>
-                <fullName>Rate better than the threshold at the ETA</fullName>
+                <fullName>Long-term exception</fullName>
                 <default>false</default>
-                <label>Rate better than the threshold at the ETA</label>
+                <label>Long-term exception</label>
             </value>
             <value>
                 <fullName>Not enough cases at the ETA</fullName>
@@ -68,14 +63,19 @@
                 <label>Not enough cases at the ETA</label>
             </value>
             <value>
-                <fullName>Long-term exception</fullName>
+                <fullName>Rate better than the threshold at the ETA</fullName>
                 <default>false</default>
-                <label>Long-term exception</label>
+                <label>Rate better than the threshold at the ETA</label>
             </value>
             <value>
-                <fullName>Duplicate MP</fullName>
+                <fullName>Safety / Legal issue already properly handled by Merchant</fullName>
                 <default>false</default>
-                <label>Duplicate MP</label>
+                <label>Safety / Legal issue already properly handled by Merchant</label>
+            </value>
+            <value>
+                <fullName>Service subscription</fullName>
+                <default>false</default>
+                <label>Service subscription</label>
             </value>
         </valueSetDefinition>
     </valueSet>

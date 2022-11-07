@@ -298,6 +298,59 @@
                 <identifier>flexipage_tabset</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>expiryDate</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>fieldAPI</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>message</name>
+                    <value>Please fill in Action Plan</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sound</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Action Plan Empty</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>toastDuration</name>
+                    <value>20</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>toastMode</name>
+                    <value>Dismissible</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>toastType</name>
+                    <value>Error</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>type</name>
+                    <value>Modal</value>
+                </componentInstanceProperties>
+                <componentName>S360_LN:PopUp</componentName>
+                <identifier>S360_LN_PopUp</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 AND 2</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Action_plan_comment__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>NULL</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Stage__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Saved</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
