@@ -1012,7 +1012,7 @@
             </conditions>
             <conditions>
                 <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
+                <operator>LessThanOrEqualTo</operator>
                 <rightValue>
                     <elementReference>Loop_on_alerts.Rate_Critical_threshold__c</elementReference>
                 </rightValue>
@@ -1046,10 +1046,10 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <leftValueReference>Loop_on_alerts.OTDR_Selfcare__c</leftValueReference>
                 <operator>NotEqualTo</operator>
                 <rightValue>
-                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -1104,10 +1104,10 @@
             <name>No_But_MP_Critical_for_On_Time_Delivery_Rate_Selfcare</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <leftValueReference>Loop_on_alerts.OTDR_Selfcare__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <conditions>
@@ -1161,7 +1161,7 @@
             </conditions>
             <conditions>
                 <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
+                <operator>LessThanOrEqualTo</operator>
                 <rightValue>
                     <elementReference>Current_Alert.Rate_Critical_threshold__c</elementReference>
                 </rightValue>
@@ -1368,7 +1368,7 @@
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
-                <operator>LessThan</operator>
+                <operator>GreaterThan</operator>
                 <rightValue>
                     <elementReference>Loop_on_alerts.Objective_to_reach__c</elementReference>
                 </rightValue>
@@ -1406,10 +1406,10 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <leftValueReference>Loop_on_alerts.OTDR_Selfcare__c</leftValueReference>
                 <operator>NotEqualTo</operator>
                 <rightValue>
-                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -1458,10 +1458,10 @@
             <name>On_Time_Delivery_Rate_Selfcare_no_check_cases</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Loop_on_alerts.Issue_KPI__c</leftValueReference>
+                <leftValueReference>Loop_on_alerts.OTDR_Selfcare__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>On Time Delivery Rate Self-care</stringValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>

@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Objective_to_reach__c</fullName>
     <externalId>false</externalId>
-    <formula>If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; (ISPICKVAL(Category__c,&quot;MacBook&quot;) || ISPICKVAL(Category__c,&quot;Tablets&quot;)  || ISPICKVAL(Category__c,&quot;Smartphone&quot;))), 0, 
+    <formula>If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; (ISPICKVAL(Category__c,&quot;MacBook&quot;) || ISPICKVAL(Category__c,&quot;Tablets&quot;) || ISPICKVAL(Category__c,&quot;Smartphone&quot;))), 0,
 If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;E_U&apos;),5.50,
 If((ISPICKVAL(Issue_KPI__c,&quot;Defective Rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;U_S&apos;),6.50,
 if((ISPICKVAL(Issue_KPI__c,&quot;Wrong Product Rate&quot;)),4.00,
@@ -29,7 +29,13 @@ if((ISPICKVAL(Issue_KPI__c,&quot;Untracked Orders Rate&quot;)),6.00,
 if((ISPICKVAL(Issue_KPI__c,&quot;Payment issues&quot;)),0.00,
 if((ISPICKVAL(Issue_KPI__c,&quot;Policy Violation&quot;)),0.00,
 if( NOT(ISBLANK(Adapted_objective_Buyback__c)) ,Adapted_objective_Buyback__c,
-0)))))))))))))))))))))))))))</formula>
+
+If(ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate&quot;),90,
+
+If((ISPICKVAL(Issue_KPI__c,&quot;Perfect Order Rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;E_U&apos;),91,
+If((ISPICKVAL(Issue_KPI__c,&quot;Perfect Order Rate&quot;) &amp;&amp; Business_Name__r.RecordType.DeveloperName = &apos;U_S&apos;),90.5,
+
+0))))))))))))))))))))))))))))))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Rate - Objective to reach</label>
     <precision>18</precision>

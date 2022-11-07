@@ -8,7 +8,7 @@ If
 
 
 if(ISPICKVAL(Issue_KPI__c,&quot;Perfect Order Rate&quot;),20,
-if(OR(ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate Self-care&quot;), ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate&quot;)),17,
+if(ISPICKVAL(Issue_KPI__c,&quot;On Time Delivery Rate&quot;),17,
 
 
 if(ISPICKVAL(Issue_KPI__c,&quot;CSAT&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Cancellation Rate&quot;)|| ISPICKVAL(Issue_KPI__c,&quot;Esthetic Rate&quot;),8,
