@@ -99,6 +99,14 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Improve Quality of parcel%2Faccessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improve Refurbishment processes</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Improve catalog matching</fullName>
             <default>false</default>
         </values>
@@ -195,6 +203,14 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Remind the Quality Charter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review Quality control tests</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Review product selling destination</fullName>
             <default>false</default>
         </values>
@@ -251,7 +267,23 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Use Agnosys training MacBook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use Agnosys training iPhones</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Use BackCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use BackCoach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use BackParts</fullName>
             <default>false</default>
         </values>
         <values>
@@ -718,7 +750,7 @@
     <picklistValues>
         <picklist>Saved_reason__c</picklist>
         <values>
-            <fullName>Action plan with KPI OK on a 2-week cohort</fullName>
+            <fullName>Action plan with KPI OK on a 2-week cohort %28OTDR Only%29</fullName>
             <default>false</default>
         </values>
         <values>
@@ -916,6 +948,29 @@
         </values>
         <values>
             <fullName>Wrong Product Rate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TECH_New_Stage_2__c</picklist>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Last chance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring Period</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saved</fullName>
             <default>false</default>
         </values>
     </picklistValues>
