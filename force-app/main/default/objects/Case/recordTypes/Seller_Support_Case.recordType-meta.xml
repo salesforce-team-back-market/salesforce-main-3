@@ -919,6 +919,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Update on a Carrier investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Vanishing Deals</fullName>
             <default>false</default>
         </values>
