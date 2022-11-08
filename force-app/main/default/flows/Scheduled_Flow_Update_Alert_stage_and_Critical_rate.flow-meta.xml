@@ -3,7 +3,7 @@
     <actionCalls>
         <name>Copy_10_of_Send_log</name>
         <label>Copy 10 of Send log</label>
-        <locationX>3097</locationX>
+        <locationX>3185</locationX>
         <locationY>1116</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -47,7 +47,7 @@
         <name>Copy_11_of_Send_log</name>
         <label>Copy 11 of Send log</label>
         <locationX>809</locationX>
-        <locationY>2976</locationY>
+        <locationY>3276</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -88,7 +88,7 @@
     <actionCalls>
         <name>Copy_1_of_Copy_10_of_Send_log</name>
         <label>Copy 1 of Copy 10 of Send log</label>
-        <locationX>3361</locationX>
+        <locationX>3449</locationX>
         <locationY>1116</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -132,7 +132,7 @@
         <name>Copy_1_of_Copy_11_of_Send_log</name>
         <label>Copy 1 of Copy 11 of Send log</label>
         <locationX>809</locationX>
-        <locationY>3216</locationY>
+        <locationY>3516</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -171,10 +171,53 @@
         </inputParameters>
     </actionCalls>
     <actionCalls>
+        <name>Copy_1_of_Copy_1_of_Copy_10_of_Send_log</name>
+        <label>Copy 1 of Copy 1 of Copy 10 of Send log</label>
+        <locationX>3713</locationX>
+        <locationY>1116</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_Last_Chance_values_to_alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Scheduled Flow - Update Alert stage and Critical rate</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Alerts to update critical rate Buyback - LC</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
         <name>Copy_1_of_Copy_1_of_Copy_11_of_Send_log</name>
         <label>Copy 1 of Copy 1 of Copy 11 of Send log</label>
         <locationX>1458</locationX>
-        <locationY>3216</locationY>
+        <locationY>3516</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -255,7 +298,7 @@
     <actionCalls>
         <name>Copy_1_of_Send_log</name>
         <label>Copy 1 of Send log</label>
-        <locationX>1469</locationX>
+        <locationX>1491</locationX>
         <locationY>1116</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -297,8 +340,8 @@
     <actionCalls>
         <name>Copy_2_of_Send_log</name>
         <label>Copy 2 of Send log</label>
-        <locationX>1469</locationX>
-        <locationY>2304</locationY>
+        <locationX>1491</locationX>
+        <locationY>2604</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -381,7 +424,7 @@
     <actionCalls>
         <name>Copy_4_of_Send_log</name>
         <label>Copy 4 of Send log</label>
-        <locationX>2041</locationX>
+        <locationX>2085</locationX>
         <locationY>1356</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -423,8 +466,8 @@
     <actionCalls>
         <name>Copy_5_of_Send_log</name>
         <label>Copy 5 of Send log</label>
-        <locationX>1777</locationX>
-        <locationY>1596</locationY>
+        <locationX>2085</locationX>
+        <locationY>2208</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -465,7 +508,7 @@
     <actionCalls>
         <name>Copy_6_of_Send_log</name>
         <label>Copy 6 of Send log</label>
-        <locationX>2305</locationX>
+        <locationX>2393</locationX>
         <locationY>1596</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -507,7 +550,7 @@
     <actionCalls>
         <name>Copy_7_of_Send_log</name>
         <label>Copy 7 of Send log</label>
-        <locationX>2041</locationX>
+        <locationX>2129</locationX>
         <locationY>1836</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -550,7 +593,7 @@
     <actionCalls>
         <name>Copy_8_of_Send_log</name>
         <label>Copy 8 of Send log</label>
-        <locationX>2305</locationX>
+        <locationX>2393</locationX>
         <locationY>1836</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -593,7 +636,7 @@
     <actionCalls>
         <name>Copy_9_of_Send_log</name>
         <label>Copy 9 of Send log</label>
-        <locationX>2833</locationX>
+        <locationX>2921</locationX>
         <locationY>1116</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -678,7 +721,7 @@
         <name>Send_notif</name>
         <label>Send notif</label>
         <locationX>424</locationX>
-        <locationY>4248</locationY>
+        <locationY>4548</locationY>
         <actionName>customNotificationAction</actionName>
         <actionType>customNotificationAction</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -718,7 +761,7 @@
         <name>Assign_BizDev_to_recipient_List</name>
         <label>Assign BizDev to recipient List</label>
         <locationX>490</locationX>
-        <locationY>3816</locationY>
+        <locationY>4116</locationY>
         <assignmentItems>
             <assignToReference>Notification_Recipient_Ids</assignToReference>
             <operator>Add</operator>
@@ -734,7 +777,7 @@
         <name>Assign_BizDev_to_recipient_List_0</name>
         <label>Assign BizDev to recipient List</label>
         <locationX>138</locationX>
-        <locationY>3816</locationY>
+        <locationY>4116</locationY>
         <assignmentItems>
             <assignToReference>Notification_Recipient_Ids</assignToReference>
             <operator>Add</operator>
@@ -749,8 +792,8 @@
     <assignments>
         <name>Assign_current_alert_to_LIST</name>
         <label>Assign current alert to LIST</label>
-        <locationX>2547</locationX>
-        <locationY>2760</locationY>
+        <locationX>2734</locationX>
+        <locationY>3060</locationY>
         <assignmentItems>
             <assignToReference>Alerts_List_To_Update</assignToReference>
             <operator>Add</operator>
@@ -803,7 +846,7 @@
     <assignments>
         <name>Assign_Last_Chance_values_to_alert</name>
         <label>Assign Last Chance values to alert</label>
-        <locationX>2833</locationX>
+        <locationX>2921</locationX>
         <locationY>1236</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Has_entered_Last_chance_on__c</assignToReference>
@@ -847,7 +890,7 @@
     <assignments>
         <name>Assign_loop_iteration_to_current_alert</name>
         <label>Assign loop iteration to current alert</label>
-        <locationX>2547</locationX>
+        <locationX>2734</locationX>
         <locationY>876</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert</assignToReference>
@@ -864,7 +907,7 @@
         <name>Assign_Merchant_Owner_to_Recipient_Ids</name>
         <label>Assign Merchant Owner to Recipient Ids</label>
         <locationX>666</locationX>
-        <locationY>3696</locationY>
+        <locationY>3996</locationY>
         <assignmentItems>
             <assignToReference>Notification_Recipient_Ids</assignToReference>
             <operator>Add</operator>
@@ -879,8 +922,8 @@
     <assignments>
         <name>Assign_Saved_Reason_Not_enough_cases</name>
         <label>Assign Saved Reason - Not enough cases</label>
-        <locationX>1469</locationX>
-        <locationY>2424</locationY>
+        <locationX>1491</locationX>
+        <locationY>2724</locationY>
         <assignmentItems>
             <assignToReference>Saved_Reason</assignToReference>
             <operator>Assign</operator>
@@ -895,8 +938,8 @@
     <assignments>
         <name>Assign_Saved_Reason_Rate_better_than_threshold</name>
         <label>Assign Saved Reason - Rate better than threshold</label>
-        <locationX>1777</locationX>
-        <locationY>1716</locationY>
+        <locationX>2085</locationX>
+        <locationY>2328</locationY>
         <assignmentItems>
             <assignToReference>Saved_Reason</assignToReference>
             <operator>Assign</operator>
@@ -912,8 +955,8 @@
     <assignments>
         <name>Assign_Saved_values_to_alert</name>
         <label>Assign Saved values to alert</label>
-        <locationX>1469</locationX>
-        <locationY>2544</locationY>
+        <locationX>1491</locationX>
+        <locationY>2844</locationY>
         <assignmentItems>
             <assignToReference>Current_Alert.Has_been_saved_on__c</assignToReference>
             <operator>Assign</operator>
@@ -950,7 +993,7 @@
     <decisions>
         <name>Decision_ETA_equal_today</name>
         <label>Decision ETA equal today</label>
-        <locationX>2547</locationX>
+        <locationX>2734</locationX>
         <locationY>996</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
@@ -1171,12 +1214,76 @@
             </connector>
             <label>No - But MP Critical for On Time Delivery Rate Selfcare</label>
         </rules>
+        <rules>
+            <name>No_But_MP_Critical_for_Buyback</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Is_Buyback__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.ETA__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Monitoring Period</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Flow.CurrentDate</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>DateForCritical</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Cases_Critical_threshold__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.CreatedDate</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Actual_Number_of_cases__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Loop_on_alerts.Cases_Critical_threshold__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>Loop_on_alerts.Rate_Critical_threshold__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_1_of_Copy_10_of_Send_log</targetReference>
+            </connector>
+            <label>No - But MP Critical for Buyback</label>
+        </rules>
     </decisions>
     <decisions>
         <name>Decision_Is_notification_needed</name>
         <label>Decision Is notification needed and merchant owner no empty</label>
         <locationX>809</locationX>
-        <locationY>3336</locationY>
+        <locationY>3636</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes_notification_is_needed</name>
@@ -1234,7 +1341,7 @@
         <name>Decision_on_Active_user</name>
         <label>Decision on Active user</label>
         <locationX>798</locationX>
-        <locationY>3576</locationY>
+        <locationY>3876</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Merchant_Owner_is_active</name>
@@ -1256,7 +1363,7 @@
         <name>Decision_on_Merchant_Owner_Team</name>
         <label>Decision on Merchant Owner Team</label>
         <locationX>424</locationX>
-        <locationY>3456</locationY>
+        <locationY>3756</locationY>
         <defaultConnector>
             <targetReference>Decision_on_Active_user</targetReference>
         </defaultConnector>
@@ -1316,7 +1423,7 @@
     <decisions>
         <name>Decision_Stage</name>
         <label>Decision - Stage</label>
-        <locationX>2305</locationX>
+        <locationX>2393</locationX>
         <locationY>1716</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
@@ -1357,14 +1464,14 @@
     <decisions>
         <name>Decision_Test_Actual_rate</name>
         <label>Decision Test Actual rate</label>
-        <locationX>2041</locationX>
+        <locationX>2085</locationX>
         <locationY>1476</locationY>
         <defaultConnector>
             <targetReference>Copy_6_of_Send_log</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Objective isn&apos;t reached</defaultConnectorLabel>
         <rules>
-            <name>Objective_reached_for_other_KPIs</name>
+            <name>Objective_reached_for_other_KPIs_than_Buyback</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
@@ -1373,16 +1480,45 @@
                     <elementReference>Loop_on_alerts.Objective_to_reach__c</elementReference>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Is_Buyback__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Copy_5_of_Send_log</targetReference>
             </connector>
-            <label>Objective reached for other KPIs</label>
+            <label>Objective reached for other KPIs than Buyback</label>
+        </rules>
+        <rules>
+            <name>Objective_reached_for_Buyback</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Is_Buyback__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_alerts.Actual_Rate__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>Loop_on_alerts.Objective_to_reach__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_5_of_Send_log</targetReference>
+            </connector>
+            <label>Objective reached for Buyback</label>
         </rules>
     </decisions>
     <decisions>
         <name>Decision_test_number_of_case</name>
         <label>Decision test number of case</label>
-        <locationX>1469</locationX>
+        <locationX>1491</locationX>
         <locationY>1236</locationY>
         <defaultConnector>
             <targetReference>Copy_4_of_Send_log</targetReference>
@@ -1838,7 +1974,7 @@
         <name>Loop_on_EU_Team</name>
         <label>Loop on EU Team</label>
         <locationX>402</locationX>
-        <locationY>3696</locationY>
+        <locationY>3996</locationY>
         <collectionReference>Get_users_EU_Team</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1852,7 +1988,7 @@
         <name>Loop_on_US_Team</name>
         <label>Loop on US Team</label>
         <locationX>50</locationX>
-        <locationY>3696</locationY>
+        <locationY>3996</locationY>
         <collectionReference>Get_users_US_Team</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -2013,7 +2149,7 @@
         <name>Get_notification_id</name>
         <label>Get notification id</label>
         <locationX>424</locationX>
-        <locationY>4128</locationY>
+        <locationY>4428</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Send_notif</targetReference>
@@ -2034,7 +2170,7 @@
         <name>Get_users_EU_Team</name>
         <label>Get users EU Team</label>
         <locationX>402</locationX>
-        <locationY>3576</locationY>
+        <locationY>3876</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_EU_Team</targetReference>
@@ -2069,7 +2205,7 @@
         <name>Get_users_US_Team</name>
         <label>Get users US Team</label>
         <locationX>50</locationX>
-        <locationY>3576</locationY>
+        <locationY>3876</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Loop_on_US_Team</targetReference>
@@ -2104,7 +2240,7 @@
         <name>Update_list_of_alerts</name>
         <label>Update list of alerts</label>
         <locationX>809</locationX>
-        <locationY>3096</locationY>
+        <locationY>3396</locationY>
         <connector>
             <targetReference>Copy_1_of_Copy_11_of_Send_log</targetReference>
         </connector>

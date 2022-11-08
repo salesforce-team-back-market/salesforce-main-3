@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
+        <name>Copy_1_of_Copy_5_of_Send_log</name>
+        <label>Copy 1 of Copy 5 of Send log</label>
+        <locationX>1634</locationX>
+        <locationY>1236</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_1_to_Count_Early_Release</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>monitoring-period</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Schedule Flow - Early Release MP process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Rate below objective buyback</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
         <name>Copy_1_of_Send_log</name>
         <label>Copy 1 of Send log</label>
         <locationX>842</locationX>
@@ -173,7 +216,7 @@
     <actionCalls>
         <name>Copy_5_of_Send_log</name>
         <label>Copy 5 of Send log</label>
-        <locationX>1634</locationX>
+        <locationX>1898</locationX>
         <locationY>1236</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -297,7 +340,7 @@
     <actionCalls>
         <name>Copy_8_of_Send_log</name>
         <label>Copy 8 of Send log</label>
-        <locationX>992</locationX>
+        <locationX>1190</locationX>
         <locationY>2340</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -395,7 +438,7 @@
     <assignments>
         <name>Assign_Count_Early_Release_to_variable</name>
         <label>Assign Count Early Release to variable</label>
-        <locationX>908</locationX>
+        <locationX>974</locationX>
         <locationY>876</locationY>
         <assignmentItems>
             <assignToReference>Count_Early_Release</assignToReference>
@@ -411,7 +454,7 @@
     <assignments>
         <name>Assign_current_alert_to_list_for_update</name>
         <label>Assign current alert to list for update</label>
-        <locationX>908</locationX>
+        <locationX>974</locationX>
         <locationY>1788</locationY>
         <assignmentItems>
             <assignToReference>List_Alert_To_Update</assignToReference>
@@ -515,7 +558,7 @@
     <decisions>
         <name>Decision_Don_t_run_for_Selfcare</name>
         <label>Decision - Don&apos;t run for Selfcare</label>
-        <locationX>523</locationX>
+        <locationX>556</locationX>
         <locationY>756</locationY>
         <defaultConnector>
             <targetReference>Assign_Count_Early_Release_to_variable</targetReference>
@@ -589,7 +632,7 @@
     <decisions>
         <name>Decision_on_number_of_alert</name>
         <label>Is there any alert</label>
-        <locationX>653</locationX>
+        <locationX>752</locationX>
         <locationY>396</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -611,7 +654,7 @@
     <decisions>
         <name>Decision_On_number_of_cases</name>
         <label>Decision - On number of cases</label>
-        <locationX>908</locationX>
+        <locationX>974</locationX>
         <locationY>996</locationY>
         <defaultConnector>
             <targetReference>Decision_On_rate</targetReference>
@@ -665,7 +708,7 @@
     <decisions>
         <name>Decision_On_rate</name>
         <label>Decision - On rate</label>
-        <locationX>1370</locationX>
+        <locationX>1502</locationX>
         <locationY>1116</locationY>
         <defaultConnector>
             <targetReference>Copy_5_of_Send_log</targetReference>
@@ -688,10 +731,17 @@
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Is_Buyback__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Copy_3_of_Send_log</targetReference>
             </connector>
-            <label>Rate - Below objective - Not OTDR selfcare</label>
+            <label>Rate - Above objective - Not OTDR selfcare</label>
         </rules>
         <rules>
             <name>Rate_Below_Objective_For_On_Time_Delivery_Rate_Selfcare</name>
@@ -713,7 +763,29 @@
             <connector>
                 <targetReference>Copy_4_of_Send_log</targetReference>
             </connector>
-            <label>Rate - Below Objective - For On Time Delivery Rate Selfcare</label>
+            <label>Rate - Above Objective - For On Time Delivery Rate Selfcare</label>
+        </rules>
+        <rules>
+            <name>Rate_Above_objective_Buyback</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Is_Buyback__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_on_on_going_alerts.Actual_Rate__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>Loop_on_on_going_alerts.Objective_to_reach__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_5_of_Send_log</targetReference>
+            </connector>
+            <label>Rate - Below objective - Buyback</label>
         </rules>
     </decisions>
     <description>SFT-310 - add filter on account query</description>
@@ -756,7 +828,7 @@
         <description>with ETA in the future</description>
         <name>Get_all_MP_and_LC_alerts_for_specified_KPIs</name>
         <label>Get all MP and LC alerts for specified KPIs</label>
-        <locationX>653</locationX>
+        <locationX>752</locationX>
         <locationY>276</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -879,7 +951,7 @@
         <inputReference>List_Alert_To_Update</inputReference>
     </recordUpdates>
     <start>
-        <locationX>527</locationX>
+        <locationX>626</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_all_MP_and_LC_alerts_for_specified_KPIs</targetReference>
