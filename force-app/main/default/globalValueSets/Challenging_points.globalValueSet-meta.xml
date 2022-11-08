@@ -525,6 +525,11 @@
         <default>false</default>
         <label>Billing and Cost</label>
     </customValue>
+    <customValue>
+        <fullName>Update on a Carrier investigation</fullName>
+        <default>false</default>
+        <label>Update on a Carrier investigation</label>
+    </customValue>
     <description>Allow to qualify the impediment that prevent the Merchant to perform.</description>
     <masterLabel>Challenging points</masterLabel>
     <sorted>false</sorted>
