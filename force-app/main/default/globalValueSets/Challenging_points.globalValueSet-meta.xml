@@ -520,6 +520,11 @@
         <default>false</default>
         <label>Email</label>
     </customValue>
+    <customValue>
+        <fullName>Billing and Cost</fullName>
+        <default>false</default>
+        <label>Billing and Cost</label>
+    </customValue>
     <description>Allow to qualify the impediment that prevent the Merchant to perform.</description>
     <masterLabel>Challenging points</masterLabel>
     <sorted>false</sorted>
