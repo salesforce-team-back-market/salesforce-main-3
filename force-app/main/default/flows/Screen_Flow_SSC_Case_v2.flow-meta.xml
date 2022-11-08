@@ -1534,14 +1534,14 @@
             <assignToReference>caseToCreate.Description</assignToReference>
             <operator>Add</operator>
             <value>
-                <stringValue>: </stringValue>
+                <stringValue> URL: </stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>caseToCreate.Description</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>Text_Wrong_Price_URL</elementReference>
+                <elementReference>Input_Wrong_Price_URL.value</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -3130,7 +3130,7 @@
             <label>FR</label>
         </rules>
     </decisions>
-    <description>SFT-531 Included Logs and new description to store wrong price new URL + SFT-511 Include BackShip - Billing &amp; Cost</description>
+    <description>SFT-531 Included Logs and new description to store wrong price new URL + SFT-511 Include BackShip - Billing &amp; Cost/ URL Screen Component</description>
     <dynamicChoiceSets>
         <name>carrier</name>
         <dataType>Picklist</dataType>
@@ -4032,11 +4032,36 @@ IF(NOT(ISNULL({!Description_2})),&apos;Description_2&apos;,&apos; &apos;))</expr
             </visibilityRule>
         </fields>
         <fields>
-            <name>Text_Wrong_Price_URL</name>
-            <dataType>String</dataType>
-            <fieldText>Please share the URL where you found the new price in the description field below</fieldText>
-            <fieldType>InputField</fieldType>
+            <name>Input_Wrong_Price_URL</name>
+            <extensionName>flowruntime:url</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Please share the URL where you found the new price in the description field below</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>disabled</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>readonly</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
