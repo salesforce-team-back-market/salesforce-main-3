@@ -393,6 +393,13 @@
                     <stringValue>Out Of Office</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.SuppliedEmail</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>accounting@cubyn.com</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Get_Junk_Spam_queue</targetReference>
             </connector>
@@ -458,7 +465,7 @@
         </rules>
         <rules>
             <name>SSC_Junk_Case_Origin</name>
-            <conditionLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9)</conditionLogic>
+            <conditionLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10)</conditionLogic>
             <conditions>
                 <leftValueReference>$Record__Prior.Id</leftValueReference>
                 <operator>IsNull</operator>
@@ -520,6 +527,13 @@
                 <operator>EqualTo</operator>
                 <rightValue>
                     <elementReference>$Setup.CaseRecordType__c.Buyback_only_available_for_EU_sellers__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Merchant_Claim</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -696,8 +710,8 @@
             <label>BuyBack Bill Process V2 - Chargeback Added</label>
         </rules>
     </decisions>
-    <description>Decision element - Supplied email</description>
-    <environments>Default</environments>
+    <description>Decision element - Supplied email
+Junk/spam SSC - accounting@cubyn.com</description>
     <formulas>
         <name>BuyBackBillProcessRecordType</name>
         <dataType>String</dataType>
