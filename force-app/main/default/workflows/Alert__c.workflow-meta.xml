@@ -69,4 +69,24 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_ETA_for_test</fullName>
+        <field>ETA_for_test__c</field>
+        <formula>TECH_New_ETA__c</formula>
+        <name>Update ETA for test</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Limitation</fullName>
+        <field>AlertLimitation__c</field>
+        <formula>TECH_New_Alert_Limitation_1__c</formula>
+        <name>Update Limitation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
 </Workflow>
