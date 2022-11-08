@@ -304,6 +304,10 @@
             <valueName>Billing and Cost</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>Request support related to a service</controllingFieldValue>
+            <valueName>Update on a Carrier investigation</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Request support with logistics</controllingFieldValue>
             <valueName>Parcel not picked-up</valueName>
         </valueSettings>
