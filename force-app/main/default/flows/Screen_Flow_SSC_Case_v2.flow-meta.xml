@@ -4693,7 +4693,7 @@ IF(NOT(ISNULL({!Description_2})),&apos;Description_2&apos;,&apos; &apos;))</expr
             <targetReference>Get_current_user</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>accountId</name>
         <dataType>String</dataType>
