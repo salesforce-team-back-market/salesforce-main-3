@@ -375,8 +375,8 @@
             <label>Limit isn&apos;t reached</label>
         </rules>
     </decisions>
-    <description>SFT-388 - Delete MP sales limitation before LC and split Buyback templates</description>
-    <environments>Default</environments>
+    <description>SFT-388 - Delete MP sales limitation before LC and split Buyback templates
+SFS - 606 - Quality Contact &gt; Main Contact</description>
     <formulas>
         <name>BizDev_Email</name>
         <dataType>String</dataType>
@@ -643,6 +643,8 @@ if(ISPICKVAL({!Get_smallest_alert.Issue_KPI__c},&quot;Invoice Compliance Audit&q
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>Contact</object>
+        <sortField>Main_Contact__c</sortField>
+        <sortOrder>Desc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
