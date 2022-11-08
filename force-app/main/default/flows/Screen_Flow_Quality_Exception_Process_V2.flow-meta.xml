@@ -3,8 +3,8 @@
     <actionCalls>
         <name>Submit_for_Approval_Buyback_US</name>
         <label>Submit for Approval Buyback US</label>
-        <locationX>842</locationX>
-        <locationY>758</locationY>
+        <locationX>1106</locationX>
+        <locationY>878</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -25,8 +25,8 @@
     <actionCalls>
         <name>Submit_for_Approval_EU</name>
         <label>Submit for Approval EU</label>
-        <locationX>50</locationX>
-        <locationY>638</locationY>
+        <locationX>314</locationX>
+        <locationY>758</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -47,8 +47,8 @@
     <actionCalls>
         <name>Submit_for_Approval_EU_Buyback</name>
         <label>Submit for Approval EU Buyback</label>
-        <locationX>314</locationX>
-        <locationY>758</locationY>
+        <locationX>578</locationX>
+        <locationY>878</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -69,8 +69,8 @@
     <actionCalls>
         <name>Submit_for_Approval_US</name>
         <label>Submit for Approval US</label>
-        <locationX>578</locationX>
-        <locationY>638</locationY>
+        <locationX>842</locationX>
+        <locationY>758</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -268,8 +268,8 @@
     <decisions>
         <name>Alert_Approval_Process</name>
         <label>Alert Approval Process</label>
-        <locationX>578</locationX>
-        <locationY>518</locationY>
+        <locationX>842</locationX>
+        <locationY>638</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Alert_EU</name>
@@ -290,9 +290,9 @@
             </conditions>
             <conditions>
                 <leftValueReference>Get_Alert.Is_Buyback__c</leftValueReference>
-                <operator>EqualTo</operator>
+                <operator>IsNull</operator>
                 <rightValue>
-                    <booleanValue>false</booleanValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -348,9 +348,9 @@
             </conditions>
             <conditions>
                 <leftValueReference>Get_Buyback_Alerts_US_GA.Is_Buyback__c</leftValueReference>
-                <operator>EqualTo</operator>
+                <operator>IsNull</operator>
                 <rightValue>
-                    <booleanValue>false</booleanValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -388,12 +388,69 @@
             <label>Alert Buyback US&amp;GA</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Is_Action_plan_filled_on_Alert_Record</name>
+        <label>Is Action plan filled on Alert Record?</label>
+        <locationX>446</locationX>
+        <locationY>398</locationY>
+        <defaultConnector>
+            <targetReference>Update_Comments_Field</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes</defaultConnectorLabel>
+        <rules>
+            <name>No</name>
+            <conditionLogic>1 AND (2 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Saved_Reason</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <elementReference>ActionplanwithKPIOKona2weekcohort</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Alert.Action_plan_comment__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Alert.Action_Plan_s_pushed__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <description>Improvements</description>
+    <dynamicChoiceSets>
+        <name>ActionPlanPushed</name>
+        <dataType>Multipicklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Action_Plan_s_pushed__c</picklistField>
+        <picklistObject>Alert__c</picklistObject>
+        <sortOrder>Asc</sortOrder>
+    </dynamicChoiceSets>
     <dynamicChoiceSets>
         <name>Issue_KPI</name>
         <dataType>Picklist</dataType>
         <displayField xsi:nil="true"/>
         <object xsi:nil="true"/>
         <picklistField>Issue_KPI__c</picklistField>
+        <picklistObject>Alert__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>SavedReasonValues</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Saved_reason__c</picklistField>
         <picklistObject>Alert__c</picklistObject>
     </dynamicChoiceSets>
     <dynamicChoiceSets>
@@ -465,7 +522,7 @@
     <recordLookups>
         <name>Get_Alert</name>
         <label>Get Alert</label>
-        <locationX>578</locationX>
+        <locationX>446</locationX>
         <locationY>158</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -486,8 +543,8 @@
     <recordLookups>
         <name>Get_Buyback_Alerts</name>
         <label>Get Buyback Alerts</label>
-        <locationX>314</locationX>
-        <locationY>638</locationY>
+        <locationX>578</locationX>
+        <locationY>758</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Submit_for_Approval_EU_Buyback</targetReference>
@@ -507,8 +564,8 @@
     <recordLookups>
         <name>Get_Buyback_Alerts_US_GA</name>
         <label>Get Buyback Alerts US&amp;GA</label>
-        <locationX>842</locationX>
-        <locationY>638</locationY>
+        <locationX>1106</locationX>
+        <locationY>758</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Submit_for_Approval_Buyback_US</targetReference>
@@ -529,8 +586,8 @@
         <description>Update the comment field so that the approver has visibility of what he/she needs to do.</description>
         <name>Update_Comments_Field</name>
         <label>Update Comments Field</label>
-        <locationX>578</locationX>
-        <locationY>398</locationY>
+        <locationX>842</locationX>
+        <locationY>518</locationY>
         <connector>
             <targetReference>Alert_Approval_Process</targetReference>
         </connector>
@@ -546,6 +603,12 @@
             <field>Comments__c</field>
             <value>
                 <elementReference>CommentsFromFlow</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Saved_reason__c</field>
+            <value>
+                <elementReference>Saved_Reason</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -570,15 +633,31 @@
     </recordUpdates>
     <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
+        <name>Error</name>
+        <label>Error</label>
+        <locationX>50</locationX>
+        <locationY>518</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Error_Message</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(250, 4, 4);&quot;&gt;Please fill in Action Plan-Comment &amp;amp; Action Plan(s) Pushed and request for quality exceptition &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
         <name>Quality_Exception_Process</name>
         <label>Quality Exception Process</label>
-        <locationX>578</locationX>
+        <locationX>446</locationX>
         <locationY>278</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <connector>
-            <targetReference>Update_Comments_Field</targetReference>
+            <targetReference>Is_Action_plan_filled_on_Alert_Record</targetReference>
         </connector>
         <fields>
             <name>Account_Name</name>
@@ -640,6 +719,24 @@
             </visibilityRule>
         </fields>
         <fields>
+            <name>Saved_Reason</name>
+            <choiceReferences>SavedReasonValues</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Saved Reason</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>New_Stage</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>Saved</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
             <name>New_Alert_Limitation_to_be_applied_1</name>
             <dataType>Number</dataType>
             <fieldText>New Alert Limitation to be applied?</fieldText>
@@ -667,7 +764,7 @@
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>452</locationX>
+        <locationX>320</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_Alert</targetReference>

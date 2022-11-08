@@ -192,7 +192,7 @@
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <finalApprovalActions>
         <action>
-            <name>Reject_Alert_Limitation_1</name>
+            <name>Reject_Alert_Limitation</name>
             <type>FieldUpdate</type>
         </action>
         <action>
@@ -207,7 +207,7 @@
     <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
-            <name>Reject_Alert_Limitation_1</name>
+            <name>Reject_Alert_Limitation</name>
             <type>FieldUpdate</type>
         </action>
         <action>
