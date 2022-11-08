@@ -2420,6 +2420,14 @@
         </value>
     </choices>
     <choices>
+        <name>Update_on_a_Carrier_investigation</name>
+        <choiceText>Update on a Carrier investigation</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Update on a Carrier investigation</stringValue>
+        </value>
+    </choices>
+    <choices>
         <name>What_measures_does_Back_Market_take_towards_the_provision_of_the_services_which</name>
         <choiceText>What measures does Back Market take towards the provision of the services which affected my business</choiceText>
         <dataType>String</dataType>
@@ -3130,7 +3138,7 @@
             <label>FR</label>
         </rules>
     </decisions>
-    <description>SFT-531 Included Logs and new description to store wrong price new URL + SFT-511 Include BackShip - Billing &amp; Cost/ URL Screen Component</description>
+    <description>SFT-531 Included Logs and new description to store wrong price new URL + SFT-511 Include BackShip - Billing &amp; Cost &amp; BackShip - Update on a Carrier investigation/ URL Screen Component Translated version</description>
     <dynamicChoiceSets>
         <name>carrier</name>
         <dataType>Picklist</dataType>
@@ -3919,6 +3927,7 @@ IF(NOT(ISNULL({!Description_2})),&apos;Description_2&apos;,&apos; &apos;))</expr
             <choiceReferences>Issue_with_a_label</choiceReferences>
             <choiceReferences>Parcel_not_picked_up</choiceReferences>
             <choiceReferences>Billing_and_Cost</choiceReferences>
+            <choiceReferences>Update_on_a_Carrier_investigation</choiceReferences>
             <dataType>String</dataType>
             <fieldText>What is your question about?</fieldText>
             <fieldType>DropdownBox</fieldType>
@@ -3991,6 +4000,50 @@ IF(NOT(ISNULL({!Description_2})),&apos;Description_2&apos;,&apos; &apos;))</expr
                     <operator>EqualTo</operator>
                     <rightValue>
                         <elementReference>Ask_question_related_to_an_invoice</elementReference>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Display_UpdateCarrierInvestigation_Info_EN</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;With this form you will contact the BackShip team to collect updates on a given investigation. This form is not to request a carrier investigation, all requests for investigation must go through Back Market agents.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Case_Sub_Reason_Service_BackShip</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>Update_on_a_Carrier_investigation</elementReference>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Get_current_user.LanguageLocaleKey</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>fr</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Display_UpdateCarrierInvestigation_Info_FR</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(2, 2, 2); font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;Ce moyen de contact est uniquement pour demander des informations sur l’enquête transporteur et le statut de votre remboursement. Toute demande d&apos;enquête transporteur doit passer par les agents BackMarket.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Case_Sub_Reason_Service_BackShip</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>Update_on_a_Carrier_investigation</elementReference>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Get_current_user.LanguageLocaleKey</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>fr</stringValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
