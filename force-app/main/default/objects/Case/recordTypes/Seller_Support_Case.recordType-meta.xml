@@ -575,6 +575,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Billing and Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Billing request related to the service</fullName>
             <default>false</default>
         </values>
