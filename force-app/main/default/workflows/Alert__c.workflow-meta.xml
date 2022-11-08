@@ -1,37 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldUpdates>
-        <fullName>Is_locked</fullName>
-        <field>Is_locked__c</field>
-        <literalValue>0</literalValue>
-        <name>Is locked</name>
+        <fullName>Reject_Alert_Limitation</fullName>
+        <field>AlertLimitation__c</field>
+        <formula>TECH_New_Alert_Limitation_1__c</formula>
+        <name>Reject Alert Limitation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reject_ETA_For_test_1</fullName>
+        <field>ETA_for_test__c</field>
+        <formula>TECH_New_ETA__c</formula>
+        <name>Reject ETA For test 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reject_Tech_Stage</fullName>
+        <field>TECH_New_Stage_2__c</field>
+        <name>Reject Tech Stage</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Update_Alert_Limitation</fullName>
-        <field>AlertLimitation__c</field>
-        <name>Update Alert Limitation</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Null</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_the_Field_ETA_for_test</fullName>
-        <field>ETA_for_test__c</field>
-        <name>Update the Field ETA for test</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Null</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_the_Field_Stage</fullName>
+        <fullName>Set_stage_to_Failed</fullName>
         <field>Stage__c</field>
-        <name>Update the Field Stage</name>
+        <literalValue>Failed</literalValue>
+        <name>Set stage to Failed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_stage_to_LC</fullName>
+        <field>Stage__c</field>
+        <literalValue>Last chance</literalValue>
+        <name>Set stage to LC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_stage_to_MP</fullName>
+        <field>Stage__c</field>
+        <literalValue>Monitoring Period</literalValue>
+        <name>Set stage to MP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_stage_to_Saved</fullName>
+        <field>Stage__c</field>
+        <literalValue>Saved</literalValue>
+        <name>Set stage to Saved</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
