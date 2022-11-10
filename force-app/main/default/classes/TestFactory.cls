@@ -115,6 +115,12 @@
         boSettingsEU.password__c = 'test';
         boSettingsEU.username__c = 'test';
         insert boSettingsEU;
+
+        US_Back_Office_Settings__c boSettingsUS = new US_Back_Office_Settings__c();
+        boSettingsUS.Backoffice_URL__c = 'https://test.com';
+        boSettingsUS.password__c = 'test';
+        boSettingsUS.username__c = 'test';
+        insert boSettingsUS;
     }
 
     public Account getAccountFR(String name){
