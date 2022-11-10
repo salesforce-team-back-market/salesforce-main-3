@@ -575,6 +575,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Billing and Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Billing request related to the service</fullName>
             <default>false</default>
         </values>
@@ -912,6 +916,10 @@
         </values>
         <values>
             <fullName>Too small for Back Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update on a Carrier investigation</fullName>
             <default>false</default>
         </values>
         <values>
