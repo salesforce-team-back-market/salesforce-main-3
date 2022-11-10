@@ -37,17 +37,6 @@ private without sharing class DCE_TriggersTest {
             Online_Status__c = 'Selected',
             back_care__c = true
         );
-
-        insert new EU_Back_Office_Settings__c(
-            backoffice_url__c = 'test.backmarket.com',
-            username__c = 'test_username',
-            password__c = 'test_password'
-        );
-        insert new US_Back_Office_Settings__c(
-            backoffice_url__c = 'testus.backmarket.com',
-            username__c = 'test_username',
-            password__c = 'test_password'
-        );
     }
 
     /**
