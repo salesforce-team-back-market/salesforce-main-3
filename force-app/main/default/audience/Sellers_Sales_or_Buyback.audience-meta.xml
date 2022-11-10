@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Sellers (Sales or Buyback)</audienceName>
+    <container>Seller Support Center</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.Stage__c</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Run</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.Stage__c</entityField>
+                <entityType>User</entityType>
+                <fieldValue>N.M.O.</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.Stage_Buyback__c</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Buyback Run</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.Stage_Buyback__c</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Buyback NMO</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formula>1 OR 2</formula>
+    <formulaFilterType>CustomLogicMatches</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>f68db73e-af23-4f15-a21e-d618736ff5d1$#$852d9ef1-cba0-46b8-8c02-906897f77414</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+    </targets>
+</Audience>
