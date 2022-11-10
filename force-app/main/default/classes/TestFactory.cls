@@ -199,14 +199,18 @@
         );
     }
 
-    public Case getCase(Id accId, Id contactId){
+    public Case getCase(Id accId){
         return new Case(
             AccountId = accId,
-            ContactId = contactId,
             Stage__c = 'Draft',
             RecordTypeId = this.buyback ? Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(String.valueOf(CASE_RECORD_TYPE.Quality_Test_Buyback)).getRecordTypeId()
                                         : Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(String.valueOf(CASE_RECORD_TYPE.Quality_Test)).getRecordTypeId()
         );
+    }
+    public Case getCase(Id accId, Id contactId){
+        Case c = getCase(accId);
+        c.ContactId = contactId;
+        return c;
     }
     public Case getCase(Id accId, CASE_RECORD_TYPE recordType){
         return new Case(
@@ -373,7 +377,11 @@
 
         for(Integer i = 0; i < this.accountsToInsert.size(); i++){
             for(Integer j = 0; j < nbRecordsByAccount; j++){
-                this.cases.add(this.getCase(accountsToInsert[i].Id, contactsToInsert[i].Id));
+                if(contactsToInsert?.size() > i){
+                    this.cases.add(this.getCase(accountsToInsert[i].Id, contactsToInsert[i].Id));
+                }else{
+                    this.cases.add(this.getCase(accountsToInsert[i].Id));
+                }
             }
         }
         insert this.cases;
