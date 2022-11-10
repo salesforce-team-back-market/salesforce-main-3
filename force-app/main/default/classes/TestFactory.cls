@@ -2,7 +2,7 @@
  * @description       : Generic test class used to create data for unit tests
  * @author            : Martin Lezer
  * @group             : Tests
- * @last modified on  : 11-09-2022
+ * @last modified on  : 11-10-2022
  * @last modified by  : Martin Lezer
 **/
 @IsTest public class TestFactory {
@@ -115,6 +115,12 @@
         boSettingsEU.password__c = 'test';
         boSettingsEU.username__c = 'test';
         insert boSettingsEU;
+
+        US_Back_Office_Settings__c boSettingsUS = new US_Back_Office_Settings__c();
+        boSettingsUS.Backoffice_URL__c = 'https://test.com';
+        boSettingsUS.password__c = 'test';
+        boSettingsUS.username__c = 'test';
+        insert boSettingsUS;
     }
 
     public Account getAccountFR(String name){
