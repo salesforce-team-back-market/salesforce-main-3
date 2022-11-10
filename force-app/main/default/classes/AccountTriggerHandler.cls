@@ -2,7 +2,7 @@
  * @description       : Account trigger handler used to update accounts manager and related account records if the accounts bizdev is changed
  * @author            : Martin Lezer
  * @group             : TriggerHandler
- * @last modified on  : 09-12-2022
+ * @last modified on  : 11-09-2022
  * @last modified by  : Martin Lezer
 **/
 public class AccountTriggerHandler extends TriggerHandler{
@@ -271,6 +271,66 @@ public class AccountTriggerHandler extends TriggerHandler{
                     logs.publishLogs();
                 }
             }
+        }
+    }
+
+    public override void beforeDelete(List<SObject> triggerOld, Map<Id, SObject> triggerOldMap) {
+        List<Map<String, Object>> wrappersEU = new List<Map<String, Object>>();
+        List<Map<String, Object>> wrappersUS = new List<Map<String, Object>>();
+        
+        Map<Id, List<Targeted_Country__c>> countriesByAccountId = new Map<Id, List<Targeted_Country__c>>();
+        for(Targeted_Country__c country : [SELECT Country__c, Merchant__c FROM Targeted_Country__c WHERE Merchant__c IN :triggerOld]){
+            if(countriesByAccountId.containsKey(country.Merchant__c) == false){
+                countriesByAccountId.put(country.Merchant__c, new List<Targeted_Country__c>());
+            }
+
+            countriesByAccountId.get(country.Merchant__c).add(country);
+        }
+
+        Map<String, Badoom_Targeted_Country_Mapping__mdt> countryMappingByCountry = new Map<String, Badoom_Targeted_Country_Mapping__mdt>();
+        for(Badoom_Targeted_Country_Mapping__mdt countryMapping : Badoom_Targeted_Country_Mapping__mdt.getAll().values()){
+            countryMappingByCountry.put(countryMapping.Salesforce_Country__c, countryMapping);
+        }
+
+        Set<Id> accountIds = new Set<Id>();
+        for(Account acc : [SELECT Back_Office_PK__c, RecordType.DeveloperName FROM Account WHERE Id IN :triggerOld]){
+            Map<String, Object> wrapper = new Map<String, Object>();
+            wrapper.put('id', acc.Back_Office_PK__c);
+            wrapper.put('salesforce_id', acc.Id);
+
+            Boolean hasCountry = false;
+            for(Targeted_Country__c country : countriesByAccountId.get(acc.Id)){
+                if(countryMappingByCountry.containsKey(country.Country__c)){
+                    String badoomCountry = countryMappingByCountry.get(country.Country__c).Badoom_Country__c;
+                    wrapper.put('online_' + badoomCountry, false);
+                    wrapper.put('buyback_enabled_' + badoomCountry, false);
+                    wrapper.put('backcare_' + badoomCountry, false);
+
+                    hasCountry = true;
+                }
+            }
+
+            if(hasCountry){
+                if(acc.RecordType.DeveloperName == 'E_U'){
+                    wrappersEU.add(wrapper);
+                }else{
+                    wrappersUS.add(wrapper);
+                }
+
+                accountIds.add(acc.Id);
+            }
+        }
+
+        try{
+            if (wrappersEU.isEmpty() == false) {
+                DCE_BackOfficeCallouts.makeCallout ( JSON.serialize(wrappersEU), 'EU');
+            }
+            if (wrappersUS.isEmpty() == false) {
+                DCE_BackOfficeCallouts.makeCallout ( JSON.serialize(wrappersUS), 'US');
+            }
+        }
+        catch(JSONException e){
+            LogService.log(LogService.LOG_TYPE.ERROR, LogService.PROCESS.BACK_OFFICE_CALLOUT, accountIds, e.getMessage(), 'AccountTriggerHandler');
         }
     }
 }
