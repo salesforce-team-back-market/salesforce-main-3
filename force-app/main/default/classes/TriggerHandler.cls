@@ -2,7 +2,7 @@
  * @description       : Generic trigger handler : have to be extended by each trigger handler
  * @author            : Martin Lezer
  * @group             : TriggerHandler
- * @last modified on  : 09-06-2022
+ * @last modified on  : 11-09-2022
  * @last modified by  : Martin Lezer
 **/
 public virtual class TriggerHandler {
@@ -52,7 +52,7 @@ public virtual class TriggerHandler {
           this.beforeUpdate(triggerNewOrOld, triggerNewOrOldMap, triggerOld, triggerOldMap);
         }
         when BEFORE_DELETE {
-          this.beforeDelete(triggerNewOrOld ,triggerNewOrOldMap);
+          this.beforeDelete(triggerOld ,triggerOldMap);
         }
         when AFTER_INSERT {
           this.afterInsert(triggerNewOrOld ,triggerNewOrOldMap);
@@ -61,7 +61,7 @@ public virtual class TriggerHandler {
           this.afterUpdate(triggerNewOrOld ,triggerNewOrOldMap, triggerOld, triggerOldMap);
         }
         when AFTER_DELETE {
-          this.afterDelete(triggerNewOrOld, triggerNewOrOldMap);
+          this.afterDelete(triggerOld ,triggerOldMap);
         }
         when AFTER_UNDELETE {
           this.afterUndelete(triggerNewOrOld ,triggerNewOrOldMap);
