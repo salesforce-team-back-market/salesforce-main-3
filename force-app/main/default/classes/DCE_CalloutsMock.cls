@@ -15,7 +15,8 @@ global without sharing class DCE_CalloutsMock implements HttpCalloutMock {
         BACKOFFICE_CONTACT_UPDATE,
         BACKOFFICE_MERCHANT_INSERT,
         BACKOFFICE_ERROR,
-        BACKOFFICE_EXCEPTION
+        BACKOFFICE_EXCEPTION,
+        BACKOFFICE_ACCOUNT_DELETE
     }
 
     public DCE_CalloutType calloutType;
@@ -136,6 +137,29 @@ global without sharing class DCE_CalloutsMock implements HttpCalloutMock {
                     System.assertEquals(request.getEndpoint(), settings.backoffice_url__c);
 
                     throw new CalloutException();
+                }
+
+                when BACKOFFICE_ACCOUNT_DELETE {
+                    EU_Back_Office_Settings__c settings = EU_Back_Office_Settings__c.getInstance();
+                    String token = EncodingUtil.base64Encode(Blob.valueof(settings.username__c + ':' + settings.password__c));
+
+                    System.assertEquals(request.getMethod(), 'PUT');
+                    System.assertEquals(request.getHeader('Content-Type'), 'application/json');
+                    System.assertEquals(request.getHeader('Accept'), 'application/json');
+                    System.assertEquals(request.getHeader('Authorization'), 'Basic ' + token);
+                    System.assertEquals(request.getEndpoint(), settings.backoffice_url__c);
+
+                    List <Object> merchantsToUpdate = (List <Object>) JSON.deserializeUntyped(request.getBody());
+					Map<String, Object> merchantInfo = (Map<String, Object>) merchantsToUpdate.get(0);
+
+                    for(String str : merchantInfo.keySet()){
+                        System.debug(str);
+                        System.debug(merchantInfo.get(str));
+                    }
+
+                    System.assertEquals(merchantInfo.get('buyback_enabled_fr_fr'), false);
+                    System.assertEquals(merchantInfo.get('online_fr_fr'), false);
+                    System.assertEquals(merchantInfo.get('backcare_fr_fr'), false);
                 }
             }
 

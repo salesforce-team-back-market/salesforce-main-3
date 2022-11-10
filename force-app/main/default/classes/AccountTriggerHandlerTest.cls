@@ -2,7 +2,7 @@
  * @description       : Account trigger handler tests
  * @author            : Martin Lezer
  * @group             : Tests
- * @last modified on  : 09-06-2022
+ * @last modified on  : 11-09-2022
  * @last modified by  : Martin Lezer
 **/
 @IsTest public class AccountTriggerHandlerTest {
@@ -95,5 +95,26 @@
         System.assertEquals(TestFactory.LOAD_TEST_NUMBER * NB_ACCOUNTS, [SELECT Id FROM Onboarding_Process__c WHERE Merchant_BizDev__c = :u.Id].size(), 'Onboardings bizdev buyback was not updated.');
         System.assertEquals(TestFactory.LOAD_TEST_NUMBER * NB_ACCOUNTS, [SELECT Id FROM Merchant_Special_Process__c WHERE BizDev_for_Approval__c = :u.Id].size(), 'Merchant Special processes bizdev buyback was not updated.');
         System.assertEquals(TestFactory.LOAD_TEST_NUMBER * NB_ACCOUNTS, [SELECT Id FROM Case WHERE Merchant_BizDev__c = :u.Id].size(), 'Cases bizdev buyback was not updated.');
+    }
+
+    @isTest static void testDelete(){
+        DCE_CalloutsMock calloutsMock = new DCE_CalloutsMock();
+        calloutsMock.needTest = false;
+
+        TestFactory factory = new TestFactory();
+        factory.setCustomSettings();
+        factory.insertAccounts(NB_ACCOUNTS)
+                .insertCountriesBulk();
+
+        delete [SELECT Id FROM Entitlement];
+
+        calloutsMock.needTest = true;
+        calloutsMock.calloutType = DCE_CalloutsMock.DCE_CalloutType.BACKOFFICE_ACCOUNT_DELETE;
+
+        Test.setMock(HttpCalloutMock.class, calloutsMock);
+
+        Test.startTest();
+        delete [SELECT Id FROM Account];
+        Test.stopTest();
     }
 }
