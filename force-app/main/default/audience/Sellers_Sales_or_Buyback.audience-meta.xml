@@ -8,6 +8,16 @@
             <criterionValue>
                 <entityField>Contact.Account.$Account.Stage__c</entityField>
                 <entityType>User</entityType>
+                <fieldValue>N.M.O.</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.Stage__c</entityField>
+                <entityType>User</entityType>
                 <fieldValue>Run</fieldValue>
             </criterionValue>
             <operator>Equal</operator>
@@ -18,7 +28,17 @@
             <criterionValue>
                 <entityField>Contact.Account.$Account.Stage__c</entityField>
                 <entityType>User</entityType>
-                <fieldValue>N.M.O.</fieldValue>
+                <fieldValue>Offline</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <entityField>Contact.Account.$Account.Stage_Buyback__c</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Buyback NMO</fieldValue>
             </criterionValue>
             <operator>Equal</operator>
             <type>FieldBased</type>
@@ -38,7 +58,7 @@
             <criterionValue>
                 <entityField>Contact.Account.$Account.Stage_Buyback__c</entityField>
                 <entityType>User</entityType>
-                <fieldValue>Buyback NMO</fieldValue>
+                <fieldValue>Buyback Offline</fieldValue>
             </criterionValue>
             <operator>Equal</operator>
             <type>FieldBased</type>
@@ -48,6 +68,12 @@
     <formulaFilterType>CustomLogicMatches</formulaFilterType>
     <isDefaultAudience>false</isDefaultAudience>
     <targets>
+        <target>
+            <groupName>85ffa335-79c5-4a8b-8482-bd05dec95206$#$f3bfff7c-3cd0-4f10-b5dd-475b0980fd0f</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Default_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
         <target>
             <groupName>f68db73e-af23-4f15-a21e-d618736ff5d1$#$852d9ef1-cba0-46b8-8c02-906897f77414</groupName>
             <priority>1</priority>
