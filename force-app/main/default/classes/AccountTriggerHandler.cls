@@ -2,7 +2,7 @@
  * @description       : Account trigger handler used to update accounts manager and related account records if the accounts bizdev is changed
  * @author            : Martin Lezer
  * @group             : TriggerHandler
- * @last modified on  : 11-09-2022
+ * @last modified on  : 11-15-2022
  * @last modified by  : Martin Lezer
 **/
 public class AccountTriggerHandler extends TriggerHandler{
@@ -299,14 +299,16 @@ public class AccountTriggerHandler extends TriggerHandler{
             wrapper.put('salesforce_id', acc.Id);
 
             Boolean hasCountry = false;
-            for(Targeted_Country__c country : countriesByAccountId.get(acc.Id)){
-                if(countryMappingByCountry.containsKey(country.Country__c)){
-                    String badoomCountry = countryMappingByCountry.get(country.Country__c).Badoom_Country__c;
-                    wrapper.put('online_' + badoomCountry, false);
-                    wrapper.put('buyback_enabled_' + badoomCountry, false);
-                    wrapper.put('backcare_' + badoomCountry, false);
+            if(countriesByAccountId.containsKey(acc.Id)){
+                for(Targeted_Country__c country : countriesByAccountId.get(acc.Id)){
+                    if(countryMappingByCountry.containsKey(country.Country__c)){
+                        String badoomCountry = countryMappingByCountry.get(country.Country__c).Badoom_Country__c;
+                        wrapper.put('online_' + badoomCountry, false);
+                        wrapper.put('buyback_enabled_' + badoomCountry, false);
+                        wrapper.put('backcare_' + badoomCountry, false);
 
-                    hasCountry = true;
+                        hasCountry = true;
+                    }
                 }
             }
 
