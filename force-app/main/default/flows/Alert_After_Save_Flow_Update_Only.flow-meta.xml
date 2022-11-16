@@ -738,7 +738,7 @@
     <actionCalls>
         <name>Alert_Record_Type_Business_Alert</name>
         <label>Alert Record Type Business Alert</label>
-        <locationX>17354</locationX>
+        <locationX>17090</locationX>
         <locationY>695</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -780,7 +780,7 @@
     <actionCalls>
         <name>Alert_Record_Type_Finance_Alert</name>
         <label>Alert Record Type Finance Alert</label>
-        <locationX>17794</locationX>
+        <locationX>17530</locationX>
         <locationY>695</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -907,7 +907,7 @@
     <actionCalls>
         <name>Alert_Record_Type_MP</name>
         <label>Alert Record Type MP</label>
-        <locationX>14160</locationX>
+        <locationX>14028</locationX>
         <locationY>695</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -1033,7 +1033,7 @@
     <actionCalls>
         <name>Copy_1_of_Saved_MP_EN_non_Buyback</name>
         <label>Saved MP EN non Buyback</label>
-        <locationX>17340</locationX>
+        <locationX>16680</locationX>
         <locationY>2867</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -1075,10 +1075,13 @@
     <actionCalls>
         <name>Copy_1_of_Send_saved_email_EN</name>
         <label>Send saved email - EN</label>
-        <locationX>17076</locationX>
+        <locationX>16416</locationX>
         <locationY>2987</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
+        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>emailBody</name>
@@ -1120,10 +1123,13 @@
     <actionCalls>
         <name>Copy_1_of_Send_saved_email_FR</name>
         <label>Send saved email - FR</label>
-        <locationX>15228</locationX>
+        <locationX>15624</locationX>
         <locationY>2987</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
+        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>emailBody</name>
@@ -1502,7 +1508,7 @@
     <actionCalls>
         <name>MP_Stage_Rejected</name>
         <label>MP Stage Rejected</label>
-        <locationX>16650</locationX>
+        <locationX>16386</locationX>
         <locationY>1667</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -1545,7 +1551,7 @@
     <actionCalls>
         <name>MP_Stage_Saved</name>
         <label>MP Stage Saved</label>
-        <locationX>15567</locationX>
+        <locationX>15402</locationX>
         <locationY>1667</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -1881,7 +1887,7 @@
     <actionCalls>
         <name>Saved_MP_EN_Buyback</name>
         <label>Saved MP EN Buyback</label>
-        <locationX>17076</locationX>
+        <locationX>16416</locationX>
         <locationY>2867</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -1923,7 +1929,7 @@
     <actionCalls>
         <name>Saved_MP_EN_Policy_Violation</name>
         <label>Saved MP EN Policy Violation</label>
-        <locationX>16284</locationX>
+        <locationX>16152</locationX>
         <locationY>2747</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -1965,7 +1971,7 @@
     <actionCalls>
         <name>Saved_MP_FR_BE</name>
         <label>Saved MP FR BE</label>
-        <locationX>15360</locationX>
+        <locationX>15756</locationX>
         <locationY>2747</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -2007,7 +2013,7 @@
     <actionCalls>
         <name>Saved_MP_FR_BE_Policy_Violation</name>
         <label>Saved MP FR BE Policy Violation</label>
-        <locationX>14964</locationX>
+        <locationX>15360</locationX>
         <locationY>2747</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -2139,10 +2145,13 @@
     <actionCalls>
         <name>Send_saved_email_EN</name>
         <label>Send saved email - EN</label>
-        <locationX>17340</locationX>
+        <locationX>16680</locationX>
         <locationY>2987</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
+        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>emailBody</name>
@@ -2184,7 +2193,7 @@
     <actionCalls>
         <name>Send_saved_email_EN_Policy_Violation</name>
         <label>Send saved email - EN (Policy Violation)</label>
-        <locationX>16284</locationX>
+        <locationX>16152</locationX>
         <locationY>2867</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
@@ -2232,10 +2241,13 @@
     <actionCalls>
         <name>Send_saved_email_FR</name>
         <label>Send saved email - FR</label>
-        <locationX>15492</locationX>
+        <locationX>15888</locationX>
         <locationY>2987</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Decision_on_record_type_after_email_is_sent</targetReference>
+        </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>emailBody</name>
@@ -2277,7 +2289,7 @@
     <actionCalls>
         <name>Send_saved_email_FR_Policy_Violation</name>
         <label>Send saved email - FR (Policy Violation)</label>
-        <locationX>14964</locationX>
+        <locationX>15360</locationX>
         <locationY>2867</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
@@ -2438,7 +2450,7 @@
     <assignments>
         <name>Add_bizdev_to_email_list</name>
         <label>Add bizdev to email list</label>
-        <locationX>16086</locationX>
+        <locationX>15954</locationX>
         <locationY>2507</locationY>
         <assignmentItems>
             <assignToReference>List_of_email_to_contact</assignToReference>
@@ -2735,7 +2747,7 @@
     <assignments>
         <name>Assign_contact_to_list</name>
         <label>Assign contact to list</label>
-        <locationX>15437</locationX>
+        <locationX>15338</locationX>
         <locationY>2267</locationY>
         <assignmentItems>
             <assignToReference>List_of_email_to_contact</assignToReference>
@@ -2758,7 +2770,7 @@
     <assignments>
         <name>Assign_Merchant_ID_to_variable</name>
         <label>Assign Merchant ID to variable</label>
-        <locationX>10834</locationX>
+        <locationX>10702</locationX>
         <locationY>455</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Id</assignToReference>
@@ -2798,7 +2810,7 @@
     <assignments>
         <name>Assign_quality_contact_to_list</name>
         <label>Assign quality contact to list</label>
-        <locationX>16610</locationX>
+        <locationX>16346</locationX>
         <locationY>2147</locationY>
         <assignmentItems>
             <assignToReference>List_of_email_to_contact</assignToReference>
@@ -2821,8 +2833,8 @@
     <assignments>
         <name>Assign_reset_Buyback_limitation</name>
         <label>Assign reset Buyback limitation</label>
-        <locationX>16284</locationX>
-        <locationY>3107</locationY>
+        <locationX>15954</locationX>
+        <locationY>3419</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Buyback_limitation__c</assignToReference>
             <operator>Assign</operator>
@@ -2842,10 +2854,26 @@
         </connector>
     </assignments>
     <assignments>
+        <name>Assign_reset_Buyback_limitation_2</name>
+        <label>Assign reset Buyback limitation_2</label>
+        <locationX>16218</locationX>
+        <locationY>3659</locationY>
+        <assignmentItems>
+            <assignToReference>Merchant_to_update.Buyback_limitation__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Business_Name__r.Buyback_limitation__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Assign_reset_Sales_limitation</name>
         <label>Assign reset Sales limitation</label>
-        <locationX>15756</locationX>
-        <locationY>3107</locationY>
+        <locationX>14898</locationX>
+        <locationY>3419</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.LimitationBeforeAlert__c</assignToReference>
             <operator>Assign</operator>
@@ -3031,8 +3059,8 @@
     <assignments>
         <name>Assign_smallest_Buyback_alert_limitation</name>
         <label>Assign smallest Buyback alert limitation</label>
-        <locationX>16548</locationX>
-        <locationY>3227</locationY>
+        <locationX>16746</locationX>
+        <locationY>3659</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Buyback_limitation__c</assignToReference>
             <operator>Assign</operator>
@@ -3047,8 +3075,8 @@
     <assignments>
         <name>Assign_smallest_Sales_alert_limitation</name>
         <label>Assign smallest Sales alert limitation</label>
-        <locationX>16020</locationX>
-        <locationY>3227</locationY>
+        <locationX>15690</locationX>
+        <locationY>3659</locationY>
         <assignmentItems>
             <assignToReference>Merchant_to_update.Reason_for_last_Sales_limitation__c</assignToReference>
             <operator>Assign</operator>
@@ -3180,6 +3208,29 @@
         </assignmentItems>
         <connector>
             <targetReference>Copy_2_of_Is_limit_reached</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_reset_Sales_limitation</name>
+        <label>Assign reset Sales limitation</label>
+        <locationX>15162</locationX>
+        <locationY>3659</locationY>
+        <assignmentItems>
+            <assignToReference>Merchant_to_update.Tech_Reason_Limitation_Before_Alert__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Merchant_to_update.Sales_limitation__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Business_Name__r.Sales_limitation__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_merchant_limitations_sales_alert</targetReference>
         </connector>
     </assignments>
     <decisions>
@@ -3370,7 +3421,7 @@
     <decisions>
         <name>Decision_KPI_is_CSAT_or_LRR</name>
         <label>Decision - KPI is CSAT or LRR</label>
-        <locationX>14160</locationX>
+        <locationX>14028</locationX>
         <locationY>815</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -3606,12 +3657,12 @@
     <decisions>
         <name>Decision_on_record_type_after_email_is_sent</name>
         <label>Decision on record type after email is sent</label>
-        <locationX>16284</locationX>
-        <locationY>2987</locationY>
+        <locationX>15954</locationX>
+        <locationY>3299</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>MP_sales_no_ongoing_alerts</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>(1 AND 2 AND 3) OR 4</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.RecordTypeId</leftValueReference>
                 <operator>EqualTo</operator>
@@ -3631,6 +3682,13 @@
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.LimitationBeforeAlert__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -3669,7 +3727,7 @@
         </rules>
         <rules>
             <name>MP_buyback_no_ongoing_alerts</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>(1 AND 2 AND 3 ) OR 4</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.RecordTypeId</leftValueReference>
                 <operator>EqualTo</operator>
@@ -3689,6 +3747,13 @@
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Buyback_Limitation_before_alert__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -3780,7 +3845,7 @@
     <decisions>
         <name>Decision_on_RecordType</name>
         <label>Decision on RecordType</label>
-        <locationX>10834</locationX>
+        <locationX>10702</locationX>
         <locationY>575</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -3904,7 +3969,7 @@
     <decisions>
         <name>Decision_on_stage</name>
         <label>Decision on stage</label>
-        <locationX>14160</locationX>
+        <locationX>14028</locationX>
         <locationY>1547</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -4125,7 +4190,7 @@
     <decisions>
         <name>Decision_on_TC_without_BC</name>
         <label>Decision on TC without BC</label>
-        <locationX>14160</locationX>
+        <locationX>14028</locationX>
         <locationY>1055</locationY>
         <defaultConnector>
             <targetReference>Decision_on_stage</targetReference>
@@ -4150,7 +4215,7 @@
     <decisions>
         <name>Decision_on_user_bypass</name>
         <label>Decision on user bypass</label>
-        <locationX>9054</locationX>
+        <locationX>8922</locationX>
         <locationY>335</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -4227,7 +4292,7 @@
     <decisions>
         <name>Decision_on_zone</name>
         <label>Decision on zone</label>
-        <locationX>16086</locationX>
+        <locationX>15954</locationX>
         <locationY>2627</locationY>
         <defaultConnector>
             <targetReference>Is_buyback</targetReference>
@@ -4479,7 +4544,7 @@
     <decisions>
         <name>If_no_quality_contact</name>
         <label>If no quality contact</label>
-        <locationX>15567</locationX>
+        <locationX>15402</locationX>
         <locationY>1907</locationY>
         <defaultConnector>
             <targetReference>Loop_on_quality_contact_with_email</targetReference>
@@ -4504,7 +4569,7 @@
     <decisions>
         <name>Is_buyback</name>
         <label>Is buyback</label>
-        <locationX>17208</locationX>
+        <locationX>16548</locationX>
         <locationY>2747</locationY>
         <defaultConnector>
             <targetReference>Copy_1_of_Saved_MP_EN_non_Buyback</targetReference>
@@ -4529,7 +4594,7 @@
     <decisions>
         <name>Is_buyback_fr</name>
         <label>Is buyback</label>
-        <locationX>15360</locationX>
+        <locationX>15756</locationX>
         <locationY>2867</locationY>
         <defaultConnector>
             <targetReference>Send_saved_email_FR</targetReference>
@@ -4554,7 +4619,7 @@
     <decisions>
         <name>Is_limit_reached</name>
         <label>Is limit reached</label>
-        <locationX>15437</locationX>
+        <locationX>15338</locationX>
         <locationY>2387</locationY>
         <defaultConnector>
             <targetReference>Add_bizdev_to_email_list</targetReference>
@@ -4579,7 +4644,7 @@
     <decisions>
         <name>Is_limit_reached_0</name>
         <label>Is limit reached</label>
-        <locationX>16610</locationX>
+        <locationX>16346</locationX>
         <locationY>2267</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
@@ -5122,7 +5187,7 @@
     <decisions>
         <name>Move_to_Saved</name>
         <label>Move to Saved</label>
-        <locationX>17354</locationX>
+        <locationX>17090</locationX>
         <locationY>815</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -5359,7 +5424,117 @@
             <label>Invoice Compliance Audit - Last Chance</label>
         </rules>
     </decisions>
-    <description>SFT-512 - Include the legal-team@backmarket.com address and logs</description>
+    <decisions>
+        <name>Were_buyback_records_with_limitation_found</name>
+        <label>Were buyback records with limitation found</label>
+        <locationX>16482</locationX>
+        <locationY>3539</locationY>
+        <defaultConnector>
+            <targetReference>Assign_smallest_Buyback_alert_limitation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_buyback_records_found_and_limitation_before_alert_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_smallest_limitation_on_ongoing_buyback_alert</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Buyback_Limitation_before_alert__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_reset_Buyback_limitation_2</targetReference>
+            </connector>
+            <label>No buyback records found and limitation before alert null</label>
+        </rules>
+        <rules>
+            <name>No_buyback_record_found_and_limitation_is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_smallest_limitation_on_ongoing_buyback_alert</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.Buyback_Limitation_before_alert__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Assign_reset_Buyback_limitation</targetReference>
+            </connector>
+            <label>No buyback record found and limitation is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Were_records_with_limitation_found</name>
+        <label>Were records with limitation found</label>
+        <locationX>15426</locationX>
+        <locationY>3539</locationY>
+        <defaultConnector>
+            <targetReference>Assign_smallest_Sales_alert_limitation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_records_found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_smallest_limitation_on_ongoing_sales_alert</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.LimitationBeforeAlert__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Assign_reset_Sales_limitation</targetReference>
+            </connector>
+            <label>No records found and limitation before alert null</label>
+        </rules>
+        <rules>
+            <name>No_record_found_and_limitation_is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_smallest_limitation_on_ongoing_sales_alert</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Business_Name__r.LimitationBeforeAlert__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Assign_reset_Sales_limitation</targetReference>
+            </connector>
+            <label>No record found and limitation is not null</label>
+        </rules>
+    </decisions>
+    <description>SFS-602- Make sure there is a previous limitation updated in case ongoing alerts don&apos;t have a limitation &amp; ensure saved MP go through the update limitation path + SFT - 538 do not override limitation to 0</description>
     <formulas>
         <name>Add_Contact_To_Count</name>
         <dataType>Number</dataType>
@@ -5560,7 +5735,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <loops>
         <name>Loop_on_all_contact_with_email</name>
         <label>Loop on all contact with email</label>
-        <locationX>14700</locationX>
+        <locationX>14634</locationX>
         <locationY>2147</locationY>
         <collectionReference>Get_all_contact_with_email</collectionReference>
         <iterationOrder>Asc</iterationOrder>
@@ -5620,7 +5795,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <loops>
         <name>Loop_on_quality_contact_with_email</name>
         <label>Loop on quality contact with email</label>
-        <locationX>16434</locationX>
+        <locationX>16170</locationX>
         <locationY>2027</locationY>
         <collectionReference>Get_all_contact_quality_with_email</collectionReference>
         <iterationOrder>Asc</iterationOrder>
@@ -6138,7 +6313,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_all_contact_quality_with_email</name>
         <label>Get all contact quality with email</label>
-        <locationX>15567</locationX>
+        <locationX>15402</locationX>
         <locationY>1787</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -6187,7 +6362,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_all_contact_with_email</name>
         <label>Get all contact with email</label>
-        <locationX>14700</locationX>
+        <locationX>14634</locationX>
         <locationY>2027</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -6504,11 +6679,11 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_smallest_limitation_on_ongoing_buyback_alert</name>
         <label>Get smallest limitation on ongoing buyback alert</label>
-        <locationX>16548</locationX>
-        <locationY>3107</locationY>
+        <locationX>16482</locationX>
+        <locationY>3419</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Assign_smallest_Buyback_alert_limitation</targetReference>
+            <targetReference>Were_buyback_records_with_limitation_found</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -6562,11 +6737,11 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_smallest_limitation_on_ongoing_sales_alert</name>
         <label>Get smallest limitation on ongoing sales alert</label>
-        <locationX>16020</locationX>
-        <locationY>3107</locationY>
+        <locationX>15426</locationX>
+        <locationY>3419</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Assign_smallest_Sales_alert_limitation</targetReference>
+            <targetReference>Were_records_with_limitation_found</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -6692,7 +6867,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordLookups>
         <name>Get_TC_without_BC_Sales</name>
         <label>Get TC without BC Sales</label>
-        <locationX>14160</locationX>
+        <locationX>14028</locationX>
         <locationY>935</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -6812,8 +6987,8 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordUpdates>
         <name>Update_merchant_limitations_sales_alert</name>
         <label>Update merchant limitations - sales alert</label>
-        <locationX>16284</locationX>
-        <locationY>3443</locationY>
+        <locationX>15954</locationX>
+        <locationY>3971</locationY>
         <inputReference>Merchant_to_update</inputReference>
     </recordUpdates>
     <recordUpdates>
@@ -6856,7 +7031,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordUpdates>
         <name>Update_ongoing_Alert_to_Save</name>
         <label>Update ongoing Alert to Save</label>
-        <locationX>17354</locationX>
+        <locationX>17090</locationX>
         <locationY>1151</locationY>
         <inputAssignments>
             <field>Has_been_saved_on__c</field>
@@ -6875,7 +7050,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
     <recordUpdates>
         <name>Update_stage_alert_to_saved</name>
         <label>Update stage alert to saved</label>
-        <locationX>14028</locationX>
+        <locationX>13896</locationX>
         <locationY>1175</locationY>
         <connector>
             <isGoTo>true</isGoTo>
@@ -6896,7 +7071,7 @@ if(ISPICKVAL({!Get_alert_with_smallest_limitation.Issue_KPI__c},&quot;Invoice Co
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>8928</locationX>
+        <locationX>8796</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Decision_on_user_bypass</targetReference>
