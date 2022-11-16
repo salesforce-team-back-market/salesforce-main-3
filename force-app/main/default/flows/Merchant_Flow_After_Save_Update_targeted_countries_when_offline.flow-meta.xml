@@ -1,10 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
+        <name>Copy_1_of_Copy_1_of_Copy_2_of_Send_log</name>
+        <label>Copy 1 of Copy 1 of Copy 2 of Send log</label>
+        <locationX>314</locationX>
+        <locationY>935</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>merchant-offline</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Merchant Flow - After Save - Update targeted countries when offline</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>ERROR</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_1_of_Send_log</name>
+        <label>Copy 1 of Copy 1 of Send log</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Copy_1_of_Update_live_targeted_countries_to_offline</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>merchant-offline</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Merchant Flow - After Save - Update targeted countries when buyback offline</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Update started</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_Copy_2_of_Send_log</name>
+        <label>Copy 1 of Copy 2 of Send log</label>
+        <locationX>50</locationX>
+        <locationY>935</locationY>
+        <actionName>LogService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>process</name>
+            <value>
+                <stringValue>merchant-offline</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>component</name>
+            <value>
+                <stringValue>Merchant Flow - After Save - Update targeted countries when buyback offline</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <stringValue>Update successful</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>SUCCESS</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
         <name>Copy_1_of_Send_log</name>
         <label>Copy 1 of Send log</label>
-        <locationX>50</locationX>
-        <locationY>575</locationY>
+        <locationX>578</locationX>
+        <locationY>695</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -45,8 +165,8 @@
     <actionCalls>
         <name>Copy_2_of_Send_log</name>
         <label>Copy 2 of Send log</label>
-        <locationX>50</locationX>
-        <locationY>815</locationY>
+        <locationX>578</locationX>
+        <locationY>935</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -84,7 +204,7 @@
     <actionCalls>
         <name>Send_log</name>
         <label>Send log</label>
-        <locationX>182</locationX>
+        <locationX>710</locationX>
         <locationY>335</locationY>
         <actionName>LogService</actionName>
         <actionType>apex</actionType>
@@ -127,7 +247,7 @@
     <decisions>
         <name>Decision_on_user_bypass</name>
         <label>Decision on user bypass</label>
-        <locationX>182</locationX>
+        <locationX>710</locationX>
         <locationY>455</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -148,13 +268,38 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_1_of_Send_log</targetReference>
+                <targetReference>Type_of_offline</targetReference>
             </connector>
             <label>User doesn&apos;t bypass</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Type_of_offline</name>
+        <label>Type of offline</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Send_log</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Buyback</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stage_Buyback__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Buyback Offline</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_1_of_Send_log</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Buyback</label>
+        </rules>
+    </decisions>
     <description>When the account stage is set to offline, update live targeted countries related online status to offline</description>
-    <environments>Default</environments>
     <interviewLabel>Merchant Flow - After Save - Update targeted countries when offline {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Merchant Flow - After Save - Update targeted countries when offline</label>
     <processMetadataValues>
@@ -177,13 +322,51 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
+        <name>Copy_1_of_Update_live_targeted_countries_to_offline</name>
+        <label>Copy 1 of Update live targeted countries to offline</label>
+        <locationX>50</locationX>
+        <locationY>815</locationY>
+        <connector>
+            <targetReference>Copy_1_of_Copy_2_of_Send_log</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Copy_1_of_Copy_1_of_Copy_2_of_Send_log</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Merchant__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Buyback_Live_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Live</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Buyback_Live_Status__c</field>
+            <value>
+                <stringValue>Offline</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Targeted_Country__c</object>
+    </recordUpdates>
+    <recordUpdates>
         <name>Update_live_targeted_countries_to_offline</name>
         <label>Update live targeted countries to offline</label>
-        <locationX>50</locationX>
-        <locationY>695</locationY>
+        <locationX>578</locationX>
+        <locationY>815</locationY>
         <connector>
             <targetReference>Copy_2_of_Send_log</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Copy_1_of_Copy_1_of_Copy_2_of_Send_log</targetReference>
+        </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Merchant__c</field>
@@ -208,18 +391,25 @@
         <object>Targeted_Country__c</object>
     </recordUpdates>
     <start>
-        <locationX>56</locationX>
+        <locationX>584</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Send_log</targetReference>
         </connector>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
-        <filterLogic>and</filterLogic>
+        <filterLogic>or</filterLogic>
         <filters>
             <field>Stage__c</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Offline</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Stage_Buyback__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Buyback Offline</stringValue>
             </value>
         </filters>
         <object>Account</object>
