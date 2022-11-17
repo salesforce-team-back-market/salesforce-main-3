@@ -397,6 +397,13 @@
                 <stringValue>Return Label</stringValue>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Reason</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Return Label</stringValue>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Assign_origin_skill</targetReference>
         </connector>
@@ -408,6 +415,13 @@
         <locationY>1391</locationY>
         <assignmentItems>
             <assignToReference>$Record.Type_Skill__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Return Label</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Reason</assignToReference>
             <operator>Assign</operator>
             <value>
                 <stringValue>Return Label</stringValue>
@@ -1097,7 +1111,6 @@
         </rules>
     </decisions>
     <description>BM4B email to case</description>
-    <environments>Default</environments>
     <formulas>
         <name>transportSubjectContainsReturnLabel</name>
         <dataType>Boolean</dataType>
@@ -1523,5 +1536,5 @@
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>
